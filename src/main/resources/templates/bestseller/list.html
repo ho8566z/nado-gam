@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('베스트셀러')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('bestseller')}"></header>
+<main class="page">
+	<section class="page-title">
+		<span class="kicker">BEST SELLER</span>
+		<h1>베스트셀러</h1>
+		<p>가장 많이 판매된 여행지와 항공편입니다.</p>
+	</section>
+	<section class="grid">
+		<div class="grid-item" th:each="b, st : ${bestsellers}">
+			<a th:replace="~{fragments/cards :: bestPoster(${b}, ${st.count})}"></a>
+		</div>
+	</section>
+	<p class="empty" th:if="${#lists.isEmpty(bestsellers)}">집계된 베스트셀러가 없습니다.</p>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

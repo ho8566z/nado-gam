@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${detail.card().nameKo() + ' 베스트셀러'})}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('bestseller')}"></header>
+<main class="page">
+
+	<a class="back" th:href="@{/bestseller}" data-transition>← 베스트셀러</a>
+
+	<section class="detail-hero" th:style="|--c1:${detail.card().from()};--c2:${detail.card().to()}|">
+		<span class="poster-bgtext" aria-hidden="true" th:text="${detail.card().nameEnUpper()}">TOKYO</span>
+		<div class="detail-hero-body">
+			<div class="poster-tags">
+				<span class="badge badge--best">BEST SELLER</span>
+				<span class="badge badge--ghost">누적 판매 <span th:text="${detail.card().totalSalesLabel()}">4,240</span>건</span>
+			</div>
+			<p class="poster-kicker" th:text="${detail.card().nameEn()}">Tokyo</p>
+			<h1 th:text="${detail.card().nameKo()}">도쿄</h1>
+			<p class="poster-sub" th:text="${detail.card().summary()}">소개</p>
+		</div>
+		<div class="detail-hero-side">
+			<span class="price-note">일반석 최저가</span>
+			<strong class="price-now"><span th:text="${detail.card().minPriceLabel()}">₩150,000</span><small>~</small></strong>
+			<span class="price-note">편도 · 성인 1인</span>
+		</div>
+	</section>
+
+	<h2 class="section-title">판매 순위 항공편 <small th:text="${#lists.size(detail.flights())} + '편'">5편</small></h2>
+
+	<article class="flight-card" th:each="bf : ${detail.flights()}">
+		<header class="flight-head">
+			<div class="rank-line">
+				<span class="rank-no" th:text="${bf.flight().rankNo()}">1</span>
+				<div>
+					<span class="airline" th:text="${bf.flight().airlineName()}">제주항공</span>
+					<b class="flight-no" th:text="${bf.flight().flightNo()}">7C1101</b>
+				</div>
+			</div>
+			<div class="head-right">
+				<span class="sales">판매 <b th:text="${bf.salesLabel()}">1,284</b>건</span>
+				<span class="tag" th:classappend="${bf.flight().direct()} ? 'tag--direct' : 'tag--via'" th:text="${bf.flight().typeLabel()}">직항</span>
+			</div>
+		</header>
+		<div class="flight-route">
+			<div class="point">
+				<strong th:text="${bf.flight().depLabel()}">06:30</strong>
+				<span th:text="${bf.flight().originCity() + ' ' + bf.flight().originCode()}">인천 ICN</span>
+			</div>
+			<div class="route-line" aria-hidden="true">
+				<span th:text="${bf.flight().durationLabel()}">2시간 25분</span>
+				<i></i>
+			</div>
+			<div class="point">
+				<strong th:text="${bf.flight().arrLabel()}">08:55</strong>
+				<span th:text="${bf.flight().arrivalCity() + ' ' + bf.flight().arrivalCode()}">도쿄 NRT</span>
+			</div>
+		</div>
+		<ul class="fare-chips">
+			<li th:each="f : ${bf.fares()}"><span th:text="${f.cabinLabel()}">일반석</span><strong th:text="${f.priceLabel()}">₩150,000</strong></li>
+		</ul>
+	</article>
+
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
