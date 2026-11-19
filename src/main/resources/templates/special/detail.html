@@ -33,8 +33,8 @@
 	<article class="flight-card" th:each="pf : ${detail.flights()}">
 		<header class="flight-head">
 			<div>
-				<span class="airline" th:text="${pf.flight().airlineName()}">대한항공</span>
-				<b class="flight-no" th:text="${pf.flight().flightNo()}">KE937</b>
+				<span class="airline" th:text="${pf.flight().airlineName()}">민국항공</span>
+				<b class="flight-no" th:text="${pf.flight().flightNo()}">MG937</b>
 			</div>
 			<span class="tag" th:classappend="${pf.flight().direct()} ? 'tag--direct' : 'tag--via'" th:text="${pf.flight().typeLabel()}">직항</span>
 		</header>

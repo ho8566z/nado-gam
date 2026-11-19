@@ -63,7 +63,7 @@ class DashboardQueryTest {
 	void 특별기획_상세는_항공편마다_좌석등급별_특가를_가진다() {
 		PlanDetail sapporo = travel.planDetail(2, now).orElseThrow();
 		assertThat(sapporo.flights()).hasSize(3);
-		assertThat(sapporo.flights().get(0).flight().flightNo()).isEqualTo("KE767");
+		assertThat(sapporo.flights().get(0).flight().flightNo()).isEqualTo("MG767");
 		assertThat(sapporo.flights().get(0).cabins()).extracting(c -> c.cabinClass()).containsExactly("ECONOMY", "BUSINESS");
 		// LCC 는 일반석만
 		assertThat(sapporo.flights().get(1).cabins()).extracting(c -> c.cabinClass()).containsExactly("ECONOMY");
@@ -78,7 +78,7 @@ class DashboardQueryTest {
 	void 베스트셀러_상세는_순위순이고_좌석등급별_가격이_있다() {
 		BestDetail tokyo = travel.bestDetail(9).orElseThrow();
 		assertThat(tokyo.flights()).extracting(f -> f.flight().rankNo()).containsExactly(1, 2, 3, 4, 5);
-		assertThat(tokyo.flights().get(0).flight().flightNo()).isEqualTo("7C1101");
+		assertThat(tokyo.flights().get(0).flight().flightNo()).isEqualTo("HR1101");
 		assertThat(tokyo.flights().get(0).fares()).extracting(f -> f.cabinClass()).containsExactly("ECONOMY");
 		assertThat(tokyo.flights().get(0).fares().get(0).price()).isEqualTo(150000);
 		assertThat(travel.bestDetail(1)).isEmpty(); // 파리는 베스트셀러가 아니다

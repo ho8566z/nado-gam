@@ -152,7 +152,7 @@ class SeedDataTest {
 	}
 
 	@Test
-	void 좌석등급_가격은_저비용은_일반석만이고_일등석은_두바이_상파울루_에미레이트뿐이다() {
+	void 좌석등급_가격은_저비용은_일반석만이고_일등석은_두바이_상파울루_오아시스뿐이다() {
 		assertThat(count("""
 			SELECT COUNT(*) FROM flight_fare ff JOIN flight f ON f.flight_id = ff.flight_id JOIN airline a ON a.airline_code = f.airline_code
 			WHERE a.carrier_type = 'LCC' AND ff.cabin_class <> 'ECONOMY'
