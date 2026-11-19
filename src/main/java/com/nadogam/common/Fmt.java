@@ -35,6 +35,19 @@ public final class Fmt {
 		return value != null && value.matches("#[0-9a-fA-F]{6}") ? value : fallback;
 	}
 
+	public static String region(String region) {
+		return switch (region) {
+			case "EUROPE" -> "유럽";
+			case "ASIA" -> "아시아";
+			case "NORTH_AMERICA" -> "북미";
+			case "SOUTH_AMERICA" -> "남미";
+			case "MIDDLE_EAST" -> "중동";
+			case "AFRICA" -> "아프리카";
+			case "OCEANIA" -> "오세아니아";
+			default -> region;
+		};
+	}
+
 	public static String cabin(String cabinClass) {
 		return switch (cabinClass) {
 			case "ECONOMY" -> "일반석";

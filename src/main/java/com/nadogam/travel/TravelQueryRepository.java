@@ -132,7 +132,7 @@ public class TravelQueryRepository {
 
 	// ---------- 공통 ----------
 
-	private Map<Long, FlightInfo> flightInfos(Collection<Long> ids) {
+	public Map<Long, FlightInfo> flightInfos(Collection<Long> ids) {
 		Map<Long, FlightInfo> map = new LinkedHashMap<>();
 		if (ids.isEmpty()) {
 			return map;
@@ -141,7 +141,7 @@ public class TravelQueryRepository {
 		return map;
 	}
 
-	private Map<Long, List<FarePrice>> fares(Collection<Long> ids) {
+	public Map<Long, List<FarePrice>> fares(Collection<Long> ids) {
 		Map<Long, List<FarePrice>> map = new LinkedHashMap<>();
 		if (ids.isEmpty()) {
 			return map;
