@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nadogam.travel.BestCard;
@@ -30,5 +32,17 @@ public class GlobeController {
 		travel.activePlans(LocalDateTime.now()).stream().map(PlanCard::destinationId).forEach(featured::add);
 		travel.bestsellers(3).stream().map(BestCard::destinationId).forEach(featured::add);
 		return globeRepository.routesFromIncheon(featured);
+	}
+
+	// 해외 여행 화면: 여행지(와 출발지)의 모든 항공편 경로
+	@GetMapping("/api/travel/routes")
+	public List<FlightRoute> destinationRoutes(@RequestParam long destinationId, @RequestParam(required = false) String origin) {
+		return globeRepository.routesOfDestination(destinationId, origin == null || origin.isBlank() ? null : origin);
+	}
+
+	// 항공편 상세 화면: 한 편의 경로(목록 1개)
+	@GetMapping("/api/travel/flights/{flightId}/route")
+	public List<FlightRoute> flightRoute(@PathVariable long flightId) {
+		return globeRepository.routeOfFlight(flightId);
 	}
 }
