@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${detail.flight().flightNo() + ' 항공편'})}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('travel')}"></header>
+<main class="page">
+
+	<a class="back" data-transition
+		th:href="@{/travel/{id}(id=${detail.destinationId()},origin=${detail.flight().originCode()})}"
+		th:text="'← ' + ${detail.flight().originCity()} + ' → ' + ${detail.destinationName()} + ' 항공편 목록'">← 목록</a>
+
+	<section class="flight-hero">
+		<div class="poster-tags">
+			<span class="tag" th:classappend="${detail.flight().direct()} ? 'tag--direct' : 'tag--via'" th:text="${detail.flight().typeLabel()}">직항</span>
+			<span class="badge badge--ghost" th:text="${detail.operatingLabel()}">매일 운항</span>
+		</div>
+		<p class="flight-hero-airline"><span th:text="${detail.flight().airlineName()}">민국항공</span> <b th:text="${detail.flight().flightNo()}">MG901</b></p>
+		<div class="flight-route flight-route--big">
+			<div class="point">
+				<strong th:text="${detail.flight().depLabel()}">11:00</strong>
+				<span th:text="${detail.flight().originCity() + ' ' + detail.flight().originCode()}">인천 ICN</span>
+			</div>
+			<div class="route-line" aria-hidden="true">
+				<span th:text="${detail.flight().durationLabel()}">14시간 20분</span>
+				<i></i>
+			</div>
+			<div class="point">
+				<strong th:text="${detail.flight().arrLabel()}">17:20</strong>
+				<span th:text="${detail.flight().arrivalCity() + ' ' + detail.flight().arrivalCode()}">파리 CDG</span>
+			</div>
+		</div>
+		<p class="muted small">출발·도착 시각은 각 도시의 현지 시각(표준시 기준)입니다.</p>
+	</section>
+
+	<div class="travel-layout">
+		<aside class="globe-panel" aria-label="비행 경로 지구본">
+			<div id="travel-globe" class="travel-globe"
+				th:attr="data-routes-url=@{/api/travel/flights/{id}/route(id=${detail.flight().flightId()})}"></div>
+			<p class="globe-caption">출발지에서 도착지까지의 실제 비행 경로예요.</p>
+		</aside>
+
+		<section class="travel-main">
+
+			<h2 class="section-title section-title--flat">비행 구간</h2>
+			<ol class="timeline">
+				<li th:each="s : ${detail.segments()}">
+					<div class="timeline-seg">
+						<span class="timeline-no" th:text="${s.seq()}">1</span>
+						<div>
+							<strong><span th:text="${s.fromCity()}">인천</span> <small th:text="${s.fromAirport()}">ICN</small>
+								→ <span th:text="${s.toCity()}">파리</span> <small th:text="${s.toAirport()}">CDG</small></strong>
+							<span class="muted" th:text="'비행 ' + ${s.durationLabel()}">비행 14시간</span>
+						</div>
+					</div>
+					<div class="timeline-layover" th:if="${s.hasLayover()}">
+						<span th:text="${s.toCity()} + ' 환승 대기 ' + ${s.layoverLabel()}">환승 대기</span>
+					</div>
+				</li>
+			</ol>
+
+			<h2 class="section-title section-title--flat">항공편 정보</h2>
+			<dl class="spec-grid">
+				<div><dt>기종</dt><dd th:text="${detail.aircraft()}">B777-300ER</dd></div>
+				<div><dt>수하물</dt><dd th:text="${detail.baggageLabel()}">위탁 수하물 23kg</dd></div>
+				<div><dt>기내식</dt><dd th:text="${detail.mealLabel()}">기내식 제공</dd></div>
+				<div><dt>운항 요일</dt><dd th:text="${detail.operatingLabel()}">매일 운항</dd></div>
+			</dl>
+
+			<h2 class="section-title section-title--flat">좌석 등급별 요금</h2>
+			<div class="table-wrap">
+				<table class="fare-table fare-table--detail">
+					<thead>
+						<tr><th>좌석 등급</th><th>총 요금</th><th>운임 + 세금·유류할증료</th><th>잔여 좌석</th><th>환불</th><th>변경 수수료</th><th>마일리지</th></tr>
+					</thead>
+					<tbody>
+						<tr th:each="f : ${detail.fares()}">
+							<td><b th:text="${f.cabinLabel()}">일반석</b></td>
+							<td><strong class="sale" th:text="${f.totalLabel()}">₩890,000</strong></td>
+							<td class="muted"><span th:text="${f.baseLabel()}">₩830,000</span> + <span th:text="${f.taxLabel()}">₩60,000</span></td>
+							<td>
+								<span th:classappend="${f.scarce()} ? 'scarce'" th:text="${f.seatsLeft()} + '석'">120석</span>
+								<small class="muted" th:text="'/ ' + ${f.seatsTotal()}">/ 180</small>
+							</td>
+							<td th:text="${f.refundLabel()}">가능</td>
+							<td th:text="${f.changeFeeLabel()}">₩100,000</td>
+							<td th:text="${f.mileageLabel()}">100%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="muted small">요금은 편도 성인 1인 기준이며, 예약·결제 기능은 다음 단계에서 제공됩니다.</p>
+		</section>
+	</div>
+
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+<script src="https://cdn.jsdelivr.net/npm/globe.gl@2/dist/globe.gl.min.js"></script>
+<script th:src="@{/js/globe-utils.js}"></script>
+<script th:src="@{/js/travel-globe.js}"></script>
+</body>
+</html>

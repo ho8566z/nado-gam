@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${destination.nameKo() + ' 항공편'})}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('travel')}"></header>
+<main class="page">
+
+	<a class="back" th:href="@{/travel}" data-transition>← 여행지 선택</a>
+
+	<section class="detail-hero travel-hero" th:style="|--c1:${destination.from()};--c2:${destination.to()}|">
+		<span class="poster-bgtext" aria-hidden="true" th:text="${destination.nameEn().toUpperCase()}">PARIS</span>
+		<div class="detail-hero-body">
+			<div class="poster-tags">
+				<span class="badge badge--ghost" th:text="${destination.regionLabel()}">유럽</span>
+				<span class="badge badge--off" th:unless="${destination.available()}">운항 불가</span>
+			</div>
+			<p class="poster-kicker"><span th:text="${destination.nameEn()}">Paris</span> · <span th:text="${destination.countryName()}">프랑스</span></p>
+			<h1 th:text="${destination.nameKo()}">파리</h1>
+			<p class="poster-sub" th:text="${destination.summary()}">소개</p>
+		</div>
+		<div class="detail-hero-side" th:if="${destination.available()}">
+			<span class="price-note">일반석 최저가</span>
+			<strong class="price-now"><span th:text="${destination.minPriceLabel()}">₩690,000</span><small>~</small></strong>
+			<span class="price-note">편도 · 성인 1인 · 항공편 <span th:text="${destination.flightCount()}">3</span>편</span>
+		</div>
+	</section>
+
+	<!-- 운항 불가 여행지 -->
+	<section class="notice notice--off" th:unless="${destination.available()}">
+		<h2>지금은 갈 수 없는 여행지예요</h2>
+		<p th:text="${destination.unavailableReason()}">사유</p>
+		<a class="button" th:href="@{/travel}" data-transition>다른 여행지 고르기</a>
+	</section>
+
+	<th:block th:if="${destination.available()}"
+		th:with="routesUrl=${selected != null} ? @{/api/travel/routes(destinationId=${destination.destinationId()},origin=${selected.airportCode()})} : @{/api/travel/routes(destinationId=${destination.destinationId()})}">
+
+		<ol class="steps steps--inline" aria-label="예약 단계">
+			<li class="is-done"><b>✓</b> 여행지 선택</li>
+			<li th:classappend="${selected == null} ? 'is-current' : 'is-done'"><b th:text="${selected == null} ? '2' : '✓'">2</b> 출발지 선택</li>
+			<li th:classappend="${selected != null} ? 'is-current'"><b>3</b> 직항·경유 선택</li>
+		</ol>
+
+		<div class="travel-layout">
+			<aside class="globe-panel" aria-label="비행 경로 지구본">
+				<div id="travel-globe" class="travel-globe" th:attr="data-routes-url=${routesUrl}"></div>
+				<p class="globe-caption" th:if="${selected == null}">출발지에 마우스를 올리면 그곳에서 출발하는 경로가 지구본에 표시돼요.</p>
+				<p class="globe-caption" th:if="${selected != null}">항공편에 마우스를 올리면 경로와 경유지가 지구본에 표시돼요.</p>
+			</aside>
+
+			<section class="travel-main">
+
+				<!-- 2단계: 출발지 선택 -->
+				<div th:if="${selected == null}">
+					<h2 class="section-title section-title--flat">어디에서 출발하시나요?</h2>
+					<p class="muted" th:text="${destination.nameKo()} + '행 항공편이 있는 출발지만 보여드려요.'">설명</p>
+					<div class="origin-grid">
+						<a class="origin-card" data-transition data-origin-code th:each="o : ${origins}"
+							th:attr="data-origin-code=${o.airportCode()}"
+							th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${o.airportCode()})}">
+							<span class="origin-code" th:text="${o.airportCode()}">ICN</span>
+							<strong th:text="${o.cityName()}">인천</strong>
+							<span class="origin-airport" th:text="${o.airportName()}">인천국제공항</span>
+							<span class="origin-meta">항공편 <b th:text="${o.flightCount()}">3</b>편 · <b th:text="${o.minPriceLabel()}">₩690,000</b>~</span>
+							<span class="cta cta--sm">선택 <i aria-hidden="true">→</i></span>
+						</a>
+					</div>
+				</div>
+
+				<!-- 3단계: 직항/경유 선택과 항공편 목록 -->
+				<div th:if="${selected != null}">
+					<div class="route-head">
+						<h2 class="route-title">
+							<span th:text="${selected.cityName()}">인천</span> <small th:text="${selected.airportCode()}">ICN</small>
+							<i aria-hidden="true">→</i>
+							<span th:text="${destination.nameKo()}">파리</span>
+						</h2>
+						<div class="origin-switch" th:if="${#lists.size(origins) > 1}" aria-label="출발지 바꾸기">
+							<span class="muted">출발지</span>
+							<a class="chip" th:each="o : ${origins}" data-transition
+								th:classappend="${o.airportCode() == selected.airportCode()} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${o.airportCode()},type=${type},sort=${sort})}"
+								th:text="${o.cityName()}">인천</a>
+						</div>
+					</div>
+
+					<div class="filters">
+						<div class="filter-group" role="group" aria-label="직항·경유">
+							<a class="chip" th:classappend="${type == 'all'} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${selected.airportCode()},type='all',sort=${sort})}">
+								전체 <b th:text="${result.allCount()}">3</b></a>
+							<a class="chip" th:classappend="${type == 'direct'} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${selected.airportCode()},type='direct',sort=${sort})}">
+								직항 <b th:text="${result.directCount()}">2</b></a>
+							<a class="chip" th:classappend="${type == 'connecting'} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${selected.airportCode()},type='connecting',sort=${sort})}">
+								경유 <b th:text="${result.connectingCount()}">1</b></a>
+						</div>
+						<div class="filter-group" role="group" aria-label="정렬">
+							<a class="chip chip--ghost" th:classappend="${sort == 'price'} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${selected.airportCode()},type=${type},sort='price')}">가격 낮은 순</a>
+							<a class="chip chip--ghost" th:classappend="${sort == 'duration'} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${selected.airportCode()},type=${type},sort='duration')}">소요시간 짧은 순</a>
+							<a class="chip chip--ghost" th:classappend="${sort == 'departure'} ? 'is-active'"
+								th:href="@{/travel/{id}(id=${destination.destinationId()},origin=${selected.airportCode()},type=${type},sort='departure')}">출발 빠른 순</a>
+						</div>
+					</div>
+
+					<p class="empty" th:if="${#lists.isEmpty(result.flights())}">조건에 맞는 항공편이 없어요. 필터를 바꿔 보세요.</p>
+
+					<article class="flight-card option" tabindex="0" th:each="f : ${result.flights()}"
+						th:attr="data-flight-id=${f.flight().flightId()}">
+						<header class="flight-head">
+							<div>
+								<span class="airline" th:text="${f.flight().airlineName()}">민국항공</span>
+								<b class="flight-no" th:text="${f.flight().flightNo()}">MG901</b>
+							</div>
+							<span class="tag" th:classappend="${f.flight().direct()} ? 'tag--direct' : 'tag--via'" th:text="${f.flight().typeLabel()}">직항</span>
+						</header>
+						<div class="flight-route">
+							<div class="point">
+								<strong th:text="${f.flight().depLabel()}">11:00</strong>
+								<span th:text="${f.flight().originCity() + ' ' + f.flight().originCode()}">인천 ICN</span>
+							</div>
+							<div class="route-line" aria-hidden="true">
+								<span th:text="${f.flight().durationLabel()}">14시간 20분</span>
+								<i></i>
+							</div>
+							<div class="point">
+								<strong th:text="${f.flight().arrLabel()}">17:20</strong>
+								<span th:text="${f.flight().arrivalCity() + ' ' + f.flight().arrivalCode()}">파리 CDG</span>
+							</div>
+						</div>
+						<div class="option-foot">
+							<ul class="fare-chips">
+								<li th:each="fare : ${f.fares()}"><span th:text="${fare.cabinLabel()}">일반석</span><strong th:text="${fare.priceLabel()}">₩890,000</strong></li>
+							</ul>
+							<a class="cta cta--sm" data-transition th:href="@{/travel/flights/{id}(id=${f.flight().flightId()})}">상세 보기 <i aria-hidden="true">→</i></a>
+						</div>
+					</article>
+					<p class="muted small">표시 가격은 세금·유류할증료를 포함한 편도 성인 1인 기준입니다.</p>
+				</div>
+			</section>
+		</div>
+	</th:block>
+
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+<script src="https://cdn.jsdelivr.net/npm/globe.gl@2/dist/globe.gl.min.js"></script>
+<script th:src="@{/js/globe-utils.js}"></script>
+<script th:src="@{/js/travel-globe.js}"></script>
+</body>
+</html>

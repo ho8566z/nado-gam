@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('해외 여행')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('travel')}"></header>
+<main class="page">
+
+	<section class="page-title travel-title">
+		<span class="kicker">OVERSEAS TRIP</span>
+		<h1>해외 여행</h1>
+		<p>가고 싶은 여행지를 고르면, 갈 수 있는 출발지와 직항·경유 항공편을 보여드립니다.</p>
+		<ol class="steps" aria-label="예약 단계">
+			<li class="is-current"><b>1</b> 여행지 선택</li>
+			<li><b>2</b> 출발지 선택</li>
+			<li><b>3</b> 직항·경유 선택</li>
+		</ol>
+	</section>
+
+	<section class="travel-controls" aria-label="여행지 찾기">
+		<div class="tabs" role="tablist" aria-label="권역">
+			<button type="button" class="tab is-active" role="tab" aria-selected="true" data-region-tab="ALL">
+				전체 <span th:text="${#lists.size(destinations)}">50</span>
+			</button>
+			<button type="button" class="tab" role="tab" aria-selected="false"
+				th:each="r : ${regions}" th:attr="data-region-tab=${r.key}">
+				<span th:text="${regionLabels[r.key]}">유럽</span> <span th:text="${r.value}">12</span>
+			</button>
+		</div>
+		<label class="search">
+			<span class="sr-only">여행지 검색</span>
+			<input id="dest-search" type="search" placeholder="도시나 나라를 검색해 보세요 (예: 도쿄, Paris, 베트남)" autocomplete="off">
+		</label>
+	</section>
+
+	<p class="result-count"><b id="dest-count" th:text="${#lists.size(destinations)}">50</b>곳의 여행지 · 운항 가능 <span th:text="${availableCount}">49</span>곳</p>
+
+	<section class="dest-grid" aria-label="여행지 목록">
+		<th:block th:each="d : ${destinations}">
+			<a th:if="${d.available()}" class="dest-card" data-dest data-transition
+				th:href="@{/travel/{id}(id=${d.destinationId()})}"
+				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()}"
+				th:style="|--c1:${d.from()};--c2:${d.to()}|">
+				<span class="dest-bgtext" aria-hidden="true" th:text="${d.nameEn()}">PARIS</span>
+				<span class="dest-region" th:text="${d.regionLabel()}">유럽</span>
+				<div class="dest-body">
+					<h3 th:text="${d.nameKo()}">파리</h3>
+					<p class="dest-en"><span th:text="${d.nameEn()}">Paris</span> · <span th:text="${d.countryName()}">프랑스</span></p>
+					<p class="dest-summary" th:text="${d.summary()}">소개</p>
+				</div>
+				<div class="dest-foot">
+					<span class="dest-price"><small>최저가</small> <b th:text="${d.minPriceLabel()}">₩690,000</b>~</span>
+					<span class="dest-count">항공편 <b th:text="${d.flightCount()}">3</b>편</span>
+				</div>
+			</a>
+			<div th:unless="${d.available()}" class="dest-card is-disabled" data-dest aria-disabled="true"
+				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()}">
+				<span class="dest-bgtext" aria-hidden="true" th:text="${d.nameEn()}">VLADIVOSTOK</span>
+				<span class="dest-region" th:text="${d.regionLabel()}">아시아</span>
+				<div class="dest-body">
+					<h3 th:text="${d.nameKo()}">블라디보스토크</h3>
+					<p class="dest-en"><span th:text="${d.nameEn()}">Vladivostok</span> · <span th:text="${d.countryName()}">러시아</span></p>
+					<p class="dest-summary" th:text="${d.summary()}">소개</p>
+				</div>
+				<div class="dest-foot">
+					<span class="badge badge--off">운항 불가</span>
+					<span class="dest-reason" th:text="${d.unavailableReason()}">전쟁·제재로 한국발 직항 운항 중단</span>
+				</div>
+			</div>
+		</th:block>
+	</section>
+	<p id="dest-empty" class="empty" hidden>찾는 여행지가 없어요. 다른 검색어로 시도해 보세요.</p>
+
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+<script th:src="@{/js/travel-index.js}"></script>
+</body>
+</html>
