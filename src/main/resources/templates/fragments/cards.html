@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- 이달의 기획전 포스터 카드: 사진 대신 CSS 그라데이션으로 만든 포스터 -->
+<a class="poster poster--plan" data-transition
+   th:fragment="planPoster(p)"
+   th:href="@{/special/{id}(id=${p.planId()})}"
+   th:style="|--c1:${p.from()};--c2:${p.to()}|"
+   th:attr="aria-label=${p.nameKo() + ' ' + p.title()}">
+	<span class="poster-bgtext" aria-hidden="true" th:text="${p.nameEnUpper()}">ROME</span>
+	<svg class="poster-plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+	<div class="poster-body">
+		<div class="poster-tags">
+			<span class="badge badge--hot" th:text="${p.badgeText()}">최대 33% OFF</span>
+			<span class="badge badge--ghost" th:text="${p.dDayLabel()}">마감 D-42</span>
+		</div>
+		<p class="poster-kicker"><span th:text="${p.nameKo()}">로마</span> · <span th:text="${p.nameEn()}">Rome</span></p>
+		<h3 class="poster-title" th:text="${p.title()}">로마의 휴일, 지금 떠나요</h3>
+		<p class="poster-sub" th:text="${p.subtitle()}">인천→로마 항공권 최대 33% 겨울 특가</p>
+		<ul class="chips">
+			<li th:each="h : ${p.highlightList()}" th:text="${h}">콜로세움·바티칸을 하루에</li>
+		</ul>
+	</div>
+	<div class="poster-side">
+		<span class="price-old" th:text="${p.minOriginalLabel()}">₩980,000</span>
+		<strong class="price-now"><span th:text="${p.minSaleLabel()}">₩490,000</span><small>~</small></strong>
+		<span class="price-note">편도 · 성인 1인 · 항공편 <span th:text="${p.flightCount()}">3</span>편</span>
+		<span class="cta">기획전 보기 <i aria-hidden="true">→</i></span>
+	</div>
+</a>
+
+<!-- 베스트셀러 포스터 카드 -->
+<a class="poster poster--best" data-transition
+   th:fragment="bestPoster(b, rank)"
+   th:href="@{/bestseller/{id}(id=${b.destinationId()})}"
+   th:style="|--c1:${b.from()};--c2:${b.to()}|"
+   th:attr="aria-label=${rank + '위 ' + b.nameKo()}">
+	<span class="poster-bgtext" aria-hidden="true" th:text="${b.nameEnUpper()}">TOKYO</span>
+	<span class="poster-rank" aria-hidden="true" th:text="${rank}">1</span>
+	<div class="poster-body">
+		<div class="poster-tags">
+			<span class="badge badge--best"><span th:text="'BEST ' + ${rank} + '위'">BEST 1위</span></span>
+			<span class="badge badge--ghost">누적 판매 <span th:text="${b.totalSalesLabel()}">4,240</span>건</span>
+		</div>
+		<p class="poster-kicker" th:text="${b.nameEn()}">Tokyo</p>
+		<h3 class="poster-title" th:text="${b.nameKo()}">도쿄</h3>
+		<p class="poster-sub" th:text="${b.summary()}">쇼핑과 미식, 전통이 가득한 일본의 수도</p>
+	</div>
+	<div class="poster-side">
+		<span class="price-note">일반석 최저가</span>
+		<strong class="price-now"><span th:text="${b.minPriceLabel()}">₩150,000</span><small>~</small></strong>
+		<span class="price-note">편도 · 성인 1인 · 인기 항공편 <span th:text="${b.flightCount()}">5</span>편</span>
+		<span class="cta">항공편 보기 <i aria-hidden="true">→</i></span>
+	</div>
+</a>
+
+</body>
+</html>

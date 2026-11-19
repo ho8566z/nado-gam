@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${menu})}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header(${active})}"></header>
+<main class="page page--narrow">
+	<section class="soon">
+		<p class="kicker">COMING SOON</p>
+		<h1 th:text="${menu}">메뉴</h1>
+		<p>이 메뉴는 다음 단계에서 만들 예정입니다.</p>
+		<a class="button" th:href="@{/}" data-transition>메인으로 돌아가기</a>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title th:text="${title} + ' | nado_gam'">nado_gam</title>
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+	<link rel="stylesheet" th:href="@{/css/main.css}">
+	<script defer th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<header class="site-header" th:fragment="header(active)">
+	<a class="logo" th:href="@{/}" data-transition>
+		<svg class="logo-plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+		<span>nado_gam</span>
+	</a>
+	<nav aria-label="주 메뉴">
+		<a th:href="@{/account}" th:classappend="${active == 'account'} ? 'is-active'">계정</a>
+		<a th:href="@{/travel}" th:classappend="${active == 'travel'} ? 'is-active'">해외 여행</a>
+		<a th:href="@{/special}" th:classappend="${active == 'special'} ? 'is-active'">이달의 특별기획</a>
+		<a th:href="@{/bestseller}" th:classappend="${active == 'bestseller'} ? 'is-active'">베스트셀러</a>
+	</nav>
+</header>
+<footer class="site-footer" th:fragment="footer">
+	<p>nado_gam · 나도 감 — 4차 개인 프로젝트 (여행사)</p>
+	<p>모든 항공편·편명·가격은 실제 노선을 참고해 임의로 만든 가상 데이터입니다.</p>
+</footer>
+</body>
+</html>
