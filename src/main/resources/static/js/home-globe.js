@@ -6,94 +6,31 @@
 	var el = document.getElementById('globe');
 	if (!el) { return; }
 
-	var IMG = 'https://cdn.jsdelivr.net/npm/three-globe/example/img/';
-	var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	var U = window.NadoGlobe;
+	var reduce = U ? U.reduce : false;
 	var RAD = Math.PI / 180;
 
 	function fallback() {
 		el.innerHTML = '<div class="globe-fallback"><p>지구본을 불러오지 못했어요. 인터넷 연결을 확인해 주세요.</p></div>';
 	}
 
-	if (typeof Globe !== 'function') { fallback(); return; }
-
-	// ---------- 구면 보간 ----------
-	function toVec(lat, lng) {
-		var a = lat * RAD, b = lng * RAD;
-		return [Math.cos(a) * Math.cos(b), Math.cos(a) * Math.sin(b), Math.sin(a)];
-	}
-	function toLatLng(v) {
-		return [Math.asin(Math.max(-1, Math.min(1, v[2]))) / RAD, Math.atan2(v[1], v[0]) / RAD];
-	}
-	function angle(a, b) {
-		return Math.acos(Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2])));
-	}
-	function slerp(a, b, t, omega) {
-		if (omega < 1e-6) { return a; }
-		var s = Math.sin(omega), k1 = Math.sin((1 - t) * omega) / s, k2 = Math.sin(t * omega) / s;
-		return [a[0] * k1 + b[0] * k2, a[1] * k1 + b[1] * k2, a[2] * k1 + b[2] * k2];
-	}
-
-	// 경로(공항 목록)를 [lat, lng, 고도] 점 목록으로 바꾼다. 구간마다 포물선 모양으로 떠올랐다 내려온다.
-	function buildPath(points) {
-		var pts = [];
-		var total = 0;
-		for (var s = 0; s < points.length - 1; s++) {
-			var a = toVec(points[s].lat, points[s].lng), b = toVec(points[s + 1].lat, points[s + 1].lng);
-			var omega = angle(a, b);
-			total += omega;
-			var h = 0.02 + 0.075 * omega;
-			var steps = Math.max(24, Math.ceil(omega / RAD / 2));
-			for (var i = (s === 0 ? 0 : 1); i <= steps; i++) {
-				var t = i / steps;
-				var ll = toLatLng(slerp(a, b, t, omega));
-				pts.push([ll[0], ll[1], h * Math.sin(Math.PI * t)]);
-			}
-		}
-		return { pts: pts, total: total };
-	}
-
-	function lerpAngle(a, b, f) {
-		var d = ((b - a + 540) % 360) - 180; // 날짜변경선을 넘는 경우에도 짧은 쪽으로 보간
-		return a + d * f;
-	}
-	function pointAt(route, t) {
-		var n = route.pts.length - 1;
-		var f = Math.max(0, Math.min(1, t)) * n;
-		var i = Math.min(n - 1, Math.floor(f));
-		var k = f - i;
-		var p = route.pts[i], q = route.pts[i + 1];
-		return { lat: lerpAngle(p[0], q[0], k), lng: lerpAngle(p[1], q[1], k), alt: p[2] + (q[2] - p[2]) * k };
-	}
-
-	// ---------- HTML 요소 (비행기, 도시 이름) ----------
-	var PLANE_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>';
-	function makePlane() {
-		var d = document.createElement('div');
-		d.className = 'plane';
-		d.innerHTML = PLANE_SVG;
-		return d;
-	}
-	function makeLabel(text, home) {
-		var d = document.createElement('div');
-		d.className = 'city-label' + (home ? ' city-label--home' : '');
-		d.textContent = text;
-		return d;
-	}
+	if (typeof Globe !== 'function' || !U) { fallback(); return; }
 
 	function start(routes) {
 		var width = el.clientWidth || 640;
 		var height = el.clientHeight || 520;
 
 		var paths = routes.map(function (r) {
-			var built = buildPath(r.points);
+			var built = U.buildPath(r.points);
 			return { pts: built.pts, total: built.total, featured: r.featured, name: r.name, points: r.points };
 		}).filter(function (p) { return p.pts.length > 1; });
 
-		var globe = Globe()(el)
+		// 회전은 직접 제어하므로, 카메라의 '위쪽'이 고정되는 orbit 방식을 쓴다.
+		var globe = Globe({ controlType: 'orbit' })(el)
 			.width(width).height(height)
 			.backgroundColor('rgba(0,0,0,0)')
-			.globeImageUrl(IMG + 'earth-blue-marble.jpg')
-			.bumpImageUrl(IMG + 'earth-topology.png')
+			.globeImageUrl(U.IMG + 'earth-blue-marble.jpg')
+			.bumpImageUrl(U.IMG + 'earth-topology.png')
 			.showAtmosphere(true).atmosphereColor('#6ec1ff').atmosphereAltitude(0.2)
 			// 비행 경로: 흐르는 점선으로 그린다
 			.pathsData(paths)
@@ -124,9 +61,9 @@
 		// 비행기와 도시 이름은 같은 HTML 레이어에 올린다. (지구본 글자 레이어는 한글을 그리지 못한다)
 		var items = [];
 		cityList.filter(function (c) { return c.featured; }).forEach(function (c) {
-			items.push({ type: 'label', lat: c.lat, lng: c.lng, alt: 0.01, el: makeLabel(c.name, false) });
+			items.push({ type: 'label', lat: c.lat, lng: c.lng, alt: 0.01, el: U.makeLabel(c.name) });
 		});
-		items.push({ type: 'label', lat: home.lat, lng: home.lng, alt: 0.01, el: makeLabel('인천', true) });
+		items.push({ type: 'label', lat: home.lat, lng: home.lng, alt: 0.01, el: U.makeLabel('인천', 'city-label--home') });
 
 		var planes = [];
 		var PLANE_COUNT = reduce ? 0 : Math.min(7, Math.max(3, paths.length));
@@ -137,8 +74,7 @@
 			return pool[Math.floor(Math.random() * pool.length)];
 		}
 		for (var i = 0; i < PLANE_COUNT && paths.length; i++) {
-			var route = pickRoute();
-			var plane = { type: 'plane', el: makePlane(), route: route, t: -Math.random() * 0.9, lat: 0, lng: 0, alt: 0, rot: 0, hidden: true };
+			var plane = { type: 'plane', el: U.makePlane(), route: pickRoute(), t: -Math.random() * 0.9, lat: 0, lng: 0, alt: 0, rot: 0 };
 			planes.push(plane);
 			items.push(plane);
 		}
@@ -151,37 +87,85 @@
 			globe.htmlElementVisibilityModifier(function (node, visible) { node.style.opacity = visible ? '1' : '0'; });
 		}
 
-		// 카메라와 자동 회전
-		globe.pointOfView({ lat: 30, lng: 120, altitude: 2.15 }, 0);
+		// 회전은 기본 컨트롤 대신 직접 구현한다.
+		// 끌어서 돌리면 놓은 방향 그대로 관성으로 계속 돌고, 서서히 평소 속도로 안정된다.
+		// 어느 방향으로 돌려도 멈추거나 정해진 방향으로 되돌아가지 않는다.
+		var HOME_LAT = 28;             // 평소 보는 기울기(위도)
+		var pov = { lat: HOME_LAT, lng: 120, alt: 2.15 };
+		var CRUISE = reduce ? 0 : 7;   // 평소 회전 속도(도/초)
+		var dir = -1;                  // 평소 회전 방향: -1 이면 경도가 줄어드는 쪽(지표면이 오른쪽으로 흐름)
+		var spin = { lng: dir * CRUISE, lat: 0 };
+		var drag = null;
+
+		globe.pointOfView({ lat: pov.lat, lng: pov.lng, altitude: pov.alt }, 0);
 		var controls = globe.controls();
-		controls.autoRotate = !reduce;
-		controls.autoRotateSpeed = 0.55;
-		controls.enableZoom = false;
-		controls.enablePan = false;
-		controls.minPolarAngle = Math.PI * 0.25;
-		controls.maxPolarAngle = Math.PI * 0.75;
+		controls.enabled = false;      // 기본 드래그 회전은 끄고 아래에서 직접 처리한다
 		try { globe.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch (e) { /* 무시 */ }
 
-		// 비행기 이동
+		function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+		function wrapLng(v) { return ((v + 540) % 360) - 180; }
+		function degPerPx() { return 57.3 / Math.max(120, Math.min(el.clientWidth, el.clientHeight) * 0.4); }
+
+		el.addEventListener('pointerdown', function (e) {
+			if (e.pointerType === 'mouse' && e.button !== 0) { return; }
+			drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), vlng: 0, vlat: 0 };
+			try { el.setPointerCapture(e.pointerId); } catch (err) { /* 무시 */ }
+			spin.lng = 0; spin.lat = 0;   // 잡고 있는 동안은 멈춘다
+			el.classList.add('is-grabbing');
+		});
+		el.addEventListener('pointermove', function (e) {
+			if (!drag || e.pointerId !== drag.id) { return; }
+			var now = performance.now();
+			var dt = Math.max(1, now - drag.t) / 1000;
+			var dx = e.clientX - drag.x, dy = e.clientY - drag.y, k = degPerPx();
+			pov.lng = wrapLng(pov.lng - dx * k);       // 오른쪽으로 끌면 지표면이 오른쪽으로 따라온다
+			pov.lat = clamp(pov.lat + dy * k, -85, 85);
+			drag.vlng = drag.vlng * 0.6 + (-dx * k / dt) * 0.4;
+			drag.vlat = drag.vlat * 0.6 + (dy * k / dt) * 0.4;
+			drag.x = e.clientX; drag.y = e.clientY; drag.t = now;
+		});
+		function release(e) {
+			if (!drag || e.pointerId !== drag.id) { return; }
+			var still = performance.now() - drag.t > 90;   // 멈춘 채로 놓으면 관성 없이 평소 회전으로 돌아간다
+			spin.lng = still ? 0 : clamp(drag.vlng, -180, 180);
+			spin.lat = still ? 0 : clamp(drag.vlat, -90, 90);
+			if (Math.abs(spin.lng) > 4) { dir = spin.lng > 0 ? 1 : -1; }   // 돌린 방향을 새 평소 방향으로 삼는다
+			drag = null;
+			el.classList.remove('is-grabbing');
+		}
+		el.addEventListener('pointerup', release);
+		el.addEventListener('pointercancel', release);
+
+		function stepCamera(dt) {
+			if (!drag) {
+				// 관성은 평소 속도로 부드럽게 수렴하고, 세로 방향 관성은 서서히 사라진다.
+				spin.lng += (dir * CRUISE - spin.lng) * (1 - Math.exp(-dt / 1.6));
+				spin.lat *= Math.exp(-dt / 0.9);
+				pov.lng = wrapLng(pov.lng + spin.lng * dt);
+				pov.lat = clamp(pov.lat + spin.lat * dt, -85, 85);
+				if (Math.abs(pov.lat) >= 85) { spin.lat = 0; }
+				// 세로로 돌려 극점 쪽에 가 있어도, 기울기만 천천히 평소 각도로 돌아온다(회전 방향은 그대로).
+				pov.lat += (HOME_LAT - pov.lat) * (1 - Math.exp(-dt / 8));
+			}
+			globe.pointOfView({ lat: pov.lat, lng: pov.lng, altitude: pov.alt }, 0);
+		}
+
+		// 프레임 루프: 카메라 회전 → 비행기 이동
 		var last = performance.now();
 		function frame(now) {
 			var dt = Math.min(0.1, (now - last) / 1000);
 			last = now;
+			stepCamera(dt);
 			planes.forEach(function (p) {
 				var duration = 7 + p.route.total * 3.4; // 초
 				p.t += dt / duration;
 				if (p.t >= 1) { p.route = pickRoute(); p.t = -Math.random() * 0.4; }
-				if (p.t < 0) { p.hidden = true; p.el.style.display = 'none'; return; }
-				p.el.style.display = '';
-				var cur = pointAt(p.route, p.t);
-				var ahead = pointAt(p.route, Math.min(1, p.t + 0.012));
+				if (p.t < 0) { p.el.classList.add('is-off'); return; }
+				p.el.classList.remove('is-off');
+				var cur = U.pointAt(p.route, p.t);
+				var ahead = U.pointAt(p.route, Math.min(1, p.t + 0.012));
 				p.lat = cur.lat; p.lng = cur.lng; p.alt = cur.alt;
-				// 화면에서 본 진행 방향으로 아이콘을 돌린다.
-				var a = globe.getScreenCoords(cur.lat, cur.lng, cur.alt);
-				var b = globe.getScreenCoords(ahead.lat, ahead.lng, ahead.alt);
-				if (a && b && (Math.abs(b.x - a.x) + Math.abs(b.y - a.y)) > 0.05) {
-					p.rot = Math.atan2(b.y - a.y, b.x - a.x) / RAD + 90;
-				}
+				U.orient(globe, p, cur, ahead);
 				var fade = Math.min(1, p.t * 14, (1 - p.t) * 14);
 				var svg = p.el.firstChild;
 				svg.style.transform = 'rotate(' + p.rot + 'deg) scale(' + (0.65 + 0.35 * fade) + ')';
@@ -190,7 +174,7 @@
 			globe.htmlElementsData(items);
 			window.requestAnimationFrame(frame);
 		}
-		if (planes.length) { window.requestAnimationFrame(frame); }
+		window.requestAnimationFrame(frame);
 
 		// 크기 변경
 		function resize() {

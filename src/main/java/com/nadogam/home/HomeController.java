@@ -33,10 +33,4 @@ public class HomeController {
 		return "coming-soon";
 	}
 
-	@GetMapping("/travel")
-	public String travelPage(Model model) {
-		model.addAttribute("menu", "해외 여행");
-		model.addAttribute("active", "travel");
-		return "coming-soon";
-	}
 }
