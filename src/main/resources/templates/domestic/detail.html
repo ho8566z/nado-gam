@@ -32,6 +32,13 @@
 		<p class="muted">요금은 성인 편도 1인 기준의 예시 값이에요(가상 데이터).</p>
 	</section>
 
+	<section class="domestic-section" id="hotels">
+		<h2>숙소</h2>
+		<form th:replace="~{fragments/stay :: nightsForm(@{/domestic/{id}(id=${city.cityId},origin=${origin})}, ${nights})}"></form>
+		<div th:replace="~{fragments/stay :: hotelList(${hotels}, ${nights})}"></div>
+		<p class="muted">호텔 이름과 가격은 가상 데이터예요. 1박 가격과 <span th:text="${nights}">2</span>박 전체 가격(객실 1개)을 함께 보여 드려요.</p>
+	</section>
+
 	<section class="domestic-section">
 		<h2>이 도시의 투어</h2>
 		<div class="tour-grid tour-grid--inline">

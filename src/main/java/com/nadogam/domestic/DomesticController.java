@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.nadogam.stay.StayController;
+import com.nadogam.stay.StayRepository;
 import com.nadogam.tour.TourRepository;
 
 // 국내여행: 도시 목록, 도시 상세(출발지별 기차·버스·항공 이동편과 그 도시의 투어 3테마)
@@ -16,10 +18,12 @@ public class DomesticController {
 
 	private final DomesticRepository domestic;
 	private final TourRepository tours;
+	private final StayRepository stays;
 
-	public DomesticController(DomesticRepository domestic, TourRepository tours) {
+	public DomesticController(DomesticRepository domestic, TourRepository tours, StayRepository stays) {
 		this.domestic = domestic;
 		this.tours = tours;
+		this.stays = stays;
 	}
 
 	@GetMapping("/domestic")
@@ -30,7 +34,8 @@ public class DomesticController {
 	}
 
 	@GetMapping("/domestic/{id}")
-	public String detail(@PathVariable long id, @RequestParam(required = false) String origin, Model model) {
+	public String detail(@PathVariable long id, @RequestParam(required = false) String origin,
+		@RequestParam(required = false) Integer nights, Model model) {
 		DomesticCity city = domestic.city(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 		// 출발지는 서울(기본)·대전만 허용한다.
 		String selected = "DAEJEON".equals(origin) ? "DAEJEON" : "SEOUL";
@@ -38,6 +43,9 @@ public class DomesticController {
 		model.addAttribute("origin", selected);
 		model.addAttribute("transports", domestic.transports(id, selected));
 		model.addAttribute("tours", tours.cardsOfCity(id));
+		int stay = StayController.safeNights(nights, 2);
+		model.addAttribute("nights", stay);
+		model.addAttribute("hotels", stays.hotelsOfCity(id));
 		model.addAttribute("active", "domestic");
 		return "domestic/detail";
 	}
