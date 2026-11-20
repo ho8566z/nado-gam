@@ -1125,9 +1125,9 @@ INSERT INTO monthly_plan_flight (plan_id, flight_id, cabin_class, sale_price, or
 INSERT INTO monthly_plan_flight (plan_id, flight_id, cabin_class, sale_price, original_price, limited_seats, display_order) VALUES (3, 80, 'BUSINESS', 2300000, 3000000, 3, 3);
 
 -- [A] 이벤트 팝업 3개: 노출 중 1, 예정 1, 기간 지남 1 (메인은 노출 중이고 기간 안인 팝업 1개만 보여 준다)
-INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('나도 감 오픈 기념, 거코와 삐삐가 쏜다!', '11월 한 달, 이달의 특별기획 3곳을 특가로 만나 보세요. 삐삐가 뿜는 불꽃 같은 할인을 놓치지 마세요.', '/special', '2026-11-01 00:00:00', '2026-12-31 23:59:59', TRUE, 1);
-INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('겨울 방학 얼리버드 이벤트', '내년 1월 한 달간 해외 여행 예약 고객께 거코 굿즈를 드려요. (이벤트 예정)', '/travel', '2027-01-01 00:00:00', '2027-01-31 23:59:59', TRUE, 1);
-INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('가을 단풍 여행 특가 (종료)', '10월 한 달 진행했던 가을 여행 이벤트입니다.', '/bestseller', '2026-10-01 00:00:00', '2026-10-31 23:59:59', TRUE, 1);
+INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('나도 감 오픈 기념, 거코와 삐삐가 쏜다!', '이번 달, 이달의 특별기획 3곳을 특가로 만나 보세요. 삐삐가 뿜는 불꽃 같은 할인을 놓치지 마세요.', '/special', '2026-11-01 00:00:00', '2026-12-31 23:59:59', TRUE, 1);
+INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('겨울 방학 얼리버드 이벤트', '새해 첫 달 동안 해외 여행 예약 고객께 거코 굿즈를 드려요. (이벤트 예정)', '/travel', '2027-01-01 00:00:00', '2027-01-31 23:59:59', TRUE, 1);
+INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('가을 단풍 여행 특가 (종료)', '지난 가을에 진행했던 단풍 여행 이벤트입니다.', '/bestseller', '2026-10-01 00:00:00', '2026-10-31 23:59:59', TRUE, 1);
 
 -- [U] 고객문의 4개: 사용자 user 의 문의. 답변 완료 2개, 접수 2개 (관리자 admin 이 답변)
 INSERT INTO support_inquiry (member_id, category, title, content, status, answer_content, answered_by, created_at, answered_at) VALUES (1, 'FLIGHT', '위탁 수하물 규정이 궁금해요', '민국항공 MG901 일반석에서 위탁 수하물을 몇 kg까지 부칠 수 있나요? 추가 요금이 있는지도 알려 주세요.', 'ANSWERED', '안녕하세요, 나도 감입니다. MG901 일반석은 위탁 수하물 23kg 1개까지 무료입니다. 초과분은 kg당 공항 요금표 기준으로 부과돼요. 항공편 상세의 ''수하물'' 항목에서도 확인하실 수 있습니다.', 1, '2026-11-18 10:20:00', '2026-11-18 15:40:00');
