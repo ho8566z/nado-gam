@@ -25,8 +25,8 @@
 			return { pts: built.pts, total: built.total, featured: r.featured, name: r.name, points: r.points };
 		}).filter(function (p) { return p.pts.length > 1; });
 
-		// 회전은 직접 제어하므로, 카메라의 '위쪽'이 고정되는 orbit 방식을 쓴다.
-		var globe = Globe({ controlType: 'orbit' })(el)
+		// 회전은 직접 제어한다. 카메라의 '위쪽'이 고정되지 않아 어느 축으로든 돌릴 수 있도록 trackball 방식을 쓴다.
+		var globe = Globe({ controlType: 'trackball' })(el)
 			.width(width).height(height)
 			.backgroundColor('rgba(0,0,0,0)')
 			.globeImageUrl(U.IMG + 'earth-blue-marble.jpg')
@@ -87,49 +87,88 @@
 			globe.htmlElementVisibilityModifier(function (node, visible) { node.style.opacity = visible ? '1' : '0'; });
 		}
 
-		// 회전은 기본 컨트롤 대신 직접 구현한다.
-		// 끌어서 돌리면 놓은 방향 그대로 관성으로 계속 돌고, 서서히 평소 속도로 안정된다.
-		// 어느 방향으로 돌려도 멈추거나 정해진 방향으로 되돌아가지 않는다.
-		var HOME_LAT = 28;             // 평소 보는 기울기(위도)
-		var pov = { lat: HOME_LAT, lng: 120, alt: 2.15 };
-		var CRUISE = reduce ? 0 : 7;   // 평소 회전 속도(도/초)
-		var dir = -1;                  // 평소 회전 방향: -1 이면 경도가 줄어드는 쪽(지표면이 오른쪽으로 흐름)
-		var spin = { lng: dir * CRUISE, lat: 0 };
+		// 회전은 기본 컨트롤 대신 직접 구현한다. (자유 회전, 11/20 변경)
+		// 카메라를 지구 중심 기준으로 '어느 축으로든' 돌린다. 끌어서 놓으면 놓은 방향(축)으로 계속 돌고,
+		// 서서히 평소 속도로 안정된다. 세로·대각선으로 돌려도 원래 각도로 되돌아가지 않고 그 축 그대로 계속 돈다.
+		var CRUISE = reduce ? 0 : 7 * RAD;      // 평소 회전 속도(라디안/초)
+		var cruise = [0, -CRUISE, 0];           // 평소 회전 벡터(카메라 각속도). 처음에는 지구 자전축(세로)이고 지표면이 오른쪽으로 흐른다
+		var omega = cruise.slice();             // 지금 회전 벡터(방향 = 회전축, 크기 = 속도)
 		var drag = null;
 
-		globe.pointOfView({ lat: pov.lat, lng: pov.lng, altitude: pov.alt }, 0);
+		function dot(a, b) { return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]; }
+		function len(a) { return Math.sqrt(dot(a, a)); }
+		function scale(a, s) { return [a[0] * s, a[1] * s, a[2] * s]; }
+		function add(a, b) { return [a[0] + b[0], a[1] + b[1], a[2] + b[2]]; }
+		function cross(a, b) { return [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]; }
+		function norm(a) { var l = len(a) || 1; return scale(a, 1 / l); }
+		// 로드리게스 회전: v 를 단위축 ax 둘레로 ang 만큼 돌린다
+		function rotate(v, ax, ang) {
+			var c = Math.cos(ang), s = Math.sin(ang);
+			return add(add(scale(v, c), scale(cross(ax, v), s)), scale(ax, dot(ax, v) * (1 - c)));
+		}
+
+		// 처음 보는 각도(위도 28°, 경도 120°)로 카메라를 놓고, 그 위치와 '위쪽' 벡터를 직접 관리한다.
+		globe.pointOfView({ lat: 28, lng: 120, altitude: 2.15 }, 0);
+		var cam = globe.camera();
+		var pos = [cam.position.x, cam.position.y, cam.position.z];
+		var up = [cam.up.x, cam.up.y, cam.up.z];
+		var dist = len(pos);
 		var controls = globe.controls();
 		controls.enabled = false;      // 기본 드래그 회전은 끄고 아래에서 직접 처리한다
 		try { globe.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch (e) { /* 무시 */ }
 
-		function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
-		function wrapLng(v) { return ((v + 540) % 360) - 180; }
 		function degPerPx() { return 57.3 / Math.max(120, Math.min(el.clientWidth, el.clientHeight) * 0.4); }
+
+		// 카메라 방향 기준 좌표: 앞(forward) = 지구 중심 쪽, right = 화면 오른쪽
+		function frameAxes() {
+			var f = norm(scale(pos, -1));
+			var right = norm(cross(f, up));
+			return { f: f, right: right, up: cross(right, f) };
+		}
+
+		// 회전 벡터 rv(라디안)만큼 카메라를 돌린다. 오차가 쌓이지 않게 거리와 직각을 다시 맞춘다.
+		function applyRotation(rv) {
+			var ang = len(rv);
+			if (ang < 1e-9) { return; }
+			var ax = scale(rv, 1 / ang);
+			pos = rotate(pos, ax, ang);
+			up = rotate(up, ax, ang);
+			pos = scale(norm(pos), dist);
+			var f = norm(scale(pos, -1));
+			up = norm(add(up, scale(f, -dot(up, f))));
+		}
 
 		el.addEventListener('pointerdown', function (e) {
 			if (e.pointerType === 'mouse' && e.button !== 0) { return; }
-			drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), vlng: 0, vlat: 0 };
+			drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), w: [0, 0, 0] };
 			try { el.setPointerCapture(e.pointerId); } catch (err) { /* 무시 */ }
-			spin.lng = 0; spin.lat = 0;   // 잡고 있는 동안은 멈춘다
+			omega = [0, 0, 0];             // 잡고 있는 동안은 멈춘다
 			el.classList.add('is-grabbing');
 		});
 		el.addEventListener('pointermove', function (e) {
 			if (!drag || e.pointerId !== drag.id) { return; }
 			var now = performance.now();
 			var dt = Math.max(1, now - drag.t) / 1000;
-			var dx = e.clientX - drag.x, dy = e.clientY - drag.y, k = degPerPx();
-			pov.lng = wrapLng(pov.lng - dx * k);       // 오른쪽으로 끌면 지표면이 오른쪽으로 따라온다
-			pov.lat = clamp(pov.lat + dy * k, -85, 85);
-			drag.vlng = drag.vlng * 0.6 + (-dx * k / dt) * 0.4;
-			drag.vlat = drag.vlat * 0.6 + (dy * k / dt) * 0.4;
+			var dx = e.clientX - drag.x, dy = e.clientY - drag.y, k = degPerPx() * RAD;
+			var ax = frameAxes();
+			// 오른쪽/아래로 끌면 지표면이 커서를 따라온다 → 카메라는 반대로 돈다. 가로·세로가 합쳐져 어느 축이든 가능하다.
+			var rv = add(scale(ax.up, -dx * k), scale(ax.right, -dy * k));
+			applyRotation(rv);
+			drag.w = add(scale(drag.w, 0.6), scale(rv, 0.4 / dt));   // 마지막 움직임의 각속도(부드럽게)
 			drag.x = e.clientX; drag.y = e.clientY; drag.t = now;
 		});
 		function release(e) {
 			if (!drag || e.pointerId !== drag.id) { return; }
-			var still = performance.now() - drag.t > 90;   // 멈춘 채로 놓으면 관성 없이 평소 회전으로 돌아간다
-			spin.lng = still ? 0 : clamp(drag.vlng, -180, 180);
-			spin.lat = still ? 0 : clamp(drag.vlat, -90, 90);
-			if (Math.abs(spin.lng) > 4) { dir = spin.lng > 0 ? 1 : -1; }   // 돌린 방향을 새 평소 방향으로 삼는다
+			var still = performance.now() - drag.t > 90;   // 멈춘 채로 놓으면 관성 없이 이전 평소 회전으로 돌아간다
+			var w = drag.w, m = len(w);
+			if (!still && m > 4 * RAD) {
+				if (m > Math.PI) { w = scale(w, Math.PI / m); }   // 최대 180도/초
+				omega = w;
+				// 놓은 축과 방향을 새 평소 회전으로 삼는다(속도는 평소 속도로 안정).
+				if (CRUISE > 0) { cruise = scale(norm(w), CRUISE); }
+			} else {
+				omega = [0, 0, 0];
+			}
 			drag = null;
 			el.classList.remove('is-grabbing');
 		}
@@ -138,16 +177,14 @@
 
 		function stepCamera(dt) {
 			if (!drag) {
-				// 관성은 평소 속도로 부드럽게 수렴하고, 세로 방향 관성은 서서히 사라진다.
-				spin.lng += (dir * CRUISE - spin.lng) * (1 - Math.exp(-dt / 1.6));
-				spin.lat *= Math.exp(-dt / 0.9);
-				pov.lng = wrapLng(pov.lng + spin.lng * dt);
-				pov.lat = clamp(pov.lat + spin.lat * dt, -85, 85);
-				if (Math.abs(pov.lat) >= 85) { spin.lat = 0; }
-				// 세로로 돌려 극점 쪽에 가 있어도, 기울기만 천천히 평소 각도로 돌아온다(회전 방향은 그대로).
-				pov.lat += (HOME_LAT - pov.lat) * (1 - Math.exp(-dt / 8));
+				// 회전 벡터가 평소 회전 벡터로 부드럽게 수렴한다. 축(방향)은 놓은 그대로 유지된다.
+				var a = 1 - Math.exp(-dt / 1.6);
+				omega = add(omega, scale(add(cruise, scale(omega, -1)), a));
+				applyRotation(scale(omega, dt));
 			}
-			globe.pointOfView({ lat: pov.lat, lng: pov.lng, altitude: pov.alt }, 0);
+			cam.position.set(pos[0], pos[1], pos[2]);
+			cam.up.set(up[0], up[1], up[2]);
+			cam.lookAt(0, 0, 0);
 		}
 
 		// 프레임 루프: 카메라 회전 → 비행기 이동
