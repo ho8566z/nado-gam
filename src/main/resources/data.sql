@@ -1147,6 +1147,58 @@ INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, post
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('통영', '경남', 34.8544, 128.4331, '한려수도와 충무김밥, 예술가의 항구', '#15aabf', '#0b4f6c', 'AVAILABLE', 9);
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('단양', '충북', 36.9845, 128.3655, '남한강과 도담삼봉, 패러글라이딩의 고장', '#7950f2', '#3b2a8a', 'AVAILABLE', 10);
 
+-- [M] 국내 이동편 50개 (도시마다 5개: 서울 출발 3 + 대전 출발 2, 요금은 성인 편도 1인)
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'SEOUL', 'TRAIN', 'KTX 서울→신경주', '07:30:00', 130, 59800, '신경주역에서 시내버스·택시로 20분', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'SEOUL', 'TRAIN', 'SRT 수서→신경주', '09:10:00', 125, 52400, '수서역 출발, 신경주역 도착', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→경주', '08:00:00', 230, 24000, '경주 시외버스터미널 도착', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→경주', '09:00:00', 170, 17000, '대전복합터미널 출발', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'DAEJEON', 'TRAIN', 'KTX 대전→신경주(동대구 환승)', '08:20:00', 135, 31000, '동대구역에서 환승 1회', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (2, 'SEOUL', 'TRAIN', 'KTX-이음 서울→강릉', '07:40:00', 115, 27600, '청량리역 출발, 강릉역 도착', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (2, 'SEOUL', 'TRAIN', 'KTX-이음 청량리→강릉(오후)', '14:10:00', 120, 27600, '경강선, 평창·진부 경유', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (2, 'SEOUL', 'EXPRESS_BUS', '고속버스 동서울→강릉', '08:30:00', 160, 17000, '주말 정체 시 30분 이상 지연', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (2, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→강릉', '08:10:00', 220, 24000, '하루 4회 운행', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (2, 'DAEJEON', 'TRAIN', 'KTX 대전→서울(청량리 환승) 강릉', '07:50:00', 220, 41000, '서울에서 KTX-이음 환승', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (3, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→속초', '07:30:00', 160, 20000, '서울고속버스터미널 출발', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (3, 'SEOUL', 'EXPRESS_BUS', '우등 고속버스 동서울→속초', '10:00:00', 155, 28500, '우등 좌석(2열)', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (3, 'SEOUL', 'INTERCITY_BUS', '시외버스 상봉→속초', '09:00:00', 170, 19000, '상봉터미널 출발', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (3, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→속초', '08:00:00', 270, 28000, '하루 2회 운행', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (3, 'DAEJEON', 'TRAIN', 'KTX 대전→서울 후 버스 속초', '07:20:00', 290, 46000, '서울에서 속초행 버스 환승', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (4, 'SEOUL', 'TRAIN', 'KTX 서울→부산', '07:00:00', 155, 59800, '부산역 도착, 지하철 연결', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (4, 'SEOUL', 'TRAIN', 'SRT 수서→부산', '09:00:00', 150, 52600, '수서역 출발', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (4, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→부산', '08:00:00', 260, 25000, '부산종합버스터미널(노포) 도착', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (4, 'DAEJEON', 'TRAIN', 'KTX 대전→부산', '08:30:00', 90, 35000, '경부선 직행', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (4, 'DAEJEON', 'EXPRESS_BUS', '고속버스 대전→부산', '09:30:00', 170, 17500, '대전복합터미널 출발', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (5, 'SEOUL', 'FLIGHT', '국내선 김포→제주 (오전)', '07:30:00', 70, 62000, '김포공항 출발, 제주공항 도착', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (5, 'SEOUL', 'FLIGHT', '국내선 김포→제주 (낮)', '13:00:00', 70, 55000, '김포공항 출발, 제주공항 도착', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (5, 'SEOUL', 'FLIGHT', '국내선 김포→제주 (저녁)', '19:00:00', 70, 68000, '김포공항 출발, 제주공항 도착', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (5, 'DAEJEON', 'FLIGHT', '대전→청주공항 연계 제주행', '09:00:00', 170, 58000, '대전에서 청주공항까지 버스 이동 후 항공', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (5, 'DAEJEON', 'FLIGHT', '대전→김포공항 연계 제주행', '08:00:00', 220, 79000, '대전에서 KTX로 서울 이동 후 공항철도·항공', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (6, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→전주', '08:00:00', 170, 15000, '전주고속버스터미널 도착', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (6, 'SEOUL', 'TRAIN', 'KTX 용산→전주', '07:50:00', 125, 38000, 'KTX 호남선, 전주역 도착', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (6, 'SEOUL', 'INTERCITY_BUS', '시외버스 동서울→전주', '10:00:00', 180, 14000, '하루 3회 운행', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (6, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→전주', '09:00:00', 80, 8800, '30분 간격 운행', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (6, 'DAEJEON', 'TRAIN', '무궁화호 대전→익산 환승 전주', '10:30:00', 110, 9500, '익산역에서 환승 1회', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (7, 'SEOUL', 'TRAIN', 'KTX 용산→여수엑스포', '07:10:00', 180, 51000, '여수엑스포역 도착', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (7, 'SEOUL', 'TRAIN', 'SRT 수서→여수엑스포', '08:40:00', 175, 47000, '수서역 출발', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (7, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→여수', '08:00:00', 270, 28000, '여수종합버스터미널 도착', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (7, 'DAEJEON', 'TRAIN', 'KTX 대전→여수엑스포(익산 환승)', '08:00:00', 160, 35000, '익산역에서 환승 1회', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (7, 'DAEJEON', 'EXPRESS_BUS', '고속버스 대전→여수', '10:00:00', 180, 20000, '하루 6회 운행', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (8, 'SEOUL', 'TRAIN', 'KTX 용산→순천', '07:10:00', 170, 46000, '순천역 도착, 국가정원행 버스 연결', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (8, 'SEOUL', 'TRAIN', 'SRT 수서→순천', '09:30:00', 165, 43000, '수서역 출발', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (8, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→순천', '08:30:00', 240, 24000, '순천종합버스터미널 도착', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (8, 'DAEJEON', 'TRAIN', 'KTX 대전→순천(익산 환승)', '08:10:00', 120, 30000, '익산역에서 환승 1회', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (8, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→순천', '09:20:00', 170, 16000, '하루 5회 운행', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (9, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→통영', '08:00:00', 240, 26000, '통영종합버스터미널 도착', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (9, 'SEOUL', 'EXPRESS_BUS', '우등 고속버스 서울→통영', '10:30:00', 235, 36500, '우등 좌석(2열)', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (9, 'SEOUL', 'TRAIN', 'KTX 서울→진주 후 버스 통영', '07:20:00', 260, 58000, '진주역에서 시외버스 환승', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (9, 'DAEJEON', 'EXPRESS_BUS', '고속버스 대전→통영', '09:00:00', 150, 14000, '대전복합터미널 출발', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (9, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→통영', '11:00:00', 160, 13500, '하루 8회 운행', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'SEOUL', 'INTERCITY_BUS', '시외버스 동서울→단양', '08:20:00', 160, 15000, '단양버스터미널 도착', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'SEOUL', 'TRAIN', 'ITX-마음 청량리→단양', '07:30:00', 130, 17000, '단양역에서 시내 이동 10분', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'SEOUL', 'EXPRESS_BUS', '우등 버스 서울→단양', '09:30:00', 150, 22000, '우등 좌석(2열)', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→단양', '09:00:00', 180, 14000, '청주 경유 하루 3회', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'DAEJEON', 'TRAIN', 'KTX 대전→오송 환승 단양', '08:00:00', 140, 25000, '오송역에서 시외버스 환승', 5);
+
 -- [M] 해외 투어: 이달의 기획 3곳·베스트셀러 3곳은 3테마 전부, 나머지는 도시를 대표하는 1테마 (블라디보스토크 제외)
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 1, NULL, 'ART_REST', '파리 예술·휴식 투어: 루브르 박물관 · 오르세 박물관', '세계 최대 규모의 미술관, 모나리자 소장. 인상주의 회화 전문 미술관.', '달무리 공연장', '루브르 박물관 — 세계 최대 규모의 미술관, 모나리자 소장
 오르세 박물관 — 인상주의 회화 전문 미술관

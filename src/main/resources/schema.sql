@@ -15,6 +15,7 @@ DROP TABLE IF EXISTS member;
 DROP TABLE IF EXISTS tour_day;
 DROP TABLE IF EXISTS tour_option;
 DROP TABLE IF EXISTS tour;
+DROP TABLE IF EXISTS domestic_transport;
 DROP TABLE IF EXISTS domestic_city;
 DROP TABLE IF EXISTS support_inquiry;
 DROP TABLE IF EXISTS popup_event;
@@ -273,6 +274,21 @@ CREATE TABLE domestic_city (
     sort_order         INT           NOT NULL DEFAULT 0,
     PRIMARY KEY (city_id),
     CONSTRAINT uq_domestic_city_name UNIQUE (name_ko)
+);
+
+CREATE TABLE domestic_transport (
+    transport_id      BIGINT        NOT NULL AUTO_INCREMENT,
+    city_id           BIGINT        NOT NULL,
+    origin            VARCHAR(10)   NOT NULL,
+    mode              VARCHAR(15)   NOT NULL,
+    name              VARCHAR(60)   NOT NULL,
+    depart_time       TIME          NOT NULL,
+    duration_minutes  INT           NOT NULL,
+    fare              INT           NOT NULL,
+    note              VARCHAR(200)  NULL,
+    sort_order        INT           NOT NULL DEFAULT 0,
+    PRIMARY KEY (transport_id),
+    CONSTRAINT fk_transport_city FOREIGN KEY (city_id) REFERENCES domestic_city (city_id)
 );
 
 CREATE TABLE tour (
