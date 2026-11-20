@@ -12,6 +12,10 @@ DROP TABLE IF EXISTS destination;
 DROP TABLE IF EXISTS airport;
 DROP TABLE IF EXISTS country;
 DROP TABLE IF EXISTS member;
+DROP TABLE IF EXISTS tour_day;
+DROP TABLE IF EXISTS tour_option;
+DROP TABLE IF EXISTS tour;
+DROP TABLE IF EXISTS domestic_city;
 DROP TABLE IF EXISTS support_inquiry;
 DROP TABLE IF EXISTS popup_event;
 DROP TABLE IF EXISTS admin_audit_log;
@@ -251,4 +255,68 @@ CREATE TABLE monthly_plan_flight (
     PRIMARY KEY (plan_id, flight_id, cabin_class),
     CONSTRAINT fk_planflight_plan FOREIGN KEY (plan_id) REFERENCES monthly_plan (plan_id),
     CONSTRAINT fk_planflight_flight FOREIGN KEY (flight_id) REFERENCES flight (flight_id)
+);
+
+-- ============================================================
+-- [M] 국내여행·투어 (11/20 추가)
+-- ============================================================
+CREATE TABLE domestic_city (
+    city_id            BIGINT        NOT NULL AUTO_INCREMENT,
+    name_ko            VARCHAR(30)   NOT NULL,
+    province           VARCHAR(20)   NOT NULL,
+    latitude           DECIMAL(9,6)  NOT NULL,
+    longitude          DECIMAL(9,6)  NOT NULL,
+    summary            VARCHAR(300)  NOT NULL,
+    poster_color_from  CHAR(7)       NULL,
+    poster_color_to    CHAR(7)       NULL,
+    status             VARCHAR(15)   NOT NULL DEFAULT 'AVAILABLE',
+    sort_order         INT           NOT NULL DEFAULT 0,
+    PRIMARY KEY (city_id),
+    CONSTRAINT uq_domestic_city_name UNIQUE (name_ko)
+);
+
+CREATE TABLE tour (
+    tour_id         BIGINT        NOT NULL AUTO_INCREMENT,
+    scope           VARCHAR(10)   NOT NULL,
+    destination_id  BIGINT        NULL,
+    city_id         BIGINT        NULL,
+    theme           VARCHAR(20)   NOT NULL,
+    title           VARCHAR(100)  NOT NULL,
+    subtitle        VARCHAR(200)  NOT NULL,
+    collab_brand    VARCHAR(50)   NULL,
+    highlights      VARCHAR(500)  NOT NULL,
+    includes        VARCHAR(500)  NOT NULL,
+    excludes        VARCHAR(500)  NOT NULL,
+    source_note     VARCHAR(200)  NULL,
+    status          VARCHAR(10)   NOT NULL DEFAULT 'ON_SALE',
+    sort_order      INT           NOT NULL DEFAULT 0,
+    PRIMARY KEY (tour_id),
+    CONSTRAINT fk_tour_destination FOREIGN KEY (destination_id) REFERENCES destination (destination_id),
+    CONSTRAINT fk_tour_city FOREIGN KEY (city_id) REFERENCES domestic_city (city_id),
+    CONSTRAINT uq_tour_destination_theme UNIQUE (destination_id, theme),
+    CONSTRAINT uq_tour_city_theme UNIQUE (city_id, theme)
+);
+
+CREATE TABLE tour_option (
+    option_id         BIGINT   NOT NULL AUTO_INCREMENT,
+    tour_id           BIGINT   NOT NULL,
+    nights            TINYINT  NOT NULL,
+    days              TINYINT  NOT NULL,
+    price_per_person  INT      NOT NULL,
+    min_people        TINYINT  NOT NULL DEFAULT 2,
+    max_people        TINYINT  NOT NULL DEFAULT 20,
+    PRIMARY KEY (option_id),
+    CONSTRAINT fk_option_tour FOREIGN KEY (tour_id) REFERENCES tour (tour_id),
+    CONSTRAINT uq_option_tour_nights UNIQUE (tour_id, nights)
+);
+
+CREATE TABLE tour_day (
+    tour_day_id  BIGINT        NOT NULL AUTO_INCREMENT,
+    option_id    BIGINT        NOT NULL,
+    day_no       TINYINT       NOT NULL,
+    title        VARCHAR(100)  NOT NULL,
+    description  VARCHAR(500)  NOT NULL,
+    PRIMARY KEY (tour_day_id),
+    CONSTRAINT fk_day_option FOREIGN KEY (option_id) REFERENCES tour_option (option_id),
+    CONSTRAINT uq_day_option_no UNIQUE (option_id, day_no)
 );
