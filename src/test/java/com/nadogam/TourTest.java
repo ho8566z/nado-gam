@@ -169,6 +169,18 @@ class TourTest {
 	}
 
 	@Test
+	void 해외_투어_상세는_인천_출발_노선을_보여_주고_국내_투어는_보여_주지_않는다() throws Exception {
+		Long overseas = jdbc.queryForObject("SELECT t.tour_id FROM tour t JOIN destination d ON d.destination_id = t.destination_id WHERE d.name_ko = '로마' AND t.theme = 'FOOD_DRINK'", Long.class);
+		mvc.perform(get("/tour/" + overseas)).andExpect(status().isOk())
+			.andExpect(content().string(Matchers.containsString("tour-route")))
+			.andExpect(content().string(Matchers.containsString("ICN · 출발")))
+			.andExpect(content().string(Matchers.containsString("인천 출발 투어")));
+		Long domestic = jdbc.queryForObject("SELECT tour_id FROM tour WHERE scope = 'DOMESTIC' ORDER BY tour_id LIMIT 1", Long.class);
+		mvc.perform(get("/tour/" + domestic)).andExpect(status().isOk())
+			.andExpect(content().string(Matchers.not(Matchers.containsString("tour-route"))));
+	}
+
+	@Test
 	void 상단_메뉴와_하단_탭_바에_투어가_있다() throws Exception {
 		mvc.perform(get("/")).andExpect(status().isOk())
 			.andExpect(content().string(Matchers.containsString("data-tab=\"/tour\"")))

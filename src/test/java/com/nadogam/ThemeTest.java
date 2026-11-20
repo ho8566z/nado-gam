@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-// 오렌지 테마와 마스코트(거코·삐삐): 로고·빈 화면에 마스코트가 들어가고, 포인트 색이 오렌지다.
+// 오렌지 테마와 마스코트(거코): 로고 옆에는 없고 빈 화면 등에 들어가며, 포인트 색이 오렌지다.
 @SpringBootTest
 class ThemeTest {
 
@@ -46,10 +46,10 @@ class ThemeTest {
 	}
 
 	@Test
-	void 상단_로고에_마스코트가_들어간다() throws Exception {
+	void 상단_로고_옆에는_마스코트가_없고_글자만_있다() throws Exception {
 		mvc.perform(get("/")).andExpect(status().isOk())
-			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot--logo")))
-			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-flame")))
+			.andExpect(content().string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("mascot--logo"))))
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("<span>nado_gam</span>")))
 			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot.css")));
 	}
 
@@ -71,17 +71,51 @@ class ThemeTest {
 	}
 
 	@Test
-	void 마스코트는_삐삐가_거코_머리를_움켜잡고_날개짓하는_모습이다() throws Exception {
-		mvc.perform(get("/")).andExpect(status().isOk())
-			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-wing")))
-			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-hang")))
-			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-flame--wing")));
-		assertThat(css("mascot.css")).contains("@keyframes flap").contains("@keyframes hang");
+	void 마스코트는_거코가_프로펠러_비행기를_탄_모습이고_불병아리는_없다() throws Exception {
+		mvc.perform(get("/travel")).andExpect(status().isOk())
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-prop")))
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-rider")))
+			.andExpect(content().string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("mascot-wing"))))
+			.andExpect(content().string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("mascot-flame"))));
+		assertThat(css("mascot.css")).contains("@keyframes prop").contains("@keyframes scarf").doesNotContain("@keyframes flap");
+	}
+
+	@Test
+	void 항공편_경로는_원래_비행기_아이콘을_쓴다() throws Exception {
+		assertThat(css("main.css")).contains("content: \"✈\"").doesNotContain("geoko-plane");
+		String utils = new String(new ClassPathResource("static/js/globe-utils.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+		String travel = new String(new ClassPathResource("static/js/travel-globe.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+		assertThat(utils).doesNotContain("makeMascotPlane");
+		assertThat(travel).contains("U.makePlane()");
+	}
+
+	@Test
+	void 상단_메뉴는_홈_특별전_베스트셀러_투어_해외_국내_계정_고객문의_순서다() throws Exception {
+		String html = mvc.perform(get("/")).andReturn().getResponse().getContentAsString();
+		String nav = html.substring(html.indexOf("<nav aria-label=\"주 메뉴\">"), html.indexOf("</nav>"));
+		int last = -1;
+		for (String label : new String[] { ">홈<", ">이달의 특별전<", ">베스트셀러<", ">투어<", ">해외여행<", ">국내여행<", ">계정<", ">고객문의<", ">로그인<", ">회원가입<" }) {
+			int at = nav.indexOf(label);
+			assertThat(at).as(label).isGreaterThan(last);
+			last = at;
+		}
+		assertThat(nav).doesNotContain("특별기획");
+	}
+
+	@Test
+	void 거코_이름_글자는_오렌지색으로_칠한다() throws Exception {
+		String js = new String(new ClassPathResource("static/js/common.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+		assertThat(js).contains("var NAME = '거코'").contains("name-geoko");
+		assertThat(css("mascot.css")).contains(".name-geoko { color: var(--accent)");
+		String html = mvc.perform(get("/travel")).andReturn().getResponse().getContentAsString();
+		assertThat(html).contains("#98a3bb").doesNotContain("#ff9a3c");
 	}
 
 	@Test
 	void 메인_지구본은_어느_축으로든_자유_회전하고_원래_각도로_되돌리지_않는다() throws Exception {
 		String js = new String(new ClassPathResource("static/js/home-globe.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
-		assertThat(js).contains("controlType: 'trackball'").contains("function applyRotation").doesNotContain("HOME_LAT");
+		assertThat(js).contains("controlType: 'trackball'").contains("function applyRotation").doesNotContain("HOME_LAT")
+			.contains("omega = cruise.slice()")
+			.contains("CRUISE = reduce ? 0 : 45 * RAD").contains("FLICK_MAX = 1200 * RAD").contains("FLICK_SECONDS = 5").doesNotContain("omega = [0, 0, 0];             // 잡고");
 	}
 }

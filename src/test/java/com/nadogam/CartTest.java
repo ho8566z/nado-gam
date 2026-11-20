@@ -250,7 +250,12 @@ class CartTest {
 			.andExpect(content().string(Matchers.containsString("value=\"HOTEL\"")));
 		mvc.perform(get("/travel/" + rome + "/cruise")).andExpect(status().isOk())
 			.andExpect(content().string(Matchers.containsString("value=\"CRUISE\"")));
+		// 상단 메뉴에는 장바구니·내 예약이 없고(계정 자리가 'user님'), 계정 화면에서 이동한다
 		mvc.perform(get("/").session(user())).andExpect(status().isOk())
+			.andExpect(content().string(Matchers.containsString(">user님</a>")))
+			.andExpect(content().string(Matchers.containsString(">로그아웃</button>")))
+			.andExpect(content().string(Matchers.not(Matchers.containsString(">계정</a>"))));
+		mvc.perform(get("/account").session(user())).andExpect(status().isOk())
 			.andExpect(content().string(Matchers.containsString(">장바구니</a>")))
 			.andExpect(content().string(Matchers.containsString(">내 예약</a>")));
 	}
