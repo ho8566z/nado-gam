@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('고객문의 관리')}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('inquiries')}"></aside>
+	<main class="admin-main">
+		<h1>고객문의 관리</h1>
+		<div class="filter-tabs" role="tablist" aria-label="상태 필터">
+			<a class="chip chip--tab" th:classappend="${filter == null} ? 'is-active'" th:href="@{/admin/inquiries}">전체 <b th:text="${receivedCount + answeredCount}">0</b></a>
+			<a class="chip chip--tab" th:classappend="${filter == 'RECEIVED'} ? 'is-active'" th:href="@{/admin/inquiries(status=RECEIVED)}">답변 대기 <b th:text="${receivedCount}">0</b></a>
+			<a class="chip chip--tab" th:classappend="${filter == 'ANSWERED'} ? 'is-active'" th:href="@{/admin/inquiries(status=ANSWERED)}">답변 완료 <b th:text="${answeredCount}">0</b></a>
+		</div>
+		<p class="empty" th:if="${#lists.isEmpty(inquiries)}">해당하는 문의가 없습니다.</p>
+		<div class="table-wrap" th:unless="${#lists.isEmpty(inquiries)}">
+			<table class="table">
+				<thead>
+					<tr><th>번호</th><th>분류</th><th>제목</th><th>작성자</th><th>상태</th><th>작성일</th><th></th></tr>
+				</thead>
+				<tbody>
+					<tr th:each="q : ${inquiries}">
+						<td th:text="${q.inquiryId}">1</td>
+						<td th:text="${q.categoryLabel}">항공</td>
+						<td class="cell-wrap" th:text="${q.title}">제목</td>
+						<td th:text="${names[q.memberId]} ?: '-'">user</td>
+						<td><span class="badge" th:classappend="${q.answered} ? 'badge--ACTIVE'" th:text="${q.statusLabel}">접수</span></td>
+						<td th:text="${#temporals.format(q.createdAt, 'yyyy-MM-dd HH:mm')}">2026-11-20</td>
+						<td><a class="link-sm" th:href="@{/admin/inquiries/{id}(id=${q.inquiryId})}" th:text="${q.answered} ? '보기' : '답변하기'">답변하기</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</main>
+</div>
+</body>
+</html>

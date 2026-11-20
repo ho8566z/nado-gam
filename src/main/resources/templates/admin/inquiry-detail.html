@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('문의 답변')}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('inquiries')}"></aside>
+	<main class="admin-main">
+		<div class="admin-head">
+			<h1>문의 답변</h1>
+			<a class="button button--sm button--ghost" th:href="@{/admin/inquiries}">목록</a>
+		</div>
+		<div class="alert alert--ok" th:if="${param.answered}">답변을 저장했습니다.</div>
+		<div class="inquiry-top">
+			<span class="chip" th:text="${inquiry.categoryLabel}">항공</span>
+			<span class="badge" th:classappend="${inquiry.answered} ? 'badge--ACTIVE'" th:text="${inquiry.statusLabel}">접수</span>
+		</div>
+		<h2 class="qa-title" th:text="${inquiry.title}">제목</h2>
+		<p class="meta" th:text="${writer} + ' · ' + ${#temporals.format(inquiry.createdAt, 'yyyy-MM-dd HH:mm')}">user · 시각</p>
+		<div class="qa-block" th:text="${inquiry.content}">문의 내용</div>
+
+		<form class="admin-form" th:action="@{/admin/inquiries/{id}/answer(id=${inquiry.inquiryId})}" th:object="${answerForm}" method="post" novalidate>
+			<label class="field"><span th:text="${inquiry.answered} ? '답변 수정' : '답변 작성'">답변 작성</span>
+				<textarea th:field="*{answer}" rows="7" maxlength="2000" required></textarea>
+				<small class="error" th:if="${#fields.hasErrors('answer')}" th:errors="*{answer}"></small>
+			</label>
+			<p class="meta" th:if="${inquiry.answered}" th:text="'마지막 답변: ' + ${#temporals.format(inquiry.answeredAt, 'yyyy-MM-dd HH:mm')}">마지막 답변</p>
+			<div class="form-actions form-actions--row">
+				<button class="button" type="submit" th:text="${inquiry.answered} ? '답변 수정' : '답변 등록'">답변 등록</button>
+			</div>
+		</form>
+	</main>
+</div>
+</body>
+</html>

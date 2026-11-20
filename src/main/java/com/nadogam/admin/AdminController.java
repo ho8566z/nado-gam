@@ -32,6 +32,8 @@ public class AdminController {
 			jdbc.sql("SELECT COUNT(*) FROM member WHERE status = 'ACTIVE'").query(Long.class).single());
 		model.addAttribute("destinationCount", count("destination"));
 		model.addAttribute("flightCount", count("flight"));
+		model.addAttribute("unansweredCount",
+			jdbc.sql("SELECT COUNT(*) FROM support_inquiry WHERE status = 'RECEIVED'").query(Long.class).single());
 		model.addAttribute("menu", "dashboard");
 		return "admin/dashboard";
 	}
