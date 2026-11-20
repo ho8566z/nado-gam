@@ -2,7 +2,7 @@
 .auth-links { display: flex; align-items: center; gap: 10px; margin-left: 8px; padding-left: 14px; border-left: 1px solid var(--line); }
 .auth-links a, .auth-links button { background: none; border: 0; padding: 6px 2px; font-weight: 600; color: var(--muted); }
 .auth-links a:hover, .auth-links button:hover { color: var(--ink); }
-.auth-links .who { color: var(--accent); font-weight: 700; }
+.auth-links .who, .site-header nav a.who { color: var(--accent); font-weight: 700; }
 
 .auth-card { max-width: 440px; margin: 56px auto 0; padding: 32px clamp(20px, 5vw, 36px); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
 .auth-card h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; margin: 2px 0 6px; }

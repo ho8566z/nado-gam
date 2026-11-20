@@ -35,7 +35,7 @@ public class AdminCatalogController {
 	private static final List<Kind> KINDS = List.of(
 		new Kind("destination", "해외 여행지", "destination", "destination_id", "name_ko", "status", "AVAILABLE", "UNAVAILABLE"),
 		new Kind("city", "국내 도시", "domestic_city", "city_id", "name_ko", "status", "AVAILABLE", "UNAVAILABLE"),
-		new Kind("plan", "특별기획", "monthly_plan", "plan_id", "title", null, null, null),
+		new Kind("plan", "특별전", "monthly_plan", "plan_id", "title", null, null, null),
 		new Kind("tour", "투어", "tour", "tour_id", "title", "status", "ON_SALE", "HIDDEN"),
 		new Kind("hotel", "호텔", "hotel", "hotel_id", "name", "status", "ON_SALE", "HIDDEN"),
 		new Kind("cruise", "크루즈", "cruise", "cruise_id", "title", "status", "ON_SALE", "HIDDEN"));

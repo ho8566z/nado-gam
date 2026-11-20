@@ -5,7 +5,7 @@
 <header th:replace="~{fragments/layout :: header('special')}"></header>
 <main class="page">
 
-	<a class="back" th:href="@{/special}" data-transition>← 이달의 특별기획</a>
+	<a class="back" th:href="@{/special}" data-transition>← 이달의 특별전</a>
 
 	<section class="detail-hero" th:style="|--c1:${detail.plan().from()};--c2:${detail.plan().to()}|">
 		<span class="poster-bgtext" aria-hidden="true" th:text="${detail.plan().nameEnUpper()}">ROME</span>
