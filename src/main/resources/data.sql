@@ -1123,3 +1123,8 @@ INSERT INTO monthly_plan_flight (plan_id, flight_id, cabin_class, sale_price, or
 INSERT INTO monthly_plan_flight (plan_id, flight_id, cabin_class, sale_price, original_price, limited_seats, display_order) VALUES (3, 79, 'BUSINESS', 3360000, 4420000, 3, 2);
 INSERT INTO monthly_plan_flight (plan_id, flight_id, cabin_class, sale_price, original_price, limited_seats, display_order) VALUES (3, 80, 'ECONOMY', 920000, 1250000, 15, 3);
 INSERT INTO monthly_plan_flight (plan_id, flight_id, cabin_class, sale_price, original_price, limited_seats, display_order) VALUES (3, 80, 'BUSINESS', 2300000, 3000000, 3, 3);
+
+-- [A] 이벤트 팝업 3개: 노출 중 1, 예정 1, 기간 지남 1 (메인은 노출 중이고 기간 안인 팝업 1개만 보여 준다)
+INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('나도 감 오픈 기념, 거코와 삐삐가 쏜다!', '11월 한 달, 이달의 특별기획 3곳을 특가로 만나 보세요. 삐삐가 뿜는 불꽃 같은 할인을 놓치지 마세요.', '/special', '2026-11-01 00:00:00', '2026-12-31 23:59:59', TRUE, 1);
+INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('겨울 방학 얼리버드 이벤트', '내년 1월 한 달간 해외 여행 예약 고객께 거코 굿즈를 드려요. (이벤트 예정)', '/travel', '2027-01-01 00:00:00', '2027-01-31 23:59:59', TRUE, 1);
+INSERT INTO popup_event (title, body, qr_target_url, start_at, end_at, is_active, created_by) VALUES ('가을 단풍 여행 특가 (종료)', '10월 한 달 진행했던 가을 여행 이벤트입니다.', '/bestseller', '2026-10-01 00:00:00', '2026-10-31 23:59:59', TRUE, 1);

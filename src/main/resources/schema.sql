@@ -12,6 +12,7 @@ DROP TABLE IF EXISTS destination;
 DROP TABLE IF EXISTS airport;
 DROP TABLE IF EXISTS country;
 DROP TABLE IF EXISTS member;
+DROP TABLE IF EXISTS popup_event;
 DROP TABLE IF EXISTS admin_audit_log;
 DROP TABLE IF EXISTS admin_account;
 
@@ -44,6 +45,20 @@ CREATE TABLE admin_audit_log (
     created_at    DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (log_id),
     CONSTRAINT fk_audit_admin FOREIGN KEY (admin_id) REFERENCES admin_account (admin_id)
+);
+
+CREATE TABLE popup_event (
+    popup_id       BIGINT       NOT NULL AUTO_INCREMENT,
+    title          VARCHAR(100) NOT NULL,
+    body           VARCHAR(500) NOT NULL,
+    qr_target_url  VARCHAR(300) NULL,
+    start_at       DATETIME     NOT NULL,
+    end_at         DATETIME     NOT NULL,
+    is_active      BOOLEAN      NOT NULL DEFAULT TRUE,
+    created_by     BIGINT       NOT NULL,
+    created_at     DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (popup_id),
+    CONSTRAINT fk_popup_admin FOREIGN KEY (created_by) REFERENCES admin_account (admin_id)
 );
 
 -- ============================================================
