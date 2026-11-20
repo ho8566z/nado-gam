@@ -7,7 +7,7 @@
 	--line: rgba(255, 255, 255, 0.14);
 	--ink: #eef2ff;
 	--muted: #9aa8c7;
-	--accent: #5cc8ff;
+	--accent: #ff8a1f;
 	--gold: #ffd166;
 	--hot: #ff5d73;
 	--radius: 28px;
@@ -99,21 +99,21 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 .globe-fallback::before {
 	content: ""; width: min(60%, 320px); aspect-ratio: 1; border-radius: 50%;
 	background: radial-gradient(circle at 35% 30%, #4b8bff, #123a8f 55%, #071433);
-	box-shadow: 0 0 60px rgba(92, 200, 255, 0.35); animation: floaty 6s ease-in-out infinite;
+	box-shadow: 0 0 60px rgba(255, 138, 31, 0.35); animation: floaty 6s ease-in-out infinite;
 }
 .globe-fallback p { margin-top: 16px; }
 @keyframes floaty { 50% { transform: translateY(-10px); } }
 
 /* 지구본 위 비행기 / 도시 이름 (globe.gl 의 HTML 레이어) */
 .plane { width: 26px; height: 26px; margin: -13px 0 0 -13px; pointer-events: none; }
-.plane svg { width: 100%; height: 100%; fill: #fff; filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 14px rgba(92, 200, 255, 0.9)); transition: opacity 0.2s; }
+.plane svg { width: 100%; height: 100%; fill: #fff; filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 14px rgba(255, 138, 31, 0.9)); transition: opacity 0.2s; }
 .city-label {
 	transform: translate(-50%, -150%); white-space: nowrap; pointer-events: none;
 	padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; color: #fff;
 	background: rgba(8, 14, 30, 0.72); border: 1px solid rgba(255, 209, 102, 0.7);
 	text-shadow: 0 1px 2px #000;
 }
-.city-label--home { border-color: rgba(92, 200, 255, 0.9); }
+.city-label--home { border-color: rgba(255, 138, 31, 0.9); }
 
 /* ---------- 섹션(선반) ---------- */
 .shelf { max-width: 1160px; margin: 0 auto; padding: 56px clamp(16px, 4vw, 32px) 0; }
@@ -229,12 +229,12 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 	width: calc(100% - clamp(32px, 8vw, 64px)); margin-bottom: 16px; padding: 22px clamp(16px, 3vw, 28px);
 	border-radius: 20px; background: var(--panel); border: 1px solid var(--line); transition: transform 0.3s var(--ease), border-color 0.3s;
 }
-.flight-card:hover { transform: translateY(-2px); border-color: rgba(92, 200, 255, 0.5); }
+.flight-card:hover { transform: translateY(-2px); border-color: rgba(255, 138, 31, 0.5); }
 .flight-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .airline { color: var(--muted); font-weight: 600; margin-right: 8px; }
 .flight-no { font-size: 18px; letter-spacing: 0.04em; }
 .tag { padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; }
-.tag--direct { background: rgba(92, 200, 255, 0.16); color: var(--accent); border: 1px solid rgba(92, 200, 255, 0.45); }
+.tag--direct { background: rgba(255, 138, 31, 0.16); color: var(--accent); border: 1px solid rgba(255, 138, 31, 0.45); }
 .tag--via { background: rgba(255, 209, 102, 0.14); color: var(--gold); border: 1px solid rgba(255, 209, 102, 0.45); }
 .flight-route { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; margin: 18px 0; }
 .point strong { display: block; font-size: clamp(22px, 3vw, 30px); letter-spacing: -0.02em; }

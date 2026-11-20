@@ -31,11 +31,11 @@
 			.backgroundColor('rgba(0,0,0,0)')
 			.globeImageUrl(U.IMG + 'earth-blue-marble.jpg')
 			.bumpImageUrl(U.IMG + 'earth-topology.png')
-			.showAtmosphere(true).atmosphereColor('#6ec1ff').atmosphereAltitude(0.2)
+			.showAtmosphere(true).atmosphereColor('#ffa050').atmosphereAltitude(0.2)
 			// 비행 경로: 흐르는 점선으로 그린다
 			.pathsData(paths)
 			.pathPoints('pts').pathPointLat(function (p) { return p[0]; }).pathPointLng(function (p) { return p[1]; }).pathPointAlt(function (p) { return p[2]; })
-			.pathColor(function (d) { return d.featured ? ['rgba(255,209,102,0.15)', 'rgba(255,209,102,0.95)'] : ['rgba(92,200,255,0.05)', 'rgba(92,200,255,0.6)']; })
+			.pathColor(function (d) { return d.featured ? ['rgba(255,209,102,0.15)', 'rgba(255,209,102,0.95)'] : ['rgba(255, 138, 31,0.05)', 'rgba(255, 138, 31,0.6)']; })
 			.pathStroke(function (d) { return d.featured ? 0.9 : 0.4; })
 			.pathDashLength(0.22).pathDashGap(0.1)
 			.pathDashAnimateTime(function (d) { return reduce ? 0 : 5000 + d.total * 2500; })
@@ -53,9 +53,9 @@
 		globe
 			.pointsData(cityList.concat([{ lat: home.lat, lng: home.lng, featured: true, home: true }]))
 			.pointAltitude(0.004).pointRadius(function (d) { return d.home ? 0.55 : (d.featured ? 0.4 : 0.2); })
-			.pointColor(function (d) { return d.home ? '#5cc8ff' : (d.featured ? '#ffd166' : 'rgba(255,255,255,0.85)'); })
+			.pointColor(function (d) { return d.home ? '#ff8a1f' : (d.featured ? '#ffd166' : 'rgba(255,255,255,0.85)'); })
 			.ringsData(cityList.filter(function (c) { return c.featured; }).concat([{ lat: home.lat, lng: home.lng, home: true }]))
-			.ringColor(function (d) { return d.home ? function (t) { return 'rgba(92,200,255,' + (1 - t) + ')'; } : function (t) { return 'rgba(255,209,102,' + (1 - t) + ')'; }; })
+			.ringColor(function (d) { return d.home ? function (t) { return 'rgba(255, 138, 31,' + (1 - t) + ')'; } : function (t) { return 'rgba(255,209,102,' + (1 - t) + ')'; }; })
 			.ringMaxRadius(function (d) { return d.home ? 5 : 3; }).ringPropagationSpeed(2).ringRepeatPeriod(1800);
 
 		// 비행기와 도시 이름은 같은 HTML 레이어에 올린다. (지구본 글자 레이어는 한글을 그리지 못한다)

@@ -17,7 +17,7 @@
 .form-actions .button { width: 100%; margin-top: 0; border: 0; text-align: center; }
 .alert { margin-bottom: 12px; padding: 12px 14px; border-radius: 12px; font-weight: 600; font-size: 14px; }
 .alert--error { background: rgba(255, 93, 115, 0.14); color: var(--hot); }
-.alert--ok { background: rgba(92, 200, 255, 0.14); color: var(--accent); }
+.alert--ok { background: rgba(255, 138, 31, 0.14); color: var(--accent); }
 .auth-sub { margin-top: 18px; text-align: center; color: var(--muted); font-size: 14px; }
 .auth-sub a { color: var(--accent); font-weight: 700; }
 
