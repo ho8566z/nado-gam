@@ -116,6 +116,6 @@ class ThemeTest {
 		String js = new String(new ClassPathResource("static/js/home-globe.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
 		assertThat(js).contains("controlType: 'trackball'").contains("function applyRotation").doesNotContain("HOME_LAT")
 			.contains("omega = cruise.slice()")
-			.contains("CRUISE = reduce ? 0 : 30 * RAD").contains("FLICK_MAX = 1200 * RAD").contains("FLICK_SECONDS = 5").doesNotContain("omega = [0, 0, 0];             // 잡고");
+			.contains("CRUISE = reduce ? 0 : 15 * RAD").contains("FLICK_MAX = 1200 * RAD").contains("FLICK_SECONDS = 3").doesNotContain("omega = [0, 0, 0];             // 잡고");
 	}
 }

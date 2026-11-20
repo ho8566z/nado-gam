@@ -90,12 +90,12 @@
 		// 회전은 기본 컨트롤 대신 직접 구현한다. (자유 회전, 11/20 변경)
 		// 카메라를 지구 중심 기준으로 '어느 축으로든' 돌린다. 끌어서 놓으면 놓은 방향(축)으로 계속 돌고,
 		// 서서히 평소 속도로 안정된다. 세로·대각선으로 돌려도 원래 각도로 되돌아가지 않고 그 축 그대로 계속 돈다.
-		var CRUISE = reduce ? 0 : 30 * RAD;      // 평소 회전 속도(라디안/초)
+		var CRUISE = reduce ? 0 : 15 * RAD;      // 평소 회전 속도(라디안/초)
 		var cruise = [0, -CRUISE, 0];           // 평소 회전 벡터(카메라 각속도). 처음에는 지구 자전축(세로)이고 지표면이 오른쪽으로 흐른다
 		var omega = cruise.slice();             // 지금 회전 벡터(방향 = 회전축, 크기 = 속도)
 		var flick = null;                       // 던진 직후의 감속 상태 { w: 던진 회전 벡터, t: 지난 시간(초) }
 		var FLICK_MAX = 1200 * RAD;             // 던질 때 최대 속도(라디안/초)
-		var FLICK_SECONDS = 5;                  // 던진 속도가 평소 속도로 돌아오기까지 걸리는 시간
+		var FLICK_SECONDS = 3;                  // 던진 속도가 평소 속도로 돌아오기까지 걸리는 시간
 		var drag = null;
 
 		function dot(a, b) { return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]; }
@@ -144,7 +144,7 @@
 
 		// 끊김 없는 회전(11/20 수정): 잡았다 놓아도 회전이 0에서 다시 시작하지 않는다.
 		// - 잡는 동안에는 손을 따라가고, 놓으면 직전 회전(없으면 평소 회전)에서 이어 돈다.
-		// - 던진 속도(최대 1200도/초)는 5초에 걸쳐 평소 속도(30도/초)로 돌아온다.
+		// - 던진 속도(최대 1200도/초)는 3초에 걸쳐 평소 속도(15도/초)로 돌아온다.
 		el.addEventListener('pointerdown', function (e) {
 			if (e.pointerType === 'mouse' && e.button !== 0) { return; }
 			drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), samples: [] };
@@ -194,7 +194,7 @@
 
 		function stepCamera(dt) {
 			if (!drag) {
-				// 던진 속도는 5초 동안 부드럽게(처음엔 오래 빠르다가 끝에서 완만하게) 평소 속도로 돌아온다. 축(방향)은 놓은 그대로다.
+				// 던진 속도는 3초 동안 부드럽게(처음엔 오래 빠르다가 끝에서 완만하게) 평소 속도로 돌아온다. 축(방향)은 놓은 그대로다.
 				if (flick) {
 					flick.t += dt;
 					var k = Math.max(0, 1 - flick.t / FLICK_SECONDS);
