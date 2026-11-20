@@ -148,3 +148,7 @@
 	.mobile-qr { display: none; }
 	.qr-box { flex-direction: column; align-items: flex-start; }
 }
+
+.transport .cart-form--transport { grid-column: 1 / -1; grid-template-columns: 1fr 90px auto; align-items: end; margin-top: 0; text-align: left; }
+.cart-form--flight { grid-template-columns: 2fr 1.4fr 90px auto; align-items: end; margin-top: 18px; }
+@media (max-width: 760px) { .cart-form--flight { grid-template-columns: 1fr 1fr; } .cart-form--flight .button { grid-column: 1 / -1; } }
