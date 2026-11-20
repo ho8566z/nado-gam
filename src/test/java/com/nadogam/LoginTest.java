@@ -142,4 +142,59 @@ class LoginTest {
 			.andExpect(redirectedUrl("/account?updated"));
 		assertThat(members.findByLoginId("editor1").orElseThrow().getName()).isEqualTo("바뀐이름");
 	}
+
+	private MockHttpSession loginAs(String loginId, String password) throws Exception {
+		return (MockHttpSession) mvc.perform(formLogin("/login").user(loginId).password(password))
+			.andReturn().getRequest().getSession();
+	}
+
+	@Test
+	void 현재_비밀번호가_맞으면_비밀번호를_바꾼다() throws Exception {
+		signup("pwuser1", "pwuser1@example.com");
+		MockHttpSession session = loginAs("pwuser1", "abcd1234");
+		mvc.perform(post("/account/password").session(session).with(csrf())
+			.param("currentPassword", "abcd1234").param("newPassword", "newpass99").param("newPasswordConfirm", "newpass99"))
+			.andExpect(redirectedUrl("/account?passwordChanged"));
+		mvc.perform(formLogin("/login").user("pwuser1").password("abcd1234")).andExpect(unauthenticated());
+		mvc.perform(formLogin("/login").user("pwuser1").password("newpass99")).andExpect(authenticated());
+		assertThat(members.findByLoginId("pwuser1").orElseThrow().getPasswordHash()).startsWith("$2");
+	}
+
+	@Test
+	void 현재_비밀번호가_틀리거나_규칙에_어긋나면_바뀌지_않는다() throws Exception {
+		signup("pwuser2", "pwuser2@example.com");
+		MockHttpSession session = loginAs("pwuser2", "abcd1234");
+		mvc.perform(post("/account/password").session(session).with(csrf())
+			.param("currentPassword", "wrongpass1").param("newPassword", "newpass99").param("newPasswordConfirm", "newpass99"))
+			.andExpect(status().isOk());
+		mvc.perform(post("/account/password").session(session).with(csrf())
+			.param("currentPassword", "abcd1234").param("newPassword", "short").param("newPasswordConfirm", "short"))
+			.andExpect(status().isOk());
+		mvc.perform(formLogin("/login").user("pwuser2").password("abcd1234")).andExpect(authenticated());
+	}
+
+	@Test
+	void 탈퇴하면_상태만_바뀌고_더_이상_로그인할_수_없다() throws Exception {
+		signup("leaver1", "leaver1@example.com");
+		MockHttpSession session = loginAs("leaver1", "abcd1234");
+		mvc.perform(post("/account/withdraw").session(session).with(csrf())
+			.param("password", "abcd1234").param("agree", "true"))
+			.andExpect(redirectedUrl("/?withdrawn"));
+		Member m = members.findByLoginId("leaver1").orElseThrow();
+		assertThat(m.getStatus()).isEqualTo("WITHDRAWN");
+		assertThat(m.getWithdrawnAt()).isNotNull();
+		mvc.perform(formLogin("/login").user("leaver1").password("abcd1234"))
+			.andExpect(unauthenticated()).andExpect(redirectedUrl("/login?error"));
+	}
+
+	@Test
+	void 탈퇴는_비밀번호와_동의가_있어야_한다() throws Exception {
+		signup("leaver2", "leaver2@example.com");
+		MockHttpSession session = loginAs("leaver2", "abcd1234");
+		mvc.perform(post("/account/withdraw").session(session).with(csrf())
+			.param("password", "wrongpass1").param("agree", "true")).andExpect(status().isOk());
+		mvc.perform(post("/account/withdraw").session(session).with(csrf())
+			.param("password", "abcd1234")).andExpect(status().isOk());
+		assertThat(members.findByLoginId("leaver2").orElseThrow().getStatus()).isEqualTo("ACTIVE");
+	}
 }
