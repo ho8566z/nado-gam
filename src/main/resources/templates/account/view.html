@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('내 정보')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('account')}"></header>
+<main class="page">
+	<section class="auth-card">
+		<span class="kicker">MY ACCOUNT</span>
+		<h1>내 정보</h1>
+		<div class="alert alert--ok" th:if="${param.updated}">내 정보를 수정했습니다.</div>
+		<dl class="info-list">
+			<div><dt>아이디</dt><dd th:text="${member.loginId}">user</dd></div>
+			<div><dt>이름</dt><dd th:text="${member.name}">이름</dd></div>
+			<div><dt>전화번호</dt><dd th:text="${member.phone}">010-0000-0000</dd></div>
+			<div><dt>이메일</dt><dd th:text="${member.email}">user@example.com</dd></div>
+			<div><dt>가입일</dt><dd th:text="${#temporals.format(member.createdAt, 'yyyy-MM-dd')}">2026-11-20</dd></div>
+		</dl>
+		<div class="form-actions"><a class="button" th:href="@{/account/edit}">정보 수정</a></div>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

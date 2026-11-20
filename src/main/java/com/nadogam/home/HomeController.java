@@ -25,12 +25,4 @@ public class HomeController {
 		return "index";
 	}
 
-	// 아직 만들지 않은 메뉴. 404 대신 안내 화면을 보여준다.
-	@GetMapping("/account")
-	public String account(Model model) {
-		model.addAttribute("menu", "계정");
-		model.addAttribute("active", "account");
-		return "coming-soon";
-	}
-
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('내 정보 수정')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('account')}"></header>
+<main class="page">
+	<section class="auth-card">
+		<span class="kicker">MY ACCOUNT</span>
+		<h1>내 정보 수정</h1>
+		<form th:action="@{/account/edit}" th:object="${profileForm}" method="post" novalidate>
+			<label class="field"><span>이름</span>
+				<input type="text" th:field="*{name}" maxlength="50" required>
+				<small class="error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small>
+			</label>
+			<label class="field"><span>전화번호</span>
+				<input type="tel" th:field="*{phone}" placeholder="010-0000-0000" required>
+				<small class="error" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></small>
+			</label>
+			<label class="field"><span>이메일</span>
+				<input type="email" th:field="*{email}" maxlength="100" required>
+				<small class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+			</label>
+			<div class="form-actions">
+				<button class="button" type="submit">저장</button>
+				<a class="button button--ghost" th:href="@{/account}">취소</a>
+			</div>
+		</form>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
