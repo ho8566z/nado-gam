@@ -1,5 +1,5 @@
-// 메인 지구본: 천천히 돌아가는 지구 위로 인천에서 세계 각지로 비행기가 날아간다.
-// 경로는 /api/globe/routes 에서 받는다(직항 1구간, 경유 2구간). 기획전·베스트셀러 여행지는 노란색으로 강조한다.
+// 메인 지구본: 돌아가는 지구 위로 전 세계 주요 도시 100곳 사이를 희미한 주황 선과 그 위를 흐르는 불빛이 오간다. (장식용, world-cities.js)
+// 출발·도착 도시는 100곳 중에서 무작위로 짝지은 경로 60개이고, 실제 '나도 감' 항공편과는 무관하다.
 (function () {
 	'use strict';
 
@@ -24,6 +24,10 @@
 			var built = U.buildPath(r.points);
 			return { pts: built.pts, total: built.total, featured: r.featured, name: r.name, points: r.points };
 		}).filter(function (p) { return p.pts.length > 1; });
+		// 선 60개 + 선마다 불빛 1개(조금 위에 얹어 겹쳐 깜빡이지 않게 한다)
+		var lines = paths.map(function (p) { return { pts: p.pts, total: p.total, light: false }; }).concat(paths.map(function (p) {
+			return { pts: p.pts.map(function (q) { return [q[0], q[1], q[2] + 0.003]; }), total: p.total, light: true, gap: Math.random() };
+		}));
 
 		// 회전은 직접 제어한다. 카메라의 '위쪽'이 고정되지 않아 어느 축으로든 돌릴 수 있도록 trackball 방식을 쓴다.
 		var globe = Globe({ controlType: 'trackball' })(el)
@@ -32,60 +36,28 @@
 			.globeImageUrl(U.IMG + 'earth-blue-marble.jpg')
 			.bumpImageUrl(U.IMG + 'earth-topology.png')
 			.showAtmosphere(true).atmosphereColor('#ffa050').atmosphereAltitude(0.2)
-			// 비행 경로: 흐르는 점선으로 그린다
-			.pathsData(paths)
+			// 경로: 같은 좌표로 '주황 선'과 그 위를 흐르는 '불빛'을 함께 그린다(선 하나, 불빛 하나)
+			.pathsData(lines)
 			.pathPoints('pts').pathPointLat(function (p) { return p[0]; }).pathPointLng(function (p) { return p[1]; }).pathPointAlt(function (p) { return p[2]; })
-			.pathColor(function (d) { return d.featured ? ['rgba(255,209,102,0.15)', 'rgba(255,209,102,0.95)'] : ['rgba(255, 138, 31,0.05)', 'rgba(255, 138, 31,0.6)']; })
-			.pathStroke(function (d) { return d.featured ? 0.9 : 0.4; })
-			.pathDashLength(0.22).pathDashGap(0.1)
-			.pathDashAnimateTime(function (d) { return reduce ? 0 : 5000 + d.total * 2500; })
+			.pathColor(function (d) { return d.light ? ['rgba(255, 150, 40, 0)', 'rgba(255, 226, 160, 1)'] : 'rgba(255, 138, 31, 0.5)'; })
+			.pathStroke(function (d) { return d.light ? 0.7 : 0.32; })
+			.pathDashLength(function (d) { return d.light ? 0.16 : 1; })
+			.pathDashGap(function (d) { return d.light ? 1.1 : 0; })
+			.pathDashInitialGap(function (d) { return d.light ? d.gap * 1.26 : 0; })
+			.pathDashAnimateTime(function (d) { return d.light && !reduce ? 3200 + d.total * 2400 : 0; })
 			.pathTransitionDuration(0);
 
-		// 도시 점과 인천에서 퍼지는 물결
-		var cities = {};
-		paths.forEach(function (p) {
-			var last = p.points[p.points.length - 1];
-			cities[last.code] = { lat: last.lat, lng: last.lng, featured: p.featured, name: p.name };
-		});
-		var cityList = Object.keys(cities).map(function (k) { return cities[k]; });
-		var home = routes.length ? routes[0].points[0] : { lat: 37.4602, lng: 126.4407, city: '인천' };
+		// 도시 100곳의 점과 몇몇 도시에서 퍼지는 물결
+		var cityList = (window.NadoWorldCities || []).map(function (c) { return { name: c[0], lat: c[1], lng: c[2] }; });
+		var ringCities = cityList.filter(function (c, i) { return i % 9 === 0; });
 
 		globe
-			.pointsData(cityList.concat([{ lat: home.lat, lng: home.lng, featured: true, home: true }]))
-			.pointAltitude(0.004).pointRadius(function (d) { return d.home ? 0.55 : (d.featured ? 0.4 : 0.2); })
-			.pointColor(function (d) { return d.home ? '#ff8a1f' : (d.featured ? '#ffd166' : 'rgba(255,255,255,0.85)'); })
-			.ringsData(cityList.filter(function (c) { return c.featured; }).concat([{ lat: home.lat, lng: home.lng, home: true }]))
-			.ringColor(function (d) { return d.home ? function (t) { return 'rgba(255, 138, 31,' + (1 - t) + ')'; } : function (t) { return 'rgba(255,209,102,' + (1 - t) + ')'; }; })
-			.ringMaxRadius(function (d) { return d.home ? 5 : 3; }).ringPropagationSpeed(2).ringRepeatPeriod(1800);
-
-		// 비행기와 도시 이름은 같은 HTML 레이어에 올린다. (지구본 글자 레이어는 한글을 그리지 못한다)
-		var items = [];
-		cityList.filter(function (c) { return c.featured; }).forEach(function (c) {
-			items.push({ type: 'label', lat: c.lat, lng: c.lng, alt: 0.01, el: U.makeLabel(c.name) });
-		});
-		items.push({ type: 'label', lat: home.lat, lng: home.lng, alt: 0.01, el: U.makeLabel('인천', 'city-label--home') });
-
-		var planes = [];
-		var PLANE_COUNT = reduce ? 0 : Math.min(7, Math.max(3, paths.length));
-		function pickRoute() {
-			// 기획전·베스트셀러 여행지가 더 자주 뽑히게 한다.
-			var featured = paths.filter(function (p) { return p.featured; });
-			var pool = (featured.length && Math.random() < 0.55) ? featured : paths;
-			return pool[Math.floor(Math.random() * pool.length)];
-		}
-		for (var i = 0; i < PLANE_COUNT && paths.length; i++) {
-			var plane = { type: 'plane', el: U.makePlane(), route: pickRoute(), t: -Math.random() * 0.9, lat: 0, lng: 0, alt: 0, rot: 0 };
-			planes.push(plane);
-			items.push(plane);
-		}
-
-		globe.htmlElementsData(items)
-			.htmlLat(function (d) { return d.lat; }).htmlLng(function (d) { return d.lng; }).htmlAltitude(function (d) { return d.alt; })
-			.htmlElement(function (d) { return d.el; })
-			.htmlTransitionDuration(0);
-		if (typeof globe.htmlElementVisibilityModifier === 'function') {
-			globe.htmlElementVisibilityModifier(function (node, visible) { node.style.opacity = visible ? '1' : '0'; });
-		}
+			.pointsData(cityList)
+			.pointAltitude(0.004).pointRadius(0.24)
+			.pointColor(function () { return 'rgba(255,255,255,0.9)'; })
+			.ringsData(ringCities)
+			.ringColor(function () { return function (t) { return 'rgba(255, 138, 31,' + (1 - t) + ')'; }; })
+			.ringMaxRadius(3).ringPropagationSpeed(2).ringRepeatPeriod(2400);
 
 		// 회전은 기본 컨트롤 대신 직접 구현한다. (자유 회전, 11/20 변경)
 		// 카메라를 지구 중심 기준으로 '어느 축으로든' 돌린다. 끌어서 놓으면 놓은 방향(축)으로 계속 돌고,
@@ -208,28 +180,12 @@
 			cam.lookAt(0, 0, 0);
 		}
 
-		// 프레임 루프: 카메라 회전 → 비행기 이동
+		// 프레임 루프: 카메라 회전
 		var last = performance.now();
 		function frame(now) {
 			var dt = Math.min(0.1, (now - last) / 1000);
 			last = now;
 			stepCamera(dt);
-			planes.forEach(function (p) {
-				var duration = 7 + p.route.total * 3.4; // 초
-				p.t += dt / duration;
-				if (p.t >= 1) { p.route = pickRoute(); p.t = -Math.random() * 0.4; }
-				if (p.t < 0) { p.el.classList.add('is-off'); return; }
-				p.el.classList.remove('is-off');
-				var cur = U.pointAt(p.route, p.t);
-				var ahead = U.pointAt(p.route, Math.min(1, p.t + 0.012));
-				p.lat = cur.lat; p.lng = cur.lng; p.alt = cur.alt;
-				U.orient(globe, p, cur, ahead);
-				var fade = Math.min(1, p.t * 14, (1 - p.t) * 14);
-				var svg = p.el.firstChild;
-				svg.style.transform = 'rotate(' + p.rot + 'deg) scale(' + (0.65 + 0.35 * fade) + ')';
-				svg.style.opacity = String(fade);
-			});
-			globe.htmlElementsData(items);
 			window.requestAnimationFrame(frame);
 		}
 		window.requestAnimationFrame(frame);
@@ -247,8 +203,27 @@
 		});
 	}
 
-	fetch('/api/globe/routes', { headers: { 'Accept': 'application/json' } })
-		.then(function (r) { if (!r.ok) { throw new Error(r.status); } return r.json(); })
-		.then(start)
-		.catch(function () { start([]); });
+	// 100개 도시 중에서 서로 다른 두 도시를 짝지어 경로를 만든다. 너무 가까운 짝(약 1,700km 미만)은 건너뛴다.
+	function makeRoutes(count) {
+		var cities = window.NadoWorldCities || [];
+		var routes = [], seen = {}, tries = 0;
+		function dist(a, b) {
+			var x = Math.sin((b[1] - a[1]) * RAD / 2), y = Math.sin((b[2] - a[2]) * RAD / 2);
+			var h = x * x + Math.cos(a[1] * RAD) * Math.cos(b[1] * RAD) * y * y;
+			return 2 * Math.asin(Math.min(1, Math.sqrt(h)));
+		}
+		while (routes.length < count && cities.length > 1 && tries++ < count * 40) {
+			var i = Math.floor(Math.random() * cities.length), j = Math.floor(Math.random() * cities.length);
+			if (i === j || seen[i + '-' + j] || dist(cities[i], cities[j]) < 15 * RAD) { continue; }
+			seen[i + '-' + j] = true;
+			var a = cities[i], b = cities[j];
+			routes.push({ featured: false, name: a[0] + ' → ' + b[0], points: [
+				{ code: 'C' + i, city: a[0], lat: a[1], lng: a[2] },
+				{ code: 'C' + j, city: b[0], lat: b[1], lng: b[2] }
+			] });
+		}
+		return routes;
+	}
+
+	start(makeRoutes(60));
 })();

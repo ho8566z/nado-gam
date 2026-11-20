@@ -11,13 +11,13 @@
 		<div class="hero-copy">
 			<p class="eyebrow">나도 감 · 항공권 전문 여행사</p>
 			<h1 id="hero-title">어디로 떠나볼까요?</h1>
-			<p class="hero-lead">인천에서 출발하는 항공편이 지구 곳곳으로 날아갑니다.</p>
+			<p class="hero-lead">전 세계 주요 도시 100곳 사이로 비행기가 쉬지 않고 오갑니다.</p>
 		</div>
 		<div class="globe-wrap">
-			<div id="globe" class="globe" role="img" aria-label="인천에서 세계 각지로 비행기가 날아가는 지구본"></div>
+			<div id="globe" class="globe" role="img" aria-label="전 세계 주요 도시 100곳 사이를 비행기가 오가는 지구본"></div>
 			<noscript><p class="globe-note">지구본을 보려면 자바스크립트가 필요합니다.</p></noscript>
 		</div>
-		<p class="hero-hint"><span class="dot dot--gold"></span> 기획전·베스트셀러 여행지 <span class="dot dot--blue"></span> 그 밖의 취항지 · 지구본을 끌어서 돌려볼 수 있어요</p>
+		<p class="hero-hint"><span class="dot dot--blue"></span> 주요 도시 100곳 · 지구본을 끌어서 돌려볼 수 있어요</p>
 	</section>
 
 	<!-- 이달의 기획전 3개 캐로셀 -->
@@ -76,6 +76,7 @@
 <script th:if="${popup != null}" th:src="@{/js/popup.js}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/globe.gl@2/dist/globe.gl.min.js"></script>
+<script th:src="@{/js/world-cities.js}"></script>
 <script th:src="@{/js/globe-utils.js}"></script>
 <script th:src="@{/js/carousel.js}"></script>
 <script th:src="@{/js/home-globe.js}"></script>

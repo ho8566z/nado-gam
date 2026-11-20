@@ -112,6 +112,16 @@ class ThemeTest {
 	}
 
 	@Test
+	void 메인_지구본은_전_세계_도시_100곳_사이를_오가고_인천_고정이_아니다() throws Exception {
+		String cities = new String(new ClassPathResource("static/js/world-cities.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+		assertThat(java.util.regex.Pattern.compile("\\['[^']+', -?\\d").matcher(cities).results().count()).isEqualTo(100);
+		String home = new String(new ClassPathResource("static/js/home-globe.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+		assertThat(home).contains("NadoWorldCities").contains("makeRoutes(60)").contains(".pathsData(lines)").doesNotContain("makePlane").doesNotContain("htmlElementsData").doesNotContain("/api/globe/routes").doesNotContain("'인천'");
+		String html = mvc.perform(get("/")).andReturn().getResponse().getContentAsString();
+		assertThat(html).contains("world-cities.js").contains("주요 도시 100곳");
+	}
+
+	@Test
 	void 메인_지구본은_어느_축으로든_자유_회전하고_원래_각도로_되돌리지_않는다() throws Exception {
 		String js = new String(new ClassPathResource("static/js/home-globe.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
 		assertThat(js).contains("controlType: 'trackball'").contains("function applyRotation").doesNotContain("HOME_LAT")
