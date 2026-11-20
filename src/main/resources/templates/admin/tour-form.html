@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${heading})}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('tours')}"></aside>
+	<main class="admin-main">
+		<h1 th:text="${heading}">투어 등록</h1>
+		<form class="admin-form admin-form--wide" id="tourForm" th:action="${formAction}" th:object="${tourForm}" method="post" novalidate>
+			<div class="alert alert--error" th:if="${#fields.hasGlobalErrors()}">
+				<div th:each="e : ${#fields.globalErrors()}" th:text="${e}">오류</div>
+			</div>
+			<div class="field-row">
+				<label class="field"><span>구분</span>
+					<select th:field="*{scope}" id="scope">
+						<option value="OVERSEAS">해외</option>
+						<option value="DOMESTIC">국내</option>
+					</select>
+				</label>
+				<label class="field" data-scope="OVERSEAS"><span>여행지(해외)</span>
+					<select th:field="*{destinationId}">
+						<option value="">선택</option>
+						<option th:each="d : ${destinations}" th:value="${d.id}" th:text="${d.name}">파리</option>
+					</select>
+				</label>
+				<label class="field" data-scope="DOMESTIC"><span>도시(국내)</span>
+					<select th:field="*{cityId}">
+						<option value="">선택</option>
+						<option th:each="c : ${cities}" th:value="${c.id}" th:text="${c.name}">제주</option>
+					</select>
+				</label>
+				<label class="field"><span>테마</span>
+					<select th:field="*{theme}">
+						<option th:each="t : ${themes}" th:value="${t.name()}" th:text="${t.shortLabel}">음식·주류</option>
+					</select>
+				</label>
+			</div>
+			<small class="error" th:if="${#fields.hasErrors('placeChosen')}" th:errors="*{placeChosen}"></small>
+			<label class="field"><span>투어 이름</span>
+				<input type="text" th:field="*{title}" maxlength="100" required>
+				<small class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></small>
+			</label>
+			<label class="field"><span>부제</span>
+				<input type="text" th:field="*{subtitle}" maxlength="200" required>
+				<small class="error" th:if="${#fields.hasErrors('subtitle')}" th:errors="*{subtitle}"></small>
+			</label>
+			<div class="field-row">
+				<label class="field"><span>콜라보 브랜드(선택)</span>
+					<input type="text" th:field="*{collabBrand}" maxlength="50">
+					<small class="error" th:if="${#fields.hasErrors('collabBrand')}" th:errors="*{collabBrand}"></small>
+				</label>
+				<label class="field"><span>정렬 번호</span>
+					<input type="number" th:field="*{sortOrder}">
+				</label>
+			</div>
+			<label class="field"><span>추천 포인트 (한 줄에 하나)</span>
+				<textarea th:field="*{highlights}" rows="3" maxlength="500" required></textarea>
+				<small class="error" th:if="${#fields.hasErrors('highlights')}" th:errors="*{highlights}"></small>
+			</label>
+			<div class="field-row">
+				<label class="field"><span>포함 사항 (한 줄에 하나)</span>
+					<textarea th:field="*{includes}" rows="4" maxlength="500" required></textarea>
+					<small class="error" th:if="${#fields.hasErrors('includes')}" th:errors="*{includes}"></small>
+				</label>
+				<label class="field"><span>불포함 사항 (한 줄에 하나)</span>
+					<textarea th:field="*{excludes}" rows="4" maxlength="500" required></textarea>
+					<small class="error" th:if="${#fields.hasErrors('excludes')}" th:errors="*{excludes}"></small>
+				</label>
+			</div>
+			<label class="field"><span>출처 메모(선택)</span>
+				<input type="text" th:field="*{sourceNote}" maxlength="200">
+				<small class="error" th:if="${#fields.hasErrors('sourceNote')}" th:errors="*{sourceNote}"></small>
+			</label>
+
+			<h2 class="section-title section-title--flat">기간 옵션과 일정</h2>
+			<p class="hint">옵션마다 박수·1인 가격·인원을 정하고, 일정은 <b>박수 + 1일</b>치를 입력해요. 박수를 바꾸면 일정 입력칸이 자동으로 늘거나 줄어요.</p>
+			<div id="options">
+				<section class="option-block" th:each="o, os : *{options}">
+					<div class="field-row">
+						<label class="field"><span>박수</span>
+							<input type="number" th:field="*{options[__${os.index}__].nights}" data-f="nights" min="1" max="30" required>
+							<small class="error" th:if="${#fields.hasErrors('options[__${os.index}__].nights')}" th:errors="*{options[__${os.index}__].nights}"></small>
+						</label>
+						<label class="field"><span>1인 가격(원)</span>
+							<input type="number" th:field="*{options[__${os.index}__].price}" data-f="price" min="10000" step="10000" required>
+							<small class="error" th:if="${#fields.hasErrors('options[__${os.index}__].price')}" th:errors="*{options[__${os.index}__].price}"></small>
+						</label>
+						<label class="field"><span>최소 인원</span>
+							<input type="number" th:field="*{options[__${os.index}__].minPeople}" data-f="minPeople" min="1" max="100" required>
+							<small class="error" th:if="${#fields.hasErrors('options[__${os.index}__].minPeople')}" th:errors="*{options[__${os.index}__].minPeople}"></small>
+						</label>
+						<label class="field"><span>최대 인원</span>
+							<input type="number" th:field="*{options[__${os.index}__].maxPeople}" data-f="maxPeople" min="1" max="100" required>
+							<small class="error" th:if="${#fields.hasErrors('options[__${os.index}__].maxPeople')}" th:errors="*{options[__${os.index}__].maxPeople}"></small>
+						</label>
+						<div class="field"><span>&nbsp;</span><button type="button" class="link-sm link-sm--danger" data-remove-option>옵션 삭제</button></div>
+					</div>
+					<div class="day-list">
+						<div class="day-row" th:each="d, ds : ${o.days}">
+							<span class="day-no" th:text="${ds.count} + '일차'">1일차</span>
+							<div class="day-fields">
+								<input type="text" th:field="*{options[__${os.index}__].days[__${ds.index}__].title}" data-d="title" maxlength="100" placeholder="일정 제목">
+								<textarea th:field="*{options[__${os.index}__].days[__${ds.index}__].description}" data-d="description" rows="2" maxlength="500" placeholder="일정 설명"></textarea>
+								<small class="error" th:if="${#fields.hasErrors('options[__${os.index}__].days[__${ds.index}__].title')}" th:errors="*{options[__${os.index}__].days[__${ds.index}__].title}"></small>
+								<small class="error" th:if="${#fields.hasErrors('options[__${os.index}__].days[__${ds.index}__].description')}" th:errors="*{options[__${os.index}__].days[__${ds.index}__].description}"></small>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<button type="button" class="button button--ghost button--sm" id="addOption">+ 기간 옵션 추가</button>
+			<div class="form-actions form-actions--row">
+				<button class="button" type="submit">저장</button>
+				<a class="button button--ghost" th:href="@{/admin/tours}">취소</a>
+			</div>
+		</form>
+	</main>
+</div>
+<script>
+(function () {
+	var wrap = document.getElementById('options');
+	var scope = document.getElementById('scope');
+
+	function syncScope() {
+		document.querySelectorAll('[data-scope]').forEach(function (el) { el.hidden = el.getAttribute('data-scope') !== scope.value; });
+	}
+	scope.addEventListener('change', syncScope);
+	syncScope();
+
+	function dayRow() {
+		var row = document.createElement('div');
+		row.className = 'day-row';
+		row.innerHTML = '<span class="day-no"></span><div class="day-fields">'
+			+ '<input type="text" data-d="title" maxlength="100" placeholder="일정 제목">'
+			+ '<textarea data-d="description" rows="2" maxlength="500" placeholder="일정 설명"></textarea></div>';
+		return row;
+	}
+
+	// 옵션·일차 번호에 맞게 name 과 '1일차' 표시를 다시 매긴다(서버는 options[0].days[0] 처럼 이어진 번호를 받는다).
+	function renumber() {
+		wrap.querySelectorAll('.option-block').forEach(function (block, i) {
+			block.querySelectorAll('[data-f]').forEach(function (el) { el.name = 'options[' + i + '].' + el.getAttribute('data-f'); });
+			block.querySelectorAll('.day-row').forEach(function (row, j) {
+				row.querySelector('.day-no').textContent = (j + 1) + '일차';
+				row.querySelectorAll('[data-d]').forEach(function (el) { el.name = 'options[' + i + '].days[' + j + '].' + el.getAttribute('data-d'); });
+			});
+		});
+	}
+
+	// 박수 + 1 만큼 일정 입력칸을 맞춘다. 늘릴 때는 빈 칸을 뒤에 붙이고, 줄일 때는 뒤에서부터 지운다.
+	function syncDays(block) {
+		var n = parseInt(block.querySelector('[data-f="nights"]').value, 10);
+		if (!(n >= 1 && n <= 30)) { return; }
+		var list = block.querySelector('.day-list');
+		var want = n + 1;
+		while (list.children.length < want) { list.appendChild(dayRow()); }
+		while (list.children.length > want) { list.removeChild(list.lastElementChild); }
+		renumber();
+	}
+
+	wrap.addEventListener('input', function (e) {
+		if (e.target.getAttribute && e.target.getAttribute('data-f') === 'nights') { syncDays(e.target.closest('.option-block')); }
+	});
+
+	wrap.addEventListener('click', function (e) {
+		if (!e.target.hasAttribute('data-remove-option')) { return; }
+		if (wrap.querySelectorAll('.option-block').length <= 1) { return; }   // 옵션은 한 개 이상 남긴다
+		e.target.closest('.option-block').remove();
+		renumber();
+	});
+
+	document.getElementById('addOption').addEventListener('click', function () {
+		if (wrap.querySelectorAll('.option-block').length >= 6) { return; }
+		var last = wrap.querySelector('.option-block:last-child');
+		var copy = last.cloneNode(true);
+		copy.querySelectorAll('small.error').forEach(function (s) { s.remove(); });
+		copy.querySelectorAll('input, textarea').forEach(function (el) { if (el.getAttribute('data-d')) { el.value = ''; } });
+		copy.querySelector('[data-f="nights"]').value = '';
+		copy.querySelector('[data-f="price"]').value = '';
+		copy.querySelector('.day-list').innerHTML = '';
+		wrap.appendChild(copy);
+		var nights = copy.querySelector('[data-f="nights"]');
+		nights.value = String(Math.min(30, (parseInt(last.querySelector('[data-f="nights"]').value, 10) || 1) + 1));
+		syncDays(copy);
+		nights.focus();
+	});
+
+	renumber();
+})();
+</script>
+</body>
+</html>
