@@ -69,4 +69,13 @@ class ThemeTest {
 		String css = css("main.css");
 		assertThat(css).contains(".tabbar { display: none; }").contains("@media (max-width: 760px)");
 	}
+
+	@Test
+	void 마스코트는_삐삐가_거코_머리를_움켜잡고_날개짓하는_모습이다() throws Exception {
+		mvc.perform(get("/")).andExpect(status().isOk())
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-wing")))
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-hang")))
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-flame--wing")));
+		assertThat(css("mascot.css")).contains("@keyframes flap").contains("@keyframes hang");
+	}
 }
