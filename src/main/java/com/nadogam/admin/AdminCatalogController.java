@@ -53,6 +53,15 @@ public class AdminCatalogController {
 			.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "없는 관리 항목입니다."));
 	}
 
+	// 삭제 탭(휴지통)에 있는 항목은 노출 관리에서 보이지 않고 켤 수도 없다. 복구는 각 상품 관리 화면의 삭제 탭에서 한다.
+	private static String notDeleted(Kind k) {
+		return switch (k.key()) {
+			case "plan" -> "deleted = FALSE";
+			case "tour", "hotel" -> "status <> 'DELETED'";
+			default -> "1 = 1";
+		};
+	}
+
 	@GetMapping("/admin/catalog")
 	public String list(@RequestParam(defaultValue = "destination") String kind,
 		@RequestParam(required = false) String q, Model model) {
@@ -63,7 +72,7 @@ public class AdminCatalogController {
 		String extra = "destination".equals(k.key()) ? ", unavailable_reason AS note" : ", NULL AS note";
 		boolean search = q != null && !q.isBlank();
 		var spec = jdbc.sql("SELECT " + k.idColumn() + " AS id, " + k.nameColumn() + " AS name, " + state + " AS state" + extra
-			+ " FROM " + k.table() + (search ? " WHERE " + k.nameColumn() + " LIKE :q" : "")
+			+ " FROM " + k.table() + " WHERE " + notDeleted(k) + (search ? " AND " + k.nameColumn() + " LIKE :q" : "")
 			+ " ORDER BY " + k.idColumn() + " LIMIT " + LIMIT);
 		if (search) {
 			spec = spec.param("q", "%" + q.trim() + "%");
@@ -82,6 +91,10 @@ public class AdminCatalogController {
 	public String toggle(@AuthenticationPrincipal AppUser admin, @PathVariable String kind, @PathVariable long id,
 		@RequestParam(required = false) String reason, @RequestParam(required = false) String q) {
 		Kind k = kind(kind);
+		if (jdbc.sql("SELECT COUNT(*) FROM " + k.table() + " WHERE " + k.idColumn() + " = :id AND NOT (" + notDeleted(k) + ")")
+			.param("id", id).query(Integer.class).single() > 0) {
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "삭제 탭에 있는 항목이에요.");
+		}
 		boolean currentlyOn;
 		if (k.usesFlag()) {
 			currentlyOn = jdbc.sql("SELECT is_active FROM " + k.table() + " WHERE " + k.idColumn() + " = :id")

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${heading})}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('hotels')}"></aside>
+	<main class="admin-main">
+		<h1 th:text="${heading}">호텔 등록</h1>
+		<form class="admin-form" th:action="${formAction}" th:object="${hotelForm}" method="post" novalidate>
+			<div class="field-row">
+				<label class="field"><span>구분</span>
+					<select th:field="*{scope}" id="scope">
+						<option value="OVERSEAS">해외</option>
+						<option value="DOMESTIC">국내</option>
+					</select>
+				</label>
+				<label class="field" data-scope="OVERSEAS"><span>여행지(해외)</span>
+					<select th:field="*{destinationId}">
+						<option value="">선택</option>
+						<option th:each="d : ${destinations}" th:value="${d.id}" th:text="${d.name}">파리</option>
+					</select>
+				</label>
+				<label class="field" data-scope="DOMESTIC"><span>도시(국내)</span>
+					<select th:field="*{cityId}">
+						<option value="">선택</option>
+						<option th:each="c : ${cities}" th:value="${c.id}" th:text="${c.name}">제주</option>
+					</select>
+				</label>
+			</div>
+			<small class="error" th:if="${#fields.hasErrors('placeChosen')}" th:errors="*{placeChosen}"></small>
+			<label class="field"><span>호텔 이름</span>
+				<input type="text" th:field="*{name}" maxlength="80" required>
+				<small class="error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small>
+			</label>
+			<div class="field-row">
+				<label class="field"><span>성급(1~5)</span>
+					<input type="number" th:field="*{grade}" min="1" max="5" required>
+					<small class="error" th:if="${#fields.hasErrors('grade')}" th:errors="*{grade}"></small>
+				</label>
+				<label class="field"><span>1박 가격(원)</span>
+					<input type="number" th:field="*{pricePerNight}" min="10000" step="1000" required>
+					<small class="error" th:if="${#fields.hasErrors('pricePerNight')}" th:errors="*{pricePerNight}"></small>
+				</label>
+				<label class="field"><span>정렬 번호</span>
+					<input type="number" th:field="*{sortOrder}">
+				</label>
+			</div>
+			<label class="field"><span>위치</span>
+				<input type="text" th:field="*{area}" maxlength="50" placeholder="시내 중심, 역 인근 …" required>
+				<small class="error" th:if="${#fields.hasErrors('area')}" th:errors="*{area}"></small>
+			</label>
+			<label class="field"><span>소개</span>
+				<textarea th:field="*{summary}" rows="3" maxlength="200" required></textarea>
+				<small class="error" th:if="${#fields.hasErrors('summary')}" th:errors="*{summary}"></small>
+			</label>
+			<label class="field"><span>편의시설</span>
+				<input type="text" th:field="*{amenities}" maxlength="200" placeholder="무료 Wi-Fi, 조식 포함, 수영장" required>
+				<small class="error" th:if="${#fields.hasErrors('amenities')}" th:errors="*{amenities}"></small>
+			</label>
+			<div class="form-actions form-actions--row">
+				<button class="button" type="submit">저장</button>
+				<a class="button button--ghost" th:href="@{/admin/hotels}">취소</a>
+			</div>
+		</form>
+	</main>
+</div>
+<script>
+(function () {
+	var scope = document.getElementById('scope');
+	function sync() {
+		document.querySelectorAll('[data-scope]').forEach(function (el) { el.hidden = el.getAttribute('data-scope') !== scope.value; });
+	}
+	scope.addEventListener('change', sync);
+	sync();
+})();
+</script>
+</body>
+</html>

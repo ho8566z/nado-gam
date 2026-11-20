@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${title})}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side(${menu})}"></aside>
+	<main class="admin-main">
+		<div class="admin-head">
+			<h1 th:text="${title}">상품 관리</h1>
+			<a class="button button--sm" th:if="${tab == 'active'}" th:href="@{${base} + '/new'}" th:text="${createLabel}">등록</a>
+		</div>
+		<div class="filter-tabs" role="tablist" aria-label="목록 구분">
+			<a class="chip chip--tab" th:classappend="${tab == 'active'} ? 'is-active'" th:href="@{${base}(tab='active')}">목록 <b th:text="${activeCount}">0</b></a>
+			<a class="chip chip--tab" th:classappend="${tab == 'trash'} ? 'is-active'" th:href="@{${base}(tab='trash')}">삭제됨 <b th:text="${trashCount}">0</b></a>
+		</div>
+		<div class="alert alert--ok" th:if="${param.saved}">저장했습니다.</div>
+		<div class="alert alert--ok" th:if="${param.deleted}">삭제 탭으로 옮겼습니다. 삭제 탭에서 복구할 수 있어요.</div>
+		<div class="alert alert--ok" th:if="${param.restored}">복구했습니다.</div>
+		<div class="alert alert--ok" th:if="${param.purged}">영구 삭제했습니다.</div>
+		<div class="alert alert--error" th:if="${param.error}" th:text="${param.error[0]}">오류</div>
+		<form class="inline-search" th:action="@{${base}}" method="get">
+			<input type="hidden" name="tab" th:value="${tab}">
+			<input type="search" name="q" th:value="${q}" placeholder="이름 검색" aria-label="이름 검색">
+			<button type="submit" class="button button--sm">검색</button>
+		</form>
+		<p class="empty" th:if="${#lists.isEmpty(rows)}" th:text="${tab == 'trash'} ? '삭제된 항목이 없습니다.' : '해당하는 항목이 없습니다.'">없음</p>
+		<div class="table-wrap" th:unless="${#lists.isEmpty(rows)}">
+			<table class="table">
+				<thead>
+					<tr><th>번호</th><th th:each="h : ${headers}" th:text="${h}">칸</th><th>상태</th><th>관리</th></tr>
+				</thead>
+				<tbody>
+					<tr th:each="r : ${rows}">
+						<td th:text="${r.id}">1</td>
+						<td class="cell-wrap" th:each="c : ${r.cells}" th:text="${c}">값</td>
+						<td><span class="badge" th:classappend="${r.on} ? 'badge--ACTIVE' : 'badge--WITHDRAWN'" th:text="${r.stateLabel}">판매 중</span></td>
+						<td>
+							<div class="row-actions" th:if="${tab == 'active'}">
+								<a class="link-sm" th:href="@{${base} + '/' + ${r.id} + '/edit'}">수정</a>
+								<form th:action="@{${base} + '/' + ${r.id} + '/delete'}" method="post" onsubmit="return confirm('삭제 탭으로 옮길까요? 삭제 탭에서 복구할 수 있어요.');">
+									<button type="submit" class="link-sm link-sm--danger">삭제</button>
+								</form>
+							</div>
+							<div class="row-actions" th:if="${tab == 'trash'}">
+								<form th:action="@{${base} + '/' + ${r.id} + '/restore'}" method="post">
+									<button type="submit" class="link-sm">복구</button>
+								</form>
+								<form th:action="@{${base} + '/' + ${r.id} + '/purge'}" method="post" onsubmit="return confirm('영구 삭제하면 되돌릴 수 없어요. 정말 삭제할까요?');">
+									<button type="submit" class="link-sm link-sm--danger">영구 삭제</button>
+								</form>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="note">삭제한 항목은 사용자 화면·장바구니에서 빠지고 삭제 탭에서 복구할 수 있습니다. 이미 결제된 예약에는 영향이 없습니다. 모든 변경은 관리자 로그에 기록됩니다.</p>
+	</main>
+</div>
+</body>
+</html>

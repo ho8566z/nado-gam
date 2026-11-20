@@ -109,3 +109,24 @@
 .stat--link { display: block; transition: border-color 0.2s; }
 .stat--link:hover { border-color: var(--accent); }
 .admin-main .admin-form { margin-top: 20px; }
+
+/* 관리자 상품 폼 공통(11/20 밤) */
+.field select { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--ink); font: inherit; }
+.field select:focus { outline: 3px solid var(--accent); outline-offset: 1px; }
+.field select option { color: #000; }
+.field-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.admin-form--wide { max-width: 1100px; }
+.field--inline > span { display: block; margin-bottom: 6px; font-weight: 700; font-size: 14px; }
+.check-row { display: flex; flex-wrap: wrap; gap: 14px; }
+.check-row label { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+.check-row input { width: auto; }
+.fare-edit input[type="number"], .fare-edit input[type="text"] { width: 100%; min-width: 90px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--ink); }
+.fare-edit input[type="checkbox"] { width: auto; }
+.fare-edit .error { display: block; color: var(--hot); font-size: 12px; }
+.option-block { margin-top: 18px; padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255, 255, 255, 0.03); }
+.day-list { display: grid; gap: 10px; margin-top: 12px; }
+.day-row { display: grid; grid-template-columns: 64px 1fr; gap: 10px; align-items: start; }
+.day-no { padding-top: 10px; font-weight: 700; color: var(--accent); }
+.day-fields { display: grid; gap: 6px; }
+.day-fields input, .day-fields textarea { width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--ink); font: inherit; }
+.day-fields .error { color: var(--hot); font-size: 12px; }
