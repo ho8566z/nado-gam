@@ -11,6 +11,9 @@ DROP TABLE IF EXISTS airline;
 DROP TABLE IF EXISTS destination;
 DROP TABLE IF EXISTS airport;
 DROP TABLE IF EXISTS country;
+DROP TABLE IF EXISTS reservation_item;
+DROP TABLE IF EXISTS reservation;
+DROP TABLE IF EXISTS cart_item;
 DROP TABLE IF EXISTS member;
 DROP TABLE IF EXISTS tour_day;
 DROP TABLE IF EXISTS tour_option;
@@ -371,4 +374,49 @@ CREATE TABLE tour_day (
     PRIMARY KEY (tour_day_id),
     CONSTRAINT fk_day_option FOREIGN KEY (option_id) REFERENCES tour_option (option_id),
     CONSTRAINT uq_day_option_no UNIQUE (option_id, day_no)
+);
+
+-- ============================================================
+-- [P] 장바구니·예약(모의 결제) — 11/20 추가
+-- ============================================================
+CREATE TABLE cart_item (
+    cart_item_id  BIGINT        NOT NULL AUTO_INCREMENT,
+    member_id     BIGINT        NOT NULL,
+    item_type     VARCHAR(10)   NOT NULL,
+    ref_id        BIGINT        NOT NULL,
+    title         VARCHAR(150)  NOT NULL,
+    detail        VARCHAR(200)  NOT NULL,
+    travel_date   DATE          NOT NULL,
+    quantity      INT           NOT NULL,
+    unit_price    INT           NOT NULL,
+    created_at    DATETIME      NOT NULL,
+    PRIMARY KEY (cart_item_id),
+    CONSTRAINT fk_cart_member FOREIGN KEY (member_id) REFERENCES member (member_id)
+);
+
+CREATE TABLE reservation (
+    reservation_id  BIGINT       NOT NULL AUTO_INCREMENT,
+    member_id       BIGINT       NOT NULL,
+    reservation_no  VARCHAR(30)  NOT NULL,
+    total_amount    BIGINT       NOT NULL,
+    pay_method      VARCHAR(10)  NOT NULL,
+    status          VARCHAR(10)  NOT NULL DEFAULT 'PAID',
+    paid_at         DATETIME     NOT NULL,
+    PRIMARY KEY (reservation_id),
+    CONSTRAINT uq_reservation_no UNIQUE (reservation_no),
+    CONSTRAINT fk_reservation_member FOREIGN KEY (member_id) REFERENCES member (member_id)
+);
+
+CREATE TABLE reservation_item (
+    reservation_item_id  BIGINT        NOT NULL AUTO_INCREMENT,
+    reservation_id       BIGINT        NOT NULL,
+    item_type            VARCHAR(10)   NOT NULL,
+    ref_id               BIGINT        NOT NULL,
+    title                VARCHAR(150)  NOT NULL,
+    detail               VARCHAR(200)  NOT NULL,
+    travel_date          DATE          NOT NULL,
+    quantity             INT           NOT NULL,
+    unit_price           INT           NOT NULL,
+    PRIMARY KEY (reservation_item_id),
+    CONSTRAINT fk_resitem_reservation FOREIGN KEY (reservation_id) REFERENCES reservation (reservation_id)
 );
