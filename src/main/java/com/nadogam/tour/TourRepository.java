@@ -80,4 +80,17 @@ public class TourRepository {
 				.param("t", c.tourId()).param("d", destinationId).query(Long.class).single() > 0)
 			.toList();
 	}
+
+	// 국내 도시에 연결된 투어(3테마): 국내여행 상세에서 '이 도시의 투어'로 연결할 때 쓴다.
+	public List<TourCard> cardsOfCity(long cityId) {
+		return jdbc.sql("""
+			SELECT t.tour_id, t.scope, t.theme, t.title, t.subtitle, t.collab_brand,
+			       c.name_ko AS place_name, '' AS place_en, c.poster_color_from AS color_from, c.poster_color_to AS color_to,
+			       (SELECT MIN(o.price_per_person) FROM tour_option o WHERE o.tour_id = t.tour_id) AS min_price,
+			       (SELECT MIN(o.nights) FROM tour_option o WHERE o.tour_id = t.tour_id) AS min_nights,
+			       (SELECT MAX(o.nights) FROM tour_option o WHERE o.tour_id = t.tour_id) AS max_nights
+			FROM tour t JOIN domestic_city c ON c.city_id = t.city_id
+			WHERE t.city_id = :id AND t.status = 'ON_SALE' ORDER BY t.sort_order, t.tour_id
+			""").param("id", cityId).query(TourCard.class).list();
+	}
 }

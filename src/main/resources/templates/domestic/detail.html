@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${city.name} + ' 국내여행')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('domestic')}"></header>
+<main class="page">
+
+	<section class="tour-hero" th:style="'--from:' + ${city.from()} + ';--to:' + ${city.to()}">
+		<a class="back-link" th:href="@{/domestic}">← 국내여행</a>
+		<span class="tour-badge" th:text="${city.province}">경북</span>
+		<h1 th:text="${city.name}">경주</h1>
+		<p class="tour-hero-sub" th:text="${city.summary}">소개</p>
+	</section>
+
+	<section class="domestic-section">
+		<h2>가는 방법</h2>
+		<div class="chip-row" aria-label="출발지">
+			<a class="chip chip--tab" th:classappend="${origin == 'SEOUL'} ? 'is-active'" th:href="@{/domestic/{id}(id=${city.cityId},origin='SEOUL')}">서울 출발</a>
+			<a class="chip chip--tab" th:classappend="${origin == 'DAEJEON'} ? 'is-active'" th:href="@{/domestic/{id}(id=${city.cityId},origin='DAEJEON')}">대전 출발</a>
+		</div>
+		<ul class="transport-list">
+			<li class="transport" th:each="t : ${transports}">
+				<span class="transport-mode" th:text="${t.modeLabel()}" th:attr="data-mode=${t.mode}">기차</span>
+				<span class="transport-main">
+					<strong th:text="${t.name}">KTX 서울→부산</strong>
+					<small th:text="${t.note}">안내</small>
+				</span>
+				<span class="transport-time"><b th:text="${t.departLabel()}">07:00</b> 출발 · <span th:text="${t.durationLabel()}">2시간 35분</span></span>
+				<span class="transport-fare" th:text="${t.fareLabel()}">₩59,800</span>
+			</li>
+		</ul>
+		<p class="muted">요금은 성인 편도 1인 기준의 예시 값이에요(가상 데이터).</p>
+	</section>
+
+	<section class="domestic-section">
+		<h2>이 도시의 투어</h2>
+		<div class="tour-grid tour-grid--inline">
+			<a class="tour-card" th:each="t : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition
+				th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()}">
+				<span class="tour-badges"><span class="tour-badge tour-badge--theme" th:text="${t.themeLabel()}">테마</span></span>
+				<span class="tour-title" th:text="${t.title}">투어 이름</span>
+				<span class="tour-sub" th:text="${t.subtitle}">부제</span>
+				<span class="tour-foot">
+					<span class="tour-meta"><span th:text="${t.periodLabel()}">1박 2일</span> · <b th:text="${t.priceLabel()}">₩1,000,000~</b></span>
+				</span>
+			</a>
+		</div>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

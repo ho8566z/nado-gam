@@ -58,3 +58,21 @@
 
 @media (max-width: 900px) { .tour-layout { grid-template-columns: 1fr; } .tour-side { position: static; } }
 @media (max-width: 760px) { .tour-incl { grid-template-columns: 1fr; } .tour-days li { grid-template-columns: 1fr; gap: 6px; } .day-no { justify-self: start; padding: 4px 12px; } }
+
+/* 국내여행: 이동편 목록 */
+.domestic-section { max-width: 1160px; margin: 24px auto 0; padding: 0 clamp(16px, 4vw, 32px); }
+.domestic-section h2 { margin: 0 0 10px; font-size: 20px; }
+.tour-grid--inline { padding: 0; margin-top: 8px; }
+.transport-list { list-style: none; margin: 12px 0 8px; padding: 0; display: grid; gap: 10px; }
+.transport { display: grid; grid-template-columns: 84px minmax(0, 1fr) auto auto; gap: 14px; align-items: center; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.transport-mode { text-align: center; padding: 6px 0; border-radius: 999px; font-size: 13px; font-weight: 800; background: rgba(255, 138, 31, 0.16); color: var(--accent); }
+.transport-mode[data-mode="FLIGHT"] { background: rgba(77, 171, 247, 0.18); color: #74c0fc; }
+.transport-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.transport-main small { color: var(--muted); }
+.transport-time { color: var(--muted); font-size: 14px; }
+.transport-time b { color: var(--ink); }
+.transport-fare { font-weight: 800; font-size: 17px; }
+@media (max-width: 760px) {
+	.transport { grid-template-columns: 72px minmax(0, 1fr); }
+	.transport-time, .transport-fare { grid-column: 2; }
+}
