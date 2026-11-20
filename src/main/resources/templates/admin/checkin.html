@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('체크인')}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('checkin')}"></aside>
+	<main class="admin-main">
+		<h1>체크인</h1>
+		<p class="muted">고객의 예약 QR을 스캔해 나온 주소, 토큰, 또는 예약 번호(NG…)를 입력하세요.</p>
+		<form class="checkin-form" th:action="@{/admin/checkin}" method="get">
+			<input type="text" name="code" th:value="${code}" placeholder="예약 번호 또는 QR 주소" autocomplete="off" autofocus required>
+			<button type="submit" class="button button--sm">조회</button>
+		</form>
+
+		<div class="alert alert--ok" th:if="${param.done}">체크인 처리했습니다.</div>
+		<div class="alert alert--error" th:if="${param.already}">이미 체크인한 예약입니다. 시각은 바뀌지 않았어요.</div>
+		<div class="alert alert--error" th:if="${notFound}">일치하는 예약이 없습니다.</div>
+
+		<section class="checkin-result" th:if="${reservation != null}">
+			<dl class="info-list">
+				<div><dt>예약 번호</dt><dd th:text="${reservation.reservationNo}">NG20261120-ABC123</dd></div>
+				<div><dt>예약자</dt><dd th:text="${memberLoginId}">user</dd></div>
+				<div><dt>상태</dt><dd><span class="badge" th:classappend="${reservation.checkedIn} ? 'badge--ACTIVE'" th:text="${reservation.statusLabel}">결제 완료</span></dd></div>
+				<div><dt>결제 금액</dt><dd th:text="${reservation.totalLabel}">₩0</dd></div>
+				<div th:if="${reservation.checkedIn}"><dt>체크인 시각</dt><dd th:text="${#temporals.format(reservation.checkedInAt, 'yyyy-MM-dd HH:mm')}">2026-11-20 10:00</dd></div>
+			</dl>
+			<ul class="cart-list">
+				<li class="cart-item" th:each="i : ${items}">
+					<div class="cart-main">
+						<span class="chip" th:text="${i.typeLabel}">투어</span>
+						<strong th:text="${i.title}">상품</strong>
+						<span class="muted" th:text="${i.detail}">상세</span>
+						<span class="muted">여행일 <b th:text="${#temporals.format(i.travelDate, 'yyyy-MM-dd')}">2026-12-01</b></span>
+					</div>
+				</li>
+			</ul>
+			<form th:unless="${reservation.checkedIn}" th:action="@{/admin/checkin/{id}(id=${reservation.reservationId})}" method="post">
+				<button type="submit" class="button">체크인 처리</button>
+			</form>
+		</section>
+	</main>
+</div>
+</body>
+</html>
