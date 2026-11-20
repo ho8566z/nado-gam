@@ -87,7 +87,7 @@ class DashboardQueryTest {
 	@Test
 	void 지구본_경로는_인천_출발이고_운항_가능_도시만_포함하며_경유편은_중간_공항을_가진다() {
 		List<GlobeRoute> routes = globe.routesFromIncheon(Set.of(5L, 12L, 27L));
-		assertThat(routes).hasSize(47); // 운항 가능 49개 도시 중 인천에서 출발하지 않는 서울·부산 제외
+		assertThat(routes).hasSize(97); // 운항 가능 99개 도시 중 인천에서 출발하지 않는 서울·부산 제외
 		assertThat(routes).allSatisfy(r -> assertThat(r.points().get(0).code()).isEqualTo("ICN"));
 		assertThat(routes).extracting(GlobeRoute::name).doesNotContain("블라디보스토크", "서울", "부산");
 		assertThat(routes).filteredOn(GlobeRoute::featured).extracting(GlobeRoute::name).containsExactlyInAnyOrder("로마", "삿포로", "케이프타운");

@@ -55,11 +55,11 @@ class TourTest {
 	private static final Set<String> FEATURED = Set.of("로마", "삿포로", "케이프타운", "도쿄", "로스앤젤레스", "홍콩");
 
 	@Test
-	void 투어는_해외_61개와_국내_30개이고_옵션은_투어마다_3개다() {
-		assertThat(count("SELECT COUNT(*) FROM tour WHERE scope = 'OVERSEAS'")).isEqualTo(61);
+	void 투어는_해외_111개와_국내_30개이고_옵션은_투어마다_3개다() {
+		assertThat(count("SELECT COUNT(*) FROM tour WHERE scope = 'OVERSEAS'")).isEqualTo(111);
 		assertThat(count("SELECT COUNT(*) FROM tour WHERE scope = 'DOMESTIC'")).isEqualTo(30);
 		assertThat(count("SELECT COUNT(*) FROM domestic_city")).isEqualTo(10);
-		assertThat(count("SELECT COUNT(*) FROM tour_option")).isEqualTo(273);
+		assertThat(count("SELECT COUNT(*) FROM tour_option")).isEqualTo(423);
 		assertThat(count("SELECT COUNT(*) FROM (SELECT tour_id FROM tour_option GROUP BY tour_id HAVING COUNT(*) <> 3) x")).isZero();
 		assertThat(count("SELECT COUNT(*) FROM tour WHERE theme NOT IN ('FOOD_DRINK','SPORTS_ACTIVITY','ART_REST')")).isZero();
 	}
@@ -70,7 +70,7 @@ class TourTest {
 			"SELECT d.name_ko AS name, COUNT(*) AS n FROM tour t JOIN destination d ON d.destination_id = t.destination_id GROUP BY d.name_ko");
 		Map<String, Long> perPlace = rows.stream().collect(Collectors.toMap(r -> (String) r.get("name"), r -> ((Number) r.get("n")).longValue()));
 		assertThat(perPlace).doesNotContainKey("블라디보스토크");
-		assertThat(perPlace).hasSize(49);
+		assertThat(perPlace).hasSize(99);
 		perPlace.forEach((name, n) -> assertThat(n).as(name).isEqualTo(FEATURED.contains(name) ? 3L : 1L));
 		// 국내 10개 도시는 3테마 전부
 		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM tour WHERE city_id IS NOT NULL GROUP BY city_id HAVING COUNT(DISTINCT theme) = 3) x")).isEqualTo(10);
@@ -93,7 +93,7 @@ class TourTest {
 		List<Map<String, Object>> rows = jdbc.queryForList("""
 			SELECT t.tour_id, t.destination_id, t.scope, GROUP_CONCAT(o.nights ORDER BY o.nights SEPARATOR ',') AS nights
 			FROM tour t JOIN tour_option o ON o.tour_id = t.tour_id GROUP BY t.tour_id, t.destination_id, t.scope""");
-		assertThat(rows).hasSize(91);
+		assertThat(rows).hasSize(141);
 		for (Map<String, Object> r : rows) {
 			String nights = String.valueOf(r.get("nights"));
 			if ("DOMESTIC".equals(r.get("scope"))) {
@@ -127,9 +127,9 @@ class TourTest {
 
 	@Test
 	void 목록은_범위와_테마와_검색으로_거른다() {
-		assertThat(tours.cards(null, null, null)).hasSize(91);
+		assertThat(tours.cards(null, null, null)).hasSize(141);
 		assertThat(tours.cards("DOMESTIC", null, null)).hasSize(30);
-		assertThat(tours.cards("OVERSEAS", "FOOD_DRINK", null)).hasSize(22);
+		assertThat(tours.cards("OVERSEAS", "FOOD_DRINK", null)).hasSize(37);
 		List<TourCard> barca = tours.cards(null, null, "바르셀로나");
 		assertThat(barca).hasSize(1);
 		assertThat(barca.get(0).placeName()).isEqualTo("바르셀로나");

@@ -39,9 +39,9 @@ class TravelSearchTest {
 	}
 
 	@Test
-	void 여행지는_50곳이고_블라디보스토크만_운항_불가이며_항공편이_없다() {
+	void 여행지는_100곳이고_블라디보스토크만_운항_불가이며_항공편이_없다() {
 		List<DestinationItem> all = search.destinations();
-		assertThat(all).hasSize(50);
+		assertThat(all).hasSize(100);
 		assertThat(all.stream().filter(d -> !d.available())).extracting(DestinationItem::nameKo).containsExactly("블라디보스토크");
 
 		DestinationItem vvo = search.destination(VLADIVOSTOK).orElseThrow();

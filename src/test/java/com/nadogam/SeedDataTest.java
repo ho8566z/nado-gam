@@ -45,8 +45,8 @@ class SeedDataTest {
 	}
 
 	@Test
-	void 여행지는_50곳이고_블라디보스토크만_운항_불가이다() {
-		assertThat(count("SELECT COUNT(*) FROM destination")).isEqualTo(50);
+	void 여행지는_100곳이고_블라디보스토크만_운항_불가이다() {
+		assertThat(count("SELECT COUNT(*) FROM destination")).isEqualTo(100);
 		// 직접 지정한 27곳 + 도시 순위를 참고해 추가한 23곳
 		List<String> names = jdbc.queryForList("SELECT name_ko FROM destination", String.class);
 		assertThat(names).contains("파리", "런던", "베를린", "마드리드", "로마", "바르셀로나", "서울", "부산", "도쿄", "오사카", "후쿠오카", "삿포로",
@@ -54,7 +54,7 @@ class SeedDataTest {
 			"상파울루", "카이로", "케이프타운");
 		assertThat(names).contains("밀라노", "암스테르담", "이스탄불", "프라하", "빈", "리스본", "에든버러", "싱가포르", "마카오", "타이베이", "다낭",
 			"나트랑", "푸꾸옥", "발리", "하노이", "호치민", "쿠알라룸푸르", "샌프란시스코", "토론토", "호놀룰루", "멕시코시티", "멜버른", "괌");
-		assertThat(jdbc.queryForList("SELECT DISTINCT name_ko FROM destination", String.class)).hasSize(50); // 중복 없음
+		assertThat(jdbc.queryForList("SELECT DISTINCT name_ko FROM destination", String.class)).hasSize(100); // 중복 없음
 		List<String> unavailable = jdbc.queryForList("SELECT name_ko FROM destination WHERE status = 'UNAVAILABLE'", String.class);
 		assertThat(unavailable).containsExactly("블라디보스토크");
 		assertThat(count("SELECT COUNT(*) FROM flight f JOIN destination d ON d.destination_id = f.destination_id WHERE d.name_ko = '블라디보스토크'"))
@@ -62,8 +62,8 @@ class SeedDataTest {
 	}
 
 	@Test
-	void 항공편은_154편이고_운항_가능_도시마다_2편_이상이다() {
-		assertThat(count("SELECT COUNT(*) FROM flight")).isEqualTo(154);
+	void 항공편은_304편이고_운항_가능_도시마다_2편_이상이다() {
+		assertThat(count("SELECT COUNT(*) FROM flight")).isEqualTo(304);
 		int fewFlights = count("""
 			SELECT COUNT(*) FROM destination d
 			WHERE d.status = 'AVAILABLE'
