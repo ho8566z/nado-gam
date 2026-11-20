@@ -34,6 +34,10 @@
 				<a th:href="@{/signup}">회원가입</a>
 			</th:block>
 			<th:block th:if="${loginUser != null}">
+				<th:block th:unless="${loginUser.admin}">
+					<a th:href="@{/cart}" th:classappend="${active == 'cart'} ? 'is-active'">장바구니</a>
+					<a th:href="@{/reservations}" th:classappend="${active == 'reservations'} ? 'is-active'">내 예약</a>
+				</th:block>
 				<span class="who" th:text="${loginUser.username} + '님'">user님</span>
 				<form th:action="${loginUser.admin} ? @{/admin/logout} : @{/logout}" method="post">
 					<button type="submit">로그아웃</button>

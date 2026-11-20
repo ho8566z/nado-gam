@@ -17,7 +17,9 @@
 		</dl>
 		<div class="alert alert--ok" th:if="${param.passwordChanged}">비밀번호를 변경했습니다.</div>
 		<div class="form-actions">
-			<a class="button" th:href="@{/account/edit}">정보 수정</a>
+			<a class="button" th:href="@{/cart}">장바구니</a>
+			<a class="button button--ghost" th:href="@{/reservations}">내 예약</a>
+			<a class="button button--ghost" th:href="@{/account/edit}">정보 수정</a>
 			<a class="button button--ghost" th:href="@{/account/password}">비밀번호 변경</a>
 			<a class="button button--ghost" th:href="@{/account/withdraw}">회원 탈퇴</a>
 		</div>
