@@ -4,14 +4,34 @@
 .mascot--logo { width: 34px; margin-right: 2px; }
 .mascot--lg { width: min(300px, 70vw); }
 
-/* 삐삐의 불꽃: 부리 쪽을 기준으로 길이가 깜빡인다 */
+/* 삐삐가 거코의 머리를 잡고 낑낑대며 날아오르려는 움직임
+   - mascot-lift : 삐삐와 거코가 함께 위아래로 들썩인다 (그림자는 반대로 커졌다 작아진다)
+   - mascot-wing : 날개를 어깨를 기준으로 힘겹게 퍼덕인다
+   - mascot-hang : 잡힌 거코가 대롱대롱 흔들린다
+   - mascot-flame: 부리·날개 끝의 불꽃이 깜빡인다 */
+.mascot-lift { animation: lift 0.9s ease-in-out infinite alternate; }
+@keyframes lift { from { transform: translateY(2px); } to { transform: translateY(-5px); } }
+
+.mascot-shadow { transform-box: fill-box; transform-origin: center; animation: shadow 0.9s ease-in-out infinite alternate; }
+@keyframes shadow { from { transform: scale(1.12); opacity: 0.26; } to { transform: scale(0.82); opacity: 0.14; } }
+
+.mascot-wing { transform-box: fill-box; transform-origin: 100% 100%; animation: flap 0.45s ease-in-out infinite alternate; }
+@keyframes flap { from { transform: rotate(-16deg); } to { transform: rotate(16deg); } }
+
+.mascot-hang { transform-box: fill-box; transform-origin: 50% 0; animation: hang 1.3s ease-in-out infinite alternate; }
+@keyframes hang { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg); } }
+
 .mascot-flame { transform-box: fill-box; transform-origin: left center; animation: flame 0.9s ease-in-out infinite; }
+.mascot-flame--wing { transform-origin: 100% 100%; animation-duration: 0.6s; }
 @keyframes flame {
 	0%, 100% { transform: scale(1, 1); opacity: 1; }
 	35% { transform: scale(1.14, 0.9); opacity: 0.92; }
 	70% { transform: scale(0.92, 1.1); opacity: 1; }
 }
-@media (prefers-reduced-motion: reduce) { .mascot-flame { animation: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+	.mascot-lift, .mascot-shadow, .mascot-wing, .mascot-hang, .mascot-flame { animation: none; }
+}
 
 .empty--mascot { padding: 32px 0; }
 .empty--mascot p { margin: 0; }

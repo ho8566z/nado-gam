@@ -2,41 +2,81 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <body>
 
-<!-- 마스코트 거코(코뿔소)와 삐삐(머리 위에서 불을 뿜는 병아리). SVG 로 직접 그렸고 불꽃은 CSS 애니메이션이다. -->
-<svg th:fragment="mascotSvg(cls)" th:class="'mascot ' + ${cls}" viewBox="0 0 200 180" role="img" aria-label="코뿔소 거코와 불을 뿜는 병아리 삐삐">
-	<ellipse cx="100" cy="170" rx="54" ry="7" fill="#000" opacity="0.28"/>
-	<!-- 거코: 귀 -->
-	<ellipse cx="46" cy="96" rx="12" ry="17" fill="#7f8aa3" transform="rotate(-18 46 96)"/>
-	<ellipse cx="154" cy="96" rx="12" ry="17" fill="#7f8aa3" transform="rotate(18 154 96)"/>
-	<ellipse cx="47" cy="97" rx="6" ry="10" fill="#ffb0a0" opacity="0.8" transform="rotate(-18 47 97)"/>
-	<ellipse cx="153" cy="97" rx="6" ry="10" fill="#ffb0a0" opacity="0.8" transform="rotate(18 153 97)"/>
-	<!-- 거코: 얼굴 -->
-	<ellipse cx="100" cy="122" rx="62" ry="50" fill="#98a3bb"/>
-	<ellipse cx="100" cy="148" rx="42" ry="26" fill="#b4bdd1"/>
-	<!-- 뿔 -->
-	<path d="M91 134 Q100 100 109 134 Z" fill="#f6e7c4"/>
-	<path d="M95 128 Q100 112 105 128" fill="none" stroke="#e1cb9a" stroke-width="2" stroke-linecap="round"/>
-	<!-- 콧구멍·눈·볼·입 -->
-	<circle cx="84" cy="152" r="3.6" fill="#59647c"/>
-	<circle cx="116" cy="152" r="3.6" fill="#59647c"/>
-	<circle cx="76" cy="116" r="7" fill="#fff"/><circle cx="124" cy="116" r="7" fill="#fff"/>
-	<circle cx="77.5" cy="117" r="3.6" fill="#1b2236"/><circle cx="122.5" cy="117" r="3.6" fill="#1b2236"/>
-	<circle cx="78.8" cy="115.4" r="1.2" fill="#fff"/><circle cx="123.8" cy="115.4" r="1.2" fill="#fff"/>
-	<circle cx="63" cy="136" r="7" fill="#ff9fb0" opacity="0.65"/><circle cx="137" cy="136" r="7" fill="#ff9fb0" opacity="0.65"/>
-	<path d="M90 164 Q100 171 110 164" fill="none" stroke="#59647c" stroke-width="3" stroke-linecap="round"/>
-	<!-- 삐삐: 머리 위 병아리 -->
-	<path d="M90 58 Q92 46 97 56 Q100 42 104 56 Q109 47 110 58" fill="none" stroke="#ffc928" stroke-width="3.4" stroke-linecap="round"/>
-	<circle cx="100" cy="76" r="22" fill="#ffd23f"/>
-	<ellipse cx="88" cy="84" rx="8" ry="6" fill="#ffc21a"/>
-	<circle cx="108" cy="70" r="3.2" fill="#1b2236"/><circle cx="109" cy="69" r="1" fill="#fff"/>
-	<circle cx="96" cy="70" r="3.2" fill="#1b2236"/><circle cx="97" cy="69" r="1" fill="#fff"/>
-	<path d="M118 74 L130 79 L118 84 Z" fill="#ff8a1f"/>
-	<path d="M92 97 L92 103 M108 97 L108 103" stroke="#ff8a1f" stroke-width="3" stroke-linecap="round"/>
-	<!-- 삐삐의 불꽃 -->
-	<g class="mascot-flame">
-		<path d="M130 79 Q146 58 180 66 Q166 78 184 90 Q150 100 130 83 Z" fill="#ff5a1f"/>
-		<path d="M130 79 Q144 66 168 71 Q158 79 170 87 Q146 92 130 82 Z" fill="#ff8a1f"/>
-		<path d="M130 79 Q140 72 154 75 Q148 80 156 84 Q140 86 130 81 Z" fill="#ffd23f"/>
+<!-- 마스코트: 불병아리 삐삐가 코뿔소 거코의 머리를 발톱으로 움켜잡고 낑낑대며 날개를 퍼덕인다.
+     부리와 날개 끝에서 불꽃이 난다. SVG 로 직접 그렸고 움직임은 mascot.css 의 애니메이션이다. -->
+<svg th:fragment="mascotSvg(cls)" th:class="'mascot ' + ${cls}" viewBox="0 0 200 205" role="img" aria-label="불병아리 삐삐가 코뿔소 거코의 머리를 움켜잡고 날아오르려고 날개를 퍼덕이는 모습">
+	<!-- 들어 올려져 땅에서 떨어진 그림자 -->
+	<ellipse class="mascot-shadow" cx="100" cy="200" rx="34" ry="4.5" fill="#000" opacity="0.22"/>
+
+	<g class="mascot-lift">
+		<!-- 거코: 머리만 그리고 삐삐에게 잡혀 대롱대롱 흔들린다 -->
+		<g class="mascot-hang">
+			<g transform="translate(0 18)">
+				<ellipse cx="44" cy="92" rx="12" ry="17" fill="#7f8aa3" transform="rotate(-30 44 92)"/>
+				<ellipse cx="156" cy="92" rx="12" ry="17" fill="#7f8aa3" transform="rotate(30 156 92)"/>
+				<ellipse cx="45" cy="93" rx="6" ry="10" fill="#ffb0a0" opacity="0.8" transform="rotate(-30 45 93)"/>
+				<ellipse cx="155" cy="93" rx="6" ry="10" fill="#ffb0a0" opacity="0.8" transform="rotate(30 155 93)"/>
+				<ellipse cx="100" cy="122" rx="62" ry="50" fill="#98a3bb"/>
+				<ellipse cx="100" cy="148" rx="42" ry="26" fill="#b4bdd1"/>
+				<!-- 뿔 -->
+				<path d="M91 134 Q100 100 109 134 Z" fill="#f6e7c4"/>
+				<path d="M95 128 Q100 112 105 128" fill="none" stroke="#e1cb9a" stroke-width="2" stroke-linecap="round"/>
+				<!-- 콧구멍 -->
+				<circle cx="84" cy="152" r="3.6" fill="#59647c"/><circle cx="116" cy="152" r="3.6" fill="#59647c"/>
+				<!-- 놀란 눈: 크게 뜨고 눈동자는 위쪽(삐삐)을 본다 -->
+				<circle cx="76" cy="116" r="8.5" fill="#fff"/><circle cx="124" cy="116" r="8.5" fill="#fff"/>
+				<circle cx="76.5" cy="113" r="3.8" fill="#1b2236"/><circle cx="123.5" cy="113" r="3.8" fill="#1b2236"/>
+				<circle cx="77.8" cy="111.4" r="1.3" fill="#fff"/><circle cx="124.8" cy="111.4" r="1.3" fill="#fff"/>
+				<path d="M64 102 Q76 97 86 103 M114 103 Q124 97 136 102" fill="none" stroke="#59647c" stroke-width="2.6" stroke-linecap="round"/>
+				<circle cx="62" cy="136" r="7" fill="#ff9fb0" opacity="0.65"/><circle cx="138" cy="136" r="7" fill="#ff9fb0" opacity="0.65"/>
+				<!-- 당황해서 벌린 입 -->
+				<ellipse cx="100" cy="166" rx="6" ry="5" fill="#59647c"/>
+			</g>
+		</g>
+
+		<!-- 삐삐의 부리 불꽃 -->
+		<g class="mascot-flame">
+			<path d="M133 52 Q150 31 184 39 Q170 51 188 63 Q153 73 133 56 Z" fill="#ff5a1f"/>
+			<path d="M133 52 Q147 39 171 44 Q161 52 173 60 Q149 65 133 55 Z" fill="#ff8a1f"/>
+			<path d="M133 52 Q143 45 157 48 Q151 53 159 57 Q143 59 133 54 Z" fill="#ffd23f"/>
+		</g>
+
+		<!-- 삐삐: 왼쪽 날개(불꽃 포함) -->
+		<g class="mascot-wing">
+			<path d="M84 58 C64 66 38 56 28 32 C42 33 51 27 57 16 C61 28 70 33 80 37 Z" fill="#ffc21a" stroke="#e39b00" stroke-width="1.6" stroke-linejoin="round"/>
+			<path d="M44 38 Q56 40 66 38 M50 30 Q60 33 70 32" fill="none" stroke="#e39b00" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+			<g class="mascot-flame mascot-flame--wing">
+				<path d="M33 36 Q20 28 12 10 Q25 16 29 8 Q31 20 41 25 Z" fill="#ff5a1f"/>
+				<path d="M33 35 Q24 29 19 18 Q28 21 31 15 Q32 24 38 27 Z" fill="#ffd23f"/>
+			</g>
+		</g>
+		<!-- 삐삐: 오른쪽 날개(왼쪽을 뒤집어 그린다) -->
+		<g transform="translate(200 0) scale(-1 1)">
+			<g class="mascot-wing">
+				<path d="M84 58 C64 66 38 56 28 32 C42 33 51 27 57 16 C61 28 70 33 80 37 Z" fill="#ffc21a" stroke="#e39b00" stroke-width="1.6" stroke-linejoin="round"/>
+				<path d="M44 38 Q56 40 66 38 M50 30 Q60 33 70 32" fill="none" stroke="#e39b00" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+				<g class="mascot-flame mascot-flame--wing">
+					<path d="M33 36 Q20 28 12 10 Q25 16 29 8 Q31 20 41 25 Z" fill="#ff5a1f"/>
+					<path d="M33 35 Q24 29 19 18 Q28 21 31 15 Q32 24 38 27 Z" fill="#ffd23f"/>
+				</g>
+			</g>
+		</g>
+
+		<!-- 삐삐: 몸·얼굴 -->
+		<path d="M92 29 Q94 19 98 28 Q101 16 104 28 Q109 20 110 30" fill="none" stroke="#ffc928" stroke-width="3.4" stroke-linecap="round"/>
+		<circle cx="100" cy="50" r="22" fill="#ffd23f"/>
+		<ellipse cx="100" cy="61" rx="14" ry="10" fill="#ffe27a"/>
+		<!-- 힘주는 눈(> <)과 땀방울 -->
+		<path d="M92 40 L100 44.5 L92 49 M118 40 L110 44.5 L118 49" fill="none" stroke="#1b2236" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M80 30 Q84 36 80 41 Q76 36 80 30 Z" fill="#8fd3ff"/>
+		<!-- 악문 부리 -->
+		<path d="M121 46 L134 52 L121 58 Z" fill="#ff8a1f"/>
+		<path d="M121 52 L131 52" stroke="#c4561a" stroke-width="1.6" stroke-linecap="round"/>
+		<!-- 거코의 머리를 움켜잡은 발과 발톱 -->
+		<path d="M92 70 L88 89 M108 70 L112 89" stroke="#ff8a1f" stroke-width="3.4" stroke-linecap="round"/>
+		<path d="M80 93 Q84 86 88 91 Q92 86 96 93 M104 93 Q108 86 112 91 Q116 86 120 93" fill="none" stroke="#ff8a1f" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+		<!-- 잡아채는 힘 표시 -->
+		<path d="M74 86 L66 80 M126 86 L134 80 M72 96 L63 96 M128 96 L137 96" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
 	</g>
 </svg>
 
