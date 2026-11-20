@@ -169,7 +169,7 @@ class TourTest {
 	}
 
 	@Test
-	void 해외_투어_상세는_인천_출발_노선을_보여_주고_국내_투어는_보여_주지_않는다() throws Exception {
+	void 해외_투어는_인천_출발_국내_투어는_서울_출발_노선을_보여_준다() throws Exception {
 		Long overseas = jdbc.queryForObject("SELECT t.tour_id FROM tour t JOIN destination d ON d.destination_id = t.destination_id WHERE d.name_ko = '로마' AND t.theme = 'FOOD_DRINK'", Long.class);
 		mvc.perform(get("/tour/" + overseas)).andExpect(status().isOk())
 			.andExpect(content().string(Matchers.containsString("tour-route")))
@@ -177,7 +177,14 @@ class TourTest {
 			.andExpect(content().string(Matchers.containsString("인천 출발 투어")));
 		Long domestic = jdbc.queryForObject("SELECT tour_id FROM tour WHERE scope = 'DOMESTIC' ORDER BY tour_id LIMIT 1", Long.class);
 		mvc.perform(get("/tour/" + domestic)).andExpect(status().isOk())
-			.andExpect(content().string(Matchers.not(Matchers.containsString("tour-route"))));
+			.andExpect(content().string(Matchers.containsString("tour-route")))
+			.andExpect(content().string(Matchers.containsString("서울 · 출발")))
+			.andExpect(content().string(Matchers.containsString("서울 출발 투어")))
+			.andExpect(content().string(Matchers.not(Matchers.containsString("ICN · 출발"))))
+			.andExpect(content().string(Matchers.containsString("서울에서 도시까지의 이동편은 포함되지 않아요")))
+			.andExpect(content().string(Matchers.not(Matchers.containsString("항공편은 해외 여행 메뉴에서"))));
+		Integer daum = jdbc.queryForObject("SELECT COUNT(*) FROM tour_day WHERE description LIKE '%서울·대전%'", Integer.class);
+		assertThat(daum).isZero();
 	}
 
 	@Test

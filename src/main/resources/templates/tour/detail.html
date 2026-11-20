@@ -15,14 +15,14 @@
 		<h1 th:text="${tour.title}">투어 이름</h1>
 		<p class="tour-hero-sub" th:text="${tour.subtitle}">부제</p>
 		<p class="tour-brand" th:if="${tour.collabBrand != null}" th:text="'콜라보 · ' + ${tour.collabBrand}">콜라보 브랜드</p>
-		<!-- 해외 투어는 인천(ICN)에서 출발한다. 항공권은 포함되지 않으며 항공편은 해외 여행 메뉴에서 고른다. -->
-		<div class="flight-route tour-route" th:if="${tour.scope == 'OVERSEAS'}">
+		<!-- 해외 투어는 인천(ICN), 국내 투어는 서울에서 출발한다. 항공권·이동편은 포함되지 않으며 각 메뉴에서 따로 고른다. -->
+		<div class="flight-route tour-route">
 			<div class="point">
-				<strong>인천</strong>
-				<span>ICN · 출발</span>
+				<strong th:text="${tour.scope == 'OVERSEAS'} ? '인천' : '서울'">인천</strong>
+				<span th:text="${tour.scope == 'OVERSEAS'} ? 'ICN · 출발' : '서울 · 출발'">ICN · 출발</span>
 			</div>
 			<div class="route-line" aria-hidden="true">
-				<span>인천 출발 투어</span>
+				<span th:text="${tour.scope == 'OVERSEAS'} ? '인천 출발 투어' : '서울 출발 투어'">인천 출발 투어</span>
 				<i></i>
 			</div>
 			<div class="point">
@@ -82,7 +82,8 @@
 			<p class="kicker">1인 기준</p>
 			<p class="tour-price" th:text="${selected.priceLabel()}">₩1,000,000</p>
 			<p class="tour-price-sub" th:text="${selected.periodLabel()} + ' · ' + ${selected.minPeople()} + '~' + ${selected.maxPeople()} + '명'">3박 4일 · 2~20명</p>
-			<p class="note">항공권은 포함되지 않아요. 항공편은 해외 여행 메뉴에서 따로 골라 주세요. (모든 상품·브랜드·가격은 가상 데이터입니다)</p>
+			<p class="note" th:if="${tour.scope == 'OVERSEAS'}">항공권은 포함되지 않아요. 항공편은 해외 여행 메뉴에서 따로 골라 주세요. (모든 상품·브랜드·가격은 가상 데이터입니다)</p>
+			<p class="note" th:unless="${tour.scope == 'OVERSEAS'}">서울에서 도시까지의 이동편은 포함되지 않아요. 국내여행 메뉴에서 따로 골라 주세요. (모든 상품·브랜드·가격은 가상 데이터입니다)</p>
 			<form class="cart-form" th:action="@{/cart/add}" method="post">
 				<input type="hidden" name="type" value="TOUR">
 				<input type="hidden" name="refId" th:value="${tour.tourId}">

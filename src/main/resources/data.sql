@@ -6717,20 +6717,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 경주 콩국수 — 1956년부터 만든 원조 콩국 반찬소 콩 삶은물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 황남빵, 경주 한우, 경주 콩국수 (상품·브랜드는 가상)', 'ON_SALE', 112);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (334, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (334, 1, '경주 도착과 대표 체험', '서울에서 출발해 경주에 도착합니다. 가이드와 만나 1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (334, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 경주 한우과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6739,20 +6739,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 대릉원 자전거 — 12만 평 고분 군집지 주변 자전거 타기', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 불국사/석굴암 트레킹, 안압지 도보 투어, 대릉원 자전거 (상품·브랜드는 가상)', 'ON_SALE', 113);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (113, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (337, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (337, 1, '경주 도착과 대표 체험', '서울에서 출발해 경주에 도착합니다. 가이드와 만나 유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (337, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (113, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 2, '불국사/석굴암 트레킹', '유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (113, 3, 4, 230000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 2, '불국사/석굴암 트레킹', '유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 3, '안압지 도보 투어 체험', '신라시대 월정교와 주변 고분 연결 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6761,20 +6761,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 대릉원 — 23기 신라 고분 군집, 역사박물관 겸함', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 불국사, 석굴암, 대릉원 (상품·브랜드는 가상)', 'ON_SALE', 114);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (114, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (340, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (340, 1, '경주 도착과 대표 체험', '서울에서 출발해 경주에 도착합니다. 가이드와 만나 751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (340, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (114, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (114, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 3, '석굴암', '774년 완성 신라 석조미술의 최고 걸작. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6783,20 +6783,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 감자전 — 강릉 특산 감자로 만든 바삭한 부침', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 초당순두부, 활어회, 감자전 (상품·브랜드는 가상)', 'ON_SALE', 115);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (343, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (343, 1, '강릉 도착과 대표 체험', '서울에서 출발해 강릉에 도착합니다. 가이드와 만나 부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (343, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 활어회과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6805,20 +6805,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 스카이해변 서핑 — 초급 서핑 강습과 보드 체험 가능', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 정동진 해돋이 관광, 경포호 자전거, 스카이해변 서핑 (상품·브랜드는 가상)', 'ON_SALE', 116);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (116, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (346, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (346, 1, '강릉 도착과 대표 체험', '서울에서 출발해 강릉에 도착합니다. 가이드와 만나 일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (346, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (116, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (116, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 3, '경포호 자전거 체험', '호수 주변 사이클링 코스와 해변 자전거. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6827,20 +6827,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 경포대 — 조선시대 누정 건축, 호수 야경 감상지', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 오죽헌, 선교장, 경포대 (상품·브랜드는 가상)', 'ON_SALE', 117);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (117, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (349, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (349, 1, '강릉 도착과 대표 체험', '서울에서 출발해 강릉에 도착합니다. 가이드와 만나 신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (349, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (117, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (117, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 3, '선교장', '400년 된 대저택, 한옥 전통생활 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6849,20 +6849,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 아바이순대 — 함경도 실향민 음식 문화 대표 간식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 오징어 짬뽕, 오징어순대, 아바이순대 (상품·브랜드는 가상)', 'ON_SALE', 118);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (352, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (352, 1, '속초 도착과 대표 체험', '서울에서 출발해 속초에 도착합니다. 가이드와 만나 통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (352, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오징어순대과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6871,20 +6871,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 청초호 자전거 — 호수 주변 사이클링 및 조깅 코스', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 설악산 케이블카 (권금성), 설악산 트레킹, 청초호 자전거 (상품·브랜드는 가상)', 'ON_SALE', 119);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (119, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (355, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (355, 1, '속초 도착과 대표 체험', '서울에서 출발해 속초에 도착합니다. 가이드와 만나 등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (355, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (119, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 2, '설악산 케이블카 (권금성)', '등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (119, 3, 4, 250000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 2, '설악산 케이블카 (권금성)', '등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 3, '설악산 트레킹 체험', '초급부터 고급까지 다양한 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6893,20 +6893,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 엑스포 타워 야경 — 속초 전경과 해상 불빛 감상', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 아바이마을, 설악사, 엑스포 타워 야경 (상품·브랜드는 가상)', 'ON_SALE', 120);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (120, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (358, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (358, 1, '속초 도착과 대표 체험', '서울에서 출발해 속초에 도착합니다. 가이드와 만나 드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (358, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (120, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (120, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 3, '설악사', '신라시대 창건 불교사찰, 계곡 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6915,20 +6915,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 활어회 — 신선한 해산물 회 한상과 함께', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 밀면, 돼지국밥, 활어회 (상품·브랜드는 가상)', 'ON_SALE', 121);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (361, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (361, 1, '부산 도착과 대표 체험', '서울에서 출발해 부산에 도착합니다. 가이드와 만나 돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (361, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 2, 3, 140000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 3, 4, 190000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돼지국밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6937,20 +6937,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 미포 해안 트레킹 — 조개구이와 함께하는 해변 산책', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 광안리 해변 서핑, 해운대 비치 배구, 미포 해안 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 122);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (122, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (364, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (364, 1, '부산 도착과 대표 체험', '서울에서 출발해 부산에 도착합니다. 가이드와 만나 초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (364, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (122, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 2, '광안리 해변 서핑', '초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (122, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 2, '광안리 해변 서핑', '초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 3, '해운대 비치 배구 체험', '모래해변에서 즐기는 스포츠 활동. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6959,20 +6959,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 자갈치 시장 — 활어회 판매 모습 보기, 시장 문화체험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 감천문화마을, 용두산 공원, 자갈치 시장 (상품·브랜드는 가상)', 'ON_SALE', 123);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (123, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (367, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (367, 1, '부산 도착과 대표 체험', '서울에서 출발해 부산에 도착합니다. 가이드와 만나 색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (367, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (123, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (123, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 3, '용두산 공원', '항구 조망과 용두산 공중케이블카. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -6981,20 +6981,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 전복 & 굴 — 소금 위에 구운 고급 해산물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 흑돼지 구이, 고등어 & 성게, 전복 & 굴 (상품·브랜드는 가상)', 'ON_SALE', 124);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (370, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (370, 1, '제주 도착과 대표 체험', '서울에서 출발해 제주에 도착합니다. 가이드와 만나 담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (370, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 고등어 & 성게과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7003,20 +7003,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 용머리 해안 트레킹 — 주상절리 경관 따라가는 1시간 등산', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 한라산 등산, 올레길 도보, 용머리 해안 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 125);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (125, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (373, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (373, 1, '제주 도착과 대표 체험', '서울에서 출발해 제주에 도착합니다. 가이드와 만나 백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (373, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (125, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (125, 3, 4, 230000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 3, '올레길 도보 체험', '27개 코스 437km 중 선택 도보여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7025,20 +7025,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 제주 민속박물관 — 제주인의 전통생활 문화 전시', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 용머리 주상절리, 세계지질공원 경관, 제주 민속박물관 (상품·브랜드는 가상)', 'ON_SALE', 126);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (126, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (376, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (376, 1, '제주 도착과 대표 체험', '서울에서 출발해 제주에 도착합니다. 가이드와 만나 120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (376, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (126, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (126, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 3, '세계지질공원 경관', '한라산, 용머리 등 지질유산 감상. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7047,20 +7047,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 막걸리 & 안주 — 300m 막걸리 골목, 푸짐한 반찬', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 전주 비빔밥, 콩나물국밥, 막걸리 & 안주 (상품·브랜드는 가상)', 'ON_SALE', 127);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (379, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (379, 1, '전주 도착과 대표 체험', '서울에서 출발해 전주에 도착합니다. 가이드와 만나 채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (379, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 콩나물국밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7069,20 +7069,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 경기전 주변 도보 — 태조 어진 봉안처 주변 1시간 투어', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 한옥마을 도보, 덕진공원 자전거, 경기전 주변 도보 (상품·브랜드는 가상)', 'ON_SALE', 128);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (128, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (382, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (382, 1, '전주 도착과 대표 체험', '서울에서 출발해 전주에 도착합니다. 가이드와 만나 800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (382, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (128, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (128, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 3, '덕진공원 자전거 체험', '연못 주변 산책로 자전거 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7091,20 +7091,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 전주 한옥마을 — 1910년부터 근대주거 발달과정 보존', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 경기전, 전동성당, 전주 한옥마을 (상품·브랜드는 가상)', 'ON_SALE', 129);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (129, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (385, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (385, 1, '전주 도착과 대표 체험', '서울에서 출발해 전주에 도착합니다. 가이드와 만나 태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (385, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (129, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (129, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 3, '전동성당', '한옥마을 상징 천주교성당, 고딕양식. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7113,20 +7113,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 돌문어 요리 — 돌산 신기항 싱싱한 돌문어 회, 샤부샤부', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 갓김치 & 게장백반, 삼치 선어회, 돌문어 요리 (상품·브랜드는 가상)', 'ON_SALE', 130);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 1, 2, 90000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (388, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (388, 1, '여수 도착과 대표 체험', '서울에서 출발해 여수에 도착합니다. 가이드와 만나 여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (388, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 2, 3, 140000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 3, 4, 190000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 삼치 선어회과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7135,20 +7135,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 다도해 스카이해변 산책 — 여러 섬 연결한 갯길 도보 체험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 여수 해상케이블카, 향일암 일출 관광, 다도해 스카이해변 산책 (상품·브랜드는 가상)', 'ON_SALE', 131);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (131, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (391, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (391, 1, '여수 도착과 대표 체험', '서울에서 출발해 여수에 도착합니다. 가이드와 만나 국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (391, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (131, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 2, '여수 해상케이블카', '국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (131, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 2, '여수 해상케이블카', '국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 3, '향일암 일출 관광 체험', '연간 100만명 방문, 일출제례 공연. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7157,20 +7157,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 향일암 관음도량 — 영험한 도량, 기도 명소로 알려짐', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 여수 이순신광장, 여수국립공원 절경, 향일암 관음도량 (상품·브랜드는 가상)', 'ON_SALE', 132);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (132, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (394, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (394, 1, '여수 도착과 대표 체험', '서울에서 출발해 여수에 도착합니다. 가이드와 만나 해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (394, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (132, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (132, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 3, '여수국립공원 절경', '다도해 경관의 천 개 섬 뷰. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7179,20 +7179,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 꼬막 — 갯벌 뻘에서 나는 순천 대표 특산물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 짱뚱어탕, 장어 & 꼼장어, 꼬막 (상품·브랜드는 가상)', 'ON_SALE', 133);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (397, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (397, 1, '순천 도착과 대표 체험', '서울에서 출발해 순천에 도착합니다. 가이드와 만나 순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (397, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 2, 3, 140000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 3, 4, 190000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 장어 & 꼼장어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7201,20 +7201,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 조계산 트레킹 — 초급-중급 등산로, 사찰 경유', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 순천만 습지 자전거, 스카이큐브 (무인궤도열차), 조계산 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 134);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (134, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (400, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (400, 1, '순천 도착과 대표 체험', '서울에서 출발해 순천에 도착합니다. 가이드와 만나 광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (400, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (134, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (134, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 3, '스카이큐브 (무인궤도열차) 체험', '정원과 습지 연결 선형 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7223,20 +7223,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 송광사 — 16국사 배출, 승보사찰 천년 고찰', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 순천만국가정원, 선암사, 송광사 (상품·브랜드는 가상)', 'ON_SALE', 135);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (135, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (403, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (403, 1, '순천 도착과 대표 체험', '서울에서 출발해 순천에 도착합니다. 가이드와 만나 2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (403, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (135, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (135, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 3, '선암사', '무지개 승선교, 2018년 세계유산 등재. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7245,20 +7245,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 도다리 쑥국 — 봄 별미, 도다리 살 넉넉한 계절 국', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 통영 굴 요리, 멍게비빔밥, 도다리 쑥국 (상품·브랜드는 가상)', 'ON_SALE', 136);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (406, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (406, 1, '통영 도착과 대표 체험', '서울에서 출발해 통영에 도착합니다. 가이드와 만나 국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (406, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멍게비빔밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7267,20 +7267,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 스카이라인 루지 — 1.5km 슬로프 루지, 해산 경관', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 통영 케이블카, 미륵산 트레킹, 스카이라인 루지 (상품·브랜드는 가상)', 'ON_SALE', 137);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (137, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (409, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (409, 1, '통영 도착과 대표 체험', '서울에서 출발해 통영에 도착합니다. 가이드와 만나 국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (409, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (137, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (137, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 3, '미륵산 트레킹 체험', '초급-중급 코스, 다도해 조망. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7289,20 +7289,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 중앙해상권 유적 — 충렬사, 향토역사관 임진왜란 역사', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 동피랑 벽화마을, 세병관, 중앙해상권 유적 (상품·브랜드는 가상)', 'ON_SALE', 138);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (138, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (412, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (412, 1, '통영 도착과 대표 체험', '서울에서 출발해 통영에 도착합니다. 가이드와 만나 색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (412, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (138, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (138, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 3, '세병관', '임진왜란 당시 삼도수군통제사영 유적. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7311,20 +7311,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 메기 매운탕 — 남한강 토종 메기 국물 진한 매운탕', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-일정에 표시된 식사와 시음', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+일정에 표시된 식사와 시음', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 더덕 (산나물), 곤드레 돌판밥, 메기 매운탕 (상품·브랜드는 가상)', 'ON_SALE', 139);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (415, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (415, 1, '단양 도착과 대표 체험', '서울에서 출발해 단양에 도착합니다. 가이드와 만나 산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (415, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 곤드레 돌판밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7333,20 +7333,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 등선폭포 트레킹 — 계곡 물소리 따라 1시간 등산', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 도담삼봉 유람선, 구담봉 산악 등산, 등선폭포 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 140);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (140, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (418, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (418, 1, '단양 도착과 대표 체험', '서울에서 출발해 단양에 도착합니다. 가이드와 만나 세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (418, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (140, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (140, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 3, '구담봉 산악 등산 체험', '거북 모양 기암, 초급 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
@@ -7355,20 +7355,20 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 선암계곡 경관 — 맑은 계곡물 따라 가는 절경 산책', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
 일정표의 입장료·체험비
-미술관·공연 입장권 또는 스파 이용권', '서울·대전 출발 이동편(국내여행 메뉴에서 별도 선택)
+미술관·공연 입장권 또는 스파 이용권', '서울 출발 이동편(국내여행 메뉴에서 별도 선택)
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
 선택 관광과 가이드 팁', '웹 조사 참고: 단양팔경, 도담삼봉 풍경, 선암계곡 경관 (상품·브랜드는 가상)', 'ON_SALE', 141);
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (141, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (421, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (421, 1, '단양 도착과 대표 체험', '서울에서 출발해 단양에 도착합니다. 가이드와 만나 도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (421, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (141, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (141, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 3, '도담삼봉 풍경', '남한강 위 세 봉우리 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
