@@ -15,6 +15,21 @@
 		<h1 th:text="${tour.title}">투어 이름</h1>
 		<p class="tour-hero-sub" th:text="${tour.subtitle}">부제</p>
 		<p class="tour-brand" th:if="${tour.collabBrand != null}" th:text="'콜라보 · ' + ${tour.collabBrand}">콜라보 브랜드</p>
+		<!-- 해외 투어는 인천(ICN)에서 출발한다. 항공권은 포함되지 않으며 항공편은 해외 여행 메뉴에서 고른다. -->
+		<div class="flight-route tour-route" th:if="${tour.scope == 'OVERSEAS'}">
+			<div class="point">
+				<strong>인천</strong>
+				<span>ICN · 출발</span>
+			</div>
+			<div class="route-line" aria-hidden="true">
+				<span>인천 출발 투어</span>
+				<i></i>
+			</div>
+			<div class="point">
+				<strong th:text="${tour.placeName}">파리</strong>
+				<span>도착</span>
+			</div>
+		</div>
 	</section>
 
 	<div class="tour-layout">

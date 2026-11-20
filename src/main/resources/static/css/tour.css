@@ -152,3 +152,10 @@
 .transport .cart-form--transport { grid-column: 1 / -1; grid-template-columns: 1fr 90px auto; align-items: end; margin-top: 0; text-align: left; }
 .cart-form--flight { grid-template-columns: 2fr 1.4fr 90px auto; align-items: end; margin-top: 18px; }
 @media (max-width: 760px) { .cart-form--flight { grid-template-columns: 1fr 1fr; } .cart-form--flight .button { grid-column: 1 / -1; } }
+
+/* 해외 투어 상단의 인천 출발 노선 */
+.tour-route { max-width: 560px; margin: 16px 0 0; }
+.tour-route .point strong { font-size: clamp(20px, 3vw, 26px); }
+.tour-route .point span, .tour-route .route-line { color: rgba(255, 255, 255, 0.85); }
+.tour-route .route-line i { background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0 8px, transparent 8px 14px); }
+.tour-route .route-line i::after { color: #fff; }
