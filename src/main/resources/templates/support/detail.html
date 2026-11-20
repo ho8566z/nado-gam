@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('문의 상세')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('support')}"></header>
+<main class="page">
+	<section class="auth-card auth-card--wide">
+		<span class="kicker">SUPPORT</span>
+		<div class="alert alert--ok" th:if="${param.created}">문의가 접수되었습니다. 답변이 등록되면 이곳에서 확인할 수 있어요.</div>
+		<div class="inquiry-top">
+			<span class="chip" th:text="${inquiry.categoryLabel}">항공</span>
+			<span class="badge" th:classappend="${inquiry.answered} ? 'badge--ACTIVE'" th:text="${inquiry.statusLabel}">접수</span>
+		</div>
+		<h1 th:text="${inquiry.title}">제목</h1>
+		<p class="meta" th:text="${#temporals.format(inquiry.createdAt, 'yyyy-MM-dd HH:mm')} + ' 작성'">작성 시각</p>
+		<div class="qa-block" th:text="${inquiry.content}">문의 내용</div>
+
+		<h2 class="qa-title">답변</h2>
+		<div class="qa-block qa-block--answer" th:if="${inquiry.answered}">
+			<p class="meta" th:text="${#temporals.format(inquiry.answeredAt, 'yyyy-MM-dd HH:mm')} + ' · 나도 감 고객센터'">답변 시각</p>
+			<div th:text="${inquiry.answerContent}">답변 내용</div>
+		</div>
+		<p class="qa-wait" th:unless="${inquiry.answered}">아직 답변을 준비하고 있어요. 조금만 기다려 주세요.</p>
+
+		<div class="form-actions"><a class="button button--ghost" th:href="@{/support}">목록으로</a></div>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('고객문의')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('support')}"></header>
+<main class="page page--narrow">
+	<section class="page-title">
+		<span class="kicker">SUPPORT</span>
+		<h1>고객문의</h1>
+		<p>궁금한 점을 남겨 주시면 관리자가 답변해 드려요. 내가 남긴 문의만 볼 수 있습니다.</p>
+		<a class="button button--sm" th:href="@{/support/new}">문의하기</a>
+	</section>
+
+	<th:block th:if="${#lists.isEmpty(inquiries)}">
+		<div th:replace="~{fragments/mascot :: empty('아직 남긴 문의가 없어요. 궁금한 점을 물어보세요!')}"></div>
+	</th:block>
+
+	<ul class="inquiry-list" th:unless="${#lists.isEmpty(inquiries)}">
+		<li th:each="q : ${inquiries}">
+			<a class="inquiry-item" th:href="@{/support/{id}(id=${q.inquiryId})}">
+				<span class="inquiry-top">
+					<span class="chip" th:text="${q.categoryLabel}">항공</span>
+					<span class="badge" th:classappend="${q.answered} ? 'badge--ACTIVE'" th:text="${q.statusLabel}">접수</span>
+				</span>
+				<strong th:text="${q.title}">제목</strong>
+				<small th:text="${#temporals.format(q.createdAt, 'yyyy-MM-dd HH:mm')}">2026-11-20 10:00</small>
+			</a>
+		</li>
+	</ul>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

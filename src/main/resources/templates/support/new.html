@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('문의하기')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('support')}"></header>
+<main class="page">
+	<section class="auth-card auth-card--wide">
+		<span class="kicker">SUPPORT</span>
+		<h1>문의하기</h1>
+		<form th:action="@{/support}" th:object="${inquiryForm}" method="post" novalidate>
+			<label class="field"><span>분류</span>
+				<select th:field="*{category}">
+					<option th:each="c : ${categories}" th:value="${c.name()}" th:text="${c.label}">항공</option>
+				</select>
+				<small class="error" th:if="${#fields.hasErrors('category')}" th:errors="*{category}"></small>
+				<small class="error" th:if="${#fields.hasErrors('categoryValid')}" th:errors="*{categoryValid}"></small>
+			</label>
+			<label class="field"><span>제목</span>
+				<input type="text" th:field="*{title}" maxlength="100" required>
+				<small class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></small>
+			</label>
+			<label class="field"><span>내용</span>
+				<textarea th:field="*{content}" rows="7" maxlength="2000" required></textarea>
+				<small class="error" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></small>
+			</label>
+			<div class="form-actions">
+				<button class="button" type="submit">문의 등록</button>
+				<a class="button button--ghost" th:href="@{/support}">취소</a>
+			</div>
+		</form>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

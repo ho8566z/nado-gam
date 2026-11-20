@@ -85,3 +85,27 @@
 .form-actions--row { display: flex; gap: 12px; }
 .form-actions--row .button { width: auto; min-width: 120px; }
 @media (max-width: 720px) { .field-row { grid-template-columns: 1fr; gap: 0; } }
+
+/* 고객문의 */
+.auth-card--wide { max-width: 680px; }
+.page-title .button--sm { margin-top: 14px; }
+.inquiry-list { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 12px; }
+.inquiry-item { display: grid; gap: 6px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; transition: transform 0.2s, border-color 0.2s; }
+.inquiry-item:hover, .inquiry-item:focus-visible { transform: translateY(-2px); border-color: var(--accent); }
+.inquiry-item strong { font-size: 17px; }
+.inquiry-item small, .meta { color: var(--muted); font-size: 13px; }
+.inquiry-top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.qa-title { margin: 20px 0 8px; font-size: 18px; font-weight: 800; }
+.qa-block { padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; white-space: pre-wrap; line-height: 1.65; word-break: break-word; }
+.qa-block--answer { border-color: rgba(255, 138, 31, 0.5); background: rgba(255, 138, 31, 0.08); }
+.qa-block--answer .meta { margin: 0 0 8px; }
+.qa-wait { color: var(--muted); padding: 8px 2px; }
+.field select { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: #131a2e; color: var(--ink); font: inherit; }
+.auth-card .field textarea { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--ink); font: inherit; resize: vertical; }
+.auth-card .field textarea:focus, .field select:focus { outline: 3px solid var(--accent); outline-offset: 1px; }
+.filter-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chip--tab { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-weight: 700; font-size: 14px; }
+.chip--tab.is-active { color: var(--ink); border-color: var(--accent); background: rgba(255, 138, 31, 0.16); }
+.stat--link { display: block; transition: border-color 0.2s; }
+.stat--link:hover { border-color: var(--accent); }
+.admin-main .admin-form { margin-top: 20px; }

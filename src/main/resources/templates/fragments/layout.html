@@ -24,6 +24,7 @@
 		<a th:href="@{/travel}" th:classappend="${active == 'travel'} ? 'is-active'">해외 여행</a>
 		<a th:href="@{/special}" th:classappend="${active == 'special'} ? 'is-active'">이달의 특별기획</a>
 		<a th:href="@{/bestseller}" th:classappend="${active == 'bestseller'} ? 'is-active'">베스트셀러</a>
+		<a th:href="@{/support}" th:classappend="${active == 'support'} ? 'is-active'">고객문의</a>
 		<span class="auth-links">
 			<th:block th:if="${loginUser == null}">
 				<a th:href="@{/login}">로그인</a>
@@ -58,6 +59,10 @@
 		<a th:href="@{/bestseller}" data-tab="/bestseller">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg>
 			<span>베스트</span>
+		</a>
+		<a th:href="@{/support}" data-tab="/support">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>
+			<span>문의</span>
 		</a>
 		<a th:href="@{/account}" data-tab="/account">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>

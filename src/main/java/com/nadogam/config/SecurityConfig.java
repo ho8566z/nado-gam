@@ -50,7 +50,7 @@ public class SecurityConfig {
 		http
 			.authenticationProvider(provider(services.forMembers(), encoder))
 			.authorizeHttpRequests(auth -> auth
-				.requestMatchers("/account", "/account/**").hasRole("USER")
+				.requestMatchers("/account", "/account/**", "/support", "/support/**").hasRole("USER")
 				.anyRequest().permitAll())
 			.formLogin(form -> form
 				.loginPage("/login")
