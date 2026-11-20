@@ -28,7 +28,8 @@ public class TravelQueryRepository {
 		FROM monthly_plan p
 		JOIN destination d ON d.destination_id = p.destination_id
 		JOIN monthly_plan_flight m ON m.plan_id = p.plan_id
-		WHERE p.is_active = TRUE AND p.start_at <= :now AND p.end_at >= :now %s
+		JOIN flight mf ON mf.flight_id = m.flight_id AND mf.status = 'ON_SALE'
+		WHERE p.is_active = TRUE AND p.deleted = FALSE AND p.start_at <= :now AND p.end_at >= :now %s
 		GROUP BY p.plan_id, p.destination_id, d.name_ko, d.name_en, p.title, p.subtitle, p.badge_text, p.highlights,
 		         d.poster_color_from, d.poster_color_to, p.end_at
 		ORDER BY p.plan_id
@@ -40,7 +41,7 @@ public class TravelQueryRepository {
 		       COUNT(DISTINCT f.flight_id) AS flight_count,
 		       MIN(ff.base_price + ff.tax_fuel) AS min_price
 		FROM flight_sales_stat s
-		JOIN flight f ON f.flight_id = s.flight_id
+		JOIN flight f ON f.flight_id = s.flight_id AND f.status = 'ON_SALE'
 		JOIN destination d ON d.destination_id = f.destination_id
 		JOIN flight_fare ff ON ff.flight_id = f.flight_id AND ff.cabin_class = 'ECONOMY'
 		WHERE s.rank_no IS NOT NULL %s
@@ -87,7 +88,8 @@ public class TravelQueryRepository {
 			}
 			List<PlanFare> fares = jdbc.sql("""
 				SELECT flight_id, cabin_class, original_price, sale_price, limited_seats
-				FROM monthly_plan_flight WHERE plan_id = :planId ORDER BY display_order, flight_id
+				FROM monthly_plan_flight WHERE plan_id = :planId
+				  AND flight_id IN (SELECT flight_id FROM flight WHERE status = 'ON_SALE') ORDER BY display_order, flight_id
 				""").param("planId", planId).query(PlanFare.class).list();
 
 			Map<Long, List<CabinPrice>> byFlight = new LinkedHashMap<>();
@@ -119,7 +121,7 @@ public class TravelQueryRepository {
 	public Optional<BestDetail> bestDetail(long destinationId) {
 		return bestseller(destinationId).map(card -> {
 			List<Long> ids = jdbc.sql("""
-				SELECT s.flight_id FROM flight_sales_stat s JOIN flight f ON f.flight_id = s.flight_id
+				SELECT s.flight_id FROM flight_sales_stat s JOIN flight f ON f.flight_id = s.flight_id AND f.status = 'ON_SALE'
 				WHERE f.destination_id = :destinationId AND s.rank_no IS NOT NULL ORDER BY s.rank_no
 				""").param("destinationId", destinationId).query(Long.class).list();
 			Map<Long, FlightInfo> infos = flightInfos(ids);
