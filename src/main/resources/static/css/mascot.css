@@ -1,0 +1,23 @@
+/* 마스코트 거코·삐삐 */
+.mascot { display: block; width: 180px; height: auto; overflow: visible; }
+.mascot--sm { width: 96px; margin: 0 auto 8px; }
+.mascot--logo { width: 34px; margin-right: 2px; }
+.mascot--lg { width: min(300px, 70vw); }
+
+/* 삐삐의 불꽃: 부리 쪽을 기준으로 길이가 깜빡인다 */
+.mascot-flame { transform-box: fill-box; transform-origin: left center; animation: flame 0.9s ease-in-out infinite; }
+@keyframes flame {
+	0%, 100% { transform: scale(1, 1); opacity: 1; }
+	35% { transform: scale(1.14, 0.9); opacity: 0.92; }
+	70% { transform: scale(0.92, 1.1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .mascot-flame { animation: none; } }
+
+.empty--mascot { padding: 32px 0; }
+.empty--mascot p { margin: 0; }
+
+/* 404·오류 화면 */
+.lost { text-align: center; padding: 72px 0 40px; }
+.lost .mascot { margin: 0 auto 12px; }
+.lost h1 { font-size: clamp(30px, 6vw, 48px); font-weight: 800; margin: 4px 0 8px; }
+.lost p { color: var(--muted); }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- 마스코트 거코(코뿔소)와 삐삐(머리 위에서 불을 뿜는 병아리). SVG 로 직접 그렸고 불꽃은 CSS 애니메이션이다. -->
+<svg th:fragment="mascotSvg(cls)" th:class="'mascot ' + ${cls}" viewBox="0 0 200 180" role="img" aria-label="코뿔소 거코와 불을 뿜는 병아리 삐삐">
+	<ellipse cx="100" cy="170" rx="54" ry="7" fill="#000" opacity="0.28"/>
+	<!-- 거코: 귀 -->
+	<ellipse cx="46" cy="96" rx="12" ry="17" fill="#7f8aa3" transform="rotate(-18 46 96)"/>
+	<ellipse cx="154" cy="96" rx="12" ry="17" fill="#7f8aa3" transform="rotate(18 154 96)"/>
+	<ellipse cx="47" cy="97" rx="6" ry="10" fill="#ffb0a0" opacity="0.8" transform="rotate(-18 47 97)"/>
+	<ellipse cx="153" cy="97" rx="6" ry="10" fill="#ffb0a0" opacity="0.8" transform="rotate(18 153 97)"/>
+	<!-- 거코: 얼굴 -->
+	<ellipse cx="100" cy="122" rx="62" ry="50" fill="#98a3bb"/>
+	<ellipse cx="100" cy="148" rx="42" ry="26" fill="#b4bdd1"/>
+	<!-- 뿔 -->
+	<path d="M91 134 Q100 100 109 134 Z" fill="#f6e7c4"/>
+	<path d="M95 128 Q100 112 105 128" fill="none" stroke="#e1cb9a" stroke-width="2" stroke-linecap="round"/>
+	<!-- 콧구멍·눈·볼·입 -->
+	<circle cx="84" cy="152" r="3.6" fill="#59647c"/>
+	<circle cx="116" cy="152" r="3.6" fill="#59647c"/>
+	<circle cx="76" cy="116" r="7" fill="#fff"/><circle cx="124" cy="116" r="7" fill="#fff"/>
+	<circle cx="77.5" cy="117" r="3.6" fill="#1b2236"/><circle cx="122.5" cy="117" r="3.6" fill="#1b2236"/>
+	<circle cx="78.8" cy="115.4" r="1.2" fill="#fff"/><circle cx="123.8" cy="115.4" r="1.2" fill="#fff"/>
+	<circle cx="63" cy="136" r="7" fill="#ff9fb0" opacity="0.65"/><circle cx="137" cy="136" r="7" fill="#ff9fb0" opacity="0.65"/>
+	<path d="M90 164 Q100 171 110 164" fill="none" stroke="#59647c" stroke-width="3" stroke-linecap="round"/>
+	<!-- 삐삐: 머리 위 병아리 -->
+	<path d="M90 58 Q92 46 97 56 Q100 42 104 56 Q109 47 110 58" fill="none" stroke="#ffc928" stroke-width="3.4" stroke-linecap="round"/>
+	<circle cx="100" cy="76" r="22" fill="#ffd23f"/>
+	<ellipse cx="88" cy="84" rx="8" ry="6" fill="#ffc21a"/>
+	<circle cx="108" cy="70" r="3.2" fill="#1b2236"/><circle cx="109" cy="69" r="1" fill="#fff"/>
+	<circle cx="96" cy="70" r="3.2" fill="#1b2236"/><circle cx="97" cy="69" r="1" fill="#fff"/>
+	<path d="M118 74 L130 79 L118 84 Z" fill="#ff8a1f"/>
+	<path d="M92 97 L92 103 M108 97 L108 103" stroke="#ff8a1f" stroke-width="3" stroke-linecap="round"/>
+	<!-- 삐삐의 불꽃 -->
+	<g class="mascot-flame">
+		<path d="M130 79 Q146 58 180 66 Q166 78 184 90 Q150 100 130 83 Z" fill="#ff5a1f"/>
+		<path d="M130 79 Q144 66 168 71 Q158 79 170 87 Q146 92 130 82 Z" fill="#ff8a1f"/>
+		<path d="M130 79 Q140 72 154 75 Q148 80 156 84 Q140 86 130 81 Z" fill="#ffd23f"/>
+	</g>
+</svg>
+
+<!-- 결과가 없을 때 보여 주는 빈 화면 -->
+<div th:fragment="empty(message)" class="empty empty--mascot">
+	<svg th:replace="~{fragments/mascot :: mascotSvg('mascot--sm')}"></svg>
+	<p th:text="${message}">결과가 없어요.</p>
+</div>
+
+</body>
+</html>

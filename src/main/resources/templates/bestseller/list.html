@@ -14,7 +14,7 @@
 			<a th:replace="~{fragments/cards :: bestPoster(${b}, ${st.count})}"></a>
 		</div>
 	</section>
-	<p class="empty" th:if="${#lists.isEmpty(bestsellers)}">집계된 베스트셀러가 없습니다.</p>
+	<th:block th:if="${#lists.isEmpty(bestsellers)}"><div th:replace="~{fragments/mascot :: empty('집계된 베스트셀러가 없습니다.')}"></div></th:block>
 </main>
 <footer th:replace="~{fragments/layout :: footer}"></footer>
 </body>

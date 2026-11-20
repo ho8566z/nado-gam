@@ -68,7 +68,7 @@
 			</div>
 		</th:block>
 	</section>
-	<p id="dest-empty" class="empty" hidden>찾는 여행지가 없어요. 다른 검색어로 시도해 보세요.</p>
+	<div id="dest-empty" class="empty empty--mascot" hidden><svg th:replace="~{fragments/mascot :: mascotSvg('mascot--sm')}"></svg><p>찾는 여행지가 없어요. 다른 검색어로 시도해 보세요.</p></div>
 
 </main>
 <footer th:replace="~{fragments/layout :: footer}"></footer>

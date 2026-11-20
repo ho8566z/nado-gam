@@ -14,7 +14,7 @@
 			<a th:replace="~{fragments/cards :: planPoster(${p})}"></a>
 		</div>
 	</section>
-	<p class="empty" th:if="${#lists.isEmpty(plans)}">진행 중인 기획전이 없습니다.</p>
+	<th:block th:if="${#lists.isEmpty(plans)}"><div th:replace="~{fragments/mascot :: empty('진행 중인 기획전이 없습니다.')}"></div></th:block>
 </main>
 <footer th:replace="~{fragments/layout :: footer}"></footer>
 </body>

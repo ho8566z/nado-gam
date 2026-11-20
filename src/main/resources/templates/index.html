@@ -41,7 +41,7 @@
 			<button class="nav nav--next" type="button" aria-label="다음 기획전">›</button>
 			<div class="dots" role="tablist" aria-label="기획전 선택"></div>
 		</div>
-		<p class="empty" th:if="${#lists.isEmpty(plans)}">진행 중인 기획전이 없습니다.</p>
+		<th:block th:if="${#lists.isEmpty(plans)}"><div th:replace="~{fragments/mascot :: empty('진행 중인 기획전이 없습니다.')}"></div></th:block>
 	</section>
 
 	<!-- 베스트셀러 3개 캐로셀 -->
@@ -65,12 +65,13 @@
 			<button class="nav nav--next" type="button" aria-label="다음 베스트셀러">›</button>
 			<div class="dots" role="tablist" aria-label="베스트셀러 선택"></div>
 		</div>
-		<p class="empty" th:if="${#lists.isEmpty(bestsellers)}">집계된 베스트셀러가 없습니다.</p>
+		<th:block th:if="${#lists.isEmpty(bestsellers)}"><div th:replace="~{fragments/mascot :: empty('집계된 베스트셀러가 없습니다.')}"></div></th:block>
 	</section>
 
 </main>
 
 <footer th:replace="~{fragments/layout :: footer}"></footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/globe.gl@2/dist/globe.gl.min.js"></script>
 <script th:src="@{/js/globe-utils.js}"></script>

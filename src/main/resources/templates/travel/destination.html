@@ -106,7 +106,7 @@
 						</div>
 					</div>
 
-					<p class="empty" th:if="${#lists.isEmpty(result.flights())}">조건에 맞는 항공편이 없어요. 필터를 바꿔 보세요.</p>
+					<th:block th:if="${#lists.isEmpty(result.flights())}"><div th:replace="~{fragments/mascot :: empty('조건에 맞는 항공편이 없어요. 필터를 바꿔 보세요.')}"></div></th:block>
 
 					<article class="flight-card option" tabindex="0" th:each="f : ${result.flights()}"
 						th:attr="data-flight-id=${f.flight().flightId()}">

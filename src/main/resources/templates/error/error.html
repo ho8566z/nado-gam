@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('문제가 생겼어요')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('')}"></header>
+<main class="page page--narrow">
+	<section class="lost">
+		<svg th:replace="~{fragments/mascot :: mascotSvg('mascot--lg')}"></svg>
+		<p class="kicker">오류</p>
+		<h1>잠깐 문제가 생겼어요</h1>
+		<p>삐삐가 불을 너무 세게 뿜었나 봐요. 잠시 뒤에 다시 시도해 주세요.</p>
+		<a class="button" th:href="@{/}">메인으로 돌아가기</a>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
