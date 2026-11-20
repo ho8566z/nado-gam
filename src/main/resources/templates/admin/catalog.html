@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('상품 노출 관리')}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('catalog')}"></aside>
+	<main class="admin-main">
+		<h1>상품 노출 관리</h1>
+		<div class="filter-tabs" role="tablist" aria-label="관리 항목">
+			<a class="chip chip--tab" th:each="k : ${kinds}" th:classappend="${k.key == kind.key} ? 'is-active'"
+				th:href="@{/admin/catalog(kind=${k.key})}" th:text="${k.label}">해외 여행지</a>
+		</div>
+		<div class="alert alert--ok" th:if="${param.saved}">저장했습니다.</div>
+		<form class="inline-search" th:action="@{/admin/catalog}" method="get">
+			<input type="hidden" name="kind" th:value="${kind.key}">
+			<input type="search" name="q" th:value="${q}" placeholder="이름 검색" aria-label="이름 검색">
+			<button type="submit" class="button button--sm">검색</button>
+		</form>
+		<p class="note"><b th:text="${kind.label}">항목</b> 총 <b th:text="${#lists.size(rows)}">0</b>건 중 <b th:text="${onCount}">0</b>건 노출 중 (최대 300건 표시)</p>
+		<p class="empty" th:if="${#lists.isEmpty(rows)}">해당하는 항목이 없습니다.</p>
+		<div class="table-wrap" th:unless="${#lists.isEmpty(rows)}">
+			<table class="table">
+				<thead>
+					<tr><th>번호</th><th>이름</th><th>상태</th><th>사유</th><th>관리</th></tr>
+				</thead>
+				<tbody>
+					<tr th:each="r : ${rows}">
+						<td th:text="${r.id}">1</td>
+						<td class="cell-wrap" th:text="${r.name}">이름</td>
+						<td><span class="badge" th:classappend="${r.state == 'on'} ? 'badge--ACTIVE' : 'badge--WITHDRAWN'" th:text="${r.state == 'on'} ? '노출 중' : '중지'">노출 중</span></td>
+						<td class="cell-wrap" th:text="${r.note} ?: '-'">-</td>
+						<td>
+							<form class="row-actions" th:action="@{/admin/catalog/{k}/{id}/toggle(k=${kind.key}, id=${r.id})}" method="post">
+								<input type="hidden" name="q" th:value="${q}">
+								<input type="text" name="reason" maxlength="200" placeholder="중지 사유(선택)" aria-label="중지 사유"
+									th:if="${kind.key == 'destination' and r.state == 'on'}">
+								<button type="submit" class="link-sm" th:classappend="${r.state == 'on'} ? 'link-sm--danger'" th:text="${r.state == 'on'} ? '노출 중지' : '노출 재개'">노출 중지</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="note">중지한 항목은 사용자 화면과 장바구니에서 빠지며, 이미 결제된 예약에는 영향이 없습니다. 모든 변경은 관리자 로그에 기록됩니다.</p>
+	</main>
+</div>
+</body>
+</html>
