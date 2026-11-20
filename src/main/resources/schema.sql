@@ -12,6 +12,7 @@ DROP TABLE IF EXISTS destination;
 DROP TABLE IF EXISTS airport;
 DROP TABLE IF EXISTS country;
 DROP TABLE IF EXISTS member;
+DROP TABLE IF EXISTS support_inquiry;
 DROP TABLE IF EXISTS popup_event;
 DROP TABLE IF EXISTS admin_audit_log;
 DROP TABLE IF EXISTS admin_account;
@@ -80,6 +81,23 @@ CREATE TABLE member (
     CONSTRAINT uq_member_login_id UNIQUE (login_id),
     CONSTRAINT uq_member_email UNIQUE (email)
 );
+
+CREATE TABLE support_inquiry (
+    inquiry_id      BIGINT       NOT NULL AUTO_INCREMENT,
+    member_id       BIGINT       NOT NULL,
+    category        VARCHAR(15)  NOT NULL,
+    title           VARCHAR(100) NOT NULL,
+    content         TEXT         NOT NULL,
+    status          VARCHAR(10)  NOT NULL DEFAULT 'RECEIVED',
+    answer_content  TEXT         NULL,
+    answered_by     BIGINT       NULL,
+    created_at      DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    answered_at     DATETIME     NULL,
+    PRIMARY KEY (inquiry_id),
+    CONSTRAINT fk_inquiry_member FOREIGN KEY (member_id) REFERENCES member (member_id),
+    CONSTRAINT fk_inquiry_admin FOREIGN KEY (answered_by) REFERENCES admin_account (admin_id)
+);
+CREATE INDEX idx_inquiry_member ON support_inquiry (member_id, created_at);
 
 -- ============================================================
 -- [M] 운영 마스터 (관리자가 등록·수정, 사용자는 조회)
