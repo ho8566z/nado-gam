@@ -286,3 +286,29 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 	*, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 	.slide { opacity: 1; transform: none; }
 }
+
+/* ---------- 모바일 하단 탭 바 (휴대폰 폭에서만) ---------- */
+.tabbar { display: none; }
+@media (max-width: 760px) {
+	body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+	.site-header { padding: 10px 16px; }
+	.site-header nav > a { display: none; }           /* 상단 메뉴는 하단 탭 바로 옮긴다 */
+	.site-header nav { flex-wrap: nowrap; }
+	.auth-links { margin-left: 0; padding-left: 0; border-left: 0; }
+	.site-footer { margin-top: 48px; padding-bottom: 24px; }
+	.tabbar {
+		position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+		display: grid; grid-template-columns: repeat(5, 1fr);
+		padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+		background: rgba(8, 13, 26, 0.92); backdrop-filter: blur(14px);
+		border-top: 1px solid var(--line);
+	}
+	.tabbar a {
+		display: flex; flex-direction: column; align-items: center; gap: 2px;
+		min-height: 48px; padding: 4px 0; border-radius: 12px;
+		color: var(--muted); font-size: 11px; font-weight: 700;
+	}
+	.tabbar svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+	.tabbar a.is-active { color: var(--accent); }
+	.tabbar a:active { background: var(--panel-2); }
+}

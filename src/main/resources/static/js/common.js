@@ -21,3 +21,22 @@
 		window.setTimeout(function () { window.location.href = href; }, 340);
 	});
 })();
+
+// 모바일 하단 탭 바: 현재 주소에 맞는 탭을 강조한다.
+(function () {
+	'use strict';
+	var path = window.location.pathname;
+	document.querySelectorAll('.tabbar a[data-tab]').forEach(function (a) {
+		var base = a.getAttribute('data-tab');
+		var on = a.hasAttribute('data-tab-exact') ? path === base : (path === base || path.indexOf(base + '/') === 0);
+		if (on) {
+			a.classList.add('is-active');
+			a.setAttribute('aria-current', 'page');
+		}
+	});
+	// 로그인·가입 화면은 '내 정보' 탭에 속한다.
+	if (path === '/login' || path === '/signup') {
+		var acc = document.querySelector('.tabbar a[data-tab="/account"]');
+		if (acc) { acc.classList.add('is-active'); acc.setAttribute('aria-current', 'page'); }
+	}
+})();

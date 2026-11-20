@@ -124,3 +124,8 @@ a.dest-card:hover { transform: translateY(-5px); box-shadow: 0 24px 50px -20px r
 	.dest-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
 	.dest-body h3 { font-size: 22px; }
 }
+
+/* 휴대폰 폭: 요금 상세 표는 열을 숨기지 않고(.table-wrap 이 가로 스크롤) 모두 보여 준다 */
+@media (max-width: 760px) {
+	.fare-table--detail th:nth-child(5), .fare-table--detail td:nth-child(5) { display: table-cell; }
+}
