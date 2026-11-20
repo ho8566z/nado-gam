@@ -26,8 +26,14 @@
 					<small th:text="${t.note}">안내</small>
 				</span>
 				<span class="transport-time"><b th:text="${t.departLabel()}">07:00</b> 출발 · <span th:text="${t.durationLabel()}">2시간 35분</span></span>
-				<span class="transport-fare" th:text="${t.fareLabel()}">₩59,800</span>
-			</li>
+									<span class="transport-fare" th:text="${t.fareLabel()}">₩59,800</span>
+					<form class="cart-form cart-form--transport" th:action="@{/cart/add}" method="post">
+						<input type="hidden" name="type" value="TRANSPORT">
+						<input type="hidden" name="refId" th:value="${t.transportId}">
+						<label>탑승일 <input type="date" name="date" required th:attr="min=${#temporals.format(#temporals.createToday().plusDays(1), 'yyyy-MM-dd')},max=${#temporals.format(#temporals.createToday().plusYears(1), 'yyyy-MM-dd')}"></label>
+						<label>인원 <input type="number" name="quantity" value="1" min="1" max="9" required></label>
+						<button type="submit" class="button button--sm">담기</button>
+					</form>			</li>
 		</ul>
 		<p class="muted">요금은 성인 편도 1인 기준의 예시 값이에요(가상 데이터).</p>
 	</section>

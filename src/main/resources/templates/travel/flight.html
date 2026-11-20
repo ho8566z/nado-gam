@@ -88,7 +88,19 @@
 					</tbody>
 				</table>
 			</div>
-			<p class="muted small">요금은 편도 성인 1인 기준이며, 예약·결제 기능은 다음 단계에서 제공됩니다.</p>
+			<form class="cart-form cart-form--flight" th:action="@{/cart/add}" method="post">
+				<input type="hidden" name="type" value="FLIGHT">
+				<input type="hidden" name="refId" th:value="${detail.flight().flightId()}">
+				<label>좌석 등급
+					<select name="cabin" required>
+						<option th:each="f : ${detail.fares()}" th:value="${f.cabinClass()}" th:text="${f.cabinLabel()} + ' · ' + ${f.totalLabel()}">일반석</option>
+					</select>
+				</label>
+				<label>탑승일 <input type="date" name="date" required th:attr="min=${#temporals.format(#temporals.createToday().plusDays(1), 'yyyy-MM-dd')},max=${#temporals.format(#temporals.createToday().plusYears(1), 'yyyy-MM-dd')}"></label>
+				<label>인원 <input type="number" name="quantity" value="1" min="1" max="9" required></label>
+				<button type="submit" class="button">장바구니에 담기</button>
+			</form>
+			<p class="muted small">요금은 편도 성인 1인 기준이에요. 운항 요일(<span th:text="${detail.operatingLabel()}">매일 운항</span>)에 맞는 날짜만 담을 수 있고, 결제는 모의 결제로 마무리돼요.</p>
 		</section>
 	</div>
 
