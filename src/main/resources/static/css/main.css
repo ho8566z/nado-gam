@@ -224,7 +224,7 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 .page-title { padding: 56px clamp(16px, 4vw, 32px) 24px; }
 .page-title h1 { font-size: clamp(30px, 4.4vw, 46px); font-weight: 800; letter-spacing: -0.02em; margin-top: 2px; }
 .page-title p { color: var(--muted); margin-top: 8px; }
-.grid { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 8px clamp(16px, 4vw, 32px) 0; }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 8px clamp(16px, 4vw, 32px) 0; }
 .grid .poster { min-height: 340px; }
 .back { display: block; padding: 28px clamp(16px, 4vw, 32px) 12px; color: var(--muted); font-weight: 600; }
 .back:hover { color: var(--ink); }
@@ -281,7 +281,7 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 
 /* ---------- 반응형 ---------- */
 @media (min-width: 900px) {
-	.grid { grid-template-columns: repeat(3, 1fr); }
+	.grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 	.grid .poster { grid-template-columns: 1fr; align-items: end; min-height: 460px; }
 	.grid .poster-side { align-items: flex-start; text-align: left; }
 	.grid .poster-bgtext { font-size: clamp(60px, 8vw, 110px); }
