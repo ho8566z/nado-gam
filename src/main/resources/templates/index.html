@@ -72,6 +72,8 @@
 
 <footer th:replace="~{fragments/layout :: footer}"></footer>
 
+<div th:replace="~{fragments/popup :: popup(${popup})}"></div>
+<script th:if="${popup != null}" th:src="@{/js/popup.js}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/globe.gl@2/dist/globe.gl.min.js"></script>
 <script th:src="@{/js/globe-utils.js}"></script>

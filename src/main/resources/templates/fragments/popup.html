@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!-- 메인 이벤트 팝업(모달). 노출 중인 팝업이 있을 때만 그린다. 열고 닫는 동작은 popup.js 가 맡는다. -->
+<div th:fragment="popup(popup)" th:if="${popup != null}" class="popup" id="event-popup" hidden
+	th:attr="data-popup-id=${popup.popupId}" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+	<div class="popup-backdrop" data-popup-close></div>
+	<div class="popup-card">
+		<button type="button" class="popup-x" data-popup-close aria-label="팝업 닫기">&times;</button>
+		<svg th:replace="~{fragments/mascot :: mascotSvg('mascot--popup')}"></svg>
+		<p class="kicker">EVENT</p>
+		<h2 id="popup-title" th:text="${popup.title}">이벤트 제목</h2>
+		<p class="popup-body" th:text="${popup.body}">이벤트 내용</p>
+		<a class="button" th:if="${popup.qrTargetUrl != null}" th:href="${popup.qrTargetUrl}" data-popup-close-on-click>이벤트 보러 가기</a>
+		<div class="popup-actions">
+			<button type="button" class="popup-link" data-popup-hide-today>오늘 하루 안 보기</button>
+			<button type="button" class="popup-link" data-popup-close>닫기</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

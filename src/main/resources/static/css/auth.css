@@ -66,3 +66,22 @@
 .field--check input { width: auto; }
 .field--check > span { margin: 0; font-weight: 600; }
 .field--check .error { flex-basis: 100%; }
+
+/* 관리자 폼·목록 보조 */
+.admin-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.admin-head h1 { margin: 0; }
+.button--sm { margin-top: 0; padding: 8px 18px; font-size: 14px; }
+.cell-wrap { white-space: normal !important; min-width: 220px; max-width: 360px; }
+.row-actions { display: flex; align-items: center; gap: 12px; }
+.row-actions form { margin: 0; }
+.link-sm { background: none; border: 0; padding: 4px 2px; color: var(--accent); font-size: 14px; font-weight: 700; }
+.link-sm:hover { text-decoration: underline; }
+.link-sm--danger { color: var(--hot); }
+.note { margin-top: 14px; color: var(--muted); font-size: 13px; }
+.admin-form { max-width: 640px; }
+.admin-form .field textarea { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.05); color: var(--ink); font: inherit; resize: vertical; }
+.admin-form .field textarea:focus { outline: 3px solid var(--accent); outline-offset: 1px; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-actions--row { display: flex; gap: 12px; }
+.form-actions--row .button { width: auto; min-width: 120px; }
+@media (max-width: 720px) { .field-row { grid-template-columns: 1fr; gap: 0; } }

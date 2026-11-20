@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('팝업 관리')}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('popups')}"></aside>
+	<main class="admin-main">
+		<div class="admin-head">
+			<h1>팝업 관리</h1>
+			<a class="button button--sm" th:href="@{/admin/popups/new}">팝업 등록</a>
+		</div>
+		<div class="alert alert--ok" th:if="${param.saved}">저장했습니다.</div>
+		<div class="alert alert--ok" th:if="${param.deleted}">삭제했습니다.</div>
+		<p class="empty" th:if="${#lists.isEmpty(popups)}">등록된 팝업이 없습니다.</p>
+		<div class="table-wrap" th:unless="${#lists.isEmpty(popups)}">
+			<table class="table">
+				<thead>
+					<tr><th>번호</th><th>제목</th><th>노출 기간</th><th>상태</th><th>이동 주소</th><th>관리</th></tr>
+				</thead>
+				<tbody>
+					<tr th:each="p : ${popups}">
+						<td th:text="${p.popupId}">1</td>
+						<td class="cell-wrap" th:text="${p.title}">제목</td>
+						<td th:text="${#temporals.format(p.startAt, 'yyyy-MM-dd HH:mm')} + ' ~ ' + ${#temporals.format(p.endAt, 'yyyy-MM-dd HH:mm')}">기간</td>
+						<td><span class="badge" th:with="s=${p.statusLabel(now)}" th:classappend="${s == '노출 중'} ? 'badge--ACTIVE' : (${s == '종료'} ? 'badge--WITHDRAWN' : '')" th:text="${s}">노출 중</span></td>
+						<td th:text="${p.qrTargetUrl} ?: '-'">/special</td>
+						<td class="row-actions">
+							<a class="link-sm" th:href="@{/admin/popups/{id}/edit(id=${p.popupId})}">수정</a>
+							<form th:action="@{/admin/popups/{id}/toggle(id=${p.popupId})}" method="post">
+								<button type="submit" class="link-sm" th:text="${p.active} ? '숨기기' : '노출하기'">숨기기</button>
+							</form>
+							<form th:action="@{/admin/popups/{id}/delete(id=${p.popupId})}" method="post">
+								<button type="submit" class="link-sm link-sm--danger">삭제</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="note">메인에는 노출이 켜져 있고 기간 안에 있는 팝업 중 가장 최근에 시작한 1개만 보여 줍니다.</p>
+	</main>
+</div>
+</body>
+</html>

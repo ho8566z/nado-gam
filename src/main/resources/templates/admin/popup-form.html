@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('팝업 등록·수정')}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('popups')}"></aside>
+	<main class="admin-main">
+		<h1>팝업 등록·수정</h1>
+		<form class="admin-form" th:action="${formAction}" th:object="${popupForm}" method="post" novalidate>
+			<label class="field"><span>제목</span>
+				<input type="text" th:field="*{title}" maxlength="100" required>
+				<small class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></small>
+			</label>
+			<label class="field"><span>내용</span>
+				<textarea th:field="*{body}" rows="4" maxlength="500" required></textarea>
+				<small class="error" th:if="${#fields.hasErrors('body')}" th:errors="*{body}"></small>
+			</label>
+			<label class="field"><span>이동 주소 (QR·버튼)</span>
+				<input type="text" th:field="*{qrTargetUrl}" maxlength="300" placeholder="/special 또는 https://...">
+				<small class="hint">비워 두면 버튼 없이 안내만 보여 줍니다. 사이트 경로(/…)나 http(s):// 주소만 쓸 수 있어요.</small>
+				<small class="error" th:if="${#fields.hasErrors('qrTargetUrl')}" th:errors="*{qrTargetUrl}"></small>
+			</label>
+			<div class="field-row">
+				<label class="field"><span>노출 시작</span>
+					<input type="datetime-local" th:field="*{startAt}" required>
+					<small class="error" th:if="${#fields.hasErrors('startAt')}" th:errors="*{startAt}"></small>
+				</label>
+				<label class="field"><span>노출 종료</span>
+					<input type="datetime-local" th:field="*{endAt}" required>
+					<small class="error" th:if="${#fields.hasErrors('endAt')}" th:errors="*{endAt}"></small>
+				</label>
+			</div>
+			<small class="error" th:if="${#fields.hasErrors('periodValid')}" th:errors="*{periodValid}"></small>
+			<label class="field field--check">
+				<input type="checkbox" th:field="*{active}">
+				<span>노출하기</span>
+			</label>
+			<div class="form-actions form-actions--row">
+				<button class="button" type="submit">저장</button>
+				<a class="button button--ghost" th:href="@{/admin/popups}">취소</a>
+			</div>
+		</form>
+	</main>
+</div>
+</body>
+</html>
