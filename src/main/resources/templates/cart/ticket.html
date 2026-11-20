@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('예약 확인')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('reservations')}"></header>
+<main class="page page--narrow">
+	<section class="page-title">
+		<span class="kicker">E-TICKET</span>
+		<h1 th:text="${reservation.reservationNo}">NG20261120-ABC123</h1>
+		<p>QR로 확인한 예약이에요. (연습용 모의 결제 예약입니다)</p>
+	</section>
+
+	<div class="ticket-status" th:classappend="${reservation.checkedIn} ? 'ticket-status--done'" th:text="${reservation.statusLabel}">결제 완료</div>
+
+	<ul class="cart-list">
+		<li class="cart-item" th:each="i : ${items}">
+			<div class="cart-main">
+				<span class="chip" th:text="${i.typeLabel}">투어</span>
+				<strong th:text="${i.title}">상품 이름</strong>
+				<span class="muted" th:text="${i.detail}">상세</span>
+				<span class="muted">여행일 <b th:text="${#temporals.format(i.travelDate, 'yyyy-MM-dd')}">2026-12-01</b></span>
+			</div>
+		</li>
+	</ul>
+	<p class="muted" th:if="${reservation.checkedIn}" th:text="'체크인 ' + ${#temporals.format(reservation.checkedInAt, 'yyyy-MM-dd HH:mm')}">체크인 시각</p>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

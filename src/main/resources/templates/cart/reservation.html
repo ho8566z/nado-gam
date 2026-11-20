@@ -21,6 +21,15 @@
 		<div><dt>결제 금액</dt><dd><strong th:text="${reservation.totalLabel}">₩0</strong></dd></div>
 	</dl>
 
+	<section class="qr-box" aria-label="예약 QR 코드">
+		<img th:src="@{/qr(target='/r/' + ${reservation.qrToken})}" alt="예약 확인 QR 코드" width="180" height="180">
+		<div>
+			<strong>모바일 탑승권·예약 확인 QR</strong>
+			<p class="muted">현장에서 이 QR을 보여 주세요. 스캔하면 예약 내용을 확인해요.</p>
+			<a class="button button--sm button--ghost" th:href="@{/r/{t}(t=${reservation.qrToken})}">확인 화면 열기</a>
+		</div>
+	</section>
+
 	<h2 class="section-title section-title--flat">예약 상품</h2>
 	<ul class="cart-list">
 		<li class="cart-item" th:each="i : ${items}">

@@ -22,6 +22,17 @@ public class ReservationController {
 		this.items = items;
 	}
 
+	// QR 을 스캔하면 열리는 예약 확인 화면. 로그인 없이 열리므로 이름·연락처 같은 개인정보는 보여 주지 않는다.
+	// 토큰은 추측할 수 없는 임의 값이다.
+	@GetMapping("/r/{token}")
+	public String ticket(@PathVariable String token, Model model) {
+		Reservation r = reservations.findByQrToken(token).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+		model.addAttribute("reservation", r);
+		model.addAttribute("items", items.findByReservationIdOrderByReservationItemId(r.getReservationId()));
+		model.addAttribute("active", "reservations");
+		return "cart/ticket";
+	}
+
 	@GetMapping("/reservations")
 	public String list(@AuthenticationPrincipal AppUser user, Model model) {
 		model.addAttribute("reservations", reservations.findByMemberIdOrderByPaidAtDesc(user.getId()));

@@ -400,10 +400,14 @@ CREATE TABLE reservation (
     reservation_no  VARCHAR(30)  NOT NULL,
     total_amount    BIGINT       NOT NULL,
     pay_method      VARCHAR(10)  NOT NULL,
-    status          VARCHAR(10)  NOT NULL DEFAULT 'PAID',
+    status          VARCHAR(12)  NOT NULL DEFAULT 'PAID',
     paid_at         DATETIME     NOT NULL,
+    qr_token        VARCHAR(64)  NOT NULL,
+    checked_in_at   DATETIME     NULL,
+    checked_in_by   BIGINT       NULL,
     PRIMARY KEY (reservation_id),
     CONSTRAINT uq_reservation_no UNIQUE (reservation_no),
+    CONSTRAINT uq_reservation_qr UNIQUE (qr_token),
     CONSTRAINT fk_reservation_member FOREIGN KEY (member_id) REFERENCES member (member_id)
 );
 
