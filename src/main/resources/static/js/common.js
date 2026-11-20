@@ -53,3 +53,34 @@
 		}
 	});
 })();
+
+// 화면에 나오는 마스코트 이름 '거코'는 항상 오렌지색으로 보여 준다. (템플릿·DB 문구 모두 같은 방식으로 처리)
+(function () {
+	'use strict';
+	var NAME = '거코';
+	var skip = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, INPUT: 1, NOSCRIPT: 1, TITLE: 1 };
+	var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+		acceptNode: function (n) {
+			var p = n.parentNode;
+			if (!n.nodeValue || n.nodeValue.indexOf(NAME) < 0) { return NodeFilter.FILTER_REJECT; }
+			if (!p || skip[p.nodeName] || (p.classList && p.classList.contains('name-geoko'))) { return NodeFilter.FILTER_REJECT; }
+			return NodeFilter.FILTER_ACCEPT;
+		}
+	});
+	var nodes = [];
+	while (walker.nextNode()) { nodes.push(walker.currentNode); }
+	nodes.forEach(function (n) {
+		var parts = n.nodeValue.split(NAME);
+		var frag = document.createDocumentFragment();
+		parts.forEach(function (text, i) {
+			if (i > 0) {
+				var span = document.createElement('span');
+				span.className = 'name-geoko';
+				span.textContent = NAME;
+				frag.appendChild(span);
+			}
+			if (text) { frag.appendChild(document.createTextNode(text)); }
+		});
+		n.parentNode.replaceChild(frag, n);
+	});
+})();
