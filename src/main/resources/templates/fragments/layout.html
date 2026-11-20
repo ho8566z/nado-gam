@@ -11,6 +11,7 @@
 	<link rel="stylesheet" th:href="@{/css/auth.css}">
 	<link rel="stylesheet" th:href="@{/css/mascot.css}">
 	<link rel="stylesheet" th:href="@{/css/popup.css}">
+	<link rel="stylesheet" th:href="@{/css/tour.css}">
 	<script defer th:src="@{/js/common.js}"></script>
 </head>
 <body>
@@ -22,6 +23,7 @@
 	<nav aria-label="주 메뉴">
 		<a th:href="@{/account}" th:classappend="${active == 'account'} ? 'is-active'">계정</a>
 		<a th:href="@{/travel}" th:classappend="${active == 'travel'} ? 'is-active'">해외 여행</a>
+		<a th:href="@{/tour}" th:classappend="${active == 'tour'} ? 'is-active'">투어</a>
 		<a th:href="@{/special}" th:classappend="${active == 'special'} ? 'is-active'">이달의 특별기획</a>
 		<a th:href="@{/bestseller}" th:classappend="${active == 'bestseller'} ? 'is-active'">베스트셀러</a>
 		<a th:href="@{/support}" th:classappend="${active == 'support'} ? 'is-active'">고객문의</a>
@@ -56,9 +58,9 @@
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>
 			<span>기획</span>
 		</a>
-		<a th:href="@{/bestseller}" data-tab="/bestseller">
-			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg>
-			<span>베스트</span>
+		<a th:href="@{/tour}" data-tab="/tour">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 19 9.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="10" r="2.6"/></svg>
+			<span>투어</span>
 		</a>
 		<a th:href="@{/support}" data-tab="/support">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>

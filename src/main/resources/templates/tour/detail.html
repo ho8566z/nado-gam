@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${tour.title})}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('tour')}"></header>
+<main class="page">
+
+	<section class="tour-hero" th:style="'--from:' + ${tour.from()} + ';--to:' + ${tour.to()}">
+		<a class="back-link" th:href="@{/tour}">← 투어 목록</a>
+		<span class="tour-badges">
+			<span class="tour-badge" th:text="${tour.scopeLabel()}">해외</span>
+			<span class="tour-badge tour-badge--theme" th:text="${tour.themeLabel()}">테마</span>
+		</span>
+		<p class="tour-place-lg"><strong th:text="${tour.placeName}">파리</strong> <small th:text="${tour.placeEn}">Paris</small></p>
+		<h1 th:text="${tour.title}">투어 이름</h1>
+		<p class="tour-hero-sub" th:text="${tour.subtitle}">부제</p>
+		<p class="tour-brand" th:if="${tour.collabBrand != null}" th:text="'콜라보 · ' + ${tour.collabBrand}">콜라보 브랜드</p>
+	</section>
+
+	<div class="tour-layout">
+		<div class="tour-main">
+			<section aria-labelledby="opt-title">
+				<h2 id="opt-title" class="section-title section-title--flat">기간 선택</h2>
+				<div class="chip-row" role="tablist" aria-label="기간 옵션">
+					<a class="chip chip--tab" th:each="o : ${options}" th:classappend="${o.optionId() == selected.optionId()} ? 'is-active'"
+						th:href="@{/tour/{id}(id=${tour.tourId},option=${o.optionId()})}" th:attr="aria-current=${o.optionId() == selected.optionId()} ? 'true'">
+						<span th:text="${o.periodLabel()}">3박 4일</span> <b th:text="${o.priceLabel()}">₩1,000,000</b>
+					</a>
+				</div>
+			</section>
+
+			<section aria-labelledby="hl-title">
+				<h2 id="hl-title" class="section-title section-title--flat">추천 포인트</h2>
+				<ul class="tour-points">
+					<li th:each="h : ${tour.highlightList()}" th:text="${h}">포인트</li>
+				</ul>
+			</section>
+
+			<section aria-labelledby="day-title">
+				<h2 id="day-title" class="section-title section-title--flat">
+					<span th:text="${selected.periodLabel()}">3박 4일</span> 일정
+				</h2>
+				<ol class="tour-days">
+					<li th:each="d : ${days}">
+						<span class="day-no" th:text="${d.dayNo()} + '일차'">1일차</span>
+						<div>
+							<strong th:text="${d.title()}">제목</strong>
+							<p th:text="${d.description()}">설명</p>
+						</div>
+					</li>
+				</ol>
+			</section>
+
+			<section class="tour-incl">
+				<div>
+					<h2 class="section-title section-title--flat">포함 사항</h2>
+					<ul class="check-list"><li th:each="i : ${tour.includeList()}" th:text="${i}">포함</li></ul>
+				</div>
+				<div>
+					<h2 class="section-title section-title--flat">불포함 사항</h2>
+					<ul class="check-list check-list--no"><li th:each="i : ${tour.excludeList()}" th:text="${i}">불포함</li></ul>
+				</div>
+			</section>
+		</div>
+
+		<aside class="tour-side" aria-label="요금">
+			<p class="kicker">1인 기준</p>
+			<p class="tour-price" th:text="${selected.priceLabel()}">₩1,000,000</p>
+			<p class="tour-price-sub" th:text="${selected.periodLabel()} + ' · ' + ${selected.minPeople()} + '~' + ${selected.maxPeople()} + '명'">3박 4일 · 2~20명</p>
+			<p class="note">항공권은 포함되지 않아요. 항공편은 해외 여행 메뉴에서 따로 골라 주세요. (모든 상품·브랜드·가격은 가상 데이터입니다)</p>
+			<a class="button" th:href="@{/travel}" th:if="${tour.scope == 'OVERSEAS'}">항공편 보러 가기</a>
+			<a class="button button--ghost" th:href="@{/tour}">다른 투어 보기</a>
+		</aside>
+	</div>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

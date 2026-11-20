@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('투어')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('tour')}"></header>
+<main class="page">
+
+	<section class="page-title">
+		<span class="kicker">TOUR</span>
+		<h1>투어</h1>
+		<p>음식과 주류, 스포츠와 액티비티, 예술과 휴식. 세 가지 테마로 여행지의 진짜 매력을 만나 보세요.</p>
+	</section>
+
+	<section class="tour-filters" aria-label="투어 찾기">
+		<div class="chip-row" aria-label="테마">
+			<a class="chip chip--tab" th:classappend="${theme == null} ? 'is-active'" th:href="@{/tour(scope=${scope},q=${q})}">전체 테마</a>
+			<a class="chip chip--tab" th:each="t : ${themes}" th:classappend="${theme == t.name()} ? 'is-active'"
+				th:href="@{/tour(scope=${scope},theme=${t.name()},q=${q})}" th:text="${t.label}">음식과 주류 투어</a>
+		</div>
+		<div class="chip-row" aria-label="지역">
+			<a class="chip chip--tab" th:classappend="${scope == null} ? 'is-active'" th:href="@{/tour(theme=${theme},q=${q})}">해외·국내</a>
+			<a class="chip chip--tab" th:classappend="${scope == 'OVERSEAS'} ? 'is-active'" th:href="@{/tour(scope='OVERSEAS',theme=${theme},q=${q})}">해외</a>
+			<a class="chip chip--tab" th:classappend="${scope == 'DOMESTIC'} ? 'is-active'" th:href="@{/tour(scope='DOMESTIC',theme=${theme},q=${q})}">국내</a>
+		</div>
+		<form class="tour-search" th:action="@{/tour}" method="get" role="search">
+			<input type="hidden" name="scope" th:value="${scope}" th:if="${scope != null}">
+			<input type="hidden" name="theme" th:value="${theme}" th:if="${theme != null}">
+			<label class="search"><span class="sr-only">투어 검색</span>
+				<input type="search" name="q" th:value="${q}" placeholder="여행지나 투어 이름을 검색해 보세요 (예: 바르셀로나, 맥주, 온천)" autocomplete="off">
+			</label>
+		</form>
+	</section>
+
+	<p class="result-count"><b th:text="${#lists.size(tours)}">0</b>개의 투어 <span th:if="${#lists.size(tours) != total}" th:text="'(전체 ' + ${total} + '개)'"></span></p>
+
+	<th:block th:if="${#lists.isEmpty(tours)}">
+		<div th:replace="~{fragments/mascot :: empty('조건에 맞는 투어가 없어요. 필터나 검색어를 바꿔 보세요.')}"></div>
+	</th:block>
+
+	<section class="tour-grid" aria-label="투어 목록" th:unless="${#lists.isEmpty(tours)}">
+		<a class="tour-card" th:each="t : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition
+			th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()}">
+			<span class="tour-badges">
+				<span class="tour-badge" th:text="${t.scopeLabel()}">해외</span>
+				<span class="tour-badge tour-badge--theme" th:text="${t.themeLabel()}">테마</span>
+			</span>
+			<span class="tour-place">
+				<strong th:text="${t.placeName}">파리</strong>
+				<small th:text="${t.placeEn}">Paris</small>
+			</span>
+			<span class="tour-title" th:text="${t.title}">투어 이름</span>
+			<span class="tour-sub" th:text="${t.subtitle}">부제</span>
+			<span class="tour-foot">
+				<span class="tour-brand" th:if="${t.collabBrand != null}" th:text="'with ' + ${t.collabBrand}">with 브랜드</span>
+				<span class="tour-meta"><span th:text="${t.periodLabel()}">3박 4일</span> · <b th:text="${t.priceLabel()}">₩1,000,000~</b></span>
+			</span>
+		</a>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
