@@ -312,3 +312,7 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 	.tabbar a.is-active { color: var(--accent); }
 	.tabbar a:active { background: var(--panel-2); }
 }
+
+.inline-search { display: flex; gap: 8px; margin: 12px 0; max-width: 420px; }
+.inline-search input { flex: 1; min-width: 0; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+.row-actions input[type=text] { padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); min-width: 0; }
