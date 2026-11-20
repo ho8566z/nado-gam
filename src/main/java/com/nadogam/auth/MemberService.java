@@ -46,4 +46,26 @@ public class MemberService {
 		}
 		members.findById(memberId).orElseThrow().updateProfile(name.trim(), phone, email.trim());
 	}
+
+	// 현재 비밀번호가 맞을 때만 새 비밀번호(BCrypt)로 바꾼다. 맞지 않으면 false.
+	@Transactional
+	public boolean changePassword(Long memberId, String currentPassword, String newPassword) {
+		Member member = members.findById(memberId).orElseThrow();
+		if (!encoder.matches(currentPassword, member.getPasswordHash())) {
+			return false;
+		}
+		member.changePassword(encoder.encode(newPassword));
+		return true;
+	}
+
+	// 비밀번호를 한 번 더 확인한 뒤 탈퇴(WITHDRAWN) 처리한다. 맞지 않으면 false.
+	@Transactional
+	public boolean withdraw(Long memberId, String password) {
+		Member member = members.findById(memberId).orElseThrow();
+		if (!encoder.matches(password, member.getPasswordHash())) {
+			return false;
+		}
+		member.withdraw();
+		return true;
+	}
 }

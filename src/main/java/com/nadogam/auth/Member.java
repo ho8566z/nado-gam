@@ -44,6 +44,18 @@ public class Member {
 		return m;
 	}
 
+	public void changePassword(String newPasswordHash) {
+		this.passwordHash = newPasswordHash;
+		this.updatedAt = LocalDateTime.now();
+	}
+
+	// 탈퇴는 행을 지우지 않고 상태만 바꾼다(소프트 삭제). WITHDRAWN 계정은 로그인할 수 없다.
+	public void withdraw() {
+		this.status = "WITHDRAWN";
+		this.withdrawnAt = LocalDateTime.now();
+		this.updatedAt = this.withdrawnAt;
+	}
+
 	public void updateProfile(String name, String phone, String email) {
 		this.name = name;
 		this.phone = phone;

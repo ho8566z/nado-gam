@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('회원 탈퇴')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('account')}"></header>
+<main class="page">
+	<section class="auth-card">
+		<span class="kicker">MY ACCOUNT</span>
+		<h1>회원 탈퇴</h1>
+		<div class="alert alert--error">탈퇴하면 더 이상 로그인할 수 없습니다. 같은 아이디와 이메일로는 다시 가입할 수 없습니다.</div>
+		<form th:action="@{/account/withdraw}" th:object="${withdrawForm}" method="post" novalidate>
+			<label class="field"><span>비밀번호 확인</span>
+				<input type="password" th:field="*{password}" autocomplete="current-password" required>
+				<small class="error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></small>
+			</label>
+			<label class="field field--check">
+				<input type="checkbox" th:field="*{agree}">
+				<span>위 안내를 확인했으며 탈퇴에 동의합니다.</span>
+				<small class="error" th:if="${#fields.hasErrors('agree')}" th:errors="*{agree}"></small>
+			</label>
+			<div class="form-actions">
+				<button class="button button--danger" type="submit">탈퇴하기</button>
+				<a class="button button--ghost" th:href="@{/account}">취소</a>
+			</div>
+		</form>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

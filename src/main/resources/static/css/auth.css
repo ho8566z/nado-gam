@@ -57,3 +57,12 @@
 	.auth-links { border-left: 0; padding-left: 0; margin-left: 0; }
 	.info-list div { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* 계정 화면 보조 */
+.form-actions { display: grid; gap: 10px; }
+.form-actions .button + .button { margin-top: 0; }
+.button--danger { background: var(--hot); color: #fff; }
+.field--check { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.field--check input { width: auto; }
+.field--check > span { margin: 0; font-weight: 600; }
+.field--check .error { flex-basis: 100%; }

@@ -1,6 +1,8 @@
 package com.nadogam.account;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -8,6 +10,9 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import com.nadogam.auth.AppUser;
 import com.nadogam.auth.Member;
@@ -58,5 +63,48 @@ public class AccountController {
 			}
 		}
 		return "account/edit";
+	}
+
+	@GetMapping("/account/password")
+	public String passwordForm(Model model) {
+		model.addAttribute("passwordForm", new PasswordForm());
+		model.addAttribute("active", "account");
+		return "account/password";
+	}
+
+	@PostMapping("/account/password")
+	public String changePassword(@AuthenticationPrincipal AppUser user,
+		@Validated @ModelAttribute("passwordForm") PasswordForm form, BindingResult errors, Model model) {
+		model.addAttribute("active", "account");
+		if (form.getNewPassword() != null && !form.getNewPassword().equals(form.getNewPasswordConfirm())) {
+			errors.rejectValue("newPasswordConfirm", "mismatch", "새 비밀번호가 일치하지 않습니다.");
+		}
+		if (!errors.hasErrors() && !service.changePassword(user.getId(), form.getCurrentPassword(), form.getNewPassword())) {
+			errors.rejectValue("currentPassword", "wrong", "현재 비밀번호가 올바르지 않습니다.");
+		}
+		return errors.hasErrors() ? "account/password" : "redirect:/account?passwordChanged";
+	}
+
+	@GetMapping("/account/withdraw")
+	public String withdrawForm(Model model) {
+		model.addAttribute("withdrawForm", new WithdrawForm());
+		model.addAttribute("active", "account");
+		return "account/withdraw";
+	}
+
+	@PostMapping("/account/withdraw")
+	public String withdraw(@AuthenticationPrincipal AppUser user,
+		@Validated @ModelAttribute("withdrawForm") WithdrawForm form, BindingResult errors, Model model,
+		HttpServletRequest request, HttpServletResponse response) {
+		model.addAttribute("active", "account");
+		if (!errors.hasErrors() && !service.withdraw(user.getId(), form.getPassword())) {
+			errors.rejectValue("password", "wrong", "비밀번호가 올바르지 않습니다.");
+		}
+		if (errors.hasErrors()) {
+			return "account/withdraw";
+		}
+		// 탈퇴가 끝나면 로그인 상태도 함께 끊는다.
+		new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
+		return "redirect:/?withdrawn";
 	}
 }

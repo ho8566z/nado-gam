@@ -15,7 +15,12 @@
 			<div><dt>이메일</dt><dd th:text="${member.email}">user@example.com</dd></div>
 			<div><dt>가입일</dt><dd th:text="${#temporals.format(member.createdAt, 'yyyy-MM-dd')}">2026-11-20</dd></div>
 		</dl>
-		<div class="form-actions"><a class="button" th:href="@{/account/edit}">정보 수정</a></div>
+		<div class="alert alert--ok" th:if="${param.passwordChanged}">비밀번호를 변경했습니다.</div>
+		<div class="form-actions">
+			<a class="button" th:href="@{/account/edit}">정보 수정</a>
+			<a class="button button--ghost" th:href="@{/account/password}">비밀번호 변경</a>
+			<a class="button button--ghost" th:href="@{/account/withdraw}">회원 탈퇴</a>
+		</div>
 	</section>
 </main>
 <footer th:replace="~{fragments/layout :: footer}"></footer>
