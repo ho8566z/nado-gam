@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('장바구니')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('cart')}"></header>
+<main class="page page--narrow">
+	<section class="page-title">
+		<span class="kicker">CART</span>
+		<h1>장바구니</h1>
+		<p>담은 상품을 한 번에 결제해요. 이 결제는 연습용 모의 결제라 실제로 돈이 나가지 않아요.</p>
+	</section>
+
+	<div class="alert alert--ok" th:if="${param.added}">장바구니에 담았어요.</div>
+	<div class="alert alert--ok" th:if="${param.removed}">장바구니에서 뺐어요.</div>
+	<div class="alert alert--error" th:if="${error}" th:text="${error}">오류</div>
+
+	<th:block th:if="${#lists.isEmpty(items)}">
+		<div th:replace="~{fragments/mascot :: empty('장바구니가 비어 있어요. 마음에 드는 여행을 담아 보세요!')}"></div>
+		<p class="cart-links"><a class="button button--sm" th:href="@{/tour}">투어 보기</a> <a class="button button--sm button--ghost" th:href="@{/travel}">해외 여행 보기</a> <a class="button button--sm button--ghost" th:href="@{/domestic}">국내여행 보기</a></p>
+	</th:block>
+
+	<th:block th:unless="${#lists.isEmpty(items)}">
+		<ul class="cart-list">
+			<li class="cart-item" th:each="c : ${items}">
+				<div class="cart-main">
+					<span class="chip" th:text="${c.typeLabel}">투어</span>
+					<strong th:text="${c.title}">상품 이름</strong>
+					<span class="muted" th:text="${c.detail}">상세</span>
+					<span class="muted">여행일 <b th:text="${#temporals.format(c.travelDate, 'yyyy-MM-dd')}">2026-12-01</b></span>
+				</div>
+				<div class="cart-side">
+					<span class="muted" th:text="${c.unitLabel} + ' × ' + ${c.quantity}">₩100,000 × 2</span>
+					<strong th:text="${c.amountLabel}">₩200,000</strong>
+					<form th:action="@{/cart/{id}/delete(id=${c.cartItemId})}" method="post">
+						<button type="submit" class="button button--sm button--ghost">빼기</button>
+					</form>
+				</div>
+			</li>
+		</ul>
+
+		<form class="cart-pay" th:action="@{/checkout}" method="post">
+			<p class="cart-total">결제 금액 <strong th:text="${total}">₩0</strong></p>
+			<fieldset>
+				<legend>결제 수단 (모의)</legend>
+				<label th:each="m, st : ${methods}"><input type="radio" name="method" th:value="${m.name()}" th:checked="${st.first}"> <span th:text="${m.label}">카드</span></label>
+			</fieldset>
+			<button type="submit" class="button">결제하기</button>
+			<p class="muted small">카드번호 등 결제 정보는 받지 않아요. 누르면 결제 완료로 안내하고 예약만 만들어요.</p>
+		</form>
+	</th:block>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

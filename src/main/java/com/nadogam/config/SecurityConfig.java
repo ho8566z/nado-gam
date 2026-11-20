@@ -50,7 +50,8 @@ public class SecurityConfig {
 		http
 			.authenticationProvider(provider(services.forMembers(), encoder))
 			.authorizeHttpRequests(auth -> auth
-				.requestMatchers("/account", "/account/**", "/support", "/support/**").hasRole("USER")
+				.requestMatchers("/account", "/account/**", "/support", "/support/**",
+					"/cart", "/cart/**", "/checkout", "/reservations", "/reservations/**").hasRole("USER")
 				.anyRequest().permitAll())
 			.formLogin(form -> form
 				.loginPage("/login")

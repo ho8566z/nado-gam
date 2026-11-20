@@ -104,3 +104,28 @@
 	.hotel-card { grid-template-columns: 1fr; }
 	.hotel-price { align-items: flex-start; text-align: left; }
 }
+
+/* 장바구니·예약 */
+.cart-form { display: grid; gap: 10px; margin-top: 16px; }
+.cart-form label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); font-weight: 700; }
+.cart-form input, .cart-form select { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: inherit; }
+.cart-form .button { margin-top: 4px; border: 0; cursor: pointer; text-align: center; }
+.cart-form--inline { grid-template-columns: 1fr 70px auto; align-items: end; margin-top: 8px; text-align: left; }
+.cruise-form { max-width: 520px; }
+.cart-list { list-style: none; margin: 16px 0; padding: 0; display: grid; gap: 12px; }
+.cart-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.cart-main { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; min-width: 0; }
+.cart-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.cart-side strong { font-size: 20px; color: var(--accent); }
+.cart-pay { margin-top: 20px; padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.cart-pay fieldset { border: 0; padding: 0; margin: 12px 0; display: flex; gap: 16px; flex-wrap: wrap; }
+.cart-pay legend { color: var(--muted); font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+.cart-total { margin: 0; font-size: 18px; }
+.cart-total strong { font-size: 28px; color: var(--accent); margin-left: 8px; }
+.cart-pay .button { border: 0; cursor: pointer; }
+.cart-links { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+@media (max-width: 760px) {
+	.cart-item { grid-template-columns: 1fr; }
+	.cart-side { align-items: flex-start; }
+	.cart-form--inline { grid-template-columns: 1fr 70px; }
+}

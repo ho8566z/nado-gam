@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('예약 상세')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('reservations')}"></header>
+<main class="page page--narrow">
+	<section class="page-title">
+		<span class="kicker">RESERVATION</span>
+		<h1 th:text="${reservation.reservationNo}">NG20261120-ABC123</h1>
+		<a class="back-link" th:href="@{/reservations}">← 내 예약</a>
+	</section>
+
+	<div class="alert alert--ok" th:if="${param.paid}">
+		결제가 완료되었습니다! 예약이 확정됐어요. (연습용 모의 결제라 실제로 돈이 나가지 않았어요.)
+	</div>
+
+	<dl class="info-list">
+		<div><dt>상태</dt><dd th:text="${reservation.statusLabel}">결제 완료</dd></div>
+		<div><dt>결제 수단</dt><dd th:text="${reservation.payMethodLabel}">카드</dd></div>
+		<div><dt>결제 일시</dt><dd th:text="${#temporals.format(reservation.paidAt, 'yyyy-MM-dd HH:mm')}">2026-11-20 10:00</dd></div>
+		<div><dt>결제 금액</dt><dd><strong th:text="${reservation.totalLabel}">₩0</strong></dd></div>
+	</dl>
+
+	<h2 class="section-title section-title--flat">예약 상품</h2>
+	<ul class="cart-list">
+		<li class="cart-item" th:each="i : ${items}">
+			<div class="cart-main">
+				<span class="chip" th:text="${i.typeLabel}">투어</span>
+				<strong th:text="${i.title}">상품 이름</strong>
+				<span class="muted" th:text="${i.detail}">상세</span>
+				<span class="muted">여행일 <b th:text="${#temporals.format(i.travelDate, 'yyyy-MM-dd')}">2026-12-01</b></span>
+			</div>
+			<div class="cart-side"><strong th:text="${i.amountLabel}">₩200,000</strong></div>
+		</li>
+	</ul>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

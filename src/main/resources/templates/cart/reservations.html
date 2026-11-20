@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('내 예약')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('reservations')}"></header>
+<main class="page page--narrow">
+	<section class="page-title">
+		<span class="kicker">RESERVATIONS</span>
+		<h1>내 예약</h1>
+		<p>결제를 마친 예약이에요. 내 예약만 볼 수 있어요.</p>
+	</section>
+
+	<th:block th:if="${#lists.isEmpty(reservations)}">
+		<div th:replace="~{fragments/mascot :: empty('아직 예약이 없어요. 장바구니에 담아 결제해 보세요!')}"></div>
+	</th:block>
+
+	<ul class="inquiry-list" th:unless="${#lists.isEmpty(reservations)}">
+		<li th:each="r : ${reservations}">
+			<a class="inquiry-item" th:href="@{/reservations/{id}(id=${r.reservationId})}">
+				<span class="inquiry-top">
+					<span class="chip" th:text="${r.reservationNo}">NG20261120-ABC123</span>
+					<span class="badge badge--ACTIVE" th:text="${r.statusLabel}">결제 완료</span>
+				</span>
+				<strong th:text="${r.totalLabel}">₩0</strong>
+				<small th:text="${#temporals.format(r.paidAt, 'yyyy-MM-dd HH:mm')} + ' · ' + ${r.payMethodLabel}">2026-11-20 10:00</small>
+			</a>
+		</li>
+	</ul>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
