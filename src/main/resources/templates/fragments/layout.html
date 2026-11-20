@@ -23,6 +23,7 @@
 	<nav aria-label="주 메뉴">
 		<a th:href="@{/account}" th:classappend="${active == 'account'} ? 'is-active'">계정</a>
 		<a th:href="@{/travel}" th:classappend="${active == 'travel'} ? 'is-active'">해외 여행</a>
+		<a th:href="@{/domestic}" th:classappend="${active == 'domestic'} ? 'is-active'">국내여행</a>
 		<a th:href="@{/tour}" th:classappend="${active == 'tour'} ? 'is-active'">투어</a>
 		<a th:href="@{/special}" th:classappend="${active == 'special'} ? 'is-active'">이달의 특별기획</a>
 		<a th:href="@{/bestseller}" th:classappend="${active == 'bestseller'} ? 'is-active'">베스트셀러</a>
@@ -53,6 +54,10 @@
 		<a th:href="@{/travel}" data-tab="/travel">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
 			<span>여행</span>
+		</a>
+		<a th:href="@{/domestic}" data-tab="/domestic">
+			<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l2-4M15 21l-2-4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/></svg>
+			<span>국내</span>
 		</a>
 		<a th:href="@{/special}" data-tab="/special">
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg>
