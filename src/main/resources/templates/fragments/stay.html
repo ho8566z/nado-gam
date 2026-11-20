@@ -22,6 +22,14 @@
 			<b th:text="${h.perNightLabel()}">₩150,000</b>
 			<span class="muted" th:text="${nights} + '박 전체'">3박 전체</span>
 			<strong th:text="${h.totalLabel(nights)}">₩450,000</strong>
+			<form class="cart-form cart-form--inline" th:action="@{/cart/add}" method="post">
+				<input type="hidden" name="type" value="HOTEL">
+				<input type="hidden" name="refId" th:value="${h.hotelId}">
+				<input type="hidden" name="nights" th:value="${nights}">
+				<label>체크인 <input type="date" name="date" required th:attr="min=${#temporals.format(#temporals.createToday().plusDays(1), 'yyyy-MM-dd')},max=${#temporals.format(#temporals.createToday().plusYears(1), 'yyyy-MM-dd')}"></label>
+				<label>객실 <input type="number" name="quantity" value="1" min="1" max="5" required></label>
+				<button type="submit" class="button button--sm">담기</button>
+			</form>
 		</div>
 	</article>
 </div>

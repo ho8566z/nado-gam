@@ -23,6 +23,16 @@
 				<div><span class="muted">발코니 객실 (1인)</span><strong th:text="${cruise.balconyLabel()}">₩1,790,000</strong></div>
 			</div>
 		</article>
+		<form class="cart-form cruise-form" th:if="${cruise != null}" th:action="@{/cart/add}" method="post">
+			<input type="hidden" name="type" value="CRUISE">
+			<input type="hidden" name="refId" th:value="${cruise.cruiseId}">
+			<label>출발 날짜 <input type="date" name="date" required th:attr="min=${#temporals.format(#temporals.createToday().plusDays(1), 'yyyy-MM-dd')},max=${#temporals.format(#temporals.createToday().plusYears(1), 'yyyy-MM-dd')}"></label>
+			<label>객실
+				<select name="cabin"><option value="INSIDE">내측</option><option value="BALCONY">발코니</option></select>
+			</label>
+			<label>인원 <input type="number" name="quantity" value="2" min="1" max="8" required></label>
+			<button type="submit" class="button">장바구니 담기</button>
+		</form>
 		<p class="muted small">크루즈 이름·일정·가격은 가상 데이터입니다.</p>
 	</div>
 </main>

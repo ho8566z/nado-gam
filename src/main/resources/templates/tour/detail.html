@@ -68,7 +68,15 @@
 			<p class="tour-price" th:text="${selected.priceLabel()}">₩1,000,000</p>
 			<p class="tour-price-sub" th:text="${selected.periodLabel()} + ' · ' + ${selected.minPeople()} + '~' + ${selected.maxPeople()} + '명'">3박 4일 · 2~20명</p>
 			<p class="note">항공권은 포함되지 않아요. 항공편은 해외 여행 메뉴에서 따로 골라 주세요. (모든 상품·브랜드·가격은 가상 데이터입니다)</p>
-			<a class="button" th:href="@{/travel}" th:if="${tour.scope == 'OVERSEAS'}">항공편 보러 가기</a>
+			<form class="cart-form" th:action="@{/cart/add}" method="post">
+				<input type="hidden" name="type" value="TOUR">
+				<input type="hidden" name="refId" th:value="${tour.tourId}">
+				<input type="hidden" name="optionId" th:value="${selected.optionId()}">
+				<label>여행 날짜 <input type="date" name="date" required th:attr="min=${#temporals.format(#temporals.createToday().plusDays(1), 'yyyy-MM-dd')},max=${#temporals.format(#temporals.createToday().plusYears(1), 'yyyy-MM-dd')}"></label>
+				<label>인원 <input type="number" name="quantity" required th:value="${selected.minPeople()}" th:min="${selected.minPeople()}" th:max="${selected.maxPeople()}"></label>
+				<button type="submit" class="button">장바구니 담기</button>
+			</form>
+			<a class="button button--ghost" th:href="@{/travel}" th:if="${tour.scope == 'OVERSEAS'}">항공편 보러 가기</a>
 			<a class="button button--ghost" th:href="@{/tour}">다른 투어 보기</a>
 		</aside>
 	</div>
