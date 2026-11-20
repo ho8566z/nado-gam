@@ -6,10 +6,11 @@
 	<aside th:replace="~{admin/layout :: side('members')}"></aside>
 	<main class="admin-main">
 		<h1>회원 관리</h1>
+		<div class="alert alert--ok" th:if="${param.saved}">저장했습니다.</div>
 		<div class="table-wrap">
 			<table class="table">
 				<thead>
-					<tr><th>번호</th><th>아이디</th><th>이름</th><th>전화번호</th><th>이메일</th><th>상태</th><th>가입일</th></tr>
+					<tr><th>번호</th><th>아이디</th><th>이름</th><th>전화번호</th><th>이메일</th><th>상태</th><th>가입일</th><th>관리</th></tr>
 				</thead>
 				<tbody>
 					<tr th:each="m : ${members}">
@@ -20,6 +21,17 @@
 						<td th:text="${m.email}">user@example.com</td>
 						<td><span class="badge" th:classappend="'badge--' + ${m.status}" th:text="${m.status}">ACTIVE</span></td>
 						<td th:text="${#temporals.format(m.createdAt, 'yyyy-MM-dd')}">2026-11-20</td>
+						<td class="row-actions">
+							<form th:if="${m.status == 'ACTIVE'}" th:action="@{/admin/members/{id}/status(id=${m.memberId})}" method="post">
+								<input type="hidden" name="action" value="suspend">
+								<button type="submit" class="link-sm link-sm--danger">이용 정지</button>
+							</form>
+							<form th:if="${m.status == 'SUSPENDED'}" th:action="@{/admin/members/{id}/status(id=${m.memberId})}" method="post">
+								<input type="hidden" name="action" value="restore">
+								<button type="submit" class="link-sm">정지 해제</button>
+							</form>
+							<span th:if="${m.status == 'WITHDRAWN'}">-</span>
+						</td>
 					</tr>
 				</tbody>
 			</table>

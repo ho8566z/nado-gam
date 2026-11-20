@@ -56,6 +56,23 @@ public class Member {
 		this.updatedAt = this.withdrawnAt;
 	}
 
+	// 관리자가 이용을 정지하거나 되돌린다. 탈퇴 계정은 되살릴 수 없다.
+	public void suspend() {
+		changeStatus("SUSPENDED");
+	}
+
+	public void restore() {
+		changeStatus("ACTIVE");
+	}
+
+	private void changeStatus(String next) {
+		if ("WITHDRAWN".equals(status)) {
+			throw new IllegalStateException("탈퇴한 회원은 상태를 바꿀 수 없습니다.");
+		}
+		this.status = next;
+		this.updatedAt = LocalDateTime.now();
+	}
+
 	public void updateProfile(String name, String phone, String email) {
 		this.name = name;
 		this.phone = phone;
