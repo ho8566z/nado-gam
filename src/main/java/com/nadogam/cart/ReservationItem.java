@@ -23,6 +23,7 @@ public class ReservationItem {
 	private Long refId;
 	private String title;
 	private String detail;
+	private String cabinClass;
 	private LocalDate travelDate;
 	private int quantity;
 	private int unitPrice;
@@ -37,6 +38,7 @@ public class ReservationItem {
 		i.refId = c.getRefId();
 		i.title = c.getTitle();
 		i.detail = c.getDetail();
+		i.cabinClass = c.getCabinClass();
 		i.travelDate = c.getTravelDate();
 		i.quantity = c.getQuantity();
 		i.unitPrice = c.getUnitPrice();
@@ -57,6 +59,7 @@ public class ReservationItem {
 	public Long getRefId() { return refId; }
 	public String getTitle() { return title; }
 	public String getDetail() { return detail; }
+	public String getCabinClass() { return cabinClass; }
 	public LocalDate getTravelDate() { return travelDate; }
 	public int getQuantity() { return quantity; }
 	public int getUnitPrice() { return unitPrice; }

@@ -87,7 +87,7 @@ public class CartService {
 		int unit = ((Number) r.get("BASE_PRICE")).intValue() + ((Number) r.get("TAX_FUEL")).intValue();
 		String title = r.get("FLIGHT_NO") + " " + r.get("ORIGIN_CITY") + "→" + r.get("ARRIVAL_CITY");
 		String detail = Fmt.cabin(cabin) + " · 편도 · " + people + "명 · " + Fmt.time(toTime(r.get("DEPARTURE_TIME"))) + " 출발";
-		return new CartLine(ItemType.FLIGHT, flightId, title, detail, unit, people);
+		return new CartLine(ItemType.FLIGHT, flightId, title, detail, unit, people, cabin);
 	}
 
 	private static java.time.LocalTime toTime(Object value) {
@@ -193,6 +193,34 @@ public class CartService {
 		return carts.save(CartItem.create(memberId, line, travelDate));
 	}
 
+	// 결제하면 항공권 좌석이 줄어든다. 같은 항공편·등급의 줄은 합쳐서 한 번에 줄이고, 조건부 UPDATE 라 동시에 결제해도 남은 좌석보다 많이 팔리지 않는다.
+	// 하나라도 부족하면 예외로 트랜잭션 전체가 취소되어 이미 줄인 좌석도 되돌아간다.
+	private void reserveFlightSeats(List<CartItem> items) {
+		java.util.Map<String, Integer> need = new java.util.TreeMap<>();   // 정렬해서 잠그는 순서를 고정한다(교착 방지)
+		java.util.Map<String, String> names = new java.util.HashMap<>();
+		for (CartItem c : items) {
+			if ("FLIGHT".equals(c.getItemType()) && c.getCabinClass() != null) {
+				String key = String.format("%012d:%s", c.getRefId(), c.getCabinClass());
+				need.merge(key, c.getQuantity(), Integer::sum);
+				names.putIfAbsent(key, c.getTitle());
+			}
+		}
+		for (var e : need.entrySet()) {
+			long flightId = Long.parseLong(e.getKey().substring(0, 12));
+			String cabin = e.getKey().substring(13);
+			int n = jdbc.sql("""
+				UPDATE flight_fare SET seats_left = seats_left - :n, version = version + 1
+				WHERE flight_id = :flight AND cabin_class = :cabin AND seats_left >= :n
+				  AND EXISTS (SELECT 1 FROM flight f WHERE f.flight_id = flight_fare.flight_id AND f.status = 'ON_SALE')
+				""").param("n", e.getValue()).param("flight", flightId).param("cabin", cabin).update();
+			if (n == 0) {
+				throw new IllegalArgumentException(names.get(e.getKey()) + " 항공권의 남은 좌석이 부족하거나 판매가 중지되었어요. 장바구니를 확인해 주세요.");
+			}
+			jdbc.sql("UPDATE flight_sales_stat SET sales_count = sales_count + :n WHERE flight_id = :flight")
+				.param("n", e.getValue()).param("flight", flightId).update();
+		}
+	}
+
 	// 모의 결제: 장바구니 전체로 예약을 만들고 장바구니를 비운다. 금액은 장바구니 줄(서버가 계산해 저장한 값)로만 합친다.
 	@Transactional
 	public Reservation checkout(Long memberId, String method) {
@@ -201,6 +229,7 @@ public class CartService {
 		if (items.isEmpty()) {
 			throw new IllegalArgumentException("장바구니가 비어 있어요.");
 		}
+		reserveFlightSeats(items);
 		long total = items.stream().mapToLong(CartItem::getLineAmount).sum();
 		String no = "NG" + LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE) + "-"
 			+ UUID.randomUUID().toString().replace("-", "").substring(0, 6).toUpperCase();

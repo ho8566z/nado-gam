@@ -24,6 +24,7 @@ public class CartItem {
 	private Long refId;
 	private String title;
 	private String detail;
+	private String cabinClass;
 	private LocalDate travelDate;
 	private int quantity;
 	private int unitPrice;
@@ -39,6 +40,7 @@ public class CartItem {
 		c.refId = line.refId();
 		c.title = line.title();
 		c.detail = line.detail();
+		c.cabinClass = line.cabin();
 		c.travelDate = travelDate;
 		c.quantity = line.quantity();
 		c.unitPrice = line.unitPrice();
@@ -68,6 +70,7 @@ public class CartItem {
 	public Long getRefId() { return refId; }
 	public String getTitle() { return title; }
 	public String getDetail() { return detail; }
+	public String getCabinClass() { return cabinClass; }
 	public LocalDate getTravelDate() { return travelDate; }
 	public int getQuantity() { return quantity; }
 	public int getUnitPrice() { return unitPrice; }
