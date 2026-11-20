@@ -40,3 +40,16 @@
 		if (acc) { acc.classList.add('is-active'); acc.setAttribute('aria-current', 'page'); }
 	}
 })();
+
+// 푸터의 '휴대폰으로 보기': 펼칠 때 현재 화면 주소로 QR 이미지를 불러온다.
+(function () {
+	'use strict';
+	var box = document.querySelector('details.mobile-qr');
+	var img = box ? box.querySelector('img[data-qr-self]') : null;
+	if (!box || !img) { return; }
+	box.addEventListener('toggle', function () {
+		if (box.open && !img.getAttribute('src')) {
+			img.setAttribute('src', '/qr?target=' + encodeURIComponent(window.location.pathname + window.location.search));
+		}
+	});
+})();

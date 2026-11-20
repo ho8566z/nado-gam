@@ -12,6 +12,7 @@
 		<p class="kicker">EVENT</p>
 		<h2 id="popup-title" th:text="${popup.title}">이벤트 제목</h2>
 		<p class="popup-body" th:text="${popup.body}">이벤트 내용</p>
+		<img class="popup-qr" th:if="${popup.qrTargetUrl != null}" th:src="@{/qr(target=${popup.qrTargetUrl})}" alt="이벤트 QR 코드" width="120" height="120">
 		<a class="button" th:if="${popup.qrTargetUrl != null}" th:href="${popup.qrTargetUrl}" data-popup-close-on-click>이벤트 보러 가기</a>
 		<div class="popup-actions">
 			<button type="button" class="popup-link" data-popup-hide-today>오늘 하루 안 보기</button>
