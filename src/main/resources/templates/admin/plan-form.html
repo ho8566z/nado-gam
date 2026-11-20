@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${heading})}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('plans')}"></aside>
+	<main class="admin-main">
+		<h1 th:text="${heading}">특별전 등록</h1>
+		<form class="admin-form admin-form--wide" id="planForm" th:action="${formAction}" th:object="${planForm}" method="post" novalidate>
+			<div class="alert alert--error" th:if="${#fields.hasGlobalErrors()}">
+				<div th:each="e : ${#fields.globalErrors()}" th:text="${e}">오류</div>
+			</div>
+			<div class="field-row">
+				<label class="field"><span>기획 월</span>
+					<input type="text" th:field="*{planMonth}" maxlength="7" placeholder="2026-11" required>
+					<small class="error" th:if="${#fields.hasErrors('planMonth')}" th:errors="*{planMonth}"></small>
+				</label>
+				<label class="field"><span>여행지</span>
+					<select th:field="*{destinationId}" id="planDest">
+						<option value="">선택</option>
+						<option th:each="d : ${destinations}" th:value="${d.id}" th:text="${d.name}">로마</option>
+					</select>
+					<small class="error" th:if="${#fields.hasErrors('destinationId')}" th:errors="*{destinationId}"></small>
+				</label>
+				<label class="field"><span>배지 문구</span>
+					<input type="text" th:field="*{badgeText}" maxlength="20" placeholder="최대 33% OFF">
+					<small class="error" th:if="${#fields.hasErrors('badgeText')}" th:errors="*{badgeText}"></small>
+				</label>
+			</div>
+			<label class="field"><span>제목</span>
+				<input type="text" th:field="*{title}" maxlength="100" required>
+				<small class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></small>
+			</label>
+			<label class="field"><span>부제</span>
+				<input type="text" th:field="*{subtitle}" maxlength="200">
+				<small class="error" th:if="${#fields.hasErrors('subtitle')}" th:errors="*{subtitle}"></small>
+			</label>
+			<label class="field"><span>추천 포인트 (한 줄에 하나)</span>
+				<textarea th:field="*{highlights}" rows="3" maxlength="500"></textarea>
+				<small class="error" th:if="${#fields.hasErrors('highlights')}" th:errors="*{highlights}"></small>
+			</label>
+			<div class="field-row">
+				<label class="field"><span>노출 시작</span>
+					<input type="datetime-local" th:field="*{startAt}" required>
+					<small class="error" th:if="${#fields.hasErrors('startAt')}" th:errors="*{startAt}"></small>
+				</label>
+				<label class="field"><span>노출 종료</span>
+					<input type="datetime-local" th:field="*{endAt}" required>
+					<small class="error" th:if="${#fields.hasErrors('endAt')}" th:errors="*{endAt}"></small>
+				</label>
+			</div>
+			<small class="error" th:if="${#fields.hasErrors('periodValid')}" th:errors="*{periodValid}"></small>
+			<label class="field field--check">
+				<input type="checkbox" th:field="*{active}">
+				<span>노출하기</span>
+			</label>
+
+			<h2 class="section-title section-title--flat">특가 항공편</h2>
+			<p class="hint">정가는 선택한 항공편·좌석 등급의 실제 요금으로 자동 입력돼요. 특가는 정가보다 낮게, 한정 좌석은 이 특가로 팔 수 있는 좌석 수예요. 특별전 여행지와 같은 여행지의 항공편만 고를 수 있어요.</p>
+			<div class="table-wrap">
+				<table class="table fare-edit">
+					<thead><tr><th>항공편</th><th>좌석 등급</th><th>특가(원)</th><th>한정 좌석</th><th></th></tr></thead>
+					<tbody id="dealRows">
+						<tr class="deal-row" th:each="d, st : *{deals}">
+							<td>
+								<select th:field="*{deals[__${st.index}__].flightId}" class="deal-flight">
+									<option value="">선택</option>
+									<option th:each="f : ${flights}" th:value="${f.id}" th:attr="data-dest=${f.dest}" th:text="${f.label}">MG937</option>
+								</select>
+								<small class="error" th:if="${#fields.hasErrors('deals[__${st.index}__].flightId')}" th:errors="*{deals[__${st.index}__].flightId}"></small>
+							</td>
+							<td>
+								<select th:field="*{deals[__${st.index}__].cabin}">
+									<option value="ECONOMY">일반석</option>
+									<option value="PREMIUM">프리미엄 일반석</option>
+									<option value="BUSINESS">비즈니스석</option>
+									<option value="FIRST">일등석</option>
+								</select>
+							</td>
+							<td><input type="number" th:field="*{deals[__${st.index}__].salePrice}" min="10000" step="1000">
+								<small class="error" th:if="${#fields.hasErrors('deals[__${st.index}__].salePrice')}" th:errors="*{deals[__${st.index}__].salePrice}"></small></td>
+							<td><input type="number" th:field="*{deals[__${st.index}__].limitedSeats}" min="1" max="1000">
+								<small class="error" th:if="${#fields.hasErrors('deals[__${st.index}__].limitedSeats')}" th:errors="*{deals[__${st.index}__].limitedSeats}"></small></td>
+							<td><button type="button" class="link-sm link-sm--danger" data-remove-row>삭제</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<button type="button" class="button button--ghost button--sm" id="addDeal">+ 항공편 추가</button>
+			<div class="form-actions form-actions--row">
+				<button class="button" type="submit">저장</button>
+				<a class="button button--ghost" th:href="@{/admin/plans}">취소</a>
+			</div>
+		</form>
+	</main>
+</div>
+<script>
+(function () {
+	var body = document.getElementById('dealRows');
+	var dest = document.getElementById('planDest');
+
+	// 고른 여행지의 항공편만 목록에 보여 준다(이미 고른 값은 유지).
+	function filterFlights() {
+		body.querySelectorAll('.deal-flight').forEach(function (sel) {
+			Array.prototype.forEach.call(sel.options, function (o) {
+				if (!o.value) { return; }
+				o.hidden = !!dest.value && o.getAttribute('data-dest') !== dest.value && !o.selected;
+			});
+		});
+	}
+
+	// 줄을 지우거나 더한 뒤 name 의 번호를 0부터 다시 매긴다(서버는 deals[0], deals[1] … 이어진 번호를 받는다).
+	function reindex() {
+		body.querySelectorAll('tr.deal-row').forEach(function (tr, i) {
+			tr.querySelectorAll('[name]').forEach(function (el) {
+				el.name = el.name.replace(/deals\[\d+\]/, 'deals[' + i + ']');
+				if (el.id) { el.id = el.id.replace(/deals\d+/, 'deals' + i); }
+			});
+		});
+	}
+
+	body.addEventListener('click', function (e) {
+		if (!e.target.hasAttribute('data-remove-row')) { return; }
+		if (body.querySelectorAll('tr.deal-row').length <= 1) { return; }   // 한 줄은 남긴다
+		e.target.closest('tr').remove();
+		reindex();
+	});
+
+	document.getElementById('addDeal').addEventListener('click', function () {
+		var last = body.querySelector('tr.deal-row:last-child');
+		var copy = last.cloneNode(true);
+		copy.querySelectorAll('input').forEach(function (i) { i.value = ''; });
+		copy.querySelectorAll('select').forEach(function (s) { s.selectedIndex = 0; });
+		copy.querySelectorAll('small.error').forEach(function (s) { s.remove(); });
+		body.appendChild(copy);
+		reindex();
+		filterFlights();
+	});
+
+	dest.addEventListener('change', filterFlights);
+	filterFlights();
+})();
+</script>
+</body>
+</html>

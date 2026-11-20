@@ -244,6 +244,7 @@ CREATE TABLE monthly_plan (
     start_at        DATETIME      NOT NULL,
     end_at          DATETIME      NOT NULL,
     is_active       BOOLEAN       NOT NULL DEFAULT TRUE,
+    deleted         BOOLEAN       NOT NULL DEFAULT FALSE,
     banner_image    VARCHAR(300)  NULL,
     PRIMARY KEY (plan_id),
     CONSTRAINT fk_plan_dest FOREIGN KEY (destination_id) REFERENCES destination (destination_id)
