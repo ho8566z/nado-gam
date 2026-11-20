@@ -24,10 +24,14 @@
 			var built = U.buildPath(r.points);
 			return { pts: built.pts, total: built.total, featured: r.featured, name: r.name, points: r.points };
 		}).filter(function (p) { return p.pts.length > 1; });
-		// 선 60개 + 선마다 불빛 1개(조금 위에 얹어 겹쳐 깜빡이지 않게 한다)
-		var lines = paths.map(function (p) { return { pts: p.pts, total: p.total, light: false }; }).concat(paths.map(function (p) {
-			return { pts: p.pts.map(function (q) { return [q[0], q[1], q[2] + 0.003]; }), total: p.total, light: true, gap: Math.random() };
-		}));
+		// 선 60개 + 선마다 불빛(밝은 심지 + 은은한 번짐)을 같은 위치에 겹쳐 그린다. 불빛은 조금 위에 얹어 선과 겹쳐 깜빡이지 않게 한다.
+		var lines = paths.map(function (p) { return { pts: p.pts, total: p.total, light: false, glow: false }; });
+		paths.forEach(function (p) {
+			var up = p.pts.map(function (q) { return [q[0], q[1], q[2] + 0.003]; });
+			var gap = Math.random();   // 같은 경로의 심지와 번짐이 함께 움직이도록 시작 위치를 공유한다
+			lines.push({ pts: up, total: p.total, light: false, glow: true, gap: gap });
+			lines.push({ pts: up, total: p.total, light: true, glow: false, gap: gap });
+		});
 
 		// 회전은 직접 제어한다. 카메라의 '위쪽'이 고정되지 않아 어느 축으로든 돌릴 수 있도록 trackball 방식을 쓴다.
 		var globe = Globe({ controlType: 'trackball' })(el)
@@ -39,12 +43,16 @@
 			// 경로: 같은 좌표로 '주황 선'과 그 위를 흐르는 '불빛'을 함께 그린다(선 하나, 불빛 하나)
 			.pathsData(lines)
 			.pathPoints('pts').pathPointLat(function (p) { return p[0]; }).pathPointLng(function (p) { return p[1]; }).pathPointAlt(function (p) { return p[2]; })
-			.pathColor(function (d) { return d.light ? ['rgba(255, 150, 40, 0)', 'rgba(255, 226, 160, 1)'] : 'rgba(255, 138, 31, 0.5)'; })
-			.pathStroke(function (d) { return d.light ? 0.7 : 0.32; })
-			.pathDashLength(function (d) { return d.light ? 0.16 : 1; })
-			.pathDashGap(function (d) { return d.light ? 1.1 : 0; })
-			.pathDashInitialGap(function (d) { return d.light ? d.gap * 1.26 : 0; })
-			.pathDashAnimateTime(function (d) { return d.light && !reduce ? 3200 + d.total * 2400 : 0; })
+			.pathColor(function (d) {
+				if (d.light) { return ['rgba(255, 214, 140, 0)', 'rgba(255, 252, 240, 1)']; }
+				if (d.glow) { return ['rgba(255, 138, 31, 0)', 'rgba(255, 170, 60, 0.7)']; }
+				return 'rgba(255, 138, 31, 0.5)';
+			})
+			.pathStroke(function (d) { return d.light ? 0.75 : (d.glow ? 1.9 : 0.32); })
+			.pathDashLength(function (d) { return d.light || d.glow ? 0.08 : 1; })
+			.pathDashGap(function (d) { return d.light || d.glow ? 1.18 : 0; })
+			.pathDashInitialGap(function (d) { return d.light || d.glow ? d.gap * 1.26 : 0; })
+			.pathDashAnimateTime(function (d) { return (d.light || d.glow) && !reduce ? 3200 + d.total * 2400 : 0; })
 			.pathTransitionDuration(0);
 
 		// 도시 100곳의 점과 몇몇 도시에서 퍼지는 물결
