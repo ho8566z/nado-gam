@@ -90,9 +90,12 @@
 		// 회전은 기본 컨트롤 대신 직접 구현한다. (자유 회전, 11/20 변경)
 		// 카메라를 지구 중심 기준으로 '어느 축으로든' 돌린다. 끌어서 놓으면 놓은 방향(축)으로 계속 돌고,
 		// 서서히 평소 속도로 안정된다. 세로·대각선으로 돌려도 원래 각도로 되돌아가지 않고 그 축 그대로 계속 돈다.
-		var CRUISE = reduce ? 0 : 7 * RAD;      // 평소 회전 속도(라디안/초)
+		var CRUISE = reduce ? 0 : 45 * RAD;      // 평소 회전 속도(라디안/초)
 		var cruise = [0, -CRUISE, 0];           // 평소 회전 벡터(카메라 각속도). 처음에는 지구 자전축(세로)이고 지표면이 오른쪽으로 흐른다
 		var omega = cruise.slice();             // 지금 회전 벡터(방향 = 회전축, 크기 = 속도)
+		var flick = null;                       // 던진 직후의 감속 상태 { w: 던진 회전 벡터, t: 지난 시간(초) }
+		var FLICK_MAX = 1200 * RAD;             // 던질 때 최대 속도(라디안/초)
+		var FLICK_SECONDS = 5;                  // 던진 속도가 평소 속도로 돌아오기까지 걸리는 시간
 		var drag = null;
 
 		function dot(a, b) { return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]; }
@@ -115,6 +118,7 @@
 		var dist = len(pos);
 		var controls = globe.controls();
 		controls.enabled = false;      // 기본 드래그 회전은 끄고 아래에서 직접 처리한다
+		controls.noRotate = true; controls.noZoom = true; controls.noPan = true; controls.staticMoving = true;   // 기본 컨트롤이 카메라를 되돌리지 못하게 한다
 		try { globe.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch (e) { /* 무시 */ }
 
 		function degPerPx() { return 57.3 / Math.max(120, Math.min(el.clientWidth, el.clientHeight) * 0.4); }
@@ -138,36 +142,49 @@
 			up = norm(add(up, scale(f, -dot(up, f))));
 		}
 
+		// 끊김 없는 회전(11/20 수정): 잡았다 놓아도 회전이 0에서 다시 시작하지 않는다.
+		// - 잡는 동안에는 손을 따라가고, 놓으면 직전 회전(없으면 평소 회전)에서 이어 돈다.
+		// - 던진 속도(최대 1200도/초)는 5초에 걸쳐 평소 속도(45도/초)로 돌아온다.
 		el.addEventListener('pointerdown', function (e) {
 			if (e.pointerType === 'mouse' && e.button !== 0) { return; }
-			drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), w: [0, 0, 0] };
+			drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), samples: [] };
 			try { el.setPointerCapture(e.pointerId); } catch (err) { /* 무시 */ }
-			omega = [0, 0, 0];             // 잡고 있는 동안은 멈춘다
+			flick = null;
 			el.classList.add('is-grabbing');
 		});
 		el.addEventListener('pointermove', function (e) {
 			if (!drag || e.pointerId !== drag.id) { return; }
 			var now = performance.now();
-			var dt = Math.max(1, now - drag.t) / 1000;
 			var dx = e.clientX - drag.x, dy = e.clientY - drag.y, k = degPerPx() * RAD;
 			var ax = frameAxes();
 			// 오른쪽/아래로 끌면 지표면이 커서를 따라온다 → 카메라는 반대로 돈다. 가로·세로가 합쳐져 어느 축이든 가능하다.
 			var rv = add(scale(ax.up, -dx * k), scale(ax.right, -dy * k));
 			applyRotation(rv);
-			drag.w = add(scale(drag.w, 0.6), scale(rv, 0.4 / dt));   // 마지막 움직임의 각속도(부드럽게)
+			// 최근 100ms 동안의 움직임을 모아 놓는 순간의 각속도를 구한다(한 번의 튐에 흔들리지 않는다).
+			drag.samples.push({ t: now, rv: rv });
+			while (drag.samples.length && now - drag.samples[0].t > 100) { drag.samples.shift(); }
 			drag.x = e.clientX; drag.y = e.clientY; drag.t = now;
 		});
 		function release(e) {
 			if (!drag || e.pointerId !== drag.id) { return; }
-			var still = performance.now() - drag.t > 90;   // 멈춘 채로 놓으면 관성 없이 이전 평소 회전으로 돌아간다
-			var w = drag.w, m = len(w);
-			if (!still && m > 4 * RAD) {
-				if (m > Math.PI) { w = scale(w, Math.PI / m); }   // 최대 180도/초
+			var now = performance.now();
+			var w = [0, 0, 0];
+			var recent = drag.samples.filter(function (s) { return now - s.t <= 100; });
+			if (recent.length) {
+				var sum = [0, 0, 0];
+				recent.forEach(function (s) { sum = add(sum, s.rv); });
+				w = scale(sum, 1 / Math.max(0.05, (now - recent[0].t) / 1000));
+			}
+			var m = len(w);
+			if (m > 4 * RAD) {
+				if (m > FLICK_MAX) { w = scale(w, FLICK_MAX / m); }   // 최대 1200도/초
 				omega = w;
+				flick = { w: w, t: 0 };
 				// 놓은 축과 방향을 새 평소 회전으로 삼는다(속도는 평소 속도로 안정).
 				if (CRUISE > 0) { cruise = scale(norm(w), CRUISE); }
 			} else {
-				omega = [0, 0, 0];
+				flick = null;
+				omega = cruise.slice();        // 멈춘 채로 놓거나 클릭만 해도 평소 회전을 그대로 이어 간다
 			}
 			drag = null;
 			el.classList.remove('is-grabbing');
@@ -177,9 +194,13 @@
 
 		function stepCamera(dt) {
 			if (!drag) {
-				// 회전 벡터가 평소 회전 벡터로 부드럽게 수렴한다. 축(방향)은 놓은 그대로 유지된다.
-				var a = 1 - Math.exp(-dt / 1.6);
-				omega = add(omega, scale(add(cruise, scale(omega, -1)), a));
+				// 던진 속도는 5초 동안 부드럽게(처음엔 오래 빠르다가 끝에서 완만하게) 평소 속도로 돌아온다. 축(방향)은 놓은 그대로다.
+				if (flick) {
+					flick.t += dt;
+					var k = Math.max(0, 1 - flick.t / FLICK_SECONDS);
+					omega = add(cruise, scale(add(flick.w, scale(cruise, -1)), k * k));
+					if (flick.t >= FLICK_SECONDS) { flick = null; omega = cruise.slice(); }
+				}
 				applyRotation(scale(omega, dt));
 			}
 			cam.position.set(pos[0], pos[1], pos[2]);
