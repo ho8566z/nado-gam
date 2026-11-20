@@ -12,3 +12,8 @@ spring:
       # schema.sql 이 테이블을 지우고 다시 만든다. 개발용 초기화 스크립트이므로 운영 DB 에서는 실행하지 않는다.
       mode: always
       encoding: UTF-8
+
+nadogam:
+  # QR 코드가 가리키는 사이트 주소. 비워 두면 요청 주소를 쓴다.
+  # 휴대폰으로 시연할 때는 노트북의 같은 와이파이 주소로 지정한다(예: http://192.168.0.10:8080).
+  public-base-url: ${NADOGAM_PUBLIC_BASE_URL:}
