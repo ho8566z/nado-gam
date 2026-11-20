@@ -129,3 +129,22 @@
 	.cart-side { align-items: flex-start; }
 	.cart-form--inline { grid-template-columns: 1fr 70px; }
 }
+
+/* QR 코드 */
+.qr-box { display: flex; gap: 18px; align-items: center; margin: 20px 0; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.qr-box img, .popup-qr, .mobile-qr img { background: #fff; border-radius: 10px; padding: 6px; }
+.qr-box p { margin: 6px 0 10px; }
+.popup-qr { display: block; margin: 10px auto 0; }
+.mobile-qr { margin-bottom: 12px; }
+.mobile-qr summary { cursor: pointer; font-weight: 700; }
+.mobile-qr img { display: block; margin: 10px 0 6px; }
+.mobile-qr p { margin: 0; font-size: 13px; }
+.checkin-form { display: flex; gap: 8px; margin: 12px 0; max-width: 520px; }
+.checkin-form input { flex: 1; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: inherit; }
+.checkin-result { margin-top: 16px; }
+.ticket-status { display: inline-block; margin: 8px 0; padding: 8px 18px; border-radius: 999px; background: rgba(255, 138, 31, 0.16); color: var(--accent); font-weight: 800; }
+.ticket-status--done { background: rgba(47, 158, 68, 0.2); color: #69db7c; }
+@media (max-width: 760px) {
+	.mobile-qr { display: none; }
+	.qr-box { flex-direction: column; align-items: flex-start; }
+}
