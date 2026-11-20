@@ -59,4 +59,14 @@ class ThemeTest {
 			.andExpect(content().string(org.hamcrest.Matchers.containsString("id=\"dest-empty\"")))
 			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot--sm")));
 	}
+
+	@Test
+	void 모든_사용자_화면에_모바일_하단_탭_바가_있고_휴대폰_폭에서만_보인다() throws Exception {
+		for (String path : new String[] { "/", "/travel", "/special", "/bestseller", "/login", "/signup" }) {
+			mvc.perform(get(path)).andExpect(status().isOk())
+				.andExpect(content().string(org.hamcrest.Matchers.containsString("class=\"tabbar\"")));
+		}
+		String css = css("main.css");
+		assertThat(css).contains(".tabbar { display: none; }").contains("@media (max-width: 760px)");
+	}
 }
