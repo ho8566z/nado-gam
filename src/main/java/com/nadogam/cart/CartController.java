@@ -47,7 +47,7 @@ public class CartController {
 		RedirectAttributes redirect) {
 		try {
 			LocalDate travelDate = CartService.checkDate(date, LocalDate.now());
-			CartLine line = service.price(type, refId, optionId, cabin, nights, quantity);
+			CartLine line = service.price(type, refId, optionId, cabin, nights, quantity, travelDate);
 			service.add(user.getId(), line, travelDate);
 			return "redirect:/cart?added";
 		} catch (IllegalArgumentException e) {

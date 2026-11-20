@@ -19,6 +19,7 @@ public class CartService {
 	public static final int MAX_NIGHTS = 14;
 	public static final int MAX_ROOMS = 5;
 	public static final int MAX_CRUISE_PEOPLE = 8;
+	public static final int MAX_FLIGHT_PEOPLE = 9;
 
 	private final JdbcClient jdbc;
 	private final CartItemRepository carts;
@@ -35,15 +36,82 @@ public class CartService {
 
 	// 입력이 잘못되면 화면에 그대로 보여 줄 메시지와 함께 IllegalArgumentException 을 던진다.
 	public CartLine price(String type, Long refId, Long optionId, String cabin, Integer nights, Integer quantity) {
+		return price(type, refId, optionId, cabin, nights, quantity, null);
+	}
+
+	// 항공권은 여행일이 운항 요일인지도 확인해야 해서 날짜를 함께 받는다(null 이면 요일 검사를 건너뛴다).
+	public CartLine price(String type, Long refId, Long optionId, String cabin, Integer nights, Integer quantity, LocalDate date) {
 		ItemType itemType = ItemType.of(type).orElseThrow(() -> new IllegalArgumentException("담을 수 없는 상품이에요."));
 		if (refId == null || quantity == null) {
 			throw new IllegalArgumentException("상품과 수량을 다시 확인해 주세요.");
 		}
 		return switch (itemType) {
+			case FLIGHT -> flightLine(refId, cabin, quantity, date);
+			case TRANSPORT -> transportLine(refId, quantity);
 			case TOUR -> tourLine(refId, optionId, quantity);
 			case HOTEL -> hotelLine(refId, nights, quantity);
 			case CRUISE -> cruiseLine(refId, cabin, quantity);
 		};
+	}
+
+	// 항공권: 좌석 등급별 요금(운임 + 세금·유류할증료, 편도 1인). 남은 좌석보다 많이 담을 수 없다.
+	private CartLine flightLine(long flightId, String cabin, int people, LocalDate date) {
+		if (cabin == null || cabin.isBlank()) {
+			throw new IllegalArgumentException("좌석 등급을 골라 주세요.");
+		}
+		if (people < 1 || people > MAX_FLIGHT_PEOPLE) {
+			throw new IllegalArgumentException("인원은 1~" + MAX_FLIGHT_PEOPLE + "명까지 담을 수 있어요.");
+		}
+		var rows = jdbc.sql("""
+			SELECT f.flight_no, f.departure_time, f.operating_days, ao.city_name_ko AS origin_city, aa.city_name_ko AS arrival_city,
+				ff.base_price, ff.tax_fuel, ff.seats_left
+			FROM flight f
+			JOIN destination d ON d.destination_id = f.destination_id AND d.status = 'AVAILABLE'
+			JOIN airport ao ON ao.airport_code = f.origin_airport
+			JOIN airport aa ON aa.airport_code = f.arrival_airport
+			JOIN flight_fare ff ON ff.flight_id = f.flight_id AND ff.cabin_class = :cabin
+			WHERE f.flight_id = :id AND f.status = 'ON_SALE'
+			""").param("id", flightId).param("cabin", cabin).query().listOfRows();
+		if (rows.isEmpty()) {
+			throw new IllegalArgumentException("없는 항공편이거나 고를 수 없는 좌석 등급이에요.");
+		}
+		var r = rows.get(0);
+		String days = (String) r.get("OPERATING_DAYS");
+		if (date != null && days != null && days.length() >= 7 && days.charAt(date.getDayOfWeek().getValue() - 1) != '1') {
+			throw new IllegalArgumentException("선택한 날짜에는 운항하지 않아요. 운항 요일을 확인해 주세요.");
+		}
+		int left = ((Number) r.get("SEATS_LEFT")).intValue();
+		if (people > left) {
+			throw new IllegalArgumentException("남은 좌석이 " + left + "석뿐이에요.");
+		}
+		int unit = ((Number) r.get("BASE_PRICE")).intValue() + ((Number) r.get("TAX_FUEL")).intValue();
+		String title = r.get("FLIGHT_NO") + " " + r.get("ORIGIN_CITY") + "→" + r.get("ARRIVAL_CITY");
+		String detail = Fmt.cabin(cabin) + " · 편도 · " + people + "명 · " + Fmt.time(toTime(r.get("DEPARTURE_TIME"))) + " 출발";
+		return new CartLine(ItemType.FLIGHT, flightId, title, detail, unit, people);
+	}
+
+	private static java.time.LocalTime toTime(Object value) {
+		return value instanceof java.sql.Time t ? t.toLocalTime() : (java.time.LocalTime) value;
+	}
+
+	// 국내 이동편: 성인 편도 1인 요금.
+	private CartLine transportLine(long transportId, int people) {
+		if (people < 1 || people > MAX_FLIGHT_PEOPLE) {
+			throw new IllegalArgumentException("인원은 1~" + MAX_FLIGHT_PEOPLE + "명까지 담을 수 있어요.");
+		}
+		var rows = jdbc.sql("""
+			SELECT t.name, t.origin, t.depart_time, t.fare
+			FROM domestic_transport t JOIN domestic_city c ON c.city_id = t.city_id AND c.status = 'AVAILABLE'
+			WHERE t.transport_id = :id
+			""").param("id", transportId).query().listOfRows();
+		if (rows.isEmpty()) {
+			throw new IllegalArgumentException("없는 이동편이에요.");
+		}
+		var r = rows.get(0);
+		String origin = "DAEJEON".equals(r.get("ORIGIN")) ? "대전" : "서울";
+		String detail = "편도 · " + people + "명 · " + origin + " " + Fmt.time(toTime(r.get("DEPART_TIME"))) + " 출발";
+		return new CartLine(ItemType.TRANSPORT, transportId, (String) r.get("NAME"), detail,
+			((Number) r.get("FARE")).intValue(), people);
 	}
 
 	private CartLine tourLine(long tourId, Long optionId, int people) {

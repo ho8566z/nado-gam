@@ -4,6 +4,8 @@ import java.util.Optional;
 
 // 장바구니에 담을 수 있는 상품 종류
 public enum ItemType {
+	FLIGHT("항공권"),
+	TRANSPORT("국내 이동편"),
 	TOUR("투어"),
 	HOTEL("호텔"),
 	CRUISE("크루즈");
