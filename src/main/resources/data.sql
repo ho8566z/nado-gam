@@ -40,6 +40,36 @@ INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('ID', '인�
 INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('MY', '말레이시아', 'Malaysia', 'ASIA');
 INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('MX', '멕시코', 'Mexico', 'NORTH_AMERICA');
 INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('GU', '괌', 'Guam', 'OCEANIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('PH', '필리핀', 'Philippines', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('IN', '인도', 'India', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('LK', '스리랑카', 'Sri Lanka', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('NP', '네팔', 'Nepal', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('MN', '몽골', 'Mongolia', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('KZ', '카자흐스탄', 'Kazakhstan', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('UZ', '우즈베키스탄', 'Uzbekistan', 'ASIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('SA', '사우디아라비아', 'Saudi Arabia', 'MIDDLE_EAST');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('IL', '이스라엘', 'Israel', 'MIDDLE_EAST');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('CH', '스위스', 'Switzerland', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('HU', '헝가리', 'Hungary', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('PL', '폴란드', 'Poland', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('DK', '덴마크', 'Denmark', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('SE', '스웨덴', 'Sweden', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('NO', '노르웨이', 'Norway', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('IE', '아일랜드', 'Ireland', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('GR', '그리스', 'Greece', 'EUROPE');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('KE', '케냐', 'Kenya', 'AFRICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('MA', '모로코', 'Morocco', 'AFRICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('TZ', '탄자니아', 'Tanzania', 'AFRICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('TN', '튀니지', 'Tunisia', 'AFRICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('GH', '가나', 'Ghana', 'AFRICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('PA', '파나마', 'Panama', 'NORTH_AMERICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('AR', '아르헨티나', 'Argentina', 'SOUTH_AMERICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('CL', '칠레', 'Chile', 'SOUTH_AMERICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('PE', '페루', 'Peru', 'SOUTH_AMERICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('CO', '콜롬비아', 'Colombia', 'SOUTH_AMERICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('EC', '에콰도르', 'Ecuador', 'SOUTH_AMERICA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('NZ', '뉴질랜드', 'New Zealand', 'OCEANIA');
+INSERT INTO country (country_code, name_ko, name_en, region) VALUES ('FJ', '피지', 'Fiji', 'OCEANIA');
 
 -- [M] 공항 (좌표는 지구본용)
 INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ICN', '인천국제공항', 'Incheon International Airport', '인천', 'KR', 37.4602, 126.4407, 'Asia/Seoul', FALSE);
@@ -99,8 +129,53 @@ INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code,
 INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('MEX', '베니토후아레스공항', 'Mexico City International Airport', '멕시코시티', 'MX', 19.4363, -99.0721, 'America/Mexico_City', FALSE);
 INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('MEL', '멜버른공항', 'Melbourne Airport', '멜버른', 'AU', -37.669, 144.841, 'Australia/Melbourne', FALSE);
 INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('GUM', '괌국제공항', 'Antonio B. Won Pat International Airport', '괌', 'GU', 13.4834, 144.796, 'Pacific/Guam', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('MNL', '니노이아키노국제공항', 'Ninoy Aquino International Airport', '마닐라', 'PH', 14.5086, 121.0194, 'Asia/Manila', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('DEL', '인디라간디국제공항', 'Indira Gandhi International Airport', '델리', 'IN', 28.5562, 77.1, 'Asia/Kolkata', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('BOM', '차트라파티시바지국제공항', 'Chhatrapati Shivaji Maharaj International Airport', '뭄바이', 'IN', 19.0896, 72.8656, 'Asia/Kolkata', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('BLR', '켐페고다국제공항', 'Kempegowda International Airport', '방갈로르', 'IN', 13.1986, 77.7066, 'Asia/Kolkata', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CMB', '반다라나이케국제공항', 'Bandaranaike International Airport', '콜롬보', 'LK', 7.1808, 79.8841, 'Asia/Colombo', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('KTM', '트리부반국제공항', 'Tribhuvan International Airport', '카트만두', 'NP', 27.6966, 85.3591, 'Asia/Kathmandu', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ULN', '칭기즈칸국제공항', 'Chinggis Khaan International Airport', '울란바토르', 'MN', 47.6467, 106.8197, 'Asia/Ulaanbaatar', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ALA', '알마티국제공항', 'Almaty International Airport', '알마티', 'KZ', 43.3521, 77.0405, 'Asia/Almaty', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('TAS', '타슈켄트국제공항', 'Tashkent International Airport', '타슈켄트', 'UZ', 41.2579, 69.2812, 'Asia/Tashkent', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CGK', '수카르노하타국제공항', 'Soekarno-Hatta International Airport', '자카르타', 'ID', -6.1256, 106.6559, 'Asia/Jakarta', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CAN', '광저우바이윈국제공항', 'Guangzhou Baiyun International Airport', '광저우', 'CN', 23.3924, 113.2988, 'Asia/Shanghai', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CTU', '청두솽류국제공항', 'Chengdu Shuangliu International Airport', '청두', 'CN', 30.5785, 103.9471, 'Asia/Shanghai', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('RUH', '킹칼리드국제공항', 'King Khalid International Airport', '리야드', 'SA', 24.9578, 46.6989, 'Asia/Riyadh', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('TLV', '벤구리온국제공항', 'Ben Gurion Airport', '텔아비브', 'IL', 32.0114, 34.8867, 'Asia/Jerusalem', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('JED', '킹압둘아지즈국제공항', 'King Abdulaziz International Airport', '제다', 'SA', 21.6796, 39.1565, 'Asia/Riyadh', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ZRH', '취리히공항', 'Zurich Airport', '취리히', 'CH', 47.4647, 8.5492, 'Europe/Zurich', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('BUD', '부다페스트리스트페렌츠국제공항', 'Budapest Ferenc Liszt International Airport', '부다페스트', 'HU', 47.4369, 19.2556, 'Europe/Budapest', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('WAW', '바르샤바쇼팽공항', 'Warsaw Chopin Airport', '바르샤바', 'PL', 52.1657, 20.9671, 'Europe/Warsaw', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CPH', '코펜하겐공항', 'Copenhagen Airport', '코펜하겐', 'DK', 55.6181, 12.6561, 'Europe/Copenhagen', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ARN', '스톡홀름알란다공항', 'Stockholm Arlanda Airport', '스톡홀름', 'SE', 59.6498, 17.9238, 'Europe/Stockholm', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('OSL', '오슬로공항', 'Oslo Airport', '오슬로', 'NO', 60.1976, 11.1004, 'Europe/Oslo', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('DUB', '더블린공항', 'Dublin Airport', '더블린', 'IE', 53.4264, -6.2499, 'Europe/Dublin', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ATH', '아테네엘레프테리오스베니젤로스공항', 'Athens Eleftherios Venizelos Airport', '아테네', 'GR', 37.9364, 23.9445, 'Europe/Athens', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('NBO', '조모케냐타국제공항', 'Jomo Kenyatta International Airport', '나이로비', 'KE', -1.3192, 36.9278, 'Africa/Nairobi', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('JNB', 'OR탐보국제공항', 'O. R. Tambo International Airport', '요하네스버그', 'ZA', -26.1392, 28.246, 'Africa/Johannesburg', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CMN', '모하메드5세국제공항', 'Mohammed V International Airport', '카사블랑카', 'MA', 33.3675, -7.5899, 'Africa/Casablanca', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('DAR', '줄리어스니에레레국제공항', 'Julius Nyerere International Airport', '다르에스살람', 'TZ', -6.8781, 39.2026, 'Africa/Dar_es_Salaam', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('TUN', '튀니스카르타고국제공항', 'Tunis-Carthage International Airport', '튀니스', 'TN', 36.851, 10.2272, 'Africa/Tunis', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('ACC', '코토카국제공항', 'Kotoka International Airport', '아크라', 'GH', 5.6052, -0.1668, 'Africa/Accra', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('DFW', '댈러스포트워스국제공항', 'Dallas Fort Worth International Airport', '댈러스', 'US', 32.8998, -97.0403, 'America/Chicago', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('MIA', '마이애미국제공항', 'Miami International Airport', '마이애미', 'US', 25.7959, -80.287, 'America/New_York', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('DEN', '덴버국제공항', 'Denver International Airport', '덴버', 'US', 39.8561, -104.6737, 'America/Denver', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('YUL', '몬트리올트뤼도국제공항', 'Montreal-Trudeau International Airport', '몬트리올', 'CA', 45.4706, -73.7408, 'America/Toronto', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('CUN', '칸쿤국제공항', 'Cancun International Airport', '칸쿤', 'MX', 21.0365, -86.8771, 'America/Cancun', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('PTY', '토쿠멘국제공항', 'Tocumen International Airport', '파나마시티', 'PA', 9.0714, -79.3835, 'America/Panama', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('GIG', '리우갈레앙국제공항', 'Rio de Janeiro-Galeao International Airport', '리우데자네이루', 'BR', -22.809, -43.2506, 'America/Sao_Paulo', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('EZE', '미니스트로피스타리니국제공항', 'Ministro Pistarini International Airport', '부에노스아이레스', 'AR', -34.8222, -58.5358, 'America/Argentina/Buenos_Aires', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('SCL', '아르투로메리노베니테스국제공항', 'Arturo Merino Benitez International Airport', '산티아고', 'CL', -33.393, -70.7858, 'America/Santiago', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('LIM', '호르헤차베스국제공항', 'Jorge Chavez International Airport', '리마', 'PE', -12.0219, -77.1143, 'America/Lima', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('BOG', '엘도라도국제공항', 'El Dorado International Airport', '보고타', 'CO', 4.7016, -74.1469, 'America/Bogota', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('UIO', '마리스칼수크레국제공항', 'Mariscal Sucre International Airport', '키토', 'EC', -0.1292, -78.3575, 'America/Guayaquil', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('BNE', '브리즈번공항', 'Brisbane Airport', '브리즈번', 'AU', -27.3842, 153.1175, 'Australia/Brisbane', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('PER', '퍼스공항', 'Perth Airport', '퍼스', 'AU', -31.9385, 115.9672, 'Australia/Perth', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('AKL', '오클랜드공항', 'Auckland Airport', '오클랜드', 'NZ', -37.0082, 174.785, 'Pacific/Auckland', FALSE);
+INSERT INTO airport (airport_code, name_ko, name_en, city_name_ko, country_code, latitude, longitude, timezone, is_hub) VALUES ('NAN', '나디국제공항', 'Nadi International Airport', '나디', 'FJ', -17.7554, 177.4434, 'Pacific/Fiji', FALSE);
 
--- [M] 여행지 27개 (destination_id 는 1부터 순서대로)
+-- [M] 여행지 100개 (destination_id 는 1부터 순서대로)
 INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('파리', 'Paris', 'FR', 'CDG', 48.8566, 2.3522, 'AVAILABLE', NULL, '낭만과 예술이 흐르는 도시, 에펠탑과 루브르', NULL, NULL, 1);
 INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('런던', 'London', 'GB', 'LHR', 51.5074, -0.1278, 'AVAILABLE', NULL, '빅벤과 템스강, 클래식과 현대가 공존하는 도시', NULL, NULL, 2);
 INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('베를린', 'Berlin', 'DE', 'BER', 52.52, 13.405, 'AVAILABLE', NULL, '역사와 예술, 자유로운 분위기의 독일 수도', NULL, NULL, 3);
@@ -151,6 +226,56 @@ INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude,
 INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('멕시코시티', 'Mexico City', 'MX', 'MEX', 19.4326, -99.1332, 'AVAILABLE', NULL, '고대 아즈텍 위에 세운 거대한 문화 도시', NULL, NULL, 48);
 INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('멜버른', 'Melbourne', 'AU', 'MEL', -37.8136, 144.9631, 'AVAILABLE', NULL, '카페와 골목 예술, 타임아웃 2026 세계 1위 도시', NULL, NULL, 49);
 INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('괌', 'Guam', 'GU', 'GUM', 13.4443, 144.7937, 'AVAILABLE', NULL, '가깝고 한적한 태평양의 휴양 섬', NULL, NULL, 50);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('마닐라', 'Manila', 'PH', 'MNL', 14.5995, 120.9842, 'AVAILABLE', NULL, '스페인 성벽도시와 활기찬 거리, 필리핀의 수도', NULL, NULL, 51);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('델리', 'Delhi', 'IN', 'DEL', 28.6139, 77.209, 'AVAILABLE', NULL, '무굴 유적과 향신료 골목, 인도의 관문', NULL, NULL, 52);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('뭄바이', 'Mumbai', 'IN', 'BOM', 19.076, 72.8777, 'AVAILABLE', NULL, '발리우드와 인도 문이 있는 인도 최대 항구 도시', NULL, NULL, 53);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('방갈로르', 'Bangalore', 'IN', 'BLR', 12.9716, 77.5946, 'AVAILABLE', NULL, '정원과 카페, 인도의 실리콘밸리', NULL, NULL, 54);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('콜롬보', 'Colombo', 'LK', 'CMB', 6.9271, 79.8612, 'AVAILABLE', NULL, '인도양 바다와 홍차, 스리랑카의 상업 중심지', NULL, NULL, 55);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('카트만두', 'Kathmandu', 'NP', 'KTM', 27.7172, 85.324, 'AVAILABLE', NULL, '히말라야 관문, 사원과 광장이 가득한 네팔의 수도', NULL, NULL, 56);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('울란바토르', 'Ulaanbaatar', 'MN', 'ULN', 47.8864, 106.9057, 'AVAILABLE', NULL, '초원과 게르, 칭기즈칸의 나라 몽골의 수도', NULL, NULL, 57);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('알마티', 'Almaty', 'KZ', 'ALA', 43.222, 76.8512, 'AVAILABLE', NULL, '천산산맥 아래 사과의 도시, 카자흐스탄 최대 도시', NULL, NULL, 58);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('타슈켄트', 'Tashkent', 'UZ', 'TAS', 41.2995, 69.2401, 'AVAILABLE', NULL, '실크로드의 푸른 모스크와 바자르, 우즈베키스탄의 수도', NULL, NULL, 59);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('자카르타', 'Jakarta', 'ID', 'CGK', -6.2088, 106.8456, 'AVAILABLE', NULL, '수천 개 섬 나라의 활기찬 수도', NULL, NULL, 60);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('광저우', 'Guangzhou', 'CN', 'CAN', 23.1291, 113.2644, 'AVAILABLE', NULL, '딤섬과 광둥 요리의 본고장, 화남의 중심', NULL, NULL, 61);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('청두', 'Chengdu', 'CN', 'CTU', 30.5728, 104.0668, 'AVAILABLE', NULL, '판다와 훠궈, 쓰촨 요리의 도시', NULL, NULL, 62);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('도하', 'Doha', 'QA', 'DOH', 25.2854, 51.531, 'AVAILABLE', NULL, '이슬람 예술박물관과 현대 건축이 만난 카타르의 수도', NULL, NULL, 63);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('리야드', 'Riyadh', 'SA', 'RUH', 24.7136, 46.6753, 'AVAILABLE', NULL, '사막 한가운데 솟은 고층 빌딩, 사우디아라비아의 수도', NULL, NULL, 64);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('텔아비브', 'Tel Aviv', 'IL', 'TLV', 32.0853, 34.7818, 'AVAILABLE', NULL, '지중해 해변과 올드 야포가 있는 이스라엘의 해안 도시', NULL, NULL, 65);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('제다', 'Jeddah', 'SA', 'JED', 21.4858, 39.1925, 'AVAILABLE', NULL, '홍해에 면한 항구 도시, 구시가지 알발라드', NULL, NULL, 66);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('프랑크푸르트', 'Frankfurt', 'DE', 'FRA', 50.1109, 8.6821, 'AVAILABLE', NULL, '마인강 위 스카이라인과 소시지·사과주의 도시', NULL, NULL, 67);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('취리히', 'Zurich', 'CH', 'ZRH', 47.3769, 8.5417, 'AVAILABLE', NULL, '호수와 알프스, 초콜릿과 시계의 스위스 도시', NULL, NULL, 68);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('부다페스트', 'Budapest', 'HU', 'BUD', 47.4979, 19.0402, 'AVAILABLE', NULL, '다뉴브강 야경과 온천의 헝가리 수도', NULL, NULL, 69);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('바르샤바', 'Warsaw', 'PL', 'WAW', 52.2297, 21.0122, 'AVAILABLE', NULL, '재건된 구시가지와 쇼팽의 폴란드 수도', NULL, NULL, 70);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('코펜하겐', 'Copenhagen', 'DK', 'CPH', 55.6761, 12.5683, 'AVAILABLE', NULL, '인어공주 동상과 니하운 운하의 덴마크 수도', NULL, NULL, 71);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('스톡홀름', 'Stockholm', 'SE', 'ARN', 59.3293, 18.0686, 'AVAILABLE', NULL, '14개 섬에 걸친 물의 도시, 스웨덴의 수도', NULL, NULL, 72);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('오슬로', 'Oslo', 'NO', 'OSL', 59.9139, 10.7522, 'AVAILABLE', NULL, '피오르드 입구에 자리한 노르웨이의 수도', NULL, NULL, 73);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('헬싱키', 'Helsinki', 'FI', 'HEL', 60.1699, 24.9384, 'AVAILABLE', NULL, '디자인과 사우나, 발트해의 핀란드 수도', NULL, NULL, 74);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('더블린', 'Dublin', 'IE', 'DUB', 53.3498, -6.2603, 'AVAILABLE', NULL, '펍과 문학, 기네스의 아일랜드 수도', NULL, NULL, 75);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('아테네', 'Athens', 'GR', 'ATH', 37.9838, 23.7275, 'AVAILABLE', NULL, '파르테논 신전이 내려다보는 서양 문명의 요람', NULL, NULL, 76);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('나이로비', 'Nairobi', 'KE', 'NBO', -1.2921, 36.8219, 'AVAILABLE', NULL, '사파리의 관문, 도심 가까이 국립공원이 있는 케냐의 수도', NULL, NULL, 77);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('요하네스버그', 'Johannesburg', 'ZA', 'JNB', -26.2041, 28.0473, 'AVAILABLE', NULL, '아파르트헤이트 박물관과 사파리 투어의 출발지', NULL, NULL, 78);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('카사블랑카', 'Casablanca', 'MA', 'CMN', 33.5731, -7.5898, 'AVAILABLE', NULL, '하산 2세 모스크와 대서양을 낀 모로코 최대 도시', NULL, NULL, 79);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('아디스아바바', 'Addis Ababa', 'ET', 'ADD', 9.03, 38.74, 'AVAILABLE', NULL, '커피의 고향 에티오피아의 수도, 아프리카의 외교 중심', NULL, NULL, 80);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('다르에스살람', 'Dar es Salaam', 'TZ', 'DAR', -6.7924, 39.2083, 'AVAILABLE', NULL, '잔지바르와 세렝게티로 가는 탄자니아의 항구 도시', NULL, NULL, 81);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('튀니스', 'Tunis', 'TN', 'TUN', 36.8065, 10.1815, 'AVAILABLE', NULL, '메디나 골목과 카르타고 유적, 지중해의 튀니지 수도', NULL, NULL, 82);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('아크라', 'Accra', 'GH', 'ACC', 5.6037, -0.187, 'AVAILABLE', NULL, '대서양 해변과 활기찬 시장, 가나의 수도', NULL, NULL, 83);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('시애틀', 'Seattle', 'US', 'SEA', 47.6062, -122.3321, 'AVAILABLE', NULL, '스페이스 니들과 스타벅스 1호점, 커피의 도시', NULL, NULL, 84);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('댈러스', 'Dallas', 'US', 'DFW', 32.7767, -96.797, 'AVAILABLE', NULL, '카우보이와 바비큐, 텍사스의 대도시', NULL, NULL, 85);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('마이애미', 'Miami', 'US', 'MIA', 25.7617, -80.1918, 'AVAILABLE', NULL, '사우스비치와 아르데코 거리, 플로리다의 햇살', NULL, NULL, 86);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('덴버', 'Denver', 'US', 'DEN', 39.7392, -104.9903, 'AVAILABLE', NULL, '로키산맥 관문, 맥주와 스키의 마일하이 시티', NULL, NULL, 87);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('몬트리올', 'Montreal', 'CA', 'YUL', 45.5017, -73.5673, 'AVAILABLE', NULL, '프랑스풍 구시가지와 베이글, 재즈 페스티벌의 도시', NULL, NULL, 88);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('칸쿤', 'Cancun', 'MX', 'CUN', 21.1619, -86.8515, 'AVAILABLE', NULL, '카리브해 에메랄드빛 바다와 마야 유적의 휴양지', NULL, NULL, 89);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('파나마시티', 'Panama City', 'PA', 'PTY', 8.9824, -79.5199, 'AVAILABLE', NULL, '파나마 운하와 고층 빌딩, 중미의 관문', NULL, NULL, 90);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('리우데자네이루', 'Rio de Janeiro', 'BR', 'GIG', -22.9068, -43.1729, 'AVAILABLE', NULL, '코파카바나 해변과 예수상, 삼바의 도시', NULL, NULL, 91);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('부에노스아이레스', 'Buenos Aires', 'AR', 'EZE', -34.6037, -58.3816, 'AVAILABLE', NULL, '탱고와 스테이크, 남미의 파리', NULL, NULL, 92);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('산티아고', 'Santiago', 'CL', 'SCL', -33.4489, -70.6693, 'AVAILABLE', NULL, '안데스산맥 아래 와인 산지의 칠레 수도', NULL, NULL, 93);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('리마', 'Lima', 'PE', 'LIM', -12.0464, -77.0428, 'AVAILABLE', NULL, '세비체와 태평양 절벽, 마추픽추로 가는 관문', NULL, NULL, 94);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('보고타', 'Bogota', 'CO', 'BOG', 4.711, -74.0721, 'AVAILABLE', NULL, '해발 2,600m 커피와 황금박물관의 콜롬비아 수도', NULL, NULL, 95);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('키토', 'Quito', 'EC', 'UIO', -0.1807, -78.4678, 'AVAILABLE', NULL, '적도 가까이 안데스 고원에 자리한 에콰도르 수도', NULL, NULL, 96);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('브리즈번', 'Brisbane', 'AU', 'BNE', -27.4698, 153.0251, 'AVAILABLE', NULL, '강변 산책과 코알라 보호구역, 호주 퀸즐랜드의 중심', NULL, NULL, 97);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('퍼스', 'Perth', 'AU', 'PER', -31.9505, 115.8605, 'AVAILABLE', NULL, '인도양 일몰과 와이너리, 서호주의 도시', NULL, NULL, 98);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('오클랜드', 'Auckland', 'NZ', 'AKL', -36.8485, 174.7633, 'AVAILABLE', NULL, '돛단배 항구와 화산, 뉴질랜드 최대 도시', NULL, NULL, 99);
+INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude, longitude, status, unavailable_reason, summary, poster_color_from, poster_color_to, sort_order) VALUES ('나디', 'Nadi', 'FJ', 'NAN', -17.8, 177.4167, 'AVAILABLE', NULL, '피지 섬들로 가는 관문, 산호 바다와 야자수', NULL, NULL, 100);
 
 -- [M] 항공사
 INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MG', '민국항공', 'Minguk Air', 'FSC');
@@ -193,7 +318,7 @@ INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MA',
 INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BO', '보르네오엑스', 'Borneo X', 'LCC');
 INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('ZT', '아즈텍항공', 'Aztec Airlines', 'FSC');
 
--- [M] 항공편 154편
+-- [M] 항공편 304편
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG901', 'MG', 1, 'ICN', 'CDG', 'DIRECT', 0, '11:00:00', '17:20:00', 0, 860, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GL267', 'GL', 1, 'ICN', 'CDG', 'DIRECT', 0, '23:30:00', '05:50:00', 1, 860, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH713', 'RH', 1, 'ICN', 'CDG', 'CONNECTING', 1, '13:10:00', '22:50:00', 0, 1060, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
@@ -348,6 +473,156 @@ INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arr
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG111', 'MG', 50, 'ICN', 'GUM', 'DIRECT', 0, '20:40:00', '02:15:00', 1, 275, 'A330-300', 23, TRUE, '1111111', 'ON_SALE');
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('HR3101', 'HR', 50, 'ICN', 'GUM', 'DIRECT', 0, '21:30:00', '03:10:00', 1, 280, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BS301', 'BS', 50, 'ICN', 'GUM', 'DIRECT', 0, '22:00:00', '03:40:00', 1, 280, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG294', 'MG', 51, 'ICN', 'MNL', 'DIRECT', 0, '13:40:00', '17:16:00', 0, 276, 'A330-300', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('SB581', 'SB', 51, 'ICN', 'MNL', 'DIRECT', 0, '19:30:00', '23:07:00', 0, 277, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('FM428', 'FM', 51, 'ICN', 'MNL', 'CONNECTING', 1, '23:40:00', '07:13:00', 1, 513, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG156', 'MG', 52, 'ICN', 'DEL', 'DIRECT', 0, '19:30:00', '23:50:00', 0, 470, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BS547', 'BS', 52, 'ICN', 'DEL', 'DIRECT', 0, '09:30:00', '13:43:00', 0, 463, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC994', 'LC', 52, 'ICN', 'DEL', 'CONNECTING', 1, '21:30:00', '11:25:00', 1, 1045, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG223', 'MG', 53, 'ICN', 'BOM', 'DIRECT', 0, '19:30:00', '01:03:00', 1, 543, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC940', 'LC', 53, 'ICN', 'BOM', 'DIRECT', 0, '09:30:00', '15:09:00', 0, 549, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC690', 'LC', 53, 'ICN', 'BOM', 'CONNECTING', 1, '21:30:00', '11:25:00', 1, 1045, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC692', 'LC', 54, 'ICN', 'BLR', 'CONNECTING', 1, '23:40:00', '11:17:00', 1, 907, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA737', 'OA', 54, 'ICN', 'BLR', 'CONNECTING', 1, '23:40:00', '15:07:00', 1, 1137, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GF446', 'GF', 54, 'ICN', 'BLR', 'CONNECTING', 1, '13:10:00', '04:31:00', 1, 1131, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ975', 'AQ', 55, 'ICN', 'CMB', 'DIRECT', 0, '22:15:00', '04:30:00', 1, 585, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('DS245', 'DS', 55, 'ICN', 'CMB', 'DIRECT', 0, '11:10:00', '17:18:00', 0, 578, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC566', 'LC', 55, 'ICN', 'CMB', 'CONNECTING', 1, '13:10:00', '01:28:00', 1, 948, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ972', 'AQ', 56, 'ICN', 'KTM', 'DIRECT', 0, '22:15:00', '01:48:00', 1, 408, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('NU799', 'NU', 56, 'ICN', 'KTM', 'DIRECT', 0, '11:10:00', '14:39:00', 0, 404, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('SM169', 'SM', 56, 'ICN', 'KTM', 'CONNECTING', 1, '08:30:00', '18:45:00', 0, 810, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG325', 'MG', 57, 'ICN', 'ULN', 'DIRECT', 0, '09:30:00', '12:05:00', 0, 215, 'A330-300', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BO187', 'BO', 57, 'ICN', 'ULN', 'DIRECT', 0, '13:40:00', '16:11:00', 0, 211, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AZ825', 'AZ', 57, 'ICN', 'ULN', 'CONNECTING', 1, '13:10:00', '18:28:00', 0, 378, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ363', 'AQ', 58, 'ICN', 'ALA', 'DIRECT', 0, '16:20:00', '19:26:00', 0, 426, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('HX444', 'HX', 58, 'ICN', 'ALA', 'DIRECT', 0, '22:15:00', '01:17:00', 1, 422, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP241', 'BP', 58, 'ICN', 'ALA', 'CONNECTING', 1, '23:40:00', '17:14:00', 1, 1294, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG165', 'MG', 59, 'ICN', 'TAS', 'DIRECT', 0, '19:30:00', '23:43:00', 0, 493, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MJ835', 'MJ', 59, 'ICN', 'TAS', 'DIRECT', 0, '09:30:00', '13:51:00', 0, 501, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP265', 'BP', 59, 'ICN', 'TAS', 'CONNECTING', 1, '13:10:00', '05:38:00', 1, 1228, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ961', 'AQ', 60, 'ICN', 'CGK', 'DIRECT', 0, '16:20:00', '23:01:00', 0, 521, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BS504', 'BS', 60, 'ICN', 'CGK', 'DIRECT', 0, '22:15:00', '05:07:00', 1, 532, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC175', 'LC', 60, 'ICN', 'CGK', 'CONNECTING', 1, '23:40:00', '10:22:00', 1, 762, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG646', 'MG', 61, 'ICN', 'CAN', 'DIRECT', 0, '13:40:00', '16:26:00', 0, 226, 'A330-300', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('HX832', 'HX', 61, 'ICN', 'CAN', 'DIRECT', 0, '19:30:00', '22:28:00', 0, 238, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('DS702', 'DS', 61, 'ICN', 'CAN', 'CONNECTING', 1, '21:30:00', '03:40:00', 1, 430, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ471', 'AQ', 62, 'ICN', 'CTU', 'DIRECT', 0, '22:15:00', '01:25:00', 1, 250, 'A330-300', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BO275', 'BO', 62, 'ICN', 'CTU', 'DIRECT', 0, '11:10:00', '14:15:00', 0, 245, 'A321neo', 15, FALSE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AZ814', 'AZ', 62, 'ICN', 'CTU', 'CONNECTING', 1, '08:30:00', '15:15:00', 0, 465, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ394', 'AQ', 63, 'ICN', 'DOH', 'DIRECT', 0, '16:20:00', '22:00:00', 0, 700, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BN567', 'BN', 63, 'ICN', 'DOH', 'DIRECT', 0, '22:15:00', '03:54:00', 1, 699, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA759', 'OA', 63, 'ICN', 'DOH', 'CONNECTING', 1, '21:30:00', '06:52:00', 1, 922, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA158', 'OA', 64, 'ICN', 'RUH', 'CONNECTING', 1, '08:30:00', '18:18:00', 0, 948, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GF773', 'GF', 64, 'ICN', 'RUH', 'CONNECTING', 1, '13:10:00', '21:51:00', 0, 881, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP896', 'BP', 64, 'ICN', 'RUH', 'CONNECTING', 1, '23:40:00', '13:37:00', 1, 1197, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ570', 'AQ', 65, 'ICN', 'TLV', 'DIRECT', 0, '22:15:00', '04:10:00', 1, 775, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA424', 'OA', 65, 'ICN', 'TLV', 'DIRECT', 0, '11:10:00', '17:19:00', 0, 789, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP532', 'BP', 65, 'ICN', 'TLV', 'CONNECTING', 1, '13:10:00', '23:18:00', 0, 1028, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA951', 'OA', 66, 'ICN', 'JED', 'CONNECTING', 1, '13:10:00', '00:31:00', 1, 1041, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GF921', 'GF', 66, 'ICN', 'JED', 'CONNECTING', 1, '21:30:00', '08:24:00', 1, 1014, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP850', 'BP', 66, 'ICN', 'JED', 'CONNECTING', 1, '13:10:00', '02:16:00', 1, 1146, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ461', 'AQ', 67, 'ICN', 'FRA', 'DIRECT', 0, '16:20:00', '22:14:00', 0, 834, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LP247', 'LP', 67, 'ICN', 'FRA', 'DIRECT', 0, '22:15:00', '03:54:00', 1, 819, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP648', 'BP', 67, 'ICN', 'FRA', 'CONNECTING', 1, '21:30:00', '07:51:00', 1, 1101, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG624', 'MG', 68, 'ICN', 'ZRH', 'DIRECT', 0, '19:30:00', '01:33:00', 1, 843, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('TL555', 'TL', 68, 'ICN', 'ZRH', 'DIRECT', 0, '09:30:00', '15:47:00', 0, 857, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH780', 'RH', 68, 'ICN', 'ZRH', 'CONNECTING', 1, '21:30:00', '07:29:00', 1, 1079, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ690', 'AQ', 69, 'ICN', 'BUD', 'DIRECT', 0, '16:20:00', '21:27:00', 0, 787, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('TL567', 'TL', 69, 'ICN', 'BUD', 'DIRECT', 0, '22:15:00', '03:34:00', 1, 799, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH557', 'RH', 69, 'ICN', 'BUD', 'CONNECTING', 1, '21:30:00', '07:52:00', 1, 1102, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG285', 'MG', 70, 'ICN', 'WAW', 'DIRECT', 0, '13:40:00', '18:06:00', 0, 746, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('TH907', 'TH', 70, 'ICN', 'WAW', 'DIRECT', 0, '19:30:00', '00:10:00', 1, 760, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH711', 'RH', 70, 'ICN', 'WAW', 'CONNECTING', 1, '08:30:00', '18:46:00', 0, 1096, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ176', 'AQ', 71, 'ICN', 'CPH', 'DIRECT', 0, '16:20:00', '21:22:00', 0, 782, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LP521', 'LP', 71, 'ICN', 'CPH', 'DIRECT', 0, '22:15:00', '03:13:00', 1, 778, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH363', 'RH', 71, 'ICN', 'CPH', 'CONNECTING', 1, '21:30:00', '07:10:00', 1, 1060, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LP953', 'LP', 72, 'ICN', 'ARN', 'CONNECTING', 1, '21:30:00', '05:08:00', 1, 938, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH664', 'RH', 72, 'ICN', 'ARN', 'CONNECTING', 1, '13:10:00', '23:13:00', 0, 1083, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP667', 'BP', 72, 'ICN', 'ARN', 'CONNECTING', 1, '23:40:00', '11:19:00', 1, 1179, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LP780', 'LP', 73, 'ICN', 'OSL', 'CONNECTING', 1, '13:10:00', '21:06:00', 0, 956, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH621', 'RH', 73, 'ICN', 'OSL', 'CONNECTING', 1, '13:10:00', '23:49:00', 0, 1119, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP422', 'BP', 73, 'ICN', 'OSL', 'CONNECTING', 1, '08:30:00', '19:53:00', 0, 1163, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ973', 'AQ', 74, 'ICN', 'HEL', 'DIRECT', 0, '22:15:00', '02:43:00', 1, 688, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('TL626', 'TL', 74, 'ICN', 'HEL', 'DIRECT', 0, '11:10:00', '15:53:00', 0, 703, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH340', 'RH', 74, 'ICN', 'HEL', 'CONNECTING', 1, '21:30:00', '10:07:00', 1, 1177, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('TH912', 'TH', 75, 'ICN', 'DUB', 'CONNECTING', 1, '13:10:00', '22:38:00', 0, 1108, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH156', 'RH', 75, 'ICN', 'DUB', 'CONNECTING', 1, '08:30:00', '17:59:00', 0, 1109, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('TL719', 'TL', 75, 'ICN', 'DUB', 'CONNECTING', 1, '21:30:00', '06:00:00', 1, 1050, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG942', 'MG', 76, 'ICN', 'ATH', 'DIRECT', 0, '09:30:00', '16:13:00', 0, 823, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH381', 'RH', 76, 'ICN', 'ATH', 'DIRECT', 0, '13:40:00', '20:28:00', 0, 828, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP634', 'BP', 76, 'ICN', 'ATH', 'CONNECTING', 1, '21:30:00', '07:58:00', 1, 1048, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BN483', 'BN', 77, 'ICN', 'NBO', 'CONNECTING', 1, '23:40:00', '13:47:00', 1, 1207, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA488', 'OA', 77, 'ICN', 'NBO', 'CONNECTING', 1, '21:30:00', '10:38:00', 1, 1148, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GF630', 'GF', 77, 'ICN', 'NBO', 'CONNECTING', 1, '21:30:00', '11:52:00', 1, 1222, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA903', 'OA', 78, 'ICN', 'JNB', 'CONNECTING', 1, '08:30:00', '01:23:00', 1, 1433, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BN542', 'BN', 78, 'ICN', 'JNB', 'CONNECTING', 1, '08:30:00', '01:23:00', 1, 1433, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GF705', 'GF', 78, 'ICN', 'JNB', 'CONNECTING', 1, '08:30:00', '01:13:00', 1, 1423, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP875', 'BP', 79, 'ICN', 'CMN', 'CONNECTING', 1, '23:40:00', '12:33:00', 1, 1253, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH990', 'RH', 79, 'ICN', 'CMN', 'CONNECTING', 1, '21:30:00', '10:01:00', 1, 1231, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GL715', 'GL', 79, 'ICN', 'CMN', 'CONNECTING', 1, '21:30:00', '09:48:00', 1, 1218, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ439', 'AQ', 80, 'ICN', 'ADD', 'DIRECT', 0, '22:15:00', '07:03:00', 1, 888, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BN309', 'BN', 80, 'ICN', 'ADD', 'DIRECT', 0, '11:10:00', '20:09:00', 0, 899, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA534', 'OA', 80, 'ICN', 'ADD', 'CONNECTING', 1, '23:40:00', '12:13:00', 1, 1113, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BN403', 'BN', 81, 'ICN', 'DAR', 'CONNECTING', 1, '13:10:00', '03:15:00', 1, 1205, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA912', 'OA', 81, 'ICN', 'DAR', 'CONNECTING', 1, '13:10:00', '02:49:00', 1, 1179, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GF275', 'GF', 81, 'ICN', 'DAR', 'CONNECTING', 1, '23:40:00', '14:42:00', 1, 1262, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP924', 'BP', 82, 'ICN', 'TUN', 'CONNECTING', 1, '21:30:00', '07:21:00', 1, 1071, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RH971', 'RH', 82, 'ICN', 'TUN', 'CONNECTING', 1, '23:40:00', '10:24:00', 1, 1124, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('GL109', 'GL', 82, 'ICN', 'TUN', 'CONNECTING', 1, '08:30:00', '20:31:00', 0, 1201, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BN765', 'BN', 83, 'ICN', 'ACC', 'CONNECTING', 1, '13:10:00', '04:14:00', 1, 1444, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('BP129', 'BP', 83, 'ICN', 'ACC', 'CONNECTING', 1, '23:40:00', '14:10:00', 1, 1410, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('OA273', 'OA', 83, 'ICN', 'ACC', 'CONNECTING', 1, '13:10:00', '03:31:00', 1, 1401, 'A380-800', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ881', 'AQ', 84, 'ICN', 'SEA', 'DIRECT', 0, '16:20:00', '12:47:00', 0, 807, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC743', 'PC', 84, 'ICN', 'SEA', 'DIRECT', 0, '22:15:00', '18:47:00', 0, 812, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC466', 'PC', 84, 'ICN', 'SEA', 'CONNECTING', 1, '13:10:00', '18:30:00', 0, 1340, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG795', 'MG', 85, 'ICN', 'DFW', 'DIRECT', 0, '19:30:00', '21:56:00', 0, 1046, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW757', 'UW', 85, 'ICN', 'DFW', 'DIRECT', 0, '09:30:00', '12:07:00', 0, 1057, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC925', 'PC', 85, 'ICN', 'DFW', 'CONNECTING', 1, '08:30:00', '14:03:00', 0, 1233, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC227', 'PC', 86, 'ICN', 'MIA', 'CONNECTING', 1, '23:40:00', '08:54:00', 1, 1394, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW631', 'UW', 86, 'ICN', 'MIA', 'CONNECTING', 1, '21:30:00', '07:40:00', 1, 1450, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW638', 'UW', 86, 'ICN', 'MIA', 'CONNECTING', 1, '23:40:00', '08:47:00', 1, 1387, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC482', 'PC', 87, 'ICN', 'DEN', 'CONNECTING', 1, '08:30:00', '12:07:00', 0, 1177, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC194', 'PC', 87, 'ICN', 'DEN', 'CONNECTING', 1, '13:10:00', '17:15:00', 0, 1205, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW251', 'UW', 87, 'ICN', 'DEN', 'CONNECTING', 1, '23:40:00', '04:46:00', 1, 1266, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('ML686', 'ML', 88, 'ICN', 'YUL', 'CONNECTING', 1, '08:30:00', '15:35:00', 0, 1265, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW119', 'UW', 88, 'ICN', 'YUL', 'CONNECTING', 1, '13:10:00', '20:53:00', 0, 1303, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC169', 'PC', 88, 'ICN', 'YUL', 'CONNECTING', 1, '08:30:00', '16:27:00', 0, 1317, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW859', 'UW', 89, 'ICN', 'CUN', 'CONNECTING', 1, '21:30:00', '06:35:00', 1, 1385, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('ZT979', 'ZT', 89, 'ICN', 'CUN', 'CONNECTING', 1, '23:40:00', '10:19:00', 1, 1479, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW996', 'UW', 89, 'ICN', 'CUN', 'CONNECTING', 1, '13:10:00', '23:42:00', 0, 1472, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW729', 'UW', 90, 'ICN', 'PTY', 'CONNECTING', 1, '13:10:00', '01:35:00', 1, 1585, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('ZT528', 'ZT', 90, 'ICN', 'PTY', 'CONNECTING', 1, '08:30:00', '21:02:00', 0, 1592, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW814', 'UW', 90, 'ICN', 'PTY', 'CONNECTING', 1, '13:10:00', '00:57:00', 1, 1547, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AT410', 'AT', 91, 'ICN', 'GIG', 'CONNECTING', 1, '21:30:00', '18:14:00', 1, 1964, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW513', 'UW', 91, 'ICN', 'GIG', 'CONNECTING', 1, '23:40:00', '20:34:00', 1, 1974, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW942', 'UW', 91, 'ICN', 'GIG', 'CONNECTING', 1, '08:30:00', '06:15:00', 1, 2025, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AT247', 'AT', 92, 'ICN', 'EZE', 'CONNECTING', 1, '13:10:00', '12:07:00', 1, 2097, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW157', 'UW', 92, 'ICN', 'EZE', 'CONNECTING', 1, '13:10:00', '10:53:00', 1, 2023, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW908', 'UW', 92, 'ICN', 'EZE', 'CONNECTING', 1, '08:30:00', '06:37:00', 1, 2047, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AT217', 'AT', 93, 'ICN', 'SCL', 'CONNECTING', 1, '21:30:00', '19:54:00', 1, 2124, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW375', 'UW', 93, 'ICN', 'SCL', 'CONNECTING', 1, '13:10:00', '08:08:00', 1, 1918, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW440', 'UW', 93, 'ICN', 'SCL', 'CONNECTING', 1, '23:40:00', '20:17:00', 1, 2017, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW791', 'UW', 94, 'ICN', 'LIM', 'CONNECTING', 1, '13:10:00', '03:46:00', 1, 1716, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW943', 'UW', 94, 'ICN', 'LIM', 'CONNECTING', 1, '21:30:00', '13:23:00', 1, 1793, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('ZT354', 'ZT', 94, 'ICN', 'LIM', 'CONNECTING', 1, '08:30:00', '22:48:00', 0, 1698, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW264', 'UW', 95, 'ICN', 'BOG', 'CONNECTING', 1, '08:30:00', '21:32:00', 0, 1622, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW519', 'UW', 95, 'ICN', 'BOG', 'CONNECTING', 1, '21:30:00', '10:39:00', 1, 1629, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('ZT764', 'ZT', 95, 'ICN', 'BOG', 'CONNECTING', 1, '23:40:00', '13:30:00', 1, 1670, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW651', 'UW', 96, 'ICN', 'UIO', 'CONNECTING', 1, '21:30:00', '11:23:00', 1, 1673, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('UW558', 'UW', 96, 'ICN', 'UIO', 'CONNECTING', 1, '21:30:00', '11:31:00', 1, 1681, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('ZT841', 'ZT', 96, 'ICN', 'UIO', 'CONNECTING', 1, '08:30:00', '21:00:00', 0, 1590, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ675', 'AQ', 97, 'ICN', 'BNE', 'DIRECT', 0, '11:10:00', '00:42:00', 1, 752, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RI216', 'RI', 97, 'ICN', 'BNE', 'DIRECT', 0, '16:20:00', '05:55:00', 1, 755, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC362', 'LC', 97, 'ICN', 'BNE', 'CONNECTING', 1, '23:40:00', '20:25:00', 1, 1185, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ151', 'AQ', 98, 'ICN', 'PER', 'DIRECT', 0, '16:20:00', '03:58:00', 1, 758, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('PC655', 'PC', 98, 'ICN', 'PER', 'DIRECT', 0, '22:15:00', '10:07:00', 1, 772, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('LC645', 'LC', 98, 'ICN', 'PER', 'CONNECTING', 1, '13:10:00', '04:39:00', 1, 989, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG698', 'MG', 99, 'ICN', 'AKL', 'DIRECT', 0, '19:30:00', '14:15:00', 1, 945, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('SX980', 'SX', 99, 'ICN', 'AKL', 'DIRECT', 0, '09:30:00', '03:56:00', 1, 926, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('SX969', 'SX', 99, 'ICN', 'AKL', 'CONNECTING', 1, '21:30:00', '20:01:00', 1, 1171, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('AQ184', 'AQ', 100, 'ICN', 'NAN', 'DIRECT', 0, '16:20:00', '08:38:00', 1, 798, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('RI363', 'RI', 100, 'ICN', 'NAN', 'DIRECT', 0, '22:15:00', '14:39:00', 1, 804, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
+INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('SX861', 'SX', 100, 'ICN', 'NAN', 'CONNECTING', 1, '13:10:00', '14:14:00', 1, 1324, 'A350-900', 23, TRUE, '1111111', 'ON_SALE');
 
 -- [M] 항공편 구간 (직항 1구간, 경유 2구간)
 INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (1, 1, 'ICN', 'CDG', 860, NULL);
@@ -558,6 +833,252 @@ INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_m
 INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (152, 1, 'ICN', 'GUM', 275, NULL);
 INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (153, 1, 'ICN', 'GUM', 280, NULL);
 INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (154, 1, 'ICN', 'GUM', 280, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (155, 1, 'ICN', 'MNL', 276, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (156, 1, 'ICN', 'MNL', 277, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (157, 1, 'ICN', 'TPE', 137, 260);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (157, 2, 'TPE', 'MNL', 116, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (158, 1, 'ICN', 'DEL', 470, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (159, 1, 'ICN', 'DEL', 463, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (160, 1, 'ICN', 'SIN', 368, 343);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (160, 2, 'SIN', 'DEL', 334, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (161, 1, 'ICN', 'BOM', 543, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (162, 1, 'ICN', 'BOM', 549, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (163, 1, 'ICN', 'SIN', 368, 360);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (163, 2, 'SIN', 'BOM', 317, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (164, 1, 'ICN', 'SIN', 368, 276);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (164, 2, 'SIN', 'BLR', 263, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (165, 1, 'ICN', 'DXB', 522, 388);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (165, 2, 'DXB', 'BLR', 227, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (166, 1, 'ICN', 'DOH', 546, 332);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (166, 2, 'DOH', 'BLR', 253, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (167, 1, 'ICN', 'CMB', 585, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (168, 1, 'ICN', 'CMB', 578, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (169, 1, 'ICN', 'SIN', 368, 349);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (169, 2, 'SIN', 'CMB', 231, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (170, 1, 'ICN', 'KTM', 408, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (171, 1, 'ICN', 'KTM', 404, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (172, 1, 'ICN', 'BKK', 298, 319);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (172, 2, 'BKK', 'KTM', 193, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (173, 1, 'ICN', 'ULN', 215, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (174, 1, 'ICN', 'ULN', 211, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (175, 1, 'ICN', 'PEK', 96, 168);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (175, 2, 'PEK', 'ULN', 114, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (176, 1, 'ICN', 'ALA', 426, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (177, 1, 'ICN', 'ALA', 422, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (178, 1, 'ICN', 'IST', 610, 367);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (178, 2, 'IST', 'ALA', 317, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (179, 1, 'ICN', 'TAS', 493, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (180, 1, 'ICN', 'TAS', 501, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (181, 1, 'ICN', 'IST', 610, 342);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (181, 2, 'IST', 'TAS', 276, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (182, 1, 'ICN', 'CGK', 521, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (183, 1, 'ICN', 'CGK', 532, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (184, 1, 'ICN', 'SIN', 368, 299);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (184, 2, 'SIN', 'CGK', 95, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (185, 1, 'ICN', 'CAN', 226, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (186, 1, 'ICN', 'CAN', 238, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (187, 1, 'ICN', 'HKG', 181, 209);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (187, 2, 'HKG', 'CAN', 40, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (188, 1, 'ICN', 'CTU', 250, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (189, 1, 'ICN', 'CTU', 245, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (190, 1, 'ICN', 'PVG', 90, 220);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (190, 2, 'PVG', 'CTU', 155, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (191, 1, 'ICN', 'DOH', 700, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (192, 1, 'ICN', 'DOH', 699, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (193, 1, 'ICN', 'DXB', 522, 342);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (193, 2, 'DXB', 'DOH', 58, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (194, 1, 'ICN', 'DXB', 522, 332);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (194, 2, 'DXB', 'RUH', 94, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (195, 1, 'ICN', 'DOH', 546, 269);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (195, 2, 'DOH', 'RUH', 66, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (196, 1, 'ICN', 'IST', 610, 377);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (196, 2, 'IST', 'RUH', 210, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (197, 1, 'ICN', 'TLV', 775, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (198, 1, 'ICN', 'TLV', 789, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (199, 1, 'ICN', 'IST', 610, 303);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (199, 2, 'IST', 'TLV', 115, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (200, 1, 'ICN', 'DXB', 522, 365);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (200, 2, 'DXB', 'JED', 154, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (201, 1, 'ICN', 'DOH', 546, 341);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (201, 2, 'DOH', 'JED', 127, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (202, 1, 'ICN', 'IST', 610, 331);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (202, 2, 'IST', 'JED', 205, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (203, 1, 'ICN', 'FRA', 834, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (204, 1, 'ICN', 'FRA', 819, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (205, 1, 'ICN', 'IST', 610, 327);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (205, 2, 'IST', 'FRA', 164, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (206, 1, 'ICN', 'ZRH', 843, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (207, 1, 'ICN', 'ZRH', 857, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (208, 1, 'ICN', 'FRA', 655, 373);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (208, 2, 'FRA', 'ZRH', 51, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (209, 1, 'ICN', 'BUD', 787, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (210, 1, 'ICN', 'BUD', 799, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (211, 1, 'ICN', 'FRA', 655, 356);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (211, 2, 'FRA', 'BUD', 91, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (212, 1, 'ICN', 'WAW', 746, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (213, 1, 'ICN', 'WAW', 760, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (214, 1, 'ICN', 'FRA', 655, 345);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (214, 2, 'FRA', 'WAW', 96, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (215, 1, 'ICN', 'CPH', 782, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (216, 1, 'ICN', 'CPH', 778, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (217, 1, 'ICN', 'FRA', 655, 325);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (217, 2, 'FRA', 'CPH', 80, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (218, 1, 'ICN', 'HEL', 545, 334);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (218, 2, 'HEL', 'ARN', 59, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (219, 1, 'ICN', 'FRA', 655, 309);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (219, 2, 'FRA', 'ARN', 119, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (220, 1, 'ICN', 'IST', 610, 380);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (220, 2, 'IST', 'ARN', 189, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (221, 1, 'ICN', 'HEL', 545, 325);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (221, 2, 'HEL', 'OSL', 86, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (222, 1, 'ICN', 'FRA', 655, 351);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (222, 2, 'FRA', 'OSL', 113, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (223, 1, 'ICN', 'IST', 610, 345);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (223, 2, 'IST', 'OSL', 208, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (224, 1, 'ICN', 'HEL', 688, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (225, 1, 'ICN', 'HEL', 703, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (226, 1, 'ICN', 'FRA', 655, 379);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (226, 2, 'FRA', 'HEL', 143, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (227, 1, 'ICN', 'LHR', 678, 367);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (227, 2, 'LHR', 'DUB', 63, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (228, 1, 'ICN', 'FRA', 655, 345);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (228, 2, 'FRA', 'DUB', 109, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (229, 1, 'ICN', 'AMS', 656, 309);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (229, 2, 'AMS', 'DUB', 85, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (230, 1, 'ICN', 'ATH', 823, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (231, 1, 'ICN', 'ATH', 828, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (232, 1, 'ICN', 'IST', 610, 367);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (232, 2, 'IST', 'ATH', 71, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (233, 1, 'ICN', 'ADD', 703, 389);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (233, 2, 'ADD', 'NBO', 115, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (234, 1, 'ICN', 'DXB', 522, 336);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (234, 2, 'DXB', 'NBO', 290, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (235, 1, 'ICN', 'DOH', 546, 401);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (235, 2, 'DOH', 'NBO', 275, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (236, 1, 'ICN', 'DXB', 522, 412);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (236, 2, 'DXB', 'JNB', 499, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (237, 1, 'ICN', 'ADD', 703, 402);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (237, 2, 'ADD', 'JNB', 328, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (238, 1, 'ICN', 'DOH', 546, 390);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (238, 2, 'DOH', 'JNB', 487, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (239, 1, 'ICN', 'IST', 610, 371);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (239, 2, 'IST', 'CMN', 272, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (240, 1, 'ICN', 'FRA', 655, 379);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (240, 2, 'FRA', 'CMN', 197, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (241, 1, 'ICN', 'CDG', 683, 364);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (241, 2, 'CDG', 'CMN', 171, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (242, 1, 'ICN', 'ADD', 888, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (243, 1, 'ICN', 'ADD', 899, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (244, 1, 'ICN', 'DXB', 522, 377);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (244, 2, 'DXB', 'ADD', 214, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (245, 1, 'ICN', 'ADD', 703, 343);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (245, 2, 'ADD', 'DAR', 159, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (246, 1, 'ICN', 'DXB', 522, 336);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (246, 2, 'DXB', 'DAR', 321, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (247, 1, 'ICN', 'DOH', 546, 407);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (247, 2, 'DOH', 'DAR', 309, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (248, 1, 'ICN', 'IST', 610, 309);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (248, 2, 'IST', 'TUN', 152, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (249, 1, 'ICN', 'FRA', 655, 331);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (249, 2, 'FRA', 'TUN', 138, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (250, 1, 'ICN', 'CDG', 683, 379);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (250, 2, 'CDG', 'TUN', 139, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (251, 1, 'ICN', 'ADD', 703, 395);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (251, 2, 'ADD', 'ACC', 346, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (252, 1, 'ICN', 'IST', 610, 412);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (252, 2, 'IST', 'ACC', 388, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (253, 1, 'ICN', 'DXB', 522, 389);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (253, 2, 'DXB', 'ACC', 490, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (254, 1, 'ICN', 'SEA', 807, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (255, 1, 'ICN', 'SEA', 812, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (256, 1, 'ICN', 'HNL', 568, 427);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (256, 2, 'HNL', 'SEA', 345, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (257, 1, 'ICN', 'DFW', 1046, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (258, 1, 'ICN', 'DFW', 1057, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (259, 1, 'ICN', 'SEA', 643, 365);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (259, 2, 'SEA', 'DFW', 225, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (260, 1, 'ICN', 'SEA', 643, 401);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (260, 2, 'SEA', 'MIA', 350, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (261, 1, 'ICN', 'LAX', 734, 411);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (261, 2, 'LAX', 'MIA', 305, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (262, 1, 'ICN', 'JFK', 841, 387);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (262, 2, 'JFK', 'MIA', 159, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (263, 1, 'ICN', 'SEA', 643, 384);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (263, 2, 'SEA', 'DEN', 150, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (264, 1, 'ICN', 'SFO', 695, 366);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (264, 2, 'SFO', 'DEN', 144, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (265, 1, 'ICN', 'LAX', 734, 401);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (265, 2, 'LAX', 'DEN', 131, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (266, 1, 'ICN', 'YYZ', 807, 391);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (266, 2, 'YYZ', 'YUL', 67, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (267, 1, 'ICN', 'JFK', 841, 393);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (267, 2, 'JFK', 'YUL', 69, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (268, 1, 'ICN', 'SEA', 643, 376);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (268, 2, 'SEA', 'YUL', 298, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (269, 1, 'ICN', 'LAX', 734, 372);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (269, 2, 'LAX', 'CUN', 279, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (270, 1, 'ICN', 'MEX', 915, 440);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (270, 2, 'MEX', 'CUN', 124, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (271, 1, 'ICN', 'JFK', 841, 418);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (271, 2, 'JFK', 'CUN', 213, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (272, 1, 'ICN', 'LAX', 734, 466);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (272, 2, 'LAX', 'PTY', 385, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (273, 1, 'ICN', 'MEX', 915, 471);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (273, 2, 'MEX', 'PTY', 206, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (274, 1, 'ICN', 'JFK', 841, 416);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (274, 2, 'JFK', 'PTY', 290, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (275, 1, 'ICN', 'GRU', 1370, 539);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (275, 2, 'GRU', 'GIG', 55, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (276, 1, 'ICN', 'JFK', 841, 537);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (276, 2, 'JFK', 'GIG', 596, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (277, 1, 'ICN', 'LAX', 734, 519);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (277, 2, 'LAX', 'GIG', 772, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (278, 1, 'ICN', 'GRU', 1370, 571);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (278, 2, 'GRU', 'EZE', 156, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (279, 1, 'ICN', 'JFK', 841, 527);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (279, 2, 'JFK', 'EZE', 655, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (280, 1, 'ICN', 'LAX', 734, 561);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (280, 2, 'LAX', 'EZE', 752, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (281, 1, 'ICN', 'GRU', 1370, 533);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (281, 2, 'GRU', 'SCL', 221, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (282, 1, 'ICN', 'LAX', 734, 496);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (282, 2, 'LAX', 'SCL', 688, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (283, 1, 'ICN', 'JFK', 841, 543);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (283, 2, 'JFK', 'SCL', 633, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (284, 1, 'ICN', 'LAX', 734, 460);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (284, 2, 'LAX', 'LIM', 522, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (285, 1, 'ICN', 'JFK', 841, 493);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (285, 2, 'JFK', 'LIM', 459, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (286, 1, 'ICN', 'MEX', 915, 442);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (286, 2, 'MEX', 'LIM', 341, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (287, 1, 'ICN', 'LAX', 734, 448);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (287, 2, 'LAX', 'BOG', 440, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (288, 1, 'ICN', 'JFK', 841, 466);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (288, 2, 'JFK', 'BOG', 322, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (289, 1, 'ICN', 'MEX', 915, 494);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (289, 2, 'MEX', 'BOG', 261, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (290, 1, 'ICN', 'LAX', 734, 497);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (290, 2, 'LAX', 'UIO', 442, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (291, 1, 'ICN', 'JFK', 841, 477);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (291, 2, 'JFK', 'UIO', 363, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (292, 1, 'ICN', 'MEX', 915, 416);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (292, 2, 'MEX', 'UIO', 259, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (293, 1, 'ICN', 'BNE', 752, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (294, 1, 'ICN', 'BNE', 755, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (295, 1, 'ICN', 'SIN', 368, 337);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (295, 2, 'SIN', 'BNE', 480, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (296, 1, 'ICN', 'PER', 758, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (297, 1, 'ICN', 'PER', 772, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (298, 1, 'ICN', 'SIN', 368, 305);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (298, 2, 'SIN', 'PER', 316, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (299, 1, 'ICN', 'AKL', 945, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (300, 1, 'ICN', 'AKL', 926, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (301, 1, 'ICN', 'SYD', 640, 343);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (301, 2, 'SYD', 'AKL', 188, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (302, 1, 'ICN', 'NAN', 798, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (303, 1, 'ICN', 'NAN', 804, NULL);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (304, 1, 'ICN', 'SYD', 640, 422);
+INSERT INTO flight_segment (flight_id, seq, from_airport, to_airport, duration_minutes, layover_minutes) VALUES (304, 2, 'SYD', 'NAN', 262, NULL);
 
 -- [M] 좌석등급별 요금 (표시 가격 = base_price + tax_fuel)
 INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (1, 'ECONOMY', 770000, 120000, 180, 58, TRUE, 150000, 1.00);
@@ -934,6 +1455,438 @@ INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_tot
 INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (152, 'BUSINESS', 1280000, 60000, 24, 5, TRUE, 0, 1.50);
 INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (153, 'ECONOMY', 270000, 60000, 180, 138, FALSE, 60000, 0.00);
 INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (154, 'ECONOMY', 260000, 60000, 180, 140, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (155, 'ECONOMY', 300000, 60000, 180, 140, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (155, 'PREMIUM', 520000, 60000, 30, 18, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (155, 'BUSINESS', 1090000, 60000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (156, 'ECONOMY', 160000, 60000, 180, 147, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (157, 'ECONOMY', 220000, 60000, 180, 28, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (157, 'PREMIUM', 390000, 60000, 30, 20, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (157, 'BUSINESS', 840000, 60000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (158, 'ECONOMY', 460000, 60000, 180, 147, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (158, 'PREMIUM', 770000, 60000, 30, 21, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (158, 'BUSINESS', 1600000, 60000, 24, 18, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (159, 'ECONOMY', 260000, 60000, 180, 142, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (160, 'ECONOMY', 290000, 120000, 180, 108, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (160, 'PREMIUM', 540000, 120000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (160, 'BUSINESS', 1190000, 120000, 24, 11, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (161, 'ECONOMY', 500000, 60000, 180, 128, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (161, 'PREMIUM', 840000, 60000, 30, 23, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (161, 'BUSINESS', 1730000, 60000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (162, 'ECONOMY', 520000, 60000, 180, 65, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (162, 'PREMIUM', 870000, 60000, 30, 9, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (162, 'BUSINESS', 1800000, 60000, 24, 16, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (163, 'ECONOMY', 320000, 120000, 180, 50, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (163, 'PREMIUM', 580000, 120000, 30, 4, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (163, 'BUSINESS', 1290000, 120000, 24, 19, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (164, 'ECONOMY', 360000, 120000, 180, 71, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (164, 'PREMIUM', 650000, 120000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (164, 'BUSINESS', 1420000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (165, 'ECONOMY', 360000, 120000, 180, 140, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (165, 'PREMIUM', 650000, 120000, 30, 11, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (165, 'BUSINESS', 1420000, 120000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (166, 'ECONOMY', 360000, 120000, 180, 64, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (166, 'PREMIUM', 650000, 120000, 30, 6, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (166, 'BUSINESS', 1420000, 120000, 24, 10, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (167, 'ECONOMY', 590000, 60000, 180, 65, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (167, 'PREMIUM', 980000, 60000, 30, 25, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (167, 'BUSINESS', 2020000, 60000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (168, 'ECONOMY', 620000, 60000, 180, 69, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (168, 'PREMIUM', 1030000, 60000, 30, 25, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (168, 'BUSINESS', 2120000, 60000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (169, 'ECONOMY', 390000, 120000, 180, 39, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (169, 'PREMIUM', 700000, 120000, 30, 9, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (169, 'BUSINESS', 1510000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (170, 'ECONOMY', 390000, 60000, 180, 56, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (170, 'PREMIUM', 660000, 60000, 30, 18, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (170, 'BUSINESS', 1380000, 60000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (171, 'ECONOMY', 220000, 60000, 180, 72, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (172, 'ECONOMY', 230000, 120000, 180, 103, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (172, 'PREMIUM', 440000, 120000, 30, 9, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (172, 'BUSINESS', 1000000, 120000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (173, 'ECONOMY', 240000, 30000, 180, 140, TRUE, 50000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (173, 'PREMIUM', 400000, 30000, 30, 7, TRUE, 25000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (173, 'BUSINESS', 830000, 30000, 24, 21, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (174, 'ECONOMY', 140000, 30000, 180, 144, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (175, 'ECONOMY', 150000, 60000, 180, 116, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (175, 'PREMIUM', 280000, 60000, 30, 24, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (175, 'BUSINESS', 610000, 60000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (176, 'ECONOMY', 380000, 60000, 180, 161, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (176, 'PREMIUM', 640000, 60000, 30, 24, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (176, 'BUSINESS', 1350000, 60000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (177, 'ECONOMY', 210000, 60000, 180, 130, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (178, 'ECONOMY', 190000, 150000, 180, 118, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (178, 'PREMIUM', 390000, 150000, 30, 10, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (178, 'BUSINESS', 940000, 150000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (179, 'ECONOMY', 460000, 60000, 180, 71, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (179, 'PREMIUM', 770000, 60000, 30, 26, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (179, 'BUSINESS', 1600000, 60000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (180, 'ECONOMY', 260000, 60000, 180, 160, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (181, 'ECONOMY', 260000, 150000, 180, 50, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (181, 'PREMIUM', 510000, 150000, 30, 9, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (181, 'BUSINESS', 1160000, 150000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (182, 'ECONOMY', 520000, 60000, 180, 119, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (182, 'PREMIUM', 870000, 60000, 30, 26, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (182, 'BUSINESS', 1800000, 60000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (183, 'ECONOMY', 300000, 60000, 180, 62, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (184, 'ECONOMY', 330000, 120000, 180, 117, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (184, 'PREMIUM', 600000, 120000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (184, 'BUSINESS', 1320000, 120000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (185, 'ECONOMY', 260000, 30000, 180, 134, TRUE, 50000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (185, 'PREMIUM', 430000, 30000, 30, 13, TRUE, 25000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (185, 'BUSINESS', 900000, 30000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (186, 'ECONOMY', 150000, 30000, 180, 99, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (187, 'ECONOMY', 170000, 60000, 180, 85, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (187, 'PREMIUM', 310000, 60000, 30, 13, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (187, 'BUSINESS', 680000, 60000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (188, 'ECONOMY', 230000, 60000, 180, 32, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (188, 'PREMIUM', 400000, 60000, 30, 7, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (188, 'BUSINESS', 870000, 60000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (189, 'ECONOMY', 120000, 60000, 180, 76, FALSE, 60000, 0.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (190, 'ECONOMY', 170000, 60000, 180, 53, TRUE, 100000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (190, 'PREMIUM', 310000, 60000, 30, 18, TRUE, 50000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (190, 'BUSINESS', 680000, 60000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (191, 'ECONOMY', 550000, 120000, 180, 99, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (191, 'PREMIUM', 950000, 120000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (191, 'BUSINESS', 2020000, 120000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (192, 'ECONOMY', 580000, 120000, 180, 51, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (192, 'PREMIUM', 1000000, 120000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (192, 'BUSINESS', 2120000, 120000, 24, 3, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (193, 'ECONOMY', 400000, 120000, 180, 52, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (193, 'PREMIUM', 710000, 120000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (193, 'BUSINESS', 1540000, 120000, 24, 16, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (194, 'ECONOMY', 460000, 120000, 180, 94, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (194, 'PREMIUM', 810000, 120000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (194, 'BUSINESS', 1740000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (195, 'ECONOMY', 460000, 120000, 180, 135, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (195, 'PREMIUM', 810000, 120000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (195, 'BUSINESS', 1740000, 120000, 24, 21, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (196, 'ECONOMY', 460000, 120000, 180, 89, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (196, 'PREMIUM', 810000, 120000, 30, 12, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (196, 'BUSINESS', 1740000, 120000, 24, 11, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (197, 'ECONOMY', 690000, 120000, 180, 87, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (197, 'PREMIUM', 1180000, 120000, 30, 21, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (197, 'BUSINESS', 2470000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (198, 'ECONOMY', 720000, 120000, 180, 83, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (198, 'PREMIUM', 1220000, 120000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (198, 'BUSINESS', 2570000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (199, 'ECONOMY', 510000, 120000, 180, 34, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (199, 'PREMIUM', 890000, 120000, 30, 6, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (199, 'BUSINESS', 1900000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (200, 'ECONOMY', 520000, 120000, 180, 98, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (200, 'PREMIUM', 900000, 120000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (200, 'BUSINESS', 1930000, 120000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (201, 'ECONOMY', 520000, 120000, 180, 71, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (201, 'PREMIUM', 900000, 120000, 30, 4, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (201, 'BUSINESS', 1930000, 120000, 24, 15, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (202, 'ECONOMY', 520000, 120000, 180, 85, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (202, 'PREMIUM', 900000, 120000, 30, 22, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (202, 'BUSINESS', 1930000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (203, 'ECONOMY', 740000, 120000, 180, 45, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (203, 'PREMIUM', 1260000, 120000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (203, 'BUSINESS', 2630000, 120000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (204, 'ECONOMY', 770000, 120000, 180, 69, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (204, 'PREMIUM', 1300000, 120000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (204, 'BUSINESS', 2730000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (205, 'ECONOMY', 550000, 120000, 180, 152, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (205, 'PREMIUM', 950000, 120000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (205, 'BUSINESS', 2020000, 120000, 24, 15, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (206, 'ECONOMY', 720000, 120000, 180, 153, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (206, 'PREMIUM', 1220000, 120000, 30, 10, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (206, 'BUSINESS', 2570000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (207, 'ECONOMY', 750000, 120000, 180, 31, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (207, 'PREMIUM', 1270000, 120000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (207, 'BUSINESS', 2660000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (208, 'ECONOMY', 540000, 120000, 180, 53, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (208, 'PREMIUM', 940000, 120000, 30, 15, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (208, 'BUSINESS', 1990000, 120000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (209, 'ECONOMY', 630000, 120000, 180, 111, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (209, 'PREMIUM', 1080000, 120000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (209, 'BUSINESS', 2280000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (210, 'ECONOMY', 660000, 120000, 180, 122, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (210, 'PREMIUM', 1130000, 120000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (210, 'BUSINESS', 2380000, 120000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (211, 'ECONOMY', 460000, 120000, 180, 73, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (211, 'PREMIUM', 810000, 120000, 30, 25, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (211, 'BUSINESS', 1740000, 120000, 24, 16, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (212, 'ECONOMY', 710000, 120000, 180, 132, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (212, 'PREMIUM', 1210000, 120000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (212, 'BUSINESS', 2540000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (213, 'ECONOMY', 740000, 120000, 180, 111, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (213, 'PREMIUM', 1260000, 120000, 30, 11, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (213, 'BUSINESS', 2630000, 120000, 24, 19, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (214, 'ECONOMY', 530000, 120000, 180, 55, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (214, 'PREMIUM', 920000, 120000, 30, 15, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (214, 'BUSINESS', 1960000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (215, 'ECONOMY', 710000, 120000, 180, 128, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (215, 'PREMIUM', 1210000, 120000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (215, 'BUSINESS', 2540000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (216, 'ECONOMY', 740000, 120000, 180, 83, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (216, 'PREMIUM', 1260000, 120000, 30, 4, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (216, 'BUSINESS', 2630000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (217, 'ECONOMY', 530000, 120000, 180, 150, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (217, 'PREMIUM', 920000, 120000, 30, 12, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (217, 'BUSINESS', 1960000, 120000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (218, 'ECONOMY', 460000, 120000, 180, 37, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (218, 'PREMIUM', 810000, 120000, 30, 14, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (218, 'BUSINESS', 1740000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (219, 'ECONOMY', 460000, 120000, 180, 53, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (219, 'PREMIUM', 810000, 120000, 30, 19, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (219, 'BUSINESS', 1740000, 120000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (220, 'ECONOMY', 460000, 120000, 180, 54, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (220, 'PREMIUM', 810000, 120000, 30, 25, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (220, 'BUSINESS', 1740000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (221, 'ECONOMY', 530000, 120000, 180, 28, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (221, 'PREMIUM', 920000, 120000, 30, 4, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (221, 'BUSINESS', 1960000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (222, 'ECONOMY', 530000, 120000, 180, 97, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (222, 'PREMIUM', 920000, 120000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (222, 'BUSINESS', 1960000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (223, 'ECONOMY', 530000, 120000, 180, 117, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (223, 'PREMIUM', 920000, 120000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (223, 'BUSINESS', 1960000, 120000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (224, 'ECONOMY', 580000, 120000, 180, 35, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (224, 'PREMIUM', 1000000, 120000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (224, 'BUSINESS', 2120000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (225, 'ECONOMY', 610000, 120000, 180, 147, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (225, 'PREMIUM', 1050000, 120000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (225, 'BUSINESS', 2220000, 120000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (226, 'ECONOMY', 430000, 120000, 180, 72, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (226, 'PREMIUM', 760000, 120000, 30, 10, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (226, 'BUSINESS', 1640000, 120000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (227, 'ECONOMY', 610000, 120000, 180, 105, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (227, 'PREMIUM', 1050000, 120000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (227, 'BUSINESS', 2220000, 120000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (228, 'ECONOMY', 610000, 120000, 180, 48, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (228, 'PREMIUM', 1050000, 120000, 30, 21, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (228, 'BUSINESS', 2220000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (229, 'ECONOMY', 610000, 120000, 180, 131, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (229, 'PREMIUM', 1050000, 120000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (229, 'BUSINESS', 2220000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (230, 'ECONOMY', 690000, 120000, 180, 97, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (230, 'PREMIUM', 1180000, 120000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (230, 'BUSINESS', 2470000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (231, 'ECONOMY', 720000, 120000, 180, 88, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (231, 'PREMIUM', 1220000, 120000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (231, 'BUSINESS', 2570000, 120000, 24, 21, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (232, 'ECONOMY', 510000, 120000, 180, 100, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (232, 'PREMIUM', 890000, 120000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (232, 'BUSINESS', 1900000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (233, 'ECONOMY', 580000, 150000, 180, 62, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (233, 'PREMIUM', 1020000, 150000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (233, 'BUSINESS', 2190000, 150000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (234, 'ECONOMY', 610000, 120000, 180, 155, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (234, 'PREMIUM', 1050000, 120000, 30, 14, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (234, 'BUSINESS', 2220000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (235, 'ECONOMY', 580000, 150000, 180, 48, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (235, 'PREMIUM', 1020000, 150000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (235, 'BUSINESS', 2190000, 150000, 24, 18, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (236, 'ECONOMY', 750000, 150000, 180, 55, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (236, 'PREMIUM', 1290000, 150000, 30, 15, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (236, 'BUSINESS', 2730000, 150000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (237, 'ECONOMY', 750000, 150000, 180, 143, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (237, 'PREMIUM', 1290000, 150000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (237, 'BUSINESS', 2730000, 150000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (238, 'ECONOMY', 750000, 150000, 180, 134, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (238, 'PREMIUM', 1290000, 150000, 30, 11, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (238, 'BUSINESS', 2730000, 150000, 24, 18, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (239, 'ECONOMY', 650000, 150000, 180, 86, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (239, 'PREMIUM', 1130000, 150000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (239, 'BUSINESS', 2410000, 150000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (240, 'ECONOMY', 650000, 150000, 180, 27, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (240, 'PREMIUM', 1130000, 150000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (240, 'BUSINESS', 2410000, 150000, 24, 3, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (241, 'ECONOMY', 650000, 150000, 180, 119, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (241, 'PREMIUM', 1130000, 150000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (241, 'BUSINESS', 2410000, 150000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (242, 'ECONOMY', 740000, 120000, 180, 157, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (242, 'PREMIUM', 1260000, 120000, 30, 13, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (242, 'BUSINESS', 2630000, 120000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (243, 'ECONOMY', 770000, 120000, 180, 155, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (243, 'PREMIUM', 1300000, 120000, 30, 14, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (243, 'BUSINESS', 2730000, 120000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (244, 'ECONOMY', 550000, 120000, 180, 133, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (244, 'PREMIUM', 950000, 120000, 30, 6, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (244, 'BUSINESS', 2020000, 120000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (245, 'ECONOMY', 640000, 150000, 180, 79, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (245, 'PREMIUM', 1110000, 150000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (245, 'BUSINESS', 2380000, 150000, 24, 15, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (246, 'ECONOMY', 670000, 120000, 180, 102, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (246, 'PREMIUM', 1140000, 120000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (246, 'BUSINESS', 2410000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (247, 'ECONOMY', 640000, 150000, 180, 145, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (247, 'PREMIUM', 1110000, 150000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (247, 'BUSINESS', 2380000, 150000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (248, 'ECONOMY', 570000, 120000, 180, 129, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (248, 'PREMIUM', 980000, 120000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (248, 'BUSINESS', 2090000, 120000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (249, 'ECONOMY', 570000, 120000, 180, 85, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (249, 'PREMIUM', 980000, 120000, 30, 20, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (249, 'BUSINESS', 2090000, 120000, 24, 10, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (250, 'ECONOMY', 540000, 150000, 180, 87, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (250, 'PREMIUM', 950000, 150000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (250, 'BUSINESS', 2060000, 150000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (251, 'ECONOMY', 790000, 150000, 180, 65, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (251, 'PREMIUM', 1350000, 150000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (251, 'BUSINESS', 2860000, 150000, 24, 11, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (252, 'ECONOMY', 790000, 150000, 180, 74, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (252, 'PREMIUM', 1350000, 150000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (252, 'BUSINESS', 2860000, 150000, 24, 10, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (253, 'ECONOMY', 790000, 150000, 180, 117, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (253, 'PREMIUM', 1350000, 150000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (253, 'BUSINESS', 2860000, 150000, 24, 10, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (254, 'ECONOMY', 650000, 120000, 180, 125, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (254, 'PREMIUM', 1110000, 120000, 30, 22, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (254, 'BUSINESS', 2340000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (255, 'ECONOMY', 680000, 120000, 180, 159, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (255, 'PREMIUM', 1160000, 120000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (255, 'BUSINESS', 2440000, 120000, 24, 16, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (256, 'ECONOMY', 450000, 150000, 180, 160, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (256, 'PREMIUM', 810000, 150000, 30, 12, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (256, 'BUSINESS', 1770000, 150000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (257, 'ECONOMY', 970000, 120000, 180, 110, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (257, 'PREMIUM', 1620000, 120000, 30, 25, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (257, 'BUSINESS', 3370000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (258, 'ECONOMY', 1010000, 120000, 180, 99, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (258, 'PREMIUM', 1690000, 120000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (258, 'BUSINESS', 3500000, 120000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (259, 'ECONOMY', 700000, 150000, 180, 117, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (259, 'PREMIUM', 1210000, 150000, 30, 9, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (259, 'BUSINESS', 2570000, 150000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (260, 'ECONOMY', 810000, 150000, 180, 58, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (260, 'PREMIUM', 1390000, 150000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (260, 'BUSINESS', 2920000, 150000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (261, 'ECONOMY', 810000, 150000, 180, 83, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (261, 'PREMIUM', 1390000, 150000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (261, 'BUSINESS', 2920000, 150000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (262, 'ECONOMY', 810000, 150000, 180, 154, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (262, 'PREMIUM', 1390000, 150000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (262, 'BUSINESS', 2920000, 150000, 24, 11, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (263, 'ECONOMY', 600000, 120000, 180, 90, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (263, 'PREMIUM', 1030000, 120000, 30, 21, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (263, 'BUSINESS', 2180000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (264, 'ECONOMY', 570000, 150000, 180, 71, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (264, 'PREMIUM', 1000000, 150000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (264, 'BUSINESS', 2150000, 150000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (265, 'ECONOMY', 570000, 150000, 180, 150, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (265, 'PREMIUM', 1000000, 150000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (265, 'BUSINESS', 2150000, 150000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (266, 'ECONOMY', 700000, 150000, 180, 133, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (266, 'PREMIUM', 1210000, 150000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (266, 'BUSINESS', 2570000, 150000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (267, 'ECONOMY', 700000, 150000, 180, 91, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (267, 'PREMIUM', 1210000, 150000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (267, 'BUSINESS', 2570000, 150000, 24, 18, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (268, 'ECONOMY', 700000, 150000, 180, 158, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (268, 'PREMIUM', 1210000, 150000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (268, 'BUSINESS', 2570000, 150000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (269, 'ECONOMY', 820000, 150000, 180, 61, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (269, 'PREMIUM', 1400000, 150000, 30, 18, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (269, 'BUSINESS', 2950000, 150000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (270, 'ECONOMY', 820000, 150000, 180, 99, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (270, 'PREMIUM', 1400000, 150000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (270, 'BUSINESS', 2950000, 150000, 24, 11, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (271, 'ECONOMY', 820000, 150000, 180, 144, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (271, 'PREMIUM', 1400000, 150000, 30, 11, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (271, 'BUSINESS', 2950000, 150000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (272, 'ECONOMY', 860000, 150000, 180, 58, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (272, 'PREMIUM', 1470000, 150000, 30, 12, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (272, 'BUSINESS', 3080000, 150000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (273, 'ECONOMY', 860000, 150000, 180, 140, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (273, 'PREMIUM', 1470000, 150000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (273, 'BUSINESS', 3080000, 150000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (274, 'ECONOMY', 860000, 150000, 180, 117, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (274, 'PREMIUM', 1470000, 150000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (274, 'BUSINESS', 3080000, 150000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (275, 'ECONOMY', 1140000, 150000, 180, 113, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (275, 'PREMIUM', 1910000, 150000, 30, 9, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (275, 'BUSINESS', 3980000, 150000, 24, 17, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (276, 'ECONOMY', 1140000, 150000, 180, 100, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (276, 'PREMIUM', 1910000, 150000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (276, 'BUSINESS', 3980000, 150000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (277, 'ECONOMY', 1140000, 150000, 180, 53, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (277, 'PREMIUM', 1910000, 150000, 30, 22, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (277, 'BUSINESS', 3980000, 150000, 24, 7, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (278, 'ECONOMY', 1280000, 150000, 180, 94, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (278, 'PREMIUM', 2140000, 150000, 30, 11, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (278, 'BUSINESS', 4430000, 150000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (279, 'ECONOMY', 1280000, 150000, 180, 104, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (279, 'PREMIUM', 2140000, 150000, 30, 20, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (279, 'BUSINESS', 4430000, 150000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (280, 'ECONOMY', 1280000, 150000, 180, 116, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (280, 'PREMIUM', 2140000, 150000, 30, 20, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (280, 'BUSINESS', 4430000, 150000, 24, 14, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (281, 'ECONOMY', 1100000, 150000, 180, 39, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (281, 'PREMIUM', 1850000, 150000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (281, 'BUSINESS', 3850000, 150000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (282, 'ECONOMY', 1100000, 150000, 180, 34, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (282, 'PREMIUM', 1850000, 150000, 30, 22, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (282, 'BUSINESS', 3850000, 150000, 24, 4, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (283, 'ECONOMY', 1100000, 150000, 180, 60, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (283, 'PREMIUM', 1850000, 150000, 30, 15, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (283, 'BUSINESS', 3850000, 150000, 24, 10, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (284, 'ECONOMY', 1100000, 150000, 180, 154, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (284, 'PREMIUM', 1850000, 150000, 30, 21, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (284, 'BUSINESS', 3850000, 150000, 24, 16, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (285, 'ECONOMY', 1100000, 150000, 180, 141, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (285, 'PREMIUM', 1850000, 150000, 30, 20, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (285, 'BUSINESS', 3850000, 150000, 24, 18, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (286, 'ECONOMY', 1100000, 150000, 180, 125, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (286, 'PREMIUM', 1850000, 150000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (286, 'BUSINESS', 3850000, 150000, 24, 10, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (287, 'ECONOMY', 1000000, 150000, 180, 41, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (287, 'PREMIUM', 1690000, 150000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (287, 'BUSINESS', 3530000, 150000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (288, 'ECONOMY', 1000000, 150000, 180, 98, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (288, 'PREMIUM', 1690000, 150000, 30, 25, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (288, 'BUSINESS', 3530000, 150000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (289, 'ECONOMY', 1000000, 150000, 180, 76, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (289, 'PREMIUM', 1690000, 150000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (289, 'BUSINESS', 3530000, 150000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (290, 'ECONOMY', 930000, 150000, 180, 60, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (290, 'PREMIUM', 1580000, 150000, 30, 17, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (290, 'BUSINESS', 3310000, 150000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (291, 'ECONOMY', 930000, 150000, 180, 103, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (291, 'PREMIUM', 1580000, 150000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (291, 'BUSINESS', 3310000, 150000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (292, 'ECONOMY', 930000, 150000, 180, 122, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (292, 'PREMIUM', 1580000, 150000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (292, 'BUSINESS', 3310000, 150000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (293, 'ECONOMY', 680000, 120000, 180, 153, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (293, 'PREMIUM', 1160000, 120000, 30, 26, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (293, 'BUSINESS', 2440000, 120000, 24, 16, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (294, 'ECONOMY', 710000, 120000, 180, 116, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (294, 'PREMIUM', 1210000, 120000, 30, 7, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (294, 'BUSINESS', 2540000, 120000, 24, 6, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (295, 'ECONOMY', 500000, 120000, 180, 52, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (295, 'PREMIUM', 870000, 120000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (295, 'BUSINESS', 1860000, 120000, 24, 13, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (296, 'ECONOMY', 610000, 120000, 180, 136, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (296, 'PREMIUM', 1050000, 120000, 30, 5, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (296, 'BUSINESS', 2220000, 120000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (297, 'ECONOMY', 640000, 120000, 180, 39, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (297, 'PREMIUM', 1100000, 120000, 30, 16, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (297, 'BUSINESS', 2310000, 120000, 24, 8, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (298, 'ECONOMY', 450000, 120000, 180, 53, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (298, 'PREMIUM', 790000, 120000, 30, 21, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (298, 'BUSINESS', 1700000, 120000, 24, 5, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (299, 'ECONOMY', 880000, 120000, 180, 105, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (299, 'PREMIUM', 1480000, 120000, 30, 10, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (299, 'BUSINESS', 3080000, 120000, 24, 20, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (300, 'ECONOMY', 920000, 120000, 180, 40, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (300, 'PREMIUM', 1540000, 120000, 30, 12, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (300, 'BUSINESS', 3210000, 120000, 24, 18, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (301, 'ECONOMY', 660000, 120000, 180, 93, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (301, 'PREMIUM', 1130000, 120000, 30, 24, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (301, 'BUSINESS', 2380000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (302, 'ECONOMY', 660000, 120000, 180, 128, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (302, 'PREMIUM', 1130000, 120000, 30, 23, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (302, 'BUSINESS', 2380000, 120000, 24, 12, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (303, 'ECONOMY', 690000, 120000, 180, 49, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (303, 'PREMIUM', 1180000, 120000, 30, 21, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (303, 'BUSINESS', 2470000, 120000, 24, 9, TRUE, 0, 1.50);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (304, 'ECONOMY', 460000, 150000, 180, 152, TRUE, 150000, 1.00);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (304, 'PREMIUM', 830000, 150000, 30, 8, TRUE, 75000, 1.25);
+INSERT INTO flight_fare (flight_id, cabin_class, base_price, tax_fuel, seats_total, seats_left, refundable, change_fee, mileage_rate) VALUES (304, 'BUSINESS', 1800000, 150000, 24, 13, TRUE, 0, 1.50);
 
 -- [M] 판매 집계 (베스트셀러 3개 여행지 도쿄 5편·로스앤젤레스 3편·홍콩 3편만 여행지 내 순위 부여)
 INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (1, 42, NULL);
@@ -1090,6 +2043,156 @@ INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (151, 38,
 INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (152, 230, NULL);
 INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (153, 133, NULL);
 INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (154, 21, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (155, 7, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (156, 11, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (157, 66, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (158, 79, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (159, 164, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (160, 19, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (161, 179, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (162, 85, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (163, 73, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (164, 240, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (165, 68, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (166, 158, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (167, 197, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (168, 161, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (169, 174, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (170, 168, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (171, 119, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (172, 135, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (173, 78, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (174, 151, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (175, 219, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (176, 196, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (177, 49, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (178, 164, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (179, 96, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (180, 44, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (181, 44, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (182, 234, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (183, 238, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (184, 54, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (185, 129, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (186, 95, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (187, 238, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (188, 63, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (189, 224, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (190, 96, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (191, 92, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (192, 33, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (193, 141, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (194, 187, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (195, 161, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (196, 37, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (197, 186, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (198, 145, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (199, 175, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (200, 156, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (201, 100, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (202, 13, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (203, 192, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (204, 91, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (205, 149, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (206, 140, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (207, 221, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (208, 229, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (209, 144, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (210, 212, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (211, 15, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (212, 70, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (213, 74, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (214, 179, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (215, 238, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (216, 221, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (217, 176, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (218, 75, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (219, 47, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (220, 26, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (221, 135, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (222, 89, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (223, 143, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (224, 37, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (225, 134, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (226, 33, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (227, 4, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (228, 111, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (229, 42, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (230, 162, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (231, 151, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (232, 52, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (233, 156, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (234, 80, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (235, 183, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (236, 97, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (237, 62, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (238, 48, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (239, 136, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (240, 170, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (241, 98, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (242, 116, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (243, 90, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (244, 4, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (245, 14, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (246, 92, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (247, 27, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (248, 149, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (249, 25, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (250, 26, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (251, 191, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (252, 105, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (253, 236, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (254, 99, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (255, 114, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (256, 221, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (257, 88, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (258, 211, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (259, 125, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (260, 115, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (261, 224, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (262, 94, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (263, 39, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (264, 147, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (265, 156, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (266, 192, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (267, 204, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (268, 114, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (269, 168, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (270, 178, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (271, 212, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (272, 86, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (273, 17, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (274, 191, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (275, 19, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (276, 221, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (277, 6, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (278, 106, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (279, 89, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (280, 70, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (281, 184, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (282, 185, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (283, 20, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (284, 24, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (285, 183, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (286, 181, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (287, 119, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (288, 115, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (289, 166, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (290, 179, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (291, 240, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (292, 51, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (293, 102, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (294, 209, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (295, 21, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (296, 175, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (297, 214, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (298, 68, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (299, 4, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (300, 191, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (301, 184, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (302, 65, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (303, 11, NULL);
+INSERT INTO flight_sales_stat (flight_id, sales_count, rank_no) VALUES (304, 138, NULL);
 
 -- [M] 이달의 특별기획 3곳: 로마, 삿포로, 케이프타운 (2026-11-01 ~ 2026-12-31)
 INSERT INTO monthly_plan (plan_month, destination_id, title, subtitle, badge_text, highlights, start_at, end_at, is_active) VALUES ('2026-11', 5, '로마의 휴일, 지금 떠나요', '인천→로마 항공권 최대 33% 겨울 특가', '최대 33% OFF', '콜로세움·바티칸을 하루에
@@ -3475,6 +4578,2138 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 4, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 5, '근교 트레킹·야외 활동', '괌 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 51, NULL, 'FOOD_DRINK', '마닐라 미식·주류 투어: 아도보 · 레촌', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 파삭한 겉과 부드러운 속살의 돼지구이.', '새벽 커피로스터스', '아도보 — 간장과 식초에 절인 닭고기 또는 돼지고기 스튜
+레촌 — 파삭한 겉과 부드러운 속살의 돼지구이
+할로할로 — 빙수·코코넛·옥수수·떡을 섞은 필리핀식 디저트', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 아도보, 레촌, 할로할로 (상품·브랜드는 가상)', 'ON_SALE', 62);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 2, 3, 290000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (184, 1, '마닐라 도착', '인천에서 출발해 마닐라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (184, 2, '아도보 탐방', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (184, 3, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 3, 4, 360000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 1, '마닐라 도착', '인천에서 출발해 마닐라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 2, '아도보 탐방', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 레촌과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 6, 7, 560000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 1, '마닐라 도착', '인천에서 출발해 마닐라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 2, '아도보 탐방', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 레촌과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 4, '할로할로 체험', '빙수·코코넛·옥수수·떡을 섞은 필리핀식 디저트. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 5, '쿠킹 클래스', '현지 셰프에게 마닐라의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 6, '근교 산지 미식 여행', '마닐라 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 52, NULL, 'ART_REST', '델리 예술·휴식 투어: 붉은 요새 · 쿠트브 미나르', '무굴 제국의 웅장한 궁궐 유적. 13세기 이슬람 타워의 세계문화유산.', NULL, '붉은 요새 — 무굴 제국의 웅장한 궁궐 유적
+쿠트브 미나르 — 13세기 이슬람 타워의 세계문화유산
+국립 박물관 — 인도 고대 미술품과 문화유산 전시', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 붉은 요새, 쿠트브 미나르, 국립 박물관 (상품·브랜드는 가상)', 'ON_SALE', 63);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (63, 6, 7, 580000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 1, '델리 도착', '인천에서 출발해 델리에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 2, '붉은 요새', '무굴 제국의 웅장한 궁궐 유적. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 3, '쿠트브 미나르', '13세기 이슬람 타워의 세계문화유산. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 4, '국립 박물관', '인도 고대 미술품과 문화유산 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 5, '공연·전시 관람', '델리에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (63, 9, 10, 790000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 1, '델리 도착', '인천에서 출발해 델리에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 2, '붉은 요새', '무굴 제국의 웅장한 궁궐 유적. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 3, '쿠트브 미나르', '13세기 이슬람 타워의 세계문화유산. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 4, '국립 박물관', '인도 고대 미술품과 문화유산 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 5, '공연·전시 관람', '델리에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 7, '근교 소도시 산책', '델리 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (63, 13, 14, 1080000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 1, '델리 도착', '인천에서 출발해 델리에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 2, '붉은 요새', '무굴 제국의 웅장한 궁궐 유적. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 3, '쿠트브 미나르', '13세기 이슬람 타워의 세계문화유산. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 4, '국립 박물관', '인도 고대 미술품과 문화유산 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 5, '공연·전시 관람', '델리에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 7, '근교 소도시 산책', '델리 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 12, '미술관 한 곳 더', '붉은 요새 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 53, NULL, 'FOOD_DRINK', '뭄바이 미식·주류 투어: 바다 파브 · 파브 바지', '감자 튀김을 부드러운 번에 싼 길거리 음식. 감자·완두콩과 향신료를 버터 롤빵에 담은 음식.', '새벽 커피로스터스', '바다 파브 — 감자 튀김을 부드러운 번에 싼 길거리 음식
+파브 바지 — 감자·완두콩과 향신료를 버터 롤빵에 담은 음식
+카티 롤 — 고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 바다 파브, 파브 바지, 카티 롤 (상품·브랜드는 가상)', 'ON_SALE', 64);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 6, 7, 550000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 1, '뭄바이 도착', '인천에서 출발해 뭄바이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 2, '바다 파브 탐방', '감자 튀김을 부드러운 번에 싼 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 4, '카티 롤 체험', '고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 5, '쿠킹 클래스', '현지 셰프에게 뭄바이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 6, '근교 산지 미식 여행', '뭄바이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 9, 10, 750000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 1, '뭄바이 도착', '인천에서 출발해 뭄바이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 2, '바다 파브 탐방', '감자 튀김을 부드러운 번에 싼 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 4, '카티 롤 체험', '고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 5, '쿠킹 클래스', '현지 셰프에게 뭄바이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 6, '근교 산지 미식 여행', '뭄바이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 7, '파브 바지 깊이 보기', '감자·완두콩과 향신료를 버터 롤빵에 담은 음식. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 13, 14, 1020000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 1, '뭄바이 도착', '인천에서 출발해 뭄바이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 2, '바다 파브 탐방', '감자 튀김을 부드러운 번에 싼 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 4, '카티 롤 체험', '고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 5, '쿠킹 클래스', '현지 셰프에게 뭄바이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 6, '근교 산지 미식 여행', '뭄바이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 7, '파브 바지 깊이 보기', '감자·완두콩과 향신료를 버터 롤빵에 담은 음식. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 10, '디저트·카페 투어', '뭄바이의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 54, NULL, 'ART_REST', '방갈로르 예술·휴식 투어: 벵갈루루 궁전 · ISKCON 사원', '튜더와 인도식 건축이 조화된 역사 궁전. 황금 사당과 거대한 조각상의 화려한 사원 단지.', '달무리 공연장', '벵갈루루 궁전 — 튜더와 인도식 건축이 조화된 역사 궁전
+ISKCON 사원 — 황금 사당과 거대한 조각상의 화려한 사원 단지
+큐본 공원·랄바그 식물원 — 240에이크의 푸른 정원과 크리스탈 온실', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 벵갈루루 궁전, ISKCON 사원, 큐본 공원·랄바그 식물원 (상품·브랜드는 가상)', 'ON_SALE', 65);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (65, 6, 7, 650000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 1, '방갈로르 도착', '인천에서 출발해 방갈로르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 2, '벵갈루루 궁전', '튜더와 인도식 건축이 조화된 역사 궁전. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 3, 'ISKCON 사원', '황금 사당과 거대한 조각상의 화려한 사원 단지. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 4, '큐본 공원·랄바그 식물원', '240에이크의 푸른 정원과 크리스탈 온실. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 5, '공연·전시 관람', '방갈로르에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (65, 9, 10, 880000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 1, '방갈로르 도착', '인천에서 출발해 방갈로르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 2, '벵갈루루 궁전', '튜더와 인도식 건축이 조화된 역사 궁전. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 3, 'ISKCON 사원', '황금 사당과 거대한 조각상의 화려한 사원 단지. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 4, '큐본 공원·랄바그 식물원', '240에이크의 푸른 정원과 크리스탈 온실. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 5, '공연·전시 관람', '방갈로르에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 7, '근교 소도시 산책', '방갈로르 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (65, 13, 14, 1200000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 1, '방갈로르 도착', '인천에서 출발해 방갈로르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 2, '벵갈루루 궁전', '튜더와 인도식 건축이 조화된 역사 궁전. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 3, 'ISKCON 사원', '황금 사당과 거대한 조각상의 화려한 사원 단지. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 4, '큐본 공원·랄바그 식물원', '240에이크의 푸른 정원과 크리스탈 온실. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 5, '공연·전시 관람', '방갈로르에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 7, '근교 소도시 산책', '방갈로르 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 12, '미술관 한 곳 더', '벵갈루루 궁전 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 55, NULL, 'ART_REST', '콜롬보 예술·휴식 투어: 간가라마야 사원 · 붉은 모스크·이슬람 건축', '불교 미술품과 조각상의 풍부한 컬렉션. 식민지 시대의 종교 건축물들.', NULL, '간가라마야 사원 — 불교 미술품과 조각상의 풍부한 컬렉션
+붉은 모스크·이슬람 건축 — 식민지 시대의 종교 건축물들
+영국 식민 건축 투어 — 신고전주의 양식의 역사 건물 감상', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 간가라마야 사원, 붉은 모스크·이슬람 건축, 영국 식민 건축 투어 (상품·브랜드는 가상)', 'ON_SALE', 66);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (66, 6, 7, 570000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 1, '콜롬보 도착', '인천에서 출발해 콜롬보에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 2, '간가라마야 사원', '불교 미술품과 조각상의 풍부한 컬렉션. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 3, '붉은 모스크·이슬람 건축', '식민지 시대의 종교 건축물들. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 4, '영국 식민 건축 투어', '신고전주의 양식의 역사 건물 감상. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 5, '공연·전시 관람', '콜롬보에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (66, 9, 10, 790000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 1, '콜롬보 도착', '인천에서 출발해 콜롬보에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 2, '간가라마야 사원', '불교 미술품과 조각상의 풍부한 컬렉션. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 3, '붉은 모스크·이슬람 건축', '식민지 시대의 종교 건축물들. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 4, '영국 식민 건축 투어', '신고전주의 양식의 역사 건물 감상. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 5, '공연·전시 관람', '콜롬보에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 7, '근교 소도시 산책', '콜롬보 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (66, 13, 14, 1070000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 1, '콜롬보 도착', '인천에서 출발해 콜롬보에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 2, '간가라마야 사원', '불교 미술품과 조각상의 풍부한 컬렉션. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 3, '붉은 모스크·이슬람 건축', '식민지 시대의 종교 건축물들. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 4, '영국 식민 건축 투어', '신고전주의 양식의 역사 건물 감상. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 5, '공연·전시 관람', '콜롬보에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 7, '근교 소도시 산책', '콜롬보 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 12, '미술관 한 곳 더', '간가라마야 사원 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 56, NULL, 'SPORTS_ACTIVITY', '카트만두 스포츠·액티비티 투어: 나가르코트 하이킹 · 산악 자전거', '2시간 트레킹으로 도시 전망대 도달. 계곡을 따라 산악 사이클링.', NULL, '나가르코트 하이킹 — 2시간 트레킹으로 도시 전망대 도달
+산악 자전거 — 계곡을 따라 산악 사이클링
+파라글라이딩 — 히말라야 산맥 위에서의 스카이 스포츠', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 나가르코트 하이킹, 산악 자전거, 파라글라이딩 (상품·브랜드는 가상)', 'ON_SALE', 67);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (67, 6, 7, 710000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 1, '카트만두 도착', '인천에서 출발해 카트만두에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 2, '나가르코트 하이킹', '2시간 트레킹으로 도시 전망대 도달. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 3, '산악 자전거 체험', '계곡을 따라 산악 사이클링. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 4, '파라글라이딩', '히말라야 산맥 위에서의 스카이 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 5, '근교 트레킹·야외 활동', '카트만두 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (67, 9, 10, 970000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 1, '카트만두 도착', '인천에서 출발해 카트만두에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 2, '나가르코트 하이킹', '2시간 트레킹으로 도시 전망대 도달. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 3, '산악 자전거 체험', '계곡을 따라 산악 사이클링. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 4, '파라글라이딩', '히말라야 산맥 위에서의 스카이 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 5, '근교 트레킹·야외 활동', '카트만두 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 9, '나가르코트 하이킹 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (67, 13, 14, 1320000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 1, '카트만두 도착', '인천에서 출발해 카트만두에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 2, '나가르코트 하이킹', '2시간 트레킹으로 도시 전망대 도달. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 3, '산악 자전거 체험', '계곡을 따라 산악 사이클링. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 4, '파라글라이딩', '히말라야 산맥 위에서의 스카이 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 5, '근교 트레킹·야외 활동', '카트만두 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 9, '나가르코트 하이킹 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 57, NULL, 'SPORTS_ACTIVITY', '울란바토르 스포츠·액티비티 투어: 말 승마 · 순록 타이가 투어', '현지 기수 가족과 함께 초원 승마 체험. 차탄 사람의 순록 문화와 전통 경험.', '산들 트레킹', '말 승마 — 현지 기수 가족과 함께 초원 승마 체험
+순록 타이가 투어 — 차탄 사람의 순록 문화와 전통 경험
+국립공원 액티비티 — 테렐지 국립공원의 3시간 말 타기 투어', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 말 승마, 순록 타이가 투어, 국립공원 액티비티 (상품·브랜드는 가상)', 'ON_SALE', 68);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (68, 2, 3, 310000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (202, 1, '울란바토르 도착', '인천에서 출발해 울란바토르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (202, 2, '말 승마', '현지 기수 가족과 함께 초원 승마 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (202, 3, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (68, 3, 4, 390000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 1, '울란바토르 도착', '인천에서 출발해 울란바토르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 2, '말 승마', '현지 기수 가족과 함께 초원 승마 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 3, '순록 타이가 투어 체험', '차탄 사람의 순록 문화와 전통 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (68, 6, 7, 610000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 1, '울란바토르 도착', '인천에서 출발해 울란바토르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 2, '말 승마', '현지 기수 가족과 함께 초원 승마 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 3, '순록 타이가 투어 체험', '차탄 사람의 순록 문화와 전통 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 4, '국립공원 액티비티', '테렐지 국립공원의 3시간 말 타기 투어. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 5, '근교 트레킹·야외 활동', '울란바토르 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 58, NULL, 'SPORTS_ACTIVITY', '알마티 스포츠·액티비티 투어: 빅 알마티 호수 하이킹 · 스키', '2510m 높이의 산악 호수 등반 트레킹. 겨울 메데오·쉼불락 스키장.', NULL, '빅 알마티 호수 하이킹 — 2510m 높이의 산악 호수 등반 트레킹
+스키 — 겨울 메데오·쉼불락 스키장
+산악 자전거·래프팅 — 도시에서 30분 내 산악 액티비티', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 빅 알마티 호수 하이킹, 스키, 산악 자전거·래프팅 (상품·브랜드는 가상)', 'ON_SALE', 69);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (69, 6, 7, 660000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 1, '알마티 도착', '인천에서 출발해 알마티에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 2, '빅 알마티 호수 하이킹', '2510m 높이의 산악 호수 등반 트레킹. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 3, '스키 체험', '겨울 메데오·쉼불락 스키장. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 4, '산악 자전거·래프팅', '도시에서 30분 내 산악 액티비티. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 5, '근교 트레킹·야외 활동', '알마티 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (69, 9, 10, 900000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 1, '알마티 도착', '인천에서 출발해 알마티에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 2, '빅 알마티 호수 하이킹', '2510m 높이의 산악 호수 등반 트레킹. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 3, '스키 체험', '겨울 메데오·쉼불락 스키장. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 4, '산악 자전거·래프팅', '도시에서 30분 내 산악 액티비티. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 5, '근교 트레킹·야외 활동', '알마티 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 9, '빅 알마티 호수 하이킹 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (69, 13, 14, 1220000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 1, '알마티 도착', '인천에서 출발해 알마티에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 2, '빅 알마티 호수 하이킹', '2510m 높이의 산악 호수 등반 트레킹. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 3, '스키 체험', '겨울 메데오·쉼불락 스키장. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 4, '산악 자전거·래프팅', '도시에서 30분 내 산악 액티비티. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 5, '근교 트레킹·야외 활동', '알마티 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 9, '빅 알마티 호수 하이킹 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 59, NULL, 'ART_REST', '타슈켄트 예술·휴식 투어: 초르수 바자르 · 아미르 티무르 박물관', '목재 오븐 전통 빵과 공예품 판매 시장. 중앙아시아 역사 유산 전시.', NULL, '초르수 바자르 — 목재 오븐 전통 빵과 공예품 판매 시장
+아미르 티무르 박물관 — 중앙아시아 역사 유산 전시
+타슈켄트 메트로 — 화려한 장식의 호화 지하철 역 시스템', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 초르수 바자르, 아미르 티무르 박물관, 타슈켄트 메트로 (상품·브랜드는 가상)', 'ON_SALE', 70);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (70, 6, 7, 590000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 1, '타슈켄트 도착', '인천에서 출발해 타슈켄트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 2, '초르수 바자르', '목재 오븐 전통 빵과 공예품 판매 시장. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 3, '아미르 티무르 박물관', '중앙아시아 역사 유산 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 4, '타슈켄트 메트로', '화려한 장식의 호화 지하철 역 시스템. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 5, '공연·전시 관람', '타슈켄트에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (70, 9, 10, 800000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 1, '타슈켄트 도착', '인천에서 출발해 타슈켄트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 2, '초르수 바자르', '목재 오븐 전통 빵과 공예품 판매 시장. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 3, '아미르 티무르 박물관', '중앙아시아 역사 유산 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 4, '타슈켄트 메트로', '화려한 장식의 호화 지하철 역 시스템. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 5, '공연·전시 관람', '타슈켄트에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 7, '근교 소도시 산책', '타슈켄트 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (70, 13, 14, 1090000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 1, '타슈켄트 도착', '인천에서 출발해 타슈켄트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 2, '초르수 바자르', '목재 오븐 전통 빵과 공예품 판매 시장. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 3, '아미르 티무르 박물관', '중앙아시아 역사 유산 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 4, '타슈켄트 메트로', '화려한 장식의 호화 지하철 역 시스템. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 5, '공연·전시 관람', '타슈켄트에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 7, '근교 소도시 산책', '타슈켄트 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 12, '미술관 한 곳 더', '초르수 바자르 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 60, NULL, 'FOOD_DRINK', '자카르타 미식·주류 투어: 나시 우둑 · 케락 텔로르', '코코넛 우유로 요리한 흰쌀밥. 닭계란·말린 새우·로스트 코코넛의 계란 요리.', '한입 소스상회', '나시 우둑 — 코코넛 우유로 요리한 흰쌀밥
+케락 텔로르 — 닭계란·말린 새우·로스트 코코넛의 계란 요리
+소토 베타위 — 코코넛 우유에 담긴 자카르타식 소고기 국', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 나시 우둑, 케락 텔로르, 소토 베타위 (상품·브랜드는 가상)', 'ON_SALE', 71);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (71, 6, 7, 580000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 1, '자카르타 도착', '인천에서 출발해 자카르타에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 2, '나시 우둑 탐방', '코코넛 우유로 요리한 흰쌀밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 3, '한입 소스상회 견학과 시음', '한입 소스상회(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케락 텔로르과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 4, '소토 베타위 체험', '코코넛 우유에 담긴 자카르타식 소고기 국. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 5, '쿠킹 클래스', '현지 셰프에게 자카르타의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 6, '근교 산지 미식 여행', '자카르타 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (71, 9, 10, 800000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 1, '자카르타 도착', '인천에서 출발해 자카르타에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 2, '나시 우둑 탐방', '코코넛 우유로 요리한 흰쌀밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 3, '한입 소스상회 견학과 시음', '한입 소스상회(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케락 텔로르과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 4, '소토 베타위 체험', '코코넛 우유에 담긴 자카르타식 소고기 국. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 5, '쿠킹 클래스', '현지 셰프에게 자카르타의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 6, '근교 산지 미식 여행', '자카르타 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 7, '케락 텔로르 깊이 보기', '닭계란·말린 새우·로스트 코코넛의 계란 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (71, 13, 14, 1080000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 1, '자카르타 도착', '인천에서 출발해 자카르타에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 2, '나시 우둑 탐방', '코코넛 우유로 요리한 흰쌀밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 3, '한입 소스상회 견학과 시음', '한입 소스상회(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케락 텔로르과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 4, '소토 베타위 체험', '코코넛 우유에 담긴 자카르타식 소고기 국. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 5, '쿠킹 클래스', '현지 셰프에게 자카르타의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 6, '근교 산지 미식 여행', '자카르타 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 7, '케락 텔로르 깊이 보기', '닭계란·말린 새우·로스트 코코넛의 계란 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 10, '디저트·카페 투어', '자카르타의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 61, NULL, 'FOOD_DRINK', '광저우 미식·주류 투어: 해산물 요리 · 짜향주', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 쌀 기반의 순한 전통 주류로 부드러운 맛.', '햇살 올리브농장', '해산물 요리 — 남중국해 신선 생선, 새우, 게를 활용한 현지 특미
+짜향주 — 쌀 기반의 순한 전통 주류로 부드러운 맛
+광동식 간식 — 만두, 죽, 쌀국수 등 현지 길거리 음식', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 해산물 요리, 짜향주, 광동식 간식 (상품·브랜드는 가상)', 'ON_SALE', 72);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 2, 3, 280000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (214, 1, '광저우 도착', '인천에서 출발해 광저우에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (214, 2, '해산물 요리 탐방', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (214, 3, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 3, 4, 340000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 1, '광저우 도착', '인천에서 출발해 광저우에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 2, '해산물 요리 탐방', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 짜향주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 6, 7, 540000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 1, '광저우 도착', '인천에서 출발해 광저우에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 2, '해산물 요리 탐방', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 짜향주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 4, '광동식 간식 체험', '만두, 죽, 쌀국수 등 현지 길거리 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 5, '쿠킹 클래스', '현지 셰프에게 광저우의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 6, '근교 산지 미식 여행', '광저우 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 62, NULL, 'ART_REST', '청두 예술·휴식 투어: 사천 전통 오페라 · 문화 유적 사원', '오랜 역사의 현지 연극 공연 감상. 백년 사원과 불교 역사 건축물 탐방.', NULL, '사천 전통 오페라 — 오랜 역사의 현지 연극 공연 감상
+문화 유적 사원 — 백년 사원과 불교 역사 건축물 탐방
+쿠안자이 골목 — 전통 가옥 지구의 보태니컬 갤러리 경험', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 사천 전통 오페라, 문화 유적 사원, 쿠안자이 골목 (상품·브랜드는 가상)', 'ON_SALE', 73);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (73, 2, 3, 290000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (217, 1, '청두 도착', '인천에서 출발해 청두에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (217, 2, '사천 전통 오페라', '오랜 역사의 현지 연극 공연 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (217, 3, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (73, 3, 4, 360000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 1, '청두 도착', '인천에서 출발해 청두에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 2, '사천 전통 오페라', '오랜 역사의 현지 연극 공연 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 3, '문화 유적 사원', '백년 사원과 불교 역사 건축물 탐방. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (73, 6, 7, 560000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 1, '청두 도착', '인천에서 출발해 청두에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 2, '사천 전통 오페라', '오랜 역사의 현지 연극 공연 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 3, '문화 유적 사원', '백년 사원과 불교 역사 건축물 탐방. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 4, '쿠안자이 골목', '전통 가옥 지구의 보태니컬 갤러리 경험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 5, '공연·전시 관람', '청두에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 63, NULL, 'ART_REST', '도하 예술·휴식 투어: 이슬람 미술관 · 국립 카타르 박물관', '1,400년 세계 최대 규모 이슬람 미술 컬렉션. 카타르 역사와 문화를 보여주는 중심 박물관.', NULL, '이슬람 미술관 — 1,400년 세계 최대 규모 이슬람 미술 컬렉션
+국립 카타르 박물관 — 카타르 역사와 문화를 보여주는 중심 박물관
+현대 미술 조각 — 세계 명작가 조각상이 있는 야외 미술 프로메나드', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 이슬람 미술관, 국립 카타르 박물관, 현대 미술 조각 (상품·브랜드는 가상)', 'ON_SALE', 74);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (74, 6, 7, 750000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 1, '도하 도착', '인천에서 출발해 도하에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 2, '이슬람 미술관', '1,400년 세계 최대 규모 이슬람 미술 컬렉션. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 3, '국립 카타르 박물관', '카타르 역사와 문화를 보여주는 중심 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 4, '현대 미술 조각', '세계 명작가 조각상이 있는 야외 미술 프로메나드. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 5, '공연·전시 관람', '도하에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (74, 9, 10, 1040000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 1, '도하 도착', '인천에서 출발해 도하에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 2, '이슬람 미술관', '1,400년 세계 최대 규모 이슬람 미술 컬렉션. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 3, '국립 카타르 박물관', '카타르 역사와 문화를 보여주는 중심 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 4, '현대 미술 조각', '세계 명작가 조각상이 있는 야외 미술 프로메나드. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 5, '공연·전시 관람', '도하에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 7, '근교 소도시 산책', '도하 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (74, 13, 14, 1440000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 1, '도하 도착', '인천에서 출발해 도하에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 2, '이슬람 미술관', '1,400년 세계 최대 규모 이슬람 미술 컬렉션. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 3, '국립 카타르 박물관', '카타르 역사와 문화를 보여주는 중심 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 4, '현대 미술 조각', '세계 명작가 조각상이 있는 야외 미술 프로메나드. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 5, '공연·전시 관람', '도하에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 7, '근교 소도시 산책', '도하 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 12, '미술관 한 곳 더', '이슬람 미술관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 64, NULL, 'FOOD_DRINK', '리야드 미식·주류 투어: 카브사 · 타리드', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 양고기·야채 스튜를 납작한 빵과 함께 하는 전통식.', '은하수 제면소', '카브사 — 향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리
+타리드 — 양고기·야채 스튜를 납작한 빵과 함께 하는 전통식
+대추와 카다몬 커피 — 사우디의 상징적인 선물 세트와 음료', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 카브사, 타리드, 대추와 카다몬 커피 (상품·브랜드는 가상)', 'ON_SALE', 75);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 6, 7, 710000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 1, '리야드 도착', '인천에서 출발해 리야드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 2, '카브사 탐방', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 4, '대추와 카다몬 커피 체험', '사우디의 상징적인 선물 세트와 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 5, '쿠킹 클래스', '현지 셰프에게 리야드의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 6, '근교 산지 미식 여행', '리야드 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 9, 10, 980000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 1, '리야드 도착', '인천에서 출발해 리야드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 2, '카브사 탐방', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 4, '대추와 카다몬 커피 체험', '사우디의 상징적인 선물 세트와 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 5, '쿠킹 클래스', '현지 셰프에게 리야드의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 6, '근교 산지 미식 여행', '리야드 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 7, '타리드 깊이 보기', '양고기·야채 스튜를 납작한 빵과 함께 하는 전통식. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 13, 14, 1360000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 1, '리야드 도착', '인천에서 출발해 리야드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 2, '카브사 탐방', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 4, '대추와 카다몬 커피 체험', '사우디의 상징적인 선물 세트와 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 5, '쿠킹 클래스', '현지 셰프에게 리야드의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 6, '근교 산지 미식 여행', '리야드 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 7, '타리드 깊이 보기', '양고기·야채 스튜를 납작한 빵과 함께 하는 전통식. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 10, '디저트·카페 투어', '리야드의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 65, NULL, 'FOOD_DRINK', '텔아비브 미식·주류 투어: 팔라펠 · 후무스', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 병아리콩을 만든 부드러운 크림 소스.', '푸른보리 양조장', '팔라펠 — 병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식
+후무스 — 병아리콩을 만든 부드러운 크림 소스
+샤크슈카 — 토마토 소스 속 계란을 구운 중동식 아침 식사', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 팔라펠, 후무스, 샤크슈카 (상품·브랜드는 가상)', 'ON_SALE', 76);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 6, 7, 760000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 1, '텔아비브 도착', '인천에서 출발해 텔아비브에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 2, '팔라펠 탐방', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 4, '샤크슈카 체험', '토마토 소스 속 계란을 구운 중동식 아침 식사. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 5, '쿠킹 클래스', '현지 셰프에게 텔아비브의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 6, '근교 산지 미식 여행', '텔아비브 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 9, 10, 1070000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 1, '텔아비브 도착', '인천에서 출발해 텔아비브에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 2, '팔라펠 탐방', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 4, '샤크슈카 체험', '토마토 소스 속 계란을 구운 중동식 아침 식사. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 5, '쿠킹 클래스', '현지 셰프에게 텔아비브의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 6, '근교 산지 미식 여행', '텔아비브 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 7, '후무스 깊이 보기', '병아리콩을 만든 부드러운 크림 소스. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 13, 14, 1470000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 1, '텔아비브 도착', '인천에서 출발해 텔아비브에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 2, '팔라펠 탐방', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 4, '샤크슈카 체험', '토마토 소스 속 계란을 구운 중동식 아침 식사. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 5, '쿠킹 클래스', '현지 셰프에게 텔아비브의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 6, '근교 산지 미식 여행', '텔아비브 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 7, '후무스 깊이 보기', '병아리콩을 만든 부드러운 크림 소스. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 10, '디저트·카페 투어', '텔아비브의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 66, NULL, 'SPORTS_ACTIVITY', '제다 스포츠·액티비티 투어: 제트스키 · 모래사막 버기', '홍해 바다에서 즐기는 스릴 넘치는 수상 활동. 사막 사구를 누비는 사륜 오토바이 체험.', NULL, '제트스키 — 홍해 바다에서 즐기는 스릴 넘치는 수상 활동
+모래사막 버기 — 사막 사구를 누비는 사륜 오토바이 체험
+해변 휴식 및 수영 — 맑은 해수와 백사장에서의 여유로운 휴식', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 제트스키, 모래사막 버기, 해변 휴식 및 수영 (상품·브랜드는 가상)', 'ON_SALE', 77);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (77, 6, 7, 880000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 1, '제다 도착', '인천에서 출발해 제다에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 2, '제트스키', '홍해 바다에서 즐기는 스릴 넘치는 수상 활동. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 3, '모래사막 버기 체험', '사막 사구를 누비는 사륜 오토바이 체험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 4, '해변 휴식 및 수영', '맑은 해수와 백사장에서의 여유로운 휴식. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 5, '근교 트레킹·야외 활동', '제다 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (77, 9, 10, 1230000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 1, '제다 도착', '인천에서 출발해 제다에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 2, '제트스키', '홍해 바다에서 즐기는 스릴 넘치는 수상 활동. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 3, '모래사막 버기 체험', '사막 사구를 누비는 사륜 오토바이 체험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 4, '해변 휴식 및 수영', '맑은 해수와 백사장에서의 여유로운 휴식. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 5, '근교 트레킹·야외 활동', '제다 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 9, '제트스키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (77, 13, 14, 1690000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 1, '제다 도착', '인천에서 출발해 제다에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 2, '제트스키', '홍해 바다에서 즐기는 스릴 넘치는 수상 활동. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 3, '모래사막 버기 체험', '사막 사구를 누비는 사륜 오토바이 체험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 4, '해변 휴식 및 수영', '맑은 해수와 백사장에서의 여유로운 휴식. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 5, '근교 트레킹·야외 활동', '제다 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 9, '제트스키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 67, NULL, 'FOOD_DRINK', '프랑크푸르트 미식·주류 투어: 프랑크푸르터 소시지 · 사과주', '1487년 전통 레시피의 훈제 돼지고기 소시지. 신선한 사과를 발효한 톡 쏘는 독일식 사과 주류.', '달빛 와이너리', '프랑크푸르터 소시지 — 1487년 전통 레시피의 훈제 돼지고기 소시지
+사과주 — 신선한 사과를 발효한 톡 쏘는 독일식 사과 주류
+그뤼네 소세 — 7가지 허브와 소스를 섞은 독특한 양념 소스', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 프랑크푸르터 소시지, 사과주, 그뤼네 소세 (상품·브랜드는 가상)', 'ON_SALE', 78);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 6, 7, 740000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 1, '프랑크푸르트 도착', '인천에서 출발해 프랑크푸르트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 2, '프랑크푸르터 소시지 탐방', '1487년 전통 레시피의 훈제 돼지고기 소시지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 4, '그뤼네 소세 체험', '7가지 허브와 소스를 섞은 독특한 양념 소스. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 5, '쿠킹 클래스', '현지 셰프에게 프랑크푸르트의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 6, '근교 산지 미식 여행', '프랑크푸르트 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 9, 10, 1040000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 1, '프랑크푸르트 도착', '인천에서 출발해 프랑크푸르트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 2, '프랑크푸르터 소시지 탐방', '1487년 전통 레시피의 훈제 돼지고기 소시지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 4, '그뤼네 소세 체험', '7가지 허브와 소스를 섞은 독특한 양념 소스. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 5, '쿠킹 클래스', '현지 셰프에게 프랑크푸르트의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 6, '근교 산지 미식 여행', '프랑크푸르트 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 7, '사과주 깊이 보기', '신선한 사과를 발효한 톡 쏘는 독일식 사과 주류. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 13, 14, 1440000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 1, '프랑크푸르트 도착', '인천에서 출발해 프랑크푸르트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 2, '프랑크푸르터 소시지 탐방', '1487년 전통 레시피의 훈제 돼지고기 소시지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 4, '그뤼네 소세 체험', '7가지 허브와 소스를 섞은 독특한 양념 소스. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 5, '쿠킹 클래스', '현지 셰프에게 프랑크푸르트의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 6, '근교 산지 미식 여행', '프랑크푸르트 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 7, '사과주 깊이 보기', '신선한 사과를 발효한 톡 쏘는 독일식 사과 주류. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 10, '디저트·카페 투어', '프랑크푸르트의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 68, NULL, 'FOOD_DRINK', '취리히 미식·주류 투어: 스위스 초콜릿 · 스위스 치즈', '200년 노하우의 고급 공예 초콜릿 부티크. 알프스 목축 전통의 세계적 명품 치즈.', '푸른보리 양조장', '스위스 초콜릿 — 200년 노하우의 고급 공예 초콜릿 부티크
+스위스 치즈 — 알프스 목축 전통의 세계적 명품 치즈
+Zürich Geschnetzeltes — 뢰스티 감자와 함께 하는 송아지 슬라이스 요리', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 스위스 초콜릿, 스위스 치즈, Zürich Geschnetzeltes (상품·브랜드는 가상)', 'ON_SALE', 79);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 6, 7, 700000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 1, '취리히 도착', '인천에서 출발해 취리히에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 2, '스위스 초콜릿 탐방', '200년 노하우의 고급 공예 초콜릿 부티크. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 4, 'Zürich Geschnetzeltes 체험', '뢰스티 감자와 함께 하는 송아지 슬라이스 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 5, '쿠킹 클래스', '현지 셰프에게 취리히의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 6, '근교 산지 미식 여행', '취리히 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 9, 10, 990000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 1, '취리히 도착', '인천에서 출발해 취리히에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 2, '스위스 초콜릿 탐방', '200년 노하우의 고급 공예 초콜릿 부티크. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 4, 'Zürich Geschnetzeltes 체험', '뢰스티 감자와 함께 하는 송아지 슬라이스 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 5, '쿠킹 클래스', '현지 셰프에게 취리히의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 6, '근교 산지 미식 여행', '취리히 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 7, '스위스 치즈 깊이 보기', '알프스 목축 전통의 세계적 명품 치즈. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 13, 14, 1360000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 1, '취리히 도착', '인천에서 출발해 취리히에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 2, '스위스 초콜릿 탐방', '200년 노하우의 고급 공예 초콜릿 부티크. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 4, 'Zürich Geschnetzeltes 체험', '뢰스티 감자와 함께 하는 송아지 슬라이스 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 5, '쿠킹 클래스', '현지 셰프에게 취리히의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 6, '근교 산지 미식 여행', '취리히 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 7, '스위스 치즈 깊이 보기', '알프스 목축 전통의 세계적 명품 치즈. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 10, '디저트·카페 투어', '취리히의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 69, NULL, 'ART_REST', '부다페스트 예술·휴식 투어: 헝가리 국회의사당 · 부다페스트 봄·시게트 축제', '고딕 르네상스 양식의 웅장한 건축 미학 감상. 유럽 최대 규모의 음악·문화 축제 개최.', NULL, '헝가리 국회의사당 — 고딕 르네상스 양식의 웅장한 건축 미학 감상
+부다페스트 봄·시게트 축제 — 유럽 최대 규모의 음악·문화 축제 개최
+역사 박물관 및 갤러리 — 로마·오스만·합스부르크 역사 유물 전시', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 헝가리 국회의사당, 부다페스트 봄·시게트 축제, 역사 박물관 및 갤러리 (상품·브랜드는 가상)', 'ON_SALE', 80);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (80, 6, 7, 850000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 1, '부다페스트 도착', '인천에서 출발해 부다페스트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 2, '헝가리 국회의사당', '고딕 르네상스 양식의 웅장한 건축 미학 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 3, '부다페스트 봄·시게트 축제', '유럽 최대 규모의 음악·문화 축제 개최. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 4, '역사 박물관 및 갤러리', '로마·오스만·합스부르크 역사 유물 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 5, '공연·전시 관람', '부다페스트에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (80, 9, 10, 1190000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 1, '부다페스트 도착', '인천에서 출발해 부다페스트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 2, '헝가리 국회의사당', '고딕 르네상스 양식의 웅장한 건축 미학 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 3, '부다페스트 봄·시게트 축제', '유럽 최대 규모의 음악·문화 축제 개최. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 4, '역사 박물관 및 갤러리', '로마·오스만·합스부르크 역사 유물 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 5, '공연·전시 관람', '부다페스트에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 7, '근교 소도시 산책', '부다페스트 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (80, 13, 14, 1640000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 1, '부다페스트 도착', '인천에서 출발해 부다페스트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 2, '헝가리 국회의사당', '고딕 르네상스 양식의 웅장한 건축 미학 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 3, '부다페스트 봄·시게트 축제', '유럽 최대 규모의 음악·문화 축제 개최. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 4, '역사 박물관 및 갤러리', '로마·오스만·합스부르크 역사 유물 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 5, '공연·전시 관람', '부다페스트에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 7, '근교 소도시 산책', '부다페스트 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 12, '미술관 한 곳 더', '헝가리 국회의사당 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 70, NULL, 'ART_REST', '바르샤바 예술·휴식 투어: 구시가지 유네스코 유산 · 쇼팽 박물관', '재건된 중세 거리와 나라의 역사 유산 감상. 세계 최대 규모의 쇼팽 유물 컬렉션 전시.', NULL, '구시가지 유네스코 유산 — 재건된 중세 거리와 나라의 역사 유산 감상
+쇼팽 박물관 — 세계 최대 규모의 쇼팽 유물 컬렉션 전시
+70개 박물관 및 극장 — 폴란드 역사·문화·예술을 담은 종합 미술관 네트워크', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 구시가지 유네스코 유산, 쇼팽 박물관, 70개 박물관 및 극장 (상품·브랜드는 가상)', 'ON_SALE', 81);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (81, 6, 7, 800000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 1, '바르샤바 도착', '인천에서 출발해 바르샤바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 2, '구시가지 유네스코 유산', '재건된 중세 거리와 나라의 역사 유산 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 3, '쇼팽 박물관', '세계 최대 규모의 쇼팽 유물 컬렉션 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 4, '70개 박물관 및 극장', '폴란드 역사·문화·예술을 담은 종합 미술관 네트워크. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 5, '공연·전시 관람', '바르샤바에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (81, 9, 10, 1120000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 1, '바르샤바 도착', '인천에서 출발해 바르샤바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 2, '구시가지 유네스코 유산', '재건된 중세 거리와 나라의 역사 유산 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 3, '쇼팽 박물관', '세계 최대 규모의 쇼팽 유물 컬렉션 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 4, '70개 박물관 및 극장', '폴란드 역사·문화·예술을 담은 종합 미술관 네트워크. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 5, '공연·전시 관람', '바르샤바에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 7, '근교 소도시 산책', '바르샤바 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (81, 13, 14, 1550000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 1, '바르샤바 도착', '인천에서 출발해 바르샤바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 2, '구시가지 유네스코 유산', '재건된 중세 거리와 나라의 역사 유산 감상. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 3, '쇼팽 박물관', '세계 최대 규모의 쇼팽 유물 컬렉션 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 4, '70개 박물관 및 극장', '폴란드 역사·문화·예술을 담은 종합 미술관 네트워크. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 5, '공연·전시 관람', '바르샤바에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 7, '근교 소도시 산책', '바르샤바 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 12, '미술관 한 곳 더', '구시가지 유네스코 유산 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 71, NULL, 'SPORTS_ACTIVITY', '코펜하겐 스포츠·액티비티 투어: 자전거 투어 · 자전거 도로', '큐레이션된 미술 작품을 거쳐 도는 자전거 경로. 240마일의 전용 자전거 도로로 도시 전체를 누비기.', NULL, '자전거 투어 — 큐레이션된 미술 작품을 거쳐 도는 자전거 경로
+자전거 도로 — 240마일의 전용 자전거 도로로 도시 전체를 누비기
+항구 수영 — 항구 내 여름 수영장에서 수상 스포츠 즐기기', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 자전거 투어, 자전거 도로, 항구 수영 (상품·브랜드는 가상)', 'ON_SALE', 82);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (82, 6, 7, 830000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 1, '코펜하겐 도착', '인천에서 출발해 코펜하겐에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 2, '자전거 투어', '큐레이션된 미술 작품을 거쳐 도는 자전거 경로. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 3, '자전거 도로 체험', '240마일의 전용 자전거 도로로 도시 전체를 누비기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 4, '항구 수영', '항구 내 여름 수영장에서 수상 스포츠 즐기기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 5, '근교 트레킹·야외 활동', '코펜하겐 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (82, 9, 10, 1160000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 1, '코펜하겐 도착', '인천에서 출발해 코펜하겐에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 2, '자전거 투어', '큐레이션된 미술 작품을 거쳐 도는 자전거 경로. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 3, '자전거 도로 체험', '240마일의 전용 자전거 도로로 도시 전체를 누비기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 4, '항구 수영', '항구 내 여름 수영장에서 수상 스포츠 즐기기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 5, '근교 트레킹·야외 활동', '코펜하겐 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 9, '자전거 투어 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (82, 13, 14, 1600000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 1, '코펜하겐 도착', '인천에서 출발해 코펜하겐에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 2, '자전거 투어', '큐레이션된 미술 작품을 거쳐 도는 자전거 경로. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 3, '자전거 도로 체험', '240마일의 전용 자전거 도로로 도시 전체를 누비기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 4, '항구 수영', '항구 내 여름 수영장에서 수상 스포츠 즐기기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 5, '근교 트레킹·야외 활동', '코펜하겐 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 9, '자전거 투어 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 72, NULL, 'ART_REST', '스톡홀름 예술·휴식 투어: 바사 박물관 · 노벨상 박물관과 왕궁', '17세기 함선을 그대로 보존한 세계 유일의 박물관. 스웨덴 역사와 문화의 상징적 명소.', '달무리 공연장', '바사 박물관 — 17세기 함선을 그대로 보존한 세계 유일의 박물관
+노벨상 박물관과 왕궁 — 스웨덴 역사와 문화의 상징적 명소
+현대 미술관 — 포토그래피스카와 무료 현대 미술 전시 공간', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 바사 박물관, 노벨상 박물관과 왕궁, 현대 미술관 (상품·브랜드는 가상)', 'ON_SALE', 83);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (83, 6, 7, 830000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 1, '스톡홀름 도착', '인천에서 출발해 스톡홀름에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 2, '바사 박물관', '17세기 함선을 그대로 보존한 세계 유일의 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 3, '노벨상 박물관과 왕궁', '스웨덴 역사와 문화의 상징적 명소. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 4, '현대 미술관', '포토그래피스카와 무료 현대 미술 전시 공간. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 5, '공연·전시 관람', '스톡홀름에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (83, 9, 10, 1160000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 1, '스톡홀름 도착', '인천에서 출발해 스톡홀름에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 2, '바사 박물관', '17세기 함선을 그대로 보존한 세계 유일의 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 3, '노벨상 박물관과 왕궁', '스웨덴 역사와 문화의 상징적 명소. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 4, '현대 미술관', '포토그래피스카와 무료 현대 미술 전시 공간. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 5, '공연·전시 관람', '스톡홀름에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 7, '근교 소도시 산책', '스톡홀름 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (83, 13, 14, 1600000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 1, '스톡홀름 도착', '인천에서 출발해 스톡홀름에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 2, '바사 박물관', '17세기 함선을 그대로 보존한 세계 유일의 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 3, '노벨상 박물관과 왕궁', '스웨덴 역사와 문화의 상징적 명소. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 4, '현대 미술관', '포토그래피스카와 무료 현대 미술 전시 공간. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 5, '공연·전시 관람', '스톡홀름에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 7, '근교 소도시 산책', '스톡홀름 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 12, '미술관 한 곳 더', '바사 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 73, NULL, 'SPORTS_ACTIVITY', '오슬로 스포츠·액티비티 투어: 도시 내 스키 · 피요르드 크루즈', '올림픽급 스키장 오슬로 윈터 파크에서 즐기는 스키. 겨울 마법 같은 오슬로 피요르드 항해.', NULL, '도시 내 스키 — 올림픽급 스키장 오슬로 윈터 파크에서 즐기는 스키
+피요르드 크루즈 — 겨울 마법 같은 오슬로 피요르드 항해
+크로스컨트리 스키 — 도시 경계 내 광활한 크로스컨트리 코스', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 도시 내 스키, 피요르드 크루즈, 크로스컨트리 스키 (상품·브랜드는 가상)', 'ON_SALE', 84);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (84, 6, 7, 920000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 1, '오슬로 도착', '인천에서 출발해 오슬로에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 2, '도시 내 스키', '올림픽급 스키장 오슬로 윈터 파크에서 즐기는 스키. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 3, '피요르드 크루즈 체험', '겨울 마법 같은 오슬로 피요르드 항해. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 4, '크로스컨트리 스키', '도시 경계 내 광활한 크로스컨트리 코스. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 5, '근교 트레킹·야외 활동', '오슬로 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (84, 9, 10, 1290000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 1, '오슬로 도착', '인천에서 출발해 오슬로에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 2, '도시 내 스키', '올림픽급 스키장 오슬로 윈터 파크에서 즐기는 스키. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 3, '피요르드 크루즈 체험', '겨울 마법 같은 오슬로 피요르드 항해. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 4, '크로스컨트리 스키', '도시 경계 내 광활한 크로스컨트리 코스. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 5, '근교 트레킹·야외 활동', '오슬로 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 9, '도시 내 스키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (84, 13, 14, 1780000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 1, '오슬로 도착', '인천에서 출발해 오슬로에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 2, '도시 내 스키', '올림픽급 스키장 오슬로 윈터 파크에서 즐기는 스키. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 3, '피요르드 크루즈 체험', '겨울 마법 같은 오슬로 피요르드 항해. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 4, '크로스컨트리 스키', '도시 경계 내 광활한 크로스컨트리 코스. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 5, '근교 트레킹·야외 활동', '오슬로 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 9, '도시 내 스키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 74, NULL, 'ART_REST', '헬싱키 예술·휴식 투어: 현대 미술관 키아스마 · 중앙 도서관 오디', '핀란드 현대 미술의 중심 전시 공간. 건축학적 명작이자 문화 커뮤니티 공간.', NULL, '현대 미술관 키아스마 — 핀란드 현대 미술의 중심 전시 공간
+중앙 도서관 오디 — 건축학적 명작이자 문화 커뮤니티 공간
+사우나 다이닝 — 사우나에서의 창의적 식사 경험', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 현대 미술관 키아스마, 중앙 도서관 오디, 사우나 다이닝 (상품·브랜드는 가상)', 'ON_SALE', 85);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (85, 6, 7, 830000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 1, '헬싱키 도착', '인천에서 출발해 헬싱키에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 2, '현대 미술관 키아스마', '핀란드 현대 미술의 중심 전시 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 3, '중앙 도서관 오디', '건축학적 명작이자 문화 커뮤니티 공간. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 4, '사우나 다이닝', '사우나에서의 창의적 식사 경험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 5, '공연·전시 관람', '헬싱키에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (85, 9, 10, 1160000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 1, '헬싱키 도착', '인천에서 출발해 헬싱키에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 2, '현대 미술관 키아스마', '핀란드 현대 미술의 중심 전시 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 3, '중앙 도서관 오디', '건축학적 명작이자 문화 커뮤니티 공간. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 4, '사우나 다이닝', '사우나에서의 창의적 식사 경험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 5, '공연·전시 관람', '헬싱키에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 7, '근교 소도시 산책', '헬싱키 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (85, 13, 14, 1600000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 1, '헬싱키 도착', '인천에서 출발해 헬싱키에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 2, '현대 미술관 키아스마', '핀란드 현대 미술의 중심 전시 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 3, '중앙 도서관 오디', '건축학적 명작이자 문화 커뮤니티 공간. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 4, '사우나 다이닝', '사우나에서의 창의적 식사 경험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 5, '공연·전시 관람', '헬싱키에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 7, '근교 소도시 산책', '헬싱키 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 12, '미술관 한 곳 더', '현대 미술관 키아스마 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 75, NULL, 'ART_REST', '더블린 예술·휴식 투어: 윈드밀 레인 녹음 스튜디오 · 아일랜드 로큰롤 박물관', 'U2가 첫 앨범을 녹음한 역사적인 뮤직 스튜디오. U2부터 에냐까지 아일랜드 음악 산업 역사.', NULL, '윈드밀 레인 녹음 스튜디오 — U2가 첫 앨범을 녹음한 역사적인 뮤직 스튜디오
+아일랜드 로큰롤 박물관 — U2부터 에냐까지 아일랜드 음악 산업 역사
+콥스톤 펍 음악 세션 — 매일 밤 열리는 전통 아일랜드 음악 공연', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 윈드밀 레인 녹음 스튜디오, 아일랜드 로큰롤 박물관, 콥스톤 펍 음악 세션 (상품·브랜드는 가상)', 'ON_SALE', 86);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (86, 6, 7, 810000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 1, '더블린 도착', '인천에서 출발해 더블린에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 2, '윈드밀 레인 녹음 스튜디오', 'U2가 첫 앨범을 녹음한 역사적인 뮤직 스튜디오. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 3, '아일랜드 로큰롤 박물관', 'U2부터 에냐까지 아일랜드 음악 산업 역사. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 4, '콥스톤 펍 음악 세션', '매일 밤 열리는 전통 아일랜드 음악 공연. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 5, '공연·전시 관람', '더블린에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (86, 9, 10, 1140000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 1, '더블린 도착', '인천에서 출발해 더블린에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 2, '윈드밀 레인 녹음 스튜디오', 'U2가 첫 앨범을 녹음한 역사적인 뮤직 스튜디오. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 3, '아일랜드 로큰롤 박물관', 'U2부터 에냐까지 아일랜드 음악 산업 역사. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 4, '콥스톤 펍 음악 세션', '매일 밤 열리는 전통 아일랜드 음악 공연. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 5, '공연·전시 관람', '더블린에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 7, '근교 소도시 산책', '더블린 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (86, 13, 14, 1570000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 1, '더블린 도착', '인천에서 출발해 더블린에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 2, '윈드밀 레인 녹음 스튜디오', 'U2가 첫 앨범을 녹음한 역사적인 뮤직 스튜디오. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 3, '아일랜드 로큰롤 박물관', 'U2부터 에냐까지 아일랜드 음악 산업 역사. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 4, '콥스톤 펍 음악 세션', '매일 밤 열리는 전통 아일랜드 음악 공연. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 5, '공연·전시 관람', '더블린에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 7, '근교 소도시 산책', '더블린 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 12, '미술관 한 곳 더', '윈드밀 레인 녹음 스튜디오 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 76, NULL, 'ART_REST', '아테네 예술·휴식 투어: 아크로폴리스와 파르테논 · 국립 고고학 박물관', '2500년 고대 그리스 건축의 정점. 그리스 고대 유물과 미술품 거대 컬렉션.', '유리잔 공방', '아크로폴리스와 파르테논 — 2500년 고대 그리스 건축의 정점
+국립 고고학 박물관 — 그리스 고대 유물과 미술품 거대 컬렉션
+고대 아고라 — 고대 아테네 공공 생활의 중심지 유적', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 아크로폴리스와 파르테논, 국립 고고학 박물관, 고대 아고라 (상품·브랜드는 가상)', 'ON_SALE', 87);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (87, 6, 7, 760000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 1, '아테네 도착', '인천에서 출발해 아테네에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 2, '아크로폴리스와 파르테논', '2500년 고대 그리스 건축의 정점. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 3, '국립 고고학 박물관', '그리스 고대 유물과 미술품 거대 컬렉션. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 4, '고대 아고라', '고대 아테네 공공 생활의 중심지 유적. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 5, '공연·전시 관람', '아테네에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (87, 9, 10, 1070000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 1, '아테네 도착', '인천에서 출발해 아테네에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 2, '아크로폴리스와 파르테논', '2500년 고대 그리스 건축의 정점. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 3, '국립 고고학 박물관', '그리스 고대 유물과 미술품 거대 컬렉션. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 4, '고대 아고라', '고대 아테네 공공 생활의 중심지 유적. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 5, '공연·전시 관람', '아테네에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 7, '근교 소도시 산책', '아테네 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (87, 13, 14, 1480000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 1, '아테네 도착', '인천에서 출발해 아테네에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 2, '아크로폴리스와 파르테논', '2500년 고대 그리스 건축의 정점. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 3, '국립 고고학 박물관', '그리스 고대 유물과 미술품 거대 컬렉션. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 4, '고대 아고라', '고대 아테네 공공 생활의 중심지 유적. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 5, '공연·전시 관람', '아테네에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 7, '근교 소도시 산책', '아테네 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 12, '미술관 한 곳 더', '아크로폴리스와 파르테논 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 77, NULL, 'SPORTS_ACTIVITY', '나이로비 스포츠·액티비티 투어: 나이로비 국립공원 사파리 · 데이비드 셸드릭 동물보호센터', '도시 중심에서 15분 거리의 야생동물 체험. 고아 코끼리와 코뿔소를 돌보는 유명 센터.', '산들 트레킹', '나이로비 국립공원 사파리 — 도시 중심에서 15분 거리의 야생동물 체험
+데이비드 셸드릭 동물보호센터 — 고아 코끼리와 코뿔소를 돌보는 유명 센터
+기린센터 — 멸종위기 로스차일드 기린을 먹이고 만나기', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 나이로비 국립공원 사파리, 데이비드 셸드릭 동물보호센터, 기린센터 (상품·브랜드는 가상)', 'ON_SALE', 88);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (88, 6, 7, 810000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 1, '나이로비 도착', '인천에서 출발해 나이로비에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 2, '나이로비 국립공원 사파리', '도시 중심에서 15분 거리의 야생동물 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 3, '데이비드 셸드릭 동물보호센터 체험', '고아 코끼리와 코뿔소를 돌보는 유명 센터. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 4, '기린센터', '멸종위기 로스차일드 기린을 먹이고 만나기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 5, '근교 트레킹·야외 활동', '나이로비 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (88, 9, 10, 1140000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 1, '나이로비 도착', '인천에서 출발해 나이로비에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 2, '나이로비 국립공원 사파리', '도시 중심에서 15분 거리의 야생동물 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 3, '데이비드 셸드릭 동물보호센터 체험', '고아 코끼리와 코뿔소를 돌보는 유명 센터. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 4, '기린센터', '멸종위기 로스차일드 기린을 먹이고 만나기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 5, '근교 트레킹·야외 활동', '나이로비 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 9, '나이로비 국립공원 사파리 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (88, 13, 14, 1570000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 1, '나이로비 도착', '인천에서 출발해 나이로비에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 2, '나이로비 국립공원 사파리', '도시 중심에서 15분 거리의 야생동물 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 3, '데이비드 셸드릭 동물보호센터 체험', '고아 코끼리와 코뿔소를 돌보는 유명 센터. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 4, '기린센터', '멸종위기 로스차일드 기린을 먹이고 만나기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 5, '근교 트레킹·야외 활동', '나이로비 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 9, '나이로비 국립공원 사파리 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 78, NULL, 'ART_REST', '요하네스버그 예술·휴식 투어: 아파르트헤이트 박물관 · 정치 역사 투어', '20세기 남아공 인종차별 역사를 알리는 중요한 박물관. 아파르트헤이트 관련 주요 유적 가이드 방문.', '달무리 공연장', '아파르트헤이트 박물관 — 20세기 남아공 인종차별 역사를 알리는 중요한 박물관
+정치 역사 투어 — 아파르트헤이트 관련 주요 유적 가이드 방문
+현대 갤러리 — 아프리카 현대미술 전시 공간', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 아파르트헤이트 박물관, 정치 역사 투어, 현대 갤러리 (상품·브랜드는 가상)', 'ON_SALE', 89);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (89, 6, 7, 830000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 1, '요하네스버그 도착', '인천에서 출발해 요하네스버그에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 2, '아파르트헤이트 박물관', '20세기 남아공 인종차별 역사를 알리는 중요한 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 3, '정치 역사 투어', '아파르트헤이트 관련 주요 유적 가이드 방문. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 4, '현대 갤러리', '아프리카 현대미술 전시 공간. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 5, '공연·전시 관람', '요하네스버그에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (89, 9, 10, 1160000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 1, '요하네스버그 도착', '인천에서 출발해 요하네스버그에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 2, '아파르트헤이트 박물관', '20세기 남아공 인종차별 역사를 알리는 중요한 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 3, '정치 역사 투어', '아파르트헤이트 관련 주요 유적 가이드 방문. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 4, '현대 갤러리', '아프리카 현대미술 전시 공간. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 5, '공연·전시 관람', '요하네스버그에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 7, '근교 소도시 산책', '요하네스버그 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (89, 13, 14, 1600000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 1, '요하네스버그 도착', '인천에서 출발해 요하네스버그에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 2, '아파르트헤이트 박물관', '20세기 남아공 인종차별 역사를 알리는 중요한 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 3, '정치 역사 투어', '아파르트헤이트 관련 주요 유적 가이드 방문. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 4, '현대 갤러리', '아프리카 현대미술 전시 공간. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 5, '공연·전시 관람', '요하네스버그에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 7, '근교 소도시 산책', '요하네스버그 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 12, '미술관 한 곳 더', '아파르트헤이트 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 79, NULL, 'ART_REST', '카사블랑카 예술·휴식 투어: 하산 2세 모스크 · 아브더래흐만 슬라우이 박물관', '아프리카 2번째 규모로 바다 위 기도하는 경험. 숨겨진 보석 같은 미술과 공예 전시.', NULL, '하산 2세 모스크 — 아프리카 2번째 규모로 바다 위 기도하는 경험
+아브더래흐만 슬라우이 박물관 — 숨겨진 보석 같은 미술과 공예 전시
+오래된 메디나 건축 — 프랑스 건축 양식과 모로코 전통의 혼합', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 하산 2세 모스크, 아브더래흐만 슬라우이 박물관, 오래된 메디나 건축 (상품·브랜드는 가상)', 'ON_SALE', 90);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (90, 6, 7, 850000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 1, '카사블랑카 도착', '인천에서 출발해 카사블랑카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 2, '하산 2세 모스크', '아프리카 2번째 규모로 바다 위 기도하는 경험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 3, '아브더래흐만 슬라우이 박물관', '숨겨진 보석 같은 미술과 공예 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 4, '오래된 메디나 건축', '프랑스 건축 양식과 모로코 전통의 혼합. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 5, '공연·전시 관람', '카사블랑카에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (90, 9, 10, 1190000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 1, '카사블랑카 도착', '인천에서 출발해 카사블랑카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 2, '하산 2세 모스크', '아프리카 2번째 규모로 바다 위 기도하는 경험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 3, '아브더래흐만 슬라우이 박물관', '숨겨진 보석 같은 미술과 공예 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 4, '오래된 메디나 건축', '프랑스 건축 양식과 모로코 전통의 혼합. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 5, '공연·전시 관람', '카사블랑카에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 7, '근교 소도시 산책', '카사블랑카 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (90, 13, 14, 1640000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 1, '카사블랑카 도착', '인천에서 출발해 카사블랑카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 2, '하산 2세 모스크', '아프리카 2번째 규모로 바다 위 기도하는 경험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 3, '아브더래흐만 슬라우이 박물관', '숨겨진 보석 같은 미술과 공예 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 4, '오래된 메디나 건축', '프랑스 건축 양식과 모로코 전통의 혼합. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 5, '공연·전시 관람', '카사블랑카에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 7, '근교 소도시 산책', '카사블랑카 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 12, '미술관 한 곳 더', '하산 2세 모스크 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 80, NULL, 'FOOD_DRINK', '아디스아바바 미식·주류 투어: 에티오피아 커피 세레모니 · 인제라', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 에티오피아인의 주식인 발효 플랫브레드.', '새벽 커피로스터스', '에티오피아 커피 세레모니 — 고소함을 화로에서 볶고 비는 의식적 전통 커피 체험
+인제라 — 에티오피아인의 주식인 발효 플랫브레드
+양고기 요리 — 향신료 풍부한 에티오피아식 고기 스튜', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 에티오피아 커피 세레모니, 인제라, 양고기 요리 (상품·브랜드는 가상)', 'ON_SALE', 91);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 6, 7, 700000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 1, '아디스아바바 도착', '인천에서 출발해 아디스아바바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 2, '에티오피아 커피 세레모니 탐방', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 4, '양고기 요리 체험', '향신료 풍부한 에티오피아식 고기 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 5, '쿠킹 클래스', '현지 셰프에게 아디스아바바의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 6, '근교 산지 미식 여행', '아디스아바바 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 9, 10, 980000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 1, '아디스아바바 도착', '인천에서 출발해 아디스아바바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 2, '에티오피아 커피 세레모니 탐방', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 4, '양고기 요리 체험', '향신료 풍부한 에티오피아식 고기 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 5, '쿠킹 클래스', '현지 셰프에게 아디스아바바의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 6, '근교 산지 미식 여행', '아디스아바바 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 7, '인제라 깊이 보기', '에티오피아인의 주식인 발효 플랫브레드. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 13, 14, 1350000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 1, '아디스아바바 도착', '인천에서 출발해 아디스아바바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 2, '에티오피아 커피 세레모니 탐방', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 4, '양고기 요리 체험', '향신료 풍부한 에티오피아식 고기 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 5, '쿠킹 클래스', '현지 셰프에게 아디스아바바의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 6, '근교 산지 미식 여행', '아디스아바바 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 7, '인제라 깊이 보기', '에티오피아인의 주식인 발효 플랫브레드. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 10, '디저트·카페 투어', '아디스아바바의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 81, NULL, 'SPORTS_ACTIVITY', '다르에스살람 스포츠·액티비티 투어: 카약 투어 · 항해 스포츠', '해안 마을과 섬을 돌아보는 카약 액티비티. 패들보딩, 제트스키 등 수상 스포츠.', '바람개비 아웃도어', '카약 투어 — 해안 마을과 섬을 돌아보는 카약 액티비티
+항해 스포츠 — 패들보딩, 제트스키 등 수상 스포츠
+해변 클럽 — 스포츠, 라이브 음악, 음식을 함께 즐기는 해변 시설', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 카약 투어, 항해 스포츠, 해변 클럽 (상품·브랜드는 가상)', 'ON_SALE', 92);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (92, 6, 7, 910000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 1, '다르에스살람 도착', '인천에서 출발해 다르에스살람에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 2, '카약 투어', '해안 마을과 섬을 돌아보는 카약 액티비티. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 3, '항해 스포츠 체험', '패들보딩, 제트스키 등 수상 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 4, '해변 클럽', '스포츠, 라이브 음악, 음식을 함께 즐기는 해변 시설. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 5, '근교 트레킹·야외 활동', '다르에스살람 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (274, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (92, 9, 10, 1280000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 1, '다르에스살람 도착', '인천에서 출발해 다르에스살람에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 2, '카약 투어', '해안 마을과 섬을 돌아보는 카약 액티비티. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 3, '항해 스포츠 체험', '패들보딩, 제트스키 등 수상 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 4, '해변 클럽', '스포츠, 라이브 음악, 음식을 함께 즐기는 해변 시설. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 5, '근교 트레킹·야외 활동', '다르에스살람 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 9, '카약 투어 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (275, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (92, 13, 14, 1770000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 1, '다르에스살람 도착', '인천에서 출발해 다르에스살람에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 2, '카약 투어', '해안 마을과 섬을 돌아보는 카약 액티비티. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 3, '항해 스포츠 체험', '패들보딩, 제트스키 등 수상 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 4, '해변 클럽', '스포츠, 라이브 음악, 음식을 함께 즐기는 해변 시설. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 5, '근교 트레킹·야외 활동', '다르에스살람 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 9, '카약 투어 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 82, NULL, 'ART_REST', '튀니스 예술·휴식 투어: 카르타고 유적 · 메디나 역사지구', '고대 로마 시대 역사 유적지. 전통 건축과 시장이 있는 구시가지.', '달무리 공연장', '카르타고 유적 — 고대 로마 시대 역사 유적지
+메디나 역사지구 — 전통 건축과 시장이 있는 구시가지
+박물관 — 북아프리카 문화유산 전시', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 카르타고 유적, 메디나 역사지구, 박물관 (상품·브랜드는 가상)', 'ON_SALE', 93);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (93, 6, 7, 740000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 1, '튀니스 도착', '인천에서 출발해 튀니스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 2, '카르타고 유적', '고대 로마 시대 역사 유적지. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 3, '메디나 역사지구', '전통 건축과 시장이 있는 구시가지. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 4, '박물관', '북아프리카 문화유산 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 5, '공연·전시 관람', '튀니스에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (277, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (93, 9, 10, 1040000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 1, '튀니스 도착', '인천에서 출발해 튀니스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 2, '카르타고 유적', '고대 로마 시대 역사 유적지. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 3, '메디나 역사지구', '전통 건축과 시장이 있는 구시가지. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 4, '박물관', '북아프리카 문화유산 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 5, '공연·전시 관람', '튀니스에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 7, '근교 소도시 산책', '튀니스 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (278, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (93, 13, 14, 1430000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 1, '튀니스 도착', '인천에서 출발해 튀니스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 2, '카르타고 유적', '고대 로마 시대 역사 유적지. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 3, '메디나 역사지구', '전통 건축과 시장이 있는 구시가지. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 4, '박물관', '북아프리카 문화유산 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 5, '공연·전시 관람', '튀니스에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 7, '근교 소도시 산책', '튀니스 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 12, '미술관 한 곳 더', '카르타고 유적 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (279, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 83, NULL, 'SPORTS_ACTIVITY', '아크라 스포츠·액티비티 투어: 서핑 · 비치 배구', '해변에서의 서핑과 보드 스포츠. 해변에서 즐기는 배구.', NULL, '서핑 — 해변에서의 서핑과 보드 스포츠
+비치 배구 — 해변에서 즐기는 배구
+승마 투어 — 해변을 따라 말을 타는 체험', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 서핑, 비치 배구, 승마 투어 (상품·브랜드는 가상)', 'ON_SALE', 94);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (94, 6, 7, 910000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 1, '아크라 도착', '인천에서 출발해 아크라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 2, '서핑', '해변에서의 서핑과 보드 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 3, '비치 배구 체험', '해변에서 즐기는 배구. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 4, '승마 투어', '해변을 따라 말을 타는 체험. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 5, '근교 트레킹·야외 활동', '아크라 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (280, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (94, 9, 10, 1280000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 1, '아크라 도착', '인천에서 출발해 아크라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 2, '서핑', '해변에서의 서핑과 보드 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 3, '비치 배구 체험', '해변에서 즐기는 배구. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 4, '승마 투어', '해변을 따라 말을 타는 체험. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 5, '근교 트레킹·야외 활동', '아크라 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 9, '서핑 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (281, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (94, 13, 14, 1770000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 1, '아크라 도착', '인천에서 출발해 아크라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 2, '서핑', '해변에서의 서핑과 보드 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 3, '비치 배구 체험', '해변에서 즐기는 배구. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 4, '승마 투어', '해변을 따라 말을 타는 체험. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 5, '근교 트레킹·야외 활동', '아크라 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 9, '서핑 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 84, NULL, 'FOOD_DRINK', '시애틀 미식·주류 투어: 테리야키 · 커피 문화', '시애틀의 시그니처 음식으로 양념 구이 요리. 유명 카페에서 즐기는 고급 에스프레소.', '은하수 제면소', '테리야키 — 시애틀의 시그니처 음식으로 양념 구이 요리
+커피 문화 — 유명 카페에서 즐기는 고급 에스프레소
+푸드 트럭 — 다양한 국제 음식을 제공하는 이동식 음식점', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 테리야키, 커피 문화, 푸드 트럭 (상품·브랜드는 가상)', 'ON_SALE', 95);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (95, 6, 7, 840000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 1, '시애틀 도착', '인천에서 출발해 시애틀에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 2, '테리야키 탐방', '시애틀의 시그니처 음식으로 양념 구이 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 4, '푸드 트럭 체험', '다양한 국제 음식을 제공하는 이동식 음식점. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 5, '쿠킹 클래스', '현지 셰프에게 시애틀의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 6, '근교 산지 미식 여행', '시애틀 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (95, 9, 10, 1190000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 1, '시애틀 도착', '인천에서 출발해 시애틀에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 2, '테리야키 탐방', '시애틀의 시그니처 음식으로 양념 구이 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 4, '푸드 트럭 체험', '다양한 국제 음식을 제공하는 이동식 음식점. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 5, '쿠킹 클래스', '현지 셰프에게 시애틀의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 6, '근교 산지 미식 여행', '시애틀 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 7, '커피 문화 깊이 보기', '유명 카페에서 즐기는 고급 에스프레소. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (95, 13, 14, 1640000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 1, '시애틀 도착', '인천에서 출발해 시애틀에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 2, '테리야키 탐방', '시애틀의 시그니처 음식으로 양념 구이 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 4, '푸드 트럭 체험', '다양한 국제 음식을 제공하는 이동식 음식점. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 5, '쿠킹 클래스', '현지 셰프에게 시애틀의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 6, '근교 산지 미식 여행', '시애틀 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 7, '커피 문화 깊이 보기', '유명 카페에서 즐기는 고급 에스프레소. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 10, '디저트·카페 투어', '시애틀의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 85, NULL, 'SPORTS_ACTIVITY', '댈러스 스포츠·액티비티 투어: 풋볼 경기 · 야구 경기', '달라스 카우보이스 NFL 경기 관람. 텍사스 레인저스 메이저리그 경기.', '거코 스포츠', '풋볼 경기 — 달라스 카우보이스 NFL 경기 관람
+야구 경기 — 텍사스 레인저스 메이저리그 경기
+항공 스포츠 — 화이트 락 호수의 카약과 보트', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 풋볼 경기, 야구 경기, 항공 스포츠 (상품·브랜드는 가상)', 'ON_SALE', 96);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (96, 6, 7, 970000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 1, '댈러스 도착', '인천에서 출발해 댈러스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 2, '풋볼 경기', '달라스 카우보이스 NFL 경기 관람. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 3, '야구 경기 체험', '텍사스 레인저스 메이저리그 경기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 4, '항공 스포츠', '화이트 락 호수의 카약과 보트. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 5, '근교 트레킹·야외 활동', '댈러스 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (286, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (96, 9, 10, 1360000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 1, '댈러스 도착', '인천에서 출발해 댈러스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 2, '풋볼 경기', '달라스 카우보이스 NFL 경기 관람. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 3, '야구 경기 체험', '텍사스 레인저스 메이저리그 경기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 4, '항공 스포츠', '화이트 락 호수의 카약과 보트. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 5, '근교 트레킹·야외 활동', '댈러스 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 9, '풋볼 경기 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (287, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (96, 13, 14, 1890000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 1, '댈러스 도착', '인천에서 출발해 댈러스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 2, '풋볼 경기', '달라스 카우보이스 NFL 경기 관람. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 3, '야구 경기 체험', '텍사스 레인저스 메이저리그 경기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 4, '항공 스포츠', '화이트 락 호수의 카약과 보트. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 5, '근교 트레킹·야외 활동', '댈러스 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 9, '풋볼 경기 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 86, NULL, 'FOOD_DRINK', '마이애미 미식·주류 투어: 쿠바 샌드위치 · 돌 게', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 마이애미의 명물 고급 해산물 요리.', '별빛 초콜릿공방', '쿠바 샌드위치 — 돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치
+돌 게 — 마이애미의 명물 고급 해산물 요리
+라틴 요리 — 쿠바, 페루, 니카라과 등 다문화 음식', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 쿠바 샌드위치, 돌 게, 라틴 요리 (상품·브랜드는 가상)', 'ON_SALE', 97);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (97, 6, 7, 870000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 1, '마이애미 도착', '인천에서 출발해 마이애미에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 2, '쿠바 샌드위치 탐방', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 4, '라틴 요리 체험', '쿠바, 페루, 니카라과 등 다문화 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 5, '쿠킹 클래스', '현지 셰프에게 마이애미의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 6, '근교 산지 미식 여행', '마이애미 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (97, 9, 10, 1230000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 1, '마이애미 도착', '인천에서 출발해 마이애미에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 2, '쿠바 샌드위치 탐방', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 4, '라틴 요리 체험', '쿠바, 페루, 니카라과 등 다문화 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 5, '쿠킹 클래스', '현지 셰프에게 마이애미의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 6, '근교 산지 미식 여행', '마이애미 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 7, '돌 게 깊이 보기', '마이애미의 명물 고급 해산물 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (97, 13, 14, 1710000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 1, '마이애미 도착', '인천에서 출발해 마이애미에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 2, '쿠바 샌드위치 탐방', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 4, '라틴 요리 체험', '쿠바, 페루, 니카라과 등 다문화 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 5, '쿠킹 클래스', '현지 셰프에게 마이애미의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 6, '근교 산지 미식 여행', '마이애미 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 7, '돌 게 깊이 보기', '마이애미의 명물 고급 해산물 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 10, '디저트·카페 투어', '마이애미의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 87, NULL, 'SPORTS_ACTIVITY', '덴버 스포츠·액티비티 투어: 아이스 하키 · 미식축구', '2022 스탠리컵 우승팀 콜로라도 에블런치 경기. 덴버 브론코스 NFL 경기.', '산들 트레킹', '아이스 하키 — 2022 스탠리컵 우승팀 콜로라도 에블런치 경기
+미식축구 — 덴버 브론코스 NFL 경기
+야구 경기 — 콜로라도 로키스 메이저리그', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 아이스 하키, 미식축구, 야구 경기 (상품·브랜드는 가상)', 'ON_SALE', 98);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (98, 6, 7, 910000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 1, '덴버 도착', '인천에서 출발해 덴버에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 2, '아이스 하키', '2022 스탠리컵 우승팀 콜로라도 에블런치 경기. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 3, '미식축구 체험', '덴버 브론코스 NFL 경기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 4, '야구 경기', '콜로라도 로키스 메이저리그. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 5, '근교 트레킹·야외 활동', '덴버 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (292, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (98, 9, 10, 1280000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 1, '덴버 도착', '인천에서 출발해 덴버에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 2, '아이스 하키', '2022 스탠리컵 우승팀 콜로라도 에블런치 경기. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 3, '미식축구 체험', '덴버 브론코스 NFL 경기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 4, '야구 경기', '콜로라도 로키스 메이저리그. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 5, '근교 트레킹·야외 활동', '덴버 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 9, '아이스 하키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (293, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (98, 13, 14, 1780000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 1, '덴버 도착', '인천에서 출발해 덴버에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 2, '아이스 하키', '2022 스탠리컵 우승팀 콜로라도 에블런치 경기. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 3, '미식축구 체험', '덴버 브론코스 NFL 경기. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 4, '야구 경기', '콜로라도 로키스 메이저리그. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 5, '근교 트레킹·야외 활동', '덴버 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 9, '아이스 하키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 88, NULL, 'FOOD_DRINK', '몬트리올 미식·주류 투어: 푸틴 · 몬트리올 베이글', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 쯔비 작고 단 맛의 현지식 베이글.', '소금꽃 식초공방', '푸틴 — 감자튀김, 그레이비, 치즈 커드를 올린 별미
+몬트리올 베이글 — 쯔비 작고 단 맛의 현지식 베이글
+포르투갈 치킨 — 현지에서 가장 사랑받는 캐주얼 음식', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 푸틴, 몬트리올 베이글, 포르투갈 치킨 (상품·브랜드는 가상)', 'ON_SALE', 99);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (99, 6, 7, 850000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 1, '몬트리올 도착', '인천에서 출발해 몬트리올에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 2, '푸틴 탐방', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 4, '포르투갈 치킨 체험', '현지에서 가장 사랑받는 캐주얼 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 5, '쿠킹 클래스', '현지 셰프에게 몬트리올의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 6, '근교 산지 미식 여행', '몬트리올 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (99, 9, 10, 1200000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 1, '몬트리올 도착', '인천에서 출발해 몬트리올에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 2, '푸틴 탐방', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 4, '포르투갈 치킨 체험', '현지에서 가장 사랑받는 캐주얼 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 5, '쿠킹 클래스', '현지 셰프에게 몬트리올의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 6, '근교 산지 미식 여행', '몬트리올 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 7, '몬트리올 베이글 깊이 보기', '쯔비 작고 단 맛의 현지식 베이글. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (99, 13, 14, 1660000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 1, '몬트리올 도착', '인천에서 출발해 몬트리올에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 2, '푸틴 탐방', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 4, '포르투갈 치킨 체험', '현지에서 가장 사랑받는 캐주얼 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 5, '쿠킹 클래스', '현지 셰프에게 몬트리올의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 6, '근교 산지 미식 여행', '몬트리올 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 7, '몬트리올 베이글 깊이 보기', '쯔비 작고 단 맛의 현지식 베이글. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 10, '디저트·카페 투어', '몬트리올의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 89, NULL, 'SPORTS_ACTIVITY', '칸쿤 스포츠·액티비티 투어: 제트스키 · 패러세일링', '카리브해에서 즐기는 고속 수상 스포츠. 낙하산으로 하늘에서 즐기는 스포츠.', NULL, '제트스키 — 카리브해에서 즐기는 고속 수상 스포츠
+패러세일링 — 낙하산으로 하늘에서 즐기는 스포츠
+카약 투어 — 센노테와 맹그로브 숲 탐험', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 제트스키, 패러세일링, 카약 투어 (상품·브랜드는 가상)', 'ON_SALE', 100);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (100, 6, 7, 950000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 1, '칸쿤 도착', '인천에서 출발해 칸쿤에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 2, '제트스키', '카리브해에서 즐기는 고속 수상 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 3, '패러세일링 체험', '낙하산으로 하늘에서 즐기는 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 4, '카약 투어', '센노테와 맹그로브 숲 탐험. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 5, '근교 트레킹·야외 활동', '칸쿤 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (298, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (100, 9, 10, 1340000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 1, '칸쿤 도착', '인천에서 출발해 칸쿤에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 2, '제트스키', '카리브해에서 즐기는 고속 수상 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 3, '패러세일링 체험', '낙하산으로 하늘에서 즐기는 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 4, '카약 투어', '센노테와 맹그로브 숲 탐험. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 5, '근교 트레킹·야외 활동', '칸쿤 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 9, '제트스키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (299, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (100, 13, 14, 1850000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 1, '칸쿤 도착', '인천에서 출발해 칸쿤에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 2, '제트스키', '카리브해에서 즐기는 고속 수상 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 3, '패러세일링 체험', '낙하산으로 하늘에서 즐기는 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 4, '카약 투어', '센노테와 맹그로브 숲 탐험. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 5, '근교 트레킹·야외 활동', '칸쿤 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 9, '제트스키 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (300, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 90, NULL, 'ART_REST', '파나마시티 예술·휴식 투어: 카스코 안티구오 · 아베니다 발보아', '식민지 시대 역사 건축물과 야경. 팔나무 늘어선 해변 보행로.', NULL, '카스코 안티구오 — 식민지 시대 역사 건축물과 야경
+아베니다 발보아 — 팔나무 늘어선 해변 보행로
+박물관 투어 — 파나마 운하와 문화 역사 전시', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 카스코 안티구오, 아베니다 발보아, 박물관 투어 (상품·브랜드는 가상)', 'ON_SALE', 101);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (101, 6, 7, 790000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 1, '파나마시티 도착', '인천에서 출발해 파나마시티에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 2, '카스코 안티구오', '식민지 시대 역사 건축물과 야경. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 3, '아베니다 발보아', '팔나무 늘어선 해변 보행로. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 4, '박물관 투어', '파나마 운하와 문화 역사 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 5, '공연·전시 관람', '파나마시티에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (301, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (101, 9, 10, 1110000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 1, '파나마시티 도착', '인천에서 출발해 파나마시티에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 2, '카스코 안티구오', '식민지 시대 역사 건축물과 야경. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 3, '아베니다 발보아', '팔나무 늘어선 해변 보행로. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 4, '박물관 투어', '파나마 운하와 문화 역사 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 5, '공연·전시 관람', '파나마시티에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 7, '근교 소도시 산책', '파나마시티 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (302, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (101, 13, 14, 1540000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 1, '파나마시티 도착', '인천에서 출발해 파나마시티에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 2, '카스코 안티구오', '식민지 시대 역사 건축물과 야경. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 3, '아베니다 발보아', '팔나무 늘어선 해변 보행로. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 4, '박물관 투어', '파나마 운하와 문화 역사 전시. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 5, '공연·전시 관람', '파나마시티에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 7, '근교 소도시 산책', '파나마시티 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 12, '미술관 한 곳 더', '카스코 안티구오 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 91, NULL, 'SPORTS_ACTIVITY', '리우데자네이루 스포츠·액티비티 투어: 해변 배구 · 패러글라이딩', '코파카바나 해변에서 즐기는 스포츠. 모로 도이스 이르마우스에서 경험하는 하늘 스포츠.', '산들 트레킹', '해변 배구 — 코파카바나 해변에서 즐기는 스포츠
+패러글라이딩 — 모로 도이스 이르마우스에서 경험하는 하늘 스포츠
+서핑 — 리오의 역동적인 파도에서 즐기는 수상 스포츠', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 해변 배구, 패러글라이딩, 서핑 (상품·브랜드는 가상)', 'ON_SALE', 102);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (102, 6, 7, 900000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 1, '리우데자네이루 도착', '인천에서 출발해 리우데자네이루에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 2, '해변 배구', '코파카바나 해변에서 즐기는 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 3, '패러글라이딩 체험', '모로 도이스 이르마우스에서 경험하는 하늘 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 4, '서핑', '리오의 역동적인 파도에서 즐기는 수상 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 5, '근교 트레킹·야외 활동', '리우데자네이루 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (304, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (102, 9, 10, 1260000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 1, '리우데자네이루 도착', '인천에서 출발해 리우데자네이루에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 2, '해변 배구', '코파카바나 해변에서 즐기는 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 3, '패러글라이딩 체험', '모로 도이스 이르마우스에서 경험하는 하늘 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 4, '서핑', '리오의 역동적인 파도에서 즐기는 수상 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 5, '근교 트레킹·야외 활동', '리우데자네이루 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 9, '해변 배구 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (305, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (102, 13, 14, 1740000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 1, '리우데자네이루 도착', '인천에서 출발해 리우데자네이루에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 2, '해변 배구', '코파카바나 해변에서 즐기는 스포츠. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 3, '패러글라이딩 체험', '모로 도이스 이르마우스에서 경험하는 하늘 스포츠. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 4, '서핑', '리오의 역동적인 파도에서 즐기는 수상 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 5, '근교 트레킹·야외 활동', '리우데자네이루 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 9, '해변 배구 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (306, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 92, NULL, 'ART_REST', '부에노스아이레스 예술·휴식 투어: 160개 박물관 · 탱고 쇼 디너', '다양한 주제의 문화 예술 공간. 전통 의상과 함께하는 저녁 공연.', NULL, '160개 박물관 — 다양한 주제의 문화 예술 공간
+탱고 쇼 디너 — 전통 의상과 함께하는 저녁 공연
+라 보카 카미니토 거리 — 다채로운 색의 건물이 있는 역사 지구', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 160개 박물관, 탱고 쇼 디너, 라 보카 카미니토 거리 (상품·브랜드는 가상)', 'ON_SALE', 103);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (103, 6, 7, 850000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 1, '부에노스아이레스 도착', '인천에서 출발해 부에노스아이레스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 2, '160개 박물관', '다양한 주제의 문화 예술 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 3, '탱고 쇼 디너', '전통 의상과 함께하는 저녁 공연. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 4, '라 보카 카미니토 거리', '다채로운 색의 건물이 있는 역사 지구. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 5, '공연·전시 관람', '부에노스아이레스에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (307, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (103, 9, 10, 1200000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 1, '부에노스아이레스 도착', '인천에서 출발해 부에노스아이레스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 2, '160개 박물관', '다양한 주제의 문화 예술 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 3, '탱고 쇼 디너', '전통 의상과 함께하는 저녁 공연. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 4, '라 보카 카미니토 거리', '다채로운 색의 건물이 있는 역사 지구. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 5, '공연·전시 관람', '부에노스아이레스에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 7, '근교 소도시 산책', '부에노스아이레스 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (308, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (103, 13, 14, 1650000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 1, '부에노스아이레스 도착', '인천에서 출발해 부에노스아이레스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 2, '160개 박물관', '다양한 주제의 문화 예술 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 3, '탱고 쇼 디너', '전통 의상과 함께하는 저녁 공연. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 4, '라 보카 카미니토 거리', '다채로운 색의 건물이 있는 역사 지구. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 5, '공연·전시 관람', '부에노스아이레스에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 7, '근교 소도시 산책', '부에노스아이레스 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 12, '미술관 한 곳 더', '160개 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 93, NULL, 'FOOD_DRINK', '산티아고 미식·주류 투어: 카르메네레 와인 · 세비체', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 생선을 오렌지 소스에 절인 신선한 해산물 요리.', '은하수 제면소', '카르메네레 와인 — 칠레의 대표 와인으로 프랑스 원산 포도 품종
+세비체 — 생선을 오렌지 소스에 절인 신선한 해산물 요리
+쿠란토 — 해산물과 고기를 묻힌 냄비에 조리한 스튜', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 카르메네레 와인, 세비체, 쿠란토 (상품·브랜드는 가상)', 'ON_SALE', 104);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (104, 6, 7, 760000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 1, '산티아고 도착', '인천에서 출발해 산티아고에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 2, '카르메네레 와인 탐방', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 4, '쿠란토 체험', '해산물과 고기를 묻힌 냄비에 조리한 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 5, '쿠킹 클래스', '현지 셰프에게 산티아고의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 6, '근교 산지 미식 여행', '산티아고 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (104, 9, 10, 1070000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 1, '산티아고 도착', '인천에서 출발해 산티아고에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 2, '카르메네레 와인 탐방', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 4, '쿠란토 체험', '해산물과 고기를 묻힌 냄비에 조리한 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 5, '쿠킹 클래스', '현지 셰프에게 산티아고의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 6, '근교 산지 미식 여행', '산티아고 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 7, '세비체 깊이 보기', '생선을 오렌지 소스에 절인 신선한 해산물 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (104, 13, 14, 1480000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 1, '산티아고 도착', '인천에서 출발해 산티아고에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 2, '카르메네레 와인 탐방', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 4, '쿠란토 체험', '해산물과 고기를 묻힌 냄비에 조리한 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 5, '쿠킹 클래스', '현지 셰프에게 산티아고의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 6, '근교 산지 미식 여행', '산티아고 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 7, '세비체 깊이 보기', '생선을 오렌지 소스에 절인 신선한 해산물 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 10, '디저트·카페 투어', '산티아고의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 94, NULL, 'FOOD_DRINK', '리마 미식·주류 투어: 세비체 · 티라디토', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 생선 회와 고추, 소스를 얹은 순수 페루식 요리.', '햇살 올리브농장', '세비체 — 페루의 국민음식으로 생선을 귤 소스에 절인 요리
+티라디토 — 생선 회와 고추, 소스를 얹은 순수 페루식 요리
+닛케이 요리 — 페루 재료와 일본 조리법을 혼합한 융합 요리', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 세비체, 티라디토, 닛케이 요리 (상품·브랜드는 가상)', 'ON_SALE', 105);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (105, 6, 7, 820000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 1, '리마 도착', '인천에서 출발해 리마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 2, '세비체 탐방', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 4, '닛케이 요리 체험', '페루 재료와 일본 조리법을 혼합한 융합 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 5, '쿠킹 클래스', '현지 셰프에게 리마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 6, '근교 산지 미식 여행', '리마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (105, 9, 10, 1150000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 1, '리마 도착', '인천에서 출발해 리마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 2, '세비체 탐방', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 4, '닛케이 요리 체험', '페루 재료와 일본 조리법을 혼합한 융합 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 5, '쿠킹 클래스', '현지 셰프에게 리마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 6, '근교 산지 미식 여행', '리마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 7, '티라디토 깊이 보기', '생선 회와 고추, 소스를 얹은 순수 페루식 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (105, 13, 14, 1590000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 1, '리마 도착', '인천에서 출발해 리마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 2, '세비체 탐방', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 4, '닛케이 요리 체험', '페루 재료와 일본 조리법을 혼합한 융합 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 5, '쿠킹 클래스', '현지 셰프에게 리마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 6, '근교 산지 미식 여행', '리마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 7, '티라디토 깊이 보기', '생선 회와 고추, 소스를 얹은 순수 페루식 요리. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 10, '디저트·카페 투어', '리마의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 95, NULL, 'ART_REST', '보고타 예술·휴식 투어: 황금 박물관 · 미술관', '세계 최대 규모의 황금 유물 전시 공간. 콜롬비아 현대미술 전시.', '유리잔 공방', '황금 박물관 — 세계 최대 규모의 황금 유물 전시 공간
+미술관 — 콜롬비아 현대미술 전시
+커피 워크숍 — 커피 로스팅과 테이스팅 체험', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 황금 박물관, 미술관, 커피 워크숍 (상품·브랜드는 가상)', 'ON_SALE', 106);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (106, 6, 7, 780000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 1, '보고타 도착', '인천에서 출발해 보고타에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 2, '황금 박물관', '세계 최대 규모의 황금 유물 전시 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 3, '미술관', '콜롬비아 현대미술 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 4, '커피 워크숍', '커피 로스팅과 테이스팅 체험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 5, '공연·전시 관람', '보고타에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (316, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (106, 9, 10, 1090000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 1, '보고타 도착', '인천에서 출발해 보고타에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 2, '황금 박물관', '세계 최대 규모의 황금 유물 전시 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 3, '미술관', '콜롬비아 현대미술 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 4, '커피 워크숍', '커피 로스팅과 테이스팅 체험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 5, '공연·전시 관람', '보고타에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 7, '근교 소도시 산책', '보고타 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (317, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (106, 13, 14, 1510000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 1, '보고타 도착', '인천에서 출발해 보고타에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 2, '황금 박물관', '세계 최대 규모의 황금 유물 전시 공간. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 3, '미술관', '콜롬비아 현대미술 전시. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 4, '커피 워크숍', '커피 로스팅과 테이스팅 체험. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 5, '공연·전시 관람', '보고타에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 7, '근교 소도시 산책', '보고타 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 12, '미술관 한 곳 더', '황금 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (318, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 96, NULL, 'ART_REST', '키토 예술·휴식 투어: 콜로니얼 구도시 · 샌프란시스코 성당', '유네스코 세계유산으로 지정된 역사 지구. 정교한 목재 조각이 있는 종교 건축물.', NULL, '콜로니얼 구도시 — 유네스코 세계유산으로 지정된 역사 지구
+샌프란시스코 성당 — 정교한 목재 조각이 있는 종교 건축물
+원주민 문화 — 안데스 원주민 전통 예술과 수공예', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 콜로니얼 구도시, 샌프란시스코 성당, 원주민 문화 (상품·브랜드는 가상)', 'ON_SALE', 107);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (107, 6, 7, 760000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 1, '키토 도착', '인천에서 출발해 키토에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 2, '콜로니얼 구도시', '유네스코 세계유산으로 지정된 역사 지구. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 3, '샌프란시스코 성당', '정교한 목재 조각이 있는 종교 건축물. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 4, '원주민 문화', '안데스 원주민 전통 예술과 수공예. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 5, '공연·전시 관람', '키토에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (319, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (107, 9, 10, 1070000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 1, '키토 도착', '인천에서 출발해 키토에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 2, '콜로니얼 구도시', '유네스코 세계유산으로 지정된 역사 지구. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 3, '샌프란시스코 성당', '정교한 목재 조각이 있는 종교 건축물. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 4, '원주민 문화', '안데스 원주민 전통 예술과 수공예. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 5, '공연·전시 관람', '키토에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 7, '근교 소도시 산책', '키토 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (320, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (107, 13, 14, 1480000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 1, '키토 도착', '인천에서 출발해 키토에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 2, '콜로니얼 구도시', '유네스코 세계유산으로 지정된 역사 지구. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 3, '샌프란시스코 성당', '정교한 목재 조각이 있는 종교 건축물. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 4, '원주민 문화', '안데스 원주민 전통 예술과 수공예. 공연이나 전시 일정에 맞춰 관람 시간을 조정합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 5, '공연·전시 관람', '키토에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 7, '근교 소도시 산책', '키토 근교의 작은 마을을 산책하며 갤러리와 공방을 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 8, '전통 체험 클래스', '현지 공예 또는 전통 문화 체험 수업에 참여해 작품을 만듭니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 9, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 산책로와 전시 정보를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 10, '정원·공원 힐링 산책', '도심 공원과 정원을 걸으며 사색하는 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 11, '야경과 재즈·클래식의 밤', '저녁에는 야경 명소를 보고 가벼운 공연을 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 12, '미술관 한 곳 더', '콜로니얼 구도시 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (321, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 97, NULL, 'SPORTS_ACTIVITY', '브리즈번 스포츠·액티비티 투어: 해변 스포츠 · 스토리 브릿지 클라이밍', '브리즈번의 해안에서의 수상 활동. 유명 다리 위로 올라가는 스릴.', '거코 스포츠', '해변 스포츠 — 브리즈번의 해안에서의 수상 활동
+스토리 브릿지 클라이밍 — 유명 다리 위로 올라가는 스릴
+패들보드 — 강 위에서의 여유로운 스포츠', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 해변 스포츠, 스토리 브릿지 클라이밍, 패들보드 (상품·브랜드는 가상)', 'ON_SALE', 108);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (108, 6, 7, 850000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 1, '브리즈번 도착', '인천에서 출발해 브리즈번에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 2, '해변 스포츠', '브리즈번의 해안에서의 수상 활동. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 3, '스토리 브릿지 클라이밍 체험', '유명 다리 위로 올라가는 스릴. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 4, '패들보드', '강 위에서의 여유로운 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 5, '근교 트레킹·야외 활동', '브리즈번 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (322, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (108, 9, 10, 1180000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 1, '브리즈번 도착', '인천에서 출발해 브리즈번에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 2, '해변 스포츠', '브리즈번의 해안에서의 수상 활동. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 3, '스토리 브릿지 클라이밍 체험', '유명 다리 위로 올라가는 스릴. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 4, '패들보드', '강 위에서의 여유로운 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 5, '근교 트레킹·야외 활동', '브리즈번 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 9, '해변 스포츠 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (323, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (108, 13, 14, 1630000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 1, '브리즈번 도착', '인천에서 출발해 브리즈번에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 2, '해변 스포츠', '브리즈번의 해안에서의 수상 활동. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 3, '스토리 브릿지 클라이밍 체험', '유명 다리 위로 올라가는 스릴. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 4, '패들보드', '강 위에서의 여유로운 스포츠. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 5, '근교 트레킹·야외 활동', '브리즈번 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 9, '해변 스포츠 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (324, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 98, NULL, 'FOOD_DRINK', '퍼스 미식·주류 투어: 서부 로브스터 · 샤크 베이 가리비', '서호주의 명품 우럭 요리의 재료. 로트네스트 섬 근처에서 잡은 신선 가리비.', '한입 소스상회', '서부 로브스터 — 서호주의 명품 우럭 요리의 재료
+샤크 베이 가리비 — 로트네스트 섬 근처에서 잡은 신선 가리비
+마가렛 리버 와인 — 서호주의 최고 와인 생산지 와인', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 서부 로브스터, 샤크 베이 가리비, 마가렛 리버 와인 (상품·브랜드는 가상)', 'ON_SALE', 109);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (109, 6, 7, 780000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 1, '퍼스 도착', '인천에서 출발해 퍼스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 2, '서부 로브스터 탐방', '서호주의 명품 우럭 요리의 재료. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 3, '한입 소스상회 견학과 시음', '한입 소스상회(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 샤크 베이 가리비과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 4, '마가렛 리버 와인 체험', '서호주의 최고 와인 생산지 와인. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 5, '쿠킹 클래스', '현지 셰프에게 퍼스의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 6, '근교 산지 미식 여행', '퍼스 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (325, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (109, 9, 10, 1090000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 1, '퍼스 도착', '인천에서 출발해 퍼스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 2, '서부 로브스터 탐방', '서호주의 명품 우럭 요리의 재료. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 3, '한입 소스상회 견학과 시음', '한입 소스상회(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 샤크 베이 가리비과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 4, '마가렛 리버 와인 체험', '서호주의 최고 와인 생산지 와인. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 5, '쿠킹 클래스', '현지 셰프에게 퍼스의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 6, '근교 산지 미식 여행', '퍼스 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 7, '샤크 베이 가리비 깊이 보기', '로트네스트 섬 근처에서 잡은 신선 가리비. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (326, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (109, 13, 14, 1510000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 1, '퍼스 도착', '인천에서 출발해 퍼스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 2, '서부 로브스터 탐방', '서호주의 명품 우럭 요리의 재료. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 3, '한입 소스상회 견학과 시음', '한입 소스상회(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 샤크 베이 가리비과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 4, '마가렛 리버 와인 체험', '서호주의 최고 와인 생산지 와인. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 5, '쿠킹 클래스', '현지 셰프에게 퍼스의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 6, '근교 산지 미식 여행', '퍼스 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 7, '샤크 베이 가리비 깊이 보기', '로트네스트 섬 근처에서 잡은 신선 가리비. 전문 가이드의 설명과 함께 두 번째 코스를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 8, '시장 쇼핑과 자유 시간', '현지 시장과 상점가에서 기념품과 식재료를 둘러보고 자유 시간을 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 9, '로컬 맛집 릴레이', '가이드가 고른 현지 단골 식당 세 곳을 이어서 맛보는 미식 산책입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 10, '디저트·카페 투어', '퍼스의 유명 디저트와 카페를 돌며 여유로운 오후를 보냅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 11, '현지 가정식 초대', '현지 가정집 식탁에서 가정식을 함께 먹으며 이야기를 나눕니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 99, NULL, 'SPORTS_ACTIVITY', '오클랜드 스포츠·액티비티 투어: 번지 점프 · 항해', '하버 브릿지에서 바다를 향해 뛰어내리기. 아메리카스 컵에 사용된 요트 경험.', '산들 트레킹', '번지 점프 — 하버 브릿지에서 바다를 향해 뛰어내리기
+항해 — 아메리카스 컵에 사용된 요트 경험
+서핑 — 오클랜드 북쪽 해역의 파도 타기', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 번지 점프, 항해, 서핑 (상품·브랜드는 가상)', 'ON_SALE', 110);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (110, 6, 7, 810000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 1, '오클랜드 도착', '인천에서 출발해 오클랜드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 2, '번지 점프', '하버 브릿지에서 바다를 향해 뛰어내리기. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 3, '항해 체험', '아메리카스 컵에 사용된 요트 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 4, '서핑', '오클랜드 북쪽 해역의 파도 타기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 5, '근교 트레킹·야외 활동', '오클랜드 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (328, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (110, 9, 10, 1140000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 1, '오클랜드 도착', '인천에서 출발해 오클랜드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 2, '번지 점프', '하버 브릿지에서 바다를 향해 뛰어내리기. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 3, '항해 체험', '아메리카스 컵에 사용된 요트 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 4, '서핑', '오클랜드 북쪽 해역의 파도 타기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 5, '근교 트레킹·야외 활동', '오클랜드 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 9, '번지 점프 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (329, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (110, 13, 14, 1570000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 1, '오클랜드 도착', '인천에서 출발해 오클랜드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 2, '번지 점프', '하버 브릿지에서 바다를 향해 뛰어내리기. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 3, '항해 체험', '아메리카스 컵에 사용된 요트 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 4, '서핑', '오클랜드 북쪽 해역의 파도 타기. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 5, '근교 트레킹·야외 활동', '오클랜드 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 9, '번지 점프 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (330, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 100, NULL, 'SPORTS_ACTIVITY', '나디 스포츠·액티비티 투어: 스노클링 · 섬 투어', '피지 섬 주변 산호초에서의 해양 생물 관찰. 야사와 군도의 다도해 여행.', NULL, '스노클링 — 피지 섬 주변 산호초에서의 해양 생물 관찰
+섬 투어 — 야사와 군도의 다도해 여행
+수상 스포츠 — 해변에서의 카약, 윈드서핑', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '국제선 항공권(해외 여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 스노클링, 섬 투어, 수상 스포츠 (상품·브랜드는 가상)', 'ON_SALE', 111);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (111, 6, 7, 810000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 1, '나디 도착', '인천에서 출발해 나디에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 2, '스노클링', '피지 섬 주변 산호초에서의 해양 생물 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 3, '섬 투어 체험', '야사와 군도의 다도해 여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 4, '수상 스포츠', '해변에서의 카약, 윈드서핑. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 5, '근교 트레킹·야외 활동', '나디 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (331, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (111, 9, 10, 1140000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 1, '나디 도착', '인천에서 출발해 나디에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 2, '스노클링', '피지 섬 주변 산호초에서의 해양 생물 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 3, '섬 투어 체험', '야사와 군도의 다도해 여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 4, '수상 스포츠', '해변에서의 카약, 윈드서핑. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 5, '근교 트레킹·야외 활동', '나디 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 9, '스노클링 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (332, 10, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (111, 13, 14, 1570000, 2, 20);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 1, '나디 도착', '인천에서 출발해 나디에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 2, '스노클링', '피지 섬 주변 산호초에서의 해양 생물 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 3, '섬 투어 체험', '야사와 군도의 다도해 여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 4, '수상 스포츠', '해변에서의 카약, 윈드서핑. 장비 대여와 안전 교육이 포함됩니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 5, '근교 트레킹·야외 활동', '나디 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 7, '체험 레슨', '현지 코치에게 짧은 레슨을 받고 미니 게임으로 마무리합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 8, '자유 일정과 휴식', '활동 사이 하루는 자유롭게 쉬며 근육을 풀 시간을 가집니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 9, '스노클링 심화 코스', '가이드와 함께 한 단계 높은 코스에 도전합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 10, '강변·해변 러닝과 요가', '아침 러닝이나 요가로 몸을 깨운 뒤 도시를 가볍게 둘러봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 11, '현지 팀 팬 모임', '현지 팬들과 함께 응원 문화를 체험하고 기념품을 고릅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 
 -- [M] 국내 투어: 10개 도시 × 3테마 (1박2일·2박3일·3박4일)
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 1, 'FOOD_DRINK', '경주 미식·주류 투어: 황남빵 · 경주 한우', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 40년 전통 한우 숯불구이 전문점.', '금빛밀 베이커리', '황남빵 — 1939년부터 만들어온 팥 앙금 경주 대표 간식
@@ -3486,19 +6721,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 황남빵, 경주 한우, 경주 콩국수 (상품·브랜드는 가상)', 'ON_SALE', 62);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (184, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (184, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 경주 한우과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 황남빵, 경주 한우, 경주 콩국수 (상품·브랜드는 가상)', 'ON_SALE', 112);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (334, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (334, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 2, 3, 150000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 3, 4, 200000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 경주 한우과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 1, 'SPORTS_ACTIVITY', '경주 스포츠·액티비티 투어: 불국사/석굴암 트레킹 · 안압지 도보 투어', '유네스코 유산 사찰로 가는 산길 등산. 신라시대 월정교와 주변 고분 연결 코스.', NULL, '불국사/석굴암 트레킹 — 유네스코 유산 사찰로 가는 산길 등산
 안압지 도보 투어 — 신라시대 월정교와 주변 고분 연결 코스
 대릉원 자전거 — 12만 평 고분 군집지 주변 자전거 타기', '현지 한국어 가이드 동행
@@ -3508,19 +6743,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 불국사/석굴암 트레킹, 안압지 도보 투어, 대릉원 자전거 (상품·브랜드는 가상)', 'ON_SALE', 63);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (63, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (187, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (63, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 2, '불국사/석굴암 트레킹', '유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (188, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (63, 3, 4, 230000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 2, '불국사/석굴암 트레킹', '유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 3, '안압지 도보 투어 체험', '신라시대 월정교와 주변 고분 연결 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 불국사/석굴암 트레킹, 안압지 도보 투어, 대릉원 자전거 (상품·브랜드는 가상)', 'ON_SALE', 113);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (113, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (337, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (337, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (113, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 2, '불국사/석굴암 트레킹', '유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (338, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (113, 3, 4, 230000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 2, '불국사/석굴암 트레킹', '유네스코 유산 사찰로 가는 산길 등산. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 3, '안압지 도보 투어 체험', '신라시대 월정교와 주변 고분 연결 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (339, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 1, 'ART_REST', '경주 예술·휴식 투어: 불국사 · 석굴암', '751년 창건 유네스코 세계문화유산 불교사찰. 774년 완성 신라 석조미술의 최고 걸작.', NULL, '불국사 — 751년 창건 유네스코 세계문화유산 불교사찰
 석굴암 — 774년 완성 신라 석조미술의 최고 걸작
 대릉원 — 23기 신라 고분 군집, 역사박물관 겸함', '현지 한국어 가이드 동행
@@ -3530,19 +6765,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 불국사, 석굴암, 대릉원 (상품·브랜드는 가상)', 'ON_SALE', 64);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 3, '석굴암', '774년 완성 신라 석조미술의 최고 걸작. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 불국사, 석굴암, 대릉원 (상품·브랜드는 가상)', 'ON_SALE', 114);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (114, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (340, 1, '경주 도착과 대표 체험', '서울·대전에서 출발해 경주에 도착합니다. 가이드와 만나 751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (340, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (114, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (341, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (114, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 1, '경주 도착', '서울·대전에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 3, '석굴암', '774년 완성 신라 석조미술의 최고 걸작. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'FOOD_DRINK', '강릉 미식·주류 투어: 초당순두부 · 활어회', '부드러운 순두부와 함께하는 한상차림 정식. 싱싱한 해산물 회 한상과 미역국.', '은하수 제면소', '초당순두부 — 부드러운 순두부와 함께하는 한상차림 정식
 활어회 — 싱싱한 해산물 회 한상과 미역국
 감자전 — 강릉 특산 감자로 만든 바삭한 부침', '현지 한국어 가이드 동행
@@ -3552,19 +6787,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 초당순두부, 활어회, 감자전 (상품·브랜드는 가상)', 'ON_SALE', 65);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (65, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (193, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (65, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (194, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (65, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 활어회과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (195, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 초당순두부, 활어회, 감자전 (상품·브랜드는 가상)', 'ON_SALE', 115);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (343, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (343, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 활어회과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'SPORTS_ACTIVITY', '강릉 스포츠·액티비티 투어: 정동진 해돋이 관광 · 경포호 자전거', '일출 열차 타고 보는 해변 일출 경험. 호수 주변 사이클링 코스와 해변 자전거.', NULL, '정동진 해돋이 관광 — 일출 열차 타고 보는 해변 일출 경험
 경포호 자전거 — 호수 주변 사이클링 코스와 해변 자전거
 스카이해변 서핑 — 초급 서핑 강습과 보드 체험 가능', '현지 한국어 가이드 동행
@@ -3574,19 +6809,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 정동진 해돋이 관광, 경포호 자전거, 스카이해변 서핑 (상품·브랜드는 가상)', 'ON_SALE', 66);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (66, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (196, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (66, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (197, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (66, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 3, '경포호 자전거 체험', '호수 주변 사이클링 코스와 해변 자전거. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (198, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 정동진 해돋이 관광, 경포호 자전거, 스카이해변 서핑 (상품·브랜드는 가상)', 'ON_SALE', 116);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (116, 1, 2, 120000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (346, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (346, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (116, 2, 3, 180000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (347, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (116, 3, 4, 240000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 3, '경포호 자전거 체험', '호수 주변 사이클링 코스와 해변 자전거. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'ART_REST', '강릉 예술·휴식 투어: 오죽헌 · 선교장', '신사임당 생가, 한옥 전통 건축미 체험. 400년 된 대저택, 한옥 전통생활 박물관.', '고요숲 스파', '오죽헌 — 신사임당 생가, 한옥 전통 건축미 체험
 선교장 — 400년 된 대저택, 한옥 전통생활 박물관
 경포대 — 조선시대 누정 건축, 호수 야경 감상지', '현지 한국어 가이드 동행
@@ -3596,19 +6831,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 오죽헌, 선교장, 경포대 (상품·브랜드는 가상)', 'ON_SALE', 67);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (67, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (199, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (67, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (200, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (67, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 3, '선교장', '400년 된 대저택, 한옥 전통생활 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 오죽헌, 선교장, 경포대 (상품·브랜드는 가상)', 'ON_SALE', 117);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (117, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (349, 1, '강릉 도착과 대표 체험', '서울·대전에서 출발해 강릉에 도착합니다. 가이드와 만나 신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (349, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (117, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (350, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (117, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 1, '강릉 도착', '서울·대전에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 3, '선교장', '400년 된 대저택, 한옥 전통생활 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 3, 'FOOD_DRINK', '속초 미식·주류 투어: 오징어 짬뽕 · 오징어순대', '통째로 한 마리 들어간 국물 국수. 호젓한 맛과 함께하는 아바이마을 별미.', '은하수 제면소', '오징어 짬뽕 — 통째로 한 마리 들어간 국물 국수
 오징어순대 — 호젓한 맛과 함께하는 아바이마을 별미
 아바이순대 — 함경도 실향민 음식 문화 대표 간식', '현지 한국어 가이드 동행
@@ -3618,19 +6853,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 오징어 짬뽕, 오징어순대, 아바이순대 (상품·브랜드는 가상)', 'ON_SALE', 68);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (68, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (202, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (202, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (68, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (203, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (68, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오징어순대과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (204, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 오징어 짬뽕, 오징어순대, 아바이순대 (상품·브랜드는 가상)', 'ON_SALE', 118);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (352, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (352, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오징어순대과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 3, 'SPORTS_ACTIVITY', '속초 스포츠·액티비티 투어: 설악산 케이블카 (권금성) · 설악산 트레킹', '등산 없이 정상 뷰 보기, 왕복 15분. 초급부터 고급까지 다양한 등산로.', '거코 스포츠', '설악산 케이블카 (권금성) — 등산 없이 정상 뷰 보기, 왕복 15분
 설악산 트레킹 — 초급부터 고급까지 다양한 등산로
 청초호 자전거 — 호수 주변 사이클링 및 조깅 코스', '현지 한국어 가이드 동행
@@ -3640,19 +6875,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 설악산 케이블카 (권금성), 설악산 트레킹, 청초호 자전거 (상품·브랜드는 가상)', 'ON_SALE', 69);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (69, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (205, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (69, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 2, '설악산 케이블카 (권금성)', '등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (206, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (69, 3, 4, 250000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 2, '설악산 케이블카 (권금성)', '등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 3, '설악산 트레킹 체험', '초급부터 고급까지 다양한 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (207, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 설악산 케이블카 (권금성), 설악산 트레킹, 청초호 자전거 (상품·브랜드는 가상)', 'ON_SALE', 119);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (119, 1, 2, 120000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (355, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (355, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (119, 2, 3, 180000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 2, '설악산 케이블카 (권금성)', '등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (356, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (119, 3, 4, 250000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 2, '설악산 케이블카 (권금성)', '등산 없이 정상 뷰 보기, 왕복 15분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 3, '설악산 트레킹 체험', '초급부터 고급까지 다양한 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (357, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 3, 'ART_REST', '속초 예술·휴식 투어: 아바이마을 · 설악사', '드라마 가을동화 촬영지, 함경도 풍정. 신라시대 창건 불교사찰, 계곡 경관.', NULL, '아바이마을 — 드라마 가을동화 촬영지, 함경도 풍정
 설악사 — 신라시대 창건 불교사찰, 계곡 경관
 엑스포 타워 야경 — 속초 전경과 해상 불빛 감상', '현지 한국어 가이드 동행
@@ -3662,19 +6897,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 아바이마을, 설악사, 엑스포 타워 야경 (상품·브랜드는 가상)', 'ON_SALE', 70);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (70, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (208, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (70, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (209, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (70, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 3, '설악사', '신라시대 창건 불교사찰, 계곡 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (210, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 아바이마을, 설악사, 엑스포 타워 야경 (상품·브랜드는 가상)', 'ON_SALE', 120);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (120, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (358, 1, '속초 도착과 대표 체험', '서울·대전에서 출발해 속초에 도착합니다. 가이드와 만나 드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (358, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (120, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (359, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (120, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 1, '속초 도착', '서울·대전에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 3, '설악사', '신라시대 창건 불교사찰, 계곡 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 4, 'FOOD_DRINK', '부산 미식·주류 투어: 밀면 · 돼지국밥', '돼지 사골 국물 국수, 부산 13대 향토음식. 서민의 음식, 남천동 밀면골목 특화.', '바람결 증류소', '밀면 — 돼지 사골 국물 국수, 부산 13대 향토음식
 돼지국밥 — 서민의 음식, 남천동 밀면골목 특화
 활어회 — 신선한 해산물 회 한상과 함께', '현지 한국어 가이드 동행
@@ -3684,19 +6919,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 밀면, 돼지국밥, 활어회 (상품·브랜드는 가상)', 'ON_SALE', 71);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (71, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (211, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (71, 2, 3, 140000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (212, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (71, 3, 4, 190000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돼지국밥과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 밀면, 돼지국밥, 활어회 (상품·브랜드는 가상)', 'ON_SALE', 121);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (361, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (361, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 2, 3, 140000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 3, 4, 190000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돼지국밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 4, 'SPORTS_ACTIVITY', '부산 스포츠·액티비티 투어: 광안리 해변 서핑 · 해운대 비치 배구', '초급 강습과 보드 대여 가능 비치. 모래해변에서 즐기는 스포츠 활동.', NULL, '광안리 해변 서핑 — 초급 강습과 보드 대여 가능 비치
 해운대 비치 배구 — 모래해변에서 즐기는 스포츠 활동
 미포 해안 트레킹 — 조개구이와 함께하는 해변 산책', '현지 한국어 가이드 동행
@@ -3706,19 +6941,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 광안리 해변 서핑, 해운대 비치 배구, 미포 해안 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 72);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (214, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (214, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 2, '광안리 해변 서핑', '초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 2, '광안리 해변 서핑', '초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 3, '해운대 비치 배구 체험', '모래해변에서 즐기는 스포츠 활동. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 광안리 해변 서핑, 해운대 비치 배구, 미포 해안 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 122);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (122, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (364, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (364, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (122, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 2, '광안리 해변 서핑', '초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (365, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (122, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 2, '광안리 해변 서핑', '초급 강습과 보드 대여 가능 비치. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 3, '해운대 비치 배구 체험', '모래해변에서 즐기는 스포츠 활동. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (366, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 4, 'ART_REST', '부산 예술·휴식 투어: 감천문화마을 · 용두산 공원', '색칠된 집들의 벽화 마을, 사진 명소. 항구 조망과 용두산 공중케이블카.', NULL, '감천문화마을 — 색칠된 집들의 벽화 마을, 사진 명소
 용두산 공원 — 항구 조망과 용두산 공중케이블카
 자갈치 시장 — 활어회 판매 모습 보기, 시장 문화체험', '현지 한국어 가이드 동행
@@ -3728,19 +6963,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 감천문화마을, 용두산 공원, 자갈치 시장 (상품·브랜드는 가상)', 'ON_SALE', 73);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (73, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (217, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (217, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (73, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (218, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (73, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 3, '용두산 공원', '항구 조망과 용두산 공중케이블카. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (219, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 감천문화마을, 용두산 공원, 자갈치 시장 (상품·브랜드는 가상)', 'ON_SALE', 123);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (123, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (367, 1, '부산 도착과 대표 체험', '서울·대전에서 출발해 부산에 도착합니다. 가이드와 만나 색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (367, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (123, 2, 3, 150000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (368, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (123, 3, 4, 200000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 1, '부산 도착', '서울·대전에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 3, '용두산 공원', '항구 조망과 용두산 공중케이블카. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'FOOD_DRINK', '제주 미식·주류 투어: 흑돼지 구이 · 고등어 & 성게', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 싱싱한 해산물 구이와 비빔밥.', '은하수 제면소', '흑돼지 구이 — 담백한 맛, 쫄깃한 식감의 제주 특산돼지
 고등어 & 성게 — 싱싱한 해산물 구이와 비빔밥
 전복 & 굴 — 소금 위에 구운 고급 해산물', '현지 한국어 가이드 동행
@@ -3750,19 +6985,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 흑돼지 구이, 고등어 & 성게, 전복 & 굴 (상품·브랜드는 가상)', 'ON_SALE', 74);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (74, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (220, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (74, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (221, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (74, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 고등어 & 성게과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 흑돼지 구이, 고등어 & 성게, 전복 & 굴 (상품·브랜드는 가상)', 'ON_SALE', 124);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (370, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (370, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 2, 3, 150000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 3, 4, 200000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 고등어 & 성게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'SPORTS_ACTIVITY', '제주 스포츠·액티비티 투어: 한라산 등산 · 올레길 도보', '백록담 정상 오르기, 약 5-6시간 소요. 27개 코스 437km 중 선택 도보여행.', NULL, '한라산 등산 — 백록담 정상 오르기, 약 5-6시간 소요
 올레길 도보 — 27개 코스 437km 중 선택 도보여행
 용머리 해안 트레킹 — 주상절리 경관 따라가는 1시간 등산', '현지 한국어 가이드 동행
@@ -3772,19 +7007,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 한라산 등산, 올레길 도보, 용머리 해안 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 75);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 3, 4, 230000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 3, '올레길 도보 체험', '27개 코스 437km 중 선택 도보여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 한라산 등산, 올레길 도보, 용머리 해안 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 125);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (125, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (373, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (373, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (125, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (374, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (125, 3, 4, 230000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 3, '올레길 도보 체험', '27개 코스 437km 중 선택 도보여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'ART_REST', '제주 예술·휴식 투어: 용머리 주상절리 · 세계지질공원 경관', '120만년 화산으로 만든 기암괴석. 한라산, 용머리 등 지질유산 감상.', '고요숲 스파', '용머리 주상절리 — 120만년 화산으로 만든 기암괴석
 세계지질공원 경관 — 한라산, 용머리 등 지질유산 감상
 제주 민속박물관 — 제주인의 전통생활 문화 전시', '현지 한국어 가이드 동행
@@ -3794,19 +7029,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 용머리 주상절리, 세계지질공원 경관, 제주 민속박물관 (상품·브랜드는 가상)', 'ON_SALE', 76);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 3, '세계지질공원 경관', '한라산, 용머리 등 지질유산 감상. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 용머리 주상절리, 세계지질공원 경관, 제주 민속박물관 (상품·브랜드는 가상)', 'ON_SALE', 126);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (126, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (376, 1, '제주 도착과 대표 체험', '서울·대전에서 출발해 제주에 도착합니다. 가이드와 만나 120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (376, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (126, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (377, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (126, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 1, '제주 도착', '서울·대전에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 3, '세계지질공원 경관', '한라산, 용머리 등 지질유산 감상. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'FOOD_DRINK', '전주 미식·주류 투어: 전주 비빔밥 · 콩나물국밥', '채소 많고 정성 들인 전주식 비빔밥. 1956년 전통, 콩나물 가득 한 국밥.', '새벽 커피로스터스', '전주 비빔밥 — 채소 많고 정성 들인 전주식 비빔밥
 콩나물국밥 — 1956년 전통, 콩나물 가득 한 국밥
 막걸리 & 안주 — 300m 막걸리 골목, 푸짐한 반찬', '현지 한국어 가이드 동행
@@ -3816,19 +7051,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 전주 비빔밥, 콩나물국밥, 막걸리 & 안주 (상품·브랜드는 가상)', 'ON_SALE', 77);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (77, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (229, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (77, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (230, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (77, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 콩나물국밥과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 전주 비빔밥, 콩나물국밥, 막걸리 & 안주 (상품·브랜드는 가상)', 'ON_SALE', 127);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (379, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (379, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 콩나물국밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'SPORTS_ACTIVITY', '전주 스포츠·액티비티 투어: 한옥마을 도보 · 덕진공원 자전거', '800채 이상 한옥 문화유산 도보투어. 연못 주변 산책로 자전거 코스.', '산들 트레킹', '한옥마을 도보 — 800채 이상 한옥 문화유산 도보투어
 덕진공원 자전거 — 연못 주변 산책로 자전거 코스
 경기전 주변 도보 — 태조 어진 봉안처 주변 1시간 투어', '현지 한국어 가이드 동행
@@ -3838,19 +7073,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 한옥마을 도보, 덕진공원 자전거, 경기전 주변 도보 (상품·브랜드는 가상)', 'ON_SALE', 78);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 3, '덕진공원 자전거 체험', '연못 주변 산책로 자전거 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 한옥마을 도보, 덕진공원 자전거, 경기전 주변 도보 (상품·브랜드는 가상)', 'ON_SALE', 128);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (128, 1, 2, 120000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (382, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (382, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (128, 2, 3, 180000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (383, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (128, 3, 4, 240000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 3, '덕진공원 자전거 체험', '연못 주변 산책로 자전거 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'ART_REST', '전주 예술·휴식 투어: 경기전 · 전동성당', '태조 이성계 어진 봉안, 조선 최고 유산. 한옥마을 상징 천주교성당, 고딕양식.', '유리잔 공방', '경기전 — 태조 이성계 어진 봉안, 조선 최고 유산
 전동성당 — 한옥마을 상징 천주교성당, 고딕양식
 전주 한옥마을 — 1910년부터 근대주거 발달과정 보존', '현지 한국어 가이드 동행
@@ -3860,19 +7095,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 경기전, 전동성당, 전주 한옥마을 (상품·브랜드는 가상)', 'ON_SALE', 79);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 3, '전동성당', '한옥마을 상징 천주교성당, 고딕양식. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 경기전, 전동성당, 전주 한옥마을 (상품·브랜드는 가상)', 'ON_SALE', 129);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (129, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (385, 1, '전주 도착과 대표 체험', '서울·대전에서 출발해 전주에 도착합니다. 가이드와 만나 태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (385, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (129, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (386, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (129, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 1, '전주 도착', '서울·대전에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 3, '전동성당', '한옥마을 상징 천주교성당, 고딕양식. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 7, 'FOOD_DRINK', '여수 미식·주류 투어: 갓김치 & 게장백반 · 삼치 선어회', '여수 명물 갓김치와 간장게장 한상. 동해 특산 삼치 활어회 한상차림.', '참나무 위스키', '갓김치 & 게장백반 — 여수 명물 갓김치와 간장게장 한상
 삼치 선어회 — 동해 특산 삼치 활어회 한상차림
 돌문어 요리 — 돌산 신기항 싱싱한 돌문어 회, 샤부샤부', '현지 한국어 가이드 동행
@@ -3882,19 +7117,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 갓김치 & 게장백반, 삼치 선어회, 돌문어 요리 (상품·브랜드는 가상)', 'ON_SALE', 80);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (80, 1, 2, 90000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (238, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (80, 2, 3, 140000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (239, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (80, 3, 4, 190000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 삼치 선어회과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (240, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 갓김치 & 게장백반, 삼치 선어회, 돌문어 요리 (상품·브랜드는 가상)', 'ON_SALE', 130);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 1, 2, 90000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (388, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (388, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 2, 3, 140000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 3, 4, 190000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 삼치 선어회과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 7, 'SPORTS_ACTIVITY', '여수 스포츠·액티비티 투어: 여수 해상케이블카 · 향일암 일출 관광', '국내 첫 해상 케이블카, 투명 바닥 체험. 연간 100만명 방문, 일출제례 공연.', NULL, '여수 해상케이블카 — 국내 첫 해상 케이블카, 투명 바닥 체험
 향일암 일출 관광 — 연간 100만명 방문, 일출제례 공연
 다도해 스카이해변 산책 — 여러 섬 연결한 갯길 도보 체험', '현지 한국어 가이드 동행
@@ -3904,19 +7139,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 여수 해상케이블카, 향일암 일출 관광, 다도해 스카이해변 산책 (상품·브랜드는 가상)', 'ON_SALE', 81);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (81, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (241, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (81, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 2, '여수 해상케이블카', '국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (242, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (81, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 2, '여수 해상케이블카', '국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 3, '향일암 일출 관광 체험', '연간 100만명 방문, 일출제례 공연. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (243, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 여수 해상케이블카, 향일암 일출 관광, 다도해 스카이해변 산책 (상품·브랜드는 가상)', 'ON_SALE', 131);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (131, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (391, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (391, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (131, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 2, '여수 해상케이블카', '국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (392, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (131, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 2, '여수 해상케이블카', '국내 첫 해상 케이블카, 투명 바닥 체험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 3, '향일암 일출 관광 체험', '연간 100만명 방문, 일출제례 공연. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (393, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 7, 'ART_REST', '여수 예술·휴식 투어: 여수 이순신광장 · 여수국립공원 절경', '해상 불꽃쇼와 메인 공연무대. 다도해 경관의 천 개 섬 뷰.', NULL, '여수 이순신광장 — 해상 불꽃쇼와 메인 공연무대
 여수국립공원 절경 — 다도해 경관의 천 개 섬 뷰
 향일암 관음도량 — 영험한 도량, 기도 명소로 알려짐', '현지 한국어 가이드 동행
@@ -3926,19 +7161,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 여수 이순신광장, 여수국립공원 절경, 향일암 관음도량 (상품·브랜드는 가상)', 'ON_SALE', 82);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (82, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (244, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (82, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (245, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (82, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 3, '여수국립공원 절경', '다도해 경관의 천 개 섬 뷰. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 여수 이순신광장, 여수국립공원 절경, 향일암 관음도량 (상품·브랜드는 가상)', 'ON_SALE', 132);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (132, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (394, 1, '여수 도착과 대표 체험', '서울·대전에서 출발해 여수에 도착합니다. 가이드와 만나 해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (394, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (132, 2, 3, 150000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (395, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (132, 3, 4, 200000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 1, '여수 도착', '서울·대전에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 3, '여수국립공원 절경', '다도해 경관의 천 개 섬 뷰. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'FOOD_DRINK', '순천 미식·주류 투어: 짱뚱어탕 · 장어 & 꼼장어', '순천만 갯벌 물고기, 된장 시래기 국물. 장어탕, 꼼장어 구이 전문점 풍부.', '금빛밀 베이커리', '짱뚱어탕 — 순천만 갯벌 물고기, 된장 시래기 국물
 장어 & 꼼장어 — 장어탕, 꼼장어 구이 전문점 풍부
 꼬막 — 갯벌 뻘에서 나는 순천 대표 특산물', '현지 한국어 가이드 동행
@@ -3948,19 +7183,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 짱뚱어탕, 장어 & 꼼장어, 꼬막 (상품·브랜드는 가상)', 'ON_SALE', 83);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (83, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (247, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (83, 2, 3, 140000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (248, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (83, 3, 4, 190000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 장어 & 꼼장어과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (249, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 짱뚱어탕, 장어 & 꼼장어, 꼬막 (상품·브랜드는 가상)', 'ON_SALE', 133);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (397, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (397, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 2, 3, 140000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 3, 4, 190000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 장어 & 꼼장어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'SPORTS_ACTIVITY', '순천 스포츠·액티비티 투어: 순천만 습지 자전거 · 스카이큐브 (무인궤도열차)', '광활한 습지 자전거 도로, 생태 관찰. 정원과 습지 연결 선형 경험.', NULL, '순천만 습지 자전거 — 광활한 습지 자전거 도로, 생태 관찰
 스카이큐브 (무인궤도열차) — 정원과 습지 연결 선형 경험
 조계산 트레킹 — 초급-중급 등산로, 사찰 경유', '현지 한국어 가이드 동행
@@ -3970,19 +7205,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 순천만 습지 자전거, 스카이큐브 (무인궤도열차), 조계산 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 84);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (84, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (250, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (84, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (251, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (84, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 3, '스카이큐브 (무인궤도열차) 체험', '정원과 습지 연결 선형 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (252, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 순천만 습지 자전거, 스카이큐브 (무인궤도열차), 조계산 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 134);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (134, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (400, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (400, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (134, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (401, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (134, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 3, '스카이큐브 (무인궤도열차) 체험', '정원과 습지 연결 선형 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'ART_REST', '순천 예술·휴식 투어: 순천만국가정원 · 선암사', '2013년 박람회지, 연간 500만명 방문. 무지개 승선교, 2018년 세계유산 등재.', '달무리 공연장', '순천만국가정원 — 2013년 박람회지, 연간 500만명 방문
 선암사 — 무지개 승선교, 2018년 세계유산 등재
 송광사 — 16국사 배출, 승보사찰 천년 고찰', '현지 한국어 가이드 동행
@@ -3992,19 +7227,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 순천만국가정원, 선암사, 송광사 (상품·브랜드는 가상)', 'ON_SALE', 85);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (85, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (253, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (85, 2, 3, 150000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (254, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (85, 3, 4, 200000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 3, '선암사', '무지개 승선교, 2018년 세계유산 등재. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (255, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 순천만국가정원, 선암사, 송광사 (상품·브랜드는 가상)', 'ON_SALE', 135);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (135, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (403, 1, '순천 도착과 대표 체험', '서울·대전에서 출발해 순천에 도착합니다. 가이드와 만나 2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (403, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (135, 2, 3, 150000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (404, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (135, 3, 4, 200000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 1, '순천 도착', '서울·대전에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 3, '선암사', '무지개 승선교, 2018년 세계유산 등재. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'FOOD_DRINK', '통영 미식·주류 투어: 통영 굴 요리 · 멍게비빔밥', '국내 80% 생산, 굴구이, 그라탱, 파스타. 멍게, 해초, 계란 올린 다채로운 비빔밥.', '푸른보리 양조장', '통영 굴 요리 — 국내 80% 생산, 굴구이, 그라탱, 파스타
 멍게비빔밥 — 멍게, 해초, 계란 올린 다채로운 비빔밥
 도다리 쑥국 — 봄 별미, 도다리 살 넉넉한 계절 국', '현지 한국어 가이드 동행
@@ -4014,19 +7249,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 통영 굴 요리, 멍게비빔밥, 도다리 쑥국 (상품·브랜드는 가상)', 'ON_SALE', 86);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (86, 1, 2, 100000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (256, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (86, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (257, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (86, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멍게비빔밥과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 통영 굴 요리, 멍게비빔밥, 도다리 쑥국 (상품·브랜드는 가상)', 'ON_SALE', 136);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (406, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (406, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멍게비빔밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'SPORTS_ACTIVITY', '통영 스포츠·액티비티 투어: 통영 케이블카 · 미륵산 트레킹', '국내 최장 1975m, 미륵산 정상 뷰. 초급-중급 코스, 다도해 조망.', NULL, '통영 케이블카 — 국내 최장 1975m, 미륵산 정상 뷰
 미륵산 트레킹 — 초급-중급 코스, 다도해 조망
 스카이라인 루지 — 1.5km 슬로프 루지, 해산 경관', '현지 한국어 가이드 동행
@@ -4036,19 +7271,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 통영 케이블카, 미륵산 트레킹, 스카이라인 루지 (상품·브랜드는 가상)', 'ON_SALE', 87);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (87, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (259, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (87, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (260, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (87, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 3, '미륵산 트레킹 체험', '초급-중급 코스, 다도해 조망. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 통영 케이블카, 미륵산 트레킹, 스카이라인 루지 (상품·브랜드는 가상)', 'ON_SALE', 137);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (137, 1, 2, 120000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (409, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (409, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (137, 2, 3, 180000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (410, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (137, 3, 4, 240000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 3, '미륵산 트레킹 체험', '초급-중급 코스, 다도해 조망. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'ART_REST', '통영 예술·휴식 투어: 동피랑 벽화마을 · 세병관', '색칠된 벽화마을, 사진 명소 최고. 임진왜란 당시 삼도수군통제사영 유적.', '달무리 공연장', '동피랑 벽화마을 — 색칠된 벽화마을, 사진 명소 최고
 세병관 — 임진왜란 당시 삼도수군통제사영 유적
 중앙해상권 유적 — 충렬사, 향토역사관 임진왜란 역사', '현지 한국어 가이드 동행
@@ -4058,19 +7293,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 동피랑 벽화마을, 세병관, 중앙해상권 유적 (상품·브랜드는 가상)', 'ON_SALE', 88);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (88, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (262, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (88, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (263, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (88, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 3, '세병관', '임진왜란 당시 삼도수군통제사영 유적. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 동피랑 벽화마을, 세병관, 중앙해상권 유적 (상품·브랜드는 가상)', 'ON_SALE', 138);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (138, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (412, 1, '통영 도착과 대표 체험', '서울·대전에서 출발해 통영에 도착합니다. 가이드와 만나 색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (412, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (138, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (413, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (138, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 1, '통영 도착', '서울·대전에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 3, '세병관', '임진왜란 당시 삼도수군통제사영 유적. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'FOOD_DRINK', '단양 미식·주류 투어: 더덕 (산나물) · 곤드레 돌판밥', '산속 약초, 살짝 쪄먹는 건강식. 더덕 마늘과 함께 돌판에 구운 밥.', '금빛밀 베이커리', '더덕 (산나물) — 산속 약초, 살짝 쪄먹는 건강식
 곤드레 돌판밥 — 더덕 마늘과 함께 돌판에 구운 밥
 메기 매운탕 — 남한강 토종 메기 국물 진한 매운탕', '현지 한국어 가이드 동행
@@ -4080,19 +7315,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 더덕 (산나물), 곤드레 돌판밥, 메기 매운탕 (상품·브랜드는 가상)', 'ON_SALE', 89);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (89, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (265, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (89, 2, 3, 160000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (266, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (89, 3, 4, 210000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 곤드레 돌판밥과 어울리는 한 잔을 곁들입니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (267, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 더덕 (산나물), 곤드레 돌판밥, 메기 매운탕 (상품·브랜드는 가상)', 'ON_SALE', 139);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (415, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (415, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 곤드레 돌판밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'SPORTS_ACTIVITY', '단양 스포츠·액티비티 투어: 도담삼봉 유람선 · 구담봉 산악 등산', '세 봉우리 경관 보트 투어, 30분. 거북 모양 기암, 초급 등산로.', '산들 트레킹', '도담삼봉 유람선 — 세 봉우리 경관 보트 투어, 30분
 구담봉 산악 등산 — 거북 모양 기암, 초급 등산로
 등선폭포 트레킹 — 계곡 물소리 따라 1시간 등산', '현지 한국어 가이드 동행
@@ -4102,19 +7337,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 도담삼봉 유람선, 구담봉 산악 등산, 등선폭포 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 90);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (90, 1, 2, 120000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (268, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (90, 2, 3, 180000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (269, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (90, 3, 4, 240000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 3, '구담봉 산악 등산 체험', '거북 모양 기암, 초급 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 도담삼봉 유람선, 구담봉 산악 등산, 등선폭포 트레킹 (상품·브랜드는 가상)', 'ON_SALE', 140);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (140, 1, 2, 120000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (418, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (418, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (140, 2, 3, 180000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (419, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (140, 3, 4, 240000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 3, '구담봉 산악 등산 체험', '거북 모양 기암, 초급 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'ART_REST', '단양 예술·휴식 투어: 단양팔경 · 도담삼봉 풍경', '도담삼봉, 구담봉 등 8대 절경 관광. 남한강 위 세 봉우리 경관.', '고요숲 스파', '단양팔경 — 도담삼봉, 구담봉 등 8대 절경 관광
 도담삼봉 풍경 — 남한강 위 세 봉우리 경관
 선암계곡 경관 — 맑은 계곡물 따라 가는 절경 산책', '현지 한국어 가이드 동행
@@ -4124,19 +7359,19 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 호텔 숙박(호텔 메뉴에서 별도 선택)
 개인 경비와 쇼핑
 여행자 보험
-선택 관광과 가이드 팁', '웹 조사 참고: 단양팔경, 도담삼봉 풍경, 선암계곡 경관 (상품·브랜드는 가상)', 'ON_SALE', 91);
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 1, 2, 110000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 2, 3, 170000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 3, 4, 220000, 2, 30);
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 3, '도담삼봉 풍경', '남한강 위 세 봉우리 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+선택 관광과 가이드 팁', '웹 조사 참고: 단양팔경, 도담삼봉 풍경, 선암계곡 경관 (상품·브랜드는 가상)', 'ON_SALE', 141);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (141, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (421, 1, '단양 도착과 대표 체험', '서울·대전에서 출발해 단양에 도착합니다. 가이드와 만나 도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (421, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (141, 2, 3, 170000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (422, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (141, 3, 4, 220000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 1, '단양 도착', '서울·대전에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 3, '도담삼봉 풍경', '남한강 위 세 봉우리 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 
 -- [N] 호텔: 해외 3개씩(이달의 기획·베스트셀러 6곳은 7개), 국내 도시 3개씩
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 스테이 호텔', 3, '공항 인근', '파리 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 1);
@@ -4310,36 +7545,186 @@ INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenitie
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 스테이 호텔', 3, '공항 인근', '괌 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 169);
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 플라자 호텔', 4, '공원 옆', '괌 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 210000, 'ON_SALE', 170);
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 그랜드 호텔', 5, '쇼핑가', '괌 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 400000, 'ON_SALE', 171);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 시티 인', 3, '공항 인근', '경주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 172);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 센트럴 호텔', 4, '시내 중심', '경주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 110000, 'ON_SALE', 173);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 로열 팰리스', 5, '시내 중심', '경주 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 174);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 파크 호텔', 3, '구시가지', '강릉 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 175);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 가든 호텔', 4, '쇼핑가', '강릉 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 120000, 'ON_SALE', 176);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 로열 팰리스', 5, '역 인근', '강릉 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 177);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 파크 호텔', 3, '공원 옆', '속초 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 178);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 센트럴 호텔', 4, '역 인근', '속초 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 179);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 로열 팰리스', 5, '공항 인근', '속초 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 180);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 시티 인', 3, '시내 중심', '부산 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 181);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 가든 호텔', 4, '쇼핑가', '부산 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 182);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 오션 리조트', 5, '역 인근', '부산 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 210000, 'ON_SALE', 183);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 파크 호텔', 3, '해변·항구', '제주 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 60000, 'ON_SALE', 184);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 가든 호텔', 4, '시내 중심', '제주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 185);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 로열 팰리스', 5, '역 인근', '제주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 210000, 'ON_SALE', 186);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 시티 인', 3, '공항 인근', '전주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 187);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 가든 호텔', 4, '공항 인근', '전주 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 188);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 그랜드 호텔', 5, '역 인근', '전주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 200000, 'ON_SALE', 189);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 시티 인', 3, '공항 인근', '여수 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 190);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 센트럴 호텔', 4, '시내 중심', '여수 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 191);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 그랜드 호텔', 5, '쇼핑가', '여수 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 210000, 'ON_SALE', 192);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 스테이 호텔', 3, '공원 옆', '순천 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 193);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 가든 호텔', 4, '구시가지', '순천 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 194);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 그랜드 호텔', 5, '쇼핑가', '순천 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 220000, 'ON_SALE', 195);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 시티 인', 3, '해변·항구', '통영 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 196);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 센트럴 호텔', 4, '공원 옆', '통영 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 100000, 'ON_SALE', 197);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 오션 리조트', 5, '공항 인근', '통영 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 200000, 'ON_SALE', 198);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 파크 호텔', 3, '역 인근', '단양 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 70000, 'ON_SALE', 199);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 가든 호텔', 4, '공항 인근', '단양 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 200);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 로열 팰리스', 5, '시내 중심', '단양 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 200000, 'ON_SALE', 201);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 스테이 호텔', 3, '쇼핑가', '마닐라 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 172);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 플라자 호텔', 4, '쇼핑가', '마닐라 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 173);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 그랜드 호텔', 5, '공원 옆', '마닐라 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 174);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 파크 호텔', 3, '구시가지', '델리 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 175);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 플라자 호텔', 4, '역 인근', '델리 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 176);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 로열 팰리스', 5, '역 인근', '델리 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 280000, 'ON_SALE', 177);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 파크 호텔', 3, '시내 중심', '뭄바이 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 178);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 플라자 호텔', 4, '공항 인근', '뭄바이 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 179);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 로열 팰리스', 5, '구시가지', '뭄바이 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 280000, 'ON_SALE', 180);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 시티 인', 3, '쇼핑가', '방갈로르 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 80000, 'ON_SALE', 181);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 센트럴 호텔', 4, '시내 중심', '방갈로르 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 182);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 오션 리조트', 5, '역 인근', '방갈로르 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 183);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 파크 호텔', 3, '쇼핑가', '콜롬보 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 184);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 가든 호텔', 4, '공항 인근', '콜롬보 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 185);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 그랜드 호텔', 5, '공항 인근', '콜롬보 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 186);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 파크 호텔', 3, '공항 인근', '카트만두 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 187);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 가든 호텔', 4, '공원 옆', '카트만두 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 188);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 그랜드 호텔', 5, '공원 옆', '카트만두 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 189);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 시티 인', 3, '해변·항구', '울란바토르 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 190);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 센트럴 호텔', 4, '구시가지', '울란바토르 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 191);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 로열 팰리스', 5, '공원 옆', '울란바토르 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 300000, 'ON_SALE', 192);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 시티 인', 3, '시내 중심', '알마티 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 193);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 플라자 호텔', 4, '구시가지', '알마티 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 194);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 로열 팰리스', 5, '역 인근', '알마티 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 290000, 'ON_SALE', 195);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 시티 인', 3, '공항 인근', '타슈켄트 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 80000, 'ON_SALE', 196);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 가든 호텔', 4, '구시가지', '타슈켄트 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 197);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 로열 팰리스', 5, '시내 중심', '타슈켄트 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 290000, 'ON_SALE', 198);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 시티 인', 3, '쇼핑가', '자카르타 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 199);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 가든 호텔', 4, '공원 옆', '자카르타 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 200);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 그랜드 호텔', 5, '공항 인근', '자카르타 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 290000, 'ON_SALE', 201);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 파크 호텔', 3, '역 인근', '광저우 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 202);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 플라자 호텔', 4, '해변·항구', '광저우 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 203);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 오션 리조트', 5, '시내 중심', '광저우 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 300000, 'ON_SALE', 204);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 시티 인', 3, '구시가지', '청두 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 205);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 가든 호텔', 4, '역 인근', '청두 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 206);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 로열 팰리스', 5, '시내 중심', '청두 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 290000, 'ON_SALE', 207);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 시티 인', 3, '시내 중심', '도하 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 208);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 가든 호텔', 4, '쇼핑가', '도하 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 200000, 'ON_SALE', 209);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 오션 리조트', 5, '구시가지', '도하 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 350000, 'ON_SALE', 210);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 시티 인', 3, '구시가지', '리야드 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 211);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 센트럴 호텔', 4, '해변·항구', '리야드 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 180000, 'ON_SALE', 212);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 오션 리조트', 5, '구시가지', '리야드 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 350000, 'ON_SALE', 213);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 시티 인', 3, '쇼핑가', '텔아비브 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 214);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 플라자 호텔', 4, '역 인근', '텔아비브 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 200000, 'ON_SALE', 215);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 오션 리조트', 5, '공항 인근', '텔아비브 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 360000, 'ON_SALE', 216);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 스테이 호텔', 3, '시내 중심', '제다 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 217);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 센트럴 호텔', 4, '역 인근', '제다 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 190000, 'ON_SALE', 218);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 로열 팰리스', 5, '시내 중심', '제다 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 350000, 'ON_SALE', 219);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 스테이 호텔', 3, '해변·항구', '프랑크푸르트 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 220);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 플라자 호텔', 4, '공원 옆', '프랑크푸르트 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 221);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 그랜드 호텔', 5, '시내 중심', '프랑크푸르트 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 390000, 'ON_SALE', 222);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 파크 호텔', 3, '쇼핑가', '취리히 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 223);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 센트럴 호텔', 4, '공원 옆', '취리히 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 210000, 'ON_SALE', 224);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 그랜드 호텔', 5, '역 인근', '취리히 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 400000, 'ON_SALE', 225);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 시티 인', 3, '구시가지', '부다페스트 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 226);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 가든 호텔', 4, '구시가지', '부다페스트 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 230000, 'ON_SALE', 227);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 그랜드 호텔', 5, '해변·항구', '부다페스트 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 228);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 파크 호텔', 3, '역 인근', '바르샤바 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 229);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 센트럴 호텔', 4, '시내 중심', '바르샤바 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 230);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 오션 리조트', 5, '해변·항구', '바르샤바 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 390000, 'ON_SALE', 231);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 시티 인', 3, '구시가지', '코펜하겐 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 130000, 'ON_SALE', 232);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 플라자 호텔', 4, '시내 중심', '코펜하겐 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 233);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 그랜드 호텔', 5, '공항 인근', '코펜하겐 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 234);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 스테이 호텔', 3, '역 인근', '스톡홀름 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 235);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 센트럴 호텔', 4, '쇼핑가', '스톡홀름 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 236);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 오션 리조트', 5, '공원 옆', '스톡홀름 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 237);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 스테이 호텔', 3, '쇼핑가', '오슬로 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 238);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 가든 호텔', 4, '구시가지', '오슬로 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 239);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 그랜드 호텔', 5, '역 인근', '오슬로 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 240);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 시티 인', 3, '쇼핑가', '헬싱키 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 241);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 플라자 호텔', 4, '역 인근', '헬싱키 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 242);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 그랜드 호텔', 5, '역 인근', '헬싱키 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 243);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 스테이 호텔', 3, '시내 중심', '더블린 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 244);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 가든 호텔', 4, '공원 옆', '더블린 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 245);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 로열 팰리스', 5, '쇼핑가', '더블린 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 390000, 'ON_SALE', 246);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 시티 인', 3, '공항 인근', '아테네 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 247);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 플라자 호텔', 4, '공항 인근', '아테네 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 248);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 오션 리조트', 5, '쇼핑가', '아테네 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 400000, 'ON_SALE', 249);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 파크 호텔', 3, '시내 중심', '나이로비 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 250);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 가든 호텔', 4, '역 인근', '나이로비 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 180000, 'ON_SALE', 251);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 오션 리조트', 5, '공원 옆', '나이로비 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 330000, 'ON_SALE', 252);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 스테이 호텔', 3, '쇼핑가', '요하네스버그 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 90000, 'ON_SALE', 253);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 가든 호텔', 4, '해변·항구', '요하네스버그 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 254);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 오션 리조트', 5, '공원 옆', '요하네스버그 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 320000, 'ON_SALE', 255);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 스테이 호텔', 3, '구시가지', '카사블랑카 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 90000, 'ON_SALE', 256);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 플라자 호텔', 4, '쇼핑가', '카사블랑카 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 180000, 'ON_SALE', 257);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 그랜드 호텔', 5, '역 인근', '카사블랑카 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 310000, 'ON_SALE', 258);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 시티 인', 3, '쇼핑가', '아디스아바바 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 259);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 센트럴 호텔', 4, '공원 옆', '아디스아바바 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 180000, 'ON_SALE', 260);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 로열 팰리스', 5, '해변·항구', '아디스아바바 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 261);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 스테이 호텔', 3, '쇼핑가', '다르에스살람 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 110000, 'ON_SALE', 262);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 센트럴 호텔', 4, '구시가지', '다르에스살람 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 263);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 그랜드 호텔', 5, '해변·항구', '다르에스살람 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 264);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 스테이 호텔', 3, '시내 중심', '튀니스 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 265);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 플라자 호텔', 4, '쇼핑가', '튀니스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 266);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 오션 리조트', 5, '공항 인근', '튀니스 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 267);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 시티 인', 3, '시내 중심', '아크라 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 268);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 가든 호텔', 4, '공항 인근', '아크라 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 269);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 로열 팰리스', 5, '공항 인근', '아크라 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 310000, 'ON_SALE', 270);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 시티 인', 3, '시내 중심', '시애틀 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 140000, 'ON_SALE', 271);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 가든 호텔', 4, '쇼핑가', '시애틀 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 272);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 로열 팰리스', 5, '공항 인근', '시애틀 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 440000, 'ON_SALE', 273);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 시티 인', 3, '역 인근', '댈러스 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 274);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 센트럴 호텔', 4, '시내 중심', '댈러스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 275);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 오션 리조트', 5, '구시가지', '댈러스 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 440000, 'ON_SALE', 276);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 스테이 호텔', 3, '시내 중심', '마이애미 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 277);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 센트럴 호텔', 4, '구시가지', '마이애미 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 240000, 'ON_SALE', 278);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 오션 리조트', 5, '공항 인근', '마이애미 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 430000, 'ON_SALE', 279);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 파크 호텔', 3, '시내 중심', '덴버 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 280);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 가든 호텔', 4, '공항 인근', '덴버 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 281);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 그랜드 호텔', 5, '시내 중심', '덴버 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 420000, 'ON_SALE', 282);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 시티 인', 3, '해변·항구', '몬트리올 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 283);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 센트럴 호텔', 4, '역 인근', '몬트리올 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 230000, 'ON_SALE', 284);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 그랜드 호텔', 5, '해변·항구', '몬트리올 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 430000, 'ON_SALE', 285);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 시티 인', 3, '공원 옆', '칸쿤 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 286);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 가든 호텔', 4, '시내 중심', '칸쿤 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 287);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 그랜드 호텔', 5, '공항 인근', '칸쿤 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 440000, 'ON_SALE', 288);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 파크 호텔', 3, '해변·항구', '파나마시티 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 289);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 가든 호텔', 4, '역 인근', '파나마시티 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 290);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 로열 팰리스', 5, '공원 옆', '파나마시티 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 440000, 'ON_SALE', 291);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 파크 호텔', 3, '역 인근', '리우데자네이루 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 292);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 플라자 호텔', 4, '쇼핑가', '리우데자네이루 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 293);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 로열 팰리스', 5, '공항 인근', '리우데자네이루 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 320000, 'ON_SALE', 294);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 스테이 호텔', 3, '쇼핑가', '부에노스아이레스 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 295);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 센트럴 호텔', 4, '쇼핑가', '부에노스아이레스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 296);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 오션 리조트', 5, '역 인근', '부에노스아이레스 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 310000, 'ON_SALE', 297);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 스테이 호텔', 3, '쇼핑가', '산티아고 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 298);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 가든 호텔', 4, '구시가지', '산티아고 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 180000, 'ON_SALE', 299);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 로열 팰리스', 5, '구시가지', '산티아고 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 300);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 파크 호텔', 3, '해변·항구', '리마 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 301);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 플라자 호텔', 4, '구시가지', '리마 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 302);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 그랜드 호텔', 5, '해변·항구', '리마 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 330000, 'ON_SALE', 303);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 스테이 호텔', 3, '역 인근', '보고타 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 304);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 플라자 호텔', 4, '구시가지', '보고타 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 160000, 'ON_SALE', 305);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 오션 리조트', 5, '구시가지', '보고타 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 320000, 'ON_SALE', 306);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 파크 호텔', 3, '구시가지', '키토 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 307);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 센트럴 호텔', 4, '쇼핑가', '키토 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 308);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 오션 리조트', 5, '구시가지', '키토 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 330000, 'ON_SALE', 309);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 시티 인', 3, '구시가지', '브리즈번 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 310);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 가든 호텔', 4, '공원 옆', '브리즈번 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 311);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 로열 팰리스', 5, '공원 옆', '브리즈번 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 410000, 'ON_SALE', 312);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 파크 호텔', 3, '구시가지', '퍼스 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 313);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 플라자 호텔', 4, '쇼핑가', '퍼스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 210000, 'ON_SALE', 314);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 그랜드 호텔', 5, '쇼핑가', '퍼스 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 400000, 'ON_SALE', 315);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 시티 인', 3, '해변·항구', '오클랜드 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 316);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 가든 호텔', 4, '시내 중심', '오클랜드 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 317);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 그랜드 호텔', 5, '공원 옆', '오클랜드 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 390000, 'ON_SALE', 318);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 파크 호텔', 3, '역 인근', '나디 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 319);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 가든 호텔', 4, '쇼핑가', '나디 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 320);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 그랜드 호텔', 5, '시내 중심', '나디 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 321);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 시티 인', 3, '공항 인근', '경주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 322);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 센트럴 호텔', 4, '시내 중심', '경주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 110000, 'ON_SALE', 323);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 로열 팰리스', 5, '시내 중심', '경주 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 324);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 파크 호텔', 3, '구시가지', '강릉 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 325);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 가든 호텔', 4, '쇼핑가', '강릉 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 120000, 'ON_SALE', 326);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 로열 팰리스', 5, '역 인근', '강릉 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 327);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 파크 호텔', 3, '공원 옆', '속초 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 328);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 센트럴 호텔', 4, '역 인근', '속초 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 329);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 로열 팰리스', 5, '공항 인근', '속초 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 330);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 시티 인', 3, '시내 중심', '부산 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 331);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 가든 호텔', 4, '쇼핑가', '부산 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 332);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 오션 리조트', 5, '역 인근', '부산 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 210000, 'ON_SALE', 333);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 파크 호텔', 3, '해변·항구', '제주 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 60000, 'ON_SALE', 334);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 가든 호텔', 4, '시내 중심', '제주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 335);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 로열 팰리스', 5, '역 인근', '제주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 210000, 'ON_SALE', 336);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 시티 인', 3, '공항 인근', '전주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 337);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 가든 호텔', 4, '공항 인근', '전주 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 338);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 그랜드 호텔', 5, '역 인근', '전주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 200000, 'ON_SALE', 339);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 시티 인', 3, '공항 인근', '여수 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 340);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 센트럴 호텔', 4, '시내 중심', '여수 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 341);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 그랜드 호텔', 5, '쇼핑가', '여수 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 210000, 'ON_SALE', 342);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 스테이 호텔', 3, '공원 옆', '순천 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 343);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 가든 호텔', 4, '구시가지', '순천 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 344);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 그랜드 호텔', 5, '쇼핑가', '순천 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 220000, 'ON_SALE', 345);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 시티 인', 3, '해변·항구', '통영 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 346);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 센트럴 호텔', 4, '공원 옆', '통영 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 100000, 'ON_SALE', 347);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 오션 리조트', 5, '공항 인근', '통영 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 200000, 'ON_SALE', 348);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 파크 호텔', 3, '역 인근', '단양 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 70000, 'ON_SALE', 349);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 가든 호텔', 4, '공항 인근', '단양 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 350);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 로열 팰리스', 5, '시내 중심', '단양 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 200000, 'ON_SALE', 351);
 
 -- [N] 크루즈 7곳(항구 도시)
 INSERT INTO cruise (destination_id, title, ship_name, departure_port, itinerary, nights, price_inside, price_balcony, highlights, status, sort_order) VALUES (6, '서부 지중해 7박 크루즈', '나도감 메디호', '바르셀로나 항', '바르셀로나 → 마르세유 → 제노바 → 나폴리 → 팔마 → 바르셀로나', 7, 1290000, 1790000, '선상 파에야 쿠킹 클래스, 항구별 반일 시티 투어, 갑판 야외 영화', 'ON_SALE', 1);
