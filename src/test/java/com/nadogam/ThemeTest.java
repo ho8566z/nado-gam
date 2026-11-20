@@ -78,4 +78,10 @@ class ThemeTest {
 			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot-flame--wing")));
 		assertThat(css("mascot.css")).contains("@keyframes flap").contains("@keyframes hang");
 	}
+
+	@Test
+	void 메인_지구본은_어느_축으로든_자유_회전하고_원래_각도로_되돌리지_않는다() throws Exception {
+		String js = new String(new ClassPathResource("static/js/home-globe.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+		assertThat(js).contains("controlType: 'trackball'").contains("function applyRotation").doesNotContain("HOME_LAT");
+	}
 }
