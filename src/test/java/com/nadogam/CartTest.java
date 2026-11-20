@@ -164,7 +164,7 @@ class CartTest {
 			.andExpect(flash().attributeExists("error"));
 		mvc.perform(add(s, "CRUISE", 1, "cabin", "SUITE", "quantity", "1", "date", date()))
 			.andExpect(flash().attribute("error", "객실 종류를 골라 주세요."));
-		mvc.perform(add(s, "FLIGHT", 1, "quantity", "1", "date", date()))
+		mvc.perform(add(s, "BUS", 1, "quantity", "1", "date", date()))
 			.andExpect(flash().attribute("error", "담을 수 없는 상품이에요."));
 		assertThat(carts.countByMemberId(1L)).isZero();
 		assertThatThrownBy(() -> CartService.checkDate(null, LocalDate.now())).isInstanceOf(IllegalArgumentException.class);
