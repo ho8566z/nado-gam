@@ -15,6 +15,8 @@ DROP TABLE IF EXISTS member;
 DROP TABLE IF EXISTS tour_day;
 DROP TABLE IF EXISTS tour_option;
 DROP TABLE IF EXISTS tour;
+DROP TABLE IF EXISTS cruise;
+DROP TABLE IF EXISTS hotel;
 DROP TABLE IF EXISTS domestic_transport;
 DROP TABLE IF EXISTS domestic_city;
 DROP TABLE IF EXISTS support_inquiry;
@@ -289,6 +291,40 @@ CREATE TABLE domestic_transport (
     sort_order        INT           NOT NULL DEFAULT 0,
     PRIMARY KEY (transport_id),
     CONSTRAINT fk_transport_city FOREIGN KEY (city_id) REFERENCES domestic_city (city_id)
+);
+
+CREATE TABLE hotel (
+    hotel_id          BIGINT        NOT NULL AUTO_INCREMENT,
+    destination_id    BIGINT        NULL,
+    city_id           BIGINT        NULL,
+    name              VARCHAR(80)   NOT NULL,
+    grade             TINYINT       NOT NULL,
+    area              VARCHAR(50)   NOT NULL,
+    summary           VARCHAR(200)  NOT NULL,
+    amenities         VARCHAR(200)  NOT NULL,
+    price_per_night   INT           NOT NULL,
+    status            VARCHAR(15)   NOT NULL DEFAULT 'ON_SALE',
+    sort_order        INT           NOT NULL DEFAULT 0,
+    PRIMARY KEY (hotel_id),
+    CONSTRAINT fk_hotel_dest FOREIGN KEY (destination_id) REFERENCES destination (destination_id),
+    CONSTRAINT fk_hotel_city FOREIGN KEY (city_id) REFERENCES domestic_city (city_id)
+);
+
+CREATE TABLE cruise (
+    cruise_id        BIGINT        NOT NULL AUTO_INCREMENT,
+    destination_id   BIGINT        NOT NULL,
+    title            VARCHAR(100)  NOT NULL,
+    ship_name        VARCHAR(50)   NOT NULL,
+    departure_port   VARCHAR(60)   NOT NULL,
+    itinerary        VARCHAR(300)  NOT NULL,
+    nights           TINYINT       NOT NULL,
+    price_inside     INT           NOT NULL,
+    price_balcony    INT           NOT NULL,
+    highlights       VARCHAR(300)  NOT NULL,
+    status           VARCHAR(15)   NOT NULL DEFAULT 'ON_SALE',
+    sort_order       INT           NOT NULL DEFAULT 0,
+    PRIMARY KEY (cruise_id),
+    CONSTRAINT fk_cruise_dest FOREIGN KEY (destination_id) REFERENCES destination (destination_id)
 );
 
 CREATE TABLE tour (
