@@ -25,6 +25,10 @@
 		</div>
 	</section>
 
+	<th:block th:if="${destination.available()}">
+		<nav th:replace="~{fragments/stay :: tabs(${destination.destinationId()}, 'flights', ${hasCruise})}"></nav>
+	</th:block>
+
 	<!-- 운항 불가 여행지 -->
 	<section class="notice notice--off" th:unless="${destination.available()}">
 		<h2>지금은 갈 수 없는 여행지예요</h2>

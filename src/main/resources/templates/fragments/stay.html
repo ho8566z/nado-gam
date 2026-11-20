@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- 해외 여행지 화면 위쪽의 항공편·호텔·크루즈 탭. tab: flights / hotels / cruise -->
+<nav class="stay-tabs" th:fragment="tabs(destinationId, tab, hasCruise)" aria-label="여행 상품">
+	<a class="chip chip--tab" th:classappend="${tab == 'flights'} ? 'is-active'" th:href="@{/travel/{id}(id=${destinationId})}">항공편</a>
+	<a class="chip chip--tab" th:classappend="${tab == 'hotels'} ? 'is-active'" th:href="@{/travel/{id}/hotels(id=${destinationId})}">호텔</a>
+	<a class="chip chip--tab" th:if="${hasCruise}" th:classappend="${tab == 'cruise'} ? 'is-active'" th:href="@{/travel/{id}/cruise(id=${destinationId})}">크루즈</a>
+</nav>
+
+<!-- 호텔 목록. nights 박 기준 전체 가격을 1박 가격과 함께 보여 준다. -->
+<div class="hotel-list" th:fragment="hotelList(hotels, nights)">
+	<article class="hotel-card" th:each="h : ${hotels}">
+		<div class="hotel-main">
+			<div class="hotel-title"><strong th:text="${h.name}">호텔</strong> <span class="hotel-grade" th:text="${h.gradeLabel()}">★★★★</span></div>
+			<span class="hotel-area" th:text="${h.area}">시내 중심</span>
+			<p class="hotel-summary" th:text="${h.summary}">소개</p>
+			<p class="hotel-amenity" th:text="${h.amenities}">편의시설</p>
+		</div>
+		<div class="hotel-price">
+			<span class="muted">1박</span>
+			<b th:text="${h.perNightLabel()}">₩150,000</b>
+			<span class="muted" th:text="${nights} + '박 전체'">3박 전체</span>
+			<strong th:text="${h.totalLabel(nights)}">₩450,000</strong>
+		</div>
+	</article>
+</div>
+
+<!-- 박수 선택(1~14). 같은 화면을 박수만 바꿔 다시 연다. -->
+<form class="nights-form" th:fragment="nightsForm(action, nights)" th:action="${action}" method="get">
+	<label>숙박 일수
+		<select name="nights" onchange="this.form.submit()">
+			<option th:each="n : ${#numbers.sequence(1, 14)}" th:value="${n}" th:text="${n} + '박'" th:selected="${n == nights}">3박</option>
+		</select>
+	</label>
+	<noscript><button type="submit">적용</button></noscript>
+</form>
+</body>
+</html>

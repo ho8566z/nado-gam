@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.nadogam.common.Fmt;
+import com.nadogam.stay.StayRepository;
 
 // 해외 여행: 여행지 선택 → 출발지 선택 → 직항/경유 선택과 항공편 목록 → 항공편 상세
 @Controller
@@ -23,9 +24,11 @@ public class TravelController {
 	private static final Set<String> SORTS = Set.of(TravelSearchRepository.SORT_PRICE, TravelSearchRepository.SORT_DURATION, TravelSearchRepository.SORT_DEPARTURE);
 
 	private final TravelSearchRepository search;
+	private final StayRepository stays;
 
-	public TravelController(TravelSearchRepository search) {
+	public TravelController(TravelSearchRepository search, StayRepository stays) {
 		this.search = search;
+		this.stays = stays;
 	}
 
 	// 1단계: 여행지 선택 (권역별 탭과 검색은 화면에서 거른다)
@@ -58,6 +61,7 @@ public class TravelController {
 		DestinationItem destination = search.destination(destinationId)
 			.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "없는 여행지입니다."));
 		model.addAttribute("destination", destination);
+		model.addAttribute("hasCruise", stays.cruiseOfDestination(destinationId).isPresent());
 		model.addAttribute("active", "travel");
 
 		if (!destination.available()) {

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${destination.nameKo() + ' 호텔'})}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('travel')}"></header>
+<main class="page">
+	<a class="back" th:href="@{/travel}" data-transition>← 여행지 선택</a>
+	<section class="tour-hero" th:style="'--from:' + ${destination.from()} + ';--to:' + ${destination.to()}">
+		<span class="tour-badge" th:text="${destination.regionLabel()}">유럽</span>
+		<h1 th:text="${destination.nameKo()}">파리</h1>
+		<p class="tour-hero-sub" th:text="${destination.summary()}">소개</p>
+	</section>
+	<div class="stay-wrap">
+		<nav th:replace="~{fragments/stay :: tabs(${destination.destinationId()}, 'hotels', ${hasCruise})}"></nav>
+		<form th:replace="~{fragments/stay :: nightsForm(@{/travel/{id}/hotels(id=${destination.destinationId()})}, ${nights})}"></form>
+		<p class="muted"><b th:text="${#lists.size(hotels)}">3</b>개의 호텔 · 1박 가격과 <span th:text="${nights}">3</span>박 전체 가격(객실 1개 기준)을 함께 보여 드려요.</p>
+		<th:block th:if="${#lists.isEmpty(hotels)}"><div th:replace="~{fragments/mascot :: empty('이 여행지의 호텔을 준비 중이에요.')}"></div></th:block>
+		<div th:replace="~{fragments/stay :: hotelList(${hotels}, ${nights})}"></div>
+		<p class="muted small">호텔 이름과 가격은 가상 데이터입니다.</p>
+	</div>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

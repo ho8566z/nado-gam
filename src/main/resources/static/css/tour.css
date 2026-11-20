@@ -76,3 +76,31 @@
 	.transport { grid-template-columns: 72px minmax(0, 1fr); }
 	.transport-time, .transport-fare { grid-column: 2; }
 }
+
+/* 호텔·크루즈 */
+.stay-wrap { max-width: 1160px; margin: 20px auto 0; padding: 0 clamp(16px, 4vw, 32px); }
+.stay-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px auto 0; max-width: 1160px; padding: 0 clamp(16px, 4vw, 32px); }
+.stay-wrap .stay-tabs { padding: 0; margin: 0 0 12px; }
+.nights-form { margin: 8px 0 12px; }
+.nights-form select { margin-left: 8px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: inherit; }
+.hotel-list { display: grid; gap: 12px; margin-top: 12px; }
+.hotel-card { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 16px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.hotel-title strong { font-size: 18px; }
+.hotel-grade { color: var(--accent); letter-spacing: 1px; margin-left: 6px; }
+.hotel-area { display: inline-block; margin-top: 4px; font-size: 13px; color: var(--muted); }
+.hotel-summary { margin: 6px 0 0; line-height: 1.6; }
+.hotel-amenity { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+.hotel-price { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 2px; text-align: right; }
+.hotel-price b { font-size: 16px; }
+.hotel-price strong { font-size: 22px; color: var(--accent); }
+.cruise-card { padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+.cruise-card h2 { margin: 0 0 6px; }
+.cruise-meta { margin: 0; color: var(--muted); }
+.cruise-route { margin: 12px 0 0; font-weight: 700; line-height: 1.6; }
+.cruise-prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+.cruise-prices div { display: flex; flex-direction: column; gap: 4px; padding: 14px; border-radius: 12px; background: var(--panel-2); }
+.cruise-prices strong { font-size: 22px; color: var(--accent); }
+@media (max-width: 760px) {
+	.hotel-card { grid-template-columns: 1fr; }
+	.hotel-price { align-items: flex-start; text-align: left; }
+}
