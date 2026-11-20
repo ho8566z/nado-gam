@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${heading})}"></head>
+<body>
+<div class="admin-shell">
+	<aside th:replace="~{admin/layout :: side('flights')}"></aside>
+	<main class="admin-main">
+		<h1 th:text="${heading}">항공편 등록</h1>
+		<form class="admin-form admin-form--wide" th:action="${formAction}" th:object="${flightForm}" method="post" novalidate>
+			<div class="alert alert--error" th:if="${#fields.hasGlobalErrors()}">
+				<div th:each="e : ${#fields.globalErrors()}" th:text="${e}">오류</div>
+			</div>
+			<div class="field-row">
+				<label class="field"><span>편명</span>
+					<input type="text" th:field="*{flightNo}" maxlength="6" placeholder="MG901" required>
+					<small class="error" th:if="${#fields.hasErrors('flightNo')}" th:errors="*{flightNo}"></small>
+				</label>
+				<label class="field"><span>항공사</span>
+					<select th:field="*{airlineCode}">
+						<option value="">선택</option>
+						<option th:each="a : ${airlines}" th:value="${a.code}" th:text="${a.name} + ' (' + ${a.code} + ')'">민국항공</option>
+					</select>
+					<small class="error" th:if="${#fields.hasErrors('airlineCode')}" th:errors="*{airlineCode}"></small>
+				</label>
+				<label class="field"><span>여행지</span>
+					<select th:field="*{destinationId}" id="destination">
+						<option value="">선택</option>
+						<option th:each="d : ${destinations}" th:value="${d.id}" th:attr="data-airport=${d.airport}" th:text="${d.name}">파리</option>
+					</select>
+					<small class="error" th:if="${#fields.hasErrors('destinationId')}" th:errors="*{destinationId}"></small>
+				</label>
+			</div>
+			<div class="field-row">
+				<label class="field"><span>출발 공항</span>
+					<select th:field="*{originAirport}">
+						<option th:each="a : ${koreanAirports}" th:value="${a.code}" th:text="${a.city} + ' (' + ${a.code} + ')'">인천 (ICN)</option>
+					</select>
+					<small class="error" th:if="${#fields.hasErrors('originAirport')}" th:errors="*{originAirport}"></small>
+				</label>
+				<label class="field"><span>도착 공항</span>
+					<select th:field="*{arrivalAirport}" id="arrival">
+						<option value="">선택</option>
+						<option th:each="a : ${airports}" th:value="${a.code}" th:text="${a.city} + ' (' + ${a.code} + ')'">파리 (CDG)</option>
+					</select>
+					<small class="error" th:if="${#fields.hasErrors('arrivalAirport')}" th:errors="*{arrivalAirport}"></small>
+				</label>
+				<label class="field"><span>직항·경유</span>
+					<select th:field="*{flightType}" id="flightType">
+						<option value="DIRECT">직항</option>
+						<option value="CONNECTING">경유(1회)</option>
+					</select>
+				</label>
+				<label class="field" id="viaField"><span>경유 공항</span>
+					<select th:field="*{viaAirport}">
+						<option value="">선택</option>
+						<option th:each="a : ${airports}" th:value="${a.code}" th:text="${a.city} + ' (' + ${a.code} + ')'">이스탄불 (IST)</option>
+					</select>
+					<small class="error" th:if="${#fields.hasErrors('viaAirport')}" th:errors="*{viaAirport}"></small>
+				</label>
+			</div>
+			<div class="field-row">
+				<label class="field"><span>출발 시각(현지)</span>
+					<input type="time" th:field="*{departureTime}" required>
+					<small class="error" th:if="${#fields.hasErrors('departureTime')}" th:errors="*{departureTime}"></small>
+				</label>
+				<label class="field"><span>총 소요 시간(분)</span>
+					<input type="number" th:field="*{durationMinutes}" min="30" max="2400" placeholder="860" required>
+					<small class="hint">도착 시각·경유 구간 시간은 자동으로 계산돼요.</small>
+					<small class="error" th:if="${#fields.hasErrors('durationMinutes')}" th:errors="*{durationMinutes}"></small>
+				</label>
+				<label class="field"><span>기종</span>
+					<input type="text" th:field="*{aircraft}" maxlength="30" placeholder="B777-300ER">
+					<small class="error" th:if="${#fields.hasErrors('aircraft')}" th:errors="*{aircraft}"></small>
+				</label>
+				<label class="field"><span>수하물(kg)</span>
+					<input type="number" th:field="*{baggageKg}" min="0" max="100">
+					<small class="error" th:if="${#fields.hasErrors('baggageKg')}" th:errors="*{baggageKg}"></small>
+				</label>
+			</div>
+			<div class="field field--inline">
+				<span>운항 요일</span>
+				<div class="check-row">
+					<label th:each="d, st : ${#strings.arraySplit('월,화,수,목,금,토,일', ',')}"><input type="checkbox" name="days" th:value="${st.count}" th:checked="${flightForm.days.contains('' + st.count)}"> <span th:text="${d}">월</span></label>
+				</div>
+				<small class="error" th:if="${#fields.hasErrors('days')}" th:errors="*{days}"></small>
+			</div>
+			<label class="field field--check">
+				<input type="checkbox" th:field="*{mealIncluded}">
+				<span>기내식 제공</span>
+			</label>
+
+			<h2 class="section-title section-title--flat">좌석 등급별 요금</h2>
+			<p class="hint">쓰는 등급만 체크하세요. 표시 가격은 운임 + 세금·유류할증료(편도 1인)이고, 사용자는 이 금액을 보고 결제합니다. 결제하면 남은 좌석이 줄어요.</p>
+			<div class="table-wrap">
+				<table class="table fare-edit">
+					<thead>
+						<tr><th>등급</th><th>사용</th><th>표시 가격(원)</th><th>세금·유류(원)</th><th>전체 좌석</th><th>남은 좌석</th><th>환불</th><th>변경 수수료(원)</th><th>적립률</th></tr>
+					</thead>
+					<tbody>
+						<tr th:each="fare, st : *{fares}">
+							<td>
+								<input type="hidden" th:field="*{fares[__${st.index}__].cabin}">
+								<b th:text="${cabins[st.index]}">일반석</b>
+							</td>
+							<td><input type="checkbox" th:field="*{fares[__${st.index}__].enabled}"></td>
+							<td><input type="number" th:field="*{fares[__${st.index}__].price}" min="10000" step="1000">
+								<small class="error" th:if="${#fields.hasErrors('fares[__${st.index}__].price')}" th:errors="*{fares[__${st.index}__].price}"></small></td>
+							<td><input type="number" th:field="*{fares[__${st.index}__].taxFuel}" min="0" step="1000">
+								<small class="error" th:if="${#fields.hasErrors('fares[__${st.index}__].taxFuel')}" th:errors="*{fares[__${st.index}__].taxFuel}"></small></td>
+							<td><input type="number" th:field="*{fares[__${st.index}__].seatsTotal}" min="1" max="1000">
+								<small class="error" th:if="${#fields.hasErrors('fares[__${st.index}__].seatsTotal')}" th:errors="*{fares[__${st.index}__].seatsTotal}"></small></td>
+							<td><input type="number" th:field="*{fares[__${st.index}__].seatsLeft}" min="0" max="1000" placeholder="전체와 같게">
+								<small class="error" th:if="${#fields.hasErrors('fares[__${st.index}__].seatsLeft')}" th:errors="*{fares[__${st.index}__].seatsLeft}"></small></td>
+							<td><input type="checkbox" th:field="*{fares[__${st.index}__].refundable}"></td>
+							<td><input type="number" th:field="*{fares[__${st.index}__].changeFee}" min="0" step="1000">
+								<small class="error" th:if="${#fields.hasErrors('fares[__${st.index}__].changeFee')}" th:errors="*{fares[__${st.index}__].changeFee}"></small></td>
+							<td><input type="text" th:field="*{fares[__${st.index}__].mileageRate}" maxlength="4" size="4">
+								<small class="error" th:if="${#fields.hasErrors('fares[__${st.index}__].mileageRate')}" th:errors="*{fares[__${st.index}__].mileageRate}"></small></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="form-actions form-actions--row">
+				<button class="button" type="submit">저장</button>
+				<a class="button button--ghost" th:href="@{/admin/flights}">취소</a>
+			</div>
+		</form>
+	</main>
+</div>
+<script>
+(function () {
+	var type = document.getElementById('flightType');
+	var viaField = document.getElementById('viaField');
+	function sync() { viaField.hidden = type.value !== 'CONNECTING'; }
+	type.addEventListener('change', sync);
+	sync();
+	// 여행지를 고르면 도착 공항을 그 여행지의 대표 공항으로 맞춘다(바꾸고 싶으면 다시 고르면 된다).
+	var dest = document.getElementById('destination');
+	var arrival = document.getElementById('arrival');
+	dest.addEventListener('change', function () {
+		var opt = dest.options[dest.selectedIndex];
+		var code = opt && opt.getAttribute('data-airport');
+		if (code) { arrival.value = code; }
+	});
+})();
+</script>
+</body>
+</html>
