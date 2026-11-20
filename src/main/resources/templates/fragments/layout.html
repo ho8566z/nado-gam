@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 	<link rel="stylesheet" th:href="@{/css/main.css}">
 	<link rel="stylesheet" th:href="@{/css/travel.css}">
+	<link rel="stylesheet" th:href="@{/css/auth.css}">
 	<script defer th:src="@{/js/common.js}"></script>
 </head>
 <body>
@@ -21,6 +22,18 @@
 		<a th:href="@{/travel}" th:classappend="${active == 'travel'} ? 'is-active'">해외 여행</a>
 		<a th:href="@{/special}" th:classappend="${active == 'special'} ? 'is-active'">이달의 특별기획</a>
 		<a th:href="@{/bestseller}" th:classappend="${active == 'bestseller'} ? 'is-active'">베스트셀러</a>
+		<span class="auth-links">
+			<th:block th:if="${loginUser == null}">
+				<a th:href="@{/login}">로그인</a>
+				<a th:href="@{/signup}">회원가입</a>
+			</th:block>
+			<th:block th:if="${loginUser != null}">
+				<span class="who" th:text="${loginUser.username} + '님'">user님</span>
+				<form th:action="${loginUser.admin} ? @{/admin/logout} : @{/logout}" method="post">
+					<button type="submit">로그아웃</button>
+				</form>
+			</th:block>
+		</span>
 	</nav>
 </header>
 <footer class="site-footer" th:fragment="footer">

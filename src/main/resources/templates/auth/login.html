@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('로그인')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('account')}"></header>
+<main class="page">
+	<section class="auth-card">
+		<span class="kicker">LOGIN</span>
+		<h1>로그인</h1>
+		<p class="lead">나도 감에 오신 것을 환영합니다.</p>
+		<div class="alert alert--error" role="alert" th:if="${param.error}">아이디 또는 비밀번호가 올바르지 않거나, 이용할 수 없는 계정입니다.</div>
+		<div class="alert alert--ok" th:if="${param.joined}">가입이 완료되었습니다. 로그인해 주세요.</div>
+		<form th:action="@{/login}" method="post">
+			<label class="field"><span>아이디</span>
+				<input type="text" name="username" autocomplete="username" required autofocus>
+			</label>
+			<label class="field"><span>비밀번호</span>
+				<input type="password" name="password" autocomplete="current-password" required>
+			</label>
+			<div class="form-actions"><button class="button" type="submit">로그인</button></div>
+		</form>
+		<p class="auth-sub">아직 계정이 없나요? <a th:href="@{/signup}">회원가입</a></p>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

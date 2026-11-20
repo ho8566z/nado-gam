@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('회원가입')}"></head>
+<body>
+<header th:replace="~{fragments/layout :: header('account')}"></header>
+<main class="page">
+	<section class="auth-card">
+		<span class="kicker">SIGN UP</span>
+		<h1>회원가입</h1>
+		<p class="lead">가입하면 계정 메뉴에서 내 정보를 관리할 수 있어요.</p>
+		<form th:action="@{/signup}" th:object="${signupForm}" method="post" novalidate>
+			<label class="field"><span>아이디</span>
+				<input type="text" th:field="*{loginId}" autocomplete="username" maxlength="20" required>
+				<small class="hint">영문·숫자 4~20자</small>
+				<small class="error" th:if="${#fields.hasErrors('loginId')}" th:errors="*{loginId}"></small>
+			</label>
+			<label class="field"><span>비밀번호</span>
+				<input type="password" th:field="*{password}" autocomplete="new-password" maxlength="20" required>
+				<small class="hint">영문과 숫자를 포함해 8~20자</small>
+				<small class="error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></small>
+			</label>
+			<label class="field"><span>비밀번호 확인</span>
+				<input type="password" th:field="*{passwordConfirm}" autocomplete="new-password" maxlength="20" required>
+				<small class="error" th:if="${#fields.hasErrors('passwordConfirm')}" th:errors="*{passwordConfirm}"></small>
+			</label>
+			<label class="field"><span>이름</span>
+				<input type="text" th:field="*{name}" autocomplete="name" maxlength="50" required>
+				<small class="error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></small>
+			</label>
+			<label class="field"><span>전화번호</span>
+				<input type="tel" th:field="*{phone}" autocomplete="tel" placeholder="010-0000-0000" required>
+				<small class="error" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></small>
+			</label>
+			<label class="field"><span>이메일</span>
+				<input type="email" th:field="*{email}" autocomplete="email" maxlength="100" required>
+				<small class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></small>
+			</label>
+			<div class="form-actions"><button class="button" type="submit">가입하기</button></div>
+		</form>
+		<p class="auth-sub">이미 계정이 있나요? <a th:href="@{/login}">로그인</a></p>
+	</section>
+</main>
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
