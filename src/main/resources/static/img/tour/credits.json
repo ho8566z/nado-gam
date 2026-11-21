@@ -17,6 +17,33 @@
   "subject": "Hoe (dish)",
   "wiki": "en"
  },
+ "tour-100": {
+  "author": "Helge V. Keitel",
+  "file": "Parasailing_from_a_yacht.jpg",
+  "label": "칸쿤 해변",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Parasailing_from_a_yacht.jpg",
+  "subject": "Parasailing",
+  "wiki": "en"
+ },
+ "tour-101": {
+  "author": "Mariordo (Mario Roberto Durán Ortiz)",
+  "file": "Panama_08_2013_Ave_Balboa_7044.JPG",
+  "label": "카스코 비에호",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Panama_08_2013_Ave_Balboa_7044.JPG",
+  "subject": "Avenida Balboa",
+  "wiki": "en"
+ },
+ "tour-102": {
+  "author": "Arne Müseler",
+  "file": "Maracana_2022.jpg",
+  "label": "마라카낭 경기장",
+  "license": "CC BY-SA 3.0 de",
+  "source": "https://commons.wikimedia.org/wiki/File:Maracana_2022.jpg",
+  "subject": "Maracanã Stadium",
+  "wiki": "en"
+ },
  "tour-11": {
   "author": "Quercus acuta",
   "file": "Shoyu_Ramen（Tokyo_Ramen）_-_01.jpg",
@@ -665,6 +692,15 @@
   "subject": "Frankfurter Würstchen",
   "wiki": "en"
  },
+ "tour-79": {
+  "author": "bigbirdz",
+  "file": "Läderach.jpg",
+  "label": "스위스 초콜릿",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:L%C3%A4derach.jpg",
+  "subject": "Swiss chocolate",
+  "wiki": "en"
+ },
  "tour-8": {
   "author": "Oh-Barcelona.com from Barcelona, Spain",
   "file": "Camp_Nou_aerial.jpg",
@@ -674,6 +710,96 @@
   "subject": "Camp Nou",
   "wiki": "en"
  },
+ "tour-80": {
+  "author": "Chad K",
+  "file": "Interior,_Hungarian_State_Opera_House.jpg",
+  "label": "헝가리 국립 오페라",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Interior,_Hungarian_State_Opera_House.jpg",
+  "subject": "Hungarian State Opera",
+  "wiki": "en"
+ },
+ "tour-81": {
+  "author": "Adrian Grycuk",
+  "file": "Zamek_Ostrogskich_w_Warszawie_2022.jpg",
+  "label": "쇼팽 박물관",
+  "license": "CC BY-SA 3.0 pl",
+  "source": "https://commons.wikimedia.org/wiki/File:Zamek_Ostrogskich_w_Warszawie_2022.jpg",
+  "subject": "Fryderyk Chopin Museum",
+  "wiki": "en"
+ },
+ "tour-82": {
+  "author": "heb@Wikimedia Commons (mail)",
+  "file": "Cyclists_at_red_2.jpg",
+  "label": "코펜하겐 자전거",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cyclists_at_red_2.jpg",
+  "subject": "Cycling in Copenhagen",
+  "wiki": "en"
+ },
+ "tour-83": {
+  "author": "Ad Meskens",
+  "file": "Stockholm_Vasa_Museum_and_Nordic_Museum_09.jpg",
+  "label": "바사 박물관",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Stockholm_Vasa_Museum_and_Nordic_Museum_09.jpg",
+  "subject": "Vasa Museum",
+  "wiki": "en"
+ },
+ "tour-84": {
+  "author": "Wilhelm Joys Andersen from Oslo, Norway",
+  "file": "Holmenkollbakken_under_construction_aerial_2.jpg",
+  "label": "홀멘콜렌 스키점프",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Holmenkollbakken_under_construction_aerial_2.jpg",
+  "subject": "Holmenkollen National Arena",
+  "wiki": "en"
+ },
+ "tour-85": {
+  "author": "Paasikivi",
+  "file": "Kiasmamodernartmuseum.JPG",
+  "label": "키아스마",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Kiasmamodernartmuseum.JPG",
+  "subject": "Kiasma",
+  "wiki": "en"
+ },
+ "tour-86": {
+  "author": "William Murphy",
+  "file": "Temple_Bar_street_scenes,_Dublin.jpg",
+  "label": "템플 바",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Temple_Bar_street_scenes,_Dublin.jpg",
+  "subject": "Temple Bar, Dublin",
+  "wiki": "en"
+ },
+ "tour-87": {
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "file": "Archäologisches_Nationalmuseum_Athen.jpg",
+  "label": "국립 고고학 박물관",
+  "license": "CC BY-SA 3.0 de",
+  "source": "https://commons.wikimedia.org/wiki/File:Arch%C3%A4ologisches_Nationalmuseum_Athen.jpg",
+  "subject": "National Archaeological Museum, Athens",
+  "wiki": "en"
+ },
+ "tour-88": {
+  "author": "Samwalton9",
+  "file": "Giraffe_Centre_August_2025_04.jpg",
+  "label": "기린 센터",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Giraffe_Centre_August_2025_04.jpg",
+  "subject": "Giraffe Centre",
+  "wiki": "en"
+ },
+ "tour-89": {
+  "author": "NJR ZA",
+  "file": "South_Africa-Johannesburg-Apartheid_Museum001.jpg",
+  "label": "아파르트헤이트 박물관",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:South_Africa-Johannesburg-Apartheid_Museum001.jpg",
+  "subject": "Apartheid Museum",
+  "wiki": "en"
+ },
  "tour-9": {
   "author": "Popo le Chien",
   "file": "Tteokbokki.JPG",
@@ -681,6 +807,96 @@
   "license": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File:Tteokbokki.JPG",
   "subject": "Tteokbokki",
+  "wiki": "en"
+ },
+ "tour-90": {
+  "author": "Unknown",
+  "file": "Cathédrale_Casablanca.jpg",
+  "label": "하부스 구역",
+  "license": "See source",
+  "source": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Casablanca.jpg",
+  "subject": "Casablanca Cathedral",
+  "wiki": "en"
+ },
+ "tour-91": {
+  "author": "Artem.G",
+  "file": "Injera_with_eight_kinds_of_stew.jpg",
+  "label": "인제라",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Injera_with_eight_kinds_of_stew.jpg",
+  "subject": "Injera",
+  "wiki": "en"
+ },
+ "tour-92": {
+  "author": "Guillaume Bonastre",
+  "file": "Woman_kayaking_on_a_turquoise_lake_(51125937521).jpg",
+  "label": "코코 비치",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Woman_kayaking_on_a_turquoise_lake_(51125937521).jpg",
+  "subject": "Kayaking",
+  "wiki": "en"
+ },
+ "tour-93": {
+  "author": "ELEL09, montage",
+  "file": "Montage_ville_de_Carthage.png",
+  "label": "카르타고 유적",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Montage_ville_de_Carthage.png",
+  "subject": "Carthage",
+  "wiki": "en"
+ },
+ "tour-94": {
+  "author": "Stig Nygaard from Copenhagen, Denmark",
+  "file": "Solnedgang_på_Labadi_beach.jpg",
+  "label": "라바디 비치",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Solnedgang_p%C3%A5_Labadi_beach.jpg",
+  "subject": "Labadi Beach",
+  "wiki": "en"
+ },
+ "tour-95": {
+  "author": "Murcotipton",
+  "file": "22nd_June_2012_Teriyaki_Duck.jpg",
+  "label": "테리야키",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:22nd_June_2012_Teriyaki_Duck.jpg",
+  "subject": "Teriyaki",
+  "wiki": "en"
+ },
+ "tour-96": {
+  "author": "Michael Barera",
+  "file": "Arlington_June_2020_4_(AT&T_Stadium).jpg",
+  "label": "AT&T 스타디움",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Arlington_June_2020_4_(AT%26T_Stadium).jpg",
+  "subject": "AT&T Stadium",
+  "wiki": "en"
+ },
+ "tour-97": {
+  "author": "Zeng8r",
+  "file": "Tampa_Cuban_sandwich.jpg",
+  "label": "쿠바 샌드위치",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tampa_Cuban_sandwich.jpg",
+  "subject": "Cuban sandwich",
+  "wiki": "en"
+ },
+ "tour-98": {
+  "author": "Pdubs.94",
+  "file": "Empower_Field_at_Mile_High_20241001.jpg",
+  "label": "마일 하이 스타디움",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Empower_Field_at_Mile_High_20241001.jpg",
+  "subject": "Empower Field at Mile High",
+  "wiki": "en"
+ },
+ "tour-99": {
+  "author": "Camelia.boban",
+  "file": "Food_at_WIkimanian_2017_02.jpg",
+  "label": "푸틴",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Food_at_WIkimanian_2017_02.jpg",
+  "subject": "Poutine",
   "wiki": "en"
  }
 }
