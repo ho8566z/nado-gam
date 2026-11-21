@@ -1,6 +1,8 @@
 package com.nadogam.tour;
 
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -10,7 +12,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
 
-// 투어: 목록(범위·테마·검색)과 상세(기간 옵션별 일정·포함/불포함)
+import com.nadogam.common.Fmt;
+
+// 투어: 목록(범위·테마·대륙·국가·검색)과 상세(기간 옵션별 일정·포함/불포함)
 @Controller
 public class TourController {
 
@@ -22,11 +26,32 @@ public class TourController {
 
 	@GetMapping("/tour")
 	public String list(@RequestParam(required = false) String scope, @RequestParam(required = false) String theme,
-		@RequestParam(required = false) String q, Model model) {
+		@RequestParam(required = false) String q, @RequestParam(required = false) String region,
+		@RequestParam(required = false) String country, Model model) {
 		String scopeFilter = "OVERSEAS".equals(scope) || "DOMESTIC".equals(scope) ? scope : null;
 		String themeFilter = TourTheme.of(theme).map(Enum::name).orElse(null);
 		String keyword = q == null ? null : q.trim();
-		List<TourCard> cards = tours.cards(scopeFilter, themeFilter, keyword);
+		// 대륙·국가 칩: 범위·테마·검색어를 적용한 투어 수. 주소의 값이 칩에 없으면(잘못된 값) 거르지 않는다.
+		List<TourRepository.Facet> facets = tours.facets(scopeFilter, themeFilter, keyword);
+		Map<String, Long> regions = new LinkedHashMap<>();
+		for (String r : List.of("EUROPE", "ASIA", "NORTH_AMERICA", "SOUTH_AMERICA", "MIDDLE_EAST", "AFRICA", "OCEANIA")) {
+			long n = facets.stream().filter(f -> f.region().equals(r)).mapToLong(TourRepository.Facet::count).sum();
+			if (n > 0) {
+				regions.put(r, n);
+			}
+		}
+		String regionFilter = region != null && regions.containsKey(region) ? region : null;
+		List<TourRepository.Facet> countries = regionFilter == null ? List.of()
+			: facets.stream().filter(f -> f.region().equals(regionFilter)).toList();
+		String countryFilter = country != null && countries.stream().anyMatch(f -> f.countryCode().equals(country)) ? country : null;
+		List<TourCard> cards = tours.cards(scopeFilter, themeFilter, keyword, regionFilter, countryFilter);
+		model.addAttribute("regions", regions);
+		model.addAttribute("regionLabels", regions.keySet().stream().collect(
+			java.util.stream.Collectors.toMap(r -> r, Fmt::region, (a, b) -> a, LinkedHashMap::new)));
+		model.addAttribute("regionTotal", regions.values().stream().mapToLong(Long::longValue).sum());
+		model.addAttribute("countries", countries);
+		model.addAttribute("region", regionFilter);
+		model.addAttribute("country", countryFilter);
 		model.addAttribute("tours", cards);
 		model.addAttribute("themes", TourTheme.values());
 		model.addAttribute("scope", scopeFilter);
