@@ -40,7 +40,7 @@ class ThemeTest {
 
 	@Test
 	void 포인트_색은_오렌지이고_하늘색은_남지_않는다() throws Exception {
-		assertThat(css("main.css")).contains("--accent: #ff8a1f").doesNotContain("5cc8ff");
+		assertThat(css("main.css")).contains("--accent: #ff5a36").contains("--accent-2: #2f3dff").doesNotContain("5cc8ff");
 		assertThat(css("travel.css")).doesNotContain("92, 200, 255");
 		assertThat(css("auth.css")).doesNotContain("92, 200, 255");
 	}
@@ -106,7 +106,7 @@ class ThemeTest {
 	void 거코_이름_글자는_오렌지색으로_칠한다() throws Exception {
 		String js = new String(new ClassPathResource("static/js/common.js").getInputStream().readAllBytes(), StandardCharsets.UTF_8);
 		assertThat(js).contains("var NAME = '거코'").contains("name-geoko");
-		assertThat(css("mascot.css")).contains(".name-geoko { color: var(--accent)");
+		assertThat(css("mascot.css")).contains(".name-geoko { color: var(--accent-ink)");
 		String html = mvc.perform(get("/travel")).andReturn().getResponse().getContentAsString();
 		assertThat(html).contains("#98a3bb").doesNotContain("#ff9a3c");
 	}
