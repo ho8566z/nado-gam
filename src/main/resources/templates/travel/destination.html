@@ -19,7 +19,7 @@
 			<p class="poster-sub" th:text="${destination.summary()}">소개</p>
 			<th:block th:replace="~{fragments/spot :: byId('overseas', ${destination.destinationId()})}"></th:block>
 			<th:block th:with="cr=${@destPhotos.credit('overseas', destination.destinationId())}">
-				<p class="photo-credit" th:if="${cr != null}">사진: <span th:text="${cr.subject}">Eiffel Tower</span> · <span th:text="${cr.author}">저작자</span> · <span th:text="${cr.license}">CC</span> · Wikimedia Commons</p>
+				<p class="photo-credit" th:if="${cr != null}">사진: <span th:text="${cr.subject}">Eiffel Tower</span> · <span th:text="${cr.author}">저작자</span> · <span th:text="${cr.license}">CC</span><th:block th:if="${!#strings.isEmpty(cr.source)}"> · Wikimedia Commons</th:block></p>
 			</th:block>
 		</div>
 		<div class="detail-hero-side" th:if="${destination.available()}">

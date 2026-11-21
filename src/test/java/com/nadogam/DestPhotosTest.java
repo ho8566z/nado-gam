@@ -59,7 +59,9 @@ class DestPhotosTest {
 			assertThat(new ClassPathResource("static/img/dest/" + c.key() + ".jpg").exists()).as(c.key()).isTrue();
 			assertThat(c.author()).as(c.key() + " 저작자").isNotBlank();
 			assertThat(c.license()).as(c.key() + " 라이선스").isNotBlank();
-			assertThat(c.source()).as(c.key() + " 원본 주소").startsWith("https://");
+			if (!c.source().isEmpty()) {   // 사용자가 직접 준 사진(댈러스)은 원본 주소가 없다
+				assertThat(c.source()).as(c.key() + " 원본 주소").startsWith("https://");
+			}
 		}
 		// 사진이 없는 도시는 스타일을 붙이지 않아 기존 그라데이션이 그대로 보인다
 		assertThat(photos.style("overseas", 9999)).isEmpty();
