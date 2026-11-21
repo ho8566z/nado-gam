@@ -36,6 +36,6 @@
 .lost p { color: var(--muted); }
 
 /* 마스코트 이름 '거코' 글자는 오렌지색 */
-.name-geoko { color: var(--accent); font-weight: 800; }
+.name-geoko { color: var(--accent-ink); font-weight: 800; }
 /* 컬러 그라데이션 배경 위에서는 글자가 묻히지 않게 어두운 그림자를 더한다 */
 .tour-hero .name-geoko, .detail-hero .name-geoko, .poster .name-geoko { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.65), 0 0 8px rgba(0, 0, 0, 0.35); }
