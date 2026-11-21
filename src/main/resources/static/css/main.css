@@ -467,3 +467,30 @@ html { scroll-behavior: smooth; }
 	.button:not(.button--ghost):not(.button--sm), .side-promo:not([hidden]) { animation: none; }
 	.poster::after, a.dest-card::after { display: none; }
 }
+
+/* ---------- 메인: 왼쪽 지구본 / 오른쪽 기획전·베스트셀러 (넓은 화면에서만) ---------- */
+@media (min-width: 1000px) {
+	.home-split { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 28px; align-items: stretch; max-width: 1440px; margin: 0 auto; padding: 16px clamp(16px, 2.5vw, 32px) 0; }
+	.home-split .hero { display: flex; flex-direction: column; justify-content: center; border-radius: 32px; padding: 28px 16px 20px; }
+	.home-split .globe-wrap { width: 100%; }
+	.home-split .globe { height: clamp(340px, min(46vw, 74vh), 620px); }
+	.home-shelves { min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+	.home-shelves .shelf { max-width: none; margin: 0; padding: 0; }
+	.home-shelves .shelf-head { margin-bottom: 10px; }
+	.home-shelves .shelf h2 { font-size: clamp(20px, 2vw, 26px); }
+	.home-shelves .poster { grid-template-columns: 1fr; gap: 10px; align-items: end; min-height: 270px; padding: 22px 60px 40px; }
+	.home-shelves .carousel .poster { padding-left: 60px; padding-right: 60px; }
+	.home-shelves .poster-title { font-size: clamp(22px, 2.3vw, 32px); }
+	.home-shelves .poster-sub { margin-top: 6px; font-size: 14px; }
+	.home-shelves .poster-tags { margin-bottom: 8px; }
+	.home-shelves .chips, .home-shelves .price-note { display: none; }
+	.home-shelves .poster-side { align-items: flex-start; text-align: left; }
+	.home-shelves .price-now { font-size: clamp(24px, 2.6vw, 34px); }
+	.home-shelves .cta { margin-top: 8px; padding: 8px 16px; font-size: 14px; }
+	.home-shelves .poster-bgtext { font-size: clamp(60px, 7vw, 110px); }
+	.home-shelves .poster-plane { width: clamp(44px, 5vw, 70px); }
+	.home-shelves .poster-rank { font-size: clamp(80px, 8vw, 120px); }
+	.home-shelves .nav { width: 38px; height: 38px; margin-top: -19px; font-size: 22px; }
+	.home-shelves .nav--prev { left: 10px; }
+	.home-shelves .nav--next { right: 10px; }
+}

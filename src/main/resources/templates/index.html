@@ -6,7 +6,9 @@
 
 <main class="page">
 
-	<!-- 가운데에서 돌아가는 지구본과 비행기 -->
+<div class="home-split">
+
+	<!-- 왼쪽: 돌아가는 지구본과 비행기 -->
 	<section class="hero" aria-labelledby="hero-title">
 		<div class="hero-copy">
 			<p class="eyebrow">나도 감 · 항공권 전문 여행사</p>
@@ -19,6 +21,9 @@
 		</div>
 		<p class="hero-hint"><span class="dot dot--blue"></span> 주요 도시 100곳 · 지구본을 끌어서 돌려볼 수 있어요</p>
 	</section>
+
+	<!-- 오른쪽: 이달의 기획전·베스트셀러 캐로셀(좁은 화면에서는 지구본 아래로 쌓인다) -->
+	<div class="home-shelves">
 
 	<!-- 이달의 기획전 3개 캐로셀 -->
 	<section class="shelf" id="plans" aria-labelledby="plans-title">
@@ -67,6 +72,10 @@
 		</div>
 		<th:block th:if="${#lists.isEmpty(bestsellers)}"><div th:replace="~{fragments/mascot :: empty('집계된 베스트셀러가 없습니다.')}"></div></th:block>
 	</section>
+
+	</div>
+
+</div>
 
 </main>
 
