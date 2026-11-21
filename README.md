@@ -45,7 +45,7 @@
 | ![해외 여행지](docs/screenshots/03-travel-list.jpg) | ![여행지 상세](docs/screenshots/04-travel-detail.jpg) |
 | 해외 여행지 98곳 카드 (대표 관광지 사진 · 명소/특산 · 정렬) | 여행지 상세와 항공편 선택 단계 |
 | ![메인 캐로셀](docs/screenshots/02-home-carousel.jpg) | ![투어 상세](docs/screenshots/05-tour-detail.jpg) |
-| 메인의 지구본과 베스트셀러 캐로셀(기획전·베스트셀러는 오른쪽에 나란히) | 투어 상세(기간별 옵션, 인천 출발 노선) |
+| 메인의 캐로셀이 다음 장으로 넘어간 모습(기획전·베스트셀러는 자동으로 넘어감) | 투어 상세(기간별 옵션, 인천 출발 노선) |
 | ![국내여행](docs/screenshots/06-domestic.jpg) | ![투어 목록](docs/screenshots/07-tour-list.jpg) |
 | 국내여행 10개 도시 | 투어 목록: 대륙·국가 필터와 반분할 카드(여행지 전경 + 테마 사진) |
 
