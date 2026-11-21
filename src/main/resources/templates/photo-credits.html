@@ -23,11 +23,33 @@
 					<td th:text="${c.subject}">Eiffel Tower</td>
 					<td class="cell-wrap" th:text="${c.author}">Author</td>
 					<td th:text="${c.license}">CC BY-SA 3.0</td>
-					<td><a class="link-sm" th:href="${c.source}" target="_blank" rel="noopener noreferrer">보기</a></td>
+					<td><a class="link-sm" th:if="${!#strings.isEmpty(c.source)}" th:href="${c.source}" target="_blank" rel="noopener noreferrer">보기</a><span th:if="${#strings.isEmpty(c.source)}">-</span></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+
+	<section th:unless="${#lists.isEmpty(tourCredits)}">
+		<h2 class="section-title">투어 카드 테마 사진</h2>
+		<p class="muted">투어 카드 오른쪽에 쓰는 음식·경기장·명소 사진입니다. 투어 번호는 투어 화면 주소의 번호와 같아요.</p>
+		<div class="table-wrap">
+			<table class="table credit-table">
+				<thead>
+					<tr><th>투어</th><th>사진 주제</th><th>문서</th><th>저작자</th><th>라이선스</th><th>원본</th></tr>
+				</thead>
+				<tbody>
+					<tr th:each="c : ${tourCredits}">
+						<td><a class="link-sm" th:href="@{/tour/{id}(id=${c.tourId})}" th:text="'#' + ${c.tourId}">#1</a></td>
+						<td th:text="${c.label}">카르보나라</td>
+						<td th:text="${c.subject}">Carbonara</td>
+						<td class="cell-wrap" th:text="${c.author}">Author</td>
+						<td th:text="${c.license}">CC BY-SA 4.0</td>
+						<td><a class="link-sm" th:href="${c.source}" target="_blank" rel="noopener noreferrer">보기</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
 </main>
 <footer th:replace="~{fragments/layout :: footer}"></footer>
 </body>

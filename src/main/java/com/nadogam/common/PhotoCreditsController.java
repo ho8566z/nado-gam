@@ -9,14 +9,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PhotoCreditsController {
 
 	private final DestPhotos photos;
+	private final TourPhotos tourPhotos;
 
-	public PhotoCreditsController(DestPhotos photos) {
+	public PhotoCreditsController(DestPhotos photos, TourPhotos tourPhotos) {
 		this.photos = photos;
+		this.tourPhotos = tourPhotos;
 	}
 
 	@GetMapping("/photo-credits")
 	public String credits(Model model) {
 		model.addAttribute("credits", photos.credits());
+		model.addAttribute("tourCredits", tourPhotos.credits());
 		return "photo-credits";
 	}
 }

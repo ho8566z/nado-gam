@@ -39,7 +39,10 @@
 
 	<section class="tour-grid" aria-label="투어 목록" th:unless="${#lists.isEmpty(tours)}">
 		<a class="tour-card" th:each="t : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition
-			th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()} + ${@destPhotos.styleByName(t.scope, t.placeName)}">
+			th:classappend="${@tourPhotos.has(t.tourId)} ? 'tour-card--split'"
+			th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()} + ${@destPhotos.styleByName(t.scope, t.placeName)} + ${@tourPhotos.style(t.tourId)}">
+			<span class="tour-half tour-half--l" aria-hidden="true" th:if="${@tourPhotos.has(t.tourId)}"></span><span class="tour-half tour-half--r" aria-hidden="true" th:if="${@tourPhotos.has(t.tourId)}"></span>
+			<span class="tour-theme-chip" th:if="${@tourPhotos.has(t.tourId)}" th:text="${@tourPhotos.label(t.tourId)}">카르보나라</span>
 			<span class="tour-badges">
 				<span class="tour-badge" th:text="${t.scopeLabel()}">해외</span>
 				<span class="tour-badge tour-badge--theme" th:text="${t.themeLabel()}">테마</span>
