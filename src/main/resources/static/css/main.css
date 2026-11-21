@@ -182,7 +182,7 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 .poster {
 	position: relative; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 24px; align-items: end;
 	min-height: 400px; padding: clamp(24px, 4vw, 48px); overflow: hidden; border-radius: var(--radius); color: #fff;
-	background: linear-gradient(125deg, var(--c1), var(--c2));
+	background: var(--photo, linear-gradient(transparent, transparent)) center / cover no-repeat, linear-gradient(125deg, var(--c1), var(--c2));
 	box-shadow: 0 24px 60px -24px var(--shadow-soft);
 	transition: transform 0.4s var(--ease), box-shadow 0.4s;
 }
@@ -244,8 +244,21 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 .detail-hero {
 	position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 24px; align-items: end;
 	width: calc(100% - clamp(32px, 8vw, 64px)); padding: clamp(24px, 4vw, 48px); border-radius: var(--radius); color: #fff;
-	background: linear-gradient(125deg, var(--c1), var(--c2)); box-shadow: 0 24px 60px -24px var(--shadow-soft);
+	background: var(--photo, linear-gradient(transparent, transparent)) center / cover no-repeat, linear-gradient(125deg, var(--c1), var(--c2)); box-shadow: 0 24px 60px -24px var(--shadow-soft);
 }
+/* 사진이 있는 포스터·머리글은 글자가 잘 읽히도록 아래·왼쪽을 더 어둡게 덮는다 */
+.poster[style*="--photo"]::before, .detail-hero[style*="--photo"]::before {
+	background: linear-gradient(0deg, rgba(8, 12, 24, 0.82) 0%, rgba(8, 12, 24, 0.35) 55%, rgba(8, 12, 24, 0.05) 100%), linear-gradient(90deg, rgba(8, 12, 24, 0.45), rgba(8, 12, 24, 0) 70%);
+}
+.poster[style*="--photo"] .poster-bgtext, .poster[style*="--photo"] .poster-plane { opacity: 0.55; }
+
+/* 카드·머리글의 대표 관광지(명소)·특산물 한 줄 */
+.spot { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 8px; font-size: 13px; font-weight: 600; line-height: 1.4; }
+.spot-item { display: inline-flex; align-items: center; gap: 6px; }
+.spot-tag { padding: 1px 7px; border-radius: 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; background: rgba(255, 255, 255, 0.9); color: #1b2236; }
+.spot-tag--food { background: var(--accent); color: #fff; }
+.photo-credit { margin-top: 10px; font-size: 11px; opacity: 0.75; }
+.site-footer a { text-decoration: underline; }
 .detail-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.1)); }
 .detail-hero-body, .detail-hero-side { position: relative; z-index: 2; }
 .detail-hero h1 { font-size: clamp(30px, 4.6vw, 54px); font-weight: 900; line-height: 1.12; letter-spacing: -0.03em; margin-top: 4px; }

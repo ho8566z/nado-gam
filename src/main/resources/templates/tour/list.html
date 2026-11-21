@@ -39,7 +39,7 @@
 
 	<section class="tour-grid" aria-label="투어 목록" th:unless="${#lists.isEmpty(tours)}">
 		<a class="tour-card" th:each="t : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition
-			th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()}">
+			th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()} + ${@destPhotos.styleByName(t.scope, t.placeName)}">
 			<span class="tour-badges">
 				<span class="tour-badge" th:text="${t.scopeLabel()}">해외</span>
 				<span class="tour-badge tour-badge--theme" th:text="${t.themeLabel()}">테마</span>
@@ -50,6 +50,7 @@
 			</span>
 			<span class="tour-title" th:text="${t.title}">투어 이름</span>
 			<span class="tour-sub" th:text="${t.subtitle}">부제</span>
+			<th:block th:replace="~{fragments/spot :: byName(${t.scope}, ${t.placeName})}"></th:block>
 			<span class="tour-foot">
 				<span class="tour-brand" th:if="${t.collabBrand != null}" th:text="'with ' + ${t.collabBrand}">with 브랜드</span>
 				<span class="tour-meta"><span th:text="${t.periodLabel()}">3박 4일</span> · <b th:text="${t.priceLabel()}">₩1,000,000~</b></span>

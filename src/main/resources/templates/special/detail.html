@@ -7,7 +7,7 @@
 
 	<a class="back" th:href="@{/special}" data-transition>← 이달의 특별전</a>
 
-	<section class="detail-hero" th:style="|--c1:${detail.plan().from()};--c2:${detail.plan().to()}|">
+	<section class="detail-hero" th:style="|--c1:${detail.plan().from()};--c2:${detail.plan().to()}${@destPhotos.style('overseas', detail.plan().destinationId())}|">
 		<span class="poster-bgtext" aria-hidden="true" th:text="${detail.plan().nameEnUpper()}">ROME</span>
 		<div class="detail-hero-body">
 			<div class="poster-tags">

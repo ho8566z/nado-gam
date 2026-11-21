@@ -31,11 +31,14 @@
 
 .dest-grid { max-width: 1160px; margin: 14px auto 0; padding: 0 clamp(16px, 4vw, 32px); display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
 .dest-card {
-	position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; min-height: 230px; padding: 20px; overflow: hidden;
-	border-radius: 22px; color: #fff; background: linear-gradient(135deg, var(--c1, #334), var(--c2, #556));
+	position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; min-height: 270px; padding: 20px; overflow: hidden;
+	border-radius: 22px; color: #fff; background: var(--photo, linear-gradient(transparent, transparent)) center / cover no-repeat, linear-gradient(135deg, var(--c1, #334), var(--c2, #556));
 	box-shadow: 0 16px 40px -22px var(--shadow-soft); transition: transform 0.35s var(--ease), box-shadow 0.35s;
 }
 .dest-card::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.58)); }
+.dest-card[style*="--photo"]::before { background: linear-gradient(180deg, rgba(8, 12, 24, 0.25) 0%, rgba(8, 12, 24, 0.42) 40%, rgba(8, 12, 24, 0.88) 100%); }
+.dest-card[style*="--photo"] .dest-bgtext { opacity: 0.45; }
+.dest-card .spot { margin-top: 6px; font-size: 12px; }
 a.dest-card:hover { transform: translateY(-5px); box-shadow: 0 24px 50px -20px var(--shadow-soft); }
 .dest-bgtext { position: absolute; right: -8px; bottom: 58px; text-transform: uppercase; max-width: 100%; overflow: hidden; font-size: 54px; font-weight: 900; line-height: 1; letter-spacing: -0.03em; white-space: nowrap; color: transparent; -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.28); transform: rotate(-5deg); pointer-events: none; }
 .dest-region { position: relative; z-index: 1; align-self: flex-start; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.35); }

@@ -7,7 +7,7 @@
 
 	<a class="back" th:href="@{/travel}" data-transition>← 여행지 선택</a>
 
-	<section class="detail-hero travel-hero" th:style="|--c1:${destination.from()};--c2:${destination.to()}|">
+	<section class="detail-hero travel-hero" th:style="|--c1:${destination.from()};--c2:${destination.to()}${@destPhotos.style('overseas', destination.destinationId())}|">
 		<span class="poster-bgtext" aria-hidden="true" th:text="${destination.nameEn().toUpperCase()}">PARIS</span>
 		<div class="detail-hero-body">
 			<div class="poster-tags">
@@ -17,6 +17,10 @@
 			<p class="poster-kicker"><span th:text="${destination.nameEn()}">Paris</span> · <span th:text="${destination.countryName()}">프랑스</span></p>
 			<h1 th:text="${destination.nameKo()}">파리</h1>
 			<p class="poster-sub" th:text="${destination.summary()}">소개</p>
+			<th:block th:replace="~{fragments/spot :: byId('overseas', ${destination.destinationId()})}"></th:block>
+			<th:block th:with="cr=${@destPhotos.credit('overseas', destination.destinationId())}">
+				<p class="photo-credit" th:if="${cr != null}">사진: <span th:text="${cr.subject}">Eiffel Tower</span> · <span th:text="${cr.author}">저작자</span> · <span th:text="${cr.license}">CC</span> · Wikimedia Commons</p>
+			</th:block>
 		</div>
 		<div class="detail-hero-side" th:if="${destination.available()}">
 			<span class="price-note">일반석 최저가</span>

@@ -7,7 +7,7 @@
 
 	<a class="back" th:href="@{/bestseller}" data-transition>← 베스트셀러</a>
 
-	<section class="detail-hero" th:style="|--c1:${detail.card().from()};--c2:${detail.card().to()}|">
+	<section class="detail-hero" th:style="|--c1:${detail.card().from()};--c2:${detail.card().to()}${@destPhotos.style('overseas', detail.card().destinationId())}|">
 		<span class="poster-bgtext" aria-hidden="true" th:text="${detail.card().nameEnUpper()}">TOKYO</span>
 		<div class="detail-hero-body">
 			<div class="poster-tags">

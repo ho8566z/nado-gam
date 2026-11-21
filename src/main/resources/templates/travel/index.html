@@ -39,13 +39,14 @@
 			<a th:if="${d.available()}" class="dest-card" data-dest data-transition
 				th:href="@{/travel/{id}(id=${d.destinationId()})}"
 				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()}"
-				th:style="|--c1:${d.from()};--c2:${d.to()}|">
+				th:style="|--c1:${d.from()};--c2:${d.to()}${@destPhotos.style('overseas', d.destinationId())}|">
 				<span class="dest-bgtext" aria-hidden="true" th:text="${d.nameEn()}">PARIS</span>
 				<span class="dest-region" th:text="${d.regionLabel()}">유럽</span>
 				<div class="dest-body">
 					<h3 th:text="${d.nameKo()}">파리</h3>
 					<p class="dest-en"><span th:text="${d.nameEn()}">Paris</span> · <span th:text="${d.countryName()}">프랑스</span></p>
 					<p class="dest-summary" th:text="${d.summary()}">소개</p>
+					<th:block th:replace="~{fragments/spot :: byId('overseas', ${d.destinationId()})}"></th:block>
 				</div>
 				<div class="dest-foot">
 					<span class="dest-price"><small>최저가</small> <b th:text="${d.minPriceLabel()}">₩690,000</b>~</span>

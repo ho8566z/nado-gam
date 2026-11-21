@@ -5,7 +5,7 @@
 <header th:replace="~{fragments/layout :: header('travel')}"></header>
 <main class="page">
 	<a class="back" th:href="@{/travel}" data-transition>← 여행지 선택</a>
-	<section class="tour-hero" th:style="'--from:' + ${destination.from()} + ';--to:' + ${destination.to()}">
+	<section class="tour-hero" th:style="'--from:' + ${destination.from()} + ';--to:' + ${destination.to()} + ${@destPhotos.style('overseas', destination.destinationId())}">
 		<span class="tour-badge" th:text="${destination.regionLabel()}">유럽</span>
 		<h1 th:text="${destination.nameKo()}">바르셀로나</h1>
 		<p class="tour-hero-sub" th:text="${destination.summary()}">소개</p>

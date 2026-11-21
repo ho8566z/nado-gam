@@ -5,7 +5,7 @@
 <header th:replace="~{fragments/layout :: header('domestic')}"></header>
 <main class="page">
 
-	<section class="tour-hero" th:style="'--from:' + ${city.from()} + ';--to:' + ${city.to()}">
+	<section class="tour-hero" th:style="'--from:' + ${city.from()} + ';--to:' + ${city.to()} + ${@destPhotos.style('domestic', city.cityId)}">
 		<a class="back-link" th:href="@{/domestic}">← 국내여행</a>
 		<span class="tour-badge" th:text="${city.province}">경북</span>
 		<h1 th:text="${city.name}">경주</h1>
@@ -49,7 +49,7 @@
 		<h2>이 도시의 투어</h2>
 		<div class="tour-grid tour-grid--inline">
 			<a class="tour-card" th:each="t : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition
-				th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()}">
+				th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()} + ${@destPhotos.styleByName(t.scope, t.placeName)}">
 				<span class="tour-badges"><span class="tour-badge tour-badge--theme" th:text="${t.themeLabel()}">테마</span></span>
 				<span class="tour-title" th:text="${t.title}">투어 이름</span>
 				<span class="tour-sub" th:text="${t.subtitle}">부제</span>

@@ -13,13 +13,14 @@
 
 	<section class="tour-grid" aria-label="국내 여행지">
 		<a class="tour-card" th:each="c : ${cities}" th:href="@{/domestic/{id}(id=${c.cityId})}" data-transition
-			th:style="'--from:' + ${c.from()} + ';--to:' + ${c.to()}">
+			th:style="'--from:' + ${c.from()} + ';--to:' + ${c.to()} + ${@destPhotos.style('domestic', c.cityId)}">
 			<span class="tour-badges">
 				<span class="tour-badge" th:text="${c.province}">경북</span>
 				<span class="tour-badge tour-badge--theme" th:text="'투어 ' + ${c.tourCount} + '개'">투어 3개</span>
 			</span>
 			<span class="tour-place"><strong th:text="${c.name}">경주</strong></span>
 			<span class="tour-sub" th:text="${c.summary}">소개</span>
+			<th:block th:replace="~{fragments/spot :: byId('domestic', ${c.cityId})}"></th:block>
 			<span class="tour-foot">
 				<span class="tour-meta">이동 편도 <b th:text="${c.fareLabel()}">₩10,000~</b></span>
 			</span>
