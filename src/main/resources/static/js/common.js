@@ -85,13 +85,12 @@
 	});
 })();
 
-// 사이드바: 이달의 기획전·베스트셀러를 화면 옆에 띄운다. 두 페이지·메인·관리자 화면에서는 보이지 않고, 스크롤해도 따라온다(CSS fixed).
+// 사이드바: 이달의 기획전·베스트셀러를 화면 옆에 항상 띄운다. 두 페이지·메인·관리자 화면에서는 보이지 않고, 스크롤해도 따라온다(CSS fixed).
 (function () {
 	'use strict';
 	var panel = document.querySelector('[data-side-promo]');
-	var toggle = document.querySelector('[data-side-toggle]');
 	var list = panel ? panel.querySelector('[data-side-list]') : null;
-	if (!panel || !toggle || !list) { return; }
+	if (!panel || !list) { return; }
 	var path = window.location.pathname;
 	if (path === '/' || path === '/special' || path.indexOf('/special/') === 0 || path === '/bestseller' || path.indexOf('/bestseller/') === 0
 		|| path.indexOf('/admin') === 0) { return; }
@@ -122,16 +121,9 @@
 				list.appendChild(a);
 			});
 			panel.hidden = false;
-			toggle.hidden = false;
+			document.body.classList.add('has-side');   // 본문이 사이드바에 가리지 않게 오른쪽을 비운다
 		})
 		.catch(function () { /* 사이드바는 없어도 화면 사용에 지장이 없다 */ });
-	function setOpen(open) {
-		panel.classList.toggle('is-open', open);
-		toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-	}
-	toggle.addEventListener('click', function () { setOpen(!panel.classList.contains('is-open')); });
-	var close = panel.querySelector('[data-side-close]');
-	if (close) { close.addEventListener('click', function () { setOpen(false); }); }
 })();
 
 // 생동감: 스크롤하면 카드가 차례로 떠오르고, 스크롤하면 상단 메뉴에 그림자가 생기며, 맨 위로 버튼이 나타난다.

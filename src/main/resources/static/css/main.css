@@ -409,9 +409,8 @@ html { scroll-behavior: smooth; }
 /* ---------- 사이드바: 이달의 기획전·베스트셀러(스크롤해도 따라온다) ---------- */
 .side-promo { position: fixed; top: 88px; right: 14px; z-index: 45; width: 196px; max-height: calc(100vh - 110px); overflow-y: auto;
 	padding: 12px; border-radius: 18px; background: rgba(255, 255, 255, 0.96); border: 1px solid var(--line); box-shadow: 0 18px 40px -20px var(--shadow-soft); }
-.side-promo[hidden], .side-promo-toggle[hidden] { display: none; }
+.side-promo[hidden] { display: none; }
 .side-promo-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 13px; margin-bottom: 4px; }
-.side-promo-head button { display: none; border: 0; background: none; font-size: 20px; line-height: 1; cursor: pointer; color: var(--muted); }
 .side-promo-label { margin: 12px 0 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; color: var(--accent-ink); }
 .side-card { position: relative; display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; padding: 10px 12px; border-radius: 14px; overflow: hidden; color: #fff; text-decoration: none;
 	background: var(--photo, linear-gradient(transparent, transparent)) center / cover no-repeat, linear-gradient(125deg, var(--c1), var(--c2)); }
@@ -422,16 +421,12 @@ html { scroll-behavior: smooth; }
 .side-card-name { font-size: 16px; font-weight: 800; }
 .side-card-title { font-size: 12px; line-height: 1.4; opacity: 0.92; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .side-card-price { margin-top: 4px; font-size: 13px; font-weight: 800; }
-.side-promo-toggle { display: none; position: fixed; right: 0; top: 140px; z-index: 46; padding: 10px 12px; border: 0; border-radius: 14px 0 0 14px; cursor: pointer;
-	background: var(--accent); color: #fff; font: inherit; font-size: 13px; font-weight: 800; box-shadow: 0 10px 24px -10px var(--shadow-soft); }
-@media (max-width: 1499px) {
-	.side-promo { transform: translateX(calc(100% + 24px)); transition: transform 0.3s var(--ease); }
-	.side-promo.is-open { transform: none; }
-	.side-promo-head button { display: block; }
-	.side-promo-toggle:not([hidden]) { display: block; }
+/* 항상 떠 있는 사이드바: 폭이 좁으면 본문 오른쪽을 비워 가리지 않게 하고, 아주 넓으면 여백에 그대로 놓는다 */
+@media (min-width: 761px) and (max-width: 1739px) {
+	body.has-side main { padding-right: 226px; }
 }
 @media (max-width: 760px) {
-	.side-promo, .side-promo-toggle { display: none !important; }
+	.side-promo { display: none !important; }
 }
 
 /* ---------- 생동감: 떠오르는 카드, 빛이 지나가는 카드, 살아 있는 버튼 ---------- */
