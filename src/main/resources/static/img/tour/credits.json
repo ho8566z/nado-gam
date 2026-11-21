@@ -44,6 +44,15 @@
   "subject": "Maracanã Stadium",
   "wiki": "en"
  },
+ "tour-103": {
+  "author": "Coquimbo58",
+  "file": "Tango_dancers_in_Montevideo.png",
+  "label": "탱고",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tango_dancers_in_Montevideo.png",
+  "subject": "Tango",
+  "wiki": "en"
+ },
  "tour-104": {
   "author": "Lebowskyclone",
   "file": "CarmenereW.jpg",
@@ -69,6 +78,15 @@
   "license": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File:BOG_04_2012_Museo_de_Oro_1273.JPG",
   "subject": "Gold Museum, Bogotá",
+  "wiki": "en"
+ },
+ "tour-107": {
+  "author": "Cayambe",
+  "file": "Quito_calle_García_Moreno.jpg",
+  "label": "키토 구시가지",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Quito_calle_Garc%C3%ADa_Moreno.jpg",
+  "subject": "El Panecillo",
   "wiki": "en"
  },
  "tour-108": {
@@ -169,6 +187,24 @@
   "source": "https://commons.wikimedia.org/wiki/File:Ojukheon_sarangchae.jpg",
   "subject": "오죽헌",
   "wiki": "ko"
+ },
+ "tour-118": {
+  "author": "by superlocal at Flickr",
+  "file": "Korean_cuisine-Ojingeo_sundae-01.jpg",
+  "label": "오징어순대",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Ojingeo_sundae-01.jpg",
+  "subject": "오징어순대",
+  "wiki": "ko"
+ },
+ "tour-119": {
+  "author": "Taewangkorea",
+  "file": "Dinosaur_Ridge_of_Seoraksan.jpg",
+  "label": "설악산 공룡능선",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Dinosaur_Ridge_of_Seoraksan.jpg",
+  "subject": "Seoraksan",
+  "wiki": "en"
  },
  "tour-12": {
   "author": "Dick Thomas Johnson from Tokyo, Japan",
@@ -296,6 +332,15 @@
   "subject": "여수 해상케이블카",
   "wiki": "ko"
  },
+ "tour-132": {
+  "author": "Glabb",
+  "file": "Dolsan_Bridge1.JPG",
+  "label": "돌산대교",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Dolsan_Bridge1.JPG",
+  "subject": "Yeosu",
+  "wiki": "en"
+ },
  "tour-133": {
   "author": "최승호, 김병직, 권선만, 조현근, et al.",
   "file": "Bluespotted_mud_hopper.jpg",
@@ -303,6 +348,24 @@
   "license": "KOGL Type 1",
   "source": "https://commons.wikimedia.org/wiki/File:Bluespotted_mud_hopper.jpg",
   "subject": "짱뚱어",
+  "wiki": "ko"
+ },
+ "tour-134": {
+  "author": "Bernard Gagnon",
+  "file": "View_of_Suncheon.jpg",
+  "label": "순천 전경",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:View_of_Suncheon.jpg",
+  "subject": "Suncheon",
+  "wiki": "en"
+ },
+ "tour-135": {
+  "author": "Donghwan Seong",
+  "file": "Panorama_of_International_Garden_Exposition_Suncheon_Bay_Korea_2013.jpg",
+  "label": "순천만국가정원",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Panorama_of_International_Garden_Exposition_Suncheon_Bay_Korea_2013.jpg",
+  "subject": "순천만국가정원",
   "wiki": "ko"
  },
  "tour-136": {
@@ -348,6 +411,24 @@
   "license": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File:%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8%E3%83%9D%E3%83%B3%E9%85%A2%E3%81%AE%E3%81%9F%E3%81%93%E7%84%BC%E3%81%8D.jpg",
   "subject": "Takoyaki",
+  "wiki": "en"
+ },
+ "tour-140": {
+  "author": "류금열",
+  "file": "청풍호_구담봉.jpg",
+  "label": "구담봉",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:%EC%B2%AD%ED%92%8D%ED%98%B8_%EA%B5%AC%EB%8B%B4%EB%B4%89.jpg",
+  "subject": "구담봉",
+  "wiki": "ko"
+ },
+ "tour-141": {
+  "author": "Academy of Korean Studies",
+  "file": "Panoramic_view_of_Danyang-eup.jpg",
+  "label": "단양 전경",
+  "license": "KOGL Type 1",
+  "source": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Danyang-eup.jpg",
+  "subject": "Danyang County",
   "wiki": "en"
  },
  "tour-15": {
@@ -539,6 +620,15 @@
   "subject": "Grouse Mountain",
   "wiki": "en"
  },
+ "tour-34": {
+  "author": "Unknown",
+  "file": "Mortadella_tagliata.jpg",
+  "label": "모르타델라 샌드위치",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Mortadella_tagliata.jpg",
+  "subject": "Mortadella",
+  "wiki": "en"
+ },
  "tour-35": {
   "author": "Atelier Brückner (company)",
   "file": "Logo_of_the_Grand_Egyptian_Museum.svg",
@@ -690,6 +780,15 @@
   "license": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
   "subject": "Carbonara",
+  "wiki": "en"
+ },
+ "tour-50": {
+  "author": "Masato Ikeda",
+  "file": "Reef_snorkeler.jpg",
+  "label": "혼문 섬",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Reef_snorkeler.jpg",
+  "subject": "Snorkeling",
   "wiki": "en"
  },
  "tour-51": {
