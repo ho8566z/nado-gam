@@ -493,4 +493,10 @@ html { scroll-behavior: smooth; }
 	.home-shelves .nav { width: 38px; height: 38px; margin-top: -19px; font-size: 22px; }
 	.home-shelves .nav--prev { left: 10px; }
 	.home-shelves .nav--next { right: 10px; }
+	/* 지구본 패널과 아래 경계를 맞추기 위해 두 섹션이 남는 높이를 나눠 갖는다 */
+	.home-shelves .shelf { flex: 1 1 auto; display: flex; flex-direction: column; }
+	.home-shelves .carousel { flex: 1 1 auto; display: flex; }
+	.home-shelves .viewport { flex: 1 1 auto; min-width: 0; display: flex; }
+	.home-shelves .track { flex: 1 1 auto; }
+	.home-shelves .slide > .poster { height: 100%; box-sizing: border-box; }
 }
