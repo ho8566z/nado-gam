@@ -15,6 +15,14 @@
   "subject": "도담삼봉",
   "wiki": "ko"
  },
+ "domestic-11": {
+  "author": "서울관광 아카이브",
+  "file": "광화문_월대.jpg",
+  "license": "KOGL Type 1",
+  "source": "https://commons.wikimedia.org/wiki/File:%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
+  "subject": "Gyeongbokgung",
+  "wiki": "en"
+ },
  "domestic-2": {
   "author": "Scroozle",
   "file": "Gyeongpodae_Pavilion_Gangneung.JPG",
@@ -168,12 +176,12 @@
   "wiki": "en"
  },
  "overseas-19": {
-  "author": "War Office",
-  "file": "1957_map_of_Victoria_Harbour_by_the_British_War_Office.jpg",
-  "license": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File:1957_map_of_Victoria_Harbour_by_the_British_War_Office.jpg",
+  "author": "Benh LIEU SONG (Flickr)",
+  "file": "Hong_Kong_Harbour_Night_2019-06-11.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Harbour_Night_2019-06-11.jpg",
   "subject": "Victoria Harbour",
-  "wiki": "en"
+  "wiki": "commons"
  },
  "overseas-2": {
   "author": "Fuzzypiggy",
@@ -752,12 +760,12 @@
   "wiki": "en"
  },
  "overseas-85": {
-  "author": "Wikipedia 게재 이미지(저작자 미확인)",
+  "author": "Dsdugan",
   "file": "21-12-064-road.jpg",
-  "license": "Wikipedia 게재 이미지(파일별 라이선스 미확인)",
-  "source": "",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:21-12-064-road.jpg",
   "subject": "Old Red Museum (Dallas County Courthouse)",
-  "wiki": "en"
+  "wiki": "ko"
  },
  "overseas-86": {
   "author": "chensiyuan",

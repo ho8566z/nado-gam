@@ -2238,7 +2238,7 @@ INSERT INTO support_inquiry (member_id, category, title, content, status, answer
 INSERT INTO support_inquiry (member_id, category, title, content, status, answer_content, answered_by, created_at, answered_at) VALUES (1, 'PAYMENT', '결제 영수증은 어디서 받나요?', '결제를 마쳤는데 영수증 발급 메뉴를 못 찾겠어요.', 'ANSWERED', '결제 내역은 ''내 예약''의 예약 상세에서 확인하실 수 있어요. 별도의 영수증이 필요하시면 예약 번호와 함께 다시 문의해 주세요.', 1, '2026-11-19 13:30:00', '2026-11-19 17:10:00');
 INSERT INTO support_inquiry (member_id, category, title, content, status, answer_content, answered_by, created_at, answered_at) VALUES (1, 'HOTEL', '호텔 체크인 시간이 궁금해요', '도쿄 호텔에 밤 11시쯤 도착할 것 같은데 늦은 체크인도 가능한가요?', 'RECEIVED', NULL, NULL, '2026-11-20 08:45:00', NULL);
 
--- [M] 국내 여행지 10곳 (경주·강릉·속초·부산·제주·전주·여수·순천·통영·단양)
+-- [M] 국내 여행지 11곳 (경주·강릉·속초·부산·제주·전주·여수·순천·통영·단양·서울)
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('경주', '경북', 35.8562, 129.2247, '천년 신라의 수도, 도시 전체가 야외 박물관', '#c0842b', '#7a3b12', 'AVAILABLE', 1);
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('강릉', '강원', 37.7519, 128.8761, '동해 바다와 커피 거리, 초당 두부의 도시', '#1c7ed6', '#0b3d66', 'AVAILABLE', 2);
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('속초', '강원', 38.207, 128.5918, '설악산과 동해가 만나는 항구 도시', '#2f9e44', '#0b5a3a', 'AVAILABLE', 3);
@@ -2249,8 +2249,9 @@ INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, post
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('순천', '전남', 34.9506, 127.4872, '순천만 습지와 국가정원이 있는 생태 도시', '#82c91e', '#2b6a1c', 'AVAILABLE', 8);
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('통영', '경남', 34.8544, 128.4331, '한려수도와 충무김밥, 예술가의 항구', '#15aabf', '#0b4f6c', 'AVAILABLE', 9);
 INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('단양', '충북', 36.9845, 128.3655, '남한강과 도담삼봉, 패러글라이딩의 고장', '#7950f2', '#3b2a8a', 'AVAILABLE', 10);
+INSERT INTO domestic_city (name_ko, province, latitude, longitude, summary, poster_color_from, poster_color_to, status, sort_order) VALUES ('서울', '서울', 37.5665, 126.978, '경복궁과 한강, 시장과 야경이 어우러진 대한민국의 수도', '#845ef7', '#33237a', 'AVAILABLE', 11);
 
--- [M] 국내 이동편 50개 (도시마다 5개: 서울 출발 3 + 대전 출발 2, 요금은 성인 편도 1인)
+-- [M] 국내 이동편 55개 (도시마다 5개: 서울 출발 3 + 대전 출발 2, 서울은 대전 출발 5, 요금은 성인 편도 1인)
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'SEOUL', 'TRAIN', 'KTX 서울→신경주', '07:30:00', 130, 59800, '신경주역에서 시내버스·택시로 20분', 1);
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'SEOUL', 'TRAIN', 'SRT 수서→신경주', '09:10:00', 125, 52400, '수서역 출발, 신경주역 도착', 2);
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (1, 'SEOUL', 'EXPRESS_BUS', '고속버스 서울→경주', '08:00:00', 230, 24000, '경주 시외버스터미널 도착', 3);
@@ -2301,6 +2302,11 @@ INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, durati
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'SEOUL', 'EXPRESS_BUS', '우등 버스 서울→단양', '09:30:00', 150, 22000, '우등 좌석(2열)', 3);
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→단양', '09:00:00', 180, 14000, '청주 경유 하루 3회', 4);
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'DAEJEON', 'TRAIN', 'KTX 대전→오송 환승 단양', '08:00:00', 140, 25000, '오송역에서 시외버스 환승', 5);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (11, 'DAEJEON', 'TRAIN', 'KTX 대전→서울', '07:30:00', 60, 23700, '서울역 도착, 지하철 연결', 1);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (11, 'DAEJEON', 'TRAIN', 'SRT 대전→수서', '08:20:00', 55, 21800, '수서역 도착', 2);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (11, 'DAEJEON', 'TRAIN', '무궁화호 대전→서울', '09:00:00', 120, 11800, '서울역 도착(완행)', 3);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (11, 'DAEJEON', 'EXPRESS_BUS', '고속버스 대전→서울', '08:00:00', 110, 9700, '서울고속버스터미널 도착', 4);
+INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (11, 'DAEJEON', 'INTERCITY_BUS', '시외버스 대전→동서울', '10:00:00', 120, 9000, '동서울터미널 도착', 5);
 
 -- [M] 해외 투어: 이달의 기획 3곳·베스트셀러 3곳은 3테마 전부, 나머지는 도시를 대표하는 1테마 (블라디보스토크 제외)
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order, view_count, sales_count, agency_pick) VALUES ('OVERSEAS', 1, NULL, 'ART_REST', '파리 예술·휴식 투어: 루브르 박물관 · 오르세 박물관', '세계 최대 규모의 미술관, 모나리자 소장. 인상주의 회화 전문 미술관.', '앙코르앙코르 공연장', '루브르 박물관 — 세계 최대 규모의 미술관, 모나리자 소장
@@ -6711,7 +6717,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 12, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 
--- [M] 국내 투어: 10개 도시 × 3테마 (1박2일·2박3일·3박4일)
+-- [M] 국내 투어: 11개 도시 × 3테마 (1박2일·2박3일·3박4일)
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order, view_count, sales_count, agency_pick) VALUES ('DOMESTIC', NULL, 1, 'FOOD_DRINK', '경주 미식·주류 투어: 황남빵 · 경주 한우', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 40년 전통 한우 숯불구이 전문점.', '빵순이 베이커리', '황남빵 — 1939년부터 만들어온 팥 앙금 경주 대표 간식
 경주 한우 — 40년 전통 한우 숯불구이 전문점
 경주 콩국수 — 1956년부터 만든 원조 콩국 반찬소 콩 삶은물', '현지 한국어 가이드 동행
@@ -7372,6 +7378,72 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 2, '단양팔경', '도담삼봉, 구담봉 등 8대 절경 관광. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 3, '도담삼봉 풍경', '남한강 위 세 봉우리 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order, view_count, sales_count, agency_pick) VALUES ('DOMESTIC', NULL, 11, 'FOOD_DRINK', '서울 미식·주류 투어: 한식 비스트로 투어 · 명동 거리음식', '종로·인사동 역사 한식당에서의 한식 체험. 떡볶이, 순대, 호떡 등 한국 길거리 음식.', '초콜릿 녹는중 공방', '한식 비스트로 투어 — 종로·인사동 역사 한식당에서의 한식 체험
+명동 거리음식 — 떡볶이, 순대, 호떡 등 한국 길거리 음식
+남대문 시장 — 전통 시장에서의 현지 음식 맛보기', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+일정에 표시된 식사와 시음', '이동편(국내여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 한식 비스트로 투어, 명동 거리음식, 남대문 시장 (상품·브랜드는 가상)', 'ON_SALE', 142, 5296, 593, 0);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (142, 1, 2, 90000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (424, 1, '서울 도착과 대표 체험', '대전에서 출발해 서울에 도착합니다. 가이드와 만나 종로·인사동 역사 한식당에서의 한식 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (424, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (142, 2, 3, 140000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (425, 1, '서울 도착', '대전에서 출발해 서울에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (425, 2, '한식 비스트로 투어 탐방', '종로·인사동 역사 한식당에서의 한식 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (425, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (142, 3, 4, 180000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (426, 1, '서울 도착', '대전에서 출발해 서울에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (426, 2, '한식 비스트로 투어 탐방', '종로·인사동 역사 한식당에서의 한식 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (426, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 명동 거리음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (426, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order, view_count, sales_count, agency_pick) VALUES ('DOMESTIC', NULL, 11, 'SPORTS_ACTIVITY', '서울 스포츠·액티비티 투어: K리그 축구 경기 · 태권도 체험', '서울 프로축구팀 경기 관람. 한국 전통 무술 태권도 수업 및 공연.', NULL, 'K리그 축구 경기 — 서울 프로축구팀 경기 관람
+태권도 체험 — 한국 전통 무술 태권도 수업 및 공연
+서울 배구 경기 — 한국 배구리그 경기', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+경기 관람 티켓 또는 액티비티 이용권·장비 대여', '이동편(국내여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: K리그 축구 경기, 태권도 체험, 서울 배구 경기 (상품·브랜드는 가상)', 'ON_SALE', 143, 5911, 369, 0);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (143, 1, 2, 110000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (427, 1, '서울 도착과 대표 체험', '대전에서 출발해 서울에 도착합니다. 가이드와 만나 서울 프로축구팀 경기 관람. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (427, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (143, 2, 3, 160000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (428, 1, '서울 도착', '대전에서 출발해 서울에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (428, 2, 'K리그 축구 경기', '서울 프로축구팀 경기 관람. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (428, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (143, 3, 4, 210000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (429, 1, '서울 도착', '대전에서 출발해 서울에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (429, 2, 'K리그 축구 경기', '서울 프로축구팀 경기 관람. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (429, 3, '태권도 체험 체험', '한국 전통 무술 태권도 수업 및 공연. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (429, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order, view_count, sales_count, agency_pick) VALUES ('DOMESTIC', NULL, 11, 'ART_REST', '서울 예술·휴식 투어: 국립박물관 · 덕수궁 건축', '한국 역사와 문화 유물 종합 박물관. 조선 왕궁과 한양도성 역사 유적.', '앙코르앙코르 공연장', '국립박물관 — 한국 역사와 문화 유물 종합 박물관
+덕수궁 건축 — 조선 왕궁과 한양도성 역사 유적
+한옥마을 체험 — 북촌 한옥 거리 전통 문화 체험', '현지 한국어 가이드 동행
+일정표에 있는 현지 이동 차량
+일정표의 입장료·체험비
+미술관·공연 입장권 또는 스파 이용권', '이동편(국내여행 메뉴에서 별도 선택)
+호텔 숙박(호텔 메뉴에서 별도 선택)
+개인 경비와 쇼핑
+여행자 보험
+선택 관광과 가이드 팁', '웹 조사 참고: 국립박물관, 덕수궁 건축, 한옥마을 체험 (상품·브랜드는 가상)', 'ON_SALE', 144, 6838, 323, 0);
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (144, 1, 2, 100000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (430, 1, '서울 도착과 대표 체험', '대전에서 출발해 서울에 도착합니다. 가이드와 만나 한국 역사와 문화 유물 종합 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (430, 2, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (144, 2, 3, 140000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (431, 1, '서울 도착', '대전에서 출발해 서울에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (431, 2, '국립박물관', '한국 역사와 문화 유물 종합 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (431, 3, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
+INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (144, 3, 4, 190000, 2, 30);
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (432, 1, '서울 도착', '대전에서 출발해 서울에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (432, 2, '국립박물관', '한국 역사와 문화 유물 종합 박물관. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (432, 3, '덕수궁 건축', '조선 왕궁과 한양도성 역사 유적. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (432, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 
 -- [N] 호텔: 해외 3개씩(이달의 기획·베스트셀러 6곳은 7개), 국내 도시 3개씩
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 잠만자는 호텔', 3, '공항 인근', '파리 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 1);
@@ -7725,6 +7797,9 @@ INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenitie
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 공원뷰(?) 호텔', 3, '역 인근', '단양 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 70000, 'ON_SALE', 349);
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 화분 가든 호텔', 4, '공항 인근', '단양 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 350);
 INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 왕처럼 팰리스', 5, '시내 중심', '단양 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 200000, 'ON_SALE', 351);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 11, '서울 잠만자는 호텔', 3, '쇼핑가', '서울 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 352);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 11, '서울 화분 가든 호텔', 4, '역 인근', '서울 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 120000, 'ON_SALE', 353);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 11, '서울 왕처럼 팰리스', 5, '쇼핑가', '서울 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 210000, 'ON_SALE', 354);
 
 -- [N] 크루즈 7곳(항구 도시)
 INSERT INTO cruise (destination_id, title, ship_name, departure_port, itinerary, nights, price_inside, price_balcony, highlights, status, sort_order) VALUES (6, '서부 지중해 7박 크루즈', '나도감 메디호', '바르셀로나 항', '바르셀로나 → 마르세유 → 제노바 → 나폴리 → 팔마 → 바르셀로나', 7, 1290000, 1790000, '선상 파에야 쿠킹 클래스, 항구별 반일 시티 투어, 갑판 야외 영화', 'ON_SALE', 1);

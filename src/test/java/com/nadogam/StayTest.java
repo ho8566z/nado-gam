@@ -62,15 +62,15 @@ class StayTest {
 	}
 
 	@Test
-	void 호텔은_351개이고_기획전_베스트셀러_6곳은_7개_나머지_해외와_국내는_3개다() {
-		assertThat(count("SELECT COUNT(*) FROM hotel")).isEqualTo(351);
+	void 호텔은_354개이고_기획전_베스트셀러_6곳은_7개_나머지_해외와_국내는_3개다() {
+		assertThat(count("SELECT COUNT(*) FROM hotel")).isEqualTo(354);
 		assertThat(count("SELECT COUNT(*) FROM hotel WHERE (destination_id IS NULL) = (city_id IS NULL)")).isZero();
 		Map<String, Long> perPlace = jdbc.queryForList(
 			"SELECT d.name_ko AS name, COUNT(*) AS n FROM hotel h JOIN destination d ON d.destination_id = h.destination_id GROUP BY d.name_ko").stream()
 			.collect(Collectors.toMap(r -> (String) r.get("name"), r -> ((Number) r.get("n")).longValue()));
 		assertThat(perPlace).hasSize(99).doesNotContainKey("블라디보스토크");
 		perPlace.forEach((name, n) -> assertThat(n).as(name).isEqualTo(FEATURED.contains(name) ? 7L : 3L));
-		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM hotel WHERE city_id IS NOT NULL GROUP BY city_id HAVING COUNT(*) = 3) x")).isEqualTo(10);
+		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM hotel WHERE city_id IS NOT NULL GROUP BY city_id HAVING COUNT(*) = 3) x")).isEqualTo(11);
 	}
 
 	@Test

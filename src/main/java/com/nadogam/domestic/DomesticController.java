@@ -37,10 +37,12 @@ public class DomesticController {
 	public String detail(@PathVariable long id, @RequestParam(required = false) String origin,
 		@RequestParam(required = false) Integer nights, Model model) {
 		DomesticCity city = domestic.city(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-		// 출발지는 서울(기본)·대전만 허용한다.
-		String selected = "DAEJEON".equals(origin) ? "DAEJEON" : "SEOUL";
+		// 출발지는 서울(기본)·대전만 허용한다. 서울 여행지는 서울에서 출발하는 이동편이 없어 항상 대전 출발이다.
+		boolean seoul = "서울".equals(city.name());
+		String selected = seoul || "DAEJEON".equals(origin) ? "DAEJEON" : "SEOUL";
 		model.addAttribute("city", city);
 		model.addAttribute("origin", selected);
+		model.addAttribute("seoulCity", seoul);
 		model.addAttribute("transports", domestic.transports(id, selected));
 		model.addAttribute("tours", tours.cardsOfCity(id));
 		int stay = StayController.safeNights(nights, 2);

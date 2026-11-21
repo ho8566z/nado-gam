@@ -55,11 +55,12 @@ class DomesticTest {
 	}
 
 	@Test
-	void 이동편은_50개이고_도시마다_서울_3개_대전_2개다() {
-		assertThat(count("SELECT COUNT(*) FROM domestic_transport")).isEqualTo(50);
+	void 이동편은_55개이고_도시마다_서울_3개_대전_2개이고_서울은_대전_5개다() {
+		assertThat(count("SELECT COUNT(*) FROM domestic_transport")).isEqualTo(55);
 		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM domestic_transport GROUP BY city_id HAVING COUNT(*) <> 5) x")).isZero();
-		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM domestic_transport WHERE origin = 'SEOUL' GROUP BY city_id HAVING COUNT(*) = 3) x")).isEqualTo(10);
+		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM domestic_transport WHERE origin = 'SEOUL' GROUP BY city_id HAVING COUNT(*) = 3) x")).isEqualTo(10);   // 서울은 목적지라 서울 출발이 없다
 		assertThat(count("SELECT COUNT(*) FROM (SELECT city_id FROM domestic_transport WHERE origin = 'DAEJEON' GROUP BY city_id HAVING COUNT(*) = 2) x")).isEqualTo(10);
+		assertThat(count("SELECT COUNT(*) FROM domestic_transport t JOIN domestic_city c ON c.city_id = t.city_id WHERE c.name_ko = '서울' AND t.origin = 'DAEJEON'")).isEqualTo(5);
 		assertThat(count("SELECT COUNT(*) FROM domestic_transport WHERE origin NOT IN ('SEOUL','DAEJEON')")).isZero();
 		assertThat(count("SELECT COUNT(*) FROM domestic_transport WHERE mode NOT IN ('TRAIN','EXPRESS_BUS','INTERCITY_BUS','FLIGHT')")).isZero();
 		assertThat(count("SELECT COUNT(*) FROM domestic_transport WHERE fare <= 0 OR duration_minutes <= 0")).isZero();
@@ -83,12 +84,12 @@ class DomesticTest {
 	}
 
 	@Test
-	void 목록_화면은_도시_10곳을_보여_준다() throws Exception {
+	void 목록_화면은_도시_11곳을_보여_준다() throws Exception {
 		mvc.perform(get("/domestic")).andExpect(status().isOk())
 			.andExpect(content().string(Matchers.containsString("국내여행")))
 			.andExpect(content().string(Matchers.containsString("경주")))
 			.andExpect(content().string(Matchers.containsString("단양")));
-		assertThat(domestic.cities()).hasSize(10);
+		assertThat(domestic.cities()).hasSize(11);   // 해외 탭에서 뺀 서울을 포함
 	}
 
 	@Test
@@ -114,5 +115,15 @@ class DomesticTest {
 		mvc.perform(get("/")).andExpect(status().isOk())
 			.andExpect(content().string(Matchers.containsString("data-tab=\"/domestic\"")))
 			.andExpect(content().string(Matchers.containsString(">국내여행</a>")));
+	}
+
+	@Test
+	void 서울_상세는_서울_출발_탭이_없고_대전_출발_이동편과_투어_3개를_보여_준다() throws Exception {
+		Long seoul = jdbc.queryForObject("SELECT city_id FROM domestic_city WHERE name_ko = '서울'", Long.class);
+		mvc.perform(get("/domestic/" + seoul)).andExpect(status().isOk())
+			.andExpect(content().string(Matchers.containsString("대전 출발")))
+			.andExpect(content().string(Matchers.not(Matchers.containsString("서울 출발</a>"))))
+			.andExpect(content().string(Matchers.containsString("KTX 대전→서울")))
+			.andExpect(content().string(Matchers.containsString("서울 미식·주류 투어")));
 	}
 }

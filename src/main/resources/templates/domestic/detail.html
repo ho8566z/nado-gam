@@ -15,7 +15,7 @@
 	<section class="domestic-section">
 		<h2>가는 방법</h2>
 		<div class="chip-row" aria-label="출발지">
-			<a class="chip chip--tab" th:classappend="${origin == 'SEOUL'} ? 'is-active'" th:href="@{/domestic/{id}(id=${city.cityId},origin='SEOUL')}">서울 출발</a>
+			<a class="chip chip--tab" th:unless="${seoulCity}" th:classappend="${origin == 'SEOUL'} ? 'is-active'" th:href="@{/domestic/{id}(id=${city.cityId},origin='SEOUL')}">서울 출발</a>
 			<a class="chip chip--tab" th:classappend="${origin == 'DAEJEON'} ? 'is-active'" th:href="@{/domestic/{id}(id=${city.cityId},origin='DAEJEON')}">대전 출발</a>
 		</div>
 		<ul class="transport-list">

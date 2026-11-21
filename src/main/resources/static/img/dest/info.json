@@ -551,6 +551,11 @@
    "name": "단양",
    "landmark": "도담삼봉",
    "specialty": "마늘 요리"
+  },
+  "11": {
+   "name": "서울",
+   "landmark": "경복궁",
+   "specialty": "한정식·김치"
   }
  }
 }
