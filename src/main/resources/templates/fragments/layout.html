@@ -4,6 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title th:text="${title} + ' | nado_gam'">nado_gam</title>
+	<meta name="description" content="나도 감(nado_gam) — 가고 싶은 여행지를 고르면 항공권·투어·호텔·크루즈를 한 번에 고르는 여행 서비스(포트폴리오용 가상 서비스)">
+	<meta name="theme-color" content="#ff5a36">
+	<meta property="og:site_name" content="나도 감 nado_gam">
+	<meta property="og:type" content="website">
+	<meta property="og:title" th:content="${title} + ' | nado_gam'" content="nado_gam">
+	<meta property="og:description" content="가고 싶은 여행지를 고르면 항공권·투어·호텔·크루즈를 한 번에.">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5a36'/%3E%3Cpath d='M12 38l40-18-12 30-10-9-8 7 1-11z' fill='%23fff'/%3E%3C/svg%3E">
 	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 	<link rel="stylesheet" th:href="@{/css/main.css}">
@@ -45,14 +52,69 @@
 	</nav>
 </header>
 <footer class="site-footer" th:fragment="footer">
-	<details class="mobile-qr">
-		<summary>📱 휴대폰으로 보기</summary>
-		<img data-qr-self alt="이 화면을 휴대폰으로 여는 QR 코드" width="140" height="140">
-		<p>휴대폰 카메라로 스캔하면 같은 화면이 열려요.</p>
-	</details>
-	<p>nado_gam · 나도 감 — 4차 개인 프로젝트 (여행사)</p>
-	<p>모든 항공편·편명·가격은 실제 노선을 참고해 임의로 만든 가상 데이터입니다.</p>
-	<p><a th:href="@{/photo-credits}">여행지 사진 출처</a></p>
+	<div class="footer-inner">
+		<div class="footer-brand">
+			<a class="footer-logo" th:href="@{/}">nado_gam</a>
+			<p class="footer-tagline">나도 감 — 가고 싶은 곳을 고르면<br>항공권·투어·호텔·크루즈를 한 번에.</p>
+			<details class="mobile-qr">
+				<summary>📱 휴대폰으로 보기</summary>
+				<img data-qr-self alt="이 화면을 휴대폰으로 여는 QR 코드" width="140" height="140">
+				<p>휴대폰 카메라로 스캔하면 같은 화면이 열려요.</p>
+			</details>
+		</div>
+		<nav class="footer-col" aria-label="여행 상품">
+			<h3>여행 상품</h3>
+			<ul>
+				<li><a th:href="@{/travel}">해외여행</a></li>
+				<li><a th:href="@{/domestic}">국내여행</a></li>
+				<li><a th:href="@{/tour}">투어</a></li>
+				<li><a th:href="@{/special}">이달의 특별전</a></li>
+				<li><a th:href="@{/bestseller}">베스트셀러</a></li>
+			</ul>
+		</nav>
+		<nav class="footer-col" aria-label="고객센터">
+			<h3>고객센터</h3>
+			<ul>
+				<li><a th:href="@{/support}">1:1 문의</a></li>
+				<li><a th:href="@{/reservations}">내 예약·QR</a></li>
+				<li><a th:href="@{/cart}">장바구니</a></li>
+				<li><a th:href="@{/photo-credits}">여행지 사진 출처</a></li>
+			</ul>
+			<p class="footer-hours">평일 09:00 ~ 18:00<br>(점심 12:00 ~ 13:00, 주말·공휴일 휴무)</p>
+		</nav>
+		<nav class="footer-col" aria-label="회사 정보">
+			<h3>나도 감</h3>
+			<ul>
+				<li><a th:href="@{/about}">서비스 소개</a></li>
+				<li><a th:href="@{/terms}">이용약관</a></li>
+				<li><a class="footer-strong" th:href="@{/privacy}">개인정보처리방침</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="footer-info">
+		<p>
+			<span>상호 (주)나도감 <em>(예시)</em></span>
+			<span>대표 홍길동 <em>(예시)</em></span>
+			<span>사업자등록번호 000-00-00000 <em>(예시)</em></span>
+			<span>통신판매업신고 제0000-서울○○-0000호 <em>(예시)</em></span>
+		</p>
+		<p>
+			<span>관광사업등록 제0000-000호 <em>(예시)</em></span>
+			<span>주소 서울특별시 ○○구 ○○로 123 <em>(예시)</em></span>
+			<span>이메일 support@nadogam.example</span>
+		</p>
+	</div>
+	<p class="footer-notice">나도 감은 포트폴리오용 가상 서비스입니다. 화면의 항공편·편명·호텔·투어·가격과 위 사업자 정보는 실제와 무관한 예시이며, 결제는 모의로만 처리되어 실제 요금이 청구되지 않습니다.</p>
+	<div class="footer-bottom">
+		<span>© 2026 nado_gam. All rights reserved.</span>
+		<a href="#" class="footer-top" aria-label="맨 위로 이동">맨 위로 ↑</a>
+	</div>
+	<!-- 기획전·베스트셀러 사이드바: 해당 페이지가 아닐 때만 common.js 가 채워서 보여 준다(스크롤해도 따라온다). -->
+	<button type="button" class="side-promo-toggle" data-side-toggle aria-expanded="false" aria-controls="side-promo" hidden>🔥 특가·인기</button>
+	<aside class="side-promo" id="side-promo" data-side-promo aria-label="이달의 기획전과 베스트셀러" hidden>
+		<div class="side-promo-head"><strong>이달의 기획전·베스트</strong><button type="button" data-side-close aria-label="닫기">×</button></div>
+		<div class="side-promo-list" data-side-list></div>
+	</aside>
 	<!-- 휴대폰 폭에서만 보이는 하단 탭 바. 현재 메뉴 표시는 common.js 가 주소를 보고 정한다. -->
 	<nav class="tabbar" aria-label="모바일 메뉴">
 		<a th:href="@{/}" data-tab="/" data-tab-exact>

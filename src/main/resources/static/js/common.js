@@ -84,3 +84,93 @@
 		n.parentNode.replaceChild(frag, n);
 	});
 })();
+
+// 사이드바: 이달의 기획전·베스트셀러를 화면 옆에 띄운다. 두 페이지·메인·관리자 화면에서는 보이지 않고, 스크롤해도 따라온다(CSS fixed).
+(function () {
+	'use strict';
+	var panel = document.querySelector('[data-side-promo]');
+	var toggle = document.querySelector('[data-side-toggle]');
+	var list = panel ? panel.querySelector('[data-side-list]') : null;
+	if (!panel || !toggle || !list) { return; }
+	var path = window.location.pathname;
+	if (path === '/' || path === '/special' || path.indexOf('/special/') === 0 || path === '/bestseller' || path.indexOf('/bestseller/') === 0
+		|| path.indexOf('/admin') === 0) { return; }
+	fetch('/api/side-promos', { headers: { 'Accept': 'application/json' } })
+		.then(function (r) { return r.ok ? r.json() : []; })
+		.then(function (items) {
+			if (!items || !items.length) { return; }
+			var heads = { plan: '이달의 기획전', best: '베스트셀러' };
+			var last = '';
+			items.forEach(function (it) {
+				if (it.kind !== last) {
+					var h = document.createElement('p');
+					h.className = 'side-promo-label';
+					h.textContent = heads[it.kind] || '';
+					list.appendChild(h);
+					last = it.kind;
+				}
+				var a = document.createElement('a');
+				a.className = 'side-card';
+				a.href = it.href;
+				a.setAttribute('style', '--c1:' + it.from + ';--c2:' + it.to + (it.photo || ''));
+				[['side-card-badge', it.badge], ['side-card-name', it.name], ['side-card-title', it.title], ['side-card-price', it.price]].forEach(function (p) {
+					var s = document.createElement('span');
+					s.className = p[0];
+					s.textContent = p[1] || '';
+					a.appendChild(s);
+				});
+				list.appendChild(a);
+			});
+			panel.hidden = false;
+			toggle.hidden = false;
+		})
+		.catch(function () { /* 사이드바는 없어도 화면 사용에 지장이 없다 */ });
+	function setOpen(open) {
+		panel.classList.toggle('is-open', open);
+		toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+	}
+	toggle.addEventListener('click', function () { setOpen(!panel.classList.contains('is-open')); });
+	var close = panel.querySelector('[data-side-close]');
+	if (close) { close.addEventListener('click', function () { setOpen(false); }); }
+})();
+
+// 생동감: 스크롤하면 카드가 차례로 떠오르고, 스크롤하면 상단 메뉴에 그림자가 생기며, 맨 위로 버튼이 나타난다.
+// 동작 줄이기 설정이면 아무것도 움직이지 않는다. 떠오르는 효과가 끝나면 클래스를 지워 카드의 호버 효과와 겹치지 않게 한다.
+(function () {
+	'use strict';
+	var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	var header = document.querySelector('.site-header');
+	var top = document.querySelector('.footer-top');
+	function onScroll() {
+		var y = window.scrollY || document.documentElement.scrollTop;
+		if (header) { header.classList.toggle('is-scrolled', y > 8); }
+		if (top) { top.classList.toggle('is-lit', y > 600); }
+	}
+	window.addEventListener('scroll', onScroll, { passive: true });
+	onScroll();
+	if (reduce || !('IntersectionObserver' in window)) { return; }
+	var targets = document.querySelectorAll('main .grid > *, main .section-title, main .flight-card, main .about-card, main .table-wrap, main .origin-card, main .inquiry-item');
+	var seen = new Map();
+	var io = new IntersectionObserver(function (entries) {
+		entries.forEach(function (en) {
+			if (!en.isIntersecting) { return; }
+			var el = en.target;
+			io.unobserve(el);
+			var idx = seen.get(el.parentNode) || 0;
+			seen.set(el.parentNode, idx + 1);
+			el.style.transitionDelay = Math.min(idx * 70, 350) + 'ms';
+			el.classList.add('rv-in');
+			window.setTimeout(function () {
+				el.classList.remove('rv', 'rv-in');
+				el.style.transitionDelay = '';
+			}, 1100);
+		});
+	}, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+	targets.forEach(function (el) {
+		var r = el.getBoundingClientRect();
+		if (r.top > window.innerHeight) {   // 처음부터 보이는 것은 그대로 두고, 아래쪽 카드만 떠오르게 한다
+			el.classList.add('rv');
+			io.observe(el);
+		}
+	});
+})();

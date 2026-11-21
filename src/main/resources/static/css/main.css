@@ -192,7 +192,8 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.18) 55%, rgba(0, 0, 0, 0.05) 100%),
 	            radial-gradient(circle at 85% 12%, rgba(255, 255, 255, 0.28), transparent 38%);
 }
-.poster:hover { transform: translateY(-4px); box-shadow: 0 30px 70px -22px var(--shadow-soft); }
+/* 카드를 위로 띄우면 커서가 아래 가장자리에 있을 때 카드가 내려왔다 올라오며 들썩이므로 움직이지 않고 그림자만 키운다 */
+.poster:hover { box-shadow: 0 30px 70px -22px var(--shadow-soft); }
 /* 캐로셀의 좌우 화살표가 카드 내용을 가리지 않도록 안쪽 여백을 늘린다 */
 @media (min-width: 761px) {
 	.carousel .poster { padding-left: 84px; padding-right: 84px; }
@@ -358,3 +359,108 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 .inline-search { display: flex; gap: 8px; margin: 12px 0; max-width: 420px; }
 .inline-search input { flex: 1; min-width: 0; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
 .row-actions input[type=text] { padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); min-width: 0; }
+
+/* ---------- 푸터(실제 서비스처럼 안내·약관·사업자 정보) ---------- */
+html { scroll-behavior: smooth; }
+.site-footer { margin-top: 80px; padding: 0; text-align: left; background: #1b2236; color: #aeb7cc; font-size: 13px; border-top: 0; }
+.site-footer a { color: #d6dcec; text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.footer-inner { max-width: 1160px; margin: 0 auto; padding: 48px clamp(16px, 4vw, 32px) 28px; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
+.footer-logo { display: inline-block; font-size: 22px; font-weight: 900; letter-spacing: -0.02em; color: #fff !important; }
+.footer-tagline { margin-top: 10px; line-height: 1.6; }
+.footer-col h3 { color: #fff; font-size: 14px; font-weight: 800; margin-bottom: 12px; }
+.footer-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.footer-strong { font-weight: 800; }
+.footer-hours { margin-top: 14px; line-height: 1.6; font-size: 12px; }
+.site-footer .mobile-qr { margin: 16px 0 0; }
+.site-footer .mobile-qr summary { color: #fff; }
+.footer-info { max-width: 1160px; margin: 0 auto; padding: 20px clamp(16px, 4vw, 32px) 0; border-top: 1px solid rgba(255, 255, 255, 0.12); line-height: 1.9; font-size: 12px; }
+.footer-info p { display: flex; flex-wrap: wrap; gap: 0 16px; margin: 0; }
+.footer-info em { font-style: normal; opacity: 0.65; }
+.footer-notice { max-width: 1160px; margin: 12px auto 0; padding: 0 clamp(16px, 4vw, 32px); font-size: 12px; line-height: 1.7; color: #8e98b2; }
+.footer-bottom { max-width: 1160px; margin: 18px auto 0; padding: 16px clamp(16px, 4vw, 32px) 36px; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 12px; border-top: 1px solid rgba(255, 255, 255, 0.12); }
+.footer-top { padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.25); }
+@media (max-width: 900px) {
+	.footer-inner { grid-template-columns: 1fr 1fr; }
+	.footer-brand { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+	.site-footer { margin-top: 48px; padding-bottom: 0; }
+	.footer-inner { padding-top: 32px; gap: 24px; }
+	.footer-bottom { padding-bottom: 28px; }
+	.footer-info p { display: block; }
+	.footer-info span { display: block; }
+}
+
+/* ---------- 서비스 소개·이용약관·개인정보처리방침 ---------- */
+.doc { padding: 0 0 24px; }
+.doc h2 { font-size: 18px; font-weight: 800; margin: 28px 0 8px; }
+.doc p, .doc li { color: var(--ink); line-height: 1.75; }
+.doc ul, .doc ol { padding-left: 20px; margin: 6px 0; }
+.doc .doc-note { margin-top: 24px; padding: 12px 16px; border-radius: 12px; background: var(--panel-2); color: var(--muted); font-size: 13px; line-height: 1.7; }
+.doc table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 14px; }
+.doc th, .doc td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.doc th { background: var(--panel-2); white-space: nowrap; }
+.about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 14px 0; }
+.about-card { padding: 18px; border-radius: 16px; background: var(--panel); border: 1px solid var(--line); }
+.about-card h3 { font-size: 16px; font-weight: 800; margin-bottom: 6px; }
+.about-card p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+
+/* ---------- 사이드바: 이달의 기획전·베스트셀러(스크롤해도 따라온다) ---------- */
+.side-promo { position: fixed; top: 88px; right: 14px; z-index: 45; width: 196px; max-height: calc(100vh - 110px); overflow-y: auto;
+	padding: 12px; border-radius: 18px; background: rgba(255, 255, 255, 0.96); border: 1px solid var(--line); box-shadow: 0 18px 40px -20px var(--shadow-soft); }
+.side-promo[hidden], .side-promo-toggle[hidden] { display: none; }
+.side-promo-head { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 13px; margin-bottom: 4px; }
+.side-promo-head button { display: none; border: 0; background: none; font-size: 20px; line-height: 1; cursor: pointer; color: var(--muted); }
+.side-promo-label { margin: 12px 0 6px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; color: var(--accent-ink); }
+.side-card { position: relative; display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; padding: 10px 12px; border-radius: 14px; overflow: hidden; color: #fff; text-decoration: none;
+	background: var(--photo, linear-gradient(transparent, transparent)) center / cover no-repeat, linear-gradient(125deg, var(--c1), var(--c2)); }
+.side-card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.6)); }
+.side-card > span { position: relative; }
+.side-card:hover, .side-card:focus-visible { box-shadow: 0 0 0 2px var(--accent-2); }   /* 움직이지 않고 테두리만 강조 */
+.side-card-badge { font-size: 11px; font-weight: 700; opacity: 0.9; }
+.side-card-name { font-size: 16px; font-weight: 800; }
+.side-card-title { font-size: 12px; line-height: 1.4; opacity: 0.92; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.side-card-price { margin-top: 4px; font-size: 13px; font-weight: 800; }
+.side-promo-toggle { display: none; position: fixed; right: 0; top: 140px; z-index: 46; padding: 10px 12px; border: 0; border-radius: 14px 0 0 14px; cursor: pointer;
+	background: var(--accent); color: #fff; font: inherit; font-size: 13px; font-weight: 800; box-shadow: 0 10px 24px -10px var(--shadow-soft); }
+@media (max-width: 1499px) {
+	.side-promo { transform: translateX(calc(100% + 24px)); transition: transform 0.3s var(--ease); }
+	.side-promo.is-open { transform: none; }
+	.side-promo-head button { display: block; }
+	.side-promo-toggle:not([hidden]) { display: block; }
+}
+@media (max-width: 760px) {
+	.side-promo, .side-promo-toggle { display: none !important; }
+}
+
+/* ---------- 생동감: 떠오르는 카드, 빛이 지나가는 카드, 살아 있는 버튼 ---------- */
+.rv { opacity: 0; transform: translateY(22px); }
+.rv.rv-in { opacity: 1; transform: none; transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+.site-header { transition: box-shadow 0.3s, background-color 0.3s; }
+.site-header.is-scrolled { box-shadow: 0 10px 30px -18px var(--shadow-soft); }
+.footer-top { opacity: 0.55; transition: opacity 0.3s, background-color 0.3s; }
+.footer-top.is-lit, .footer-top:hover { opacity: 1; background: rgba(255, 255, 255, 0.1); }
+
+/* 카드 위로 빛이 한 번 지나간다(카드를 움직이지 않으므로 커서가 가장자리에 있어도 들썩이지 않는다) */
+.poster::after, a.dest-card::after, .tour-card::after {
+	content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; pointer-events: none; z-index: 3;
+	background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.28), transparent); transform: skewX(-18deg); opacity: 0;
+}
+.poster:hover::after, a.dest-card:hover::after, .tour-card:hover::after { opacity: 1; left: 130%; transition: left 0.9s var(--ease), opacity 0.2s; }
+
+/* 주요 버튼: 눌릴 때 살짝 들어가고, 주 버튼은 가끔 반짝인다 */
+.button, button[type=submit] { transition: transform 0.15s var(--ease), box-shadow 0.25s, background-color 0.25s; }
+.button:active, button[type=submit]:active { transform: scale(0.97); }
+.button:not(.button--ghost):not(.button--sm) { animation: ctaGlow 3.6s ease-in-out infinite; }
+@keyframes ctaGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(255, 90, 54, 0); } 50% { box-shadow: 0 0 0 7px rgba(255, 90, 54, 0.14); } }
+
+/* 사이드바 카드는 처음 나타날 때 오른쪽에서 부드럽게 들어온다 */
+.side-promo:not([hidden]) { animation: sideIn 0.7s var(--ease) both; }
+@keyframes sideIn { from { opacity: 0; translate: 24px 0; } to { opacity: 1; translate: 0 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+	.rv { opacity: 1; transform: none; }
+	.button:not(.button--ghost):not(.button--sm), .side-promo:not([hidden]) { animation: none; }
+	.poster::after, a.dest-card::after, .tour-card::after { display: none; }
+}
