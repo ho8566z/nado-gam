@@ -43,18 +43,30 @@
 		</form>
 	</section>
 
+	<div class="sort-row" role="group" aria-label="정렬">
+		<span class="sort-label">정렬</span>
+		<button type="button" class="chip chip--tab is-active" data-sort="default" aria-pressed="true">기본순</button>
+		<button type="button" class="chip chip--tab" data-sort="price_asc" aria-pressed="false">가격 낮은순</button>
+		<button type="button" class="chip chip--tab" data-sort="price_desc" aria-pressed="false">가격 높은순</button>
+		<button type="button" class="chip chip--tab" data-sort="views" aria-pressed="false">조회수순</button>
+		<button type="button" class="chip chip--tab" data-sort="popular" aria-pressed="false">인기순</button>
+		<button type="button" class="chip chip--tab" data-sort="recommend" aria-pressed="false">여행사 추천순</button>
+	</div>
+
 	<p class="result-count"><b th:text="${#lists.size(tours)}">0</b>개의 투어 <span th:if="${#lists.size(tours) != total}" th:text="'(전체 ' + ${total} + '개)'"></span></p>
 
 	<th:block th:if="${#lists.isEmpty(tours)}">
 		<div th:replace="~{fragments/mascot :: empty('조건에 맞는 투어가 없어요. 필터나 검색어를 바꿔 보세요.')}"></div>
 	</th:block>
 
-	<section class="tour-grid" aria-label="투어 목록" th:unless="${#lists.isEmpty(tours)}">
-		<a class="tour-card" th:each="t : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition
+	<section class="tour-grid" id="tour-grid" aria-label="투어 목록" th:unless="${#lists.isEmpty(tours)}">
+		<a class="tour-card" th:each="t, st : ${tours}" th:href="@{/tour/{id}(id=${t.tourId})}" data-transition data-tour
 			th:classappend="${@tourPhotos.has(t.tourId)} ? 'tour-card--split'"
+			th:attr="data-order=${st.count},data-price=${t.minPrice()},data-views=${t.viewCount()},data-sales=${t.salesCount()},data-pick=${t.agencyPick()},data-views-label=${t.viewCountLabel()},data-sales-label=${t.salesCountLabel()}"
 			th:style="'--from:' + ${t.from()} + ';--to:' + ${t.to()} + ${@destPhotos.styleByName(t.scope, t.placeName)} + ${@tourPhotos.style(t.tourId)}">
 			<span class="tour-half tour-half--l" aria-hidden="true" th:if="${@tourPhotos.has(t.tourId)}"></span><span class="tour-half tour-half--r" aria-hidden="true" th:if="${@tourPhotos.has(t.tourId)}"></span>
 			<span class="tour-theme-chip" th:if="${@tourPhotos.has(t.tourId)}" th:text="${@tourPhotos.label(t.tourId)}">카르보나라</span>
+			<span class="tour-stat" data-stat hidden></span>
 			<span class="tour-badges">
 				<span class="tour-badge" th:text="${t.scopeLabel()}">해외</span>
 				<span class="tour-badge tour-badge--theme" th:text="${t.themeLabel()}">테마</span>
@@ -74,5 +86,6 @@
 	</section>
 </main>
 <footer th:replace="~{fragments/layout :: footer}"></footer>
+<script th:src="@{/js/tour-sort.js}"></script>
 </body>
 </html>

@@ -69,6 +69,7 @@ public class TourController {
 		if (options.isEmpty()) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 		}
+		tours.countView(id);
 		// 주소의 option 이 이 투어의 옵션이 아니면 첫 번째 옵션을 보여 준다.
 		TourOptionView selected = options.stream().filter(o -> option != null && o.optionId() == option).findFirst().orElse(options.get(0));
 		model.addAttribute("tour", tour);

@@ -221,6 +221,16 @@ public class CartService {
 		}
 	}
 
+	// 결제하면 담은 투어의 판매 수(인기순 정렬에 쓴다)가 인원 수만큼 늘어난다.
+	private void countTourSales(List<CartItem> items) {
+		for (CartItem c : items) {
+			if ("TOUR".equals(c.getItemType())) {
+				jdbc.sql("UPDATE tour SET sales_count = sales_count + :n WHERE tour_id = :id")
+					.param("n", c.getQuantity()).param("id", c.getRefId()).update();
+			}
+		}
+	}
+
 	// 모의 결제: 장바구니 전체로 예약을 만들고 장바구니를 비운다. 금액은 장바구니 줄(서버가 계산해 저장한 값)로만 합친다.
 	@Transactional
 	public Reservation checkout(Long memberId, String method) {
@@ -230,6 +240,7 @@ public class CartService {
 			throw new IllegalArgumentException("장바구니가 비어 있어요.");
 		}
 		reserveFlightSeats(items);
+		countTourSales(items);
 		long total = items.stream().mapToLong(CartItem::getLineAmount).sum();
 		String no = "NG" + LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE) + "-"
 			+ UUID.randomUUID().toString().replace("-", "").substring(0, 6).toUpperCase();

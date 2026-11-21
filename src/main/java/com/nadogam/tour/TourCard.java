@@ -16,7 +16,18 @@ public record TourCard(
 		String colorTo,
 		int minPrice,
 		int minNights,
-		int maxNights) {
+		int maxNights,
+		long viewCount,
+		long salesCount,
+		int agencyPick) {
+
+	public String viewCountLabel() {
+		return Fmt.count(viewCount);
+	}
+
+	public String salesCountLabel() {
+		return Fmt.count(salesCount);
+	}
 
 	public String themeLabel() {
 		return TourTheme.labelOf(theme);
