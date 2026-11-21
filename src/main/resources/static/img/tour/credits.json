@@ -44,6 +44,51 @@
   "subject": "Maracanã Stadium",
   "wiki": "en"
  },
+ "tour-104": {
+  "author": "Lebowskyclone",
+  "file": "CarmenereW.jpg",
+  "label": "카르메네르 와인",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:CarmenereW.jpg",
+  "subject": "Carménère",
+  "wiki": "en"
+ },
+ "tour-105": {
+  "author": "Picanteria karol",
+  "file": "Cebiche_de_corvina.JPG",
+  "label": "세비체",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
+  "subject": "Ceviche",
+  "wiki": "en"
+ },
+ "tour-106": {
+  "author": "Mariordo (Mario Roberto Durán Ortiz)",
+  "file": "BOG_04_2012_Museo_de_Oro_1273.JPG",
+  "label": "황금 박물관",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:BOG_04_2012_Museo_de_Oro_1273.JPG",
+  "subject": "Gold Museum, Bogotá",
+  "wiki": "en"
+ },
+ "tour-108": {
+  "author": "MagpieShooter",
+  "file": "BNE-StoryBridge-fromCityCat.jpg",
+  "label": "스토리 브리지",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:BNE-StoryBridge-fromCityCat.jpg",
+  "subject": "Story Bridge",
+  "wiki": "en"
+ },
+ "tour-109": {
+  "author": "Gnangarra",
+  "file": "Panulirus_cygnus_juv_01_gnangarra.jpg",
+  "label": "서부 로브스터",
+  "license": "CC BY 3.0 au",
+  "source": "https://commons.wikimedia.org/wiki/File:Panulirus_cygnus_juv_01_gnangarra.jpg",
+  "subject": "Western rock lobster",
+  "wiki": "en"
+ },
  "tour-11": {
   "author": "Quercus acuta",
   "file": "Shoyu_Ramen（Tokyo_Ramen）_-_01.jpg",
@@ -52,6 +97,78 @@
   "source": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg",
   "subject": "Ramen",
   "wiki": "en"
+ },
+ "tour-110": {
+  "author": "MrSeabody",
+  "file": "Auckland_Harbour_Bridge_-_August_2024.jpg",
+  "label": "오클랜드 하버 브리지",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Auckland_Harbour_Bridge_-_August_2024.jpg",
+  "subject": "Auckland Harbour Bridge",
+  "wiki": "en"
+ },
+ "tour-111": {
+  "author": "American at German Wikipedia",
+  "file": "Mamanuca.jpg",
+  "label": "마마누카 제도",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Mamanuca.jpg",
+  "subject": "Mamanuca Islands",
+  "wiki": "en"
+ },
+ "tour-112": {
+  "author": "by Pachinee Buathong",
+  "file": "Korean.cuisine-Gyeongju.bread-01.jpg",
+  "label": "황남빵",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Gyeongju.bread-01.jpg",
+  "subject": "황남빵",
+  "wiki": "ko"
+ },
+ "tour-113": {
+  "author": "Korea Heritage Service",
+  "file": "동궁과_월지.jpg",
+  "label": "동궁과 월지",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%EB%8F%99%EA%B6%81%EA%B3%BC_%EC%9B%94%EC%A7%80.jpg",
+  "subject": "동궁과 월지",
+  "wiki": "ko"
+ },
+ "tour-114": {
+  "author": "Seok-Hong, Han",
+  "file": "Front_view_of_Seokguram_from_front_chamber.jpg",
+  "label": "석굴암",
+  "license": "KOGL Type 1",
+  "source": "https://commons.wikimedia.org/wiki/File:Front_view_of_Seokguram_from_front_chamber.jpg",
+  "subject": "석굴암",
+  "wiki": "ko"
+ },
+ "tour-115": {
+  "author": "국립국어원",
+  "file": "Sun-dubu.jpg",
+  "label": "초당순두부",
+  "license": "CC BY-SA 2.0 kr",
+  "source": "https://commons.wikimedia.org/wiki/File:Sun-dubu.jpg",
+  "subject": "순두부",
+  "wiki": "ko"
+ },
+ "tour-116": {
+  "author": "안우석",
+  "file": "Jeongdongjin_Station_20160804_145225.jpg",
+  "label": "정동진 해돋이",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Jeongdongjin_Station_20160804_145225.jpg",
+  "subject": "정동진역",
+  "wiki": "ko"
+ },
+ "tour-117": {
+  "author": "User:Altostratus",
+  "file": "Ojukheon_sarangchae.jpg",
+  "label": "오죽헌",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ojukheon_sarangchae.jpg",
+  "subject": "오죽헌",
+  "wiki": "ko"
  },
  "tour-12": {
   "author": "Dick Thomas Johnson from Tokyo, Japan",
@@ -62,6 +179,96 @@
   "subject": "Tokyo Dome",
   "wiki": "en"
  },
+ "tour-120": {
+  "author": "adam bee",
+  "file": "Abai_village_-_5433869814.jpg",
+  "label": "아바이마을",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Abai_village_-_5433869814.jpg",
+  "subject": "아바이마을",
+  "wiki": "ko"
+ },
+ "tour-121": {
+  "author": "Minseong Kim",
+  "file": "Milmyeon.jpg",
+  "label": "밀면",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Milmyeon.jpg",
+  "subject": "밀면",
+  "wiki": "ko"
+ },
+ "tour-122": {
+  "author": "Unknown",
+  "file": "P080713002.jpg",
+  "label": "광안리 해변",
+  "license": "See source",
+  "source": "https://commons.wikimedia.org/wiki/File:P080713002.jpg",
+  "subject": "광안리해수욕장",
+  "wiki": "ko"
+ },
+ "tour-123": {
+  "author": "Ken Eckert",
+  "file": "Gamcheon_Colored_Houses,_Busan,_Korea.jpg",
+  "label": "감천문화마을",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gamcheon_Colored_Houses,_Busan,_Korea.jpg",
+  "subject": "감천문화마을",
+  "wiki": "ko"
+ },
+ "tour-124": {
+  "author": "A____ R__",
+  "file": "Jeju_Black_Pig.jpg",
+  "label": "흑돼지",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Jeju_Black_Pig.jpg",
+  "subject": "흑돼지",
+  "wiki": "ko"
+ },
+ "tour-125": {
+  "author": "Korea.net / Korean Culture and Information Service",
+  "file": "KOCIS_Halla_Mountain_in_Jeju-do_(6387785543).jpg",
+  "label": "한라산",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:KOCIS_Halla_Mountain_in_Jeju-do_(6387785543).jpg",
+  "subject": "한라산",
+  "wiki": "ko"
+ },
+ "tour-126": {
+  "author": "Marcella Astrid",
+  "file": "제주_용머리해안_(Jeju_Yongmeori_Coast).jpg",
+  "label": "용머리해안",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%EC%A0%9C%EC%A3%BC_%EC%9A%A9%EB%A8%B8%EB%A6%AC%ED%95%B4%EC%95%88_(Jeju_Yongmeori_Coast).jpg",
+  "subject": "용머리해안",
+  "wiki": "ko"
+ },
+ "tour-127": {
+  "author": "lovelyheewon",
+  "file": "Bibimbap_4.jpg",
+  "label": "전주 비빔밥",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bibimbap_4.jpg",
+  "subject": "전주비빔밥",
+  "wiki": "ko"
+ },
+ "tour-128": {
+  "author": "올리브 가지",
+  "file": "Deokjin_park.jpg",
+  "label": "덕진공원",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Deokjin_park.jpg",
+  "subject": "덕진공원",
+  "wiki": "ko"
+ },
+ "tour-129": {
+  "author": "Motoko C. K.",
+  "file": "전주_경기전_홍살문_1.jpg",
+  "label": "경기전",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%EC%A0%84%EC%A3%BC_%EA%B2%BD%EA%B8%B0%EC%A0%84_%ED%99%8D%EC%82%B4%EB%AC%B8_1.jpg",
+  "subject": "경기전",
+  "wiki": "ko"
+ },
  "tour-13": {
   "author": "Wiiii",
   "file": "Tokyo_National_Museum,_Honkan_2010.jpg",
@@ -70,6 +277,69 @@
   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_National_Museum,_Honkan_2010.jpg",
   "subject": "Tokyo National Museum",
   "wiki": "en"
+ },
+ "tour-130": {
+  "author": "kimsco",
+  "file": "Gat-gimchi.jpg",
+  "label": "돌산 갓김치",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gat-gimchi.jpg",
+  "subject": "갓김치",
+  "wiki": "ko"
+ },
+ "tour-131": {
+  "author": "User:Altostratus",
+  "file": "Yeosu_cablecar_station_2.jpg",
+  "label": "해상케이블카",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Yeosu_cablecar_station_2.jpg",
+  "subject": "여수 해상케이블카",
+  "wiki": "ko"
+ },
+ "tour-133": {
+  "author": "최승호, 김병직, 권선만, 조현근, et al.",
+  "file": "Bluespotted_mud_hopper.jpg",
+  "label": "짱뚱어탕",
+  "license": "KOGL Type 1",
+  "source": "https://commons.wikimedia.org/wiki/File:Bluespotted_mud_hopper.jpg",
+  "subject": "짱뚱어",
+  "wiki": "ko"
+ },
+ "tour-136": {
+  "author": "Unknown",
+  "file": "Rock-oyster.jpg",
+  "label": "통영 굴",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Rock-oyster.jpg",
+  "subject": "굴",
+  "wiki": "ko"
+ },
+ "tour-137": {
+  "author": "User:Asfreeas",
+  "file": "Tongyeong_Cable_Car.jpg",
+  "label": "통영 케이블카",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tongyeong_Cable_Car.jpg",
+  "subject": "통영 케이블카",
+  "wiki": "ko"
+ },
+ "tour-138": {
+  "author": "문화재청 (공공누리 제1유형)",
+  "file": "통영_세병관.jpg",
+  "label": "세병관",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%ED%86%B5%EC%98%81_%EC%84%B8%EB%B3%91%EA%B4%80.jpg",
+  "subject": "세병관",
+  "wiki": "ko"
+ },
+ "tour-139": {
+  "author": "KENPEI",
+  "file": "Codonopsis_lanceolata2.jpg",
+  "label": "더덕",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Codonopsis_lanceolata2.jpg",
+  "subject": "더덕",
+  "wiki": "ko"
  },
  "tour-14": {
   "author": "加茂川の民",
