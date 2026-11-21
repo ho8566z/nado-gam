@@ -205,7 +205,8 @@ body.is-leaving .page { opacity: 0; transform: scale(1.035); filter: blur(5px); 
 }
 .poster-plane { position: absolute; top: 8%; right: 7%; z-index: 1; width: clamp(60px, 9vw, 120px); fill: rgba(255, 255, 255, 0.55); transform: rotate(40deg); animation: fly 7s ease-in-out infinite; filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35)); }
 @keyframes fly { 50% { transform: translate(-14px, -12px) rotate(36deg); } }
-.poster-rank { position: absolute; top: -6%; right: 4%; z-index: 0; font-size: clamp(120px, 20vw, 280px); font-weight: 900; line-height: 1; color: rgba(255, 255, 255, 0.16); pointer-events: none; }
+.poster-rank { position: absolute; top: -2%; right: 6%; z-index: 0; font-size: clamp(110px, 13vw, 180px); font-weight: 900; line-height: 1; color: rgba(255, 209, 102, 0.3); -webkit-text-stroke: 2px rgba(255, 224, 150, 0.85); text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35); pointer-events: none; }
+.poster--best .poster-title, .poster--best .poster-sub { text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); }
 .poster-body, .poster-side { position: relative; z-index: 2; }
 .poster-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
 .badge { display: inline-block; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 800; letter-spacing: 0.02em; }
