@@ -279,44 +279,44 @@ INSERT INTO destination (name_ko, name_en, country_code, main_airport, latitude,
 
 -- [M] 항공사
 INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MG', '민국항공', 'Minguk Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AQ', '아리아항공', 'Aria Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BD', '에어바다', 'Air Bada', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('HR', '한라에어', 'Halla Air', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('NU', '에어누리', 'Air Nuri', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BS', '푸른하늘항공', 'Blue Sky Airlines', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('GL', '에어갈리아', 'Air Gallia', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('RH', '라인에어', 'Rhein Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BP', '보스포루스항공', 'Bosphorus Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('LP', '라플란드항공', 'Lapland Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('OA', '오아시스항공', 'Oasis Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('GF', '걸프스타항공', 'Gulfstar Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SM', '시암항공', 'Siam Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('EB', '에버블루항공', 'Everblue Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SK', '사쿠라항공', 'Sakura Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('DS', '용성항공', 'Dragonstar Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AZ', '청룡항공', 'Azure Dragon Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('PC', '태평양항공', 'Pacific Crest Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AT', '아틀라스항공', 'Atlas Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('UW', '유니온항공', 'Union Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('RI', '무지개섬항공', 'Rainbow Isles Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('HX', '항구익스프레스', 'Harbor Express', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SB', '봄바람항공', 'Spring Breeze Air', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SX', '남십자성항공', 'Southern Cross Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('LC', '라이언시티항공', 'Lion City Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('ML', '메이플항공', 'Maple Leaf Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BN', '블루나일항공', 'Blue Nile Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('TL', '튤립항공', 'Tulip Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AP', '알프스항공', 'Alpine Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('TH', '템스항공', 'Thames Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('LT', '라이트제트', 'Lightjet', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('PL', '주강항공', 'Pearl River Air', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('FM', '포모사항공', 'Formosa Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('RR', '홍강항공', 'Red River Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MJ', '메콩제트', 'Mekong Jet', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('NS', '누사항공', 'Nusa Airways', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MA', '물라카항공', 'Malacca Airlines', 'FSC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BO', '보르네오엑스', 'Borneo X', 'LCC');
-INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('ZT', '아즈텍항공', 'Aztec Airlines', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AQ', '어서와항공', 'Eoseowa Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BD', '에어대충', 'Air Daechung', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('HR', '한라봉에어', 'Hallabong Air', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('NU', '에어덤핑', 'Air Dumping', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BS', '하늘하늘항공', 'Haneul Haneul Air', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('GL', '에어바게트', 'Air Baguette', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('RH', '소시지에어', 'Sausage Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BP', '케밥항공', 'Kebab Airlines', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('LP', '산타직항', 'Santa Direct', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('OA', '낙타에어', 'Camel Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('GF', '오일머니항공', 'Oil Money Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SM', '똠얌항공', 'Tom Yum Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('EB', '파란만장항공', 'Rollercoaster Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SK', '벚꽃엔딩항공', 'Cherry Blossom Ending Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('DS', '용용죽겠지항공', 'Yong Yong Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AZ', '탕수육항공', 'Sweet Sour Pork Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('PC', '물만난항공', 'Fish In Water Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AT', '지도책항공', 'Atlas Book Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('UW', '다모여항공', 'Everybody Gather Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('RI', '섬집아기항공', 'Island Baby Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('HX', '부두퀵서비스', 'Harbor Quick Service', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SB', '봄바람휘날리항공', 'Spring Breeze Whoosh Air', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('SX', '거꾸로항공', 'Upside Down Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('LC', '싱글벙글항공', 'Smiley Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('ML', '시럽듬뿍항공', 'Extra Syrup Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BN', '미라항공', 'Mummy Airlines', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('TL', '풍차돌려항공', 'Windmill Spin Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('AP', '초콜릿항공', 'Chocolate Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('TH', '홍차한잔항공', 'Tea Time Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('LT', '깃털제트', 'Feather Jet', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('PL', '만두항공', 'Dumpling Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('FM', '버블티항공', 'Bubble Tea Airlines', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('RR', '쌀국수항공', 'Rice Noodle Air', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MJ', '오토바이제트', 'Motorbike Jet', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('NS', '발리발리항공', 'Bali Bali Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('MA', '나시르막항공', 'Nasi Lemak Airways', 'FSC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('BO', '오랑우탄엑스', 'Orangutan X', 'LCC');
+INSERT INTO airline (airline_code, name_ko, name_en, carrier_type) VALUES ('ZT', '타코항공', 'Taco Airlines', 'FSC');
 
 -- [M] 항공편 304편
 INSERT INTO flight (flight_no, airline_code, destination_id, origin_airport, arrival_airport, flight_type, stops, departure_time, arrival_time, arrival_day_offset, duration_minutes, aircraft, baggage_kg, meal_included, operating_days, status) VALUES ('MG901', 'MG', 1, 'ICN', 'CDG', 'DIRECT', 0, '11:00:00', '17:20:00', 0, 860, 'B777-300ER', 23, TRUE, '1111111', 'ON_SALE');
@@ -2303,7 +2303,7 @@ INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, durati
 INSERT INTO domestic_transport (city_id, origin, mode, name, depart_time, duration_minutes, fare, note, sort_order) VALUES (10, 'DAEJEON', 'TRAIN', 'KTX 대전→오송 환승 단양', '08:00:00', 140, 25000, '오송역에서 시외버스 환승', 5);
 
 -- [M] 해외 투어: 이달의 기획 3곳·베스트셀러 3곳은 3테마 전부, 나머지는 도시를 대표하는 1테마 (블라디보스토크 제외)
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 1, NULL, 'ART_REST', '파리 예술·휴식 투어: 루브르 박물관 · 오르세 박물관', '세계 최대 규모의 미술관, 모나리자 소장. 인상주의 회화 전문 미술관.', '달무리 공연장', '루브르 박물관 — 세계 최대 규모의 미술관, 모나리자 소장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 1, NULL, 'ART_REST', '파리 예술·휴식 투어: 루브르 박물관 · 오르세 박물관', '세계 최대 규모의 미술관, 모나리자 소장. 인상주의 회화 전문 미술관.', '앙코르앙코르 공연장', '루브르 박물관 — 세계 최대 규모의 미술관, 모나리자 소장
 오르세 박물관 — 인상주의 회화 전문 미술관
 몽마르트르 갤러리 — 예술가 거리와 소호미술관들', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2391,7 +2391,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (6, 11, '현
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (6, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (6, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (6, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 3, NULL, 'FOOD_DRINK', '베를린 미식·주류 투어: 독일 맥주 투어 · 슈니첼과 슈파겟', '독일 맥주 전통 품종과 비어홀 경험. 베를린 대표 전통 음식.', '푸른보리 양조장', '독일 맥주 투어 — 독일 맥주 전통 품종과 비어홀 경험
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 3, NULL, 'FOOD_DRINK', '베를린 미식·주류 투어: 독일 맥주 투어 · 슈니첼과 슈파겟', '독일 맥주 전통 품종과 비어홀 경험. 베를린 대표 전통 음식.', '술술 양조장', '독일 맥주 투어 — 독일 맥주 전통 품종과 비어홀 경험
 슈니첼과 슈파겟 — 베를린 대표 전통 음식
 멀티컬처 거리음식 — 쿠리부르스트 등 다문화 음식 거리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2404,7 +2404,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (3, 6, 7, 730000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 1, '베를린 도착', '인천에서 출발해 베를린에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 2, '독일 맥주 투어 탐방', '독일 맥주 전통 품종과 비어홀 경험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 슈니첼과 슈파겟과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 슈니첼과 슈파겟과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 4, '멀티컬처 거리음식 체험', '쿠리부르스트 등 다문화 음식 거리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 5, '쿠킹 클래스', '현지 셰프에게 베를린의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 6, '근교 산지 미식 여행', '베를린 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -2412,7 +2412,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (7, 7, '체�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (3, 9, 10, 1020000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 1, '베를린 도착', '인천에서 출발해 베를린에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 2, '독일 맥주 투어 탐방', '독일 맥주 전통 품종과 비어홀 경험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 슈니첼과 슈파겟과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 슈니첼과 슈파겟과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 4, '멀티컬처 거리음식 체험', '쿠리부르스트 등 다문화 음식 거리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 5, '쿠킹 클래스', '현지 셰프에게 베를린의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 6, '근교 산지 미식 여행', '베를린 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -2423,7 +2423,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (8, 10, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (3, 13, 14, 1410000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 1, '베를린 도착', '인천에서 출발해 베를린에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 2, '독일 맥주 투어 탐방', '독일 맥주 전통 품종과 비어홀 경험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 슈니첼과 슈파겟과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 슈니첼과 슈파겟과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 4, '멀티컬처 거리음식 체험', '쿠리부르스트 등 다문화 음식 거리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 5, '쿠킹 클래스', '현지 셰프에게 베를린의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (9, 6, '근교 산지 미식 여행', '베를린 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -2479,7 +2479,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (12, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (12, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (12, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (12, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 5, NULL, 'FOOD_DRINK', '로마 미식·주류 투어: 테스타치오 마켓 · 캄포 데 피오리', '로마 전통 음식 발상지. 오픈 마켓과 고급 레스토랑.', '바람결 증류소', '테스타치오 마켓 — 로마 전통 음식 발상지
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 5, NULL, 'FOOD_DRINK', '로마 미식·주류 투어: 테스타치오 마켓 · 캄포 데 피오리', '로마 전통 음식 발상지. 오픈 마켓과 고급 레스토랑.', '불붙은 증류소', '테스타치오 마켓 — 로마 전통 음식 발상지
 캄포 데 피오리 — 오픈 마켓과 고급 레스토랑
 아라치니 & 수플리 — 로마 전통 간식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2492,7 +2492,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (5, 6, 7, 780000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 1, '로마 도착', '인천에서 출발해 로마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 2, '테스타치오 마켓 탐방', '로마 전통 음식 발상지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캄포 데 피오리과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 3, '불붙은 증류소 견학과 시음', '불붙은 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캄포 데 피오리과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 4, '아라치니 & 수플리 체험', '로마 전통 간식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 5, '쿠킹 클래스', '현지 셰프에게 로마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 6, '근교 산지 미식 여행', '로마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -2500,7 +2500,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (13, 7, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (5, 9, 10, 1090000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 1, '로마 도착', '인천에서 출발해 로마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 2, '테스타치오 마켓 탐방', '로마 전통 음식 발상지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캄포 데 피오리과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 3, '불붙은 증류소 견학과 시음', '불붙은 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캄포 데 피오리과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 4, '아라치니 & 수플리 체험', '로마 전통 간식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 5, '쿠킹 클래스', '현지 셰프에게 로마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 6, '근교 산지 미식 여행', '로마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -2511,7 +2511,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (14, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (5, 13, 14, 1510000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 1, '로마 도착', '인천에서 출발해 로마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 2, '테스타치오 마켓 탐방', '로마 전통 음식 발상지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캄포 데 피오리과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 3, '불붙은 증류소 견학과 시음', '불붙은 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캄포 데 피오리과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 4, '아라치니 & 수플리 체험', '로마 전통 간식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 5, '쿠킹 클래스', '현지 셰프에게 로마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (15, 6, '근교 산지 미식 여행', '로마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -2654,7 +2654,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (24, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (24, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (24, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (24, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 7, NULL, 'FOOD_DRINK', '서울 미식·주류 투어: 한식 비스트로 투어 · 명동 거리음식', '종로·인사동 역사 한식당에서의 한식 체험. 떡볶이, 순대, 호떡 등 한국 길거리 음식.', '별빛 초콜릿공방', '한식 비스트로 투어 — 종로·인사동 역사 한식당에서의 한식 체험
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 7, NULL, 'FOOD_DRINK', '서울 미식·주류 투어: 한식 비스트로 투어 · 명동 거리음식', '종로·인사동 역사 한식당에서의 한식 체험. 떡볶이, 순대, 호떡 등 한국 길거리 음식.', '초콜릿 녹는중 공방', '한식 비스트로 투어 — 종로·인사동 역사 한식당에서의 한식 체험
 명동 거리음식 — 떡볶이, 순대, 호떡 등 한국 길거리 음식
 남대문 시장 — 전통 시장에서의 현지 음식 맛보기', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2671,17 +2671,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (25, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (9, 3, 4, 330000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (26, 1, '서울 도착', '인천에서 출발해 서울에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (26, 2, '한식 비스트로 투어 탐방', '종로·인사동 역사 한식당에서의 한식 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (26, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 명동 거리음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (26, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 명동 거리음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (26, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (9, 6, 7, 520000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 1, '서울 도착', '인천에서 출발해 서울에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 2, '한식 비스트로 투어 탐방', '종로·인사동 역사 한식당에서의 한식 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 명동 거리음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 명동 거리음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 4, '남대문 시장 체험', '전통 시장에서의 현지 음식 맛보기. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 5, '쿠킹 클래스', '현지 셰프에게 서울의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 6, '근교 산지 미식 여행', '서울 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (27, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 8, NULL, 'FOOD_DRINK', '부산 미식·주류 투어: 자갈치 시장 활어회 · 해산물 요리', '신선한 활어회와 회 덮밥 전문점. 꼬막 한상, 조개구이 등 신선한 해산물.', '바람결 증류소', '자갈치 시장 활어회 — 신선한 활어회와 회 덮밥 전문점
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 8, NULL, 'FOOD_DRINK', '부산 미식·주류 투어: 자갈치 시장 활어회 · 해산물 요리', '신선한 활어회와 회 덮밥 전문점. 꼬막 한상, 조개구이 등 신선한 해산물.', '불붙은 증류소', '자갈치 시장 활어회 — 신선한 활어회와 회 덮밥 전문점
 해산물 요리 — 꼬막 한상, 조개구이 등 신선한 해산물
 부산 국밥 — 부산 돼지국밥과 소머리국밥', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2698,17 +2698,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (28, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (10, 3, 4, 350000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (29, 1, '부산 도착', '인천에서 출발해 부산에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (29, 2, '자갈치 시장 활어회 탐방', '신선한 활어회와 회 덮밥 전문점. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (29, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 해산물 요리과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (29, 3, '불붙은 증류소 견학과 시음', '불붙은 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 해산물 요리과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (29, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (10, 6, 7, 550000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 1, '부산 도착', '인천에서 출발해 부산에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 2, '자갈치 시장 활어회 탐방', '신선한 활어회와 회 덮밥 전문점. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 해산물 요리과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 3, '불붙은 증류소 견학과 시음', '불붙은 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 해산물 요리과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 4, '부산 국밥 체험', '부산 돼지국밥과 소머리국밥. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 5, '쿠킹 클래스', '현지 셰프에게 부산의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 6, '근교 산지 미식 여행', '부산 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (30, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 9, NULL, 'FOOD_DRINK', '도쿄 미식·주류 투어: 츠키지 마켓 · 도쿄 라면 투어', '신선한 해산물 & 스시. 라면 명점 투어.', '새벽 커피로스터스', '츠키지 마켓 — 신선한 해산물 & 스시
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 9, NULL, 'FOOD_DRINK', '도쿄 미식·주류 투어: 츠키지 마켓 · 도쿄 라면 투어', '신선한 해산물 & 스시. 라면 명점 투어.', '아아 로스터스', '츠키지 마켓 — 신선한 해산물 & 스시
 도쿄 라면 투어 — 라면 명점 투어
 아메요코 거리 — 다양한 일식 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2725,17 +2725,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (31, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (11, 3, 4, 360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (32, 1, '도쿄 도착', '인천에서 출발해 도쿄에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (32, 2, '츠키지 마켓 탐방', '신선한 해산물 & 스시. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (32, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 도쿄 라면 투어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (32, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 도쿄 라면 투어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (32, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (11, 6, 7, 570000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 1, '도쿄 도착', '인천에서 출발해 도쿄에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 2, '츠키지 마켓 탐방', '신선한 해산물 & 스시. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 도쿄 라면 투어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 도쿄 라면 투어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 4, '아메요코 거리 체험', '다양한 일식 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 5, '쿠킹 클래스', '현지 셰프에게 도쿄의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 6, '근교 산지 미식 여행', '도쿄 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (33, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 9, NULL, 'SPORTS_ACTIVITY', '도쿄 스포츠·액티비티 투어: 요미우리 자이언츠 · 스모 레슬링', '도쿄 돔 야구 경기. 코쿠기칸 아레나.', '바람개비 아웃도어', '요미우리 자이언츠 — 도쿄 돔 야구 경기
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 9, NULL, 'SPORTS_ACTIVITY', '도쿄 스포츠·액티비티 투어: 요미우리 자이언츠 · 스모 레슬링', '도쿄 돔 야구 경기. 코쿠기칸 아레나.', '영차영차 아웃도어', '요미우리 자이언츠 — 도쿄 돔 야구 경기
 스모 레슬링 — 코쿠기칸 아레나
 로잉 — 운하 카약', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2762,7 +2762,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (36, 4, '로
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (36, 5, '근교 트레킹·야외 활동', '도쿄 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (36, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (36, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 9, NULL, 'ART_REST', '도쿄 예술·휴식 투어: 도쿄 국립박물관 · 모리 미술관', '불교 조각품 & 검. 현대 미술 전시.', '유리잔 공방', '도쿄 국립박물관 — 불교 조각품 & 검
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 9, NULL, 'ART_REST', '도쿄 예술·휴식 투어: 도쿄 국립박물관 · 모리 미술관', '불교 조각품 & 검. 현대 미술 전시.', '와장창 유리공방', '도쿄 국립박물관 — 불교 조각품 & 검
 모리 미술관 — 현대 미술 전시
 센소지 사찰 — 도쿄 최고 사찰', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2789,7 +2789,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (39, 4, '센
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (39, 5, '공연·전시 관람', '도쿄에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (39, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (39, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 10, NULL, 'FOOD_DRINK', '오사카 미식·주류 투어: 타코야키 · 오코노미야키', '오사카 대표 거리음식, 문어 튀김공. 철판에 구우 양배추 팬케이크.', '금빛밀 베이커리', '타코야키 — 오사카 대표 거리음식, 문어 튀김공
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 10, NULL, 'FOOD_DRINK', '오사카 미식·주류 투어: 타코야키 · 오코노미야키', '오사카 대표 거리음식, 문어 튀김공. 철판에 구우 양배추 팬케이크.', '빵순이 베이커리', '타코야키 — 오사카 대표 거리음식, 문어 튀김공
 오코노미야키 — 철판에 구우 양배추 팬케이크
 쿠시카츠 — 튀김 꼬치 오사카 전통 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2806,17 +2806,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (40, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (14, 3, 4, 370000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (41, 1, '오사카 도착', '인천에서 출발해 오사카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (41, 2, '타코야키 탐방', '오사카 대표 거리음식, 문어 튀김공. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (41, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오코노미야키과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (41, 3, '빵순이 베이커리 견학과 시음', '빵순이 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오코노미야키과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (41, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (14, 6, 7, 590000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 1, '오사카 도착', '인천에서 출발해 오사카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 2, '타코야키 탐방', '오사카 대표 거리음식, 문어 튀김공. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오코노미야키과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 3, '빵순이 베이커리 견학과 시음', '빵순이 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오코노미야키과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 4, '쿠시카츠 체험', '튀김 꼬치 오사카 전통 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 5, '쿠킹 클래스', '현지 셰프에게 오사카의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 6, '근교 산지 미식 여행', '오사카 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (42, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 11, NULL, 'FOOD_DRINK', '후쿠오카 미식·주류 투어: 하카타 라면 야타이 · 야키토리와 오뎅', '후쿠오카 야타이 거리의 돈코츠 라면. 야타이에서 즐기는 구이 음식들.', '구름 치즈공방', '하카타 라면 야타이 — 후쿠오카 야타이 거리의 돈코츠 라면
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 11, NULL, 'FOOD_DRINK', '후쿠오카 미식·주류 투어: 하카타 라면 야타이 · 야키토리와 오뎅', '후쿠오카 야타이 거리의 돈코츠 라면. 야타이에서 즐기는 구이 음식들.', '치즈늘어남 공방', '하카타 라면 야타이 — 후쿠오카 야타이 거리의 돈코츠 라면
 야키토리와 오뎅 — 야타이에서 즐기는 구이 음식들
 명태알 계란말이 — 후쿠오카 특산 계란요리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2833,17 +2833,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (43, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (15, 3, 4, 350000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (44, 1, '후쿠오카 도착', '인천에서 출발해 후쿠오카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (44, 2, '하카타 라면 야타이 탐방', '후쿠오카 야타이 거리의 돈코츠 라면. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (44, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 야키토리와 오뎅과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (44, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 야키토리와 오뎅과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (44, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (15, 6, 7, 550000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 1, '후쿠오카 도착', '인천에서 출발해 후쿠오카에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 2, '하카타 라면 야타이 탐방', '후쿠오카 야타이 거리의 돈코츠 라면. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 야키토리와 오뎅과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 야키토리와 오뎅과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 4, '명태알 계란말이 체험', '후쿠오카 특산 계란요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 5, '쿠킹 클래스', '현지 셰프에게 후쿠오카의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 6, '근교 산지 미식 여행', '후쿠오카 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (45, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 12, NULL, 'FOOD_DRINK', '삿포로 미식·주류 투어: 삿포로 미소 라면 · 스프 카레', '라면 발상지. 삿포로 대표 음식.', '구름 치즈공방', '삿포로 미소 라면 — 라면 발상지
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 12, NULL, 'FOOD_DRINK', '삿포로 미식·주류 투어: 삿포로 미소 라면 · 스프 카레', '라면 발상지. 삿포로 대표 음식.', '치즈늘어남 공방', '삿포로 미소 라면 — 라면 발상지
 스프 카레 — 삿포로 대표 음식
 니조 마켓 — 신선한 해산물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2860,17 +2860,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (46, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (16, 3, 4, 360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (47, 1, '삿포로 도착', '인천에서 출발해 삿포로에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (47, 2, '삿포로 미소 라면 탐방', '라면 발상지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (47, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스프 카레과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (47, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스프 카레과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (47, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (16, 6, 7, 580000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 1, '삿포로 도착', '인천에서 출발해 삿포로에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 2, '삿포로 미소 라면 탐방', '라면 발상지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스프 카레과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스프 카레과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 4, '니조 마켓 체험', '신선한 해산물. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 5, '쿠킹 클래스', '현지 셰프에게 삿포로의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 6, '근교 산지 미식 여행', '삿포로 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (48, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 12, NULL, 'SPORTS_ACTIVITY', '삿포로 스포츠·액티비티 투어: 스키 · 하이킹', '니세코 스키장. 여름 산악 활동.', '산들 트레킹', '스키 — 니세코 스키장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 12, NULL, 'SPORTS_ACTIVITY', '삿포로 스포츠·액티비티 투어: 스키 · 하이킹', '니세코 스키장. 여름 산악 활동.', '등산 가즈아 트레킹', '스키 — 니세코 스키장
 하이킹 — 여름 산악 활동
 크로스컨트리 스키 — 겨울 스포츠', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2924,7 +2924,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (54, 4, '삿
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (54, 5, '공연·전시 관람', '삿포로에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (54, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (54, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 13, NULL, 'ART_REST', '베이징 예술·휴식 투어: 자금성 · 만리장성 트레킹', '명·청 황제 거주 궁전, 세계유산. 중국 위대한 방어벽 트레킹.', '달무리 공연장', '자금성 — 명·청 황제 거주 궁전, 세계유산
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 13, NULL, 'ART_REST', '베이징 예술·휴식 투어: 자금성 · 만리장성 트레킹', '명·청 황제 거주 궁전, 세계유산. 중국 위대한 방어벽 트레킹.', '앙코르앙코르 공연장', '자금성 — 명·청 황제 거주 궁전, 세계유산
 만리장성 트레킹 — 중국 위대한 방어벽 트레킹
 중국국가박물관 — 중국 역사와 문화 종합 박물관', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -2978,7 +2978,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (60, 4, '고
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (60, 5, '공연·전시 관람', '방콕에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (60, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (60, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 16, NULL, 'SPORTS_ACTIVITY', '뉴욕 스포츠·액티비티 투어: 뉴욕 양키스 야구 · 뉴욕 닉스 농구', '미국 프로야구 명문팀 경기 관람. NBA 경기 매디슨 스퀘어 가든.', '산들 트레킹', '뉴욕 양키스 야구 — 미국 프로야구 명문팀 경기 관람
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 16, NULL, 'SPORTS_ACTIVITY', '뉴욕 스포츠·액티비티 투어: 뉴욕 양키스 야구 · 뉴욕 닉스 농구', '미국 프로야구 명문팀 경기 관람. NBA 경기 매디슨 스퀘어 가든.', '등산 가즈아 트레킹', '뉴욕 양키스 야구 — 미국 프로야구 명문팀 경기 관람
 뉴욕 닉스 농구 — NBA 경기 매디슨 스퀘어 가든
 미식축구 경기 — NFL 슈퍼볼 등 미식축구 관람', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3066,7 +3066,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (66, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (66, 12, '미술관 한 곳 더', '스미소니언 박물관 단지 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (66, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (66, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 18, NULL, 'FOOD_DRINK', '로스앤젤레스 미식·주류 투어: 차이나타운 & 리틀 도쿄 · 멕시칸 푸드 투어', '아시아 음식. 가장 인기 있는 현지 음식.', '별빛 초콜릿공방', '차이나타운 & 리틀 도쿄 — 아시아 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 18, NULL, 'FOOD_DRINK', '로스앤젤레스 미식·주류 투어: 차이나타운 & 리틀 도쿄 · 멕시칸 푸드 투어', '아시아 음식. 가장 인기 있는 현지 음식.', '초콜릿 녹는중 공방', '차이나타운 & 리틀 도쿄 — 아시아 음식
 멕시칸 푸드 투어 — 가장 인기 있는 현지 음식
 비건 푸드 — 로스앤젤레스 비건 문화', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3079,7 +3079,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (23, 6, 7, 830000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 1, '로스앤젤레스 도착', '인천에서 출발해 로스앤젤레스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 2, '차이나타운 & 리틀 도쿄 탐방', '아시아 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멕시칸 푸드 투어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멕시칸 푸드 투어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 4, '비건 푸드 체험', '로스앤젤레스 비건 문화. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 5, '쿠킹 클래스', '현지 셰프에게 로스앤젤레스의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 6, '근교 산지 미식 여행', '로스앤젤레스 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3087,7 +3087,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (67, 7, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (23, 9, 10, 1160000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 1, '로스앤젤레스 도착', '인천에서 출발해 로스앤젤레스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 2, '차이나타운 & 리틀 도쿄 탐방', '아시아 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멕시칸 푸드 투어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멕시칸 푸드 투어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 4, '비건 푸드 체험', '로스앤젤레스 비건 문화. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 5, '쿠킹 클래스', '현지 셰프에게 로스앤젤레스의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 6, '근교 산지 미식 여행', '로스앤젤레스 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3098,7 +3098,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (68, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (23, 13, 14, 1610000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 1, '로스앤젤레스 도착', '인천에서 출발해 로스앤젤레스에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 2, '차이나타운 & 리틀 도쿄 탐방', '아시아 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멕시칸 푸드 투어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멕시칸 푸드 투어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 4, '비건 푸드 체험', '로스앤젤레스 비건 문화. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 5, '쿠킹 클래스', '현지 셰프에게 로스앤젤레스의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 6, '근교 산지 미식 여행', '로스앤젤레스 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3110,7 +3110,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (69, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 18, NULL, 'SPORTS_ACTIVITY', '로스앤젤레스 스포츠·액티비티 투어: 라스 에인절스 다저스 · 라스 에인절스 레이커스', '아이콘 야구 경기장. 농구 경기 관람.', '산들 트레킹', '라스 에인절스 다저스 — 아이콘 야구 경기장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 18, NULL, 'SPORTS_ACTIVITY', '로스앤젤레스 스포츠·액티비티 투어: 라스 에인절스 다저스 · 라스 에인절스 레이커스', '아이콘 야구 경기장. 농구 경기 관람.', '등산 가즈아 트레킹', '라스 에인절스 다저스 — 아이콘 야구 경기장
 라스 에인절스 레이커스 — 농구 경기 관람
 비치 스포츠 — 해변 서핑 & 배구', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3198,7 +3198,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (75, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (75, 12, '미술관 한 곳 더', '라카마 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (75, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (75, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 19, NULL, 'FOOD_DRINK', '홍콩 미식·주류 투어: 딤섬 · 쌀국수', '하가우, 시우마이 등 다양한 만두류와 차슈바오. 돼지고기와 함께 끓인 담백한 육수 국수.', '소금꽃 식초공방', '딤섬 — 하가우, 시우마이 등 다양한 만두류와 차슈바오
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 19, NULL, 'FOOD_DRINK', '홍콩 미식·주류 투어: 딤섬 · 쌀국수', '하가우, 시우마이 등 다양한 만두류와 차슈바오. 돼지고기와 함께 끓인 담백한 육수 국수.', '시큼털털 식초공방', '딤섬 — 하가우, 시우마이 등 다양한 만두류와 차슈바오
 쌀국수 — 돼지고기와 함께 끓인 담백한 육수 국수
 템플스트리트 야시장 — 카레 생선공, 계란와플 등 길거리 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3215,12 +3215,12 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (76, 3, '체
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (26, 3, 4, 390000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (77, 1, '홍콩 도착', '인천에서 출발해 홍콩에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (77, 2, '딤섬 탐방', '하가우, 시우마이 등 다양한 만두류와 차슈바오. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (77, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 쌀국수과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (77, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 쌀국수과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (77, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (26, 6, 7, 620000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 1, '홍콩 도착', '인천에서 출발해 홍콩에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 2, '딤섬 탐방', '하가우, 시우마이 등 다양한 만두류와 차슈바오. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 쌀국수과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 쌀국수과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 4, '템플스트리트 야시장 체험', '카레 생선공, 계란와플 등 길거리 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 5, '쿠킹 클래스', '현지 셰프에게 홍콩의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (78, 6, '근교 산지 미식 여행', '홍콩 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3350,7 +3350,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (90, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (90, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (90, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (90, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 22, NULL, 'SPORTS_ACTIVITY', '시카고 스포츠·액티비티 투어: 큐스(야구) · 화이트삭스(야구)', '메이저리그, 리글리 필드. 메이저리그, 개럽 콤스키 파크.', '바람개비 아웃도어', '큐스(야구) — 메이저리그, 리글리 필드
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 22, NULL, 'SPORTS_ACTIVITY', '시카고 스포츠·액티비티 투어: 큐스(야구) · 화이트삭스(야구)', '메이저리그, 리글리 필드. 메이저리그, 개럽 콤스키 파크.', '영차영차 아웃도어', '큐스(야구) — 메이저리그, 리글리 필드
 화이트삭스(야구) — 메이저리그, 개럽 콤스키 파크
 베어스(미식축구) — NFL, 솔저 필드', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3394,7 +3394,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (93, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (93, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (93, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (93, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 23, NULL, 'ART_REST', '시드니 예술·휴식 투어: 시드니 오페라 하우스 · SEA LIFE 아쿠아리움', '세계 아이콘 건축물, 공연 감상. 펭귄, 상어, 거북이 등 해양 생물.', '고요숲 스파', '시드니 오페라 하우스 — 세계 아이콘 건축물, 공연 감상
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 23, NULL, 'ART_REST', '시드니 예술·휴식 투어: 시드니 오페라 하우스 · SEA LIFE 아쿠아리움', '세계 아이콘 건축물, 공연 감상. 펭귄, 상어, 거북이 등 해양 생물.', '힐링힐링 스파', '시드니 오페라 하우스 — 세계 아이콘 건축물, 공연 감상
 SEA LIFE 아쿠아리움 — 펭귄, 상어, 거북이 등 해양 생물
 호주 박물관 — 호주 문화 역사 전시', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3482,7 +3482,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (99, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (99, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (99, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (99, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 25, NULL, 'FOOD_DRINK', '상파울루 미식·주류 투어: 모르타델라 샌드위치 · 미슐랭 별 레스토랑', '뮤니시팔 마켓의 명물 음식. 브라질 미슐랭 별 70% 집중.', '참나무 위스키', '모르타델라 샌드위치 — 뮤니시팔 마켓의 명물 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 25, NULL, 'FOOD_DRINK', '상파울루 미식·주류 투어: 모르타델라 샌드위치 · 미슐랭 별 레스토랑', '뮤니시팔 마켓의 명물 음식. 브라질 미슐랭 별 70% 집중.', '참나무통 위스키', '모르타델라 샌드위치 — 뮤니시팔 마켓의 명물 음식
 미슐랭 별 레스토랑 — 브라질 미슐랭 별 70% 집중
 이민자 요리 — 이탈리아, 일식, 레바논 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3495,7 +3495,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (34, 6, 7, 780000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 1, '상파울루 도착', '인천에서 출발해 상파울루에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 2, '모르타델라 샌드위치 탐방', '뮤니시팔 마켓의 명물 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 미슐랭 별 레스토랑과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 3, '참나무통 위스키 견학과 시음', '참나무통 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 미슐랭 별 레스토랑과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 4, '이민자 요리 체험', '이탈리아, 일식, 레바논 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 5, '쿠킹 클래스', '현지 셰프에게 상파울루의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 6, '근교 산지 미식 여행', '상파울루 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3503,7 +3503,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (100, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (34, 9, 10, 1100000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 1, '상파울루 도착', '인천에서 출발해 상파울루에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 2, '모르타델라 샌드위치 탐방', '뮤니시팔 마켓의 명물 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 미슐랭 별 레스토랑과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 3, '참나무통 위스키 견학과 시음', '참나무통 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 미슐랭 별 레스토랑과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 4, '이민자 요리 체험', '이탈리아, 일식, 레바논 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 5, '쿠킹 클래스', '현지 셰프에게 상파울루의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 6, '근교 산지 미식 여행', '상파울루 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3514,7 +3514,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (101, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (34, 13, 14, 1520000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 1, '상파울루 도착', '인천에서 출발해 상파울루에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 2, '모르타델라 샌드위치 탐방', '뮤니시팔 마켓의 명물 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 미슐랭 별 레스토랑과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 3, '참나무통 위스키 견학과 시음', '참나무통 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 미슐랭 별 레스토랑과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 4, '이민자 요리 체험', '이탈리아, 일식, 레바논 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 5, '쿠킹 클래스', '현지 셰프에게 상파울루의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (102, 6, '근교 산지 미식 여행', '상파울루 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3570,7 +3570,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (105, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (105, 12, '미술관 한 곳 더', '그랜드 이집트 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (105, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (105, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 27, NULL, 'FOOD_DRINK', '케이프타운 미식·주류 투어: 테이스트 저니 투어 · 케이프 말레이 음식', '전통 & 현대 음식. 역사적 음식 문화.', '달빛 와이너리', '테이스트 저니 투어 — 전통 & 현대 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 27, NULL, 'FOOD_DRINK', '케이프타운 미식·주류 투어: 테이스트 저니 투어 · 케이프 말레이 음식', '전통 & 현대 음식. 역사적 음식 문화.', '와인한잔 와이너리', '테이스트 저니 투어 — 전통 & 현대 음식
 케이프 말레이 음식 — 역사적 음식 문화
 보-카프 투어 — 컬러풀 주택가 투어', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3583,7 +3583,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (36, 6, 7, 700000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 1, '케이프타운 도착', '인천에서 출발해 케이프타운에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 2, '테이스트 저니 투어 탐방', '전통 & 현대 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케이프 말레이 음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케이프 말레이 음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 4, '보-카프 투어 체험', '컬러풀 주택가 투어. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 5, '쿠킹 클래스', '현지 셰프에게 케이프타운의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 6, '근교 산지 미식 여행', '케이프타운 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3591,7 +3591,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (106, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (36, 9, 10, 990000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 1, '케이프타운 도착', '인천에서 출발해 케이프타운에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 2, '테이스트 저니 투어 탐방', '전통 & 현대 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케이프 말레이 음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케이프 말레이 음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 4, '보-카프 투어 체험', '컬러풀 주택가 투어. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 5, '쿠킹 클래스', '현지 셰프에게 케이프타운의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 6, '근교 산지 미식 여행', '케이프타운 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3602,7 +3602,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (107, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (36, 13, 14, 1360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 1, '케이프타운 도착', '인천에서 출발해 케이프타운에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 2, '테이스트 저니 투어 탐방', '전통 & 현대 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케이프 말레이 음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 케이프 말레이 음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 4, '보-카프 투어 체험', '컬러풀 주택가 투어. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 5, '쿠킹 클래스', '현지 셰프에게 케이프타운의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 6, '근교 산지 미식 여행', '케이프타운 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3614,7 +3614,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (108, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 27, NULL, 'SPORTS_ACTIVITY', '케이프타운 스포츠·액티비티 투어: 테이블 마운틴 하이킹 · 서핑', '케이블카 또는 등산. 황금빛 해변 서핑.', '바람개비 아웃도어', '테이블 마운틴 하이킹 — 케이블카 또는 등산
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 27, NULL, 'SPORTS_ACTIVITY', '케이프타운 스포츠·액티비티 투어: 테이블 마운틴 하이킹 · 서핑', '케이블카 또는 등산. 황금빛 해변 서핑.', '영차영차 아웃도어', '테이블 마운틴 하이킹 — 케이블카 또는 등산
 서핑 — 황금빛 해변 서핑
 라이온스 헤드 패러글라이딩 — 익스트림 스포츠', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3746,7 +3746,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (117, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (117, 12, '미술관 한 곳 더', '라 스칼라 오페라하우스 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (117, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (117, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 29, NULL, 'FOOD_DRINK', '암스테르담 미식·주류 투어: 생 청어 · 네덜란드 전통 음식', '전통 네덜란드 길거리 음식. 판케이크, 치즈 등 현지 특산.', '달빛 와이너리', '생 청어 — 전통 네덜란드 길거리 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 29, NULL, 'FOOD_DRINK', '암스테르담 미식·주류 투어: 생 청어 · 네덜란드 전통 음식', '전통 네덜란드 길거리 음식. 판케이크, 치즈 등 현지 특산.', '와인한잔 와이너리', '생 청어 — 전통 네덜란드 길거리 음식
 네덜란드 전통 음식 — 판케이크, 치즈 등 현지 특산
 운하변 카페 문화 — 운하 보며 식사하는 경험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3759,7 +3759,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (40, 6, 7, 740000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 1, '암스테르담 도착', '인천에서 출발해 암스테르담에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 2, '생 청어 탐방', '전통 네덜란드 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 네덜란드 전통 음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 네덜란드 전통 음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 4, '운하변 카페 문화 체험', '운하 보며 식사하는 경험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 5, '쿠킹 클래스', '현지 셰프에게 암스테르담의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 6, '근교 산지 미식 여행', '암스테르담 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3767,7 +3767,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (118, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (40, 9, 10, 1030000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 1, '암스테르담 도착', '인천에서 출발해 암스테르담에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 2, '생 청어 탐방', '전통 네덜란드 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 네덜란드 전통 음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 네덜란드 전통 음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 4, '운하변 카페 문화 체험', '운하 보며 식사하는 경험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 5, '쿠킹 클래스', '현지 셰프에게 암스테르담의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 6, '근교 산지 미식 여행', '암스테르담 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3778,7 +3778,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (119, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (40, 13, 14, 1420000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 1, '암스테르담 도착', '인천에서 출발해 암스테르담에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 2, '생 청어 탐방', '전통 네덜란드 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 네덜란드 전통 음식과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 네덜란드 전통 음식과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 4, '운하변 카페 문화 체험', '운하 보며 식사하는 경험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 5, '쿠킹 클래스', '현지 셰프에게 암스테르담의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 6, '근교 산지 미식 여행', '암스테르담 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3790,7 +3790,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (120, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 30, NULL, 'FOOD_DRINK', '이스탄불 미식·주류 투어: 시밋 · 메제', '참깨 베이글, 현지 아침 음식. 다양한 전채 요리 모음.', '구름 치즈공방', '시밋 — 참깨 베이글, 현지 아침 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 30, NULL, 'FOOD_DRINK', '이스탄불 미식·주류 투어: 시밋 · 메제', '참깨 베이글, 현지 아침 음식. 다양한 전채 요리 모음.', '치즈늘어남 공방', '시밋 — 참깨 베이글, 현지 아침 음식
 메제 — 다양한 전채 요리 모음
 이스탄불 푸드 워킹투어 — 현지 음식 거리 체험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3803,7 +3803,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (41, 6, 7, 700000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 1, '이스탄불 도착', '인천에서 출발해 이스탄불에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 2, '시밋 탐방', '참깨 베이글, 현지 아침 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 메제과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 메제과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 4, '이스탄불 푸드 워킹투어 체험', '현지 음식 거리 체험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 5, '쿠킹 클래스', '현지 셰프에게 이스탄불의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 6, '근교 산지 미식 여행', '이스탄불 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3811,7 +3811,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (121, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (41, 9, 10, 990000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 1, '이스탄불 도착', '인천에서 출발해 이스탄불에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 2, '시밋 탐방', '참깨 베이글, 현지 아침 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 메제과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 메제과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 4, '이스탄불 푸드 워킹투어 체험', '현지 음식 거리 체험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 5, '쿠킹 클래스', '현지 셰프에게 이스탄불의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 6, '근교 산지 미식 여행', '이스탄불 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3822,7 +3822,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (122, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (41, 13, 14, 1360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 1, '이스탄불 도착', '인천에서 출발해 이스탄불에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 2, '시밋 탐방', '참깨 베이글, 현지 아침 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 3, '구름 치즈공방 견학과 시음', '구름 치즈공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 메제과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 3, '치즈늘어남 공방 견학과 시음', '치즈늘어남 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 메제과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 4, '이스탄불 푸드 워킹투어 체험', '현지 음식 거리 체험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 5, '쿠킹 클래스', '현지 셰프에게 이스탄불의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 6, '근교 산지 미식 여행', '이스탄불 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3834,7 +3834,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (123, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 31, NULL, 'FOOD_DRINK', '프라하 미식·주류 투어: 트들닉 · 체코 맥주', '녹아내리는 체코 과자. 세계 최고 맥주 소비 국가.', '은하수 제면소', '트들닉 — 녹아내리는 체코 과자
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 31, NULL, 'FOOD_DRINK', '프라하 미식·주류 투어: 트들닉 · 체코 맥주', '녹아내리는 체코 과자. 세계 최고 맥주 소비 국가.', '면치기 제면소', '트들닉 — 녹아내리는 체코 과자
 체코 맥주 — 세계 최고 맥주 소비 국가
 체코 전통 음식 — 현지 펍과 레스토랑 체험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3847,7 +3847,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (42, 6, 7, 720000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 1, '프라하 도착', '인천에서 출발해 프라하에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 2, '트들닉 탐방', '녹아내리는 체코 과자. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 체코 맥주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 체코 맥주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 4, '체코 전통 음식 체험', '현지 펍과 레스토랑 체험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 5, '쿠킹 클래스', '현지 셰프에게 프라하의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 6, '근교 산지 미식 여행', '프라하 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3855,7 +3855,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (124, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (42, 9, 10, 1010000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 1, '프라하 도착', '인천에서 출발해 프라하에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 2, '트들닉 탐방', '녹아내리는 체코 과자. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 체코 맥주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 체코 맥주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 4, '체코 전통 음식 체험', '현지 펍과 레스토랑 체험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 5, '쿠킹 클래스', '현지 셰프에게 프라하의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 6, '근교 산지 미식 여행', '프라하 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3866,7 +3866,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (125, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (42, 13, 14, 1390000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 1, '프라하 도착', '인천에서 출발해 프라하에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 2, '트들닉 탐방', '녹아내리는 체코 과자. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 체코 맥주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 체코 맥주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 4, '체코 전통 음식 체험', '현지 펍과 레스토랑 체험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 5, '쿠킹 클래스', '현지 셰프에게 프라하의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (126, 6, '근교 산지 미식 여행', '프라하 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3922,7 +3922,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (129, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (129, 12, '미술관 한 곳 더', '쿤스트히스토리셰스 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (129, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (129, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 33, NULL, 'FOOD_DRINK', '리스본 미식·주류 투어: 포르투갈 음식 와인 투어 · 파스텔 데 나타', '현지 가이드와 함께 포르투갈 요리 맛보기. 포르투갈식 계란 타르트.', '소금꽃 식초공방', '포르투갈 음식 와인 투어 — 현지 가이드와 함께 포르투갈 요리 맛보기
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 33, NULL, 'FOOD_DRINK', '리스본 미식·주류 투어: 포르투갈 음식 와인 투어 · 파스텔 데 나타', '현지 가이드와 함께 포르투갈 요리 맛보기. 포르투갈식 계란 타르트.', '시큼털털 식초공방', '포르투갈 음식 와인 투어 — 현지 가이드와 함께 포르투갈 요리 맛보기
 파스텔 데 나타 — 포르투갈식 계란 타르트
 진지냐 — 포르투갈 전통 체리 리큐르 음료', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3935,7 +3935,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (44, 6, 7, 810000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 1, '리스본 도착', '인천에서 출발해 리스본에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 2, '포르투갈 음식 와인 투어 탐방', '현지 가이드와 함께 포르투갈 요리 맛보기. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파스텔 데 나타과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파스텔 데 나타과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 4, '진지냐 체험', '포르투갈 전통 체리 리큐르 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 5, '쿠킹 클래스', '현지 셰프에게 리스본의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 6, '근교 산지 미식 여행', '리스본 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3943,7 +3943,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (130, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (44, 9, 10, 1130000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 1, '리스본 도착', '인천에서 출발해 리스본에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 2, '포르투갈 음식 와인 투어 탐방', '현지 가이드와 함께 포르투갈 요리 맛보기. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파스텔 데 나타과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파스텔 데 나타과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 4, '진지냐 체험', '포르투갈 전통 체리 리큐르 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 5, '쿠킹 클래스', '현지 셰프에게 리스본의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 6, '근교 산지 미식 여행', '리스본 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3954,7 +3954,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (131, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (44, 13, 14, 1570000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 1, '리스본 도착', '인천에서 출발해 리스본에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 2, '포르투갈 음식 와인 투어 탐방', '현지 가이드와 함께 포르투갈 요리 맛보기. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파스텔 데 나타과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파스텔 데 나타과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 4, '진지냐 체험', '포르투갈 전통 체리 리큐르 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 5, '쿠킹 클래스', '현지 셰프에게 리스본의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 6, '근교 산지 미식 여행', '리스본 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3966,7 +3966,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (132, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 34, NULL, 'FOOD_DRINK', '에든버러 미식·주류 투어: 스카치 위스키 익스피리언스 · 캐논볼 레스토랑', '위스키 역사와 테이스팅 투어. 에든버러 성 전망의 수상 스코틀랜드 음식점.', '은하수 제면소', '스카치 위스키 익스피리언스 — 위스키 역사와 테이스팅 투어
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 34, NULL, 'FOOD_DRINK', '에든버러 미식·주류 투어: 스카치 위스키 익스피리언스 · 캐논볼 레스토랑', '위스키 역사와 테이스팅 투어. 에든버러 성 전망의 수상 스코틀랜드 음식점.', '면치기 제면소', '스카치 위스키 익스피리언스 — 위스키 역사와 테이스팅 투어
 캐논볼 레스토랑 — 에든버러 성 전망의 수상 스코틀랜드 음식점
 스코틀랜드 전통 요리 — 스코틀랜드식 하깅스, 무, 감자 요리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -3979,7 +3979,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (45, 6, 7, 760000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 1, '에든버러 도착', '인천에서 출발해 에든버러에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 2, '스카치 위스키 익스피리언스 탐방', '위스키 역사와 테이스팅 투어. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캐논볼 레스토랑과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캐논볼 레스토랑과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 4, '스코틀랜드 전통 요리 체험', '스코틀랜드식 하깅스, 무, 감자 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 5, '쿠킹 클래스', '현지 셰프에게 에든버러의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 6, '근교 산지 미식 여행', '에든버러 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3987,7 +3987,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (133, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (45, 9, 10, 1060000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 1, '에든버러 도착', '인천에서 출발해 에든버러에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 2, '스카치 위스키 익스피리언스 탐방', '위스키 역사와 테이스팅 투어. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캐논볼 레스토랑과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캐논볼 레스토랑과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 4, '스코틀랜드 전통 요리 체험', '스코틀랜드식 하깅스, 무, 감자 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 5, '쿠킹 클래스', '현지 셰프에게 에든버러의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 6, '근교 산지 미식 여행', '에든버러 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -3998,7 +3998,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (134, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (45, 13, 14, 1460000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 1, '에든버러 도착', '인천에서 출발해 에든버러에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 2, '스카치 위스키 익스피리언스 탐방', '위스키 역사와 테이스팅 투어. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캐논볼 레스토랑과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 캐논볼 레스토랑과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 4, '스코틀랜드 전통 요리 체험', '스코틀랜드식 하깅스, 무, 감자 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 5, '쿠킹 클래스', '현지 셰프에게 에든버러의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 6, '근교 산지 미식 여행', '에든버러 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4010,7 +4010,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (135, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 35, NULL, 'SPORTS_ACTIVITY', '싱가포르 스포츠·액티비티 투어: 싱가포르 그랑프리 · 수상스포츠', '세계 유일의 F1 야간 나이트 레이스 경주대회. 카약, 다이빙, 윈드서핑, 제트스키.', '산들 트레킹', '싱가포르 그랑프리 — 세계 유일의 F1 야간 나이트 레이스 경주대회
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 35, NULL, 'SPORTS_ACTIVITY', '싱가포르 스포츠·액티비티 투어: 싱가포르 그랑프리 · 수상스포츠', '세계 유일의 F1 야간 나이트 레이스 경주대회. 카약, 다이빙, 윈드서핑, 제트스키.', '등산 가즈아 트레킹', '싱가포르 그랑프리 — 세계 유일의 F1 야간 나이트 레이스 경주대회
 수상스포츠 — 카약, 다이빙, 윈드서핑, 제트스키
 드래곤보트 레이싱 — 전통 드래곤 보트 경주', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4081,7 +4081,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (141, 4, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (141, 5, '근교 트레킹·야외 활동', '마카오 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (141, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (141, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 37, NULL, 'FOOD_DRINK', '타이베이 미식·주류 투어: 라오허 야시장 · 닝시아 야시장', '다양한 지역 음식을 파는 야시장. 굴 계란말이, 타로볼, 참깨떡 전문.', '푸른보리 양조장', '라오허 야시장 — 다양한 지역 음식을 파는 야시장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 37, NULL, 'FOOD_DRINK', '타이베이 미식·주류 투어: 라오허 야시장 · 닝시아 야시장', '다양한 지역 음식을 파는 야시장. 굴 계란말이, 타로볼, 참깨떡 전문.', '술술 양조장', '라오허 야시장 — 다양한 지역 음식을 파는 야시장
 닝시아 야시장 — 굴 계란말이, 타로볼, 참깨떡 전문
 브레이즈드 비프 누들 — 타이베이 대표 국물 국수', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4098,12 +4098,12 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (142, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (48, 3, 4, 360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (143, 1, '타이베이 도착', '인천에서 출발해 타이베이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (143, 2, '라오허 야시장 탐방', '다양한 지역 음식을 파는 야시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (143, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 닝시아 야시장과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (143, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 닝시아 야시장과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (143, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (48, 6, 7, 560000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 1, '타이베이 도착', '인천에서 출발해 타이베이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 2, '라오허 야시장 탐방', '다양한 지역 음식을 파는 야시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 닝시아 야시장과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 닝시아 야시장과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 4, '브레이즈드 비프 누들 체험', '타이베이 대표 국물 국수. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 5, '쿠킹 클래스', '현지 셰프에게 타이베이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (144, 6, '근교 산지 미식 여행', '타이베이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4162,7 +4162,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (150, 4, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (150, 5, '근교 트레킹·야외 활동', '나트랑 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (150, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (150, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 40, NULL, 'FOOD_DRINK', '푸꾸옥 미식·주류 투어: 푸꾸옥 생선 소스 · 푸꾸옥 야시장 해산물', '세계 최고 품질 생선 소스의 본고장. 지역 특산 해산물 요리 전문.', '햇살 올리브농장', '푸꾸옥 생선 소스 — 세계 최고 품질 생선 소스의 본고장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 40, NULL, 'FOOD_DRINK', '푸꾸옥 미식·주류 투어: 푸꾸옥 생선 소스 · 푸꾸옥 야시장 해산물', '세계 최고 품질 생선 소스의 본고장. 지역 특산 해산물 요리 전문.', '올리브유 농장 아저씨', '푸꾸옥 생선 소스 — 세계 최고 품질 생선 소스의 본고장
 푸꾸옥 야시장 해산물 — 지역 특산 해산물 요리 전문
 안초비 가공 — 생선 소스 생산 과정 투어 가능', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4179,17 +4179,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (151, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (51, 3, 4, 380000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (152, 1, '푸꾸옥 도착', '인천에서 출발해 푸꾸옥에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (152, 2, '푸꾸옥 생선 소스 탐방', '세계 최고 품질 생선 소스의 본고장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (152, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 푸꾸옥 야시장 해산물과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (152, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 푸꾸옥 야시장 해산물과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (152, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (51, 6, 7, 600000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 1, '푸꾸옥 도착', '인천에서 출발해 푸꾸옥에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 2, '푸꾸옥 생선 소스 탐방', '세계 최고 품질 생선 소스의 본고장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 푸꾸옥 야시장 해산물과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 푸꾸옥 야시장 해산물과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 4, '안초비 가공 체험', '생선 소스 생산 과정 투어 가능. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 5, '쿠킹 클래스', '현지 셰프에게 푸꾸옥의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 6, '근교 산지 미식 여행', '푸꾸옥 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (153, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 41, NULL, 'ART_REST', '발리 예술·휴식 투어: 테갈랄랑 쌀 계단 논 · 발리 요가 수행', '우붓 근처 아름다운 호수식 계단 논. 1000년 힌두 요가 전통, 요가 수도.', '달무리 공연장', '테갈랄랑 쌀 계단 논 — 우붓 근처 아름다운 호수식 계단 논
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 41, NULL, 'ART_REST', '발리 예술·휴식 투어: 테갈랄랑 쌀 계단 논 · 발리 요가 수행', '우붓 근처 아름다운 호수식 계단 논. 1000년 힌두 요가 전통, 요가 수도.', '앙코르앙코르 공연장', '테갈랄랑 쌀 계단 논 — 우붓 근처 아름다운 호수식 계단 논
 발리 요가 수행 — 1000년 힌두 요가 전통, 요가 수도
 1000개 사원 — 발리 힌두 문화 종교 유산', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4233,7 +4233,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (156, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (156, 12, '미술관 한 곳 더', '테갈랄랑 쌀 계단 논 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (156, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (156, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 42, NULL, 'FOOD_DRINK', '하노이 미식·주류 투어: 포 (쌀국수) · 분 차 하노이', '베트남 국민 음식, 위로의 국물 요리. 구이 돼지와 쌀국수 조합.', '새벽 커피로스터스', '포 (쌀국수) — 베트남 국민 음식, 위로의 국물 요리
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 42, NULL, 'FOOD_DRINK', '하노이 미식·주류 투어: 포 (쌀국수) · 분 차 하노이', '베트남 국민 음식, 위로의 국물 요리. 구이 돼지와 쌀국수 조합.', '아아 로스터스', '포 (쌀국수) — 베트남 국민 음식, 위로의 국물 요리
 분 차 하노이 — 구이 돼지와 쌀국수 조합
 커피 거리 (카페 거리) — 계란 커피, 우유 커피 전문거리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4250,17 +4250,17 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (157, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (53, 3, 4, 390000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (158, 1, '하노이 도착', '인천에서 출발해 하노이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (158, 2, '포 (쌀국수) 탐방', '베트남 국민 음식, 위로의 국물 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (158, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 분 차 하노이과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (158, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 분 차 하노이과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (158, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (53, 6, 7, 620000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 1, '하노이 도착', '인천에서 출발해 하노이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 2, '포 (쌀국수) 탐방', '베트남 국민 음식, 위로의 국물 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 분 차 하노이과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 분 차 하노이과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 4, '커피 거리 (카페 거리) 체험', '계란 커피, 우유 커피 전문거리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 5, '쿠킹 클래스', '현지 셰프에게 하노이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 6, '근교 산지 미식 여행', '하노이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (159, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 43, NULL, 'ART_REST', '호치민 예술·휴식 투어: 전쟁 유적 박물관 · 베트남 역사 박물관', '베트남 전쟁 역사 전시, 100만 연방객. 베트남 근현대 역사 유산.', '고요숲 스파', '전쟁 유적 박물관 — 베트남 전쟁 역사 전시, 100만 연방객
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 43, NULL, 'ART_REST', '호치민 예술·휴식 투어: 전쟁 유적 박물관 · 베트남 역사 박물관', '베트남 전쟁 역사 전시, 100만 연방객. 베트남 근현대 역사 유산.', '힐링힐링 스파', '전쟁 유적 박물관 — 베트남 전쟁 역사 전시, 100만 연방객
 베트남 역사 박물관 — 베트남 근현대 역사 유산
 수상 인형극 — UNESCO 무형문화유산 전통 예술', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4287,7 +4287,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (162, 4, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (162, 5, '공연·전시 관람', '호치민에서 열리는 공연 또는 전시 중 일정에 맞는 한 편을 관람합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (162, 6, '스파·휴식의 날', '스파나 온천, 마사지 등 느린 휴식으로 여행의 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (162, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 44, NULL, 'FOOD_DRINK', '쿠알라룸푸르 미식·주류 투어: 치우 킷 마켓 · 사테', '쿠알라룸푸르 최대 규모의 습식 시장. 땅콩소스를 곁들인 구운 꼬치.', '소금꽃 식초공방', '치우 킷 마켓 — 쿠알라룸푸르 최대 규모의 습식 시장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 44, NULL, 'FOOD_DRINK', '쿠알라룸푸르 미식·주류 투어: 치우 킷 마켓 · 사테', '쿠알라룸푸르 최대 규모의 습식 시장. 땅콩소스를 곁들인 구운 꼬치.', '시큼털털 식초공방', '치우 킷 마켓 — 쿠알라룸푸르 최대 규모의 습식 시장
 사테 — 땅콩소스를 곁들인 구운 꼬치
 락사 — 전통 국수 수프 요리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4300,7 +4300,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (55, 6, 7, 540000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 1, '쿠알라룸푸르 도착', '인천에서 출발해 쿠알라룸푸르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 2, '치우 킷 마켓 탐방', '쿠알라룸푸르 최대 규모의 습식 시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사테과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사테과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 4, '락사 체험', '전통 국수 수프 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 5, '쿠킹 클래스', '현지 셰프에게 쿠알라룸푸르의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 6, '근교 산지 미식 여행', '쿠알라룸푸르 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4308,7 +4308,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (163, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (55, 9, 10, 740000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 1, '쿠알라룸푸르 도착', '인천에서 출발해 쿠알라룸푸르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 2, '치우 킷 마켓 탐방', '쿠알라룸푸르 최대 규모의 습식 시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사테과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사테과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 4, '락사 체험', '전통 국수 수프 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 5, '쿠킹 클래스', '현지 셰프에게 쿠알라룸푸르의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 6, '근교 산지 미식 여행', '쿠알라룸푸르 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4319,7 +4319,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (164, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (55, 13, 14, 1010000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 1, '쿠알라룸푸르 도착', '인천에서 출발해 쿠알라룸푸르에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 2, '치우 킷 마켓 탐방', '쿠알라룸푸르 최대 규모의 습식 시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사테과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사테과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 4, '락사 체험', '전통 국수 수프 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 5, '쿠킹 클래스', '현지 셰프에게 쿠알라룸푸르의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (165, 6, '근교 산지 미식 여행', '쿠알라룸푸르 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4375,7 +4375,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (168, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (168, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (168, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (168, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 46, NULL, 'SPORTS_ACTIVITY', '토론토 스포츠·액티비티 투어: 토론토 메이플 리프스 · 토론토 래플터스', '하키 경기 관람 (스콜뱅크 아레나). 농구 경기 관람.', '산들 트레킹', '토론토 메이플 리프스 — 하키 경기 관람 (스콜뱅크 아레나)
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 46, NULL, 'SPORTS_ACTIVITY', '토론토 스포츠·액티비티 투어: 토론토 메이플 리프스 · 토론토 래플터스', '하키 경기 관람 (스콜뱅크 아레나). 농구 경기 관람.', '등산 가즈아 트레킹', '토론토 메이플 리프스 — 하키 경기 관람 (스콜뱅크 아레나)
 토론토 래플터스 — 농구 경기 관람
 토론토 아일랜드 카누 — 카누 및 카약', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4463,7 +4463,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (174, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (174, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (174, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (174, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 48, NULL, 'ART_REST', '멕시코시티 예술·휴식 투어: 무소 수마야 · 팔라시오 데 벨라스 아르테스', '현대 미술관. 미술 공연장.', '고요숲 스파', '무소 수마야 — 현대 미술관
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 48, NULL, 'ART_REST', '멕시코시티 예술·휴식 투어: 무소 수마야 · 팔라시오 데 벨라스 아르테스', '현대 미술관. 미술 공연장.', '힐링힐링 스파', '무소 수마야 — 현대 미술관
 팔라시오 데 벨라스 아르테스 — 미술 공연장
 보스케 데 차풀테펙 — 대규모 공원 및 박물관', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4507,7 +4507,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (177, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (177, 12, '미술관 한 곳 더', '무소 수마야 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (177, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (177, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 49, NULL, 'FOOD_DRINK', '멜버른 미식·주류 투어: 퀸 빅토리아 마켓 · 멜버른 커피 문화', '호주 최대 규모 시장. 세계 최고 수준의 커피.', '새벽 커피로스터스', '퀸 빅토리아 마켓 — 호주 최대 규모 시장
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 49, NULL, 'FOOD_DRINK', '멜버른 미식·주류 투어: 퀸 빅토리아 마켓 · 멜버른 커피 문화', '호주 최대 규모 시장. 세계 최고 수준의 커피.', '아아 로스터스', '퀸 빅토리아 마켓 — 호주 최대 규모 시장
 멜버른 커피 문화 — 세계 최고 수준의 커피
 다문화 마켓 — 국제 음식 경험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4520,7 +4520,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (60, 6, 7, 690000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 1, '멜버른 도착', '인천에서 출발해 멜버른에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 2, '퀸 빅토리아 마켓 탐방', '호주 최대 규모 시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멜버른 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멜버른 커피 문화과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 4, '다문화 마켓 체험', '국제 음식 경험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 5, '쿠킹 클래스', '현지 셰프에게 멜버른의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 6, '근교 산지 미식 여행', '멜버른 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4528,7 +4528,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (178, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (60, 9, 10, 970000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 1, '멜버른 도착', '인천에서 출발해 멜버른에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 2, '퀸 빅토리아 마켓 탐방', '호주 최대 규모 시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멜버른 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멜버른 커피 문화과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 4, '다문화 마켓 체험', '국제 음식 경험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 5, '쿠킹 클래스', '현지 셰프에게 멜버른의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 6, '근교 산지 미식 여행', '멜버른 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4539,7 +4539,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (179, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (60, 13, 14, 1330000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 1, '멜버른 도착', '인천에서 출발해 멜버른에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 2, '퀸 빅토리아 마켓 탐방', '호주 최대 규모 시장. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멜버른 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멜버른 커피 문화과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 4, '다문화 마켓 체험', '국제 음식 경험. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 5, '쿠킹 클래스', '현지 셰프에게 멜버른의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (180, 6, '근교 산지 미식 여행', '멜버른 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4578,7 +4578,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 4, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 5, '근교 트레킹·야외 활동', '괌 근교의 자연으로 이동해 가볍게 걷고 풍경을 즐기는 액티비티를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 6, '경기장·스포츠 문화 투어', '경기장 내부와 박물관을 둘러보며 현지 스포츠 문화를 배웁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (183, 7, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 51, NULL, 'FOOD_DRINK', '마닐라 미식·주류 투어: 아도보 · 레촌', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 파삭한 겉과 부드러운 속살의 돼지구이.', '새벽 커피로스터스', '아도보 — 간장과 식초에 절인 닭고기 또는 돼지고기 스튜
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 51, NULL, 'FOOD_DRINK', '마닐라 미식·주류 투어: 아도보 · 레촌', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 파삭한 겉과 부드러운 속살의 돼지구이.', '아아 로스터스', '아도보 — 간장과 식초에 절인 닭고기 또는 돼지고기 스튜
 레촌 — 파삭한 겉과 부드러운 속살의 돼지구이
 할로할로 — 빙수·코코넛·옥수수·떡을 섞은 필리핀식 디저트', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4595,12 +4595,12 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (184, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 3, 4, 360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 1, '마닐라 도착', '인천에서 출발해 마닐라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 2, '아도보 탐방', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 레촌과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 레촌과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (185, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (62, 6, 7, 560000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 1, '마닐라 도착', '인천에서 출발해 마닐라에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 2, '아도보 탐방', '간장과 식초에 절인 닭고기 또는 돼지고기 스튜. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 레촌과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 레촌과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 4, '할로할로 체험', '빙수·코코넛·옥수수·떡을 섞은 필리핀식 디저트. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 5, '쿠킹 클래스', '현지 셰프에게 마닐라의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (186, 6, '근교 산지 미식 여행', '마닐라 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4649,7 +4649,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 12, '미술관 한 곳 더', '붉은 요새 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (189, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 53, NULL, 'FOOD_DRINK', '뭄바이 미식·주류 투어: 바다 파브 · 파브 바지', '감자 튀김을 부드러운 번에 싼 길거리 음식. 감자·완두콩과 향신료를 버터 롤빵에 담은 음식.', '새벽 커피로스터스', '바다 파브 — 감자 튀김을 부드러운 번에 싼 길거리 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 53, NULL, 'FOOD_DRINK', '뭄바이 미식·주류 투어: 바다 파브 · 파브 바지', '감자 튀김을 부드러운 번에 싼 길거리 음식. 감자·완두콩과 향신료를 버터 롤빵에 담은 음식.', '아아 로스터스', '바다 파브 — 감자 튀김을 부드러운 번에 싼 길거리 음식
 파브 바지 — 감자·완두콩과 향신료를 버터 롤빵에 담은 음식
 카티 롤 — 고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4662,7 +4662,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 6, 7, 550000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 1, '뭄바이 도착', '인천에서 출발해 뭄바이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 2, '바다 파브 탐방', '감자 튀김을 부드러운 번에 싼 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 4, '카티 롤 체험', '고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 5, '쿠킹 클래스', '현지 셰프에게 뭄바이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 6, '근교 산지 미식 여행', '뭄바이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4670,7 +4670,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (190, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 9, 10, 750000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 1, '뭄바이 도착', '인천에서 출발해 뭄바이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 2, '바다 파브 탐방', '감자 튀김을 부드러운 번에 싼 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 4, '카티 롤 체험', '고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 5, '쿠킹 클래스', '현지 셰프에게 뭄바이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 6, '근교 산지 미식 여행', '뭄바이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4681,7 +4681,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (191, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (64, 13, 14, 1020000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 1, '뭄바이 도착', '인천에서 출발해 뭄바이에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 2, '바다 파브 탐방', '감자 튀김을 부드러운 번에 싼 길거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 파브 바지과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 4, '카티 롤 체험', '고기와 채소를 얇은 빵에 싸서 처트니를 얹은 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 5, '쿠킹 클래스', '현지 셰프에게 뭄바이의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 6, '근교 산지 미식 여행', '뭄바이 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -4693,7 +4693,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (192, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 54, NULL, 'ART_REST', '방갈로르 예술·휴식 투어: 벵갈루루 궁전 · ISKCON 사원', '튜더와 인도식 건축이 조화된 역사 궁전. 황금 사당과 거대한 조각상의 화려한 사원 단지.', '달무리 공연장', '벵갈루루 궁전 — 튜더와 인도식 건축이 조화된 역사 궁전
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 54, NULL, 'ART_REST', '방갈로르 예술·휴식 투어: 벵갈루루 궁전 · ISKCON 사원', '튜더와 인도식 건축이 조화된 역사 궁전. 황금 사당과 거대한 조각상의 화려한 사원 단지.', '앙코르앙코르 공연장', '벵갈루루 궁전 — 튜더와 인도식 건축이 조화된 역사 궁전
 ISKCON 사원 — 황금 사당과 거대한 조각상의 화려한 사원 단지
 큐본 공원·랄바그 식물원 — 240에이크의 푸른 정원과 크리스탈 온실', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4825,7 +4825,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (201, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 57, NULL, 'SPORTS_ACTIVITY', '울란바토르 스포츠·액티비티 투어: 말 승마 · 순록 타이가 투어', '현지 기수 가족과 함께 초원 승마 체험. 차탄 사람의 순록 문화와 전통 경험.', '산들 트레킹', '말 승마 — 현지 기수 가족과 함께 초원 승마 체험
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 57, NULL, 'SPORTS_ACTIVITY', '울란바토르 스포츠·액티비티 투어: 말 승마 · 순록 타이가 투어', '현지 기수 가족과 함께 초원 승마 체험. 차탄 사람의 순록 문화와 전통 경험.', '등산 가즈아 트레킹', '말 승마 — 현지 기수 가족과 함께 초원 승마 체험
 순록 타이가 투어 — 차탄 사람의 순록 문화와 전통 경험
 국립공원 액티비티 — 테렐지 국립공원의 3시간 말 타기 투어', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -4984,7 +4984,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (213, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 61, NULL, 'FOOD_DRINK', '광저우 미식·주류 투어: 해산물 요리 · 짜향주', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 쌀 기반의 순한 전통 주류로 부드러운 맛.', '햇살 올리브농장', '해산물 요리 — 남중국해 신선 생선, 새우, 게를 활용한 현지 특미
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 61, NULL, 'FOOD_DRINK', '광저우 미식·주류 투어: 해산물 요리 · 짜향주', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 쌀 기반의 순한 전통 주류로 부드러운 맛.', '올리브유 농장 아저씨', '해산물 요리 — 남중국해 신선 생선, 새우, 게를 활용한 현지 특미
 짜향주 — 쌀 기반의 순한 전통 주류로 부드러운 맛
 광동식 간식 — 만두, 죽, 쌀국수 등 현지 길거리 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5001,12 +5001,12 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (214, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 3, 4, 340000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 1, '광저우 도착', '인천에서 출발해 광저우에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 2, '해산물 요리 탐방', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 짜향주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 짜향주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (215, 4, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (72, 6, 7, 540000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 1, '광저우 도착', '인천에서 출발해 광저우에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 2, '해산물 요리 탐방', '남중국해 신선 생선, 새우, 게를 활용한 현지 특미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 짜향주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 짜향주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 4, '광동식 간식 체험', '만두, 죽, 쌀국수 등 현지 길거리 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 5, '쿠킹 클래스', '현지 셰프에게 광저우의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (216, 6, '근교 산지 미식 여행', '광저우 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5082,7 +5082,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 12, '미술관 한 곳 더', '이슬람 미술관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (222, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 64, NULL, 'FOOD_DRINK', '리야드 미식·주류 투어: 카브사 · 타리드', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 양고기·야채 스튜를 납작한 빵과 함께 하는 전통식.', '은하수 제면소', '카브사 — 향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 64, NULL, 'FOOD_DRINK', '리야드 미식·주류 투어: 카브사 · 타리드', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 양고기·야채 스튜를 납작한 빵과 함께 하는 전통식.', '면치기 제면소', '카브사 — 향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리
 타리드 — 양고기·야채 스튜를 납작한 빵과 함께 하는 전통식
 대추와 카다몬 커피 — 사우디의 상징적인 선물 세트와 음료', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5095,7 +5095,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 6, 7, 710000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 1, '리야드 도착', '인천에서 출발해 리야드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 2, '카브사 탐방', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 4, '대추와 카다몬 커피 체험', '사우디의 상징적인 선물 세트와 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 5, '쿠킹 클래스', '현지 셰프에게 리야드의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 6, '근교 산지 미식 여행', '리야드 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5103,7 +5103,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (223, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 9, 10, 980000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 1, '리야드 도착', '인천에서 출발해 리야드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 2, '카브사 탐방', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 4, '대추와 카다몬 커피 체험', '사우디의 상징적인 선물 세트와 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 5, '쿠킹 클래스', '현지 셰프에게 리야드의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 6, '근교 산지 미식 여행', '리야드 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5114,7 +5114,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (224, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (75, 13, 14, 1360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 1, '리야드 도착', '인천에서 출발해 리야드에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 2, '카브사 탐방', '향신료 쌀에 구운 닭과 견과류를 얹은 국민 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 타리드과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 4, '대추와 카다몬 커피 체험', '사우디의 상징적인 선물 세트와 음료. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 5, '쿠킹 클래스', '현지 셰프에게 리야드의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 6, '근교 산지 미식 여행', '리야드 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5126,7 +5126,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (225, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 65, NULL, 'FOOD_DRINK', '텔아비브 미식·주류 투어: 팔라펠 · 후무스', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 병아리콩을 만든 부드러운 크림 소스.', '푸른보리 양조장', '팔라펠 — 병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 65, NULL, 'FOOD_DRINK', '텔아비브 미식·주류 투어: 팔라펠 · 후무스', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 병아리콩을 만든 부드러운 크림 소스.', '술술 양조장', '팔라펠 — 병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식
 후무스 — 병아리콩을 만든 부드러운 크림 소스
 샤크슈카 — 토마토 소스 속 계란을 구운 중동식 아침 식사', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5139,7 +5139,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 6, 7, 760000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 1, '텔아비브 도착', '인천에서 출발해 텔아비브에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 2, '팔라펠 탐방', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 4, '샤크슈카 체험', '토마토 소스 속 계란을 구운 중동식 아침 식사. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 5, '쿠킹 클래스', '현지 셰프에게 텔아비브의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 6, '근교 산지 미식 여행', '텔아비브 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5147,7 +5147,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (226, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 9, 10, 1070000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 1, '텔아비브 도착', '인천에서 출발해 텔아비브에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 2, '팔라펠 탐방', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 4, '샤크슈카 체험', '토마토 소스 속 계란을 구운 중동식 아침 식사. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 5, '쿠킹 클래스', '현지 셰프에게 텔아비브의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 6, '근교 산지 미식 여행', '텔아비브 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5158,7 +5158,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (227, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (76, 13, 14, 1470000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 1, '텔아비브 도착', '인천에서 출발해 텔아비브에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 2, '팔라펠 탐방', '병아리콩을 튀긴 볼을 피타 빵에 싼 거리 음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 후무스과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 4, '샤크슈카 체험', '토마토 소스 속 계란을 구운 중동식 아침 식사. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 5, '쿠킹 클래스', '현지 셰프에게 텔아비브의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (228, 6, '근교 산지 미식 여행', '텔아비브 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5214,7 +5214,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (231, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 67, NULL, 'FOOD_DRINK', '프랑크푸르트 미식·주류 투어: 프랑크푸르터 소시지 · 사과주', '1487년 전통 레시피의 훈제 돼지고기 소시지. 신선한 사과를 발효한 톡 쏘는 독일식 사과 주류.', '달빛 와이너리', '프랑크푸르터 소시지 — 1487년 전통 레시피의 훈제 돼지고기 소시지
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 67, NULL, 'FOOD_DRINK', '프랑크푸르트 미식·주류 투어: 프랑크푸르터 소시지 · 사과주', '1487년 전통 레시피의 훈제 돼지고기 소시지. 신선한 사과를 발효한 톡 쏘는 독일식 사과 주류.', '와인한잔 와이너리', '프랑크푸르터 소시지 — 1487년 전통 레시피의 훈제 돼지고기 소시지
 사과주 — 신선한 사과를 발효한 톡 쏘는 독일식 사과 주류
 그뤼네 소세 — 7가지 허브와 소스를 섞은 독특한 양념 소스', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5227,7 +5227,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 6, 7, 740000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 1, '프랑크푸르트 도착', '인천에서 출발해 프랑크푸르트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 2, '프랑크푸르터 소시지 탐방', '1487년 전통 레시피의 훈제 돼지고기 소시지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 4, '그뤼네 소세 체험', '7가지 허브와 소스를 섞은 독특한 양념 소스. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 5, '쿠킹 클래스', '현지 셰프에게 프랑크푸르트의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 6, '근교 산지 미식 여행', '프랑크푸르트 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5235,7 +5235,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (232, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 9, 10, 1040000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 1, '프랑크푸르트 도착', '인천에서 출발해 프랑크푸르트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 2, '프랑크푸르터 소시지 탐방', '1487년 전통 레시피의 훈제 돼지고기 소시지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 4, '그뤼네 소세 체험', '7가지 허브와 소스를 섞은 독특한 양념 소스. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 5, '쿠킹 클래스', '현지 셰프에게 프랑크푸르트의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 6, '근교 산지 미식 여행', '프랑크푸르트 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5246,7 +5246,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (233, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (78, 13, 14, 1440000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 1, '프랑크푸르트 도착', '인천에서 출발해 프랑크푸르트에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 2, '프랑크푸르터 소시지 탐방', '1487년 전통 레시피의 훈제 돼지고기 소시지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 3, '달빛 와이너리 견학과 시음', '달빛 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 3, '와인한잔 와이너리 견학과 시음', '와인한잔 와이너리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 사과주과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 4, '그뤼네 소세 체험', '7가지 허브와 소스를 섞은 독특한 양념 소스. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 5, '쿠킹 클래스', '현지 셰프에게 프랑크푸르트의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 6, '근교 산지 미식 여행', '프랑크푸르트 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5258,7 +5258,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (234, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 68, NULL, 'FOOD_DRINK', '취리히 미식·주류 투어: 스위스 초콜릿 · 스위스 치즈', '200년 노하우의 고급 공예 초콜릿 부티크. 알프스 목축 전통의 세계적 명품 치즈.', '푸른보리 양조장', '스위스 초콜릿 — 200년 노하우의 고급 공예 초콜릿 부티크
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 68, NULL, 'FOOD_DRINK', '취리히 미식·주류 투어: 스위스 초콜릿 · 스위스 치즈', '200년 노하우의 고급 공예 초콜릿 부티크. 알프스 목축 전통의 세계적 명품 치즈.', '술술 양조장', '스위스 초콜릿 — 200년 노하우의 고급 공예 초콜릿 부티크
 스위스 치즈 — 알프스 목축 전통의 세계적 명품 치즈
 Zürich Geschnetzeltes — 뢰스티 감자와 함께 하는 송아지 슬라이스 요리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5271,7 +5271,7 @@ Zürich Geschnetzeltes — 뢰스티 감자와 함께 하는 송아지 슬라이
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 6, 7, 700000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 1, '취리히 도착', '인천에서 출발해 취리히에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 2, '스위스 초콜릿 탐방', '200년 노하우의 고급 공예 초콜릿 부티크. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 4, 'Zürich Geschnetzeltes 체험', '뢰스티 감자와 함께 하는 송아지 슬라이스 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 5, '쿠킹 클래스', '현지 셰프에게 취리히의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 6, '근교 산지 미식 여행', '취리히 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5279,7 +5279,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (235, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 9, 10, 990000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 1, '취리히 도착', '인천에서 출발해 취리히에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 2, '스위스 초콜릿 탐방', '200년 노하우의 고급 공예 초콜릿 부티크. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 4, 'Zürich Geschnetzeltes 체험', '뢰스티 감자와 함께 하는 송아지 슬라이스 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 5, '쿠킹 클래스', '현지 셰프에게 취리히의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 6, '근교 산지 미식 여행', '취리히 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5290,7 +5290,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (236, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (79, 13, 14, 1360000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 1, '취리히 도착', '인천에서 출발해 취리히에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 2, '스위스 초콜릿 탐방', '200년 노하우의 고급 공예 초콜릿 부티크. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 스위스 치즈과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 4, 'Zürich Geschnetzeltes 체험', '뢰스티 감자와 함께 하는 송아지 슬라이스 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 5, '쿠킹 클래스', '현지 셰프에게 취리히의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (237, 6, '근교 산지 미식 여행', '취리히 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5434,7 +5434,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (246, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 72, NULL, 'ART_REST', '스톡홀름 예술·휴식 투어: 바사 박물관 · 노벨상 박물관과 왕궁', '17세기 함선을 그대로 보존한 세계 유일의 박물관. 스웨덴 역사와 문화의 상징적 명소.', '달무리 공연장', '바사 박물관 — 17세기 함선을 그대로 보존한 세계 유일의 박물관
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 72, NULL, 'ART_REST', '스톡홀름 예술·휴식 투어: 바사 박물관 · 노벨상 박물관과 왕궁', '17세기 함선을 그대로 보존한 세계 유일의 박물관. 스웨덴 역사와 문화의 상징적 명소.', '앙코르앙코르 공연장', '바사 박물관 — 17세기 함선을 그대로 보존한 세계 유일의 박물관
 노벨상 박물관과 왕궁 — 스웨덴 역사와 문화의 상징적 명소
 현대 미술관 — 포토그래피스카와 무료 현대 미술 전시 공간', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5610,7 +5610,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 12, '미술관 한 곳 더', '윈드밀 레인 녹음 스튜디오 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (258, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 76, NULL, 'ART_REST', '아테네 예술·휴식 투어: 아크로폴리스와 파르테논 · 국립 고고학 박물관', '2500년 고대 그리스 건축의 정점. 그리스 고대 유물과 미술품 거대 컬렉션.', '유리잔 공방', '아크로폴리스와 파르테논 — 2500년 고대 그리스 건축의 정점
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 76, NULL, 'ART_REST', '아테네 예술·휴식 투어: 아크로폴리스와 파르테논 · 국립 고고학 박물관', '2500년 고대 그리스 건축의 정점. 그리스 고대 유물과 미술품 거대 컬렉션.', '와장창 유리공방', '아크로폴리스와 파르테논 — 2500년 고대 그리스 건축의 정점
 국립 고고학 박물관 — 그리스 고대 유물과 미술품 거대 컬렉션
 고대 아고라 — 고대 아테네 공공 생활의 중심지 유적', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5654,7 +5654,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 12, '미술관 한 곳 더', '아크로폴리스와 파르테논 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (261, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 77, NULL, 'SPORTS_ACTIVITY', '나이로비 스포츠·액티비티 투어: 나이로비 국립공원 사파리 · 데이비드 셸드릭 동물보호센터', '도시 중심에서 15분 거리의 야생동물 체험. 고아 코끼리와 코뿔소를 돌보는 유명 센터.', '산들 트레킹', '나이로비 국립공원 사파리 — 도시 중심에서 15분 거리의 야생동물 체험
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 77, NULL, 'SPORTS_ACTIVITY', '나이로비 스포츠·액티비티 투어: 나이로비 국립공원 사파리 · 데이비드 셸드릭 동물보호센터', '도시 중심에서 15분 거리의 야생동물 체험. 고아 코끼리와 코뿔소를 돌보는 유명 센터.', '등산 가즈아 트레킹', '나이로비 국립공원 사파리 — 도시 중심에서 15분 거리의 야생동물 체험
 데이비드 셸드릭 동물보호센터 — 고아 코끼리와 코뿔소를 돌보는 유명 센터
 기린센터 — 멸종위기 로스차일드 기린을 먹이고 만나기', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5698,7 +5698,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (264, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 78, NULL, 'ART_REST', '요하네스버그 예술·휴식 투어: 아파르트헤이트 박물관 · 정치 역사 투어', '20세기 남아공 인종차별 역사를 알리는 중요한 박물관. 아파르트헤이트 관련 주요 유적 가이드 방문.', '달무리 공연장', '아파르트헤이트 박물관 — 20세기 남아공 인종차별 역사를 알리는 중요한 박물관
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 78, NULL, 'ART_REST', '요하네스버그 예술·휴식 투어: 아파르트헤이트 박물관 · 정치 역사 투어', '20세기 남아공 인종차별 역사를 알리는 중요한 박물관. 아파르트헤이트 관련 주요 유적 가이드 방문.', '앙코르앙코르 공연장', '아파르트헤이트 박물관 — 20세기 남아공 인종차별 역사를 알리는 중요한 박물관
 정치 역사 투어 — 아파르트헤이트 관련 주요 유적 가이드 방문
 현대 갤러리 — 아프리카 현대미술 전시 공간', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5786,7 +5786,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 12, '미술관 한 곳 더', '하산 2세 모스크 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (270, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 80, NULL, 'FOOD_DRINK', '아디스아바바 미식·주류 투어: 에티오피아 커피 세레모니 · 인제라', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 에티오피아인의 주식인 발효 플랫브레드.', '새벽 커피로스터스', '에티오피아 커피 세레모니 — 고소함을 화로에서 볶고 비는 의식적 전통 커피 체험
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 80, NULL, 'FOOD_DRINK', '아디스아바바 미식·주류 투어: 에티오피아 커피 세레모니 · 인제라', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 에티오피아인의 주식인 발효 플랫브레드.', '아아 로스터스', '에티오피아 커피 세레모니 — 고소함을 화로에서 볶고 비는 의식적 전통 커피 체험
 인제라 — 에티오피아인의 주식인 발효 플랫브레드
 양고기 요리 — 향신료 풍부한 에티오피아식 고기 스튜', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5799,7 +5799,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 6, 7, 700000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 1, '아디스아바바 도착', '인천에서 출발해 아디스아바바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 2, '에티오피아 커피 세레모니 탐방', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 4, '양고기 요리 체험', '향신료 풍부한 에티오피아식 고기 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 5, '쿠킹 클래스', '현지 셰프에게 아디스아바바의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 6, '근교 산지 미식 여행', '아디스아바바 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5807,7 +5807,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (271, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 9, 10, 980000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 1, '아디스아바바 도착', '인천에서 출발해 아디스아바바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 2, '에티오피아 커피 세레모니 탐방', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 4, '양고기 요리 체험', '향신료 풍부한 에티오피아식 고기 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 5, '쿠킹 클래스', '현지 셰프에게 아디스아바바의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 6, '근교 산지 미식 여행', '아디스아바바 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5818,7 +5818,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (272, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (91, 13, 14, 1350000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 1, '아디스아바바 도착', '인천에서 출발해 아디스아바바에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 2, '에티오피아 커피 세레모니 탐방', '고소함을 화로에서 볶고 비는 의식적 전통 커피 체험. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 인제라과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 4, '양고기 요리 체험', '향신료 풍부한 에티오피아식 고기 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 5, '쿠킹 클래스', '현지 셰프에게 아디스아바바의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 6, '근교 산지 미식 여행', '아디스아바바 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5830,7 +5830,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (273, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 81, NULL, 'SPORTS_ACTIVITY', '다르에스살람 스포츠·액티비티 투어: 카약 투어 · 항해 스포츠', '해안 마을과 섬을 돌아보는 카약 액티비티. 패들보딩, 제트스키 등 수상 스포츠.', '바람개비 아웃도어', '카약 투어 — 해안 마을과 섬을 돌아보는 카약 액티비티
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 81, NULL, 'SPORTS_ACTIVITY', '다르에스살람 스포츠·액티비티 투어: 카약 투어 · 항해 스포츠', '해안 마을과 섬을 돌아보는 카약 액티비티. 패들보딩, 제트스키 등 수상 스포츠.', '영차영차 아웃도어', '카약 투어 — 해안 마을과 섬을 돌아보는 카약 액티비티
 항해 스포츠 — 패들보딩, 제트스키 등 수상 스포츠
 해변 클럽 — 스포츠, 라이브 음악, 음식을 함께 즐기는 해변 시설', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5874,7 +5874,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (276, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 82, NULL, 'ART_REST', '튀니스 예술·휴식 투어: 카르타고 유적 · 메디나 역사지구', '고대 로마 시대 역사 유적지. 전통 건축과 시장이 있는 구시가지.', '달무리 공연장', '카르타고 유적 — 고대 로마 시대 역사 유적지
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 82, NULL, 'ART_REST', '튀니스 예술·휴식 투어: 카르타고 유적 · 메디나 역사지구', '고대 로마 시대 역사 유적지. 전통 건축과 시장이 있는 구시가지.', '앙코르앙코르 공연장', '카르타고 유적 — 고대 로마 시대 역사 유적지
 메디나 역사지구 — 전통 건축과 시장이 있는 구시가지
 박물관 — 북아프리카 문화유산 전시', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5962,7 +5962,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (282, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 84, NULL, 'FOOD_DRINK', '시애틀 미식·주류 투어: 테리야키 · 커피 문화', '시애틀의 시그니처 음식으로 양념 구이 요리. 유명 카페에서 즐기는 고급 에스프레소.', '은하수 제면소', '테리야키 — 시애틀의 시그니처 음식으로 양념 구이 요리
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 84, NULL, 'FOOD_DRINK', '시애틀 미식·주류 투어: 테리야키 · 커피 문화', '시애틀의 시그니처 음식으로 양념 구이 요리. 유명 카페에서 즐기는 고급 에스프레소.', '면치기 제면소', '테리야키 — 시애틀의 시그니처 음식으로 양념 구이 요리
 커피 문화 — 유명 카페에서 즐기는 고급 에스프레소
 푸드 트럭 — 다양한 국제 음식을 제공하는 이동식 음식점', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -5975,7 +5975,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (95, 6, 7, 840000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 1, '시애틀 도착', '인천에서 출발해 시애틀에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 2, '테리야키 탐방', '시애틀의 시그니처 음식으로 양념 구이 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 4, '푸드 트럭 체험', '다양한 국제 음식을 제공하는 이동식 음식점. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 5, '쿠킹 클래스', '현지 셰프에게 시애틀의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 6, '근교 산지 미식 여행', '시애틀 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5983,7 +5983,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (283, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (95, 9, 10, 1190000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 1, '시애틀 도착', '인천에서 출발해 시애틀에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 2, '테리야키 탐방', '시애틀의 시그니처 음식으로 양념 구이 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 4, '푸드 트럭 체험', '다양한 국제 음식을 제공하는 이동식 음식점. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 5, '쿠킹 클래스', '현지 셰프에게 시애틀의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 6, '근교 산지 미식 여행', '시애틀 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -5994,7 +5994,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (284, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (95, 13, 14, 1640000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 1, '시애틀 도착', '인천에서 출발해 시애틀에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 2, '테리야키 탐방', '시애틀의 시그니처 음식으로 양념 구이 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 커피 문화과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 4, '푸드 트럭 체험', '다양한 국제 음식을 제공하는 이동식 음식점. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 5, '쿠킹 클래스', '현지 셰프에게 시애틀의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (285, 6, '근교 산지 미식 여행', '시애틀 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6050,7 +6050,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (288, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 86, NULL, 'FOOD_DRINK', '마이애미 미식·주류 투어: 쿠바 샌드위치 · 돌 게', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 마이애미의 명물 고급 해산물 요리.', '별빛 초콜릿공방', '쿠바 샌드위치 — 돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 86, NULL, 'FOOD_DRINK', '마이애미 미식·주류 투어: 쿠바 샌드위치 · 돌 게', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 마이애미의 명물 고급 해산물 요리.', '초콜릿 녹는중 공방', '쿠바 샌드위치 — 돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치
 돌 게 — 마이애미의 명물 고급 해산물 요리
 라틴 요리 — 쿠바, 페루, 니카라과 등 다문화 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6063,7 +6063,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (97, 6, 7, 870000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 1, '마이애미 도착', '인천에서 출발해 마이애미에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 2, '쿠바 샌드위치 탐방', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 4, '라틴 요리 체험', '쿠바, 페루, 니카라과 등 다문화 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 5, '쿠킹 클래스', '현지 셰프에게 마이애미의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 6, '근교 산지 미식 여행', '마이애미 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6071,7 +6071,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (289, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (97, 9, 10, 1230000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 1, '마이애미 도착', '인천에서 출발해 마이애미에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 2, '쿠바 샌드위치 탐방', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 4, '라틴 요리 체험', '쿠바, 페루, 니카라과 등 다문화 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 5, '쿠킹 클래스', '현지 셰프에게 마이애미의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 6, '근교 산지 미식 여행', '마이애미 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6082,7 +6082,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (290, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (97, 13, 14, 1710000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 1, '마이애미 도착', '인천에서 출발해 마이애미에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 2, '쿠바 샌드위치 탐방', '돼지고기와 치즈를 넣은 전통 쿠바식 샌드위치. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 3, '별빛 초콜릿공방 견학과 시음', '별빛 초콜릿공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 3, '초콜릿 녹는중 공방 견학과 시음', '초콜릿 녹는중 공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돌 게과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 4, '라틴 요리 체험', '쿠바, 페루, 니카라과 등 다문화 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 5, '쿠킹 클래스', '현지 셰프에게 마이애미의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 6, '근교 산지 미식 여행', '마이애미 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6094,7 +6094,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (291, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 87, NULL, 'SPORTS_ACTIVITY', '덴버 스포츠·액티비티 투어: 아이스 하키 · 미식축구', '2022 스탠리컵 우승팀 콜로라도 에블런치 경기. 덴버 브론코스 NFL 경기.', '산들 트레킹', '아이스 하키 — 2022 스탠리컵 우승팀 콜로라도 에블런치 경기
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 87, NULL, 'SPORTS_ACTIVITY', '덴버 스포츠·액티비티 투어: 아이스 하키 · 미식축구', '2022 스탠리컵 우승팀 콜로라도 에블런치 경기. 덴버 브론코스 NFL 경기.', '등산 가즈아 트레킹', '아이스 하키 — 2022 스탠리컵 우승팀 콜로라도 에블런치 경기
 미식축구 — 덴버 브론코스 NFL 경기
 야구 경기 — 콜로라도 로키스 메이저리그', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6138,7 +6138,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 12, '물가 액티비티', '수상·해안 액티비티를 즐기고 온천이나 스파로 피로를 풉니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 13, '로컬 스포츠 클래스', '현지에서 사랑받는 전통 스포츠를 배우는 체험 수업입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (294, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 88, NULL, 'FOOD_DRINK', '몬트리올 미식·주류 투어: 푸틴 · 몬트리올 베이글', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 쯔비 작고 단 맛의 현지식 베이글.', '소금꽃 식초공방', '푸틴 — 감자튀김, 그레이비, 치즈 커드를 올린 별미
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 88, NULL, 'FOOD_DRINK', '몬트리올 미식·주류 투어: 푸틴 · 몬트리올 베이글', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 쯔비 작고 단 맛의 현지식 베이글.', '시큼털털 식초공방', '푸틴 — 감자튀김, 그레이비, 치즈 커드를 올린 별미
 몬트리올 베이글 — 쯔비 작고 단 맛의 현지식 베이글
 포르투갈 치킨 — 현지에서 가장 사랑받는 캐주얼 음식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6151,7 +6151,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (99, 6, 7, 850000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 1, '몬트리올 도착', '인천에서 출발해 몬트리올에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 2, '푸틴 탐방', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 4, '포르투갈 치킨 체험', '현지에서 가장 사랑받는 캐주얼 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 5, '쿠킹 클래스', '현지 셰프에게 몬트리올의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 6, '근교 산지 미식 여행', '몬트리올 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6159,7 +6159,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (295, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (99, 9, 10, 1200000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 1, '몬트리올 도착', '인천에서 출발해 몬트리올에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 2, '푸틴 탐방', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 4, '포르투갈 치킨 체험', '현지에서 가장 사랑받는 캐주얼 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 5, '쿠킹 클래스', '현지 셰프에게 몬트리올의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 6, '근교 산지 미식 여행', '몬트리올 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6170,7 +6170,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (296, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (99, 13, 14, 1660000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 1, '몬트리올 도착', '인천에서 출발해 몬트리올에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 2, '푸틴 탐방', '감자튀김, 그레이비, 치즈 커드를 올린 별미. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 3, '소금꽃 식초공방 견학과 시음', '소금꽃 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 3, '시큼털털 식초공방 견학과 시음', '시큼털털 식초공방(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 몬트리올 베이글과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 4, '포르투갈 치킨 체험', '현지에서 가장 사랑받는 캐주얼 음식. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 5, '쿠킹 클래스', '현지 셰프에게 몬트리올의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (297, 6, '근교 산지 미식 여행', '몬트리올 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6270,7 +6270,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 12, '미술관 한 곳 더', '카스코 안티구오 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (303, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 91, NULL, 'SPORTS_ACTIVITY', '리우데자네이루 스포츠·액티비티 투어: 해변 배구 · 패러글라이딩', '코파카바나 해변에서 즐기는 스포츠. 모로 도이스 이르마우스에서 경험하는 하늘 스포츠.', '산들 트레킹', '해변 배구 — 코파카바나 해변에서 즐기는 스포츠
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 91, NULL, 'SPORTS_ACTIVITY', '리우데자네이루 스포츠·액티비티 투어: 해변 배구 · 패러글라이딩', '코파카바나 해변에서 즐기는 스포츠. 모로 도이스 이르마우스에서 경험하는 하늘 스포츠.', '등산 가즈아 트레킹', '해변 배구 — 코파카바나 해변에서 즐기는 스포츠
 패러글라이딩 — 모로 도이스 이르마우스에서 경험하는 하늘 스포츠
 서핑 — 리오의 역동적인 파도에서 즐기는 수상 스포츠', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6358,7 +6358,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 12, '미술관 한 곳 더', '160개 박물관 외에 가이드가 고른 작은 미술관을 한 곳 더 방문합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 13, '티타임과 독서의 오후', '현지 찻집에서 천천히 차를 마시며 하루를 정리합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (309, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 93, NULL, 'FOOD_DRINK', '산티아고 미식·주류 투어: 카르메네레 와인 · 세비체', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 생선을 오렌지 소스에 절인 신선한 해산물 요리.', '은하수 제면소', '카르메네레 와인 — 칠레의 대표 와인으로 프랑스 원산 포도 품종
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 93, NULL, 'FOOD_DRINK', '산티아고 미식·주류 투어: 카르메네레 와인 · 세비체', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 생선을 오렌지 소스에 절인 신선한 해산물 요리.', '면치기 제면소', '카르메네레 와인 — 칠레의 대표 와인으로 프랑스 원산 포도 품종
 세비체 — 생선을 오렌지 소스에 절인 신선한 해산물 요리
 쿠란토 — 해산물과 고기를 묻힌 냄비에 조리한 스튜', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6371,7 +6371,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (104, 6, 7, 760000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 1, '산티아고 도착', '인천에서 출발해 산티아고에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 2, '카르메네레 와인 탐방', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 4, '쿠란토 체험', '해산물과 고기를 묻힌 냄비에 조리한 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 5, '쿠킹 클래스', '현지 셰프에게 산티아고의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 6, '근교 산지 미식 여행', '산티아고 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6379,7 +6379,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (310, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (104, 9, 10, 1070000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 1, '산티아고 도착', '인천에서 출발해 산티아고에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 2, '카르메네레 와인 탐방', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 4, '쿠란토 체험', '해산물과 고기를 묻힌 냄비에 조리한 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 5, '쿠킹 클래스', '현지 셰프에게 산티아고의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 6, '근교 산지 미식 여행', '산티아고 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6390,7 +6390,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (311, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (104, 13, 14, 1480000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 1, '산티아고 도착', '인천에서 출발해 산티아고에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 2, '카르메네레 와인 탐방', '칠레의 대표 와인으로 프랑스 원산 포도 품종. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 세비체과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 4, '쿠란토 체험', '해산물과 고기를 묻힌 냄비에 조리한 스튜. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 5, '쿠킹 클래스', '현지 셰프에게 산티아고의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 6, '근교 산지 미식 여행', '산티아고 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6402,7 +6402,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (312, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 94, NULL, 'FOOD_DRINK', '리마 미식·주류 투어: 세비체 · 티라디토', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 생선 회와 고추, 소스를 얹은 순수 페루식 요리.', '햇살 올리브농장', '세비체 — 페루의 국민음식으로 생선을 귤 소스에 절인 요리
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 94, NULL, 'FOOD_DRINK', '리마 미식·주류 투어: 세비체 · 티라디토', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 생선 회와 고추, 소스를 얹은 순수 페루식 요리.', '올리브유 농장 아저씨', '세비체 — 페루의 국민음식으로 생선을 귤 소스에 절인 요리
 티라디토 — 생선 회와 고추, 소스를 얹은 순수 페루식 요리
 닛케이 요리 — 페루 재료와 일본 조리법을 혼합한 융합 요리', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6415,7 +6415,7 @@ INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (105, 6, 7, 820000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 1, '리마 도착', '인천에서 출발해 리마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 2, '세비체 탐방', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 4, '닛케이 요리 체험', '페루 재료와 일본 조리법을 혼합한 융합 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 5, '쿠킹 클래스', '현지 셰프에게 리마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 6, '근교 산지 미식 여행', '리마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6423,7 +6423,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (313, 7, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (105, 9, 10, 1150000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 1, '리마 도착', '인천에서 출발해 리마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 2, '세비체 탐방', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 4, '닛케이 요리 체험', '페루 재료와 일본 조리법을 혼합한 융합 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 5, '쿠킹 클래스', '현지 셰프에게 리마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 6, '근교 산지 미식 여행', '리마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6434,7 +6434,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (314, 10, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (105, 13, 14, 1590000, 2, 20);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 1, '리마 도착', '인천에서 출발해 리마에 도착합니다(항공권 별도). 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 2, '세비체 탐방', '페루의 국민음식으로 생선을 귤 소스에 절인 요리. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 3, '햇살 올리브농장 견학과 시음', '햇살 올리브농장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 3, '올리브유 농장 아저씨 견학과 시음', '올리브유 농장 아저씨(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 티라디토과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 4, '닛케이 요리 체험', '페루 재료와 일본 조리법을 혼합한 융합 요리. 직접 맛보고 고르는 시간을 가진 뒤 저녁은 현지 식당에서 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 5, '쿠킹 클래스', '현지 셰프에게 리마의 대표 요리를 배우고 직접 만든 요리로 저녁을 먹습니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 6, '근교 산지 미식 여행', '리마 근교의 산지로 이동해 제철 재료와 지역 음식을 맛보고 농장·공방을 방문합니다.');
@@ -6446,7 +6446,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (315, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 95, NULL, 'ART_REST', '보고타 예술·휴식 투어: 황금 박물관 · 미술관', '세계 최대 규모의 황금 유물 전시 공간. 콜롬비아 현대미술 전시.', '유리잔 공방', '황금 박물관 — 세계 최대 규모의 황금 유물 전시 공간
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 95, NULL, 'ART_REST', '보고타 예술·휴식 투어: 황금 박물관 · 미술관', '세계 최대 규모의 황금 유물 전시 공간. 콜롬비아 현대미술 전시.', '와장창 유리공방', '황금 박물관 — 세계 최대 규모의 황금 유물 전시 공간
 미술관 — 콜롬비아 현대미술 전시
 커피 워크숍 — 커피 로스팅과 테이스팅 체험', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6622,7 +6622,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 11, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 12, '자유 일정', '하루는 자유롭게 보냅니다. 가이드가 추천 맛집 지도를 드립니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 13, '야시장·야경 산책', '저녁 시장과 야경 명소를 걸으며 길거리 음식을 맛봅니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (327, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 99, NULL, 'SPORTS_ACTIVITY', '오클랜드 스포츠·액티비티 투어: 번지 점프 · 항해', '하버 브릿지에서 바다를 향해 뛰어내리기. 아메리카스 컵에 사용된 요트 경험.', '산들 트레킹', '번지 점프 — 하버 브릿지에서 바다를 향해 뛰어내리기
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('OVERSEAS', 99, NULL, 'SPORTS_ACTIVITY', '오클랜드 스포츠·액티비티 투어: 번지 점프 · 항해', '하버 브릿지에서 바다를 향해 뛰어내리기. 아메리카스 컵에 사용된 요트 경험.', '등산 가즈아 트레킹', '번지 점프 — 하버 브릿지에서 바다를 향해 뛰어내리기
 항해 — 아메리카스 컵에 사용된 요트 경험
 서핑 — 오클랜드 북쪽 해역의 파도 타기', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6712,7 +6712,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 13, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (333, 14, '체크아웃과 출발', '조식 후 체크아웃하고 공항으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 
 -- [M] 국내 투어: 10개 도시 × 3테마 (1박2일·2박3일·3박4일)
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 1, 'FOOD_DRINK', '경주 미식·주류 투어: 황남빵 · 경주 한우', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 40년 전통 한우 숯불구이 전문점.', '금빛밀 베이커리', '황남빵 — 1939년부터 만들어온 팥 앙금 경주 대표 간식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 1, 'FOOD_DRINK', '경주 미식·주류 투어: 황남빵 · 경주 한우', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 40년 전통 한우 숯불구이 전문점.', '빵순이 베이커리', '황남빵 — 1939년부터 만들어온 팥 앙금 경주 대표 간식
 경주 한우 — 40년 전통 한우 숯불구이 전문점
 경주 콩국수 — 1956년부터 만든 원조 콩국 반찬소 콩 삶은물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6732,7 +6732,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (335, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (112, 3, 4, 200000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 1, '경주 도착', '서울에서 출발해 경주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 2, '황남빵 탐방', '1939년부터 만들어온 팥 앙금 경주 대표 간식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 경주 한우과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 3, '빵순이 베이커리 견학과 시음', '빵순이 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 경주 한우과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (336, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 1, 'SPORTS_ACTIVITY', '경주 스포츠·액티비티 투어: 불국사/석굴암 트레킹 · 안압지 도보 투어', '유네스코 유산 사찰로 가는 산길 등산. 신라시대 월정교와 주변 고분 연결 코스.', NULL, '불국사/석굴암 트레킹 — 유네스코 유산 사찰로 가는 산길 등산
 안압지 도보 투어 — 신라시대 월정교와 주변 고분 연결 코스
@@ -6778,7 +6778,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 2, '불국사', '751년 창건 유네스코 세계문화유산 불교사찰. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 3, '석굴암', '774년 완성 신라 석조미술의 최고 걸작. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (342, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'FOOD_DRINK', '강릉 미식·주류 투어: 초당순두부 · 활어회', '부드러운 순두부와 함께하는 한상차림 정식. 싱싱한 해산물 회 한상과 미역국.', '은하수 제면소', '초당순두부 — 부드러운 순두부와 함께하는 한상차림 정식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'FOOD_DRINK', '강릉 미식·주류 투어: 초당순두부 · 활어회', '부드러운 순두부와 함께하는 한상차림 정식. 싱싱한 해산물 회 한상과 미역국.', '면치기 제면소', '초당순두부 — 부드러운 순두부와 함께하는 한상차림 정식
 활어회 — 싱싱한 해산물 회 한상과 미역국
 감자전 — 강릉 특산 감자로 만든 바삭한 부침', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6798,7 +6798,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (344, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (115, 3, 4, 210000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 1, '강릉 도착', '서울에서 출발해 강릉에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 2, '초당순두부 탐방', '부드러운 순두부와 함께하는 한상차림 정식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 활어회과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 활어회과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (345, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'SPORTS_ACTIVITY', '강릉 스포츠·액티비티 투어: 정동진 해돋이 관광 · 경포호 자전거', '일출 열차 타고 보는 해변 일출 경험. 호수 주변 사이클링 코스와 해변 자전거.', NULL, '정동진 해돋이 관광 — 일출 열차 타고 보는 해변 일출 경험
 경포호 자전거 — 호수 주변 사이클링 코스와 해변 자전거
@@ -6822,7 +6822,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 2, '정동진 해돋이 관광', '일출 열차 타고 보는 해변 일출 경험. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 3, '경포호 자전거 체험', '호수 주변 사이클링 코스와 해변 자전거. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (348, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'ART_REST', '강릉 예술·휴식 투어: 오죽헌 · 선교장', '신사임당 생가, 한옥 전통 건축미 체험. 400년 된 대저택, 한옥 전통생활 박물관.', '고요숲 스파', '오죽헌 — 신사임당 생가, 한옥 전통 건축미 체험
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 2, 'ART_REST', '강릉 예술·휴식 투어: 오죽헌 · 선교장', '신사임당 생가, 한옥 전통 건축미 체험. 400년 된 대저택, 한옥 전통생활 박물관.', '힐링힐링 스파', '오죽헌 — 신사임당 생가, 한옥 전통 건축미 체험
 선교장 — 400년 된 대저택, 한옥 전통생활 박물관
 경포대 — 조선시대 누정 건축, 호수 야경 감상지', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6844,7 +6844,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 2, '오죽헌', '신사임당 생가, 한옥 전통 건축미 체험. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 3, '선교장', '400년 된 대저택, 한옥 전통생활 박물관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (351, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 3, 'FOOD_DRINK', '속초 미식·주류 투어: 오징어 짬뽕 · 오징어순대', '통째로 한 마리 들어간 국물 국수. 호젓한 맛과 함께하는 아바이마을 별미.', '은하수 제면소', '오징어 짬뽕 — 통째로 한 마리 들어간 국물 국수
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 3, 'FOOD_DRINK', '속초 미식·주류 투어: 오징어 짬뽕 · 오징어순대', '통째로 한 마리 들어간 국물 국수. 호젓한 맛과 함께하는 아바이마을 별미.', '면치기 제면소', '오징어 짬뽕 — 통째로 한 마리 들어간 국물 국수
 오징어순대 — 호젓한 맛과 함께하는 아바이마을 별미
 아바이순대 — 함경도 실향민 음식 문화 대표 간식', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6864,7 +6864,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (353, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (118, 3, 4, 210000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 1, '속초 도착', '서울에서 출발해 속초에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 2, '오징어 짬뽕 탐방', '통째로 한 마리 들어간 국물 국수. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오징어순대과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 오징어순대과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (354, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 3, 'SPORTS_ACTIVITY', '속초 스포츠·액티비티 투어: 설악산 케이블카 (권금성) · 설악산 트레킹', '등산 없이 정상 뷰 보기, 왕복 15분. 초급부터 고급까지 다양한 등산로.', '거코 스포츠', '설악산 케이블카 (권금성) — 등산 없이 정상 뷰 보기, 왕복 15분
 설악산 트레킹 — 초급부터 고급까지 다양한 등산로
@@ -6910,7 +6910,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 2, '아바이마을', '드라마 가을동화 촬영지, 함경도 풍정. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 3, '설악사', '신라시대 창건 불교사찰, 계곡 경관. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (360, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 4, 'FOOD_DRINK', '부산 미식·주류 투어: 밀면 · 돼지국밥', '돼지 사골 국물 국수, 부산 13대 향토음식. 서민의 음식, 남천동 밀면골목 특화.', '바람결 증류소', '밀면 — 돼지 사골 국물 국수, 부산 13대 향토음식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 4, 'FOOD_DRINK', '부산 미식·주류 투어: 밀면 · 돼지국밥', '돼지 사골 국물 국수, 부산 13대 향토음식. 서민의 음식, 남천동 밀면골목 특화.', '불붙은 증류소', '밀면 — 돼지 사골 국물 국수, 부산 13대 향토음식
 돼지국밥 — 서민의 음식, 남천동 밀면골목 특화
 활어회 — 신선한 해산물 회 한상과 함께', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6930,7 +6930,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (362, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (121, 3, 4, 190000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 1, '부산 도착', '서울에서 출발해 부산에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 2, '밀면 탐방', '돼지 사골 국물 국수, 부산 13대 향토음식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 3, '바람결 증류소 견학과 시음', '바람결 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돼지국밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 3, '불붙은 증류소 견학과 시음', '불붙은 증류소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 돼지국밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (363, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 4, 'SPORTS_ACTIVITY', '부산 스포츠·액티비티 투어: 광안리 해변 서핑 · 해운대 비치 배구', '초급 강습과 보드 대여 가능 비치. 모래해변에서 즐기는 스포츠 활동.', NULL, '광안리 해변 서핑 — 초급 강습과 보드 대여 가능 비치
 해운대 비치 배구 — 모래해변에서 즐기는 스포츠 활동
@@ -6976,7 +6976,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 2, '감천문화마을', '색칠된 집들의 벽화 마을, 사진 명소. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 3, '용두산 공원', '항구 조망과 용두산 공중케이블카. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (369, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'FOOD_DRINK', '제주 미식·주류 투어: 흑돼지 구이 · 고등어 & 성게', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 싱싱한 해산물 구이와 비빔밥.', '은하수 제면소', '흑돼지 구이 — 담백한 맛, 쫄깃한 식감의 제주 특산돼지
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'FOOD_DRINK', '제주 미식·주류 투어: 흑돼지 구이 · 고등어 & 성게', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 싱싱한 해산물 구이와 비빔밥.', '면치기 제면소', '흑돼지 구이 — 담백한 맛, 쫄깃한 식감의 제주 특산돼지
 고등어 & 성게 — 싱싱한 해산물 구이와 비빔밥
 전복 & 굴 — 소금 위에 구운 고급 해산물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -6996,7 +6996,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (371, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (124, 3, 4, 200000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 1, '제주 도착', '서울에서 출발해 제주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 2, '흑돼지 구이 탐방', '담백한 맛, 쫄깃한 식감의 제주 특산돼지. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 3, '은하수 제면소 견학과 시음', '은하수 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 고등어 & 성게과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 3, '면치기 제면소 견학과 시음', '면치기 제면소(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 고등어 & 성게과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (372, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'SPORTS_ACTIVITY', '제주 스포츠·액티비티 투어: 한라산 등산 · 올레길 도보', '백록담 정상 오르기, 약 5-6시간 소요. 27개 코스 437km 중 선택 도보여행.', NULL, '한라산 등산 — 백록담 정상 오르기, 약 5-6시간 소요
 올레길 도보 — 27개 코스 437km 중 선택 도보여행
@@ -7020,7 +7020,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 2, '한라산 등산', '백록담 정상 오르기, 약 5-6시간 소요. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 3, '올레길 도보 체험', '27개 코스 437km 중 선택 도보여행. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (375, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'ART_REST', '제주 예술·휴식 투어: 용머리 주상절리 · 세계지질공원 경관', '120만년 화산으로 만든 기암괴석. 한라산, 용머리 등 지질유산 감상.', '고요숲 스파', '용머리 주상절리 — 120만년 화산으로 만든 기암괴석
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 5, 'ART_REST', '제주 예술·휴식 투어: 용머리 주상절리 · 세계지질공원 경관', '120만년 화산으로 만든 기암괴석. 한라산, 용머리 등 지질유산 감상.', '힐링힐링 스파', '용머리 주상절리 — 120만년 화산으로 만든 기암괴석
 세계지질공원 경관 — 한라산, 용머리 등 지질유산 감상
 제주 민속박물관 — 제주인의 전통생활 문화 전시', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7042,7 +7042,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 2, '용머리 주상절리', '120만년 화산으로 만든 기암괴석. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 3, '세계지질공원 경관', '한라산, 용머리 등 지질유산 감상. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (378, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'FOOD_DRINK', '전주 미식·주류 투어: 전주 비빔밥 · 콩나물국밥', '채소 많고 정성 들인 전주식 비빔밥. 1956년 전통, 콩나물 가득 한 국밥.', '새벽 커피로스터스', '전주 비빔밥 — 채소 많고 정성 들인 전주식 비빔밥
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'FOOD_DRINK', '전주 미식·주류 투어: 전주 비빔밥 · 콩나물국밥', '채소 많고 정성 들인 전주식 비빔밥. 1956년 전통, 콩나물 가득 한 국밥.', '아아 로스터스', '전주 비빔밥 — 채소 많고 정성 들인 전주식 비빔밥
 콩나물국밥 — 1956년 전통, 콩나물 가득 한 국밥
 막걸리 & 안주 — 300m 막걸리 골목, 푸짐한 반찬', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7062,9 +7062,9 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (380, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (127, 3, 4, 210000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 1, '전주 도착', '서울에서 출발해 전주에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 2, '전주 비빔밥 탐방', '채소 많고 정성 들인 전주식 비빔밥. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 3, '새벽 커피로스터스 견학과 시음', '새벽 커피로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 콩나물국밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 3, '아아 로스터스 견학과 시음', '아아 로스터스(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 콩나물국밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (381, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'SPORTS_ACTIVITY', '전주 스포츠·액티비티 투어: 한옥마을 도보 · 덕진공원 자전거', '800채 이상 한옥 문화유산 도보투어. 연못 주변 산책로 자전거 코스.', '산들 트레킹', '한옥마을 도보 — 800채 이상 한옥 문화유산 도보투어
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'SPORTS_ACTIVITY', '전주 스포츠·액티비티 투어: 한옥마을 도보 · 덕진공원 자전거', '800채 이상 한옥 문화유산 도보투어. 연못 주변 산책로 자전거 코스.', '등산 가즈아 트레킹', '한옥마을 도보 — 800채 이상 한옥 문화유산 도보투어
 덕진공원 자전거 — 연못 주변 산책로 자전거 코스
 경기전 주변 도보 — 태조 어진 봉안처 주변 1시간 투어', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7086,7 +7086,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 2, '한옥마을 도보', '800채 이상 한옥 문화유산 도보투어. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 3, '덕진공원 자전거 체험', '연못 주변 산책로 자전거 코스. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (384, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'ART_REST', '전주 예술·휴식 투어: 경기전 · 전동성당', '태조 이성계 어진 봉안, 조선 최고 유산. 한옥마을 상징 천주교성당, 고딕양식.', '유리잔 공방', '경기전 — 태조 이성계 어진 봉안, 조선 최고 유산
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 6, 'ART_REST', '전주 예술·휴식 투어: 경기전 · 전동성당', '태조 이성계 어진 봉안, 조선 최고 유산. 한옥마을 상징 천주교성당, 고딕양식.', '와장창 유리공방', '경기전 — 태조 이성계 어진 봉안, 조선 최고 유산
 전동성당 — 한옥마을 상징 천주교성당, 고딕양식
 전주 한옥마을 — 1910년부터 근대주거 발달과정 보존', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7108,7 +7108,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 2, '경기전', '태조 이성계 어진 봉안, 조선 최고 유산. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 3, '전동성당', '한옥마을 상징 천주교성당, 고딕양식. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (387, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 7, 'FOOD_DRINK', '여수 미식·주류 투어: 갓김치 & 게장백반 · 삼치 선어회', '여수 명물 갓김치와 간장게장 한상. 동해 특산 삼치 활어회 한상차림.', '참나무 위스키', '갓김치 & 게장백반 — 여수 명물 갓김치와 간장게장 한상
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 7, 'FOOD_DRINK', '여수 미식·주류 투어: 갓김치 & 게장백반 · 삼치 선어회', '여수 명물 갓김치와 간장게장 한상. 동해 특산 삼치 활어회 한상차림.', '참나무통 위스키', '갓김치 & 게장백반 — 여수 명물 갓김치와 간장게장 한상
 삼치 선어회 — 동해 특산 삼치 활어회 한상차림
 돌문어 요리 — 돌산 신기항 싱싱한 돌문어 회, 샤부샤부', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7128,7 +7128,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (389, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (130, 3, 4, 190000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 1, '여수 도착', '서울에서 출발해 여수에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 2, '갓김치 & 게장백반 탐방', '여수 명물 갓김치와 간장게장 한상. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 3, '참나무 위스키 견학과 시음', '참나무 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 삼치 선어회과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 3, '참나무통 위스키 견학과 시음', '참나무통 위스키(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 삼치 선어회과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (390, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 7, 'SPORTS_ACTIVITY', '여수 스포츠·액티비티 투어: 여수 해상케이블카 · 향일암 일출 관광', '국내 첫 해상 케이블카, 투명 바닥 체험. 연간 100만명 방문, 일출제례 공연.', NULL, '여수 해상케이블카 — 국내 첫 해상 케이블카, 투명 바닥 체험
 향일암 일출 관광 — 연간 100만명 방문, 일출제례 공연
@@ -7174,7 +7174,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 2, '여수 이순신광장', '해상 불꽃쇼와 메인 공연무대. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 3, '여수국립공원 절경', '다도해 경관의 천 개 섬 뷰. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (396, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'FOOD_DRINK', '순천 미식·주류 투어: 짱뚱어탕 · 장어 & 꼼장어', '순천만 갯벌 물고기, 된장 시래기 국물. 장어탕, 꼼장어 구이 전문점 풍부.', '금빛밀 베이커리', '짱뚱어탕 — 순천만 갯벌 물고기, 된장 시래기 국물
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'FOOD_DRINK', '순천 미식·주류 투어: 짱뚱어탕 · 장어 & 꼼장어', '순천만 갯벌 물고기, 된장 시래기 국물. 장어탕, 꼼장어 구이 전문점 풍부.', '빵순이 베이커리', '짱뚱어탕 — 순천만 갯벌 물고기, 된장 시래기 국물
 장어 & 꼼장어 — 장어탕, 꼼장어 구이 전문점 풍부
 꼬막 — 갯벌 뻘에서 나는 순천 대표 특산물', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7194,7 +7194,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (398, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (133, 3, 4, 190000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 1, '순천 도착', '서울에서 출발해 순천에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 2, '짱뚱어탕 탐방', '순천만 갯벌 물고기, 된장 시래기 국물. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 장어 & 꼼장어과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 3, '빵순이 베이커리 견학과 시음', '빵순이 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 장어 & 꼼장어과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (399, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'SPORTS_ACTIVITY', '순천 스포츠·액티비티 투어: 순천만 습지 자전거 · 스카이큐브 (무인궤도열차)', '광활한 습지 자전거 도로, 생태 관찰. 정원과 습지 연결 선형 경험.', NULL, '순천만 습지 자전거 — 광활한 습지 자전거 도로, 생태 관찰
 스카이큐브 (무인궤도열차) — 정원과 습지 연결 선형 경험
@@ -7218,7 +7218,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 2, '순천만 습지 자전거', '광활한 습지 자전거 도로, 생태 관찰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 3, '스카이큐브 (무인궤도열차) 체험', '정원과 습지 연결 선형 경험. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (402, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'ART_REST', '순천 예술·휴식 투어: 순천만국가정원 · 선암사', '2013년 박람회지, 연간 500만명 방문. 무지개 승선교, 2018년 세계유산 등재.', '달무리 공연장', '순천만국가정원 — 2013년 박람회지, 연간 500만명 방문
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 8, 'ART_REST', '순천 예술·휴식 투어: 순천만국가정원 · 선암사', '2013년 박람회지, 연간 500만명 방문. 무지개 승선교, 2018년 세계유산 등재.', '앙코르앙코르 공연장', '순천만국가정원 — 2013년 박람회지, 연간 500만명 방문
 선암사 — 무지개 승선교, 2018년 세계유산 등재
 송광사 — 16국사 배출, 승보사찰 천년 고찰', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7240,7 +7240,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 2, '순천만국가정원', '2013년 박람회지, 연간 500만명 방문. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 3, '선암사', '무지개 승선교, 2018년 세계유산 등재. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (405, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'FOOD_DRINK', '통영 미식·주류 투어: 통영 굴 요리 · 멍게비빔밥', '국내 80% 생산, 굴구이, 그라탱, 파스타. 멍게, 해초, 계란 올린 다채로운 비빔밥.', '푸른보리 양조장', '통영 굴 요리 — 국내 80% 생산, 굴구이, 그라탱, 파스타
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'FOOD_DRINK', '통영 미식·주류 투어: 통영 굴 요리 · 멍게비빔밥', '국내 80% 생산, 굴구이, 그라탱, 파스타. 멍게, 해초, 계란 올린 다채로운 비빔밥.', '술술 양조장', '통영 굴 요리 — 국내 80% 생산, 굴구이, 그라탱, 파스타
 멍게비빔밥 — 멍게, 해초, 계란 올린 다채로운 비빔밥
 도다리 쑥국 — 봄 별미, 도다리 살 넉넉한 계절 국', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7260,7 +7260,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (407, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (136, 3, 4, 210000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 1, '통영 도착', '서울에서 출발해 통영에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 2, '통영 굴 요리 탐방', '국내 80% 생산, 굴구이, 그라탱, 파스타. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 3, '푸른보리 양조장 견학과 시음', '푸른보리 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멍게비빔밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 3, '술술 양조장 견학과 시음', '술술 양조장(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 멍게비빔밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (408, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'SPORTS_ACTIVITY', '통영 스포츠·액티비티 투어: 통영 케이블카 · 미륵산 트레킹', '국내 최장 1975m, 미륵산 정상 뷰. 초급-중급 코스, 다도해 조망.', NULL, '통영 케이블카 — 국내 최장 1975m, 미륵산 정상 뷰
 미륵산 트레킹 — 초급-중급 코스, 다도해 조망
@@ -7284,7 +7284,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 2, '통영 케이블카', '국내 최장 1975m, 미륵산 정상 뷰. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 3, '미륵산 트레킹 체험', '초급-중급 코스, 다도해 조망. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (411, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'ART_REST', '통영 예술·휴식 투어: 동피랑 벽화마을 · 세병관', '색칠된 벽화마을, 사진 명소 최고. 임진왜란 당시 삼도수군통제사영 유적.', '달무리 공연장', '동피랑 벽화마을 — 색칠된 벽화마을, 사진 명소 최고
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 9, 'ART_REST', '통영 예술·휴식 투어: 동피랑 벽화마을 · 세병관', '색칠된 벽화마을, 사진 명소 최고. 임진왜란 당시 삼도수군통제사영 유적.', '앙코르앙코르 공연장', '동피랑 벽화마을 — 색칠된 벽화마을, 사진 명소 최고
 세병관 — 임진왜란 당시 삼도수군통제사영 유적
 중앙해상권 유적 — 충렬사, 향토역사관 임진왜란 역사', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7306,7 +7306,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 2, '동피랑 벽화마을', '색칠된 벽화마을, 사진 명소 최고. 전문 도슨트의 설명과 함께 천천히 감상합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 3, '세병관', '임진왜란 당시 삼도수군통제사영 유적. 여유롭게 둘러본 뒤 근처 카페에서 쉬어 갑니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (414, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'FOOD_DRINK', '단양 미식·주류 투어: 더덕 (산나물) · 곤드레 돌판밥', '산속 약초, 살짝 쪄먹는 건강식. 더덕 마늘과 함께 돌판에 구운 밥.', '금빛밀 베이커리', '더덕 (산나물) — 산속 약초, 살짝 쪄먹는 건강식
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'FOOD_DRINK', '단양 미식·주류 투어: 더덕 (산나물) · 곤드레 돌판밥', '산속 약초, 살짝 쪄먹는 건강식. 더덕 마늘과 함께 돌판에 구운 밥.', '빵순이 베이커리', '더덕 (산나물) — 산속 약초, 살짝 쪄먹는 건강식
 곤드레 돌판밥 — 더덕 마늘과 함께 돌판에 구운 밥
 메기 매운탕 — 남한강 토종 메기 국물 진한 매운탕', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7326,9 +7326,9 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (416, 3, '�
 INSERT INTO tour_option (tour_id, nights, days, price_per_person, min_people, max_people) VALUES (139, 3, 4, 210000, 2, 30);
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 1, '단양 도착', '서울에서 출발해 단양에 도착합니다. 숙소에 짐을 풀고 가이드 미팅과 환영 안내, 가벼운 저녁 식사를 합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 2, '더덕 (산나물) 탐방', '산속 약초, 살짝 쪄먹는 건강식. 현지 가이드와 함께 대표 맛집과 시장을 돌며 점심과 간식을 맛봅니다.');
-INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 3, '금빛밀 베이커리 견학과 시음', '금빛밀 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 곤드레 돌판밥과 어울리는 한 잔을 곁들입니다.');
+INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 3, '빵순이 베이커리 견학과 시음', '빵순이 베이커리(가상)의 공방을 둘러보고 시음 코스를 즐깁니다. 곤드레 돌판밥과 어울리는 한 잔을 곁들입니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (417, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'SPORTS_ACTIVITY', '단양 스포츠·액티비티 투어: 도담삼봉 유람선 · 구담봉 산악 등산', '세 봉우리 경관 보트 투어, 30분. 거북 모양 기암, 초급 등산로.', '산들 트레킹', '도담삼봉 유람선 — 세 봉우리 경관 보트 투어, 30분
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'SPORTS_ACTIVITY', '단양 스포츠·액티비티 투어: 도담삼봉 유람선 · 구담봉 산악 등산', '세 봉우리 경관 보트 투어, 30분. 거북 모양 기암, 초급 등산로.', '등산 가즈아 트레킹', '도담삼봉 유람선 — 세 봉우리 경관 보트 투어, 30분
 구담봉 산악 등산 — 거북 모양 기암, 초급 등산로
 등선폭포 트레킹 — 계곡 물소리 따라 1시간 등산', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7350,7 +7350,7 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 1, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 2, '도담삼봉 유람선', '세 봉우리 경관 보트 투어, 30분. 현지 가이드와 함께 경기장·현장 분위기를 즐깁니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 3, '구담봉 산악 등산 체험', '거북 모양 기암, 초급 등산로. 초보자도 따라 할 수 있도록 강사가 안내합니다.');
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (420, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
-INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'ART_REST', '단양 예술·휴식 투어: 단양팔경 · 도담삼봉 풍경', '도담삼봉, 구담봉 등 8대 절경 관광. 남한강 위 세 봉우리 경관.', '고요숲 스파', '단양팔경 — 도담삼봉, 구담봉 등 8대 절경 관광
+INSERT INTO tour (scope, destination_id, city_id, theme, title, subtitle, collab_brand, highlights, includes, excludes, source_note, status, sort_order) VALUES ('DOMESTIC', NULL, 10, 'ART_REST', '단양 예술·휴식 투어: 단양팔경 · 도담삼봉 풍경', '도담삼봉, 구담봉 등 8대 절경 관광. 남한강 위 세 봉우리 경관.', '힐링힐링 스파', '단양팔경 — 도담삼봉, 구담봉 등 8대 절경 관광
 도담삼봉 풍경 — 남한강 위 세 봉우리 경관
 선암계곡 경관 — 맑은 계곡물 따라 가는 절경 산책', '현지 한국어 가이드 동행
 일정표에 있는 현지 이동 차량
@@ -7374,357 +7374,357 @@ INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 3, '�
 INSERT INTO tour_day (option_id, day_no, title, description) VALUES (423, 4, '체크아웃과 출발', '조식 후 체크아웃하고 역·터미널으로 이동합니다. 아쉬운 마음으로 여행을 마무리합니다.');
 
 -- [N] 호텔: 해외 3개씩(이달의 기획·베스트셀러 6곳은 7개), 국내 도시 3개씩
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 스테이 호텔', 3, '공항 인근', '파리 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 1);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 플라자 호텔', 4, '구시가지', '파리 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 2);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 오션 리조트', 5, '해변·항구', '파리 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 400000, 'ON_SALE', 3);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (2, NULL, '런던 시티 인', 3, '쇼핑가', '런던 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 4);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (2, NULL, '런던 플라자 호텔', 4, '쇼핑가', '런던 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 5);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (2, NULL, '런던 오션 리조트', 5, '구시가지', '런던 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 6);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (3, NULL, '베를린 스테이 호텔', 3, '시내 중심', '베를린 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 7);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (3, NULL, '베를린 플라자 호텔', 4, '역 인근', '베를린 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 230000, 'ON_SALE', 8);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (3, NULL, '베를린 오션 리조트', 5, '역 인근', '베를린 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 390000, 'ON_SALE', 9);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (4, NULL, '마드리드 스테이 호텔', 3, '역 인근', '마드리드 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 10);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (4, NULL, '마드리드 플라자 호텔', 4, '구시가지', '마드리드 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 11);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (4, NULL, '마드리드 로열 팰리스', 5, '공원 옆', '마드리드 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 12);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 스테이 호텔', 3, '쇼핑가', '로마 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 130000, 'ON_SALE', 13);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 파크 호텔', 3, '공항 인근', '로마 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 14);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 플라자 호텔', 4, '쇼핑가', '로마 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 15);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 가든 호텔', 4, '해변·항구', '로마 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 16);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 센트럴 호텔', 4, '공원 옆', '로마 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 17);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 그랜드 호텔', 5, '시내 중심', '로마 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 390000, 'ON_SALE', 18);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 로열 팰리스', 5, '공항 인근', '로마 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 410000, 'ON_SALE', 19);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (6, NULL, '바르셀로나 스테이 호텔', 3, '쇼핑가', '바르셀로나 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 20);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (6, NULL, '바르셀로나 가든 호텔', 4, '해변·항구', '바르셀로나 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 21);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (6, NULL, '바르셀로나 로열 팰리스', 5, '해변·항구', '바르셀로나 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 400000, 'ON_SALE', 22);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (7, NULL, '서울 스테이 호텔', 3, '쇼핑가', '서울 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 23);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (7, NULL, '서울 가든 호텔', 4, '역 인근', '서울 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 24);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (7, NULL, '서울 로열 팰리스', 5, '쇼핑가', '서울 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 25);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (8, NULL, '부산 시티 인', 3, '시내 중심', '부산 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 26);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (8, NULL, '부산 가든 호텔', 4, '쇼핑가', '부산 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 27);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (8, NULL, '부산 오션 리조트', 5, '역 인근', '부산 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 290000, 'ON_SALE', 28);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 파크 호텔', 3, '공원 옆', '도쿄 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 29);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 시티 인', 3, '역 인근', '도쿄 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 30);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 가든 호텔', 4, '공원 옆', '도쿄 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 31);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 센트럴 호텔', 4, '쇼핑가', '도쿄 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 32);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 플라자 호텔', 4, '공원 옆', '도쿄 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 33);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 로열 팰리스', 5, '구시가지', '도쿄 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 280000, 'ON_SALE', 34);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 오션 리조트', 5, '구시가지', '도쿄 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 35);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (10, NULL, '오사카 파크 호텔', 3, '시내 중심', '오사카 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 36);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (10, NULL, '오사카 센트럴 호텔', 4, '시내 중심', '오사카 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 37);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (10, NULL, '오사카 로열 팰리스', 5, '공원 옆', '오사카 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 300000, 'ON_SALE', 38);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (11, NULL, '후쿠오카 시티 인', 3, '공원 옆', '후쿠오카 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 100000, 'ON_SALE', 39);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (11, NULL, '후쿠오카 가든 호텔', 4, '공원 옆', '후쿠오카 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 150000, 'ON_SALE', 40);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (11, NULL, '후쿠오카 오션 리조트', 5, '공원 옆', '후쿠오카 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 41);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 파크 호텔', 3, '공원 옆', '삿포로 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 42);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 시티 인', 3, '해변·항구', '삿포로 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 43);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 플라자 호텔', 4, '공원 옆', '삿포로 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 44);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 가든 호텔', 4, '공원 옆', '삿포로 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 45);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 센트럴 호텔', 4, '시내 중심', '삿포로 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 46);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 로열 팰리스', 5, '공항 인근', '삿포로 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 47);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 오션 리조트', 5, '시내 중심', '삿포로 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 280000, 'ON_SALE', 48);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (13, NULL, '베이징 파크 호텔', 3, '시내 중심', '베이징 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 49);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (13, NULL, '베이징 가든 호텔', 4, '역 인근', '베이징 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 50);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (13, NULL, '베이징 그랜드 호텔', 5, '쇼핑가', '베이징 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 51);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (14, NULL, '방콕 스테이 호텔', 3, '구시가지', '방콕 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 52);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (14, NULL, '방콕 플라자 호텔', 4, '구시가지', '방콕 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 53);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (14, NULL, '방콕 오션 리조트', 5, '구시가지', '방콕 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 280000, 'ON_SALE', 54);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (16, NULL, '뉴욕 시티 인', 3, '역 인근', '뉴욕 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 55);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (16, NULL, '뉴욕 플라자 호텔', 4, '공원 옆', '뉴욕 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 56);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (16, NULL, '뉴욕 로열 팰리스', 5, '구시가지', '뉴욕 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 420000, 'ON_SALE', 57);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (17, NULL, '워싱턴D.C. 파크 호텔', 3, '해변·항구', '워싱턴D.C. 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 58);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (17, NULL, '워싱턴D.C. 플라자 호텔', 4, '쇼핑가', '워싱턴D.C. 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 240000, 'ON_SALE', 59);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (17, NULL, '워싱턴D.C. 로열 팰리스', 5, '구시가지', '워싱턴D.C. 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 430000, 'ON_SALE', 60);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 파크 호텔', 3, '공원 옆', '로스앤젤레스 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 61);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 시티 인', 3, '쇼핑가', '로스앤젤레스 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 130000, 'ON_SALE', 62);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 가든 호텔', 4, '해변·항구', '로스앤젤레스 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 63);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 센트럴 호텔', 4, '시내 중심', '로스앤젤레스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 64);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 플라자 호텔', 4, '시내 중심', '로스앤젤레스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 65);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 그랜드 호텔', 5, '공원 옆', '로스앤젤레스 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 420000, 'ON_SALE', 66);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 로열 팰리스', 5, '구시가지', '로스앤젤레스 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 420000, 'ON_SALE', 67);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 시티 인', 3, '해변·항구', '홍콩 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 68);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 스테이 호텔', 3, '시내 중심', '홍콩 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 69);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 가든 호텔', 4, '공항 인근', '홍콩 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 70);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 센트럴 호텔', 4, '공원 옆', '홍콩 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 71);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 플라자 호텔', 4, '해변·항구', '홍콩 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 72);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 그랜드 호텔', 5, '구시가지', '홍콩 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 290000, 'ON_SALE', 73);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 로열 팰리스', 5, '해변·항구', '홍콩 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 290000, 'ON_SALE', 74);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (20, NULL, '상하이 스테이 호텔', 3, '구시가지', '상하이 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 75);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (20, NULL, '상하이 플라자 호텔', 4, '시내 중심', '상하이 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 160000, 'ON_SALE', 76);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (20, NULL, '상하이 그랜드 호텔', 5, '시내 중심', '상하이 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 280000, 'ON_SALE', 77);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (21, NULL, '두바이 스테이 호텔', 3, '역 인근', '두바이 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 78);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (21, NULL, '두바이 센트럴 호텔', 4, '구시가지', '두바이 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 180000, 'ON_SALE', 79);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (21, NULL, '두바이 로열 팰리스', 5, '역 인근', '두바이 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 340000, 'ON_SALE', 80);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (22, NULL, '시카고 시티 인', 3, '공원 옆', '시카고 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 140000, 'ON_SALE', 81);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (22, NULL, '시카고 가든 호텔', 4, '역 인근', '시카고 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 82);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (22, NULL, '시카고 오션 리조트', 5, '해변·항구', '시카고 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 420000, 'ON_SALE', 83);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (23, NULL, '시드니 파크 호텔', 3, '쇼핑가', '시드니 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 130000, 'ON_SALE', 84);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (23, NULL, '시드니 플라자 호텔', 4, '구시가지', '시드니 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 210000, 'ON_SALE', 85);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (23, NULL, '시드니 로열 팰리스', 5, '구시가지', '시드니 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 390000, 'ON_SALE', 86);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (24, NULL, '밴쿠버 파크 호텔', 3, '구시가지', '밴쿠버 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 140000, 'ON_SALE', 87);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (24, NULL, '밴쿠버 플라자 호텔', 4, '시내 중심', '밴쿠버 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 88);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (24, NULL, '밴쿠버 오션 리조트', 5, '구시가지', '밴쿠버 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 430000, 'ON_SALE', 89);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (25, NULL, '상파울루 파크 호텔', 3, '구시가지', '상파울루 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 90);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (25, NULL, '상파울루 가든 호텔', 4, '쇼핑가', '상파울루 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 170000, 'ON_SALE', 91);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (25, NULL, '상파울루 로열 팰리스', 5, '구시가지', '상파울루 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 330000, 'ON_SALE', 92);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (26, NULL, '카이로 스테이 호텔', 3, '공항 인근', '카이로 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 93);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (26, NULL, '카이로 가든 호텔', 4, '쇼핑가', '카이로 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 160000, 'ON_SALE', 94);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (26, NULL, '카이로 오션 리조트', 5, '공항 인근', '카이로 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 310000, 'ON_SALE', 95);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 스테이 호텔', 3, '공항 인근', '케이프타운 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 96);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 파크 호텔', 3, '시내 중심', '케이프타운 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 97);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 가든 호텔', 4, '해변·항구', '케이프타운 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 98);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 센트럴 호텔', 4, '해변·항구', '케이프타운 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 99);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 플라자 호텔', 4, '공항 인근', '케이프타운 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 180000, 'ON_SALE', 100);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 오션 리조트', 5, '시내 중심', '케이프타운 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 320000, 'ON_SALE', 101);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 그랜드 호텔', 5, '쇼핑가', '케이프타운 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 320000, 'ON_SALE', 102);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (28, NULL, '밀라노 파크 호텔', 3, '시내 중심', '밀라노 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 103);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (28, NULL, '밀라노 센트럴 호텔', 4, '구시가지', '밀라노 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 104);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (28, NULL, '밀라노 로열 팰리스', 5, '공항 인근', '밀라노 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 105);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (29, NULL, '암스테르담 파크 호텔', 3, '시내 중심', '암스테르담 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 106);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (29, NULL, '암스테르담 가든 호텔', 4, '공원 옆', '암스테르담 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 107);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (29, NULL, '암스테르담 로열 팰리스', 5, '역 인근', '암스테르담 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 410000, 'ON_SALE', 108);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (30, NULL, '이스탄불 시티 인', 3, '해변·항구', '이스탄불 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 109);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (30, NULL, '이스탄불 플라자 호텔', 4, '쇼핑가', '이스탄불 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 110);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (30, NULL, '이스탄불 오션 리조트', 5, '구시가지', '이스탄불 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 390000, 'ON_SALE', 111);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (31, NULL, '프라하 시티 인', 3, '공항 인근', '프라하 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 112);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (31, NULL, '프라하 가든 호텔', 4, '해변·항구', '프라하 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 113);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (31, NULL, '프라하 오션 리조트', 5, '해변·항구', '프라하 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 410000, 'ON_SALE', 114);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (32, NULL, '빈 파크 호텔', 3, '공항 인근', '빈 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 110000, 'ON_SALE', 115);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (32, NULL, '빈 가든 호텔', 4, '쇼핑가', '빈 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 116);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (32, NULL, '빈 로열 팰리스', 5, '쇼핑가', '빈 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 117);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (33, NULL, '리스본 파크 호텔', 3, '공원 옆', '리스본 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 118);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (33, NULL, '리스본 플라자 호텔', 4, '시내 중심', '리스본 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 119);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (33, NULL, '리스본 오션 리조트', 5, '시내 중심', '리스본 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 120);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (34, NULL, '에든버러 시티 인', 3, '시내 중심', '에든버러 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 121);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (34, NULL, '에든버러 플라자 호텔', 4, '구시가지', '에든버러 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 122);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (34, NULL, '에든버러 로열 팰리스', 5, '구시가지', '에든버러 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 410000, 'ON_SALE', 123);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (35, NULL, '싱가포르 스테이 호텔', 3, '해변·항구', '싱가포르 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 124);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (35, NULL, '싱가포르 가든 호텔', 4, '역 인근', '싱가포르 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 125);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (35, NULL, '싱가포르 그랜드 호텔', 5, '쇼핑가', '싱가포르 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 300000, 'ON_SALE', 126);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (36, NULL, '마카오 파크 호텔', 3, '역 인근', '마카오 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 127);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (36, NULL, '마카오 플라자 호텔', 4, '쇼핑가', '마카오 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 128);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (36, NULL, '마카오 그랜드 호텔', 5, '해변·항구', '마카오 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 300000, 'ON_SALE', 129);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (37, NULL, '타이베이 스테이 호텔', 3, '시내 중심', '타이베이 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 130);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (37, NULL, '타이베이 센트럴 호텔', 4, '공원 옆', '타이베이 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 131);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (37, NULL, '타이베이 로열 팰리스', 5, '구시가지', '타이베이 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 300000, 'ON_SALE', 132);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (38, NULL, '다낭 시티 인', 3, '공항 인근', '다낭 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 133);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (38, NULL, '다낭 센트럴 호텔', 4, '공원 옆', '다낭 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 134);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (38, NULL, '다낭 그랜드 호텔', 5, '공항 인근', '다낭 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 135);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (39, NULL, '나트랑 파크 호텔', 3, '역 인근', '나트랑 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 136);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (39, NULL, '나트랑 플라자 호텔', 4, '해변·항구', '나트랑 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 137);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (39, NULL, '나트랑 오션 리조트', 5, '공항 인근', '나트랑 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 300000, 'ON_SALE', 138);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (40, NULL, '푸꾸옥 시티 인', 3, '쇼핑가', '푸꾸옥 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 139);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (40, NULL, '푸꾸옥 플라자 호텔', 4, '역 인근', '푸꾸옥 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 140);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (40, NULL, '푸꾸옥 로열 팰리스', 5, '시내 중심', '푸꾸옥 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 280000, 'ON_SALE', 141);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (41, NULL, '발리 시티 인', 3, '구시가지', '발리 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 100000, 'ON_SALE', 142);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (41, NULL, '발리 가든 호텔', 4, '쇼핑가', '발리 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 143);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (41, NULL, '발리 그랜드 호텔', 5, '해변·항구', '발리 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 290000, 'ON_SALE', 144);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (42, NULL, '하노이 시티 인', 3, '공원 옆', '하노이 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 145);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (42, NULL, '하노이 플라자 호텔', 4, '해변·항구', '하노이 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 150000, 'ON_SALE', 146);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (42, NULL, '하노이 오션 리조트', 5, '해변·항구', '하노이 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 280000, 'ON_SALE', 147);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (43, NULL, '호치민 시티 인', 3, '해변·항구', '호치민 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 148);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (43, NULL, '호치민 플라자 호텔', 4, '역 인근', '호치민 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 149);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (43, NULL, '호치민 로열 팰리스', 5, '쇼핑가', '호치민 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 150);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (44, NULL, '쿠알라룸푸르 스테이 호텔', 3, '쇼핑가', '쿠알라룸푸르 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 151);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (44, NULL, '쿠알라룸푸르 플라자 호텔', 4, '공원 옆', '쿠알라룸푸르 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 152);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (44, NULL, '쿠알라룸푸르 로열 팰리스', 5, '공항 인근', '쿠알라룸푸르 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 280000, 'ON_SALE', 153);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (45, NULL, '샌프란시스코 시티 인', 3, '시내 중심', '샌프란시스코 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 140000, 'ON_SALE', 154);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (45, NULL, '샌프란시스코 플라자 호텔', 4, '공원 옆', '샌프란시스코 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 240000, 'ON_SALE', 155);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (45, NULL, '샌프란시스코 그랜드 호텔', 5, '해변·항구', '샌프란시스코 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 440000, 'ON_SALE', 156);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (46, NULL, '토론토 시티 인', 3, '구시가지', '토론토 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 157);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (46, NULL, '토론토 플라자 호텔', 4, '공항 인근', '토론토 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 158);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (46, NULL, '토론토 오션 리조트', 5, '공항 인근', '토론토 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 420000, 'ON_SALE', 159);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (47, NULL, '호놀룰루 시티 인', 3, '공항 인근', '호놀룰루 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 140000, 'ON_SALE', 160);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (47, NULL, '호놀룰루 센트럴 호텔', 4, '해변·항구', '호놀룰루 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 161);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (47, NULL, '호놀룰루 그랜드 호텔', 5, '구시가지', '호놀룰루 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 420000, 'ON_SALE', 162);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (48, NULL, '멕시코시티 파크 호텔', 3, '공항 인근', '멕시코시티 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 163);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (48, NULL, '멕시코시티 플라자 호텔', 4, '구시가지', '멕시코시티 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 164);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (48, NULL, '멕시코시티 그랜드 호텔', 5, '쇼핑가', '멕시코시티 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 440000, 'ON_SALE', 165);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (49, NULL, '멜버른 시티 인', 3, '공원 옆', '멜버른 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 166);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (49, NULL, '멜버른 가든 호텔', 4, '공항 인근', '멜버른 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 167);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (49, NULL, '멜버른 로열 팰리스', 5, '공항 인근', '멜버른 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 168);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 스테이 호텔', 3, '공항 인근', '괌 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 169);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 플라자 호텔', 4, '공원 옆', '괌 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 210000, 'ON_SALE', 170);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 그랜드 호텔', 5, '쇼핑가', '괌 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 400000, 'ON_SALE', 171);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 스테이 호텔', 3, '쇼핑가', '마닐라 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 172);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 플라자 호텔', 4, '쇼핑가', '마닐라 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 173);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 그랜드 호텔', 5, '공원 옆', '마닐라 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 174);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 파크 호텔', 3, '구시가지', '델리 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 175);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 플라자 호텔', 4, '역 인근', '델리 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 176);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 로열 팰리스', 5, '역 인근', '델리 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 280000, 'ON_SALE', 177);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 파크 호텔', 3, '시내 중심', '뭄바이 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 178);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 플라자 호텔', 4, '공항 인근', '뭄바이 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 179);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 로열 팰리스', 5, '구시가지', '뭄바이 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 280000, 'ON_SALE', 180);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 시티 인', 3, '쇼핑가', '방갈로르 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 80000, 'ON_SALE', 181);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 센트럴 호텔', 4, '시내 중심', '방갈로르 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 182);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 오션 리조트', 5, '역 인근', '방갈로르 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 183);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 파크 호텔', 3, '쇼핑가', '콜롬보 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 184);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 가든 호텔', 4, '공항 인근', '콜롬보 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 185);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 그랜드 호텔', 5, '공항 인근', '콜롬보 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 186);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 파크 호텔', 3, '공항 인근', '카트만두 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 187);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 가든 호텔', 4, '공원 옆', '카트만두 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 188);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 그랜드 호텔', 5, '공원 옆', '카트만두 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 189);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 시티 인', 3, '해변·항구', '울란바토르 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 190);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 센트럴 호텔', 4, '구시가지', '울란바토르 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 191);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 로열 팰리스', 5, '공원 옆', '울란바토르 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 300000, 'ON_SALE', 192);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 시티 인', 3, '시내 중심', '알마티 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 193);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 플라자 호텔', 4, '구시가지', '알마티 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 194);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 로열 팰리스', 5, '역 인근', '알마티 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 290000, 'ON_SALE', 195);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 시티 인', 3, '공항 인근', '타슈켄트 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 80000, 'ON_SALE', 196);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 가든 호텔', 4, '구시가지', '타슈켄트 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 197);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 로열 팰리스', 5, '시내 중심', '타슈켄트 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 290000, 'ON_SALE', 198);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 시티 인', 3, '쇼핑가', '자카르타 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 199);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 가든 호텔', 4, '공원 옆', '자카르타 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 200);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 그랜드 호텔', 5, '공항 인근', '자카르타 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 290000, 'ON_SALE', 201);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 파크 호텔', 3, '역 인근', '광저우 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 202);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 플라자 호텔', 4, '해변·항구', '광저우 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 203);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 오션 리조트', 5, '시내 중심', '광저우 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 300000, 'ON_SALE', 204);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 시티 인', 3, '구시가지', '청두 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 205);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 가든 호텔', 4, '역 인근', '청두 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 206);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 로열 팰리스', 5, '시내 중심', '청두 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 290000, 'ON_SALE', 207);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 시티 인', 3, '시내 중심', '도하 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 208);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 가든 호텔', 4, '쇼핑가', '도하 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 200000, 'ON_SALE', 209);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 오션 리조트', 5, '구시가지', '도하 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 350000, 'ON_SALE', 210);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 시티 인', 3, '구시가지', '리야드 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 211);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 센트럴 호텔', 4, '해변·항구', '리야드 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 180000, 'ON_SALE', 212);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 오션 리조트', 5, '구시가지', '리야드 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 350000, 'ON_SALE', 213);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 시티 인', 3, '쇼핑가', '텔아비브 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 214);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 플라자 호텔', 4, '역 인근', '텔아비브 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 200000, 'ON_SALE', 215);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 오션 리조트', 5, '공항 인근', '텔아비브 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 360000, 'ON_SALE', 216);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 스테이 호텔', 3, '시내 중심', '제다 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 217);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 센트럴 호텔', 4, '역 인근', '제다 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 190000, 'ON_SALE', 218);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 로열 팰리스', 5, '시내 중심', '제다 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 350000, 'ON_SALE', 219);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 스테이 호텔', 3, '해변·항구', '프랑크푸르트 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 220);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 플라자 호텔', 4, '공원 옆', '프랑크푸르트 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 221);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 그랜드 호텔', 5, '시내 중심', '프랑크푸르트 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 390000, 'ON_SALE', 222);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 파크 호텔', 3, '쇼핑가', '취리히 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 223);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 센트럴 호텔', 4, '공원 옆', '취리히 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 210000, 'ON_SALE', 224);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 그랜드 호텔', 5, '역 인근', '취리히 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 400000, 'ON_SALE', 225);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 시티 인', 3, '구시가지', '부다페스트 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 226);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 가든 호텔', 4, '구시가지', '부다페스트 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 230000, 'ON_SALE', 227);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 그랜드 호텔', 5, '해변·항구', '부다페스트 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 228);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 파크 호텔', 3, '역 인근', '바르샤바 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 229);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 센트럴 호텔', 4, '시내 중심', '바르샤바 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 230);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 오션 리조트', 5, '해변·항구', '바르샤바 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 390000, 'ON_SALE', 231);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 시티 인', 3, '구시가지', '코펜하겐 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 130000, 'ON_SALE', 232);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 플라자 호텔', 4, '시내 중심', '코펜하겐 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 233);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 그랜드 호텔', 5, '공항 인근', '코펜하겐 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 234);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 스테이 호텔', 3, '역 인근', '스톡홀름 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 235);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 센트럴 호텔', 4, '쇼핑가', '스톡홀름 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 236);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 오션 리조트', 5, '공원 옆', '스톡홀름 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 237);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 스테이 호텔', 3, '쇼핑가', '오슬로 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 238);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 가든 호텔', 4, '구시가지', '오슬로 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 239);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 그랜드 호텔', 5, '역 인근', '오슬로 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 240);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 시티 인', 3, '쇼핑가', '헬싱키 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 241);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 플라자 호텔', 4, '역 인근', '헬싱키 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 242);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 그랜드 호텔', 5, '역 인근', '헬싱키 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 243);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 스테이 호텔', 3, '시내 중심', '더블린 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 244);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 가든 호텔', 4, '공원 옆', '더블린 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 245);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 로열 팰리스', 5, '쇼핑가', '더블린 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 390000, 'ON_SALE', 246);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 시티 인', 3, '공항 인근', '아테네 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 247);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 플라자 호텔', 4, '공항 인근', '아테네 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 248);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 오션 리조트', 5, '쇼핑가', '아테네 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 400000, 'ON_SALE', 249);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 파크 호텔', 3, '시내 중심', '나이로비 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 250);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 가든 호텔', 4, '역 인근', '나이로비 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 180000, 'ON_SALE', 251);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 오션 리조트', 5, '공원 옆', '나이로비 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 330000, 'ON_SALE', 252);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 스테이 호텔', 3, '쇼핑가', '요하네스버그 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 90000, 'ON_SALE', 253);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 가든 호텔', 4, '해변·항구', '요하네스버그 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 254);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 오션 리조트', 5, '공원 옆', '요하네스버그 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 320000, 'ON_SALE', 255);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 스테이 호텔', 3, '구시가지', '카사블랑카 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 90000, 'ON_SALE', 256);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 플라자 호텔', 4, '쇼핑가', '카사블랑카 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 180000, 'ON_SALE', 257);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 그랜드 호텔', 5, '역 인근', '카사블랑카 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 310000, 'ON_SALE', 258);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 시티 인', 3, '쇼핑가', '아디스아바바 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 259);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 센트럴 호텔', 4, '공원 옆', '아디스아바바 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 180000, 'ON_SALE', 260);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 로열 팰리스', 5, '해변·항구', '아디스아바바 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 261);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 스테이 호텔', 3, '쇼핑가', '다르에스살람 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 110000, 'ON_SALE', 262);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 센트럴 호텔', 4, '구시가지', '다르에스살람 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 263);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 그랜드 호텔', 5, '해변·항구', '다르에스살람 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 264);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 스테이 호텔', 3, '시내 중심', '튀니스 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 265);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 플라자 호텔', 4, '쇼핑가', '튀니스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 266);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 오션 리조트', 5, '공항 인근', '튀니스 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 267);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 시티 인', 3, '시내 중심', '아크라 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 268);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 가든 호텔', 4, '공항 인근', '아크라 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 269);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 로열 팰리스', 5, '공항 인근', '아크라 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 310000, 'ON_SALE', 270);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 시티 인', 3, '시내 중심', '시애틀 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 140000, 'ON_SALE', 271);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 가든 호텔', 4, '쇼핑가', '시애틀 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 272);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 로열 팰리스', 5, '공항 인근', '시애틀 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 440000, 'ON_SALE', 273);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 시티 인', 3, '역 인근', '댈러스 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 274);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 센트럴 호텔', 4, '시내 중심', '댈러스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 275);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 오션 리조트', 5, '구시가지', '댈러스 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 440000, 'ON_SALE', 276);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 스테이 호텔', 3, '시내 중심', '마이애미 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 277);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 센트럴 호텔', 4, '구시가지', '마이애미 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 240000, 'ON_SALE', 278);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 오션 리조트', 5, '공항 인근', '마이애미 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 430000, 'ON_SALE', 279);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 파크 호텔', 3, '시내 중심', '덴버 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 280);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 가든 호텔', 4, '공항 인근', '덴버 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 281);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 그랜드 호텔', 5, '시내 중심', '덴버 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 420000, 'ON_SALE', 282);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 시티 인', 3, '해변·항구', '몬트리올 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 283);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 센트럴 호텔', 4, '역 인근', '몬트리올 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 230000, 'ON_SALE', 284);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 그랜드 호텔', 5, '해변·항구', '몬트리올 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 430000, 'ON_SALE', 285);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 시티 인', 3, '공원 옆', '칸쿤 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 286);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 가든 호텔', 4, '시내 중심', '칸쿤 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 287);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 그랜드 호텔', 5, '공항 인근', '칸쿤 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 440000, 'ON_SALE', 288);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 파크 호텔', 3, '해변·항구', '파나마시티 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 289);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 가든 호텔', 4, '역 인근', '파나마시티 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 290);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 로열 팰리스', 5, '공원 옆', '파나마시티 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 440000, 'ON_SALE', 291);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 파크 호텔', 3, '역 인근', '리우데자네이루 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 292);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 플라자 호텔', 4, '쇼핑가', '리우데자네이루 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 293);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 로열 팰리스', 5, '공항 인근', '리우데자네이루 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 320000, 'ON_SALE', 294);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 스테이 호텔', 3, '쇼핑가', '부에노스아이레스 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 295);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 센트럴 호텔', 4, '쇼핑가', '부에노스아이레스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 296);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 오션 리조트', 5, '역 인근', '부에노스아이레스 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 310000, 'ON_SALE', 297);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 스테이 호텔', 3, '쇼핑가', '산티아고 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 298);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 가든 호텔', 4, '구시가지', '산티아고 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 180000, 'ON_SALE', 299);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 로열 팰리스', 5, '구시가지', '산티아고 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 300);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 파크 호텔', 3, '해변·항구', '리마 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 301);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 플라자 호텔', 4, '구시가지', '리마 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 302);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 그랜드 호텔', 5, '해변·항구', '리마 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 330000, 'ON_SALE', 303);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 스테이 호텔', 3, '역 인근', '보고타 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 304);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 플라자 호텔', 4, '구시가지', '보고타 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 160000, 'ON_SALE', 305);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 오션 리조트', 5, '구시가지', '보고타 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 320000, 'ON_SALE', 306);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 파크 호텔', 3, '구시가지', '키토 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 307);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 센트럴 호텔', 4, '쇼핑가', '키토 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 308);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 오션 리조트', 5, '구시가지', '키토 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 330000, 'ON_SALE', 309);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 시티 인', 3, '구시가지', '브리즈번 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 310);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 가든 호텔', 4, '공원 옆', '브리즈번 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 311);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 로열 팰리스', 5, '공원 옆', '브리즈번 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 410000, 'ON_SALE', 312);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 파크 호텔', 3, '구시가지', '퍼스 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 313);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 플라자 호텔', 4, '쇼핑가', '퍼스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 210000, 'ON_SALE', 314);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 그랜드 호텔', 5, '쇼핑가', '퍼스 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 400000, 'ON_SALE', 315);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 시티 인', 3, '해변·항구', '오클랜드 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 316);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 가든 호텔', 4, '시내 중심', '오클랜드 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 317);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 그랜드 호텔', 5, '공원 옆', '오클랜드 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 390000, 'ON_SALE', 318);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 파크 호텔', 3, '역 인근', '나디 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 319);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 가든 호텔', 4, '쇼핑가', '나디 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 320);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 그랜드 호텔', 5, '시내 중심', '나디 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 321);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 시티 인', 3, '공항 인근', '경주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 322);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 센트럴 호텔', 4, '시내 중심', '경주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 110000, 'ON_SALE', 323);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 로열 팰리스', 5, '시내 중심', '경주 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 324);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 파크 호텔', 3, '구시가지', '강릉 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 325);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 가든 호텔', 4, '쇼핑가', '강릉 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 120000, 'ON_SALE', 326);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 로열 팰리스', 5, '역 인근', '강릉 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 327);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 파크 호텔', 3, '공원 옆', '속초 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 328);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 센트럴 호텔', 4, '역 인근', '속초 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 329);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 로열 팰리스', 5, '공항 인근', '속초 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 330);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 시티 인', 3, '시내 중심', '부산 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 331);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 가든 호텔', 4, '쇼핑가', '부산 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 332);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 오션 리조트', 5, '역 인근', '부산 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 210000, 'ON_SALE', 333);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 파크 호텔', 3, '해변·항구', '제주 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 60000, 'ON_SALE', 334);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 가든 호텔', 4, '시내 중심', '제주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 335);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 로열 팰리스', 5, '역 인근', '제주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 210000, 'ON_SALE', 336);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 시티 인', 3, '공항 인근', '전주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 337);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 가든 호텔', 4, '공항 인근', '전주 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 338);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 그랜드 호텔', 5, '역 인근', '전주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 200000, 'ON_SALE', 339);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 시티 인', 3, '공항 인근', '여수 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 340);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 센트럴 호텔', 4, '시내 중심', '여수 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 341);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 그랜드 호텔', 5, '쇼핑가', '여수 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 210000, 'ON_SALE', 342);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 스테이 호텔', 3, '공원 옆', '순천 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 343);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 가든 호텔', 4, '구시가지', '순천 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 344);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 그랜드 호텔', 5, '쇼핑가', '순천 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 220000, 'ON_SALE', 345);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 시티 인', 3, '해변·항구', '통영 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 346);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 센트럴 호텔', 4, '공원 옆', '통영 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 100000, 'ON_SALE', 347);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 오션 리조트', 5, '공항 인근', '통영 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 200000, 'ON_SALE', 348);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 파크 호텔', 3, '역 인근', '단양 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 70000, 'ON_SALE', 349);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 가든 호텔', 4, '공항 인근', '단양 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 350);
-INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 로열 팰리스', 5, '시내 중심', '단양 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 200000, 'ON_SALE', 351);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 잠만자는 호텔', 3, '공항 인근', '파리 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 1);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 그럭저럭 플라자', 4, '구시가지', '파리 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 2);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (1, NULL, '파리 바다보임 리조트', 5, '해변·항구', '파리 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 400000, 'ON_SALE', 3);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (2, NULL, '런던 가성비 인', 3, '쇼핑가', '런던 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 4);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (2, NULL, '런던 그럭저럭 플라자', 4, '쇼핑가', '런던 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 5);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (2, NULL, '런던 바다보임 리조트', 5, '구시가지', '런던 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 6);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (3, NULL, '베를린 잠만자는 호텔', 3, '시내 중심', '베를린 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 7);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (3, NULL, '베를린 그럭저럭 플라자', 4, '역 인근', '베를린 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 230000, 'ON_SALE', 8);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (3, NULL, '베를린 바다보임 리조트', 5, '역 인근', '베를린 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 390000, 'ON_SALE', 9);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (4, NULL, '마드리드 잠만자는 호텔', 3, '역 인근', '마드리드 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 10);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (4, NULL, '마드리드 그럭저럭 플라자', 4, '구시가지', '마드리드 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 11);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (4, NULL, '마드리드 왕처럼 팰리스', 5, '공원 옆', '마드리드 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 12);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 잠만자는 호텔', 3, '쇼핑가', '로마 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 130000, 'ON_SALE', 13);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 공원뷰(?) 호텔', 3, '공항 인근', '로마 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 14);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 그럭저럭 플라자', 4, '쇼핑가', '로마 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 15);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 화분 가든 호텔', 4, '해변·항구', '로마 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 16);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 한가운데 호텔', 4, '공원 옆', '로마 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 17);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 그랜드 짱짱 호텔', 5, '시내 중심', '로마 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 390000, 'ON_SALE', 18);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (5, NULL, '로마 왕처럼 팰리스', 5, '공항 인근', '로마 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 410000, 'ON_SALE', 19);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (6, NULL, '바르셀로나 잠만자는 호텔', 3, '쇼핑가', '바르셀로나 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 20);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (6, NULL, '바르셀로나 화분 가든 호텔', 4, '해변·항구', '바르셀로나 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 21);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (6, NULL, '바르셀로나 왕처럼 팰리스', 5, '해변·항구', '바르셀로나 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 400000, 'ON_SALE', 22);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (7, NULL, '서울 잠만자는 호텔', 3, '쇼핑가', '서울 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 23);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (7, NULL, '서울 화분 가든 호텔', 4, '역 인근', '서울 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 24);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (7, NULL, '서울 왕처럼 팰리스', 5, '쇼핑가', '서울 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 25);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (8, NULL, '부산 가성비 인', 3, '시내 중심', '부산 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 26);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (8, NULL, '부산 화분 가든 호텔', 4, '쇼핑가', '부산 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 27);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (8, NULL, '부산 바다보임 리조트', 5, '역 인근', '부산 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 290000, 'ON_SALE', 28);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 공원뷰(?) 호텔', 3, '공원 옆', '도쿄 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 29);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 가성비 인', 3, '역 인근', '도쿄 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 30);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 화분 가든 호텔', 4, '공원 옆', '도쿄 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 31);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 한가운데 호텔', 4, '쇼핑가', '도쿄 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 32);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 그럭저럭 플라자', 4, '공원 옆', '도쿄 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 33);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 왕처럼 팰리스', 5, '구시가지', '도쿄 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 280000, 'ON_SALE', 34);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (9, NULL, '도쿄 바다보임 리조트', 5, '구시가지', '도쿄 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 35);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (10, NULL, '오사카 공원뷰(?) 호텔', 3, '시내 중심', '오사카 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 36);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (10, NULL, '오사카 한가운데 호텔', 4, '시내 중심', '오사카 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 37);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (10, NULL, '오사카 왕처럼 팰리스', 5, '공원 옆', '오사카 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 300000, 'ON_SALE', 38);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (11, NULL, '후쿠오카 가성비 인', 3, '공원 옆', '후쿠오카 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 100000, 'ON_SALE', 39);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (11, NULL, '후쿠오카 화분 가든 호텔', 4, '공원 옆', '후쿠오카 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 150000, 'ON_SALE', 40);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (11, NULL, '후쿠오카 바다보임 리조트', 5, '공원 옆', '후쿠오카 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 41);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 공원뷰(?) 호텔', 3, '공원 옆', '삿포로 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 42);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 가성비 인', 3, '해변·항구', '삿포로 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 43);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 그럭저럭 플라자', 4, '공원 옆', '삿포로 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 44);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 화분 가든 호텔', 4, '공원 옆', '삿포로 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 45);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 한가운데 호텔', 4, '시내 중심', '삿포로 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 46);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 왕처럼 팰리스', 5, '공항 인근', '삿포로 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 47);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (12, NULL, '삿포로 바다보임 리조트', 5, '시내 중심', '삿포로 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 280000, 'ON_SALE', 48);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (13, NULL, '베이징 공원뷰(?) 호텔', 3, '시내 중심', '베이징 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 49);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (13, NULL, '베이징 화분 가든 호텔', 4, '역 인근', '베이징 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 50);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (13, NULL, '베이징 그랜드 짱짱 호텔', 5, '쇼핑가', '베이징 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 51);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (14, NULL, '방콕 잠만자는 호텔', 3, '구시가지', '방콕 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 52);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (14, NULL, '방콕 그럭저럭 플라자', 4, '구시가지', '방콕 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 53);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (14, NULL, '방콕 바다보임 리조트', 5, '구시가지', '방콕 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 280000, 'ON_SALE', 54);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (16, NULL, '뉴욕 가성비 인', 3, '역 인근', '뉴욕 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 55);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (16, NULL, '뉴욕 그럭저럭 플라자', 4, '공원 옆', '뉴욕 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 56);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (16, NULL, '뉴욕 왕처럼 팰리스', 5, '구시가지', '뉴욕 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 420000, 'ON_SALE', 57);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (17, NULL, '워싱턴D.C. 공원뷰(?) 호텔', 3, '해변·항구', '워싱턴D.C. 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 58);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (17, NULL, '워싱턴D.C. 그럭저럭 플라자', 4, '쇼핑가', '워싱턴D.C. 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 240000, 'ON_SALE', 59);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (17, NULL, '워싱턴D.C. 왕처럼 팰리스', 5, '구시가지', '워싱턴D.C. 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 430000, 'ON_SALE', 60);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 공원뷰(?) 호텔', 3, '공원 옆', '로스앤젤레스 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 61);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 가성비 인', 3, '쇼핑가', '로스앤젤레스 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 130000, 'ON_SALE', 62);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 화분 가든 호텔', 4, '해변·항구', '로스앤젤레스 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 63);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 한가운데 호텔', 4, '시내 중심', '로스앤젤레스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 64);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 그럭저럭 플라자', 4, '시내 중심', '로스앤젤레스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 65);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 그랜드 짱짱 호텔', 5, '공원 옆', '로스앤젤레스 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 420000, 'ON_SALE', 66);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (18, NULL, '로스앤젤레스 왕처럼 팰리스', 5, '구시가지', '로스앤젤레스 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 420000, 'ON_SALE', 67);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 가성비 인', 3, '해변·항구', '홍콩 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 68);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 잠만자는 호텔', 3, '시내 중심', '홍콩 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 69);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 화분 가든 호텔', 4, '공항 인근', '홍콩 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 70);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 한가운데 호텔', 4, '공원 옆', '홍콩 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 71);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 그럭저럭 플라자', 4, '해변·항구', '홍콩 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 72);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 그랜드 짱짱 호텔', 5, '구시가지', '홍콩 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 290000, 'ON_SALE', 73);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (19, NULL, '홍콩 왕처럼 팰리스', 5, '해변·항구', '홍콩 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 290000, 'ON_SALE', 74);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (20, NULL, '상하이 잠만자는 호텔', 3, '구시가지', '상하이 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 75);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (20, NULL, '상하이 그럭저럭 플라자', 4, '시내 중심', '상하이 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 160000, 'ON_SALE', 76);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (20, NULL, '상하이 그랜드 짱짱 호텔', 5, '시내 중심', '상하이 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 280000, 'ON_SALE', 77);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (21, NULL, '두바이 잠만자는 호텔', 3, '역 인근', '두바이 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 78);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (21, NULL, '두바이 한가운데 호텔', 4, '구시가지', '두바이 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 180000, 'ON_SALE', 79);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (21, NULL, '두바이 왕처럼 팰리스', 5, '역 인근', '두바이 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 340000, 'ON_SALE', 80);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (22, NULL, '시카고 가성비 인', 3, '공원 옆', '시카고 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 140000, 'ON_SALE', 81);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (22, NULL, '시카고 화분 가든 호텔', 4, '역 인근', '시카고 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 82);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (22, NULL, '시카고 바다보임 리조트', 5, '해변·항구', '시카고 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 420000, 'ON_SALE', 83);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (23, NULL, '시드니 공원뷰(?) 호텔', 3, '쇼핑가', '시드니 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 130000, 'ON_SALE', 84);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (23, NULL, '시드니 그럭저럭 플라자', 4, '구시가지', '시드니 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 210000, 'ON_SALE', 85);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (23, NULL, '시드니 왕처럼 팰리스', 5, '구시가지', '시드니 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 390000, 'ON_SALE', 86);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (24, NULL, '밴쿠버 공원뷰(?) 호텔', 3, '구시가지', '밴쿠버 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 140000, 'ON_SALE', 87);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (24, NULL, '밴쿠버 그럭저럭 플라자', 4, '시내 중심', '밴쿠버 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 88);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (24, NULL, '밴쿠버 바다보임 리조트', 5, '구시가지', '밴쿠버 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 430000, 'ON_SALE', 89);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (25, NULL, '상파울루 공원뷰(?) 호텔', 3, '구시가지', '상파울루 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 90);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (25, NULL, '상파울루 화분 가든 호텔', 4, '쇼핑가', '상파울루 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 170000, 'ON_SALE', 91);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (25, NULL, '상파울루 왕처럼 팰리스', 5, '구시가지', '상파울루 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 330000, 'ON_SALE', 92);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (26, NULL, '카이로 잠만자는 호텔', 3, '공항 인근', '카이로 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 93);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (26, NULL, '카이로 화분 가든 호텔', 4, '쇼핑가', '카이로 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 160000, 'ON_SALE', 94);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (26, NULL, '카이로 바다보임 리조트', 5, '공항 인근', '카이로 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 310000, 'ON_SALE', 95);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 잠만자는 호텔', 3, '공항 인근', '케이프타운 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 96);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 공원뷰(?) 호텔', 3, '시내 중심', '케이프타운 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 97);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 화분 가든 호텔', 4, '해변·항구', '케이프타운 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 98);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 한가운데 호텔', 4, '해변·항구', '케이프타운 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 99);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 그럭저럭 플라자', 4, '공항 인근', '케이프타운 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 180000, 'ON_SALE', 100);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 바다보임 리조트', 5, '시내 중심', '케이프타운 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 320000, 'ON_SALE', 101);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (27, NULL, '케이프타운 그랜드 짱짱 호텔', 5, '쇼핑가', '케이프타운 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 320000, 'ON_SALE', 102);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (28, NULL, '밀라노 공원뷰(?) 호텔', 3, '시내 중심', '밀라노 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 103);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (28, NULL, '밀라노 한가운데 호텔', 4, '구시가지', '밀라노 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 104);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (28, NULL, '밀라노 왕처럼 팰리스', 5, '공항 인근', '밀라노 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 105);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (29, NULL, '암스테르담 공원뷰(?) 호텔', 3, '시내 중심', '암스테르담 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 106);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (29, NULL, '암스테르담 화분 가든 호텔', 4, '공원 옆', '암스테르담 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 107);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (29, NULL, '암스테르담 왕처럼 팰리스', 5, '역 인근', '암스테르담 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 410000, 'ON_SALE', 108);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (30, NULL, '이스탄불 가성비 인', 3, '해변·항구', '이스탄불 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 109);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (30, NULL, '이스탄불 그럭저럭 플라자', 4, '쇼핑가', '이스탄불 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 110);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (30, NULL, '이스탄불 바다보임 리조트', 5, '구시가지', '이스탄불 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 390000, 'ON_SALE', 111);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (31, NULL, '프라하 가성비 인', 3, '공항 인근', '프라하 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 112);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (31, NULL, '프라하 화분 가든 호텔', 4, '해변·항구', '프라하 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 113);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (31, NULL, '프라하 바다보임 리조트', 5, '해변·항구', '프라하 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 410000, 'ON_SALE', 114);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (32, NULL, '빈 공원뷰(?) 호텔', 3, '공항 인근', '빈 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 110000, 'ON_SALE', 115);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (32, NULL, '빈 화분 가든 호텔', 4, '쇼핑가', '빈 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 116);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (32, NULL, '빈 왕처럼 팰리스', 5, '쇼핑가', '빈 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 117);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (33, NULL, '리스본 공원뷰(?) 호텔', 3, '공원 옆', '리스본 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 118);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (33, NULL, '리스본 그럭저럭 플라자', 4, '시내 중심', '리스본 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 119);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (33, NULL, '리스본 바다보임 리조트', 5, '시내 중심', '리스본 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 120);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (34, NULL, '에든버러 가성비 인', 3, '시내 중심', '에든버러 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 121);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (34, NULL, '에든버러 그럭저럭 플라자', 4, '구시가지', '에든버러 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 122);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (34, NULL, '에든버러 왕처럼 팰리스', 5, '구시가지', '에든버러 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 410000, 'ON_SALE', 123);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (35, NULL, '싱가포르 잠만자는 호텔', 3, '해변·항구', '싱가포르 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 124);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (35, NULL, '싱가포르 화분 가든 호텔', 4, '역 인근', '싱가포르 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 125);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (35, NULL, '싱가포르 그랜드 짱짱 호텔', 5, '쇼핑가', '싱가포르 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 300000, 'ON_SALE', 126);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (36, NULL, '마카오 공원뷰(?) 호텔', 3, '역 인근', '마카오 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 127);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (36, NULL, '마카오 그럭저럭 플라자', 4, '쇼핑가', '마카오 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 128);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (36, NULL, '마카오 그랜드 짱짱 호텔', 5, '해변·항구', '마카오 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 300000, 'ON_SALE', 129);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (37, NULL, '타이베이 잠만자는 호텔', 3, '시내 중심', '타이베이 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 130);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (37, NULL, '타이베이 한가운데 호텔', 4, '공원 옆', '타이베이 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 131);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (37, NULL, '타이베이 왕처럼 팰리스', 5, '구시가지', '타이베이 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 300000, 'ON_SALE', 132);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (38, NULL, '다낭 가성비 인', 3, '공항 인근', '다낭 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 133);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (38, NULL, '다낭 한가운데 호텔', 4, '공원 옆', '다낭 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 134);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (38, NULL, '다낭 그랜드 짱짱 호텔', 5, '공항 인근', '다낭 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 135);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (39, NULL, '나트랑 공원뷰(?) 호텔', 3, '역 인근', '나트랑 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 136);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (39, NULL, '나트랑 그럭저럭 플라자', 4, '해변·항구', '나트랑 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 137);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (39, NULL, '나트랑 바다보임 리조트', 5, '공항 인근', '나트랑 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 300000, 'ON_SALE', 138);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (40, NULL, '푸꾸옥 가성비 인', 3, '쇼핑가', '푸꾸옥 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 139);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (40, NULL, '푸꾸옥 그럭저럭 플라자', 4, '역 인근', '푸꾸옥 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 140);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (40, NULL, '푸꾸옥 왕처럼 팰리스', 5, '시내 중심', '푸꾸옥 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 280000, 'ON_SALE', 141);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (41, NULL, '발리 가성비 인', 3, '구시가지', '발리 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 100000, 'ON_SALE', 142);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (41, NULL, '발리 화분 가든 호텔', 4, '쇼핑가', '발리 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 143);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (41, NULL, '발리 그랜드 짱짱 호텔', 5, '해변·항구', '발리 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 290000, 'ON_SALE', 144);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (42, NULL, '하노이 가성비 인', 3, '공원 옆', '하노이 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 145);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (42, NULL, '하노이 그럭저럭 플라자', 4, '해변·항구', '하노이 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 150000, 'ON_SALE', 146);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (42, NULL, '하노이 바다보임 리조트', 5, '해변·항구', '하노이 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 280000, 'ON_SALE', 147);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (43, NULL, '호치민 가성비 인', 3, '해변·항구', '호치민 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 148);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (43, NULL, '호치민 그럭저럭 플라자', 4, '역 인근', '호치민 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 149);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (43, NULL, '호치민 왕처럼 팰리스', 5, '쇼핑가', '호치민 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 150);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (44, NULL, '쿠알라룸푸르 잠만자는 호텔', 3, '쇼핑가', '쿠알라룸푸르 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 151);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (44, NULL, '쿠알라룸푸르 그럭저럭 플라자', 4, '공원 옆', '쿠알라룸푸르 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 152);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (44, NULL, '쿠알라룸푸르 왕처럼 팰리스', 5, '공항 인근', '쿠알라룸푸르 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 280000, 'ON_SALE', 153);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (45, NULL, '샌프란시스코 가성비 인', 3, '시내 중심', '샌프란시스코 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 140000, 'ON_SALE', 154);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (45, NULL, '샌프란시스코 그럭저럭 플라자', 4, '공원 옆', '샌프란시스코 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 240000, 'ON_SALE', 155);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (45, NULL, '샌프란시스코 그랜드 짱짱 호텔', 5, '해변·항구', '샌프란시스코 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 440000, 'ON_SALE', 156);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (46, NULL, '토론토 가성비 인', 3, '구시가지', '토론토 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 157);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (46, NULL, '토론토 그럭저럭 플라자', 4, '공항 인근', '토론토 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 158);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (46, NULL, '토론토 바다보임 리조트', 5, '공항 인근', '토론토 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 420000, 'ON_SALE', 159);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (47, NULL, '호놀룰루 가성비 인', 3, '공항 인근', '호놀룰루 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 140000, 'ON_SALE', 160);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (47, NULL, '호놀룰루 한가운데 호텔', 4, '해변·항구', '호놀룰루 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 161);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (47, NULL, '호놀룰루 그랜드 짱짱 호텔', 5, '구시가지', '호놀룰루 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 420000, 'ON_SALE', 162);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (48, NULL, '멕시코시티 공원뷰(?) 호텔', 3, '공항 인근', '멕시코시티 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 163);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (48, NULL, '멕시코시티 그럭저럭 플라자', 4, '구시가지', '멕시코시티 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 164);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (48, NULL, '멕시코시티 그랜드 짱짱 호텔', 5, '쇼핑가', '멕시코시티 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 440000, 'ON_SALE', 165);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (49, NULL, '멜버른 가성비 인', 3, '공원 옆', '멜버른 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 166);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (49, NULL, '멜버른 화분 가든 호텔', 4, '공항 인근', '멜버른 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 167);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (49, NULL, '멜버른 왕처럼 팰리스', 5, '공항 인근', '멜버른 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 168);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 잠만자는 호텔', 3, '공항 인근', '괌 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 169);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 그럭저럭 플라자', 4, '공원 옆', '괌 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 210000, 'ON_SALE', 170);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (50, NULL, '괌 그랜드 짱짱 호텔', 5, '쇼핑가', '괌 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 400000, 'ON_SALE', 171);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 잠만자는 호텔', 3, '쇼핑가', '마닐라 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 172);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 그럭저럭 플라자', 4, '쇼핑가', '마닐라 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 150000, 'ON_SALE', 173);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (51, NULL, '마닐라 그랜드 짱짱 호텔', 5, '공원 옆', '마닐라 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 174);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 공원뷰(?) 호텔', 3, '구시가지', '델리 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 80000, 'ON_SALE', 175);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 그럭저럭 플라자', 4, '역 인근', '델리 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 176);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (52, NULL, '델리 왕처럼 팰리스', 5, '역 인근', '델리 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 280000, 'ON_SALE', 177);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 공원뷰(?) 호텔', 3, '시내 중심', '뭄바이 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 178);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 그럭저럭 플라자', 4, '공항 인근', '뭄바이 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 179);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (53, NULL, '뭄바이 왕처럼 팰리스', 5, '구시가지', '뭄바이 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 280000, 'ON_SALE', 180);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 가성비 인', 3, '쇼핑가', '방갈로르 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 80000, 'ON_SALE', 181);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 한가운데 호텔', 4, '시내 중심', '방갈로르 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 150000, 'ON_SALE', 182);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (54, NULL, '방갈로르 바다보임 리조트', 5, '역 인근', '방갈로르 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 290000, 'ON_SALE', 183);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 공원뷰(?) 호텔', 3, '쇼핑가', '콜롬보 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 184);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 화분 가든 호텔', 4, '공항 인근', '콜롬보 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 185);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (55, NULL, '콜롬보 그랜드 짱짱 호텔', 5, '공항 인근', '콜롬보 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 280000, 'ON_SALE', 186);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 공원뷰(?) 호텔', 3, '공항 인근', '카트만두 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 187);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 화분 가든 호텔', 4, '공원 옆', '카트만두 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 188);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (56, NULL, '카트만두 그랜드 짱짱 호텔', 5, '공원 옆', '카트만두 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 300000, 'ON_SALE', 189);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 가성비 인', 3, '해변·항구', '울란바토르 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 190);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 한가운데 호텔', 4, '구시가지', '울란바토르 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 191);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (57, NULL, '울란바토르 왕처럼 팰리스', 5, '공원 옆', '울란바토르 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 300000, 'ON_SALE', 192);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 가성비 인', 3, '시내 중심', '알마티 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 193);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 그럭저럭 플라자', 4, '구시가지', '알마티 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 160000, 'ON_SALE', 194);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (58, NULL, '알마티 왕처럼 팰리스', 5, '역 인근', '알마티 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 290000, 'ON_SALE', 195);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 가성비 인', 3, '공항 인근', '타슈켄트 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 80000, 'ON_SALE', 196);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 화분 가든 호텔', 4, '구시가지', '타슈켄트 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 150000, 'ON_SALE', 197);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (59, NULL, '타슈켄트 왕처럼 팰리스', 5, '시내 중심', '타슈켄트 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 290000, 'ON_SALE', 198);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 가성비 인', 3, '쇼핑가', '자카르타 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 199);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 화분 가든 호텔', 4, '공원 옆', '자카르타 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 150000, 'ON_SALE', 200);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (60, NULL, '자카르타 그랜드 짱짱 호텔', 5, '공항 인근', '자카르타 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 290000, 'ON_SALE', 201);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 공원뷰(?) 호텔', 3, '역 인근', '광저우 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 202);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 그럭저럭 플라자', 4, '해변·항구', '광저우 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 203);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (61, NULL, '광저우 바다보임 리조트', 5, '시내 중심', '광저우 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 300000, 'ON_SALE', 204);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 가성비 인', 3, '구시가지', '청두 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 205);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 화분 가든 호텔', 4, '역 인근', '청두 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 206);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (62, NULL, '청두 왕처럼 팰리스', 5, '시내 중심', '청두 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 290000, 'ON_SALE', 207);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 가성비 인', 3, '시내 중심', '도하 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 208);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 화분 가든 호텔', 4, '쇼핑가', '도하 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 200000, 'ON_SALE', 209);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (63, NULL, '도하 바다보임 리조트', 5, '구시가지', '도하 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 350000, 'ON_SALE', 210);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 가성비 인', 3, '구시가지', '리야드 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 211);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 한가운데 호텔', 4, '해변·항구', '리야드 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 180000, 'ON_SALE', 212);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (64, NULL, '리야드 바다보임 리조트', 5, '구시가지', '리야드 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 350000, 'ON_SALE', 213);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 가성비 인', 3, '쇼핑가', '텔아비브 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 100000, 'ON_SALE', 214);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 그럭저럭 플라자', 4, '역 인근', '텔아비브 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 200000, 'ON_SALE', 215);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (65, NULL, '텔아비브 바다보임 리조트', 5, '공항 인근', '텔아비브 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 360000, 'ON_SALE', 216);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 잠만자는 호텔', 3, '시내 중심', '제다 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 217);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 한가운데 호텔', 4, '역 인근', '제다 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 190000, 'ON_SALE', 218);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (66, NULL, '제다 왕처럼 팰리스', 5, '시내 중심', '제다 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 350000, 'ON_SALE', 219);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 잠만자는 호텔', 3, '해변·항구', '프랑크푸르트 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 220);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 그럭저럭 플라자', 4, '공원 옆', '프랑크푸르트 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 221);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (67, NULL, '프랑크푸르트 그랜드 짱짱 호텔', 5, '시내 중심', '프랑크푸르트 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 390000, 'ON_SALE', 222);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 공원뷰(?) 호텔', 3, '쇼핑가', '취리히 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 223);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 한가운데 호텔', 4, '공원 옆', '취리히 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 210000, 'ON_SALE', 224);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (68, NULL, '취리히 그랜드 짱짱 호텔', 5, '역 인근', '취리히 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 400000, 'ON_SALE', 225);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 가성비 인', 3, '구시가지', '부다페스트 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 226);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 화분 가든 호텔', 4, '구시가지', '부다페스트 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 230000, 'ON_SALE', 227);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (69, NULL, '부다페스트 그랜드 짱짱 호텔', 5, '해변·항구', '부다페스트 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 228);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 공원뷰(?) 호텔', 3, '역 인근', '바르샤바 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 229);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 한가운데 호텔', 4, '시내 중심', '바르샤바 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 230);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (70, NULL, '바르샤바 바다보임 리조트', 5, '해변·항구', '바르샤바 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 390000, 'ON_SALE', 231);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 가성비 인', 3, '구시가지', '코펜하겐 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 130000, 'ON_SALE', 232);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 그럭저럭 플라자', 4, '시내 중심', '코펜하겐 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 233);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (71, NULL, '코펜하겐 그랜드 짱짱 호텔', 5, '공항 인근', '코펜하겐 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 234);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 잠만자는 호텔', 3, '역 인근', '스톡홀름 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 235);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 한가운데 호텔', 4, '쇼핑가', '스톡홀름 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 236);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (72, NULL, '스톡홀름 바다보임 리조트', 5, '공원 옆', '스톡홀름 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 410000, 'ON_SALE', 237);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 잠만자는 호텔', 3, '쇼핑가', '오슬로 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 238);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 화분 가든 호텔', 4, '구시가지', '오슬로 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 220000, 'ON_SALE', 239);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (73, NULL, '오슬로 그랜드 짱짱 호텔', 5, '역 인근', '오슬로 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 240);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 가성비 인', 3, '쇼핑가', '헬싱키 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 110000, 'ON_SALE', 241);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 그럭저럭 플라자', 4, '역 인근', '헬싱키 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 220000, 'ON_SALE', 242);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (74, NULL, '헬싱키 그랜드 짱짱 호텔', 5, '역 인근', '헬싱키 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 400000, 'ON_SALE', 243);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 잠만자는 호텔', 3, '시내 중심', '더블린 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 244);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 화분 가든 호텔', 4, '공원 옆', '더블린 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 245);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (75, NULL, '더블린 왕처럼 팰리스', 5, '쇼핑가', '더블린 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 390000, 'ON_SALE', 246);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 가성비 인', 3, '공항 인근', '아테네 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 247);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 그럭저럭 플라자', 4, '공항 인근', '아테네 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 230000, 'ON_SALE', 248);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (76, NULL, '아테네 바다보임 리조트', 5, '쇼핑가', '아테네 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 400000, 'ON_SALE', 249);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 공원뷰(?) 호텔', 3, '시내 중심', '나이로비 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 100000, 'ON_SALE', 250);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 화분 가든 호텔', 4, '역 인근', '나이로비 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 180000, 'ON_SALE', 251);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (77, NULL, '나이로비 바다보임 리조트', 5, '공원 옆', '나이로비 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 330000, 'ON_SALE', 252);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 잠만자는 호텔', 3, '쇼핑가', '요하네스버그 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 90000, 'ON_SALE', 253);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 화분 가든 호텔', 4, '해변·항구', '요하네스버그 해변·항구에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 170000, 'ON_SALE', 254);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (78, NULL, '요하네스버그 바다보임 리조트', 5, '공원 옆', '요하네스버그 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 320000, 'ON_SALE', 255);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 잠만자는 호텔', 3, '구시가지', '카사블랑카 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 90000, 'ON_SALE', 256);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 그럭저럭 플라자', 4, '쇼핑가', '카사블랑카 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 180000, 'ON_SALE', 257);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (79, NULL, '카사블랑카 그랜드 짱짱 호텔', 5, '역 인근', '카사블랑카 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 310000, 'ON_SALE', 258);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 가성비 인', 3, '쇼핑가', '아디스아바바 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 259);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 한가운데 호텔', 4, '공원 옆', '아디스아바바 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 180000, 'ON_SALE', 260);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (80, NULL, '아디스아바바 왕처럼 팰리스', 5, '해변·항구', '아디스아바바 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 261);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 잠만자는 호텔', 3, '쇼핑가', '다르에스살람 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 110000, 'ON_SALE', 262);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 한가운데 호텔', 4, '구시가지', '다르에스살람 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 263);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (81, NULL, '다르에스살람 그랜드 짱짱 호텔', 5, '해변·항구', '다르에스살람 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 264);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 잠만자는 호텔', 3, '시내 중심', '튀니스 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 265);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 그럭저럭 플라자', 4, '쇼핑가', '튀니스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 170000, 'ON_SALE', 266);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (82, NULL, '튀니스 바다보임 리조트', 5, '공항 인근', '튀니스 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 267);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 가성비 인', 3, '시내 중심', '아크라 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 268);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 화분 가든 호텔', 4, '공항 인근', '아크라 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 170000, 'ON_SALE', 269);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (83, NULL, '아크라 왕처럼 팰리스', 5, '공항 인근', '아크라 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 310000, 'ON_SALE', 270);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 가성비 인', 3, '시내 중심', '시애틀 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 140000, 'ON_SALE', 271);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 화분 가든 호텔', 4, '쇼핑가', '시애틀 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 220000, 'ON_SALE', 272);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (84, NULL, '시애틀 왕처럼 팰리스', 5, '공항 인근', '시애틀 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 440000, 'ON_SALE', 273);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 가성비 인', 3, '역 인근', '댈러스 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 274);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 한가운데 호텔', 4, '시내 중심', '댈러스 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 220000, 'ON_SALE', 275);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (85, NULL, '댈러스 바다보임 리조트', 5, '구시가지', '댈러스 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 440000, 'ON_SALE', 276);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 잠만자는 호텔', 3, '시내 중심', '마이애미 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 130000, 'ON_SALE', 277);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 한가운데 호텔', 4, '구시가지', '마이애미 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 240000, 'ON_SALE', 278);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (86, NULL, '마이애미 바다보임 리조트', 5, '공항 인근', '마이애미 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 430000, 'ON_SALE', 279);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 공원뷰(?) 호텔', 3, '시내 중심', '덴버 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 120000, 'ON_SALE', 280);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 화분 가든 호텔', 4, '공항 인근', '덴버 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 281);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (87, NULL, '덴버 그랜드 짱짱 호텔', 5, '시내 중심', '덴버 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 420000, 'ON_SALE', 282);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 가성비 인', 3, '해변·항구', '몬트리올 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 283);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 한가운데 호텔', 4, '역 인근', '몬트리올 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 230000, 'ON_SALE', 284);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (88, NULL, '몬트리올 그랜드 짱짱 호텔', 5, '해변·항구', '몬트리올 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 430000, 'ON_SALE', 285);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 가성비 인', 3, '공원 옆', '칸쿤 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 286);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 화분 가든 호텔', 4, '시내 중심', '칸쿤 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 287);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (89, NULL, '칸쿤 그랜드 짱짱 호텔', 5, '공항 인근', '칸쿤 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '컨시어지, 루프톱 바, 조식 포함', 440000, 'ON_SALE', 288);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 공원뷰(?) 호텔', 3, '해변·항구', '파나마시티 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 120000, 'ON_SALE', 289);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 화분 가든 호텔', 4, '역 인근', '파나마시티 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 230000, 'ON_SALE', 290);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (90, NULL, '파나마시티 왕처럼 팰리스', 5, '공원 옆', '파나마시티 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 440000, 'ON_SALE', 291);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 공원뷰(?) 호텔', 3, '역 인근', '리우데자네이루 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 90000, 'ON_SALE', 292);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 그럭저럭 플라자', 4, '쇼핑가', '리우데자네이루 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 160000, 'ON_SALE', 293);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (91, NULL, '리우데자네이루 왕처럼 팰리스', 5, '공항 인근', '리우데자네이루 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 320000, 'ON_SALE', 294);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 잠만자는 호텔', 3, '쇼핑가', '부에노스아이레스 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 110000, 'ON_SALE', 295);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 한가운데 호텔', 4, '쇼핑가', '부에노스아이레스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 296);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (92, NULL, '부에노스아이레스 바다보임 리조트', 5, '역 인근', '부에노스아이레스 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 310000, 'ON_SALE', 297);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 잠만자는 호텔', 3, '쇼핑가', '산티아고 쇼핑가에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 110000, 'ON_SALE', 298);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 화분 가든 호텔', 4, '구시가지', '산티아고 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 180000, 'ON_SALE', 299);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (93, NULL, '산티아고 왕처럼 팰리스', 5, '구시가지', '산티아고 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 330000, 'ON_SALE', 300);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 공원뷰(?) 호텔', 3, '해변·항구', '리마 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 90000, 'ON_SALE', 301);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 그럭저럭 플라자', 4, '구시가지', '리마 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 170000, 'ON_SALE', 302);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (94, NULL, '리마 그랜드 짱짱 호텔', 5, '해변·항구', '리마 해변·항구에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 330000, 'ON_SALE', 303);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 잠만자는 호텔', 3, '역 인근', '보고타 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 90000, 'ON_SALE', 304);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 그럭저럭 플라자', 4, '구시가지', '보고타 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 160000, 'ON_SALE', 305);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (95, NULL, '보고타 바다보임 리조트', 5, '구시가지', '보고타 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 320000, 'ON_SALE', 306);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 공원뷰(?) 호텔', 3, '구시가지', '키토 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 100000, 'ON_SALE', 307);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 한가운데 호텔', 4, '쇼핑가', '키토 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 160000, 'ON_SALE', 308);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (96, NULL, '키토 바다보임 리조트', 5, '구시가지', '키토 구시가지에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 330000, 'ON_SALE', 309);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 가성비 인', 3, '구시가지', '브리즈번 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 130000, 'ON_SALE', 310);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 화분 가든 호텔', 4, '공원 옆', '브리즈번 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 230000, 'ON_SALE', 311);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (97, NULL, '브리즈번 왕처럼 팰리스', 5, '공원 옆', '브리즈번 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 객실 내 라운지, 스파', 410000, 'ON_SALE', 312);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 공원뷰(?) 호텔', 3, '구시가지', '퍼스 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 313);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 그럭저럭 플라자', 4, '쇼핑가', '퍼스 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 210000, 'ON_SALE', 314);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (98, NULL, '퍼스 그랜드 짱짱 호텔', 5, '쇼핑가', '퍼스 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 400000, 'ON_SALE', 315);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 가성비 인', 3, '해변·항구', '오클랜드 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 120000, 'ON_SALE', 316);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 화분 가든 호텔', 4, '시내 중심', '오클랜드 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 317);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (99, NULL, '오클랜드 그랜드 짱짱 호텔', 5, '공원 옆', '오클랜드 공원 옆에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 390000, 'ON_SALE', 318);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 공원뷰(?) 호텔', 3, '역 인근', '나디 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 24시간 프런트, 조식 옵션', 120000, 'ON_SALE', 319);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 화분 가든 호텔', 4, '쇼핑가', '나디 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 210000, 'ON_SALE', 320);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (100, NULL, '나디 그랜드 짱짱 호텔', 5, '시내 중심', '나디 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 400000, 'ON_SALE', 321);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 가성비 인', 3, '공항 인근', '경주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 322);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 한가운데 호텔', 4, '시내 중심', '경주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '레스토랑, 공항 셔틀, 조식 포함', 110000, 'ON_SALE', 323);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 1, '경주 왕처럼 팰리스', 5, '시내 중심', '경주 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 324);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 공원뷰(?) 호텔', 3, '구시가지', '강릉 구시가지에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 325);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 화분 가든 호텔', 4, '쇼핑가', '강릉 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 120000, 'ON_SALE', 326);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 2, '강릉 왕처럼 팰리스', 5, '역 인근', '강릉 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 327);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 공원뷰(?) 호텔', 3, '공원 옆', '속초 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 328);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 한가운데 호텔', 4, '역 인근', '속초 역 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 329);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 3, '속초 왕처럼 팰리스', 5, '공항 인근', '속초 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 200000, 'ON_SALE', 330);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 가성비 인', 3, '시내 중심', '부산 시내 중심에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 70000, 'ON_SALE', 331);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 화분 가든 호텔', 4, '쇼핑가', '부산 쇼핑가에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 332);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 4, '부산 바다보임 리조트', 5, '역 인근', '부산 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '루프톱 바, 조식 포함, 객실 내 라운지', 210000, 'ON_SALE', 333);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 공원뷰(?) 호텔', 3, '해변·항구', '제주 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 60000, 'ON_SALE', 334);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 화분 가든 호텔', 4, '시내 중심', '제주 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 335);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 5, '제주 왕처럼 팰리스', 5, '역 인근', '제주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 210000, 'ON_SALE', 336);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 가성비 인', 3, '공항 인근', '전주 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 337);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 화분 가든 호텔', 4, '공항 인근', '전주 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 338);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 6, '전주 그랜드 짱짱 호텔', 5, '역 인근', '전주 역 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 200000, 'ON_SALE', 339);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 가성비 인', 3, '공항 인근', '여수 공항 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '24시간 프런트, 조식 옵션, 짐 보관', 80000, 'ON_SALE', 340);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 한가운데 호텔', 4, '시내 중심', '여수 시내 중심에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 포함, 무료 Wi-Fi, 피트니스', 120000, 'ON_SALE', 341);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 7, '여수 그랜드 짱짱 호텔', 5, '쇼핑가', '여수 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '객실 내 라운지, 스파, 수영장', 210000, 'ON_SALE', 342);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 잠만자는 호텔', 3, '공원 옆', '순천 공원 옆에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 60000, 'ON_SALE', 343);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 화분 가든 호텔', 4, '구시가지', '순천 구시가지에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '공항 셔틀, 조식 포함, 무료 Wi-Fi', 110000, 'ON_SALE', 344);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 8, '순천 그랜드 짱짱 호텔', 5, '쇼핑가', '순천 쇼핑가에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 220000, 'ON_SALE', 345);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 가성비 인', 3, '해변·항구', '통영 해변·항구에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '짐 보관, 무료 Wi-Fi, 24시간 프런트', 80000, 'ON_SALE', 346);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 한가운데 호텔', 4, '공원 옆', '통영 공원 옆에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '무료 Wi-Fi, 피트니스, 레스토랑', 100000, 'ON_SALE', 347);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 9, '통영 바다보임 리조트', 5, '공항 인근', '통영 공항 인근에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '수영장, 컨시어지, 루프톱 바', 200000, 'ON_SALE', 348);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 공원뷰(?) 호텔', 3, '역 인근', '단양 역 인근에 있는 3성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '조식 옵션, 짐 보관, 무료 Wi-Fi', 70000, 'ON_SALE', 349);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 화분 가든 호텔', 4, '공항 인근', '단양 공항 인근에 있는 4성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '피트니스, 레스토랑, 공항 셔틀', 110000, 'ON_SALE', 350);
+INSERT INTO hotel (destination_id, city_id, name, grade, area, summary, amenities, price_per_night, status, sort_order) VALUES (NULL, 10, '단양 왕처럼 팰리스', 5, '시내 중심', '단양 시내 중심에 있는 5성급 호텔. 여행 동선 중심에 있어 이동이 편하다.', '스파, 수영장, 컨시어지', 200000, 'ON_SALE', 351);
 
 -- [N] 크루즈 7곳(항구 도시)
 INSERT INTO cruise (destination_id, title, ship_name, departure_port, itinerary, nights, price_inside, price_balcony, highlights, status, sort_order) VALUES (6, '서부 지중해 7박 크루즈', '나도감 메디호', '바르셀로나 항', '바르셀로나 → 마르세유 → 제노바 → 나폴리 → 팔마 → 바르셀로나', 7, 1290000, 1790000, '선상 파에야 쿠킹 클래스, 항구별 반일 시티 투어, 갑판 야외 영화', 'ON_SALE', 1);
