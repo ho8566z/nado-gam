@@ -14,6 +14,7 @@
 	--gold: #ffd166;
 	--gold-ink: #946200;
 	--hot: #e03a52;
+	--ok: #2b8a3e;              /* 성공·판매 중 표시(포인트 색이 붉은 계열이라 오류와 구분하려고 초록을 쓴다) */
 	--radius: 28px;
 	--ease: cubic-bezier(0.22, 0.8, 0.2, 1);
 	--shadow-soft: rgba(27, 34, 54, 0.3);
