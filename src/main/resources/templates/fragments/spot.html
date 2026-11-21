@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- 카드·머리글에 붙이는 대표 관광지(명소)와 특산물 한 줄. 문구가 없으면 아무것도 그리지 않는다.
+     fragment 호출 인자에서는 @빈 을 못 쓰므로, 번호나 이름만 넘기고 조각 안에서 문구를 찾는다. -->
+<th:block th:fragment="byId(kind, id)">
+	<th:block th:with="landmark=${@destPhotos.landmark(kind, id)}, specialty=${@destPhotos.specialty(kind, id)}">
+		<th:block th:replace="~{:: line}"></th:block>
+	</th:block>
+</th:block>
+
+<th:block th:fragment="byName(scope, name)">
+	<th:block th:with="landmark=${@destPhotos.landmarkByName(scope, name)}, specialty=${@destPhotos.specialtyByName(scope, name)}">
+		<th:block th:replace="~{:: line}"></th:block>
+	</th:block>
+</th:block>
+
+<th:block th:fragment="line">
+	<p class="spot" th:if="${!#strings.isEmpty(landmark)}">
+		<span class="spot-item"><span class="spot-tag">명소</span><span th:text="${landmark}">에펠탑</span></span>
+		<span class="spot-item" th:if="${!#strings.isEmpty(specialty)}"><span class="spot-tag spot-tag--food">특산</span><span th:text="${specialty}">크루아상·와인</span></span>
+	</p>
+</th:block>
+</body>
+</html>
