@@ -32,14 +32,25 @@
 		</label>
 	</section>
 
+	<div class="sort-row" role="group" aria-label="정렬">
+		<span class="sort-label">정렬</span>
+		<button type="button" class="chip chip--tab is-active" data-sort="default" aria-pressed="true">기본순</button>
+		<button type="button" class="chip chip--tab" data-sort="price_asc" aria-pressed="false">가격 낮은순</button>
+		<button type="button" class="chip chip--tab" data-sort="price_desc" aria-pressed="false">가격 높은순</button>
+		<button type="button" class="chip chip--tab" data-sort="views" aria-pressed="false">조회수순</button>
+		<button type="button" class="chip chip--tab" data-sort="popular" aria-pressed="false">인기순</button>
+		<button type="button" class="chip chip--tab" data-sort="recommend" aria-pressed="false">여행사 추천순</button>
+	</div>
+
 	<p class="result-count"><b id="dest-count" th:text="${#lists.size(destinations)}">50</b>곳의 여행지 · 운항 가능 <span th:text="${availableCount}">49</span>곳</p>
 
-	<section class="dest-grid" aria-label="여행지 목록">
-		<th:block th:each="d : ${destinations}">
+	<section class="dest-grid" id="dest-grid" aria-label="여행지 목록">
+		<th:block th:each="d, st : ${destinations}">
 			<a th:if="${d.available()}" class="dest-card" data-dest data-transition
 				th:href="@{/travel/{id}(id=${d.destinationId()})}"
-				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()}"
+				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()},data-order=${st.count},data-price=${d.minPrice()},data-views=${d.viewCount()},data-sales=${d.salesCount()},data-pick=${d.agencyPick()},data-views-label=${d.viewCountLabel()},data-sales-label=${d.salesCountLabel()}"
 				th:style="|--c1:${d.from()};--c2:${d.to()}${@destPhotos.style('overseas', d.destinationId())}|">
+				<span class="dest-pick" th:if="${d.picked()}">★ 여행사 추천</span>
 				<span class="dest-bgtext" aria-hidden="true" th:text="${d.nameEn()}">PARIS</span>
 				<span class="dest-region" th:text="${d.regionLabel()}">유럽</span>
 				<div class="dest-body">
@@ -52,9 +63,10 @@
 					<span class="dest-price"><small>최저가</small> <b th:text="${d.minPriceLabel()}">₩690,000</b>~</span>
 					<span class="dest-count">항공편 <b th:text="${d.flightCount()}">3</b>편</span>
 				</div>
+				<span class="dest-stat" data-stat hidden></span>
 			</a>
 			<div th:unless="${d.available()}" class="dest-card is-disabled" data-dest aria-disabled="true"
-				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()}">
+				th:attr="data-region=${d.region()},data-name=${d.nameKo() + ' ' + d.nameEn() + ' ' + d.countryName()},data-order=${st.count},data-views=${d.viewCount()},data-sales=${d.salesCount()},data-pick=${d.agencyPick()}">
 				<span class="dest-bgtext" aria-hidden="true" th:text="${d.nameEn()}">VLADIVOSTOK</span>
 				<span class="dest-region" th:text="${d.regionLabel()}">아시아</span>
 				<div class="dest-body">

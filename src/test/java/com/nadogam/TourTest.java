@@ -127,9 +127,9 @@ class TourTest {
 
 	@Test
 	void 목록은_범위와_테마와_검색으로_거른다() {
-		assertThat(tours.cards(null, null, null)).hasSize(141);
+		assertThat(tours.cards(null, null, null)).hasSize(139);   // 해외 111개 중 서울·부산(한국) 2개는 해외 탭에서 뺀다
 		assertThat(tours.cards("DOMESTIC", null, null)).hasSize(30);
-		assertThat(tours.cards("OVERSEAS", "FOOD_DRINK", null)).hasSize(37);
+		assertThat(tours.cards("OVERSEAS", "FOOD_DRINK", null)).hasSize(35);   // 서울·부산 음식 투어는 해외 탭에서 뺀다
 		List<TourCard> barca = tours.cards(null, null, "바르셀로나");
 		assertThat(barca).hasSize(1);
 		assertThat(barca.get(0).placeName()).isEqualTo("바르셀로나");

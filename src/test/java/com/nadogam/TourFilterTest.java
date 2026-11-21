@@ -77,6 +77,6 @@ class TourFilterTest {
 	@Test
 	void 잘못된_대륙_국가_값은_무시하고_전체를_보여_준다() throws Exception {
 		mvc.perform(get("/tour").param("region", "MARS").param("country", "ZZ")).andExpect(status().isOk())
-			.andExpect(content().string(Matchers.containsString("141")));
+			.andExpect(content().string(Matchers.containsString("139")));
 	}
 }

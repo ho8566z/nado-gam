@@ -60,6 +60,7 @@ public class TravelController {
 			Model model) {
 		DestinationItem destination = search.destination(destinationId)
 			.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "없는 여행지입니다."));
+		search.countView(destinationId);
 		model.addAttribute("destination", destination);
 		model.addAttribute("hasCruise", stays.cruiseOfDestination(destinationId).isPresent());
 		model.addAttribute("active", "travel");

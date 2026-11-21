@@ -39,9 +39,11 @@ class TravelSearchTest {
 	}
 
 	@Test
-	void 여행지는_100곳이고_블라디보스토크만_운항_불가이며_항공편이_없다() {
+	void 여행지는_98곳이고_국내_도시는_빠지며_블라디보스토크만_운항_불가이며_항공편이_없다() {
 		List<DestinationItem> all = search.destinations();
-		assertThat(all).hasSize(100);
+		assertThat(all).hasSize(98);   // 100곳 중 한국(서울·부산)은 국내여행 탭 몫이라 뺀다
+		assertThat(all).extracting(DestinationItem::nameKo).doesNotContain("서울", "부산");
+		assertThat(search.destination(7)).isEmpty();
 		assertThat(all.stream().filter(d -> !d.available())).extracting(DestinationItem::nameKo).containsExactly("블라디보스토크");
 
 		DestinationItem vvo = search.destination(VLADIVOSTOK).orElseThrow();

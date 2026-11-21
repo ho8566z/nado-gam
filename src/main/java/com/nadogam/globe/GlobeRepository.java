@@ -40,7 +40,7 @@ public class GlobeRepository {
 		List<Head> heads = jdbc.sql("""
 			SELECT f.destination_id, d.name_ko, f.flight_id
 			FROM flight f JOIN destination d ON d.destination_id = f.destination_id
-			WHERE f.origin_airport = :origin AND d.status = 'AVAILABLE' AND f.status = 'ON_SALE'
+			WHERE f.origin_airport = :origin AND d.status = 'AVAILABLE' AND f.status = 'ON_SALE' AND d.country_code <> 'KR'
 			ORDER BY f.destination_id, f.duration_minutes, f.flight_id
 			""").param("origin", ORIGIN).query(Head.class).list();
 

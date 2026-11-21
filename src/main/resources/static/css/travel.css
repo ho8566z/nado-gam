@@ -132,3 +132,11 @@ a.dest-card:hover { transform: translateY(-5px); box-shadow: 0 24px 50px -20px v
 @media (max-width: 760px) {
 	.fare-table--detail th:nth-child(5), .fare-table--detail td:nth-child(5) { display: table-cell; }
 }
+
+/* 여행지 정렬(가격·조회수·인기·여행사 추천) */
+.sort-row { max-width: 1160px; margin: 6px auto 0; padding: 0 clamp(16px, 4vw, 32px); display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.sort-label { font-size: 13px; font-weight: 800; color: var(--muted); margin-right: 2px; }
+.dest-pick { position: absolute; top: 14px; right: 14px; z-index: 2; padding: 3px 9px; border-radius: 999px; background: var(--gold); color: #3a2a00; font-size: 11px; font-weight: 800; box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4); }
+.dest-stat { order: 1; align-self: flex-start; margin-top: -6px; padding: 2px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.92); color: #1b2236; font-size: 12px; font-weight: 800; }
+.dest-card .dest-foot { order: 2; }
+.dest-stat[hidden] { display: none; }

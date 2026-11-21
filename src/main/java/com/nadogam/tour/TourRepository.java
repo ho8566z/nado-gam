@@ -25,6 +25,9 @@ public class TourRepository {
 	public record Facet(String region, String countryCode, String countryName, long count) {
 	}
 
+	// 해외 탭에는 국내 도시(한국)가 여행지인 투어(서울·부산)를 넣지 않는다. 국내 도시 투어(여행지 없음)는 그대로 둔다.
+	private static final String NOT_KR_DESTINATION = "(t.destination_id IS NULL OR d.country_code <> 'KR')";
+
 	private final JdbcClient jdbc;
 
 	public TourRepository(JdbcClient jdbc) {
@@ -46,7 +49,7 @@ public class TourRepository {
 			       (SELECT MIN(o.price_per_person) FROM tour_option o WHERE o.tour_id = t.tour_id) AS min_price,
 			       (SELECT MIN(o.nights) FROM tour_option o WHERE o.tour_id = t.tour_id) AS min_nights,
 			       (SELECT MAX(o.nights) FROM tour_option o WHERE o.tour_id = t.tour_id) AS max_nights
-			""").append(PLACE_JOIN).append(COUNTRY_JOIN).append(" WHERE t.status = 'ON_SALE'");
+			""").append(PLACE_JOIN).append(COUNTRY_JOIN).append(" WHERE t.status = 'ON_SALE' AND " + NOT_KR_DESTINATION);
 		Map<String, Object> params = new HashMap<>();
 		if (region != null && !region.isBlank()) {
 			sql.append(" AND co.region = :region");
@@ -74,7 +77,7 @@ public class TourRepository {
 
 	public List<Facet> facets(String scope, String theme, String keyword) {
 		StringBuilder sql = new StringBuilder("SELECT co.region, co.country_code, co.name_ko AS country_name, COUNT(*) AS count ")
-			.append(PLACE_JOIN).append(COUNTRY_JOIN).append(" WHERE t.status = 'ON_SALE'");
+			.append(PLACE_JOIN).append(COUNTRY_JOIN).append(" WHERE t.status = 'ON_SALE' AND " + NOT_KR_DESTINATION);
 		Map<String, Object> params = new HashMap<>();
 		if (scope != null && !scope.isBlank()) {
 			sql.append(" AND t.scope = :scope");
@@ -99,7 +102,7 @@ public class TourRepository {
 			       COALESCE(d.name_ko, c.name_ko) AS place_name, COALESCE(d.name_en, '') AS place_en,
 			       COALESCE(d.poster_color_from, c.poster_color_from) AS color_from,
 			       COALESCE(d.poster_color_to, c.poster_color_to) AS color_to
-			""" + PLACE_JOIN + " WHERE t.tour_id = :id AND t.status = 'ON_SALE'")
+			""" + PLACE_JOIN + " WHERE t.tour_id = :id AND t.status = 'ON_SALE' AND " + NOT_KR_DESTINATION)
 			.param("id", tourId).query(TourDetail.class).optional();
 	}
 

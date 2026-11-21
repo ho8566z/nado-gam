@@ -21,7 +21,9 @@ public class TravelSearchRepository {
 
 	private static final String DESTINATION_SQL = """
 		SELECT d.destination_id, d.name_ko, d.name_en, c.name_ko AS country_name, c.region, d.status, d.unavailable_reason,
-		       d.summary, d.poster_color_from, d.poster_color_to,
+		       d.summary, d.poster_color_from, d.poster_color_to, d.view_count, d.agency_pick,
+		       (SELECT COALESCE(SUM(s.sales_count), 0) FROM flight_sales_stat s JOIN flight f ON f.flight_id = s.flight_id
+		         WHERE f.destination_id = d.destination_id) AS sales_count,
 		       (SELECT COUNT(*) FROM flight f WHERE f.destination_id = d.destination_id AND f.status = 'ON_SALE') AS flight_count,
 		       (SELECT MIN(ff.base_price + ff.tax_fuel) FROM flight f
 		          JOIN flight_fare ff ON ff.flight_id = f.flight_id AND ff.cabin_class = 'ECONOMY'
@@ -37,13 +39,21 @@ public class TravelSearchRepository {
 		this.query = query;
 	}
 
+	// 해외 여행 탭에는 국내 도시(한국, 서울·부산)를 넣지 않는다. 국내 도시는 국내여행 탭에서 다룬다.
+	private static final String OVERSEAS_ONLY = " WHERE d.country_code <> 'KR'";
+
 	public List<DestinationItem> destinations() {
-		return jdbc.sql(DESTINATION_SQL + " ORDER BY d.sort_order").query(DestinationItem.class).list();
+		return jdbc.sql(DESTINATION_SQL + OVERSEAS_ONLY + " ORDER BY d.sort_order").query(DestinationItem.class).list();
 	}
 
 	public Optional<DestinationItem> destination(long destinationId) {
-		return jdbc.sql(DESTINATION_SQL + " WHERE d.destination_id = :id").param("id", destinationId)
+		return jdbc.sql(DESTINATION_SQL + OVERSEAS_ONLY + " AND d.destination_id = :id").param("id", destinationId)
 			.query(DestinationItem.class).optional();
+	}
+
+	// 여행지 상세를 열 때마다 조회수를 1 올린다.
+	public void countView(long destinationId) {
+		jdbc.sql("UPDATE destination SET view_count = view_count + 1 WHERE destination_id = :id").param("id", destinationId).update();
 	}
 
 	// 그 여행지로 가는 항공편이 있는 출발지만 반환한다. (공항 데이터에 출발지 표시를 따로 두지 않는다)

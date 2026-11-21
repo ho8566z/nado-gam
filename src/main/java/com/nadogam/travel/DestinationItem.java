@@ -15,7 +15,10 @@ public record DestinationItem(
 		String posterColorFrom,
 		String posterColorTo,
 		int flightCount,
-		Integer minPrice) {
+		Integer minPrice,
+		long viewCount,
+		long salesCount,
+		int agencyPick) {
 
 	public boolean available() {
 		return "AVAILABLE".equals(status);
@@ -48,6 +51,18 @@ public record DestinationItem(
 			case "AFRICA" -> "#74b816";
 			default -> "#4dabf7";
 		});
+	}
+
+	public String viewCountLabel() {
+		return Fmt.count(viewCount);
+	}
+
+	public String salesCountLabel() {
+		return Fmt.count(salesCount);
+	}
+
+	public boolean picked() {
+		return agencyPick > 0;
 	}
 
 	public String minPriceLabel() {

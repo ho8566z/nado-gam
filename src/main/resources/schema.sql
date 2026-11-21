@@ -149,6 +149,8 @@ CREATE TABLE destination (
     poster_color_from   CHAR(7)       NULL,
     poster_color_to     CHAR(7)       NULL,
     sort_order          INT           NOT NULL DEFAULT 0,
+    view_count          BIGINT        NOT NULL DEFAULT 0,
+    agency_pick         INT           NOT NULL DEFAULT 0,
     PRIMARY KEY (destination_id),
     CONSTRAINT fk_dest_country FOREIGN KEY (country_code) REFERENCES country (country_code),
     CONSTRAINT fk_dest_airport FOREIGN KEY (main_airport) REFERENCES airport (airport_code)
