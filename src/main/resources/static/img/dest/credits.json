@@ -1,0 +1,874 @@
+{
+ "domestic-1": {
+  "author": "Unknown authorUnknown author",
+  "file": "Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju,_Korea.jpg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju,_Korea.jpg",
+  "subject": "불국사",
+  "wiki": "ko"
+ },
+ "domestic-10": {
+  "author": "Steve46814",
+  "file": "Korea-Danyang-Dodamsambong_3087-07.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Korea-Danyang-Dodamsambong_3087-07.JPG",
+  "subject": "도담삼봉",
+  "wiki": "ko"
+ },
+ "domestic-2": {
+  "author": "Scroozle",
+  "file": "Gyeongpodae_Pavilion_Gangneung.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gyeongpodae_Pavilion_Gangneung.JPG",
+  "subject": "경포대",
+  "wiki": "ko"
+ },
+ "domestic-3": {
+  "author": "Juliana Ng from Singapore",
+  "file": "Korea_Seoraksan.jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Korea_Seoraksan.jpg",
+  "subject": "설악산",
+  "wiki": "ko"
+ },
+ "domestic-4": {
+  "author": "Glabb",
+  "file": "Gwangan_Bridge1.jpg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Gwangan_Bridge1.jpg",
+  "subject": "광안대교",
+  "wiki": "ko"
+ },
+ "domestic-5": {
+  "author": "Korea.net / Korean Culture and Information Service",
+  "file": "성산일출봉_천연보호구역_2019년_촬영(출처_문화재청_대변인실).jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%EC%84%B1%EC%82%B0%EC%9D%BC%EC%B6%9C%EB%B4%89_%EC%B2%9C%EC%97%B0%EB%B3%B4%ED%98%B8%EA%B5%AC%EC%97%AD_2019%EB%85%84_%EC%B4%AC%EC%98%81(%EC%B6%9C%EC%B2%98_%EB%AC%B8%ED%99%94%EC%9E%AC%EC%B2%AD_%EB%8C%80%EB%B3%80%EC%9D%B8%EC%8B%A4).jpg",
+  "subject": "성산 일출봉",
+  "wiki": "ko"
+ },
+ "domestic-6": {
+  "author": "Songk1122",
+  "file": "전주한옥마을_전경.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%EC%A0%84%EC%A3%BC%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84_%EC%A0%84%EA%B2%BD.JPG",
+  "subject": "전주 한옥마을",
+  "wiki": "ko"
+ },
+ "domestic-7": {
+  "author": "Mobius6",
+  "file": "Yeosu_Odongdo_20180929_002.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Yeosu_Odongdo_20180929_002.jpg",
+  "subject": "오동도",
+  "wiki": "ko"
+ },
+ "domestic-8": {
+  "author": "Jjw",
+  "file": "20181231_Suncheon_Bay_002.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:20181231_Suncheon_Bay_002.jpg",
+  "subject": "순천만",
+  "wiki": "ko"
+ },
+ "domestic-9": {
+  "author": "Jungho Jung and User:Asfreeas\nDerivative work by User:Caspian blue",
+  "file": "Korea-Tongyeong-Collage-01.jpg",
+  "license": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Korea-Tongyeong-Collage-01.jpg",
+  "subject": "통영시",
+  "wiki": "ko"
+ },
+ "overseas-1": {
+  "author": "Benh LIEU SONG",
+  "file": "Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
+  "subject": "Eiffel Tower",
+  "wiki": "en"
+ },
+ "overseas-10": {
+  "author": "663highland",
+  "file": "Osaka_Castle_03bs3200.jpg",
+  "license": "CC BY 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_03bs3200.jpg",
+  "subject": "Osaka Castle",
+  "wiki": "en"
+ },
+ "overseas-100": {
+  "author": "Henning Blatt",
+  "file": "Nadi.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Nadi.jpg",
+  "subject": "Nadi",
+  "wiki": "en"
+ },
+ "overseas-11": {
+  "author": "Steffen Flor",
+  "file": "Fukuoka_Tower_Before_Sunset.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Fukuoka_Tower_Before_Sunset.jpg",
+  "subject": "Fukuoka Tower",
+  "wiki": "en"
+ },
+ "overseas-12": {
+  "author": "Bjørn Christian Tørrissen",
+  "file": "Sapporo-Clock-Tower-2018.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sapporo-Clock-Tower-2018.jpg",
+  "subject": "Sapporo Clock Tower",
+  "wiki": "en"
+ },
+ "overseas-13": {
+  "author": "Pixelflake",
+  "file": "The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
+  "subject": "Forbidden City",
+  "wiki": "en"
+ },
+ "overseas-14": {
+  "author": "Mastertongapollo",
+  "file": "เจดีย์ประธานทรงปรางค์วัดอรุณ2.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg",
+  "subject": "Wat Arun",
+  "wiki": "en"
+ },
+ "overseas-15": {
+  "author": "Даниил Рыжков (Daniil Ryzhkov)",
+  "file": "Золотой_мост,_июль_2013.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D0%BC%D0%BE%D1%81%D1%82,_%D0%B8%D1%8E%D0%BB%D1%8C_2013.jpg",
+  "subject": "Zolotoy Bridge",
+  "wiki": "en"
+ },
+ "overseas-16": {
+  "author": "AskALotl",
+  "file": "Front_view_of_Statue_of_Liberty_(cropped).jpg",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
+  "subject": "Statue of Liberty",
+  "wiki": "en"
+ },
+ "overseas-17": {
+  "author": "Martin Falbisoner",
+  "file": "Lincoln_Memorial_east_side.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_east_side.JPG",
+  "subject": "Lincoln Memorial",
+  "wiki": "en"
+ },
+ "overseas-18": {
+  "author": "Gnaphron",
+  "file": "Hollywood_sign_(8485145044).jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hollywood_sign_(8485145044).jpg",
+  "subject": "Hollywood Sign",
+  "wiki": "en"
+ },
+ "overseas-19": {
+  "author": "War Office",
+  "file": "1957_map_of_Victoria_Harbour_by_the_British_War_Office.jpg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:1957_map_of_Victoria_Harbour_by_the_British_War_Office.jpg",
+  "subject": "Victoria Harbour",
+  "wiki": "en"
+ },
+ "overseas-2": {
+  "author": "Fuzzypiggy",
+  "file": "Tower_Bridge_at_Dawn.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Dawn.jpg",
+  "subject": "Tower Bridge",
+  "wiki": "en"
+ },
+ "overseas-20": {
+  "author": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author an",
+  "file": "Oriental_Pearl_Tower_20251126.jpg",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Oriental_Pearl_Tower_20251126.jpg",
+  "subject": "Oriental Pearl Tower",
+  "wiki": "en"
+ },
+ "overseas-21": {
+  "author": "imran shahabuddin",
+  "file": "Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg",
+  "subject": "Burj Khalifa",
+  "wiki": "en"
+ },
+ "overseas-22": {
+  "author": "File:Chicago River ferry.jpg: John Picken\nderivative work: Georgfotoart",
+  "file": "Chicago_River_ferry_b.jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Chicago_River_ferry_b.jpg",
+  "subject": "Chicago",
+  "wiki": "en"
+ },
+ "overseas-23": {
+  "author": "BAVhah",
+  "file": "Sydney_Opera_House_2026.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_2026.jpg",
+  "subject": "Sydney Opera House",
+  "wiki": "en"
+ },
+ "overseas-24": {
+  "author": "The original uploader was Soggybread at English Wikipedia.",
+  "file": "Stanley_Park_Labeled_Aerial_Map.png",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Stanley_Park_Labeled_Aerial_Map.png",
+  "subject": "Stanley Park",
+  "wiki": "en"
+ },
+ "overseas-25": {
+  "author": "ProtoplasmaKid",
+  "file": "Vista_aérea_de_la_Avenida_Paulista_de_São_Paulo_02.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_la_Avenida_Paulista_de_S%C3%A3o_Paulo_02.jpg",
+  "subject": "Avenida Paulista",
+  "wiki": "en"
+ },
+ "overseas-26": {
+  "author": "Douwe C. van der Zee",
+  "file": "Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+  "subject": "Great Pyramid of Giza",
+  "wiki": "en"
+ },
+ "overseas-27": {
+  "author": "Danie van der Merwe from Cape Town, South Africa",
+  "file": "Table_Mountain_DanieVDM.jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DanieVDM.jpg",
+  "subject": "Table Mountain",
+  "wiki": "en"
+ },
+ "overseas-28": {
+  "author": "Jiuguang Wang",
+  "file": "Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+  "subject": "Milan Cathedral",
+  "wiki": "en"
+ },
+ "overseas-29": {
+  "author": "Andrés Barrios",
+  "file": "Imagen_de_los_canales_concéntricos_en_Ámsterdam.png",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png",
+  "subject": "Canals of Amsterdam",
+  "wiki": "en"
+ },
+ "overseas-3": {
+  "author": "Thomas Wolf, www.foto-tw.de",
+  "file": "Brandenburger_Tor_abends.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg",
+  "subject": "Brandenburg Gate",
+  "wiki": "en"
+ },
+ "overseas-30": {
+  "author": "Adli Wahid",
+  "file": "Hagia_Sophia_(228968325).jpeg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg",
+  "subject": "Hagia Sophia",
+  "wiki": "en"
+ },
+ "overseas-31": {
+  "author": "A.Savin",
+  "file": "Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_img3.jpg",
+  "license": "FAL",
+  "source": "https://commons.wikimedia.org/wiki/File:Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_img3.jpg",
+  "subject": "Charles Bridge",
+  "wiki": "en"
+ },
+ "overseas-32": {
+  "author": "C.Stadler/Bwag",
+  "file": "Wien_-_Schloss_Schönbrunn.JPG",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
+  "subject": "Schönbrunn Palace",
+  "wiki": "en"
+ },
+ "overseas-33": {
+  "author": "Alvesgaspar",
+  "file": "Torre_Belém_April_2009-4a.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Torre_Bel%C3%A9m_April_2009-4a.jpg",
+  "subject": "Belém Tower",
+  "wiki": "en"
+ },
+ "overseas-34": {
+  "author": "Daniel Kraft",
+  "file": "Edinburgh_Castle_from_Esplanade_20211019.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_from_Esplanade_20211019.jpg",
+  "subject": "Edinburgh Castle",
+  "wiki": "en"
+ },
+ "overseas-35": {
+  "author": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author an",
+  "file": "Marina_Bay_Sands_(I).jpg",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_(I).jpg",
+  "subject": "Marina Bay Sands",
+  "wiki": "en"
+ },
+ "overseas-36": {
+  "author": "GG001213",
+  "file": "大三巴牌坊.jpg",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E4%B8%89%E5%B7%B4%E7%89%8C%E5%9D%8A.jpg",
+  "subject": "Ruins of St. Paul's",
+  "wiki": "en"
+ },
+ "overseas-37": {
+  "author": "Taipei Financial Center Corporation",
+  "file": "Taipei_101_logo.svg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Taipei_101_logo.svg",
+  "subject": "Taipei 101",
+  "wiki": "en"
+ },
+ "overseas-38": {
+  "author": "Bùi Thụy Đào Nguyên",
+  "file": "Cầu_Rồng.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:C%E1%BA%A7u_R%E1%BB%93ng.jpg",
+  "subject": "Dragon Bridge (Da Nang)",
+  "wiki": "en"
+ },
+ "overseas-39": {
+  "author": "Tervlugt",
+  "file": "Ganesh_Tempel_Po_Nagar_Nha_Trang.jpg",
+  "license": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ganesh_Tempel_Po_Nagar_Nha_Trang.jpg",
+  "subject": "Po Nagar",
+  "wiki": "en"
+ },
+ "overseas-4": {
+  "author": "Tim Adams",
+  "file": "Palacio_Real_de_Madrid_Julio_2016_(cropped).jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Palacio_Real_de_Madrid_Julio_2016_(cropped).jpg",
+  "subject": "Royal Palace of Madrid",
+  "wiki": "en"
+ },
+ "overseas-40": {
+  "author": "[//commons.wikimedia.org/wiki/User:Trantuonglam Trantuonglam]",
+  "file": "Bai-sao-phu-quoc-tuonglamphotos.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bai-sao-phu-quoc-tuonglamphotos.jpg",
+  "subject": "Phú Quốc",
+  "wiki": "en"
+ },
+ "overseas-41": {
+  "author": "Grayswoodsurrey",
+  "file": "TanahLot_2014.JPG",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:TanahLot_2014.JPG",
+  "subject": "Tanah Lot",
+  "wiki": "en"
+ },
+ "overseas-42": {
+  "author": "Cyril Doussin from London, United Kingdom",
+  "file": "Thap_Rua.jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Thap_Rua.jpg",
+  "subject": "Hoàn Kiếm Lake",
+  "wiki": "en"
+ },
+ "overseas-43": {
+  "author": "Diego Delso",
+  "file": "Basílica_de_Nuestra_Señora,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_03.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_Nuestra_Se%C3%B1ora,_Ciudad_Ho_Chi_Minh,_Vietnam,_2013-08-14,_DD_03.JPG",
+  "subject": "Saigon Notre-Dame Basilica",
+  "wiki": "en"
+ },
+ "overseas-44": {
+  "author": "Unknown authorUnknown author",
+  "file": "Petronas_Towers_Logo.svg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_Logo.svg",
+  "subject": "Petronas Towers",
+  "wiki": "en"
+ },
+ "overseas-45": {
+  "author": "Frank Schulenburg",
+  "file": "Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
+  "subject": "Golden Gate Bridge",
+  "wiki": "en"
+ },
+ "overseas-46": {
+  "author": "Unknown authorUnknown author",
+  "file": "CN_Tower_logo.png",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:CN_Tower_logo.png",
+  "subject": "CN Tower",
+  "wiki": "en"
+ },
+ "overseas-47": {
+  "author": "mar1865",
+  "file": "Diamond_Head_Hawaii_From_Round_Top_Rd.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Diamond_Head_Hawaii_From_Round_Top_Rd.JPG",
+  "subject": "Diamond Head, Hawaii",
+  "wiki": "en"
+ },
+ "overseas-48": {
+  "author": "Xavier Quetzalcoatl Contreras Castillo",
+  "file": "Bellas_Artes_01.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bellas_Artes_01.jpg",
+  "subject": "Palacio de Bellas Artes",
+  "wiki": "en"
+ },
+ "overseas-49": {
+  "author": "Created by Philip Mallis in 2021; cropped by HappyWaldo",
+  "file": "Flinders_Station_and_trams.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Flinders_Station_and_trams.jpg",
+  "subject": "Flinders Street railway station",
+  "wiki": "en"
+ },
+ "overseas-5": {
+  "author": "FeaturedPics",
+  "file": "Colosseo_2020.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+  "subject": "Colosseum",
+  "wiki": "en"
+ },
+ "overseas-50": {
+  "author": "Abasaa",
+  "file": "Two_Lovers_Point_from_Tumon_Bay.JPG",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Two_Lovers_Point_from_Tumon_Bay.JPG",
+  "subject": "Two Lovers Point",
+  "wiki": "en"
+ },
+ "overseas-51": {
+  "author": "Diego Delso",
+  "file": "Baluartillo_de_San_José,_Manila,_Filipinas,_2023-08-26,_DD_41.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Baluartillo_de_San_Jos%C3%A9,_Manila,_Filipinas,_2023-08-26,_DD_41.jpg",
+  "subject": "Intramuros",
+  "wiki": "en"
+ },
+ "overseas-52": {
+  "author": "AKS.9955",
+  "file": "India_Gate_front.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:India_Gate_front.jpg",
+  "subject": "India Gate",
+  "wiki": "en"
+ },
+ "overseas-53": {
+  "author": "A.Savin",
+  "file": "Mumbai_03-2016_30_Gateway_of_India.jpg",
+  "license": "FAL",
+  "source": "https://commons.wikimedia.org/wiki/File:Mumbai_03-2016_30_Gateway_of_India.jpg",
+  "subject": "Gateway of India",
+  "wiki": "en"
+ },
+ "overseas-54": {
+  "author": "Yashaswi.jayakumar",
+  "file": "Lighting_of_Vidhana_Soudha.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lighting_of_Vidhana_Soudha.jpg",
+  "subject": "Vidhana Soudha",
+  "wiki": "en"
+ },
+ "overseas-55": {
+  "author": "AKS.9955",
+  "file": "Gangaramaya_Temple.JPG",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gangaramaya_Temple.JPG",
+  "subject": "Gangaramaya Temple",
+  "wiki": "en"
+ },
+ "overseas-56": {
+  "author": "Sumitbhatt222",
+  "file": "Boudhanath_stupa_,_Kathmandu,_Nepal.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Boudhanath_stupa_,_Kathmandu,_Nepal.jpg",
+  "subject": "Boudhanath",
+  "wiki": "en"
+ },
+ "overseas-57": {
+  "author": "Chongkian",
+  "file": "Gandantegchinlen_Monastery_(2024).jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gandantegchinlen_Monastery_(2024).jpg",
+  "subject": "Gandantegchinlen Monastery",
+  "wiki": "en"
+ },
+ "overseas-58": {
+  "author": "Petar Milošević",
+  "file": "Zenkov_cathedral.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Zenkov_cathedral.jpg",
+  "subject": "Ascension Cathedral, Almaty",
+  "wiki": "en"
+ },
+ "overseas-59": {
+  "author": "Ymblanter",
+  "file": "Barakhan_Madrasah_Tashkent.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Barakhan_Madrasah_Tashkent.jpg",
+  "subject": "Hazrati Imam Complex",
+  "wiki": "en"
+ },
+ "overseas-6": {
+  "author": "Canaan",
+  "file": "SF_maig_2_cropped.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg",
+  "subject": "Sagrada Família",
+  "wiki": "en"
+ },
+ "overseas-60": {
+  "author": "Unknown",
+  "file": "Jakarta_Indonesia_National-Monument-02.jpg",
+  "license": "See source",
+  "source": "https://commons.wikimedia.org/wiki/File:Jakarta_Indonesia_National-Monument-02.jpg",
+  "subject": "National Monument (Indonesia)",
+  "wiki": "en"
+ },
+ "overseas-61": {
+  "author": "Tim Wu",
+  "file": "Canton_Tower_20241027_(cropped).jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Canton_Tower_20241027_(cropped).jpg",
+  "subject": "Canton Tower",
+  "wiki": "en"
+ },
+ "overseas-62": {
+  "author": "Kreisverkehrsampel",
+  "file": "Chengdu_Research_Base_Eingang.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Chengdu_Research_Base_Eingang.jpg",
+  "subject": "Chengdu Research Base of Giant Panda Breeding",
+  "wiki": "en"
+ },
+ "overseas-63": {
+  "author": "Unknown",
+  "file": "Museum_of_Islamic_Art_in_Doha,_Qatar_(32673171432).jpg",
+  "license": "See source",
+  "source": "https://commons.wikimedia.org/wiki/File:Museum_of_Islamic_Art_in_Doha%2C_Qatar_%2832673171432%29.jpg",
+  "subject": "Museum of Islamic Art, Doha",
+  "wiki": "en"
+ },
+ "overseas-64": {
+  "author": "Hamza A. Durrani",
+  "file": "Kingdom_Centre_Riyadh_2024.jpeg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Kingdom_Centre_Riyadh_2024.jpeg",
+  "subject": "Kingdom Centre",
+  "wiki": "en"
+ },
+ "overseas-65": {
+  "author": "Godot13",
+  "file": "ISR-2013-Aerial-Jaffa-Port_of_Jaffa.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:ISR-2013-Aerial-Jaffa-Port_of_Jaffa.jpg",
+  "subject": "Jaffa",
+  "wiki": "en"
+ },
+ "overseas-66": {
+  "author": "Ferdinand Reus from Arnhem, Holland",
+  "file": "King_Fahd’s_Fountain.jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:King_Fahd%E2%80%99s_Fountain.jpg",
+  "subject": "King Fahd's Fountain",
+  "wiki": "en"
+ },
+ "overseas-67": {
+  "author": "Rudolf Stricker",
+  "file": "Heiligenstein_Sankt_Sigismund_20110320.jpg",
+  "license": "Attribution",
+  "source": "https://commons.wikimedia.org/wiki/File:Heiligenstein_Sankt_Sigismund_20110320.jpg",
+  "subject": "Römerberg",
+  "wiki": "en"
+ },
+ "overseas-68": {
+  "author": "Roland zh",
+  "file": "Grossmünster_-_Münsterhof_2014-05-23_12-08-43.JPG",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Grossm%C3%BCnster_-_M%C3%BCnsterhof_2014-05-23_12-08-43.JPG",
+  "subject": "Grossmünster",
+  "wiki": "en"
+ },
+ "overseas-69": {
+  "author": "Kilyann Le Hen",
+  "file": "Hungarian_Parliament_Building_from_across_the_Danube,_2025-01-11.jpg",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hungarian_Parliament_Building_from_across_the_Danube,_2025-01-11.jpg",
+  "subject": "Hungarian Parliament Building",
+  "wiki": "en"
+ },
+ "overseas-7": {
+  "author": "서울관광 아카이브",
+  "file": "광화문_월대.jpg",
+  "license": "KOGL Type 1",
+  "source": "https://commons.wikimedia.org/wiki/File:%EA%B4%91%ED%99%94%EB%AC%B8_%EC%9B%94%EB%8C%80.jpg",
+  "subject": "Gyeongbokgung",
+  "wiki": "en"
+ },
+ "overseas-70": {
+  "author": "Chris Olszewski",
+  "file": "Royal_Castle_in_Warsaw,_Poland,_2022,_03.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Royal_Castle_in_Warsaw,_Poland,_2022,_03.jpg",
+  "subject": "Royal Castle, Warsaw",
+  "wiki": "en"
+ },
+ "overseas-71": {
+  "author": "European Commission",
+  "file": "The_Nyhavn_Canal_3.jpg",
+  "license": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Nyhavn_Canal_3.jpg",
+  "subject": "Nyhavn",
+  "wiki": "en"
+ },
+ "overseas-72": {
+  "author": "Arild Vågen",
+  "file": "Gamla_stan_September_2014_01.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gamla_stan_September_2014_01.jpg",
+  "subject": "Gamla stan",
+  "wiki": "en"
+ },
+ "overseas-73": {
+  "author": "Pierre Blaché",
+  "file": "Oslo_Opera_House_-_2025.jpg",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Oslo_Opera_House_-_2025.jpg",
+  "subject": "Oslo Opera House",
+  "wiki": "en"
+ },
+ "overseas-74": {
+  "author": "Manster323",
+  "file": "Kirkko3.png",
+  "license": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File:Kirkko3.png",
+  "subject": "Helsinki Cathedral",
+  "wiki": "en"
+ },
+ "overseas-75": {
+  "author": "Unknown",
+  "file": "HalfPennyBridge.jpg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:HalfPennyBridge.jpg",
+  "subject": "Ha'penny Bridge",
+  "wiki": "en"
+ },
+ "overseas-76": {
+  "author": "Steve Swayne",
+  "file": "The_Parthenon_in_Athens.jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
+  "subject": "Parthenon",
+  "wiki": "en"
+ },
+ "overseas-77": {
+  "author": "flightlog",
+  "file": "Lions_of_Kenya_02.jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lions_of_Kenya_02.jpg",
+  "subject": "Nairobi National Park",
+  "wiki": "en"
+ },
+ "overseas-78": {
+  "author": "Michael Denne from Hobart, Australia",
+  "file": "Soweto-002.jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Soweto-002.jpg",
+  "subject": "Soweto",
+  "wiki": "en"
+ },
+ "overseas-79": {
+  "author": "Unknown",
+  "file": "Hassan_II_mosque,_Casablanca_2.jpg",
+  "license": "See source",
+  "source": "https://commons.wikimedia.org/wiki/File:Hassan_II_mosque%2C_Casablanca_2.jpg",
+  "subject": "Hassan II Mosque",
+  "wiki": "en"
+ },
+ "overseas-8": {
+  "author": "Bl00dnFl4mes",
+  "file": "Gamcheon_Houses,_2024.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gamcheon_Houses,_2024.jpg",
+  "subject": "Gamcheon Culture Village",
+  "wiki": "en"
+ },
+ "overseas-80": {
+  "author": "Gize12",
+  "file": "Addis_Ababa_Ethiopia_2.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Addis_Ababa_Ethiopia_2.jpg",
+  "subject": "Holy Trinity Cathedral, Addis Ababa",
+  "wiki": "en"
+ },
+ "overseas-81": {
+  "author": "David Stanley from Nanaimo, Canada",
+  "file": "St_Joseph's_Catholic_Cathedral_(34895613805).jpg",
+  "license": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:St_Joseph%27s_Catholic_Cathedral_(34895613805).jpg",
+  "subject": "Dar es Salaam",
+  "wiki": "en"
+ },
+ "overseas-82": {
+  "author": "IssamBarhoumi",
+  "file": "Medina_old_Town_of_Tunis.jpeg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Medina_old_Town_of_Tunis.jpeg",
+  "subject": "Medina of Tunis",
+  "wiki": "en"
+ },
+ "overseas-83": {
+  "author": "Amoat7",
+  "file": "Acca.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Acca.jpg",
+  "subject": "Accra",
+  "wiki": "en"
+ },
+ "overseas-84": {
+  "author": "Jordon Kalilich",
+  "file": "Space_Needle_2011-07-04.jpg",
+  "license": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File:Space_Needle_2011-07-04.jpg",
+  "subject": "Space Needle",
+  "wiki": "en"
+ },
+ "overseas-86": {
+  "author": "chensiyuan",
+  "file": "Ocean_drive_day_2009j.JPG",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ocean_drive_day_2009j.JPG",
+  "subject": "South Beach",
+  "wiki": "en"
+ },
+ "overseas-87": {
+  "author": "Hogs555",
+  "file": "RedRocks.jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:RedRocks.jpg",
+  "subject": "Red Rocks Park and Amphitheatre",
+  "wiki": "en"
+ },
+ "overseas-88": {
+  "author": "Diego Delso",
+  "file": "Basílica_de_Notre-Dame,_Montreal,_Canadá,_2017-08-11,_DD_26-28_HDR.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_Notre-Dame,_Montreal,_Canad%C3%A1,_2017-08-11,_DD_26-28_HDR.jpg",
+  "subject": "Notre-Dame Basilica (Montreal)",
+  "wiki": "en"
+ },
+ "overseas-89": {
+  "author": "Daniel Schwen",
+  "file": "Chichen_Itza_3.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
+  "subject": "Chichen Itza",
+  "wiki": "en"
+ },
+ "overseas-9": {
+  "author": "Akonnchiroll",
+  "file": "Tokyo_Tower_2023.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_2023.jpg",
+  "subject": "Tokyo Tower",
+  "wiki": "en"
+ },
+ "overseas-90": {
+  "author": "Dronepicr",
+  "file": "Panama_Papers_(148830809).jpeg",
+  "license": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Panama_Papers_(148830809).jpeg",
+  "subject": "Panama City",
+  "wiki": "en"
+ },
+ "overseas-91": {
+  "author": "Arne Müseler",
+  "file": "Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+  "license": "CC BY-SA 3.0 de",
+  "source": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg",
+  "subject": "Christ the Redeemer (statue)",
+  "wiki": "en"
+ },
+ "overseas-92": {
+  "author": "Luis Santos",
+  "file": "Panorama_Obelisco_de_Buenos_Aires_2019.jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Panorama_Obelisco_de_Buenos_Aires_2019.jpg",
+  "subject": "Obelisk of Buenos Aires",
+  "wiki": "en"
+ },
+ "overseas-93": {
+  "author": "Carlos yo",
+  "file": "San_Cristóbal_altura.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:San_Crist%C3%B3bal_altura.jpg",
+  "subject": "San Cristóbal Hill",
+  "wiki": "en"
+ },
+ "overseas-94": {
+  "author": "Murray Foubister",
+  "file": "Lima,_Peru…the_Plaza_de_Armas_de_Lima_by_day_(8444360764).jpg",
+  "license": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lima,_Peru%E2%80%A6the_Plaza_de_Armas_de_Lima_by_day_(8444360764).jpg",
+  "subject": "Plaza Mayor, Lima",
+  "wiki": "en"
+ },
+ "overseas-95": {
+  "author": "Felipe Restrepo Acosta",
+  "file": "2017_Bogotá_Basílica_del_Señor_Caído_de_Monserrate.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:2017_Bogot%C3%A1_Bas%C3%ADlica_del_Se%C3%B1or_Ca%C3%ADdo_de_Monserrate.jpg",
+  "subject": "Monserrate",
+  "wiki": "en"
+ },
+ "overseas-96": {
+  "author": "Samuelistok",
+  "file": "El_Voto_Nacional_._Quito,_Ecuador.JPG",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:El_Voto_Nacional_._Quito,_Ecuador.JPG",
+  "subject": "Basílica del Voto Nacional",
+  "wiki": "en"
+ },
+ "overseas-97": {
+  "author": "Chris Olszewski",
+  "file": "Streets_Beach_at_South_Bank_Parklands,_Brisbane_03.jpg",
+  "license": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Streets_Beach_at_South_Bank_Parklands,_Brisbane_03.jpg",
+  "subject": "South Bank Parklands",
+  "wiki": "en"
+ },
+ "overseas-98": {
+  "author": "Mark",
+  "file": "Kings_Park_War_Memorial_Sunrise.jpg",
+  "license": "GFDL",
+  "source": "https://commons.wikimedia.org/wiki/File:Kings_Park_War_Memorial_Sunrise.jpg",
+  "subject": "Kings Park, Perth",
+  "wiki": "en"
+ },
+ "overseas-99": {
+  "author": "Jorge Royan",
+  "file": "Sky_Tower,_Auckland_-_0206_(cropped).jpg",
+  "license": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sky_Tower,_Auckland_-_0206_(cropped).jpg",
+  "subject": "Sky Tower (Auckland)",
+  "wiki": "en"
+ }
+}

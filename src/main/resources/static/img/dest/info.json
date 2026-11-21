@@ -1,0 +1,556 @@
+{
+ "overseas": {
+  "1": {
+   "name": "파리",
+   "landmark": "에펠탑",
+   "specialty": "크루아상·와인"
+  },
+  "2": {
+   "name": "런던",
+   "landmark": "타워 브리지",
+   "specialty": "피시앤칩스"
+  },
+  "3": {
+   "name": "베를린",
+   "landmark": "브란덴부르크 문",
+   "specialty": "커리부어스트"
+  },
+  "4": {
+   "name": "마드리드",
+   "landmark": "마드리드 왕궁",
+   "specialty": "추로스·하몬"
+  },
+  "5": {
+   "name": "로마",
+   "landmark": "콜로세움",
+   "specialty": "젤라토·카르보나라"
+  },
+  "6": {
+   "name": "바르셀로나",
+   "landmark": "사그라다 파밀리아",
+   "specialty": "파에야·타파스"
+  },
+  "7": {
+   "name": "서울",
+   "landmark": "경복궁",
+   "specialty": "한정식·김치"
+  },
+  "8": {
+   "name": "부산",
+   "landmark": "감천문화마을",
+   "specialty": "돼지국밥·씨앗호떡"
+  },
+  "9": {
+   "name": "도쿄",
+   "landmark": "도쿄 타워",
+   "specialty": "스시·라멘"
+  },
+  "10": {
+   "name": "오사카",
+   "landmark": "오사카성",
+   "specialty": "타코야키"
+  },
+  "11": {
+   "name": "후쿠오카",
+   "landmark": "후쿠오카 타워",
+   "specialty": "하카타 돈코츠라멘"
+  },
+  "12": {
+   "name": "삿포로",
+   "landmark": "삿포로 시계탑",
+   "specialty": "징기스칸·맥주"
+  },
+  "13": {
+   "name": "베이징",
+   "landmark": "자금성",
+   "specialty": "베이징 덕"
+  },
+  "14": {
+   "name": "방콕",
+   "landmark": "왓 아룬",
+   "specialty": "팟타이·망고"
+  },
+  "15": {
+   "name": "블라디보스토크",
+   "landmark": "금각교",
+   "specialty": "킹크랩"
+  },
+  "16": {
+   "name": "뉴욕",
+   "landmark": "자유의 여신상",
+   "specialty": "치즈케이크·베이글"
+  },
+  "17": {
+   "name": "워싱턴D.C.",
+   "landmark": "링컨 기념관",
+   "specialty": "하프 스모크 소시지"
+  },
+  "18": {
+   "name": "로스앤젤레스",
+   "landmark": "할리우드 사인",
+   "specialty": "인앤아웃 버거"
+  },
+  "19": {
+   "name": "홍콩",
+   "landmark": "빅토리아 하버",
+   "specialty": "딤섬"
+  },
+  "20": {
+   "name": "상하이",
+   "landmark": "동방명주",
+   "specialty": "샤오룽바오"
+  },
+  "21": {
+   "name": "두바이",
+   "landmark": "부르즈 할리파",
+   "specialty": "대추야자"
+  },
+  "22": {
+   "name": "시카고",
+   "landmark": "클라우드 게이트",
+   "specialty": "딥디시 피자"
+  },
+  "23": {
+   "name": "시드니",
+   "landmark": "시드니 오페라 하우스",
+   "specialty": "미트파이"
+  },
+  "24": {
+   "name": "밴쿠버",
+   "landmark": "스탠리 파크",
+   "specialty": "연어·메이플 시럽"
+  },
+  "25": {
+   "name": "상파울루",
+   "landmark": "파울리스타 거리",
+   "specialty": "페이조아다"
+  },
+  "26": {
+   "name": "카이로",
+   "landmark": "기자 피라미드",
+   "specialty": "코샤리"
+  },
+  "27": {
+   "name": "케이프타운",
+   "landmark": "테이블 마운틴",
+   "specialty": "와인·비톡"
+  },
+  "28": {
+   "name": "밀라노",
+   "landmark": "밀라노 대성당",
+   "specialty": "리소토"
+  },
+  "29": {
+   "name": "암스테르담",
+   "landmark": "암스테르담 운하",
+   "specialty": "스트룹와플·치즈"
+  },
+  "30": {
+   "name": "이스탄불",
+   "landmark": "아야 소피아",
+   "specialty": "케밥·바클라바"
+  },
+  "31": {
+   "name": "프라하",
+   "landmark": "카를교",
+   "specialty": "굴라시·맥주"
+  },
+  "32": {
+   "name": "빈",
+   "landmark": "쇤브룬 궁전",
+   "specialty": "비너 슈니첼·자허토르테"
+  },
+  "33": {
+   "name": "리스본",
+   "landmark": "벨렘 탑",
+   "specialty": "에그타르트"
+  },
+  "34": {
+   "name": "에든버러",
+   "landmark": "에든버러 성",
+   "specialty": "위스키·해기스"
+  },
+  "35": {
+   "name": "싱가포르",
+   "landmark": "마리나 베이 샌즈",
+   "specialty": "칠리크랩"
+  },
+  "36": {
+   "name": "마카오",
+   "landmark": "성 바울 성당 유적",
+   "specialty": "포르투갈식 에그타르트"
+  },
+  "37": {
+   "name": "타이베이",
+   "landmark": "타이베이 101",
+   "specialty": "우육면·버블티"
+  },
+  "38": {
+   "name": "다낭",
+   "landmark": "용의 다리",
+   "specialty": "미꽝"
+  },
+  "39": {
+   "name": "나트랑",
+   "landmark": "포나가르 탑",
+   "specialty": "해산물 요리"
+  },
+  "40": {
+   "name": "푸꾸옥",
+   "landmark": "푸꾸옥 섬",
+   "specialty": "느억맘(피시 소스)"
+  },
+  "41": {
+   "name": "발리",
+   "landmark": "따나롯 사원",
+   "specialty": "나시고렝"
+  },
+  "42": {
+   "name": "하노이",
+   "landmark": "호안끼엠 호수",
+   "specialty": "쌀국수(퍼)"
+  },
+  "43": {
+   "name": "호치민",
+   "landmark": "사이공 노트르담 대성당",
+   "specialty": "반미"
+  },
+  "44": {
+   "name": "쿠알라룸푸르",
+   "landmark": "페트로나스 트윈 타워",
+   "specialty": "나시르막"
+  },
+  "45": {
+   "name": "샌프란시스코",
+   "landmark": "금문교",
+   "specialty": "사워도우·클램차우더"
+  },
+  "46": {
+   "name": "토론토",
+   "landmark": "CN 타워",
+   "specialty": "푸틴·메이플 시럽"
+  },
+  "47": {
+   "name": "호놀룰루",
+   "landmark": "다이아몬드 헤드",
+   "specialty": "포케·마카다미아"
+  },
+  "48": {
+   "name": "멕시코시티",
+   "landmark": "예술궁전",
+   "specialty": "타코·메스칼"
+  },
+  "49": {
+   "name": "멜버른",
+   "landmark": "플린더스 스트리트 역",
+   "specialty": "플랫화이트 커피"
+  },
+  "50": {
+   "name": "괌",
+   "landmark": "사랑의 연인 절벽",
+   "specialty": "차모로 바비큐"
+  },
+  "51": {
+   "name": "마닐라",
+   "landmark": "인트라무로스",
+   "specialty": "아도보·할로할로"
+  },
+  "52": {
+   "name": "델리",
+   "landmark": "인디아 게이트",
+   "specialty": "버터 치킨"
+  },
+  "53": {
+   "name": "뭄바이",
+   "landmark": "인도 문",
+   "specialty": "바다파브"
+  },
+  "54": {
+   "name": "방갈로르",
+   "landmark": "비다나 소우다",
+   "specialty": "도사·필터 커피"
+  },
+  "55": {
+   "name": "콜롬보",
+   "landmark": "강가라마야 사원",
+   "specialty": "실론 티"
+  },
+  "56": {
+   "name": "카트만두",
+   "landmark": "보다나트 스투파",
+   "specialty": "모모(만두)"
+  },
+  "57": {
+   "name": "울란바토르",
+   "landmark": "간단 사원",
+   "specialty": "허르헉·마유주"
+  },
+  "58": {
+   "name": "알마티",
+   "landmark": "젠코프 대성당",
+   "specialty": "아포르트 사과"
+  },
+  "59": {
+   "name": "타슈켄트",
+   "landmark": "하스트 이맘 단지",
+   "specialty": "플롭(오시)"
+  },
+  "60": {
+   "name": "자카르타",
+   "landmark": "모나스 독립기념탑",
+   "specialty": "나시고렝·사테"
+  },
+  "61": {
+   "name": "광저우",
+   "landmark": "광저우 타워",
+   "specialty": "딤섬·광둥 요리"
+  },
+  "62": {
+   "name": "청두",
+   "landmark": "판다 번식 연구기지",
+   "specialty": "마파두부·훠궈"
+  },
+  "63": {
+   "name": "도하",
+   "landmark": "이슬람 미술관",
+   "specialty": "아라비카 커피·대추"
+  },
+  "64": {
+   "name": "리야드",
+   "landmark": "킹덤 센터",
+   "specialty": "카브사"
+  },
+  "65": {
+   "name": "텔아비브",
+   "landmark": "야포 구시가지",
+   "specialty": "후무스·샥슈카"
+  },
+  "66": {
+   "name": "제다",
+   "landmark": "킹 파흐드 분수",
+   "specialty": "홍해 해산물"
+  },
+  "67": {
+   "name": "프랑크푸르트",
+   "landmark": "뢰머베르크 광장",
+   "specialty": "사과주·그린소스"
+  },
+  "68": {
+   "name": "취리히",
+   "landmark": "그로스뮌스터",
+   "specialty": "치즈 퐁뒤·초콜릿"
+  },
+  "69": {
+   "name": "부다페스트",
+   "landmark": "헝가리 국회의사당",
+   "specialty": "굴라시·토카이 와인"
+  },
+  "70": {
+   "name": "바르샤바",
+   "landmark": "바르샤바 왕궁",
+   "specialty": "피에로기"
+  },
+  "71": {
+   "name": "코펜하겐",
+   "landmark": "뉘하운",
+   "specialty": "스뫼레브뢰·데니시"
+  },
+  "72": {
+   "name": "스톡홀름",
+   "landmark": "감라스탄",
+   "specialty": "미트볼·청어"
+  },
+  "73": {
+   "name": "오슬로",
+   "landmark": "오슬로 오페라 하우스",
+   "specialty": "훈제 연어"
+  },
+  "74": {
+   "name": "헬싱키",
+   "landmark": "헬싱키 대성당",
+   "specialty": "연어 수프"
+  },
+  "75": {
+   "name": "더블린",
+   "landmark": "하페니 다리",
+   "specialty": "기네스·아이리시 스튜"
+  },
+  "76": {
+   "name": "아테네",
+   "landmark": "파르테논 신전",
+   "specialty": "그릭 요거트·수블라키"
+  },
+  "77": {
+   "name": "나이로비",
+   "landmark": "나이로비 국립공원",
+   "specialty": "케냐 커피"
+  },
+  "78": {
+   "name": "요하네스버그",
+   "landmark": "소웨토",
+   "specialty": "브라이(바비큐)"
+  },
+  "79": {
+   "name": "카사블랑카",
+   "landmark": "하산 2세 모스크",
+   "specialty": "쿠스쿠스·타진"
+  },
+  "80": {
+   "name": "아디스아바바",
+   "landmark": "성 삼위일체 대성당",
+   "specialty": "인제라·에티오피아 커피"
+  },
+  "81": {
+   "name": "다르에스살람",
+   "landmark": "다르에스살람 항구",
+   "specialty": "스와힐리 해산물"
+  },
+  "82": {
+   "name": "튀니스",
+   "landmark": "튀니스 메디나",
+   "specialty": "쿠스쿠스·올리브유"
+  },
+  "83": {
+   "name": "아크라",
+   "landmark": "독립 광장",
+   "specialty": "졸로프 라이스"
+  },
+  "84": {
+   "name": "시애틀",
+   "landmark": "스페이스 니들",
+   "specialty": "커피·연어"
+  },
+  "85": {
+   "name": "댈러스",
+   "landmark": "리유니언 타워",
+   "specialty": "텍사스 바비큐"
+  },
+  "86": {
+   "name": "마이애미",
+   "landmark": "사우스 비치",
+   "specialty": "쿠바 샌드위치"
+  },
+  "87": {
+   "name": "덴버",
+   "landmark": "레드 록스 원형극장",
+   "specialty": "크래프트 맥주"
+  },
+  "88": {
+   "name": "몬트리올",
+   "landmark": "노트르담 대성당",
+   "specialty": "푸틴·몬트리올 베이글"
+  },
+  "89": {
+   "name": "칸쿤",
+   "landmark": "치첸이트사",
+   "specialty": "타코 알 파스토르"
+  },
+  "90": {
+   "name": "파나마시티",
+   "landmark": "미라플로레스 수문",
+   "specialty": "세비체"
+  },
+  "91": {
+   "name": "리우데자네이루",
+   "landmark": "구세주 그리스도상",
+   "specialty": "페이조아다·카이피리냐"
+  },
+  "92": {
+   "name": "부에노스아이레스",
+   "landmark": "오벨리스크",
+   "specialty": "아사도·말벡 와인"
+  },
+  "93": {
+   "name": "산티아고",
+   "landmark": "산크리스토발 언덕",
+   "specialty": "카르메네르 와인"
+  },
+  "94": {
+   "name": "리마",
+   "landmark": "마요르 광장",
+   "specialty": "세비체·피스코"
+  },
+  "95": {
+   "name": "보고타",
+   "landmark": "몬세라테 언덕",
+   "specialty": "아히아코·콜롬비아 커피"
+  },
+  "96": {
+   "name": "키토",
+   "landmark": "국립 서약 대성당",
+   "specialty": "로크로(감자 수프)"
+  },
+  "97": {
+   "name": "브리즈번",
+   "landmark": "사우스뱅크 파크랜즈",
+   "specialty": "머드크랩"
+  },
+  "98": {
+   "name": "퍼스",
+   "landmark": "킹스 파크",
+   "specialty": "스완밸리 와인"
+  },
+  "99": {
+   "name": "오클랜드",
+   "landmark": "스카이 타워",
+   "specialty": "마누카 꿀·와인"
+  },
+  "100": {
+   "name": "나디",
+   "landmark": "스리 시바 수브라마니야 사원",
+   "specialty": "코코넛·카바"
+  }
+ },
+ "domestic": {
+  "1": {
+   "name": "경주",
+   "landmark": "불국사",
+   "specialty": "경주빵·찰보리빵"
+  },
+  "2": {
+   "name": "강릉",
+   "landmark": "경포대",
+   "specialty": "초당순두부"
+  },
+  "3": {
+   "name": "속초",
+   "landmark": "설악산",
+   "specialty": "오징어순대·닭강정"
+  },
+  "4": {
+   "name": "부산",
+   "landmark": "광안대교",
+   "specialty": "돼지국밥·밀면"
+  },
+  "5": {
+   "name": "제주",
+   "landmark": "성산 일출봉",
+   "specialty": "흑돼지·감귤"
+  },
+  "6": {
+   "name": "전주",
+   "landmark": "전주 한옥마을",
+   "specialty": "비빔밥·콩나물국밥"
+  },
+  "7": {
+   "name": "여수",
+   "landmark": "오동도",
+   "specialty": "갓김치·게장"
+  },
+  "8": {
+   "name": "순천",
+   "landmark": "순천만",
+   "specialty": "꼬막 정식"
+  },
+  "9": {
+   "name": "통영",
+   "landmark": "동피랑 벽화마을",
+   "specialty": "충무김밥·굴"
+  },
+  "10": {
+   "name": "단양",
+   "landmark": "도담삼봉",
+   "specialty": "마늘 요리"
+  }
+ }
+}
