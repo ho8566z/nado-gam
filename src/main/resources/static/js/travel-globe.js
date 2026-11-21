@@ -30,7 +30,7 @@
 			.showAtmosphere(true).atmosphereColor('#ffa050').atmosphereAltitude(0.2)
 			.pathsData(paths)
 			.pathPoints('pts').pathPointLat(function (p) { return p[0]; }).pathPointLng(function (p) { return p[1]; }).pathPointAlt(function (p) { return p[2]; })
-			.pathColor(function (d) { return d.active ? ['rgba(255,209,102,0.3)', 'rgba(255,209,102,1)'] : ['rgba(255, 138, 31,0.04)', 'rgba(255, 138, 31,0.42)']; })
+			.pathColor(function (d) { return d.active ? ['rgba(255,209,102,0.3)', 'rgba(255,209,102,1)'] : ['rgba(255, 90, 54,0.04)', 'rgba(255, 90, 54,0.42)']; })
 			.pathStroke(function (d) { return d.active ? 1.2 : 0.35; })
 			.pathDashLength(function (d) { return d.active ? 0.3 : 0.15; }).pathDashGap(0.1)
 			.pathDashAnimateTime(function (d) { return reduce ? 0 : (d.active ? 3500 : 7000); })
@@ -50,9 +50,9 @@
 		Object.keys(hubs).forEach(function (k) { dots.push({ lat: hubs[k].lat, lng: hubs[k].lng, kind: 'hub', code: k }); });
 		globe.pointsData(dots).pointAltitude(0.004)
 			.pointRadius(function (d) { return d.kind === 'hub' ? 0.25 : 0.55; })
-			.pointColor(function (d) { return d.kind === 'origin' ? '#ff8a1f' : (d.kind === 'arrival' ? '#ffd166' : 'rgba(255,255,255,0.9)'); })
+			.pointColor(function (d) { return d.kind === 'origin' ? '#ff5a36' : (d.kind === 'arrival' ? '#ffd166' : 'rgba(255,255,255,0.9)'); })
 			.ringsData(dots.filter(function (d) { return d.kind !== 'hub'; }))
-			.ringColor(function (d) { return d.kind === 'origin' ? function (t) { return 'rgba(255, 138, 31,' + (1 - t) + ')'; } : function (t) { return 'rgba(255,209,102,' + (1 - t) + ')'; }; })
+			.ringColor(function (d) { return d.kind === 'origin' ? function (t) { return 'rgba(255, 90, 54,' + (1 - t) + ')'; } : function (t) { return 'rgba(255,209,102,' + (1 - t) + ')'; }; })
 			.ringMaxRadius(4).ringPropagationSpeed(2).ringRepeatPeriod(1800);
 
 		// HTML 레이어: 도시 이름표(출발·도착은 항상, 경유지는 강조된 경로일 때만)와 비행기

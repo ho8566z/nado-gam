@@ -45,8 +45,8 @@
 			.pathPoints('pts').pathPointLat(function (p) { return p[0]; }).pathPointLng(function (p) { return p[1]; }).pathPointAlt(function (p) { return p[2]; })
 			.pathColor(function (d) {
 				if (d.light) { return ['rgba(255, 214, 140, 0)', 'rgba(255, 252, 240, 1)']; }
-				if (d.glow) { return ['rgba(255, 138, 31, 0)', 'rgba(255, 170, 60, 0.7)']; }
-				return 'rgba(255, 138, 31, 0.5)';
+				if (d.glow) { return ['rgba(255, 90, 54, 0)', 'rgba(255, 140, 100, 0.7)']; }
+				return 'rgba(255, 90, 54, 0.5)';
 			})
 			.pathStroke(function (d) { return d.light ? 0.75 : (d.glow ? 1.9 : 0.32); })
 			.pathDashLength(function (d) { return d.light || d.glow ? 0.08 : 1; })
@@ -64,7 +64,7 @@
 			.pointAltitude(0.004).pointRadius(0.24)
 			.pointColor(function () { return 'rgba(255,255,255,0.9)'; })
 			.ringsData(ringCities)
-			.ringColor(function () { return function (t) { return 'rgba(255, 138, 31,' + (1 - t) + ')'; }; })
+			.ringColor(function () { return function (t) { return 'rgba(255, 90, 54,' + (1 - t) + ')'; }; })
 			.ringMaxRadius(3).ringPropagationSpeed(2).ringRepeatPeriod(2400);
 
 		// 회전은 기본 컨트롤 대신 직접 구현한다. (자유 회전, 11/20 변경)
