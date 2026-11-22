@@ -49,6 +49,25 @@
 | ![국내여행](docs/screenshots/06-domestic.jpg) | ![투어 목록](docs/screenshots/07-tour-list.jpg) |
 | 국내여행 11개 도시 | 투어 목록: 대륙·국가 필터와 반분할 카드(여행지 전경 + 테마 사진) |
 
+## 발표 자료
+
+32장짜리 발표 PPT(PART 1 기획 · PART 2 시연 및 설계 · PART 3 구현 및 평가)의 주요 장면입니다. 전체 슬라이드와 PPTX·PDF 원본은 [`nado-gam_word`](https://github.com/ho8566z/nado-gam_word/tree/main/ppt_output) 레포에 있습니다.
+
+| | |
+|---|---|
+| ![표지](docs/ppt/slide-01.jpg) | ![목표](docs/ppt/slide-06.jpg) |
+| 표지 | 목표 4가지 (지구본 노선 · 여행지 먼저 · 예약까지 한 흐름 · 운영 기능) |
+| ![차별점](docs/ppt/slide-08.jpg) | ![사용자 시나리오](docs/ppt/slide-11.jpg) |
+| 유사 서비스와의 차별점 | 사용자·관리자 시나리오 |
+| ![시연 ① 메인·해외 여행](docs/ppt/slide-13.jpg) | ![시연 ② 투어·장바구니·결제](docs/ppt/slide-14.jpg) |
+| 시연 ① 메인 · 해외 여행 | 시연 ② 투어 · 장바구니 · 결제 |
+| ![시연 ③ 예약·QR·관리자·모바일](docs/ppt/slide-15.jpg) | ![서비스 구성도](docs/ppt/slide-16.jpg) |
+| 시연 ③ 예약 · QR · 관리자 · 모바일 | 서비스 구성도 |
+| ![ERD](docs/ppt/slide-18.jpg) | ![단위업무 워크플로우](docs/ppt/slide-23.jpg) |
+| ERD (테이블 25개) | 담기 → 가격 재계산 → 결제 → 좌석 차감 → QR → 체크인 |
+| ![핵심 구현 3가지](docs/ppt/slide-28.jpg) | ![테스트·검증](docs/ppt/slide-29.jpg) |
+| 핵심 구현 3가지 (지구본 · 조건부 UPDATE · 사진 카드) | 테스트 169개 통과 · 화면 점검 |
+
 ## 기술 스택
 
 | 구분 | 사용 기술 |
