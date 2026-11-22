@@ -1,4 +1,4 @@
--- nado_gam DB 스키마 (설계서: nado_gam_word/design/02_DB설계서.md)
+-- nado-gam DB 스키마 (설계서: nado-gam_word/design/02_DB설계서.md)
 -- MySQL 8 / H2(MODE=MySQL) 공통 문법. 개발용 초기화 스크립트라 시작할 때마다 테이블을 지우고 다시 만든다.
 
 DROP TABLE IF EXISTS monthly_plan_flight;

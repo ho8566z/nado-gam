@@ -1,6 +1,6 @@
 spring:
   application:
-    name: nado_gam
+    name: nado-gam
   profiles:
     default: local
   jpa:

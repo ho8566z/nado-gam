@@ -1,4 +1,4 @@
--- nado_gam 더미데이터. design/gen_data_sql.py 가 flight_dummy.csv 로 생성한 파일이다. 직접 고치지 말고 스크립트를 고친다.
+-- nado-gam 더미데이터. design/gen_data_sql.py 가 flight_dummy.csv 로 생성한 파일이다. 직접 고치지 말고 스크립트를 고친다.
 -- 모든 항공편·편명·가격은 실제 노선을 참고한 가상 데이터이다.
 
 -- [A] 관리자 / [U] 사용자 계정 (비밀번호 1234 의 BCrypt 해시)

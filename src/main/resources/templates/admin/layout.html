@@ -2,7 +2,7 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <body>
 <aside class="admin-side" th:fragment="side(menu)">
-	<a class="logo" th:href="@{/admin}"><span>nado_gam 관리자</span></a>
+	<a class="logo" th:href="@{/admin}"><span>nado-gam 관리자</span></a>
 	<nav aria-label="관리자 메뉴">
 		<a th:href="@{/admin}" th:classappend="${menu == 'dashboard'} ? 'is-active'">대시보드</a>
 		<a th:href="@{/admin/members}" th:classappend="${menu == 'members'} ? 'is-active'">회원 관리</a>

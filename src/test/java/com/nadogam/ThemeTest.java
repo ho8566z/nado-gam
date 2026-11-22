@@ -49,7 +49,7 @@ class ThemeTest {
 	void 상단_로고_옆에는_마스코트가_없고_글자만_있다() throws Exception {
 		mvc.perform(get("/")).andExpect(status().isOk())
 			.andExpect(content().string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("mascot--logo"))))
-			.andExpect(content().string(org.hamcrest.Matchers.containsString("<span>nado_gam</span>")))
+			.andExpect(content().string(org.hamcrest.Matchers.containsString("<span>nado-gam</span>")))
 			.andExpect(content().string(org.hamcrest.Matchers.containsString("mascot.css")));
 	}
 

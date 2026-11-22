@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-// 설계서(nado_gam_word/design)의 더미데이터 규칙이 schema.sql / data.sql 에 그대로 들어갔는지 확인한다.
+// 설계서(nado-gam_word/design)의 더미데이터 규칙이 schema.sql / data.sql 에 그대로 들어갔는지 확인한다.
 @SpringBootTest
 class SeedDataTest {
 
