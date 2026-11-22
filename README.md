@@ -1,19 +1,33 @@
 # 나도 감 (nado-gam)
 
+![나도 감 표지](docs/ppt/slide-01.jpg)
+
 > **"나도 갈래!"** — 가고 싶은 여행지를 고르면 항공편·투어·호텔·크루즈를 보여 주고, 비행 경로를 3D 지구본으로 보여 주는 여행사 웹 서비스입니다.
 > 취업 포트폴리오로 만든 2차 개인 프로젝트이며, **모든 항공사·편명·호텔·투어 브랜드·가격은 가상 데이터**입니다.
 
+명세서와 발표 자료는 문서 저장소 [nado-gam_word](https://github.com/ho8566z/nado-gam_word)에 있습니다.
+
+## 프로젝트 요약
+
+- **해결하려는 문제**: 항공권·현지 투어·숙소를 각각 다른 화면에서 찾고 비교해야 하고, 노선이 글자와 표로만 나와 어느 도시에서 어느 도시로 가는지 감이 안 온다.
+- **핵심 기능**: 3D 지구본 경로 보기, 여행지 먼저 고르는 예약 흐름, 장바구니 → 모의 결제 → 좌석 차감 → QR 예약 확인, 관리자 운영 기능
+- **기술 스택**: Java 17, Spring Boot 4.1.2, Spring Security, JPA(쓰기)·JdbcClient(읽기), Thymeleaf, globe.gl, H2 / MySQL 8
+- **규모**: 해외 여행지 98곳 · 항공편 304편 · 투어 142개 · 호텔 354개 · 크루즈 7곳 · 국내 도시 11곳(이동편 55개), 자동 테스트 169개 통과
+- **기간**: 2026.11.19 ~ 11.22 (1인 개발)
+- **목적**: 취업용 포트폴리오(2차 개인 프로젝트). 모든 항공사·편명·호텔·투어 브랜드·가격은 가상 데이터
+
+## 화면
+
 ![메인: 왼쪽 지구본, 오른쪽 이달의 기획전·베스트셀러](docs/screenshots/01-home-globe.jpg)
 
-## 한눈에 보기
-
-| 항목 | 내용 |
+| | |
 |---|---|
-| 개발 기간 | 2026.11.19 ~ 11.22 (1인 개발) |
-| 한 줄 소개 | 지구본으로 노선을 보고, 항공편·투어·호텔·크루즈를 장바구니에 담아 모의 결제하는 여행사 웹 |
-| 규모 | 해외 여행지 98곳(서울·부산은 해외 탭에서 빼고 국내여행·투어에 둠) · 항공편 304편 · 투어 142개 · 호텔 354개 · 크루즈 7곳 · 국내 도시 11곳(이동편 55개) |
-| 품질 | 자동 테스트 169개 통과 |
-| 문서 | [`nado-gam_word`](https://github.com/ho8566z/nado-gam_word) 레포: 기능정의서·DB설계서·더미데이터설계서, 엑셀 명세서(요구·기능·화면·API·테이블) |
+| ![해외 여행지](docs/screenshots/03-travel-list.jpg) | ![여행지 상세](docs/screenshots/04-travel-detail.jpg) |
+| 해외 여행지 98곳 카드 (대표 관광지 사진 · 명소/특산 · 정렬) | 여행지 상세와 항공편 선택 단계 |
+| ![메인 캐로셀](docs/screenshots/02-home-carousel.jpg) | ![투어 상세](docs/screenshots/05-tour-detail.jpg) |
+| 메인의 캐로셀이 다음 장으로 넘어간 모습(기획전·베스트셀러는 자동으로 넘어감) | 투어 상세(기간별 옵션, 인천 출발 노선) |
+| ![국내여행](docs/screenshots/06-domestic.jpg) | ![투어 목록](docs/screenshots/07-tour-list.jpg) |
+| 국내여행 11개 도시 | 투어 목록: 대륙·국가 필터와 반분할 카드(여행지 전경 + 테마 사진) |
 
 ## 주요 기능
 
@@ -38,16 +52,14 @@
 - 여행지·도시·특별전·투어·호텔·크루즈 노출 중지/재개(작업 이력 기록)
 - 팝업 관리, 문의 답변, 예약 체크인(예약 번호·QR 토큰)
 
-## 화면
+## 기술 스택
 
-| | |
+| 구분 | 사용 기술 |
 |---|---|
-| ![해외 여행지](docs/screenshots/03-travel-list.jpg) | ![여행지 상세](docs/screenshots/04-travel-detail.jpg) |
-| 해외 여행지 98곳 카드 (대표 관광지 사진 · 명소/특산 · 정렬) | 여행지 상세와 항공편 선택 단계 |
-| ![메인 캐로셀](docs/screenshots/02-home-carousel.jpg) | ![투어 상세](docs/screenshots/05-tour-detail.jpg) |
-| 메인의 캐로셀이 다음 장으로 넘어간 모습(기획전·베스트셀러는 자동으로 넘어감) | 투어 상세(기간별 옵션, 인천 출발 노선) |
-| ![국내여행](docs/screenshots/06-domestic.jpg) | ![투어 목록](docs/screenshots/07-tour-list.jpg) |
-| 국내여행 11개 도시 | 투어 목록: 대륙·국가 필터와 반분할 카드(여행지 전경 + 테마 사진) |
+| 백엔드 | Java 17, Spring Boot 4.1.2, Spring Security(BCrypt), Spring Data JPA(쓰기), Spring JDBC `JdbcClient`(읽기 조회) |
+| 프론트엔드 | Thymeleaf(서버 렌더링), HTML/CSS/JavaScript, [globe.gl](https://globe.gl)(지구본, CDN) |
+| DB | 로컬 H2(MySQL 호환 모드), 운영 MySQL 8 |
+| 기타 | ZXing(QR 생성), Lombok, Gradle 9.8.2, JUnit 5 / Spring Boot Test |
 
 ## 발표 자료
 
@@ -68,14 +80,13 @@
 | ![핵심 구현 3가지](docs/ppt/slide-28.jpg) | ![테스트·검증](docs/ppt/slide-29.jpg) |
 | 핵심 구현 3가지 (지구본 · 조건부 UPDATE · 사진 카드) | 테스트 169개 통과 · 화면 점검 |
 
-## 기술 스택
+## 문서
 
-| 구분 | 사용 기술 |
-|---|---|
-| 백엔드 | Java 17, Spring Boot 4.1.2, Spring Security(BCrypt), Spring Data JPA(쓰기), Spring JDBC `JdbcClient`(읽기 조회) |
-| 프론트엔드 | Thymeleaf(서버 렌더링), HTML/CSS/JavaScript, [globe.gl](https://globe.gl)(지구본, CDN) |
-| DB | 로컬 H2(MySQL 호환 모드), 운영 MySQL 8 |
-| 기타 | ZXing(QR 생성), Lombok, Gradle 9.8.2, JUnit 5 / Spring Boot Test |
+설계와 명세는 [nado-gam_word](https://github.com/ho8566z/nado-gam_word)에서 볼 수 있습니다.
+
+- 설계 문서: 기능정의서, DB 설계서, 더미 데이터 설계서, ERD
+- 명세서(엑셀): 프로젝트 개요, 요구·기능·화면·API·테이블 명세서, WBS, 트러블슈팅
+- 발표 자료: 32장 PPT와 PDF(`ppt_output/`)
 
 ## 실행 방법
 
@@ -86,10 +97,6 @@
 ```
 
 브라우저에서 http://localhost:8080 을 엽니다. 시작할 때마다 `schema.sql`이 테이블을 다시 만들고 `data.sql`이 더미 데이터를 채웁니다.
-
-```bash
-./gradlew test           # 테스트 169개
-```
 
 **MySQL로 실행**
 
@@ -110,6 +117,15 @@ export NADOGAM_PUBLIC_BASE_URL=http://192.168.0.10:8080   # 예시
 ```
 
 > 지구본은 CDN에서 라이브러리와 지구 텍스처를 받아 오므로 시연 환경에 인터넷이 필요합니다.
+
+## 테스트
+
+```bash
+./gradlew test
+```
+
+- 자동 테스트 169개가 모두 통과합니다(관리자 상품 CRUD, 로그인, 투어, 여행지 검색, 장바구니, 결제·좌석 차감, QR, 고객문의, 화면 렌더링 등).
+- 이 밖에 브라우저로 담기 → 결제 → 예약 흐름(금액 일치, 좌석 58 → 56), QR·체크인, 390px 모바일 화면을 직접 점검했습니다(11/21).
 
 ## 프로젝트 구조
 
@@ -139,17 +155,23 @@ src/main/resources
 - **비밀번호는 BCrypt**: 평문은 저장·로그·화면 어디에도 남기지 않습니다.
 - **더미 데이터는 스크립트로 생성**: `nado-gam_word/design`의 파이썬 스크립트로 `data.sql`을 만들어 다시 만들 수 있습니다.
 
-## 현재 한계와 2단계 계획
+## 아직 확인하지 못한 것과 한계
 
 - 결제는 **모의 처리**입니다(실제 결제·카드 정보 수집 없음).
 - 항공권 재고는 날짜별이 아니라 항공편 단위입니다.
 - 댈러스 여행지 사진은 Wikipedia(댈러스 문서)에서 내려받은 파일(Dsdugan, CC0)이고, 홍콩 사진은 Hong_Kong_Harbour_Night_2019-06-11.jpg(Benh LIEU SONG, CC BY-SA 4.0)로 직접 골라 바꿨습니다.
+
+## 향후 계획
 
 2단계에서 다룰 것: 날짜별 재고와 동시성 제어(낙관적 락, 동시 예약 테스트), 실제 결제 연동(테스트 모드), 동행 모집('나도 감'), 후기·찜, Redis 캐시, Docker·GitHub Actions 배포.
 
 ## 브랜치 전략
 
 `main`(안정) · `dev`(통합) · `feature/*`(기능별). 새 기능은 `dev`에서 `feature/*`를 만들어 개발하고, `main`에서 직접 개발하지 않습니다.
+
+## 보안 안내
+
+DB 접속 정보는 환경변수로만 받고 코드·문서에는 값을 두지 않습니다. 비밀번호는 BCrypt로만 저장하며 평문은 저장·로그·화면 어디에도 남기지 않습니다.
 
 ## 사진·데이터 출처
 
