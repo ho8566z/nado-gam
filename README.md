@@ -18,6 +18,8 @@
 
 ## 화면
 
+**[▶ 실행 화면 직접 보기](https://ho8566z.github.io/yunho-portfolio-2611/projects/nado-gam.html)** — 실제 앱 메인 화면(돌아가는 지구본, 이달의 기획전·베스트셀러)을 브라우저에서 볼 수 있습니다. 지구본·지도는 인터넷 연결이 필요하며, 링크는 데모라 이동하지 않습니다.
+
 ![메인: 왼쪽 지구본, 오른쪽 이달의 기획전·베스트셀러](docs/screenshots/01-home-globe.jpg)
 
 | | |
